@@ -1,0 +1,19 @@
+# Binding of Ca2+ to Mixtures of 20 mol % POPG
+# plus 80 mol % a-CD2-POPC (0.1 M NaCl and 0.01 M Tris-HCI, pH 7.4, 25 Celcius)
+#
+# From Table I in Macdonald and Seelig, Biochemistry 1987, 26, 1231-1240
+#
+0          8.10
+0.0012     7.40
+0.0040     6.80
+0.0161     6.40
+0.0425     5.70
+0.094      5.20
+0.184      4.30
+0.255      3.90
+0.355      3.10
+0.525      2.50
+0.717      1.90
+0.892      1.00
+1.60      -0.75
+2.25      -2.70

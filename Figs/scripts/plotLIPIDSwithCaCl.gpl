@@ -1,0 +1,25 @@
+set size 1.0,1.0
+set terminal postscript portrait enhanced color dashed lw 1 "Helvetica" 14 
+set output "../LIPIDSwithCaCl.eps"
+set multiplot  layout 2,1
+
+set xrange [0:1] 
+set ytic 0.05
+#set key box linestyle 1 linecolor rgb 'black'
+set key at screen 1,1 maxcols 1 maxrows 5
+
+set ylabel "{S_{CH}^{/Symbol b}"
+set yrange [-0.075:-0.025] 
+plot "../../Data/POPC_POPSwithCaBETA.dat" using 1:((-1)*$2*0.00784) notitle pt 5 ps 1.6 lc rgb 'red'
+
+set ylabel "{S_{CH}^{/Symbol a}"
+set yrange [-0.03:0.09] 
+plot "../../../lipid_ionINTERACTION/Data/POPC/CaCl/EXP-Altenbach1984-T313K.dat" using 1:($2*0.00784) with linespoint title 'POPC' pt 5 lc rgb 'black',\
+     "../../Data/POPC_POPSwithCaALPHA.dat" using 1:($2*0.00784)  with linespoint title 'POPC:POPS 5:1' pt 5 lt 1 lc rgb 'red',\
+     "../../Data/POPC80_POPG20withCaALPHA.dat" using 1:($2*0.00784)  with linespoint title 'POPC:POPG 8:2' pt 5 lt 1 lc rgb 'green',\
+     "../../Data/POPC50_POPG50withCaALPHA.dat" using 1:($2*0.00784) with linespoint title 'POPC:POPG 1:1' pt 5 lt 1  lc rgb 'blue'
+
+
+
+
+unset multiplot
