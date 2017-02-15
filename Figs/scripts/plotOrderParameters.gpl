@@ -12,5 +12,9 @@ set key above maxcols 2 maxrows 5
 
 plot "../../../MATCH/Data/Lipid_Bilayers/POPC/T300K/Headgroup_Glycerol_Order_Parameters_Experiments.dat" using 1:(sqrt($2**2)) title 'POPC' pt 5 ps 1.6 lc rgb 'black',\
      "../../../MATCH/Data/Lipid_Bilayers/POPC/T300K/Headgroup_Glycerol_Order_Parameters_Experiments.dat" using 1:(sqrt($3**2)) notitle pt 5 ps 1.6 lc rgb 'black',\
-     "../../../MATCH/Data/Lipid_Bilayers/POPS+83%popc/T298K/Headgroup_Glycerol_Order_Parameters_Experiments.dat" using 1:($2*0.00784) title 'POPS' pt 5 ps 1.6 lc rgb 'red',\
-     "../../../MATCH/Data/Lipid_Bilayers/POPS+83%popc/T298K/Headgroup_Glycerol_Order_Parameters_Experiments.dat" using 1:($3*0.00784) notitle pt 5 ps 1.6 lc rgb 'red',\
+     "../../../MATCH/Data/Lipid_Bilayers/DOPS/T303K/Headgroup_Glycerol_Order_Parameters_Experiments.dat" using 1:($2*0.00784) title 'DOPS' pt 5 ps 1.6 lc rgb 'red',\
+     "../../../MATCH/Data/Lipid_Bilayers/DOPS/T303K/Headgroup_Glycerol_Order_Parameters_Experiments.dat" using 1:($3*0.00784) notitle pt 5 ps 1.6 lc rgb 'red',\
+     "../../../MATCH/Data/Lipid_Bilayers/POPG/T298K/Headgroup_Glycerol_Order_Parameters_Experiments.dat" using 1:($2*0.00784) title 'POPG' pt 5 ps 1.6 lc rgb 'green',\
+     "../../../MATCH/Data/Lipid_Bilayers/POPG/T298K/Headgroup_Glycerol_Order_Parameters_Experiments.dat" using 1:($3*0.00784) notitle pt 5 ps 1.6 lc rgb 'green',\
+     "../../../MATCH/Data/Lipid_Bilayers/DPPE/T336K/Headgroup_Glycerol_Order_Parameters_Experiments.dat" using 1:($2*0.00784) title 'DPPE' pt 5 ps 1.6 lc rgb 'yellow',\
+     "../../../MATCH/Data/Lipid_Bilayers/DPPE/T336K/Headgroup_Glycerol_Order_Parameters_Experiments.dat" using 1:($3*0.00784) notitle pt 5 ps 1.6 lc rgb 'yellow',\
