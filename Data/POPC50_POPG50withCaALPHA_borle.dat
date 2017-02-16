@@ -1,0 +1,11 @@
+# Binding of Ca2+ to Mixtures of 50 mol % POPG plus 50 mol % a-CD2-POPC
+# (0.01 M PIPES, pH 7.1, 25 Celcius)
+#
+# From Table III in Borle and Seelig, Chem. Phys. Lipids 1985, 36, 263-283
+#
+#[CaCl]    POPC_a  POPG_b
+0          10.1     5.0
+0.002      8.4      3.2
+0.010      7.5      2.7
+0.100      6.6      2.5
+1.0        1.5      1.5
