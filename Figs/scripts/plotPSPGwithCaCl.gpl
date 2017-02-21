@@ -3,21 +3,22 @@ set terminal postscript portrait enhanced color dashed lw 1 "Helvetica" 14
 set output "../PSPGwithCaCl.eps"
 set multiplot  layout 2,1
 
-#set xrange [0:1] 
+set xrange [0:1] 
 #set ytic 0.05
 #set key box linestyle 1 linecolor rgb 'black'
 set key at screen 0.9,0.9 maxcols 1 maxrows 6
 
-set ylabel "{S_{CH}^{/Symbol b}"
+set ylabel "|S_{CH}^{/Symbol b}|"
 #set yrange [-0.075:-0.025] 
-plot "../../Data/POPC_POPSwithCaBETA.dat" using 1:((-1)*$2*0.00784) with linespoint notitle pt 5 lt 1 lc rgb 'red',\
-     "../../../lipid_ionINTERACTION/Data/DPPC/CaCl/EXP-Akutsu1981-T323K.dat" using ($1*0.001):((-1)*$2*0.00784) with linespoint notitle pt 7 lt 1 lc rgb 'black',\
-     "../../../lipid_ionINTERACTION/Data/DPPC/CaCl/EXP-Akutsu1981-T332K.dat" using ($1*0.001):((-1)*$2*0.00784) with linespoint notitle pt 6 lt 1 lc rgb 'black',\
+plot "../../Data/POPS20_POPCwithCaBETA.dat" using 1:($2*0.00784) with linespoint title '20% of POPS in POPC' pt 5 lt 1 lc rgb 'red',\
+     
 
-set ylabel "{S_{CH}^{/Symbol a}"
+set ylabel "|S_{CH}^{/Symbol a}|"
 set xlabel "[ CaCl_2]"
 #set yrange [-0.03:0.09] 
-plot  "../../Data/POPC50_POPG50withCaALPHA_borle.dat" using 1:($3*0.00784) with linespoint title 'POPC:POPG 1:1 (T=298K)' pt 5 lt 1  lc rgb 'blue'
+plot  "../../Data/POPC50_POPG50withCaALPHA_borle.dat" using 1:($3*0.00784) with linespoint title '50% POPG in POPC (T=298K)' pt 5 lt 1  lc rgb 'blue',\
+      "../../Data/POPS20_POPCwithCaALPHA1.dat" using 1:($2*0.00784) with linespoint notitle pt 5 lt 1  lc rgb 'red',\
+      "../../Data/POPS20_POPCwithCaALPHA2.dat" using 1:($2*0.00784) with linespoint notitle pt 5 lt 1  lc rgb 'red'
 
 
 
