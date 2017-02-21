@@ -140,9 +140,41 @@ thus only absolute values are used for now.
   }
 \end{figure}
 
+Based on superficial reading, the conclusions in the literature are roughly
+1) glycerol backbone structures are largely similar irrespectively of the headroup \cite{gally81},
+2) glycerol backbone and headgroup strucures are similar in model membranes and in bacteria \cite{gally81,??},
+3) headgroup structure is phosphatidylserine more rigid than in other phospholipids, which are quite similar to
+each others \cite{??}.
+In contrast to PC lipids, extensive discussion on glycerol backbone and headgroup structural details do not
+exist (as far as I know).
+
 \section{Glycerol backbone and headgroup order parameters for PE, PG and PS lipids in simulations}
 
-\todo{Simulation data for lipids with different headgroups to be collected}
+Several simulations containing PE, PG and PS lipids have been published \cite{??},
+however, glycerol backbone and headgroup order parameters are not compared to
+the experiments (based on superficial reading of literature).
+
+Glycerol backbone and headgroup order parameters for PS lipids from experiments
+and simulations are shown in Fig. \ref{HGorderParametersPOPS}.
+The preliminary test with CHARMM GUI simulations show suggest that the model
+overestimates magnitudes in $\beta$ and g$_3$ order parameters and forking in $\alpha$.
+\begin{figure}[]
+  \centering
+  \includegraphics[width=9.0cm]{../Figs/HGorderparametersPOPS.eps}
+  \caption{\label{HGorderParametersPOPS}
+    Order parameters for POPS headgroup and glycerol backbone from simulations and experiments without CaCl$_2$ 
+    (DOPS from \cite{browning80} contains 0.1M of NaCl, POPC:POPS mixture from \cite{roux90}).
+    Absolute values are shown for experimental data, because signs are not known.
+    Simulations values are -S$_{CH}$
+  }
+  \todo{More simulation data for lipids with different headgroups to be collected}
+  \todo{CHARMM GUI simulation contains only counter ions as potassium.
+    All experiments here contain some amount of sodium salt. The best
+    ion concentrations for comparison should be figured out.}
+  \todo{Experimental signs of the order parameters would highly useful.}
+\end{figure}
+
+
 
 \section{Ca$2+$ binding in bilayers with negatively charged PG and PS lipids}
 
@@ -202,7 +234,15 @@ in proximity of bilayer containing negatively charged lipids \cite{??}.
 In addition to the changes in PC headgroup order parameters with 
 ion binding, also changes in PS and PG headgroup order parameters
 are measured.
-\todo{Add this data}.
+
+\begin{figure}[]
+  \centering
+  \includegraphics[width=9.0cm]{../Figs/PSPGwithCaCl.eps}
+  \caption{\label{PSPGchangesWITHCaCl}
+    Changes in order parameters
+  }
+  \todo{Get the small concentration data from the inserts}
+\end{figure}
 
 \section{Ca$2+$ binding in bilayers with negatively charged PG and PS lipids in simulations}
 

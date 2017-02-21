@@ -11,10 +11,11 @@ set key at screen 0.9,0.9 maxcols 1 maxrows 6
 set ylabel "|S_{CH}^{/Symbol b}|"
 #set yrange [-0.075:-0.025] 
 plot "../../Data/POPS20_POPCwithCaBETA.dat" using 1:($2*0.00784) with linespoint title '20% of POPS in POPC' pt 5 lt 1 lc rgb 'red',\
-     
 
+
+set key at screen 0.9,0.87 maxcols 1 maxrows 6
 set ylabel "|S_{CH}^{/Symbol a}|"
-set xlabel "[ CaCl_2]"
+set xlabel "[ CaCl_2] M"
 #set yrange [-0.03:0.09] 
 plot  "../../Data/POPC50_POPG50withCaALPHA_borle.dat" using 1:($3*0.00784) with linespoint title '50% POPG in POPC (T=298K)' pt 5 lt 1  lc rgb 'blue',\
       "../../Data/POPS20_POPCwithCaALPHA1.dat" using 1:($2*0.00784) with linespoint notitle pt 5 lt 1  lc rgb 'red',\
