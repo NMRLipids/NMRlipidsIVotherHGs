@@ -136,7 +136,8 @@ thus only absolute values are used for now.
   \caption{\label{HGorderParameters}
     Absolute values of order parameters for headgroup and glycerol backbone with different headgroups
     from experiments. POPC values are from \cite{ferreira13}, DOPS from \cite{browning80} contains 0.1M of NaCl,
-    POPG from \cite{borle85} contains 10nM PIPES, DPPE from \cite{seelig76}, E.coliPE and E.coliPG are from \cite{gally81}.
+    POPG from \cite{borle85} contains 10nM PIPES, DPPG from \cite{wohlgemuth80} contains  10mM PIPES and 100mM NaCl,
+    DPPE from \cite{seelig76}, E.coliPE and E.coliPG are from \cite{gally81}.
   }
 \end{figure}
 
@@ -174,7 +175,26 @@ overestimates magnitudes in $\beta$ and g$_3$ order parameters and forking in $\
   \todo{Experimental signs of the order parameters would highly useful.}
 \end{figure}
 
-
+Glycerol backbone and headgroup order parameters for PS lipids from experiments
+and simulations are shown in Fig. \ref{HGorderParametersPOPS}.
+The preliminary test with CHARMM GUI simulations show suggest that the model
+\begin{figure}[]
+  \centering
+  \includegraphics[width=9.0cm]{../Figs/HGorderparametersPOPG.eps}
+  \caption{\label{HGorderParametersPOPG}
+    Order parameters for PG headgroup and glycerol backbone from simulations and experiments without CaCl$_2$ 
+    (POPG from \cite{borle85} contains 10mM of PIPES, DPPG from \cite{wohlgemuth80} contains 10mM PIPES and 100mM CaCl,
+    E.Coli PG results from \cite{gally81}).
+    Absolute values are shown, because signs are not known for experimental data.
+    Glycerol backbone order parameters are negative in simulations, while $alpha$, $\beta$ and
+    smaller $\gamma$ are positive.
+  }
+  \todo{More simulation data for lipids with different headgroups to be collected}
+  \todo{CHARMM GUI simulation contains only counter ions as potassium.
+    All experiments here contain some amount of sodium salt. The best
+    ion concentrations for comparison should be figured out.}
+  \todo{Experimental signs of the order parameters would highly useful.}
+\end{figure}
 
 \section{Ca$2+$ binding in bilayers with negatively charged PG and PS lipids}
 
