@@ -82,34 +82,52 @@
 
 %\label{}
 \section{Introduction}
-Phospholipids containing various polar headgroups and acyl
-chains are essential building blocks of biological membranes.
-Atomistic level structural details of lipids and lipid-ion 
-interactions are considered highly important in several
-biological processes. The lipid structure and ion binding
-can be studied in detail with NMR spectroscopy. However,
-the structural interpretation of NMR data requires usage
-of models. The combination of classical molecular dynamics
-simulations with NMR data, especially with C-H bond
-order parameters, can potentially give atomistic resolution
-interpretation of structure and dynamics of molecules \cite{botan15,ollila16,ferreira16}. 
 
-Our recent studies concluded that MD models are cabable to
-give structural interpretation for phosphatidylcholine 
-hydrophopic acyl chain region, while hydrophilic headgrop, glycerol 
-backbone and cation binding posed a major challenge for current
-force fields \cite{botan15,ollila16,catte16,ferreira16}. 
-These conclusions were reached by reviewing extensively 
-available experimental data from various sources and using
-NMRlipids Open Collaboration project to collect massive 
-amount of simulation data \cite{botan15,catte16}.
+In NMRlipids I and II project we were looking for a MD model
+which would correctly reproduce headgroup and glycerol
+backbone structures and cation binding for PC lipid bilayers \cite{botan15,catte16}.
+Here we extend the same goal for other than PC lipids.
+Currently the focus is on PE, PG and PS bilayers and their
+mixtures with PC. Experimental data with different amounts of 
+added salt is now collected and presented in this manuscript.
+Simulations for bilayers containing PG and PS with low salt conditions
+are ran with parameters from CHARMM GUI
+and compared to experiments. Some order parameters from
+simulations seems to be off from experimental values.
+Simulation data from other models would be highly useful 
+to see if some of the existing models would reproduce the 
+experimental order parameters and to analyze different 
+conformations predicted by different models respect to 
+experiments.
 
-Here we apply the same approach in search of MD simulation
-models which would reproduce glycerol backbone and 
-headgroup structures of lipids with PE, PG and PS headgroups.  
-In addition, we attempt to find a MD simulation model
-that would be able to correctly describe cation binding in
-bilayer containing negatively charged PG and PS lipids.
+%Phospholipids containing various polar headgroups and acyl
+%chains are essential building blocks of biological membranes.
+%Atomistic level structural details of lipids and lipid-ion 
+%interactions are considered highly important in several
+%biological processes. The lipid structure and ion binding
+%can be studied in detail with NMR spectroscopy. However,
+%the structural interpretation of NMR data requires usage
+%of models. The combination of classical molecular dynamics
+%simulations with NMR data, especially with C-H bond
+%order parameters, can potentially give atomistic resolution
+%interpretation of structure and dynamics of molecules \cite{botan15,ollila16,ferreira16}. 
+
+%Our recent studies concluded that MD models are cabable to
+%give structural interpretation for phosphatidylcholine 
+%hydrophopic acyl chain region, while hydrophilic headgrop, glycerol 
+%backbone and cation binding posed a major challenge for current
+%force fields \cite{botan15,ollila16,catte16,ferreira16}. 
+%These conclusions were reached by reviewing extensively 
+%available experimental data from various sources and using
+%NMRlipids Open Collaboration project to collect massive 
+%amount of simulation data \cite{botan15,catte16}.
+
+%Here we apply the same approach in search of MD simulation
+%models which would reproduce glycerol backbone and 
+%headgroup structures of lipids with PE, PG and PS headgroups.  
+%In addition, we attempt to find a MD simulation model
+%that would be able to correctly describe cation binding in
+%bilayer containing negatively charged PG and PS lipids.
 
 
 %Several MD simulation models have succesfully described 
