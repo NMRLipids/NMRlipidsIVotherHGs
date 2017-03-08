@@ -15,7 +15,7 @@ plot "../../Data/POPC_POPSwithCaBETA.dat" using 1:((-1)*($2-3.99999493027)*0.007
      "../../../lipid_ionINTERACTION/Data/DPPC/CaCl/EXP-Akutsu1981-T332K.dat" using ($1*0.001):((-1)*($2-4.22)*0.00784) with linespoint notitle pt 6 lt 1 lc rgb 'black',\
 
 set ylabel "{{/Symbol D}S_{CH}^{/Symbol a}"
-set xlabel "[ CaCl_2]"
+set xlabel "[ CaCl_2] M"
 #set yrange [-0.03:0.09] 
 plot "../../../lipid_ionINTERACTION/Data/POPC/CaCl/EXP-Altenbach1984-T313K.dat" using 1:(($2-6.1)*0.00784) with linespoint title 'POPC' pt 5 lc rgb 'black',\
      "../../../lipid_ionINTERACTION/Data/DPPC/CaCl/EXP-Akutsu1981-T323K.dat" using ($1*0.001):(($3-5.95)*0.00784) with linespoint title 'DPPC (T=323K)' pt 7 lt 1 lc rgb 'black',\

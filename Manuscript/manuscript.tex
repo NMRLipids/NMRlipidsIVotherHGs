@@ -32,6 +32,8 @@
 \usepackage{amsmath}
 \usepackage{epstopdf}
 \usepackage[obeyFinal]{easy-todo}
+\usepackage{csquotes}
+
 \begin{document}
 
 % Use the \preprint command to place your local institutional report number 
@@ -159,24 +161,24 @@ thus only absolute values are used for now.
   }
 \end{figure}
 
-Based on superficial reading, the conclusions in the literature are roughly
-1) glycerol backbone structures are largely similar irrespectively of the headroup \cite{gally81},
-2) glycerol backbone and headgroup strucures are similar in model membranes and in bacteria \cite{gally81,??},
-3) headgroup structure is phosphatidylserine more rigid than in other phospholipids, which are quite similar to
-each others \cite{??}.
-In contrast to PC lipids, extensive discussion on glycerol backbone and headgroup structural details do not
-exist (as far as I know).
+Based on superficial reading, the conclusions in the literature are roughly \\ 
+1) glycerol backbone structures are largely similar irrespectively of the headroup \cite{gally81}, \\
+2) glycerol backbone and headgroup strucure and behaviour are similar in model membranes and in bacteria \cite{gally81,scherer87,seelig90}, \\
+3) headgroup structures are similar in PC, PE and PG lipids, while headgroup is more rigid in PS lipids \cite{wohlgemuth80,buldt81}. \\
+Extensive discussion about structural details of PE, PG or PS headgroups do not exists (as far as I know), 
+In contrast to PC lipids (see \cite{botan15} and references therein).
+
 
 \section{Glycerol backbone and headgroup order parameters for PE, PG and PS lipids in simulations}
 
-Several simulations containing PE, PG and PS lipids have been published \cite{??},
+Several simulations containing PE, PG and PS lipids have been published \cite{??}, \todo{List should be completed}
 however, glycerol backbone and headgroup order parameters are not compared to
 the experiments (based on superficial reading of literature).
 
-Glycerol backbone and headgroup order parameters for PS lipids from experiments
-and simulations are shown in Fig. \ref{HGorderParametersPOPS}.
-The preliminary test with CHARMM GUI simulations show suggest that the model
-overestimates magnitudes in $\beta$ and g$_3$ order parameters and forking in $\alpha$.
+Comparison between experiments and simulations with CHARMM GUI
+parameters for PS lipids in Fig. \ref{HGorderParametersPOPS} suggest that
+the model overestimates magnitudes in $\beta$ and g$_3$ order parameters
+and forking in $\alpha$.
 \begin{figure}[]
   \centering
   \includegraphics[width=9.0cm]{../Figs/HGorderparametersPOPS.eps}
@@ -193,9 +195,10 @@ overestimates magnitudes in $\beta$ and g$_3$ order parameters and forking in $\
   \todo{Experimental signs of the order parameters would highly useful.}
 \end{figure}
 
-Glycerol backbone and headgroup order parameters for PS lipids from experiments
-and simulations are shown in Fig. \ref{HGorderParametersPOPS}.
-The preliminary test with CHARMM GUI simulations show suggest that the model
+Comparison between experiments and simulations with CHARMM GUI
+parameters for PG lipids in Fig. \ref{HGorderParametersPOPG} suggest that
+the model overestimates forking in $\gamma$ and $\alpha$ order parameters,
+and magnitudes of $\beta$ and $g_1$ order parameters.
 \begin{figure}[]
   \centering
   \includegraphics[width=9.0cm]{../Figs/HGorderparametersPOPG.eps}
@@ -216,15 +219,16 @@ The preliminary test with CHARMM GUI simulations show suggest that the model
 
 \section{Ca$2+$ binding in bilayers with negatively charged PG and PS lipids}
 
-Ion binding affinity in lipid bilayer containing PC lipids can be 
-measured by using C-H bond order parameters for headgroup $\alpha$ and
-$\beta$ carbons by using the electrometer concept. The decrease of these 
-order parameters is linearly proportional to the amount of bound charge 
-in bilayer \cite{??,catte16}. The electrometer concept can be used also
-for bilayers containing PC lipids mixed with charged lipids \cite{macdonald87,roux90,??}.
+PC lipid headgroup order parameters can used to measure ion binding
+affinity, because their magnitude is linearly proportional
+to the amount of bound charge in bilayer \cite{seelig87,catte16}.
+This molecular electrometer concept can be used also
+for bilayers containing PC lipids mixed with charged lipids \cite{borle85,macdonald87,roux90}.
 This is demonstrated in Figs \ref{OrderParametersWithCaCl},
-\ref{OrderParametersWithCaClBELOW1M} and \ref{OrderParameterCHANGESWithCaClBELOW1M}, where PC headgroup order parameters 
-as a function of CaCl$_2$ concentration are shown from experiments with POPC and PS or PG.
+\ref{OrderParametersWithCaClBELOW1M} and \ref{OrderParameterCHANGESWithCaClBELOW1M},
+showing order parameters for PC headgroup $\alpha$ and $\beta$ carbons
+as a function of CaCl$_2$ concentration in the presence of different amounts of
+negatively charged PS or PG lipids.
 \begin{figure}[]
   \centering
   \includegraphics[width=9.0cm]{../Figs/LIPIDSwithCaCl.eps}
@@ -247,37 +251,44 @@ as a function of CaCl$_2$ concentration are shown from experiments with POPC and
   \centering
   \includegraphics[width=9.0cm]{../Figs/CHANGESwithCaCl.eps}
   \caption{\label{OrderParameterCHANGESWithCaClBELOW1M}
-    Changes in order parameters
+    The change of PC headgroup order parameters
+    in the presence of different amount of negatively charged lipids
+    respect to the values without added CaCl$_2$.
+    The original data is the same as in Fig. \ref{OrderParametersWithCaCl}. 
   }
 \end{figure}
 
-Order parameters increase when PS or PG are mixed with PC 
-in the absence of additional ions, as seen from Figs. 
-\ref{OrderParametersWithCaCl} and \ref{OrderParametersWithCaClBELOW1M}.
-In electrometer concept this is explained by the tilting of
-headgroup more parallel to membrane normal \cite{??}.
-The order parameter decrease with increasing CaCl$_2$ concentration 
-is explained by the tilting of headgroup more perpendicular
-to membrane normal. This decrease is shown to be a good measure
-for the amount of bound ions in lipid bilayer with PC lipids \cite{??,catte16}.
+PC headgroup order parameters increase when negatively charged
+PS or PG are added to PC bilayer in the absense of added CaCl$_2$,
+as expected based on electrometer concept \cite{seelig87}
+(see Fig. \ref{OrderParametersWithCaClBELOW1M}).
+%In electrometer concept this is explained by the tilting of
+%headgroup more parallel to membrane normal \cite{??}.
+Further, the order parameters decrease with the addition
+of CaCl$_2$ and the decrease is more pronounced for systems with more
+negatively charged lipids (see Fig. \ref{OrderParameterCHANGESWithCaClBELOW1M}).
+At CaCl$_2$ concentrations ($\sim$ 50-300mM) where order parameters reach the values for pure PC,
+the Ca2+ binding is presumably fully cancels the charge from negative lipids and
+overcharging occurs above these concenterations.
+The interpretation of this data and some other results has been that \cite{seelig90}
+\begin{displayquote}
+  {\it ''(i) Ca$^{2+}$ binds to neutral lipids (phosphatidylcholine, phosphatidylethanolamine) and negatively charged lipids
+  (phosphatidylglycerol) with approximately the same binding constant of K = 10-20 M$^{-1}$; (ii) the free Ca$^{2+}$
+  concentration at the membrane interface is distinctly enhanced if the membrane carries a negative surface
+  charge, either due to protein or to lipid; (iii) increased inter-facial Ca$^{2+}$ also means increased amounts
+  of bound Ca$^{2+}$ at neutral and charged lipids; (iv) the actual binding step can be described by a Langmuir
+  adsorption isotherm with a 1 lipid:1 Ca$^{2+}$ stoichiometry, provided the interfacial concentration C$_M$, is
+  used to describe the chemical binding equilibrium.''}
+\end{displayquote}
 
-The order parameter decrease as a function of added CaCl$_2$
-for systems with different amount of negative charge are shown 
-in Fig. \ref{OrderParameterCHANGESWithCaClBELOW1M}.
-As expected, the order parameter decrease is more 
-pronounced with increasing amount of negatively charged lipids in
-bilayer. This is explained by the increase of cation concentration
-in proximity of bilayer containing negatively charged lipids \cite{??}.
-
-In addition to the changes in PC headgroup order parameters with 
-ion binding, also changes in PS and PG headgroup order parameters
-are measured.
-
+Also the experimental order parameters for PS and PG headgroups
+as a function of CaCl$_2$ concentration are shown in Fig. \ref{PSPGchangesWITHCaCl}.
+\todo{These should be compared to simulations for potential structural interpretation of the changes.}
 \begin{figure}[]
   \centering
   \includegraphics[width=9.0cm]{../Figs/PSPGwithCaCl.eps}
   \caption{\label{PSPGchangesWITHCaCl}
-    Changes in order parameters
+    PG and PS order parameters a function CaCl$_2$ concentration taken from \cite{borle85} and \cite{roux90}, respectively.
   }
   \todo{Get the small concentration data from the inserts}
 \end{figure}
