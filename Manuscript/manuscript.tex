@@ -41,7 +41,7 @@
 % Multiple \preprint commands are allowed.
 %\preprint{}
 
-\title{NMRlipids IV: Other than PC headgroups} %Title of paper
+\title{NMRlipids IV: Headgroup \& glycerol backbone structures, and cation binding in bilayers with PE, PG and PS lipids} %Title of paper
 
 % repeat the \author .. \affiliation  etc. as needed
 % \email, \thanks, \homepage, \altaffiliation all apply to the current author.
@@ -55,9 +55,10 @@
 \author{O. H. Samuli Ollila}
 \email[]{samuli.ollila@helsinki.fi}
 %\homepage[]{Your web page}
-%\thanks{}
-%\altaffiliation{}
-\affiliation{University of Helsinki}
+\affiliation{Institute of Organic Chemistry and Biochemistry,
+Academy of Sciences of the Czech Republic, 
+Prague 6, Czech Republic}
+\affiliation{Institute of Biotechnology, University of Helsinki}
 
 
 % Collaboration name, if desired (requires use of superscriptaddress option in \documentclass). 
@@ -163,7 +164,7 @@ thus only absolute values are used for now.
 
 Based on superficial reading, the conclusions in the literature are roughly \\ 
 1) glycerol backbone structures are largely similar irrespectively of the headroup \cite{gally81}, \\
-2) glycerol backbone and headgroup strucure and behaviour are similar in model membranes and in bacteria \cite{gally81,scherer87,seelig90}, \\
+2) glycerol backbone and headgroup structure and behaviour are similar in model membranes and in bacteria \cite{gally81,scherer87,seelig90}, \\
 3) headgroup structures are similar in PC, PE and PG lipids, while headgroup is more rigid in PS lipids \cite{wohlgemuth80,buldt81}. \\
 Extensive discussion about structural details of PE, PG or PS headgroups do not exists (as far as I know), 
 In contrast to PC lipids (see \cite{botan15} and references therein).
@@ -183,7 +184,7 @@ and forking in $\alpha$.
   \centering
   \includegraphics[width=9.0cm]{../Figs/HGorderparametersPOPS.eps}
   \caption{\label{HGorderParametersPOPS}
-    Order parameters for POPS headgroup and glycerol backbone from simulations and experiments without CaCl$_2$ 
+    Order parameters for POPS headgroup and glycerol backbone from simulations with CHARMM GUI parameters and experiments without CaCl$_2$ 
     (DOPS from \cite{browning80} contains 0.1M of NaCl, POPC:POPS mixture from \cite{roux90}).
     Absolute values are shown for experimental data, because signs are not known.
     Simulations values are -S$_{CH}$
@@ -203,7 +204,7 @@ and magnitudes of $\beta$ and $g_1$ order parameters.
   \centering
   \includegraphics[width=9.0cm]{../Figs/HGorderparametersPOPG.eps}
   \caption{\label{HGorderParametersPOPG}
-    Order parameters for PG headgroup and glycerol backbone from simulations and experiments without CaCl$_2$ 
+    Order parameters for PG headgroup and glycerol backbone from simulations with CHARMM GUI parameters and experiments without CaCl$_2$ 
     (POPG from \cite{borle85} contains 10mM of PIPES, DPPG from \cite{wohlgemuth80} contains 10mM PIPES and 100mM CaCl,
     E.Coli PG results from \cite{gally81}).
     Absolute values are shown, because signs are not known for experimental data.
@@ -217,7 +218,7 @@ and magnitudes of $\beta$ and $g_1$ order parameters.
   \todo{Experimental signs of the order parameters would highly useful.}
 \end{figure}
 
-\section{Ca$2+$ binding in bilayers with negatively charged PG and PS lipids}
+\section{Ca$^{2+}$ binding in bilayers with negatively charged PG and PS lipids}
 
 PC lipid headgroup order parameters can used to measure ion binding
 affinity, because their magnitude is linearly proportional
@@ -268,17 +269,20 @@ Further, the order parameters decrease with the addition
 of CaCl$_2$ and the decrease is more pronounced for systems with more
 negatively charged lipids (see Fig. \ref{OrderParameterCHANGESWithCaClBELOW1M}).
 At CaCl$_2$ concentrations ($\sim$ 50-300mM) where order parameters reach the values for pure PC,
-the Ca2+ binding is presumably fully cancels the charge from negative lipids and
+the Ca2+ binding presumably fully cancels the charge from negative lipids and
 overcharging occurs above these concenterations.
 The interpretation of this data and some other results has been that \cite{seelig90}
 \begin{displayquote}
   {\it ''(i) Ca$^{2+}$ binds to neutral lipids (phosphatidylcholine, phosphatidylethanolamine) and negatively charged lipids
-  (phosphatidylglycerol) with approximately the same binding constant of K = 10-20 M$^{-1}$; (ii) the free Ca$^{2+}$
-  concentration at the membrane interface is distinctly enhanced if the membrane carries a negative surface
-  charge, either due to protein or to lipid; (iii) increased inter-facial Ca$^{2+}$ also means increased amounts
-  of bound Ca$^{2+}$ at neutral and charged lipids; (iv) the actual binding step can be described by a Langmuir
-  adsorption isotherm with a 1 lipid:1 Ca$^{2+}$ stoichiometry, provided the interfacial concentration C$_M$, is
-  used to describe the chemical binding equilibrium.''}
+    (phosphatidylglycerol) with approximately the same binding constant of K = 10-20 M$^{-1}$; \\
+    (ii) the free Ca$^{2+}$
+    concentration at the membrane interface is distinctly enhanced if the membrane carries a negative surface
+    charge, either due to protein or to lipid; \\
+    (iii) increased inter-facial Ca$^{2+}$ also means increased amounts
+    of bound Ca$^{2+}$ at neutral and charged lipids; \\
+    (iv) the actual binding step can be described by a Langmuir
+    adsorption isotherm with a 1 lipid:1 Ca$^{2+}$ stoichiometry, provided the interfacial concentration C$_M$, is
+    used to describe the chemical binding equilibrium.''}
 \end{displayquote}
 
 Also the experimental order parameters for PS and PG headgroups
