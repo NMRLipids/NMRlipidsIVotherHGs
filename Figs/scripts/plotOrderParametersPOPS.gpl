@@ -12,8 +12,14 @@ set key above maxcols 2 maxrows 5
 
 plot "../../Data/POPS1POPC5orderparametersNOCaSIM.dat" using 1:(-$2) title 'POPS:POPC 1:5 simulation' pt 5 ps 1.6 lc rgb 'red',\
      "../../Data/POPS1POPC5orderparametersNOCaSIM.dat" using 1:(-$3) notitle pt 5 ps 1.6 lc rgb 'red',\
+     "../../Data/POPSorderparametersCHARMM1.dat" using 1:(-$2) title 'POPS simulation' pt 7 ps 1.6 lc rgb 'red',\
+     "../../Data/POPSorderparametersCHARMM2.dat" using 1:(-$3) notitle pt 7 ps 1.6 lc rgb 'red',\
      "../../Data/POPS1POPC5orderparametersNOCaEXP.dat" using 1:($2*0.00784) title 'POPS:POPC 1:5 experiment' pt 5 ps 1.6 lc rgb 'black',\
      "../../Data/POPS1POPC5orderparametersNOCaEXP.dat" using 1:($3*0.00784) notitle pt 5 ps 1.6 lc rgb 'black',\
+     "../../Data/DOPSorderparametersCHARMM1.dat" using 1:(-$2) title 'DOPS CHARMM36 T=303K' pt 4 ps 1.6 lc rgb 'red',\
+     "../../Data/DOPSorderparametersCHARMM2.dat" using 1:(-$3) notitle pt 4 ps 1.6 lc rgb 'red',\
+     "../../Data/DOPSorderparametersSLIPIDS1.dat" using 1:(-$2) title 'DOPS SLIPIDS T=303K' pt 4 ps 1.6 lc rgb 'green',\
+     "../../Data/DOPSorderparametersSLIPIDS2.dat" using 1:(-$3) notitle pt 4 ps 1.6 lc rgb 'green',\
      "../../../MATCH/Data/Lipid_Bilayers/DOPS/T303K/Headgroup_Glycerol_Order_Parameters_Experiments.dat" using 1:($2*0.00784) title 'DOPS experiment T=303K' pt 4 ps 1.6 lc rgb 'black',\
      "../../../MATCH/Data/Lipid_Bilayers/DOPS/T303K/Headgroup_Glycerol_Order_Parameters_Experiments.dat" using 1:($3*0.00784) notitle pt 4 ps 1.6 lc rgb 'black',\
 
