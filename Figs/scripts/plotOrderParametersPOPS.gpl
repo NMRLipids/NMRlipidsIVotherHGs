@@ -40,8 +40,28 @@ plot "../../Data/DOPSorderparametersCHARMM1.dat" using 1:(-$2) title 'DOPS CHARM
      "../../Data/DOPSorderparametersSLIPIDS1.dat" using 1:(-$3) notitle pt 5 ps 1.4 lc rgb 'green',\
      "../../Data/DOPSorderparametersSLIPIDS2.dat" using 1:(-$2) notitle pt 5 ps 1.4 lc rgb 'green',\
      "../../Data/DOPSorderparametersSLIPIDS2.dat" using 1:(-$3) notitle pt 5 ps 1.4 lc rgb 'green',\
-     "../../../MATCH/Data/Lipid_Bilayers/DOPS/T303K/MODEL_SLIPIDS/Headgroup_Glycerol_Order_Parameters_Simulations.dat" using 1:(-$2) notitle pt 5 ps 1.4 lc rgb 'green',\
-     "../../../MATCH/Data/Lipid_Bilayers/DOPS/T303K/MODEL_SLIPIDS/Headgroup_Glycerol_Order_Parameters_Simulations.dat" using 1:(-$3) notitle pt 5 ps 1.4 lc rgb 'green',\
+     "../../Data/DOPSorderparametersBERGER1.dat" using 1:(-$2) title 'DOPS BERGER T=303K' pt 5 ps 1.4 lc rgb 'blue',\
+     "../../Data/DOPSorderparametersBERGER1.dat" using 1:(-$3) notitle pt 5 ps 1.4 lc rgb 'blue',\
+     "../../Data/DOPSorderparametersBERGER2.dat" using 1:(-$2) notitle pt 5 ps 1.4 lc rgb 'blue',\
+     "../../Data/DOPSorderparametersBERGER2.dat" using 1:(-$3) notitle pt 5 ps 1.4 lc rgb 'blue',\
+     "../../Data/DOPSorderparametersCKP1pme1.dat" using 1:(-$2) title 'DOPS CKP1pme T=303K' pt 5 ps 1.4 lc rgb 'yellow',\
+     "../../Data/DOPSorderparametersCKP1pme1.dat" using 1:(-$3) notitle pt 5 ps 1.4 lc rgb 'yellow',\
+     "../../Data/DOPSorderparametersCKP1pme2.dat" using 1:(-$2) notitle pt 5 ps 1.4 lc rgb 'yellow',\
+     "../../Data/DOPSorderparametersCKP1pme2.dat" using 1:(-$3) notitle pt 5 ps 1.4 lc rgb 'yellow',\
+     "../../Data/DOPSorderparametersCKP1rf1.dat" using 1:(-$2) title 'DOPS CKP1rf T=303K' pt 7 ps 1.4 lc rgb 'yellow',\
+     "../../Data/DOPSorderparametersCKP1rf1.dat" using 1:(-$3) notitle pt 7 ps 1.4 lc rgb 'yellow',\
+     "../../Data/DOPSorderparametersCKP1rf2.dat" using 1:(-$2) notitle pt 7 ps 1.4 lc rgb 'yellow',\
+     "../../Data/DOPSorderparametersCKP1rf2.dat" using 1:(-$3) notitle pt 7 ps 1.4 lc rgb 'yellow',\
+     "../../Data/DOPSorderparametersCKP2pme1.dat" using 1:(-$2) title 'DOPS CKP2pme T=303K' pt 5 ps 1.6 lc rgb 'orange',\
+     "../../Data/DOPSorderparametersCKP2pme1.dat" using 1:(-$3) notitle pt 5 ps 1.6 lc rgb 'orange',\
+     "../../Data/DOPSorderparametersCKP2pme2.dat" using 1:(-$2) notitle pt 5 ps 1.6 lc rgb 'orange',\
+     "../../Data/DOPSorderparametersCKP2pme2.dat" using 1:(-$3) notitle pt 5 ps 1.6 lc rgb 'orange',\
+     "../../Data/DOPSorderparametersCKP2rf1.dat" using 1:(-$2) title 'DOPS CKP2rf T=303K' pt 7 ps 1.6 lc rgb 'orange',\
+     "../../Data/DOPSorderparametersCKP2rf1.dat" using 1:(-$3) notitle pt 7 ps 1.4 lc rgb 'orange',\
+     "../../Data/DOPSorderparametersCKP2rf2.dat" using 1:(-$2) notitle pt 7 ps 1.4 lc rgb 'orange',\
+     "../../Data/DOPSorderparametersCKP2rf2.dat" using 1:(-$3) notitle pt 7 ps 1.4 lc rgb 'orange',\
+     "../../../MATCH/Data/Lipid_Bilayers/DOPS/T303K/MODEL_SLIPIDS/Headgroup_Glycerol_Order_Parameters_Simulations.dat" using 1:(-$2) notitle pt 5 ps 1.0 lc rgb 'green',\
+     "../../../MATCH/Data/Lipid_Bilayers/DOPS/T303K/MODEL_SLIPIDS/Headgroup_Glycerol_Order_Parameters_Simulations.dat" using 1:(-$3) notitle pt 5 ps 1.0 lc rgb 'green',\
      "../../../MATCH/Data/Lipid_Bilayers/DOPS/T303K/Headgroup_Glycerol_Order_Parameters_Experiments.dat" using 1:($2*0.00784) title 'DOPS experiment T=303K' pt 5 ps 1.6 lc rgb 'black',\
      "../../../MATCH/Data/Lipid_Bilayers/DOPS/T303K/Headgroup_Glycerol_Order_Parameters_Experiments.dat" using 1:($3*0.00784) notitle pt 5 ps 1.6 lc rgb 'black'
 
