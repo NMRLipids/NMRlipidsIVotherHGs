@@ -28,6 +28,7 @@ plot "../../Data/POPS1POPC5orderparametersNOCaSIM.dat" using 1:(-$2) title 'POPS
      "../../Data/POPS1POPC5orderparametersNOCaEXP.dat" using 1:($2*0.00784) title 'POPS:POPC 1:5 experiment' pt 7 ps 1.6 lc rgb 'black',\
      "../../Data/POPS1POPC5orderparametersNOCaEXP.dat" using 1:($3*0.00784) notitle pt 7 ps 1.6 lc rgb 'black',\
 
+set yrange [-0.01:0.275] 
 plot "../../Data/DOPSorderparametersCHARMM1.dat" using 1:(-$2) title 'DOPS CHARMM36 T=303K' pt 5 ps 1.8 lc rgb 'red',\
      "../../Data/DOPSorderparametersCHARMM1.dat" using 1:(-$3) notitle pt 5 ps 1.8 lc rgb 'red',\
      "../../Data/DOPSorderparametersCHARMM2.dat" using 1:(-$2) notitle  pt 5 ps 1.8 lc rgb 'red',\
