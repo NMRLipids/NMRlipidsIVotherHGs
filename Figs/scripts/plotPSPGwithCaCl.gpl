@@ -6,20 +6,25 @@ set multiplot  layout 2,1
 set xrange [0:1] 
 #set ytic 0.05
 #set key box linestyle 1 linecolor rgb 'black'
-set key at screen 0.9,0.9 maxcols 1 maxrows 6
+set key at screen 0.9,0.95 maxcols 1 maxrows 6
 
 set ylabel "|S_{CH}^{/Symbol b}|"
 #set yrange [-0.075:-0.025] 
 plot "../../Data/POPS20_POPCwithCaBETA.dat" using 1:($2*0.00784) with linespoint title '20% of POPS in POPC' pt 5 lt 1 lc rgb 'red',\
-     "../../Data/POPC50_POPG50withCaALPHA_borle.dat" using 1:($3*0.00784) with linespoint title '50% POPG in POPC (T=298K)' pt 5 lt 1  lc rgb 'blue',\
-
+     "../../Data/POPC50_POPG50withCaALPHA_borle.dat" using 1:($3*0.00784) with linespoint title '50% POPG in POPC (T=298K)' pt 5 lt 1  lc rgb 'black',\
+     "../../Data/POPC50_POPG50withCa_CHARMMgui.dat" using 1:($8) with linespoint title '50% POPG in POPC (T=298K) CHARMM_GUI' pt 5 lt 1  lc rgb 'blue',\
+     "../../Data/POPC80_POPG20withCa_CHARMMgui.dat" using 1:($8) with linespoint title '20% POPG in POPC (T=298K) CHARMM_GUI' pt 6 lt 1  lc rgb 'blue',\
 
 set key at screen 0.9,0.87 maxcols 1 maxrows 6
 set ylabel "|S_{CH}^{/Symbol a}|"
 set xlabel "[ CaCl_2] M"
 #set yrange [-0.03:0.09] 
 plot  "../../Data/POPS20_POPCwithCaALPHA1.dat" using 1:($2*0.00784) with linespoint notitle pt 5 lt 1  lc rgb 'red',\
-      "../../Data/POPS20_POPCwithCaALPHA2.dat" using 1:($2*0.00784) with linespoint notitle pt 5 lt 1  lc rgb 'red'
+      "../../Data/POPS20_POPCwithCaALPHA2.dat" using 1:($2*0.00784) with linespoint notitle pt 5 lt 1  lc rgb 'red',\
+      "../../Data/POPC50_POPG50withCa_CHARMMgui.dat" using 1:($6) with linespoint notitle   pt 5 lt 1  lc rgb 'blue',\
+      "../../Data/POPC50_POPG50withCa_CHARMMgui.dat" using 1:($7) with linespoint notitle   pt 5 lt 1  lc rgb 'blue',\
+      "../../Data/POPC80_POPG20withCa_CHARMMgui.dat" using 1:($6) with linespoint notitle   pt 6 lt 1  lc rgb 'blue',\
+      "../../Data/POPC80_POPG20withCa_CHARMMgui.dat" using 1:($7) with linespoint notitle   pt 6 lt 1  lc rgb 'blue',\
 
 
 

@@ -1,0 +1,36 @@
+set size 1.0,1.0
+set terminal postscript portrait enhanced color dashed lw 1 "Helvetica" 14 
+set output "../CHANGESwithCaClPG.eps"
+set multiplot  layout 2,1
+
+set xrange [0:1] 
+#set ytic 0.05
+#set key box linestyle 1 linecolor rgb 'black'
+set key at screen 0.95,0.95 maxcols 1 maxrows 10
+
+set ylabel "{{/Symbol D}S_{CH}^{/Symbol b}"
+#set yrange [-0.075:-0.025] 
+plot       "../../Data/POPC50_POPG50withCaALPHA_borle.dat" using 1:(($2-9.9)*0.00784*0.43) with linespoint title 'POPC:POPG (T=298K) 1:1 exp' dt 2 pt 5 lt 1  lc rgb 'black',\
+	   "../../Data/POPC50_POPG50withCa_CHARMMgui.dat" using 1:($4+0.0643671721227) with linespoint notitle pt 5 lt 1  lc rgb 'blue',\
+	   "../../Data/POPC80_POPG20withCa_CHARMMgui.dat" using 1:($4+0.0698361738567) with linespoint notitle pt 6 lt 1 ps 1.5 lc rgb 'blue',\
+	   #"../../Data/POPC_POPSwithCaBETA.dat" using 1:((-1)*($2-3.99999493027)*0.00784) with linespoint notitle pt 5 lt 1 lc rgb 'red',\
+	   #     "../../../lipid_ionINTERACTION/Data/DPPC/CaCl/EXP-Akutsu1981-T323K.dat" using ($1*0.001):((-1)*($2-4.81)*0.00784) with linespoint notitle pt 7 lt 1 lc rgb 'black',\
+	   #     "../../../lipid_ionINTERACTION/Data/DPPC/CaCl/EXP-Akutsu1981-T332K.dat" using ($1*0.001):((-1)*($2-4.22)*0.00784) with linespoint notitle pt 6 lt 1 lc rgb 'black',\
+
+set ylabel "{{/Symbol D}S_{CH}^{/Symbol a}"
+set xlabel "[ CaCl_2] M"
+#set yrange [-0.03:0.09] 
+plot  "../../Data/POPC50_POPG50withCaALPHA_borle.dat" using 1:(($2-9.9)*0.00784) with linespoint title 'POPC:POPG (T=298K) 1:1 exp' pt 5 lt 1  lc rgb 'black',\
+      "../../Data/POPC50_POPG50withCa_CHARMMgui.dat" using 1:($2-0.0457940110976) with linespoint title 'POPC:POPG (T=298K) 1:1 CHARMM' pt 5 lt 1  lc rgb 'blue',\
+      "../../Data/POPC50_POPG50withCa_CHARMMgui.dat" using 1:($3-0.0458867086243) with linespoint notitle pt 5 lt 1  lc rgb 'blue',\
+      "../../Data/POPC80_POPG20withCa_CHARMMgui.dat" using 1:($2-0.0440824328039) with linespoint title 'POPC:POPG (T=298K) 4:1 CHARMM' ps 1.5 pt 6 lt 1  lc rgb 'blue',\
+      "../../Data/POPC80_POPG20withCa_CHARMMgui.dat" using 1:($3-0.0382494524554) with linespoint notitle pt 6 lt 1 ps 1.5 lc rgb 'blue',\
+      #"../../Data/POPC50_POPG50withCaALPHA.dat" using 1:(($2-9.9)*0.00784) with linespoint title 'POPC:POPG (with 0.1M NaCl, T=298K) 1:1' pt 4 lt 1  lc rgb 'black',\
+      #"../../../lipid_ionINTERACTION/Data/POPC/CaCl/EXP-Altenbach1984-T313K.dat" using 1:(($2-6.1)*0.00784) with linespoint title 'POPC 1:0' pt 5 lc rgb 'black',\
+     #"../../../lipid_ionINTERACTION/Data/DPPC/CaCl/EXP-Akutsu1981-T323K.dat" using ($1*0.001):(($3-5.95)*0.00784) with linespoint title 'DPPC (T=323K) 1:0' pt 7 lt 1 lc rgb 'black',\
+     #"../../../lipid_ionINTERACTION/Data/DPPC/CaCl/EXP-Akutsu1981-T332K.dat" using ($1*0.001):(($3-5.95)*0.00784) with linespoint title 'DPPC (T=332K) 1:0' pt 6 lt 1 lc rgb 'black',\
+     #"../../Data/POPC_POPSwithCaALPHA.dat" using 1:(($2-7.59942559984)*0.00784)  with linespoint title 'POPC:POPS 5:1' pt 5 lt 1 lc rgb 'red',\
+     #"../../Data/POPC80_POPG20withCaALPHA.dat" using 1:(($2-8.10)*0.00784)  with linespoint title 'POPC:POPG (with 0.1M NaCl, T=298K) 8:2' pt 5 lt 1 lc rgb 'green',\
+
+
+unset multiplot

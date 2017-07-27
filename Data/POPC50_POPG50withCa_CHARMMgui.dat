@@ -1,0 +1,11 @@
+# Binding of Ca2+ to Mixtures of 50 mol % POPG plus 50 mol % 
+# Potassium counterions
+# Order parameters
+#
+# From https://www.dropbox.com/s/2icpndyjx4wq4zd/PCPG-results.txt?dl=0
+# by Jesper Madsen https://www.blogger.com/profile/00989014794393139185
+#
+#[CaCl]    POPC_a1           POPC_a2          POPC_b1            POPC_b2  POPG_a1            POPG_a2                POPG_b
+0          0.0457940110976   0.0458867086243    -0.0643671721227   -      0.0663579284967     0.0380044478178       0.0658913671264
+0.15       0.0208860677872   0.023785325604    -0.0906894195119    -       0.0249712438871    0.0193144565116       0.0180224635022
+1.0        -0.0113240745438  -0.0300668216303   -0.122475932777   -         0.0332196059085    0.00933366271984     0.0229095373986
