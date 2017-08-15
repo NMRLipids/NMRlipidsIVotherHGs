@@ -176,6 +176,7 @@ Several simulations containing PE, PG and PS lipids have been published \cite{??
 however, glycerol backbone and headgroup order parameters are not compared to
 the experiments (based on superficial reading of literature).
 
+\subsection{PE headgroup}
 Absolute values of order parameters between Slipids simulations \cite{??}
 and experiments for DPPE are shown in Fig. \ref{HGorderParametersPE}.
 Glycerol bakcbone order parameters in Slipids are off from experiments,
@@ -197,10 +198,50 @@ than for PC.
   \todo{Experimental signs of the order parameters would be highly useful.} \\
 \end{figure}
 
-Comparison between experiments and simulations with CHARMM GUI
-parameters for PS lipids in Fig. \ref{HGorderParametersPOPS} suggest that
-the model overestimates magnitudes in $\beta$ and g$_3$ order parameters
-and forking in $\alpha$.
+\subsection{PS headgroup}
+Experimental order parameters for bilayers with PS headgroups are 
+available in literature only for DOPS  \cite{browning80}. These are shown together
+with the results from different simulation models in Fig. \ref{HGorderParametersDOPS}.
+The signs are not yet know experimentally.
+Before the experimental data becomes available we have denoted 
+negative signs for $\beta$ and $\alpha$ segment order parameters,
+because this selection of signs is in best agreement with the most simulation
+results. With this interpretation the CHARMM36, CHARMM36ua and Slipids
+models would be in relatively good agreement with experimental data in
+the headgroup region. However, if the experimental signs turn out to
+be different than expected, this conclusion will change.
+\begin{figure}[]
+  \centering
+  \includegraphics[width=9.0cm]{../Figs/HGorderparametersDOPS.eps}
+  \caption{\label{HGorderParametersDOPS}
+    Order parameters for DOPS headgroup and glycerol
+    backbone from simulations with different models and experiments without CaCl$_2$ 
+    Experimental data from \cite{browning80} contains 0.1M of NaCl.
+    Signs are not known experimentally. They chosen to give best agreement simulations.
+  }
+  \todo{Experimental signs of the order parameters would highly useful.} \\
+\end{figure}
+
+The glycerol backbone order parameters for Slipids model are, however,
+far from experimental values, as previously observed also for PC 
+lipids \cite{botan15}. The glycerol backbone structures between PC and
+PS lipids simulated with CHARMM36 are compared with the structures
+simulated with CHARMM36 in Fig. \ref{glycerol_buslaev}.
+The differences in sampled conformation leading to the order parameter
+differences are clearly visible in the figure.
+\begin{figure}[]
+  \centering
+  \includegraphics[width=9.0cm]{../Figs/glycerol_buslaev.png}
+  \caption{\label{glycerol_buslaev}
+    Snapshots overlayed from different simulations for glycerol backbone region
+    by Pavel Buslaev.
+  }
+\end{figure}
+
+%Comparison between experiments and simulations with CHARMM GUI
+%parameters for PS lipids in Fig. \ref{HGorderParametersPOPS} suggest that
+%the model overestimates magnitudes in $\beta$ and g$_3$ order parameters
+%and forking in $\alpha$.
 \begin{figure}[]
   \centering
   \includegraphics[width=9.0cm]{../Figs/HGorderparametersPOPS.eps}
@@ -220,6 +261,7 @@ and forking in $\alpha$.
   pure POPS? Discussion in https://github.com/NMRLipids/NMRlipidsIVotherHGs/issues/1}
 \end{figure}
 
+\subsection{PG headgroup}
 Comparison between experiments and simulations with CHARMM GUI
 parameters for PG lipids in Fig. \ref{HGorderParametersPOPG} suggest that
 the model overestimates forking in $\gamma$ and $\alpha$ order parameters,
