@@ -199,17 +199,12 @@ than for PC.
 \end{figure}
 
 \subsection{PS headgroup}
-Experimental order parameters for bilayers with PS headgroups are 
-available in literature only for DOPS  \cite{browning80}. These are shown together
-with the results from different simulation models in Fig. \ref{HGorderParametersDOPS}.
-The signs are not yet know experimentally.
-Before the experimental data becomes available we have denoted 
-negative signs for $\beta$ and $\alpha$ segment order parameters,
-because this selection of signs is in best agreement with the most simulation
-results. With this interpretation the CHARMM36, CHARMM36ua and Slipids
-models would be in relatively good agreement with experimental data in
-the headgroup region. However, if the experimental signs turn out to
-be different than expected, this conclusion will change.
+Order parameters for bilayers with PS headgroups
+from different experiments and simulations are shown in
+Figs. \ref{HGorderParametersDOPS} and  \ref{HGorderParametersPOPS}.
+None of the tested models gives satisfactory agreement with
+experiments for order parameters in headgroup $\alpha$ and $\beta$
+carbons.
 \begin{figure}[]
   \centering
   \includegraphics[width=9.0cm]{../Figs/HGorderparametersDOPS.eps}
@@ -217,14 +212,31 @@ be different than expected, this conclusion will change.
     Order parameters for DOPS headgroup and glycerol
     backbone from simulations with different models and experiments without CaCl$_2$ 
     Experimental data from \cite{browning80} contains 0.1M of NaCl.
-    Signs are not known experimentally. They chosen to give best agreement simulations.
+    Signs are taken from experiments for POPS described in Supplementary Information.
   }
-  \todo{Experimental signs of the order parameters would highly useful.} \\
+\end{figure}
+\begin{figure}[]
+  \centering
+  \includegraphics[width=9.0cm]{../Figs/HGorderparametersPOPS.eps}
+  \caption{\label{HGorderParametersPOPS}
+    Headgroup and glycerol backbone order parameters for systems with POPS 
+    from simulations with different models and experiments \cite{roux90}.
+    Signs are taken from experiments described in Supplementary Information.
+  }
+  \todo{More simulation data for lipids with different headgroups to be collected} \\
+  \todo{Some simulations contain potassium as counterions, while some sodium.
+    All experiments here contain some amount of sodium salt. The best
+    ion concentrations for comparison should be figured out.} \\
+  \todo{Why there is difference between CHARMM36 simulation results from POPS:POPC mixture and
+  pure POPS? Discussion in https://github.com/NMRLipids/NMRlipidsIVotherHGs/issues/1}
 \end{figure}
 
-The glycerol backbone order parameters for Slipids model are, however,
-far from experimental values, as previously observed also for PC 
-lipids \cite{botan15}. The glycerol backbone structures between PC and
+Glycerol backbone order parameters seems similar in all models,
+except in Slipids. Even thought glycerol backbone order parameter
+values are not yet experimentally available for PS lipids,
+the comparison with the results for PC lipids suggest that
+Slipid model do not correctly capture the glycerol backbone
+structure \cite{botan15}. The glycerol backbone structures between PC and
 PS lipids simulated with CHARMM36 are compared with the structures
 simulated with CHARMM36 in Fig. \ref{glycerol_buslaev}.
 The differences in sampled conformation leading to the order parameter
@@ -242,24 +254,6 @@ differences are clearly visible in the figure.
 %parameters for PS lipids in Fig. \ref{HGorderParametersPOPS} suggest that
 %the model overestimates magnitudes in $\beta$ and g$_3$ order parameters
 %and forking in $\alpha$.
-\begin{figure}[]
-  \centering
-  \includegraphics[width=9.0cm]{../Figs/HGorderparametersPOPS.eps}
-  \caption{\label{HGorderParametersPOPS}
-    Order parameters for POPS (top) and DOPS (bottom) headgroup and glycerol
-    backbone from simulations with different models and experiments without CaCl$_2$ 
-    (DOPS from \cite{browning80} contains 0.1M of NaCl, POPC:POPS mixture from \cite{roux90}).
-    Absolute values are shown for experimental data, because signs are not known.
-    Simulations values are -S$_{CH}$
-  }
-  \todo{More simulation data for lipids with different headgroups to be collected} \\
-  \todo{Some simulations contain potassium as counterions, while some sodium.
-    All experiments here contain some amount of sodium salt. The best
-    ion concentrations for comparison should be figured out.} \\
-  \todo{Experimental signs of the order parameters would highly useful.} \\
-  \todo{Why there is difference between CHARMM36 simulation results from POPS:POPC mixture and
-  pure POPS? Discussion in https://github.com/NMRLipids/NMRlipidsIVotherHGs/issues/1}
-\end{figure}
 
 \subsection{PG headgroup}
 Comparison between experiments and simulations with CHARMM GUI
@@ -397,6 +391,7 @@ data is not available for comparison for this mixture.
 
 \section{Conclusions}
 
+
 % Tables may be be put in the text as floats.
 % Here is an example of the general form of a table:
 % Fill in the caption in the braces of the \caption{} command. Put the label
@@ -420,6 +415,46 @@ data is not available for comparison for this mixture.
 {\bf SUPPLEMENTARY INFORMATION}
 \end{center}
 
+\section{Measurements of order parameter sign}
+
+Fig. \ref{PShgSIGNS} summarizes the experimental results on the order parameter sign
+measurement for POPS sample. The experimental protocol is the same used in Ref. \citenum{ferreira16}.
+In (a) you see the headgroup region of the INEPT spectrum where alpha and beta are
+identified. In (b) you have the R-PDLF slices for alpha and beta where you see one single
+splitting for beta (which gives an order parameter equal to 0.12), and for alpha a superposition
+of a large splitting (order parameter equal to 0.09) and a very small splitting which cannot be
+calculated. On the bottom you have the S-DROSS slices of these two carbons. The grey lines show a
+random collection of slices from noise such that it gets clear what is significant. The S-DROSS
+slice for beta clearly shows that the order parameter is negative. The slice for alpha shows that
+the higher order parameter is positive and suggests that the smaller order parameter is negative
+(from the deviation towards negative values in the longer t1 times).
+\begin{figure}[]
+  \centering
+  \includegraphics[width=9.0cm]{../Figs/PShgSIGNS.pdf}
+  \caption{\label{PShgSIGNS}
+    Experimental results for sign measurement for POPS sample
+  }
+\end{figure}
+
+The results updated with SIMPSON simulations for the SDROSS profiles
+are shown in Fig. \ref{PShgSIGNSsimpson}. The value for the smaller
+alpha order parameter is taken from Fig 3 in Ref. \citenum{roux91},
+because resolution in 13C NMR experiments was nor high enough to determine
+numerical value for this. The plots in Fig. \ref{PShgSIGNSsimpson} (c) show
+the following. The error bars and points are the experimental SDROSS data.
+The thick lines are SIMPSON simulations. The simulations were done by using
+the order parameter for beta equal to -0.12 and for alpha one order parameter
+equal to 0.09 and the other equal to -0.02 (black) or 0.02 (grey).
+Since the black lines agree with experimental data, we conlude that
+the order parameters for $\beta$ carbon are -0.12 and for $\alpha$
+order parameters are 0.09 and -0.02.
+\begin{figure}[]
+  \centering
+  \includegraphics[width=9.0cm]{../Figs/PShgSIGNSsimpson.pdf}
+  \caption{\label{PShgSIGNSsimpson}
+    Experimental results for sign measurement for POPS sample
+  }
+\end{figure}
 
 % Create the reference section using BibTe
 \bibliography{refs.bib}

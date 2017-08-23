@@ -46,8 +46,8 @@ plot "../../Data/DOPSorderparametersCHARMM1.dat" using 1:(-$2) title 'DOPS CHARM
      "../../Data/DOPSorderparametersCKP2rf2.dat" using 1:(-$3) notitle pt 7 ps 1.4 lc rgb 'orange',\
      "../../../MATCH/Data/Lipid_Bilayers/DOPS/T303K/MODEL_SLIPIDS/Headgroup_Glycerol_Order_Parameters_Simulations.dat" using 1:(-$2) notitle pt 5 ps 1.0 lc rgb 'green',\
      "../../../MATCH/Data/Lipid_Bilayers/DOPS/T303K/MODEL_SLIPIDS/Headgroup_Glycerol_Order_Parameters_Simulations.dat" using 1:(-$3) notitle pt 5 ps 1.0 lc rgb 'green',\
-     "../../../MATCH/Data/Lipid_Bilayers/DOPS/T303K/Headgroup_Glycerol_Order_Parameters_Experiments.dat" using 1:($2*0.00784) title 'DOPS experiment T=303K' pt 5 ps 1.6 lc rgb 'black',\
-     "../../../MATCH/Data/Lipid_Bilayers/DOPS/T303K/Headgroup_Glycerol_Order_Parameters_Experiments.dat" using 1:($3*0.00784) notitle pt 5 ps 1.6 lc rgb 'black'
+     "../../../MATCH/Data/Lipid_Bilayers/DOPS/T303K/Headgroup_Glycerol_Order_Parameters_Experiments.dat" using 1:((-$2)*0.00784) title 'DOPS experiment T=303K' pt 5 ps 1.6 lc rgb 'black',\
+     "../../../MATCH/Data/Lipid_Bilayers/DOPS/T303K/Headgroup_Glycerol_Order_Parameters_Experiments.dat" using 1:((-$3)*0.00784) notitle pt 5 ps 1.6 lc rgb 'black'
 
 #unset multiplot
 
