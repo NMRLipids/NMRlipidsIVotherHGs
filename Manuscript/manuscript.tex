@@ -424,6 +424,40 @@ data is not available for comparison for this mixture.
 {\bf SUPPLEMENTARY INFORMATION}
 \end{center}
 
+\section{Simulated systems}
+\begin{table*}[!p]
+%\begin{sidewaystable*}[!p]
+\centering
+\caption{List of MD simulations. The salt concentrations calculated as 
+   [salt]=N$_{\rm c} \times$[water]\,/\,N$_{\rm w}$, where [water]\,=\,55.5~M.
+%   these correspond the concentrations reported in the experiments by Akutsu et al.~\cite{akutsu81}.
+%   The lipid force fields named as in our previous work~\cite{botan15}.
+}\label{IONsystems}
+\begin{minipage}[t]{\textwidth}
+\begin{tabular}{l c c r r r r r r c c}
+  %\hline
+  % some footnotes are not visible in typeset-MS (pdf)
+ lipid/counter-ions & force field for lipids / ions & NaCl (mM) & CaCl$_2$\,(mM) &  \footnote{Number of lipid molecules}N$_{\rm l}$   &  \footnote{Number of water molecules}N$_{\rm w}$   & \footnote{Number of additional cations}N$_{\rm c}$  & \footnote{Simulation temperature}T (K)  & \footnote{Total simulation time}t$_{{\rm sim}}$(ns) & \footnote{Time used for analysis}t$_{{\rm anal}}$ (ns) &   \footnote{Reference for simulation files}files\\
+  \hline
+  DPPE  & Slipids \cite{jambeck12b} &0 & 0        & 288 			   		& 9386 & 0  & 336  & 200 & 100 & \cite{slipidsDPPEfiles}  \\
+    \hline
+    DOPS/Na$^+$  & CHARMM36 \cite{??}  \todoi{Correct citation for CHARMM DOPS}      &0 & 0        & 128 			   		& 4480 & 0  & 303  & 500 & 100 & \cite{??}
+    \todoi{By Piggot: http://nmrlipids.blogspot.com/2017/03/nmrlipids-iv-headgroup-glycerol.html?showComment=1491425687561\#c4932902612512697301. We need to decide the switching version or discuss this somehow.}  \\
+    DOPS/Na$^+$  & CHARMM36ua \cite{??} \todoi{Correct citation for CHARMMua DOPS}        &0 & 0        & 128 			   		& 4480 & 0  & 303  & 500 & 100 & \cite{??}
+    \todoi{Delivered by Piggot. We need to decide the switching version or discuss this somehow. Data to be uploaded in Zenodo?}  \\
+    DOPS/Na$^+$  & Slipids \cite{jambeck13}        &0 & 0        & 128 			   		& 4480 & 0  & 303  & 500 & 100 & \cite{??}
+    \todoi{Delivered by Piggot. We need to decide the cut-off version or discuss this somehow. Data to be uploaded in Zenodo?}  \\
+    DOPS/Na$^+$  & Slipids \cite{jambeck13}        &0 & 0        & 288 			   		& 11232 & 0  & 303  & 200 & 100 & \cite{slipidsDOPSfiles} \\
+    DOPS/Na$^+$  & Berger \cite{mukhopadhyay04}        &0 & 0        & 128 			   		& 4480 & 0  & 303  & 500 & 100 & \cite{??}
+    \todoi{Delivered by Piggot. Data to be uploaded in Zenodo?}  \\
+    DOPS/Na$^+$  & GROMOS-CKP \cite{??} \todoi{Correct citation(s) for CKP.}       &0 & 0        & 128 			   		& 4480 & 0  & 303  & 500 & 100 & \cite{??}
+    \todoi{Delivered by Piggot. We need to decide between RF and PME or discuss this somehow. Data to be uploaded in Zenodo?}  \\
+\end{tabular}
+\end{minipage}
+%\end{sidewaystable*} 
+\end{table*}
+
+
 \section{Measurements of order parameter sign}
 
 Fig. \ref{PShgSIGNS} summarizes the experimental results on the order parameter sign
