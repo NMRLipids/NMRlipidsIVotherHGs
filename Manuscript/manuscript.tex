@@ -177,15 +177,21 @@ however, glycerol backbone and headgroup order parameters are not compared to
 the experiments (based on superficial reading of literature).
 
 \subsection{PE headgroup}
-Absolute values of order parameters between Slipids simulations \cite{??}
+Order parameters from Slipids simulations 
 and experiments for DPPE are shown in Fig. \ref{HGorderParametersPE}.
-Glycerol bakcbone order parameters in Slipids are off from experiments,
-as systematically observed in this and previous studies \cite{??}.
-Alpha order parameter is too low, but beta shows apparent agreement
+Glycerol backbone order parameters in Slipids are off from experiments,
+as already observed previously for PC lipids \cite{botan15}.
+Order parameter signs for PE are not experimentally measured yet.
+For headgroup the signs are set to give best agreement with simulations
+and for glycerol to be consistent with experimental signs for PC.
+Order parameter for $\beta$ carbon shows apparent agreement
 with experiments. However, the sign of beta order parameter is positive,
 in contrast to PC where negative sign was measured. Thus, the the beta order
 parameter agrees with experiment with the assumption that its sign is opposite
-than for PC.
+than for PC. This is yet to be confirmed by experiments.
+Order parameter for $\alpha$ carbon is too close to zero, even if the sign
+would be correct.
+
 \begin{figure}[]
   \centering
   \includegraphics[width=9.0cm]{../Figs/HGorderparametersPE.eps}
@@ -256,25 +262,28 @@ differences are clearly visible in the figure.
 %and forking in $\alpha$.
 
 \subsection{PG headgroup}
-Comparison between experiments and simulations with CHARMM GUI
-parameters for PG lipids in Fig. \ref{HGorderParametersPOPG} suggest that
-the model overestimates forking in $\gamma$ and $\alpha$ order parameters,
-and magnitudes of $\beta$ and $g_1$ order parameters.
+Comparison between experiments and simulations for PG lipids is shown
+in Fig. \ref{HGorderParametersPOPG}. The signs are not yet measured
+experimentally. They are set to give the best argeement with experiments.
+This would suggest that the $\beta$ order parameter would be positive,
+in contrast to PC and PS headgroups, were negative signs were measured.
+Even thought the signs turned out to be correct, the tested models would
+not give a very good argeement with the experiments.
 \begin{figure}[]
   \centering
   \includegraphics[width=9.0cm]{../Figs/HGorderparametersPOPG.eps}
   \caption{\label{HGorderParametersPOPG}
-    Order parameters for PG headgroup and glycerol backbone from simulations with CHARMM GUI parameters and experiments without CaCl$_2$ 
+    Order parameters for PG headgroup and glycerol backbone from simulations and experiments without CaCl$_2$ 
     (POPG from \cite{borle85} contains 10mM of PIPES, DPPG from \cite{wohlgemuth80} contains 10mM PIPES and 100mM CaCl,
     E.Coli PG results from \cite{gally81}).
-    Absolute values are shown, because signs are not known for experimental data.
-    Glycerol backbone order parameters are negative in simulations, while $alpha$, $\beta$ and
-    smaller $\gamma$ are positive.
+    Signs are not known for experimental data. They are determined to give best agreement
+    with simulations. This is not reliable and should be corrected when experimental
+    data becomes available.
   }
-  \todo{More simulation data for lipids with different headgroups to be collected}
+  \todo{More simulation data for lipids with different headgroups to be collected} \\
   \todo{CHARMM GUI simulation contains only counter ions as potassium.
     All experiments here contain some amount of sodium salt. The best
-    ion concentrations for comparison should be figured out.}
+    ion concentrations for comparison should be figured out.} \\
   \todo{Experimental signs of the order parameters would highly useful.}
 \end{figure}
 
