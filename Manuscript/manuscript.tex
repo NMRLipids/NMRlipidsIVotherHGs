@@ -205,36 +205,23 @@ would be correct.
 \end{figure}
 
 \subsection{PS headgroup}
-Order parameters for bilayers with PS headgroups
+The headgroup order parameters of DOPS and POPS bilayers 
 from different experiments and simulations are shown in
-Figs. \ref{HGorderParametersDOPS} and  \ref{HGorderParametersPOPS}.
+Figs. \ref{HGorderParametersPS}.
 None of the tested models gives satisfactory agreement with
 experiments for order parameters in headgroup $\alpha$ and $\beta$
 carbons.
 \begin{figure}[]
   \centering
-  \includegraphics[width=9.0cm]{../Figs/HGorderparametersDOPS.eps}
-  \caption{\label{HGorderParametersDOPS}
+  \includegraphics[width=9.0cm]{../Figs/HGorderparametersPS.eps}
+  \caption{\label{HGorderParametersPS}
     Order parameters for DOPS headgroup and glycerol
     backbone from simulations with different models and experiments without CaCl$_2$ 
     Experimental data from \cite{browning80} contains 0.1M of NaCl.
     Signs are taken from experiments for POPS described in Supplementary Information.
   }
-\end{figure}
-\begin{figure}[]
-  \centering
-  \includegraphics[width=9.0cm]{../Figs/HGorderparametersPOPS.eps}
-  \caption{\label{HGorderParametersPOPS}
-    Headgroup and glycerol backbone order parameters for systems with POPS 
-    from simulations with different models and experiments \cite{roux90}.
-    Signs are taken from experiments described in Supplementary Information.
-  }
-  \todo{More simulation data for lipids with different headgroups to be collected} \\
-  \todo{Some simulations contain potassium as counterions, while some sodium.
-    All experiments here contain some amount of sodium salt. The best
-    ion concentrations for comparison should be figured out.} \\
-  \todo{Why there is difference between CHARMM36 simulation results from POPS:POPC mixture and
-  pure POPS? Discussion in https://github.com/NMRLipids/NMRlipidsIVotherHGs/issues/1}
+  \todo{Check and report all the counterions.}
+  \todo{Glycerol backbone order parameters should be available from the spectra measured by Tiago Ferreira.}
 \end{figure}
 
 Glycerol backbone order parameters seems similar in all models,
@@ -286,6 +273,26 @@ not give a very good argeement with the experiments.
     ion concentrations for comparison should be figured out.} \\
   \todo{Experimental signs of the order parameters would highly useful.}
 \end{figure}
+
+\section{Lipid bilayers with mixed compositions}
+
+\subsection{PC/PS mixtures}
+\begin{figure}[]
+  \centering
+  \includegraphics[width=9.0cm]{../Figs/HGorderparametersPOPS.eps}
+  \caption{\label{HGorderParametersPOPS}
+    Headgroup and glycerol backbone order parameters for systems with POPS 
+    from simulations with different models and experiments \cite{roux90}.
+    Signs are taken from experiments described in Supplementary Information.
+  }
+  \todo{Some simulations contain potassium as counterions, while some sodium.
+    All experiments here contain some amount of sodium salt. The best
+    ion concentrations for comparison should be figured out.} \\
+  \todo{Why there is difference between CHARMM36 simulation results from POPS:POPC mixture and
+  pure POPS? Discussion in https://github.com/NMRLipids/NMRlipidsIVotherHGs/issues/1}
+\end{figure}
+
+
 
 \section{Ca$^{2+}$ binding in bilayers with negatively charged PG and PS lipids}
 
@@ -365,6 +372,7 @@ as a function of CaCl$_2$ concentration are shown in Fig. \ref{PSPGchangesWITHCa
   }
   \todo{Get the small concentration data from the inserts}
 \end{figure}
+
 
 \section{Ca$2+$ binding in bilayers with negatively charged PG and PS lipids in simulations}
 
