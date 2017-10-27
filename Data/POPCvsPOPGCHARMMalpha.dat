@@ -1,0 +1,20 @@
+# CHARMM36 simulations at 298K
+# Pure POPC result taken from
+# https://github.com/NMRLipids/nmrlipids.blogspot.fi/blob/master/DATAreportediINblog/POPC/cholesterol/CHARMM36-298K_blogged-24-2-15.dat
+# delivered by Fernando Favela
+#
+# Results with PG taken from https://www.dropbox.com/s/2icpndyjx4wq4zd/PCPG-results.txt?dl=0
+# delivered by Jesper Madsen: http://nmrlipids.blogspot.com/2017/03/nmrlipids-iv-headgroup-glycerol.html?showComment=1500933919838#c6736482134438927865
+#
+# It should be noted that pure POPC are ran with Gromacs 4, but the results with
+# PG are ran with Gromacs 5. This has significant effect on acyl chains:
+# https://github.com/NMRLipids/NmrLipidsCholXray/issues/4
+# The effect for headgroups can be estimated by comparing these two data sets:
+# https://github.com/NMRLipids/MATCH/blob/master/Data/Lipid_Bilayers/POPC/T303K/MODEL_CHARMM36_GROMACS4.5/Headgroup_Glycerol_Order_Parameters_Simulation.dat
+# https://github.com/NMRLipids/MATCH/blob/master/Data/Lipid_Bilayers/POPC/T303K/MODEL_CHARMM36_GROMACS5.1.2/Headgroup_Glycerol_Order_Parameters_Simulation.dat
+#
+# It might be good to run pure POPC at T298K with Gromacs 5 for the comparison.
+#
+0     0.0319465          0.0361459
+0.2   0.0382494524554    0.0440824328039
+0.5   0.0380044478178    0.0663579284967

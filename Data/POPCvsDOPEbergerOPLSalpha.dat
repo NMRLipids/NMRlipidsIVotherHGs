@@ -1,0 +1,13 @@
+# Pure POPS measured by Tiago Ferreira
+# https://github.com/NMRLipids/NMRlipidsIVotherHGs/blob/master/Data/POPSorderparametersNOCaEXP.dat
+#
+# 
+# Mixture from Fig. 5. in Roux et al. Biochemistry, 29, 7077-7089, 1990
+# https://github.com/NMRLipids/MATCH/blob/master/Data/Lipid_Bilayers/POPS%2B83%25popc/T298K/Headgroup_Glycerol_Order_Parameters_Experiments.dat
+# Sings are assumed to be the same as in pure PS.
+#
+# Order parameters reported
+#
+# mole fraction of PC        beta     alpha1    alpha2
+0                           -0.12     -0.02      0.09      
+0.5                         -0.0991    

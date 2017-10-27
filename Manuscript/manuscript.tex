@@ -276,21 +276,60 @@ not give a very good argeement with the experiments.
 
 \section{Lipid bilayers with mixed compositions}
 
-\subsection{PC/PS mixtures}
-\begin{figure}[]
+\subsection{Effect of PE, PS and PG on PC headgroup}
+The headgroup order parameters for PC lipids (POPC and DOPC)
+mixed with PE, PS and PG lipids are shown in Fig. \ref{HGorderparametersPCvsPEPSPG}
+from different simulation model and experiments \cite{scherer87} with different
+mole fractions. As already discussed previosly, the PC lipid headgroup behaviour
+follows the electrometer concept in experiments when mixed with other lipids, i.e., the order
+parameters increase when mixed with negatively charged lipids (PS, PI, CL, PA and PG)
+remains almost unchaged when mixed with neutral lipids (PE and SM) \cite{scherer87}.
+This is not the case in simulation data shown in Fig. \ref{HGorderparametersPCvsPEPSPG}.
+The addition of DOPE into a POPC and DOPC bilayers significantly decreases the PC headgroup
+order parameters in simulations with OPLS compatible version of the Berger force field \cite{tieleman06}
+in contrast to experiments \cite{scherer87}. On the other hand, the increase of the PC
+headgroup order parameters in CHARMM36 simulations mixed with PS and PG lipids is significantly
+smaller than in experiments.
+\begin{figure*}[]
   \centering
-  \includegraphics[width=9.0cm]{../Figs/HGorderparametersPOPS.eps}
-  \caption{\label{HGorderParametersPOPS}
-    Headgroup and glycerol backbone order parameters for systems with POPS 
-    from simulations with different models and experiments \cite{roux90}.
-    Signs are taken from experiments described in Supplementary Information.
+  \includegraphics[width=16.0cm]{../Figs/HGorderparametersPCvsPEPSPG.eps}
+  \caption{\label{HGorderparametersPCvsPEPSPG}
+    PC headgroup order parameters from mixtures with PE, PS and PG
+    lipids with various mole fractions from different simulation models and experiments \cite{scherer87}.
+    Signs are determined as discussed in \cite{botan15,ollila16}.
+  }
+  \todo{Simulation of CHARMM36 at 298K should be maybe rerun with Gromacs 5.}
+\end{figure*}
+
+\subsection{Effect of PC on PS and PG headgroups}
+The headgroup order parameters for PS and PG lipid mixtures with PC
+having different mole fractions from simulations and experiments \cite{borle85,roux90}
+are shown in Fig. \ref{HGorderparametersPSPGvsPC}. The effect of increasing
+amount of PC to PS headgroup seems to qualitatively incorrect in CHARMM36 simulations.
+The $\beta$-carbon order parameter increases in experiment, but decreases
+in simulations with both tested counterions (Na+ and K+). Larger
+$\alpha$-carbon order parameter decreases with the addition of PC
+in experiment, while the lower remains unchanged. In simulations the
+larger increases and the lower decreases.
+Interestingly, the $\alpha$-carbon order parameters are closer to experiments
+in pure PS system with K+ counterions than with Na+. 
+The changes in PG headgroup order parameters are minor in simulations, which
+is in line with the only available experiment for the $\beta$-carbon.
+\begin{figure*}[]
+  \centering
+  \includegraphics[width=16.0cm]{../Figs/HGorderparametersPSPGvsPC.eps}
+  \caption{\label{HGorderparametersPSPGvsPC}
+    PS and PG lipid headgroup order parameters from mixtures with PC
+    lipids with various mole fractions from different simulation models and experiments \cite{borle85,roux90}.
+    Signs are not yet known experimentally for PG, thus the signs give by simulations are used.
+    Signs for PS are measures as described in SI.
   }
   \todo{Some simulations contain potassium as counterions, while some sodium.
     All experiments here contain some amount of sodium salt. The best
     ion concentrations for comparison should be figured out.} \\
   \todo{Why there is difference between CHARMM36 simulation results from POPS:POPC mixture and
   pure POPS? Discussion in https://github.com/NMRLipids/NMRlipidsIVotherHGs/issues/1}
-\end{figure}
+\end{figure*}
 
 
 
