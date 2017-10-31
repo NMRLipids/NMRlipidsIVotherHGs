@@ -1,0 +1,72 @@
+# This file was created Sun Jul 30 12:44:32 2017
+# Created by:
+# GROMACS:      gmx density, VERSION 5.0.4
+# Executable:   /software/gromacs-5.0-el6-x86_64+intelmpi-5.0+intel-15.0/bin/gmx_mpi
+# Library dir:  /software/gromacs-5.0-el6-x86_64+intelmpi-5.0+intel-15.0/share/gromacs/top
+# Command line:
+#   gmx_mpi density -f ../run.total.xtc -s ../step7_1.tpr -n index.ndx -d Z -dens mass -center -o dens_TIP3.xvg
+# gmx_mpi is part of G R O M A C S:
+#
+# GROningen MAchine for Chemical Simulation
+#
+@    title "Partial density"
+@    xaxis  label "Relative position from center (nm)"
+@    yaxis  label "Density (kg m\S-3\N)"
+@TYPE xy
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "TIP3"
+    -4.24576          979.179
+    -4.07246          980.208
+    -3.89917          979.032
+    -3.72587          979.437
+    -3.55257          978.693
+    -3.37928          972.276
+    -3.20598          945.487
+    -3.03269          878.008
+    -2.85939          768.977
+    -2.68609          640.861
+     -2.5128          519.727
+     -2.3395          409.827
+     -2.1662          300.908
+    -1.99291          189.142
+    -1.81961           96.439
+    -1.64631          37.6161
+    -1.47302          11.0423
+    -1.29972          2.38428
+    -1.12643         0.378109
+    -0.95313        0.0666638
+   -0.779833        0.0117117
+   -0.606537       0.00499845
+   -0.433241       0.00638788
+   -0.259944       0.00828464
+  -0.0866482       0.00706319
+   0.0866482       0.00592914
+    0.259944       0.00621314
+    0.433241         0.019708
+    0.606537         0.121303
+    0.779833         0.900187
+     0.95313          4.15439
+     1.12643          15.5841
+     1.29972          44.2653
+     1.47302          103.025
+     1.64631            196.1
+     1.81961          307.669
+     1.99291          415.528
+      2.1662          518.935
+      2.3395          634.055
+      2.5128          756.557
+     2.68609          862.639
+     2.85939          931.529
+     3.03269          965.923
+     3.20598          976.703
+     3.37928          979.988
+     3.55257          979.394
+     3.72587          979.495
+     3.89917          979.028
+     4.07246          980.213
+     4.24576          979.707

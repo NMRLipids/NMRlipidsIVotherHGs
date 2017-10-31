@@ -1,0 +1,72 @@
+# This file was created Sun Jul 30 12:12:41 2017
+# Created by:
+# GROMACS:      gmx density, VERSION 5.0.4
+# Executable:   /software/gromacs-5.0-el6-x86_64+intelmpi-5.0+intel-15.0/bin/gmx_mpi
+# Library dir:  /software/gromacs-5.0-el6-x86_64+intelmpi-5.0+intel-15.0/share/gromacs/top
+# Command line:
+#   gmx_mpi density -f ../run.total.xtc -s ../step7_1.tpr -d Z -dens mass -center -o dens_POT.xvg
+# gmx_mpi is part of G R O M A C S:
+#
+# Good ROcking Metal Altar for Chronical Sinners
+#
+@    title "Partial density"
+@    xaxis  label "Relative position from center (nm)"
+@    yaxis  label "Density (kg m\S-3\N)"
+@TYPE xy
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "POT"
+    -3.62441          6.70338
+    -3.47648          6.96704
+    -3.32854          7.38129
+    -3.18061          7.78796
+    -3.03267           8.3271
+    -2.88474          8.84483
+     -2.7368          9.37562
+    -2.58887          9.67978
+    -2.44093          10.1962
+      -2.293          10.6826
+    -2.14506          11.1814
+    -1.99713           10.834
+    -1.84919          9.39767
+    -1.70126          6.87395
+    -1.55332          4.38222
+    -1.40538          2.30841
+    -1.25745         0.979249
+    -1.10951         0.288868
+   -0.961579        0.0875087
+   -0.813644       0.00833271
+   -0.665709                0
+   -0.517773                0
+   -0.369838                0
+   -0.221903                0
+  -0.0739676                0
+   0.0739676                0
+    0.221903                0
+    0.369838                0
+    0.517773        0.0152787
+    0.665709        0.0805672
+    0.813644         0.256959
+    0.961579         0.873695
+     1.10951          2.33762
+     1.25745          4.58654
+     1.40538          7.90449
+     1.55332          10.7631
+     1.70126           11.784
+     1.84919          10.8662
+     1.99713          10.6212
+     2.14506          9.73391
+       2.293          9.40207
+     2.44093          8.90772
+     2.58887          8.70916
+      2.7368          7.80611
+     2.88474          7.73666
+     3.03267          7.14901
+     3.18061          6.65308
+     3.32854          6.57114
+     3.47648          6.43111
+     3.62441           6.4574

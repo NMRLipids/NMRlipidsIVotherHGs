@@ -1,0 +1,72 @@
+# This file was created Sun Jul 30 12:31:52 2017
+# Created by:
+# GROMACS:      gmx density, VERSION 5.0.4
+# Executable:   /software/gromacs-5.0-el6-x86_64+intelmpi-5.0+intel-15.0/bin/gmx_mpi
+# Library dir:  /software/gromacs-5.0-el6-x86_64+intelmpi-5.0+intel-15.0/share/gromacs/top
+# Command line:
+#   gmx_mpi density -f ../run.total.xtc -s ../step7_1.tpr -n index.ndx -d Z -dens mass -center -o dens_CAL.xvg
+# gmx_mpi is part of G R O M A C S:
+#
+# GROtesk MACabre and Sinister
+#
+@    title "Partial density"
+@    xaxis  label "Relative position from center (nm)"
+@    yaxis  label "Density (kg m\S-3\N)"
+@TYPE xy
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "CAL"
+    -4.14719          42.9927
+    -3.97791          42.6118
+    -3.80864          42.0077
+    -3.63937          40.8397
+     -3.4701          38.4456
+    -3.30082          35.5037
+    -3.13155          30.3872
+    -2.96228          26.5265
+      -2.793          26.5205
+    -2.62373          35.1766
+    -2.45446          48.6011
+    -2.28518          54.4264
+    -2.11591          48.1669
+    -1.94664          30.8006
+    -1.77737          13.0517
+    -1.60809          3.60639
+    -1.43882         0.674151
+    -1.26955        0.0854877
+    -1.10027       0.00560395
+   -0.931001                0
+   -0.761728                0
+   -0.592455                0
+   -0.423182                0
+   -0.253909                0
+  -0.0846365                0
+   0.0846365                0
+    0.253909                0
+    0.423182                0
+    0.592455                0
+    0.761728       0.00140209
+    0.931001        0.0350355
+     1.10027         0.347504
+     1.26955          1.45617
+     1.43882           5.8333
+     1.60809          16.6762
+     1.77737          34.5371
+     1.94664          55.2963
+     2.11591          60.5317
+     2.28518          44.9329
+     2.45446          27.0565
+     2.62373          21.9751
+       2.793          25.3249
+     2.96228          31.1415
+     3.13155          36.7561
+     3.30082          39.1756
+      3.4701          41.2096
+     3.63937          42.9614
+     3.80864          43.2481
+     3.97791          43.1922
+     4.14719          43.1592
