@@ -1,4 +1,4 @@
-set size 2.0,1.0
+set size 1.0,1.0
 set terminal postscript portrait enhanced color dashed lw 1 "Helvetica" 14 
 set output "../HGorderparametersPCvsPEPSPGchol.eps"
 set multiplot layout 2,1
@@ -13,22 +13,22 @@ set key above maxcols 2 maxrows 5
 #set yrange [-0.07:0.07] 
 set xrange [0:0.55] 
 set ylabel "S_{CH}^{/Symbol b}"
-plot  "../../Data/sceherer89fig4BETAC16.dat" using 1:(-0.00748*($2+5.5)) with linespoints title 'Experiments' pt 5 ps 1.2 lc rgb 'black',\
-     "../../Data/cholBETAexp.dat" using ($1/100):($2) with linespoints notitle pt 5 ps 1.2 lc rgb 'black',\
-      "../../Data/PCvsPEbeta.dat" using 1:(-$2*0.00748) with linespoints   title 'Experiment (POPC:PE)' pt 5 ps 1.6 lw 4 lc rgb 'black',\
-     "../../Data/PCvsPSbeta.dat" using 1:(-$2*0.00748) with linespoints   title 'Experiment (POPC:PS)' pt 4 ps 1.6 lw 4 lc rgb 'black',\
-     "../../Data/PCvsPGbeta.dat" using 1:(-$2*0.00748) with linespoints   title 'Experiment (POPC:PG)' pt 8 ps 1.6 lw 4 lc rgb 'black'
+plot  "../../Data/sceherer89fig4BETAC16.dat" using 1:(-0.00784*($2+5.5)) with linespoints title 'Cationic surfactant' pt 5 lw 4 ps 1.2 lc rgb 'red',\
+     "../../Data/cholBETAexp.dat" using ($1/100):($2) with linespoints title 'Cholesterol' pt 7 lw 4 ps 1.2 lc rgb 'black',\
+      "../../Data/PCvsPEbeta.dat" using 1:(-$2*0.00784) with linespoints   title 'PE' pt 5 ps 1.6 lw 4 lc rgb 'black',\
+     "../../Data/PCvsPSbeta.dat" using 1:(-$2*0.00784) with linespoints   title 'PS' pt 4 ps 1.6 lw 4 lc rgb 'blue',\
+     "../../Data/PCvsPGbeta.dat" using 1:(-$2*0.00784) with linespoints   title 'PG' pt 8 ps 1.6 lw 4 lc rgb 'blue'
 
 #set size 1.0,0.5
 #set origin 2.0,0.5
 #set yrange [0:0.15] 
 set ylabel "S_{CH}^{/Symbol a}"
 set xlabel "mole fraction of PE"
-plot "../../Data/sceherer89fig4ALPHAC16.dat" using 1:(0.00748*($2+6.4)) with linespoints notitle pt 5 ps 1.2 lc rgb 'black',\
-     "../../Data/cholALPHAexp.dat" using ($1/100):($2) with linespoints notitle pt 5 ps 1.2 lc rgb 'black',\
-     "../../Data/PCvsPEalpha.dat" using 1:($2*0.00748) with linespoints  notitle pt 5 ps 1.6 lw 4 lc rgb 'black',\
-     "../../Data/PCvsPSalpha.dat" using 1:($2*0.00748) with linespoints   notitle  pt 4 ps 1.6 lw 4 lc rgb 'black',\
-     "../../Data/PCvsPGalpha.dat" using 1:($2*0.00748) with linespoints   notitle  pt 8 ps 1.6 lw 4 lc rgb 'black'
+plot "../../Data/sceherer89fig4ALPHAC16.dat" using 1:(0.00784*($2+6.4)) with linespoints notitle pt 5 lw 4 ps 1.2 lc rgb 'red',\
+     "../../Data/cholALPHAexp.dat" using ($1/100):($2) with linespoints notitle pt 7 lw 4 ps 1.2 lc rgb 'black',\
+     "../../Data/PCvsPEalpha.dat" using 1:($2*0.00784) with linespoints  notitle pt 5 ps 1.6 lw 4 lc rgb 'black',\
+     "../../Data/PCvsPSalpha.dat" using 1:($2*0.00784) with linespoints   notitle  pt 4 ps 1.6 lw 4 lc rgb 'blue',\
+     "../../Data/PCvsPGalpha.dat" using 1:($2*0.00784) with linespoints   notitle  pt 8 ps 1.6 lw 4 lc rgb 'blue'
 
 unset multiplot
 
