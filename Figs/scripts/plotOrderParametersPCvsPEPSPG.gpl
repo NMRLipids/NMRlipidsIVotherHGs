@@ -1,7 +1,7 @@
 set size 2.0,1.0
 set terminal postscript portrait enhanced color dashed lw 1 "Helvetica" 14 
 set output "../HGorderparametersPCvsPEPSPG.eps"
-set multiplot layout 2,2
+set multiplot layout 1,2	
 
 set ytic 0.02
 #set xtics ("{/Symbol b}" 1, "{/Symbol a}" 2, "g_{3R}" 3, "g_{3S}" 4, "g_{2}" 5, "g_{1R}" 6, "g_{1S}" 7)
