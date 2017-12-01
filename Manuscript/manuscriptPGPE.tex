@@ -41,7 +41,7 @@
 % Multiple \preprint commands are allowed.
 %\preprint{}
 
-\title{NMRlipids IV: Headgroup \& glycerol backbone structures, and cation binding in bilayers with PE, PG and PS lipids} %Title of paper
+\title{NMRlipids IV: Headgroup \& glycerol backbone structures, and cation binding in bilayers with PE and PG lipids} %Title of paper
 
 % repeat the \author .. \affiliation  etc. as needed
 % \email, \thanks, \homepage, \altaffiliation all apply to the current author.
@@ -93,15 +93,6 @@ Here we extend the same goal for other than PC lipids.
 Currently the focus is on PE, PG and PS bilayers and their
 mixtures with PC. Experimental data with different amounts of 
 added salt is now collected and presented in this manuscript.
-Simulations for bilayers containing PG and PS with low salt conditions
-are ran with parameters from CHARMM GUI
-and compared to experiments. Some order parameters from
-simulations seems to be off from experimental values.
-Simulation data from other models would be highly useful 
-to see if some of the existing models would reproduce the 
-experimental order parameters and to analyze different 
-conformations predicted by different models respect to 
-experiments.
 
 
 \begin{figure}[]
@@ -112,7 +103,6 @@ experiments.
   }
 \end{figure}
 
-\section{Experimental glycerol backbone and headgroup order parameters for PE, PG and PS lipids}
 
 Absolute values of experimental order parameters for different lipid headgroups are
 collected in Fig. \ref{HGorderParameters}. Signs are measured only for PC as far as I know,
@@ -136,13 +126,14 @@ Extensive discussion about structural details of PE, PG or PS headgroups do not 
 In contrast to PC lipids (see \cite{botan15} and references therein).
 
 
-\section{Glycerol backbone and headgroup order parameters for PE, PG and PS lipids in simulations}
 
 Several simulations containing PE, PG and PS lipids have been published \cite{??}, \todo{List should be completed}
 however, glycerol backbone and headgroup order parameters are not compared to
 the experiments (based on superficial reading of literature).
 
-\subsection{PE headgroup}
+\section{Results and Discussion}
+
+\subsection{PE headgroup and glycerol backbone}
 Order parameters from Slipids simulations 
 and experiments for DPPE are shown in Fig. \ref{HGorderParametersPE}.
 Glycerol backbone order parameters in Slipids are off from experiments,
@@ -170,7 +161,7 @@ would be correct.
   \todo{Experimental signs of the order parameters would be highly useful.} \\
 \end{figure}
 
-\subsection{PG headgroup}
+\subsection{PG headgroup and glycerol backbone}
 Comparison between experiments and simulations for PG lipids is shown
 in Fig. \ref{HGorderParametersPOPG}. The signs are not yet measured
 experimentally. They are set to give the best argeement with experiments.
@@ -196,7 +187,6 @@ not give a very good argeement with the experiments.
   \todo{Experimental signs of the order parameters would highly useful.}
 \end{figure}
 
-\section{Lipid bilayers with mixed compositions}
 
 \subsection{Effect of PE, PS and PG on PC headgroup}
 The headgroup order parameters for PC lipids (POPC and DOPC)
@@ -212,15 +202,15 @@ order parameters in simulations with OPLS compatible version of the Berger force
 in contrast to experiments \cite{scherer87}. On the other hand, the increase of the PC
 headgroup order parameters in CHARMM36 simulations mixed with PS and PG lipids is significantly
 smaller than in experiments.
-\begin{figure}[]
-  \centering
-  \includegraphics[width=8.0cm]{../Figs/HGorderparametersPCvsPEPSPGchol.eps}
-  \caption{\label{HGorderparametersPCvsPEPSPGchol}
-    PC headgroup order parameters from experiments of mixtures with
-    PE, PS, PG and cholesterol \cite{scherer87,scherer89,ferreira13}.
-    Signs are determined as discussed in \cite{botan15,ollila16}.
-  }
-\end{figure}
+%\begin{figure}[]
+%  \centering
+%  \includegraphics[width=8.0cm]{../Figs/HGorderparametersPCvsPEPSPGchol.eps}
+%  \caption{\label{HGorderparametersPCvsPEPSPGchol}
+%    PC headgroup order parameters from experiments of mixtures with
+%    PE, PS, PG and cholesterol \cite{scherer87,scherer89,ferreira13}.
+%    Signs are determined as discussed in \cite{botan15,ollila16}.
+%  }
+%\end{figure}
 
 \begin{figure*}[]
   \centering
@@ -265,7 +255,7 @@ is in line with the only available experiment for the $\beta$-carbon.
 
 
 
-\section{Ca$^{2+}$ binding in bilayers with negatively charged PG and PS lipids}
+\subsection{Ca$^{2+}$ binding in bilayers with negatively charged PG and PS lipids}
 
 PC lipid headgroup order parameters can used to measure ion binding
 affinity, because their magnitude is linearly proportional
@@ -277,34 +267,34 @@ This is demonstrated in Figs \ref{OrderParametersWithCaCl},
 showing order parameters for PC headgroup $\alpha$ and $\beta$ carbons
 as a function of CaCl$_2$ concentration in the presence of different amounts of
 negatively charged PS or PG lipids.
-\begin{figure}[]
-  \centering
-  \includegraphics[width=9.0cm]{../Figs/LIPIDSwithCaCl.eps}
-  \caption{\label{OrderParametersWithCaCl}
-    PC headgroup order parameters as a function of CaCl concentration from experiments containing charged lipids.
-    Pure DPPC data from \cite{akutsu81}, pure POPC data from \cite{altenbach84}, 
-    POPC:POPS mixture data from \cite{roux90}, POPC:POPG mixture data with 0.1M NaCl from \cite{macdonald87}
-    and POPC:POPG mixture data without NaCl from \cite{borle85}.
-  }
-  \todo{Check the NaCl concentrations in the samples.}
-\end{figure}
-\begin{figure}[]
-  \centering
-  \includegraphics[width=9.0cm]{../Figs/LIPIDSwithCaClBELOW1M.eps}
-  \caption{\label{OrderParametersWithCaClBELOW1M}
-    Figure \ref{OrderParametersWithCaCl} zoomed to smaller concentrations.
-  }
-\end{figure}
-\begin{figure}[]
-  \centering
-  \includegraphics[width=9.0cm]{../Figs/CHANGESwithCaCl.eps}
-  \caption{\label{OrderParameterCHANGESWithCaClBELOW1M}
-    The change of PC headgroup order parameters
-    in the presence of different amount of negatively charged lipids
-    respect to the values without added CaCl$_2$.
-    The original data is the same as in Fig. \ref{OrderParametersWithCaCl}. 
-  }
-\end{figure}
+%\begin{figure}[]
+%  \centering
+%  \includegraphics[width=9.0cm]{../Figs/LIPIDSwithCaCl.eps}
+%  \caption{\label{OrderParametersWithCaCl}
+%    PC headgroup order parameters as a function of CaCl concentration from experiments containing charged lipids.
+%    Pure DPPC data from \cite{akutsu81}, pure POPC data from \cite{altenbach84}, 
+%    POPC:POPS mixture data from \cite{roux90}, POPC:POPG mixture data with 0.1M NaCl from \cite{macdonald87}
+%    and POPC:POPG mixture data without NaCl from \cite{borle85}.
+%  }
+%  \todo{Check the NaCl concentrations in the samples.}
+%\end{figure}
+%\begin{figure}[]
+%  \centering
+%  \includegraphics[width=9.0cm]{../Figs/LIPIDSwithCaClBELOW1M.eps}
+%  \caption{\label{OrderParametersWithCaClBELOW1M}
+%    Figure \ref{OrderParametersWithCaCl} zoomed to smaller concentrations.
+%  }
+%\end{figure}
+%\begin{figure}[]
+%  \centering
+%  \includegraphics[width=9.0cm]{../Figs/CHANGESwithCaCl.eps}
+%  \caption{\label{OrderParameterCHANGESWithCaClBELOW1M}
+%    The change of PC headgroup order parameters
+%    in the presence of different amount of negatively charged lipids
+%    respect to the values without added CaCl$_2$.
+%    The original data is the same as in Fig. \ref{OrderParametersWithCaCl}. 
+%  }
+%\end{figure}
 
 PC headgroup order parameters increase when negatively charged
 PS or PG are added to PC bilayer in the absense of added CaCl$_2$,
@@ -332,20 +322,6 @@ The interpretation of this data and some other results has been that \cite{seeli
     used to describe the chemical binding equilibrium.''}
 \end{displayquote}
 
-Also the experimental order parameters for PS and PG headgroups
-as a function of CaCl$_2$ concentration are shown in Fig. \ref{PSPGchangesWITHCaCl}.
-\todo{These should be compared to simulations for potential structural interpretation of the changes.}
-\begin{figure}[]
-  \centering
-  \includegraphics[width=9.0cm]{../Figs/PSPGwithCaCl.eps}
-  \caption{\label{PSPGchangesWITHCaCl}
-    PG and PS order parameters a function CaCl$_2$ concentration taken from \cite{borle85} and \cite{roux90}, respectively.
-  }
-  \todo{Get the small concentration data from the inserts}
-\end{figure}
-
-
-\section{Ca$2+$ binding in bilayers with negatively charged PG and PS lipids in simulations}
 
 Comparison of Ca$2+$ binding in PG between CHARMM36 simulations and experiments \cite{borle85}
 is shown in Fig. \ref{changesWITHCaClPG}. The decrease of $\alpha$ order parameter
@@ -356,7 +332,9 @@ but they are calculated from empirical relation $\Delta S_{\beta}=0.43\Delta S_{
 Anyway, the data presented in NMRlipids II project and in Fig. \ref{changesWITHCaClPG} together
 suggest that Calcium binding is similarly overestimated by CHARMM36 model in pure POPC bilayers and mixtures with
 POPG. The good agreement of $\alpha$ carbon would be explained by too weak dependence of its order
-parameter of bound charge \todo{Should we check this against cationic surfactant experiments \cite{scherer89}?}.
+parameter of bound charge
+\todo{The response of CHARMM36 to cationic surfactant against experiments \cite{scherer89} to be checked.
+  I have already ran the simulations, analysis to be done.}.
 \begin{figure}[]
   \centering
   \includegraphics[width=9.0cm]{../Figs/CHANGESwithCaClPGPS.eps}
@@ -376,6 +354,23 @@ data is not available for comparison for this mixture.
 
 
 \todo{More simulation data for systems with negatively charged lipids and CaCl$_2$ to be collected}
+
+\section{Effect of Ca$2+$ binding on PG and PE headgroup}
+
+Also the experimental order parameters for PS and PG headgroups
+as a function of CaCl$_2$ concentration are shown in Fig. \ref{PSPGchangesWITHCaCl}.
+\todo{These should be compared to simulations for potential structural interpretation of the changes.}
+\begin{figure}[]
+  \centering
+  \includegraphics[width=9.0cm]{../Figs/PSPGwithCaCl.eps}
+  \caption{\label{PSPGchangesWITHCaCl}
+    PG and PS order parameters a function CaCl$_2$ concentration taken from \cite{borle85} and \cite{roux90}, respectively.
+  }
+  \todo{Get the small concentration data from the inserts}
+\end{figure}
+
+
+
 
 \section{Conclusions}
 
@@ -454,64 +449,64 @@ data is not available for comparison for this mixture.
 \end{table*}
 
 
-\section{Measurements of order parameter sign}
+%\section{Measurements of order parameter sign}
 
-Fig. \ref{PShgSIGNS} summarizes the experimental results on the order parameter sign
-measurement for POPS sample. The experimental protocol is the same used in Ref. \citenum{ferreira16}.
-In (a) you see the headgroup region of the INEPT spectrum where alpha and beta are
-identified. In (b) you have the R-PDLF slices for alpha and beta where you see one single
-splitting for beta (which gives an order parameter equal to 0.12), and for alpha a superposition
-of a large splitting (order parameter equal to 0.09) and a very small splitting which cannot be
-calculated. On the bottom you have the S-DROSS slices of these two carbons. The grey lines show a
-random collection of slices from noise such that it gets clear what is significant. The S-DROSS
-slice for beta clearly shows that the order parameter is negative. The slice for alpha shows that
-the higher order parameter is positive and suggests that the smaller order parameter is negative
-(from the deviation towards negative values in the longer t1 times).
-\begin{figure}[]
-  \centering
-  \includegraphics[width=9.0cm]{../Figs/PShgSIGNS.pdf}
-  \caption{\label{PShgSIGNS}
-    Experimental results for sign measurement for POPS sample
-  }
-\end{figure}
+%Fig. \ref{PShgSIGNS} summarizes the experimental results on the order parameter sign
+%measurement for POPS sample. The experimental protocol is the same used in Ref. \citenum{ferreira16}.
+%In (a) you see the headgroup region of the INEPT spectrum where alpha and beta are
+%identified. In (b) you have the R-PDLF slices for alpha and beta where you see one single
+%splitting for beta (which gives an order parameter equal to 0.12), and for alpha a superposition
+%of a large splitting (order parameter equal to 0.09) and a very small splitting which cannot be
+%calculated. On the bottom you have the S-DROSS slices of these two carbons. The grey lines show a
+%random collection of slices from noise such that it gets clear what is significant. The S-DROSS
+%slice for beta clearly shows that the order parameter is negative. The slice for alpha shows that
+%the higher order parameter is positive and suggests that the smaller order parameter is negative
+%(from the deviation towards negative values in the longer t1 times).
+%\begin{figure}[]
+%  \centering
+%  \includegraphics[width=9.0cm]{../Figs/PShgSIGNS.pdf}
+%  \caption{\label{PShgSIGNS}
+%    Experimental results for sign measurement for POPS sample
+%  }
+%\end{figure}
 
-The results updated with SIMPSON simulations for the SDROSS profiles
-are shown in Fig. \ref{PShgSIGNSsimpson}. The value for the smaller
-alpha order parameter is taken from Fig 3 in Ref. \citenum{roux91},
-because resolution in 13C NMR experiments was nor high enough to determine
-numerical value for this. The plots in Fig. \ref{PShgSIGNSsimpson} (c) show
-the following. The error bars and points are the experimental SDROSS data.
-The thick lines are SIMPSON simulations. The simulations were done by using
-the order parameter for beta equal to -0.12 and for alpha one order parameter
-equal to 0.09 and the other equal to -0.02 (black) or 0.02 (grey).
-Since the black lines agree with experimental data, we conlude that
-the order parameters for $\beta$ carbon are -0.12 and for $\alpha$
-order parameters are 0.09 and -0.02.
-\begin{figure}[]
-  \centering
-  \includegraphics[width=9.0cm]{../Figs/PShgSIGNSsimpson.pdf}
-  \caption{\label{PShgSIGNSsimpson}
-    Experimental results for sign measurement for POPS sample
-  }
-\end{figure}
+%The results updated with SIMPSON simulations for the SDROSS profiles
+%are shown in Fig. \ref{PShgSIGNSsimpson}. The value for the smaller
+%alpha order parameter is taken from Fig 3 in Ref. \citenum{roux91},
+%because resolution in 13C NMR experiments was nor high enough to determine
+%numerical value for this. The plots in Fig. \ref{PShgSIGNSsimpson} (c) show
+%the following. The error bars and points are the experimental SDROSS data.
+%The thick lines are SIMPSON simulations. The simulations were done by using
+%the order parameter for beta equal to -0.12 and for alpha one order parameter
+%equal to 0.09 and the other equal to -0.02 (black) or 0.02 (grey).
+%Since the black lines agree with experimental data, we conlude that
+%the order parameters for $\beta$ carbon are -0.12 and for $\alpha$
+%order parameters are 0.09 and -0.02.
+%\begin{figure}[]
+%  \centering
+%  \includegraphics[width=9.0cm]{../Figs/PShgSIGNSsimpson.pdf}
+%  \caption{\label{PShgSIGNSsimpson}
+%    Experimental results for sign measurement for POPS sample
+%  }
+%\end{figure}
 
-\section{Dihedrals}
-\begin{figure*}[]
-  \centering
-  \includegraphics[width=8.0cm]{../Figs/dihed1.png}
-  \includegraphics[width=8.0cm]{../Figs/dihed2.png}
-  \includegraphics[width=8.0cm]{../Figs/dihed3.png}
-  \includegraphics[width=8.0cm]{../Figs/dihed4.png}
-  \includegraphics[width=8.0cm]{../Figs/dihed5.png}
-  \includegraphics[width=8.0cm]{../Figs/dihed6.png}
-  \includegraphics[width=8.0cm]{../Figs/dihed7.png}
-  \includegraphics[width=8.0cm]{../Figs/dihed8.png}
-  \includegraphics[width=8.0cm]{../Figs/dihed9.png}
-  \includegraphics[width=8.0cm]{../Figs/dihed10.png}
-  \caption{\label{dihedrals}
-    Experimental results for sign measurement for POPS sample
-  }
-\end{figure*}
+%\section{Dihedrals}
+%\begin{figure*}[]
+%  \centering
+%  \includegraphics[width=8.0cm]{../Figs/dihed1.png}
+%  \includegraphics[width=8.0cm]{../Figs/dihed2.png}
+%  \includegraphics[width=8.0cm]{../Figs/dihed3.png}
+%  \includegraphics[width=8.0cm]{../Figs/dihed4.png}
+%  \includegraphics[width=8.0cm]{../Figs/dihed5.png}
+%  \includegraphics[width=8.0cm]{../Figs/dihed6.png}
+%  \includegraphics[width=8.0cm]{../Figs/dihed7.png}
+%  \includegraphics[width=8.0cm]{../Figs/dihed8.png}
+%  \includegraphics[width=8.0cm]{../Figs/dihed9.png}
+%  \includegraphics[width=8.0cm]{../Figs/dihed10.png}
+%  \caption{\label{dihedrals}
+%    Experimental results for sign measurement for POPS sample
+%  }
+%\end{figure*}
 
 % Create the reference section using BibTe
 \bibliography{refs.bib}
