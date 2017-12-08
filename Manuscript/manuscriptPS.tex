@@ -349,6 +349,21 @@ The interpretation of this data and some other results has been that \cite{seeli
     used to describe the chemical binding equilibrium.''}
 \end{displayquote}
 
+Before using headgroup order parameters to compare ion binding affinity between simulations
+and experiments, the response of the order parameters to bound charge has to be quantified.
+The response of headgroup order parameters to the fixed amount of cationic surfactants in
+POPC bilayer is compared between simulations and experiments \cite{scherer89} In Fig. \ref{CHANGESwithCaClPGPS}.
+The figure shows that the order parameters are too sensitive to bound charge in Lipid14 model,
+while CHARMM36 is in better agreement with experiments. This has to be taken into account when
+analysin the binding affinities.
+\begin{figure}[]
+  \centering
+  \includegraphics[width=9.0cm]{../Figs/HGopsDHMDMAB.eps}
+  \caption{\label{CHANGESwithCaClPGPS}
+  The response of headgroup order parameters to the fixed amount of cationic surfactants in
+  POPC bilayer is compared between simulations and experiments \cite{scherer89}.}
+\end{figure}
+
 \todo{When we have more data for Ca binding to PS containing bilayers, the discussion will be updated and PG results moved
 to other manuscript.}
 Comparison of Ca$2+$ binding in PG between CHARMM36 simulations and experiments \cite{borle85}
@@ -361,8 +376,6 @@ Anyway, the data presented in NMRlipids II project and in Fig. \ref{changesWITHC
 suggest that Calcium binding is similarly overestimated by CHARMM36 model in pure POPC bilayers and mixtures with
 POPG. The good agreement of $\alpha$ carbon would be explained by too weak dependence of its order
 parameter of bound charge
-\todo{The response of CHARMM36 against cationic surfactant experiments \cite{scherer89} is to be checked.
-  I have already ran the simulations, analysis yet to be done}.
 \begin{figure}[]
   \centering
   \includegraphics[width=9.0cm]{../Figs/CHANGESwithCaClPGPS.eps}
