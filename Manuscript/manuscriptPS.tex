@@ -100,6 +100,7 @@ lipids is shown in Fig. \ref{lipids}.
   }
 \end{figure}
 
+Glycerol backbone and headgroup structure and behaviour are similar in model membranes and in bacteria \cite{gally81,scherer87,seelig90}.
 
 
 
@@ -203,7 +204,7 @@ The simulation details are in SI or in references in the table.
 
 \section{Results and Discussion}
 
-\section{Headgroup and glycerol backbone order parameters measured from POPS lipid bilayer}
+\subsection{Headgroup and glycerol backbone order parameters measured from POPS lipid bilayer}
 
 Figs. \ref{PShgSIGNSsimpson} and \ref{glycerolNMR} summarize the experimental NMR results for POPS
 bilayer sample. 
@@ -249,23 +250,29 @@ bilayer sample.
   \todo{What are the top figures actually?}
 \end{figure}
 
-Absolute values of experimental order parameters for different lipid headgroups are
-collected from the literature in Fig. \ref{HGorderParameters}. Since order parameter
-signs are known only for PC, only absolute values are shown.
-Main conclusions regarding the structure of different common lipid headgroups in the literature are \\
-1) glycerol backbone structures are largely similar irrespectively of the headroup \cite{gally81}, \\
-2) glycerol backbone and headgroup structure and behaviour are similar in model membranes and in bacteria \cite{gally81,scherer87,seelig90}, \\
-3) headgroup structures are similar in PC, PE and PG lipids, while headgroup is more rigid in PS lipids \cite{wohlgemuth80,buldt81}. \\
-Careful discussion and analysis of structural details of PE, PG or PS headgroups is not available, 
-in contrast to PC lipids (see \cite{botan15} and references therein).
+The headgroup and glycerol backbone order parameters of 
+POPS measured in this work are compared to the literature values of
+DOPS \cite{browning80} and POPC \cite{ferreira13} in Fig. \ref{HGorderParameters}. 
+Our results for POPS are in good agreement with the previously reported
+values for DOPS measured with $^2$H NMR. Significant differences are
+observed between PC and PS lipids, especially at the headgroup region.  
+Previous discussions in the literature have concluded that  
+glycerol backbone structure is largely similar in
+PC, PE, PG and PS lipids \cite{gally81}. The headgroup region was
+found to be similar in PC, PE and PG lipid (assuming that the signs of PE and PG
+order parameters are the same as in PC), while the PS headgroup was suggested
+to be more rigid \cite{wohlgemuth80,buldt81}. 
+The detailed structural differences between the headgroups is, however, not known.
 \begin{figure}[]
   \centering
-  \includegraphics[width=9.0cm]{../Figs/HGorderparameters.eps}
+  \includegraphics[width=9.0cm]{../Figs/HGorderparametersPCPS.eps}
   \caption{\label{HGorderParameters}
-    Absolute values of order parameters for headgroup and glycerol backbone with different headgroups
-    from experiments. POPC values are from \cite{ferreira13}, DOPS from \cite{browning80} contains 0.1M of NaCl,
-    POPG from \cite{borle85} contains 10nM PIPES, DPPG from \cite{wohlgemuth80} contains  10mM PIPES and 100mM NaCl,
-    DPPE from \cite{seelig76}, E.coliPE and E.coliPG are from \cite{gally81}.
+    Headgroup and glycerol backbone order parameters of POPS measured in this work compared
+    with values for DOPS ($^2$H NMR, 0.1M of NaCl) \cite{browning80} and 
+    POPC  ($^{13}$C NMR) \cite{ferreira13} from literature. Signs for PS order parameters
+    as measured in this work and signs for PC as measured in Refs \cite{??,ferreira16}.
+    %POPG from \cite{borle85} contains 10nM PIPES, DPPG from \cite{wohlgemuth80} contains  10mM PIPES and 100mM NaCl,
+    %DPPE from \cite{seelig76}, E.coliPE and E.coliPG are from \cite{gally81}.
   }
 \end{figure}
 
@@ -279,13 +286,7 @@ in contrast to PC lipids (see \cite{botan15} and references therein).
 %\end{figure}
 
 
-\subsection{Headgroup and glycerol backbone structure in simulations and experiments of PS lipid bilayers}
-The headgroup order parameters of DOPS and POPS bilayers 
-from different experiments and simulations are shown in
-Figs. \ref{HGorderParametersPS}.
-None of the tested models gives satisfactory agreement with
-experiments for order parameters in headgroup $\alpha$ and $\beta$
-carbons.
+\subsection{Headgroup and glycerol backbone in simulations of PS lipid bilayers}
 \begin{figure}[]
   \centering
   \includegraphics[width=9.0cm]{../Figs/HGorderparametersPS.pdf}
@@ -296,7 +297,8 @@ carbons.
     Signs are taken from experiments for POPS described in Supplementary Information.
     The vertical bars shown for the computational values are not error bars, but demonstrate that for these systems we had at least two data sets; the ends of the bars mark the extreme values from the sets, and the dot marks their measurement-time-weighted average.
   }
-  \todo{Check and report all the counterions.}
+  \todo{Check and report all the counterions. There may be some simulation data 
+    sets with both Na+ and K+ ions?}
 \end{figure}
 
 \begin{figure}[]
@@ -305,17 +307,33 @@ carbons.
   \caption{\label{comparisonTablePS}
   Rough subjective ranking of force fields based on Figure~\ref{HGorderParametersPS}. Here ÒMÓ indicates a magnitude problem, ÒFÓ a forking problem; letter size increases with problem severity. Color scheme: Òwithin experimental errorÓ (dark green), Òalmost within experimental errorÓ (light green), Òclear deviation from experimentsÓ (light red), and Òmajor deviation from experimentsÓ (dark red). The $\Sigma$-column shows the total deviation of the force field, when individual carbons are given weights of 0 (matches experiment), 1, 2, and 4 (major deviation). For full details of the assessment, see Supplementary Information.
   }
+  \todo{CHARMM36-UA point for alpha in wrong place?}
 \end{figure}
 
-Glycerol backbone order parameters seems similar in all models,
-except in Slipids. 
-Slipid model do not correctly capture the glycerol backbone
-structure, as already observed previously for PC lipids \cite{botan15}.
-The glycerol backbone structures between PC and
-PS lipids simulated with Slipids are compared with the structures
-simulated with CHARMM36 in Fig. \ref{glycerol_buslaev}.
-The differences in sampled conformation leading to the order parameter
-differences are clearly visible in the figure.
+The headgroup order parameters of DOPS and POPS bilayers 
+from different simulation models are compared with the experimental
+data in Fig. \ref{HGorderParametersPS}. In line with the previous
+study for PC lipids \cite{botan15}, the glycerol backbone order 
+parameters in CHARMM36 and Berger force fields roughly agree with
+the experimental data, but significant discrepancies are observed for
+Slipids and CKP models. The glycerol backbone structures from CHARMM36 and
+Slipids simulations visualized in Fig. \ref{glycerol_buslaev} reveal the
+missing structures in Slipids model, which probably lead to the incorrect
+order parameters. For the headgroup $\alpha$ and $\beta$ carbon order parameters of PS lipids,
+the tested models perform less well than for PC headgroup in previous
+study \cite{botan15}. None of the tested models give a satisfactory 
+agreement with experiments for the headgroup order paramaters of 
+PS lipids. Based on the subjective ranking shown in Fig. \ref{comparisonTablePS},
+the CHARMM36 is the best performing model for both lipids.
+However, the total deviation from the experiments for the PS lipids is significantly
+higher for PS lipids (8) than for PC (3) \cite{botan15}. Therefore the 
+interpretation of structural differences between PC and PS lipids 
+from current MD simulation models is very challenging.
+  
+\todo{Dihedral angle distribtions in Fig. \ref{dihedrals} should be analyzed from different models 
+  and included in the discussion. Maybe also figures similar to \ref{glycerol_buslaev}.}
+
+
 \begin{figure}[]
   \centering
   \includegraphics[width=9.0cm]{../Figs/glycerol_buslaev.png}
@@ -325,26 +343,41 @@ differences are clearly visible in the figure.
   }
 \end{figure}
 
-\todo{Dihedral angle distribtions in Fig. \ref{dihedrals} should be included in the discussion.}
 
 \subsection{Headgroup structure in PS and PC mixtures}
-The headgroup order parameters of POPC 
-mixed with PS lipids are shown in Fig. \ref{HGorderparametersPCvsPEPSPG}
-from different simulation model and experiments \cite{scherer87} with different
-mole fractions. As already discussed previosly, the PC lipid headgroup behaviour
-follows the electrometer concept in experiments when mixed with other lipids, i.e., the order
-parameters increase when mixed with negatively charged lipids (PS, PI, CL, PA and PG)
-remains almost unchaged when mixed with neutral lipids (PE and SM) \cite{scherer87}.
-This is not the case in simulation data shown in Fig. \ref{HGorderparametersPCvsPEPSPG}.
-%The addition of DOPE into a POPC and DOPC bilayers significantly decreases the PC headgroup
-%order parameters in simulations with OPLS compatible version of the Berger force field \cite{tieleman06}
-%in contrast to experiments \cite{scherer87}. On the other hand, the increase of the PC
-%headgroup order parameters in CHARMM36 simulations mixed with PS and PG lipids is significantly
-%smaller than in experiments.
+Lipid mixtures containing PC and PS lipids are present in biological
+systems. Also the Ca2+ binding affinity to bilayers containing
+PS lipids is measured from mixtures with PC, because pure PS
+bilayers exhibit instant transition to the ordered phase with the
+addition of the ions. Therefore, the characterization of mutual interactions
+between PC and PS lipid headgroups is necessary in order to
+understand PS lipids in biological environments.
+
+Fig. \ref{HGorderparametersPCvsPS} shows the headgroup order parameters
+of POPC and POPS lipids in mixtures with various mole fractions from 
+simulations and experiments \cite{scherer87,roux90}.
+The headgroup order parameters of POPC increase with the increasing
+amount of negatively charged POPS, as expected from the 
+the electrometer concept \cite{seelig87}. Notably, the concept
+seems to be generally valid, at least qualitatively, also for 
+other lipid mixed with PC lipids; the PC lipid headgroup order
+parameters increase when mixed with negatively charged 
+lipids (PS, PI, CL, PA and PG) and remains almost unchaged when 
+mixed with neutral lipids (PE and SM) \cite{scherer87} or cholesterol \cite{ferreira13}.
+This is, however, not reproduced in the simulation data 
+in Fig. \ref{HGorderparametersPCvsPS}. The order parameter for
+$\beta$-carbon of POPC decreases and almost negligible increase is 
+seen in $\alpha$ order parameter with the addition of PS lipid in CHARMM36 simulation.
+This may indicate incorrect interactions between PC and PS headgroups
+in simulations. On the other hand, the previously reported overestimated
+ion binding affinity may also play a role, as the amount of counterions
+is increasing with PS.
+\todo{Data from other force fields to be collected before discussion can be finalized.}
+
 \begin{figure*}[]
   \centering
   \includegraphics[width=16.0cm]{../Figs/HGorderparametersPCvsPS.eps}
-  \caption{\label{HGorderparametersPCvsPEPSPG}
+  \caption{\label{HGorderparametersPCvsPS}
     Headgroup order parameters from PC:PS mixtures from 
     different simulation models and experiments.
     Left panel shows the PC headgroup order parameters (experimental results from Ref. \citenum{scherer87},
@@ -358,36 +391,25 @@ This is not the case in simulation data shown in Fig. \ref{HGorderparametersPCvs
   \todo{We need results also from other than CHARMM36 force field.}
 \end{figure*}
 
-\todo{More data to be collected before discussion.}
-
-%\subsection{Effect of PC on PS headgroup}
-The headgroup order parameters of PS mixed with varying amounts of PC
-from simulations and experiments \cite{borle85,roux90}
-are shown in Fig. \ref{HGorderparametersPSPGvsPC}. The effect of increasing
-amount of PC to PS headgroup seems to qualitatively incorrect in CHARMM36 simulations.
-The $\beta$-carbon order parameter increases in experiment, but decreases
-in simulations with both tested counterions (Na+ and K+). Larger
-$\alpha$-carbon order parameter decreases with the addition of PC
-in experiment, while the lower remains unchanged. In simulations the
-larger increases and the lower decreases.
-Interestingly, the $\alpha$-carbon order parameters are closer to experiments
-in pure PS system with K+ counterions than with Na+. 
-%The changes in PG headgroup order parameters are minor in simulations, which
-%is in line with the only available experiment for the $\beta$-carbon.
-%\begin{figure}[]
-%  \centering
-%  \includegraphics[width=8.0cm]{../Figs/HGorderparametersPSvsPC.eps}
-%  \caption{\label{HGorderparametersPSPGvsPC}
-%    PS order parameters from mixtures with PC
-%    lipids with various mole fractions from different simulation models and experiments \cite{borle85,roux90}.
-%    Signs for PS are measures as described in SI.
-%  }
-%  \todo{Some simulations contain potassium as counterions, while some sodium.
-%    All experiments here contain some amount of sodium salt. The best
-%    ion concentrations for comparison should be figured out.} \\
-%\end{figure}
-
-
+Also the headgroup order parameters of POPS mixed with varying amounts of POPC
+from simulations and experiments \cite{borle85,roux90} are shown in Fig. \ref{HGorderparametersPCvsPS}.
+The $\beta$-carbon order parameter of POPS slightly decreases and positive 
+order parameter of $\alpha$-carbon slightly increases with increasing
+amount of PS lipids. This may indicate increasing order of the headgroup.
+It should be, however, noted that the experimental data for pure POPS and
+POPC/POPS mixture come from different experimental sets, 13C NMR in this work
+and 2H NMR from Ref. \citenum{roux90}, respectively. Therefore the accuracy
+of the order parameter change is not as high as typically in the measurements
+of order parameter changes, see discussion about qualitative and quantitative 
+accuracy in Ref. \citenum{ollila16}. The changes of PS headgroup order parameters
+are not reproduced by the tested simulation models. The $\beta$-carbon order parameter
+increase with increasing amount of PS in CHARMM36 and MacRog simulations in contrast
+to the experimental data. The smaller $\alpha$-carbon order parameter increase in both
+simulation models with increasing amount of PS, while it is almost unchanged in experiments.
+The larger $\alpha$-carbon order parameter increase in MacRog and decrease in CHARMM36
+with increasing amount of PS, both model exhibiting a poor agreement with experiments. 
+Signifincant improvement in the MD simulation models are needed to interpret the
+PS headgroup structures and mutual interactions with PC lipids. 
 
 \subsection{Ca$^{2+}$ binding affinity in bilayers with negatively charged PS lipids}
 
