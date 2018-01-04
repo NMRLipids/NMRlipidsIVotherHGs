@@ -158,8 +158,10 @@ The simulation details are in SI or in references in the table.
 \centering
 \caption{List of MD simulations. The salt concentrations calculated as 
    [salt]=N$_{\rm c} \times$[water]\,/\,N$_{\rm w}$, where [water]\,=\,55.5~M.
-%   these correspond the concentrations reported in the experiments by Akutsu et al.~\cite{akutsu81}.
-%   The lipid force fields named as in our previous work~\cite{botan15}.
+   CKP1 referes to the version with Berger/chiu NH3 charges compatible with Berger
+   and CKP2 to the version with more Gromos compatible version.
+   %   these correspond the concentrations reported in the experiments by Akutsu et al.~\cite{akutsu81}.
+   %   The lipid force fields named as in our previous work~\cite{botan15}.
 }\label{IONsystems}
 %begin{minipage}[t]{\textwidth}
 \begin{tabular}{l c c r r r r r r c c}
@@ -167,26 +169,23 @@ The simulation details are in SI or in references in the table.
   % some footnotes are not visible in typeset-MS (pdf)
  lipid/counter-ions & force field for lipids / ions & NaCl (mM) & CaCl$_2$\,(mM) &  \footnote{Number of lipid molecules with largest mole fraction}N$_{\rm l}$   &  \footnote{Number of water molecules}N$_{\rm w}$   & \footnote{Number of additional cations}N$_{\rm c}$  & \footnote{Simulation temperature}T (K)  & \footnote{Total simulation time}t$_{{\rm sim}}$(ns) & \footnote{Time used for analysis}t$_{{\rm anal}}$ (ns) &   \footnote{Reference for simulation files}files\\
   \hline
-  DPPE  & Slipids \cite{jambeck12b} &0 & 0        & 288 			   		& 9386 & 0  & 336  & 200 & 100 & \cite{slipidsDPPEfiles}  \\
+  DPPE  & Slipids \cite{jambeck12b} &0 & 0        & 288 & 9386 & 0  & 336  & 200 & 100 & \cite{slipidsDPPEfiles}  \\
     \hline
-    DOPS/Na$^+$  & CHARMM36 \cite{??}  \todoi{Correct citation for CHARMM DOPS}      &0 & 0        & 128 			   		& 4480 & 0  & 303  & 500 & 100 & \cite{??}
-    \todoi{By Piggot: http://nmrlipids.blogspot.com/2017/03/nmrlipids-iv-headgroup-glycerol.html?showComment=1491425687561\#c4932902612512697301. We need to decide the switching version or discuss this somehow.}  \\
-    DOPS/Na$^+$  & CHARMM36ua \cite{??} \todoi{Correct citation for CHARMMua DOPS}        &0 & 0        & 128 			   		& 4480 & 0  & 303  & 500 & 100 & \cite{??}
-    \todoi{Delivered by Piggot. We need to decide the switching version or discuss this somehow. Data to be uploaded in Zenodo?}  \\
-    DOPS/Na$^+$  & Slipids \cite{jambeck13}        &0 & 0        & 128 			   		& 4480 & 0  & 303  & 500 & 100 & \cite{??}
-    \todoi{Delivered by Piggot. We need to decide the cut-off version or discuss this somehow. Data to be uploaded in Zenodo?}  \\
-    DOPS/Na$^+$  & Slipids \cite{jambeck13}        &0 & 0        & 288 			   		& 11232 & 0  & 303  & 200 & 100 & \cite{slipidsDOPSfiles} \\
-    DOPS/Na$^+$  & Berger \cite{mukhopadhyay04}        &0 & 0        & 128 			   		& 4480 & 0  & 303  & 500 & 100 & \cite{??}
-    \todoi{Delivered by Piggot. Data to be uploaded in Zenodo?}  \\
-    DOPS/Na$^+$  & GROMOS-CKP \cite{??} \todoi{Correct citation(s) for CKP.}       &0 & 0        & 128 			   		& 4480 & 0  & 303  & 500 & 100 & \cite{??}
-    \todoi{Delivered by Piggot. We need to decide between RF and PME or discuss this somehow. Data to be uploaded in Zenodo?}  \\
+    DOPS/Na$^+$  & CHARMM36 \cite{??}  \todoi{Correct citation for CHARMM DOPS}      &0 & 0 & 128 & 4480 & 0  & 303  & 500 & 100 & \cite{charmm36DOPS303K} \\
+    DOPS/Na$^+$  & CHARMM36ua \cite{??} \todoi{Correct citation for CHARMMua DOPS}        &0 & 0        & 128 & 4480 & 0  & 303  & 500 & 100 & \cite{charmm36uaDOPS303K} \\
+    DOPS/Na$^+$  & Slipids \cite{jambeck13}        &0 & 0        & 128 	& 4480  & 0  & 303  & 500 & 100 & \cite{slipidsDOPS303K} \\
+    DOPS/Na$^+$  & Slipids \cite{jambeck13}        &0 & 0        & 288 	& 11232 & 0  & 303  & 200 & 100 & \cite{slipidsDOPSfiles} \\
+    DOPS/Na$^+$  & Berger \cite{mukhopadhyay04}    &0 & 0        & 128  & 4480  & 0  & 303  & 500 & 100 & \cite{bergerDOPS303K} \\
+    DOPS/Na$^+$  & GROMOS-CKP1 \cite{??} \todoi{Correct citation(s) for CKP.} &0 & 0  & 128 & 4480 & 0  & 303  & 500 & 100 & \cite{ckp1DOPS303K} \\
+    DOPS/Na$^+$  & GROMOS-CKP2 \cite{??} \todoi{Correct citation(s) for CKP.} &0 & 0  & 128 & 4480 & 0  & 303  & 500 & 100 & \cite{ckp2DOPS303K} \\
     \hline
-    POPS/Na$^+$  & CHARMM36 \cite{??} \todoi{Correct citation for CHARMM POPS}        &0 & 0        & 128 			   		& 4480 & 0  & 298  & 500 & 100 & \cite{??}
-    \todoi{Delivered by Piggot. We need to decide the switching version or discuss this somehow. Data to be uploaded in Zenodo?}  \\
-    POPS/Na$^+$  & CHARMM36ua \cite{??} \todoi{Correct citation for CHARMMua DOPS}        &0 & 0        & 128 			   		& 4480 & 0  & 298  & 500 & 100 & \cite{??}
-    \todoi{Delivered by Piggot. We need to decide the switching version or discuss this somehow. Data to be uploaded in Zenodo?}  \\
-    POPS/Na$^+$  & Slipids \cite{jambeck13}        &0 & 0        & 128 			   		& 4480 & 0  & 298  & 500 & 100 & \cite{??}
-    \todoi{Delivered by Piggot. We need to decide the cut-off version or discuss this somehow. Data to be uploaded in Zenodo?}  \\
+    POPS/Na$^+$  & CHARMM36 \cite{??} \todoi{Correct citation for CHARMM POPS}&0 & 0 & 128 & 4480 & 0  & 298  & 500 & 100 & \cite{charmm36POPS298K} \\
+    POPS/Na$^+$  & CHARMM36ua \cite{??} \todoi{Correct citation for CHARMMua DOPS}  &0 & 0 & 128 & 4480 & 0  & 298  & 500 & 100 & \cite{charmm36uaPOPS298K} \\
+    POPS/Na$^+$  & Slipids \cite{jambeck13}        &0 & 0        & 128 & 4480 & 0  & 298  & 500 & 100 & \cite{slipidsPOPS298K} \\
+    POPS/Na$^+$  & Berger \cite{??}        &0 & 0        & 128 & 4480 & 0  & 298  & 500 & 100 & \cite{bergerPOPS298K} \\
+    POPS/Na$^+$  & MacRog \cite{maciejewski14}  &0 & 0        & 128 & 5120 & 0  & 298  & 200 & ? \todoi{Equilibration?} & \cite{macrogPOPS298K} \\
+    POPS/Na$^+$  & GROMOS-CKP1 \cite{??} \todoi{Correct citation(s) for CKP.} &0 & 0  & 128 & 4480 & 0  & 298  & 500 & 100 & \cite{ckp1POPS303K} \\
+    POPS/Na$^+$  & GROMOS-CKP2 \cite{??} \todoi{Correct citation(s) for CKP.} &0 & 0  & 128 & 4480 & 0  & 298  & 500 & 100 & \cite{ckp2POPS303K} \\
     \hline
     POPC:POPS (5:1)/K$^+$  & CHARMM36 \cite{klauda10,??} \todoi{Correct citation for CHARMM POPS}        &0 & 0        & 110:22	   		& 4935 & 0  & 298  & 100 & 100 \todoi{Equilibration?} & \cite{charmm36pops+83popcT298K}  \\
 %    \hline
@@ -299,6 +298,12 @@ The detailed structural differences between the headgroups is, however, not know
   }
   \todo{Check and report all the counterions. There may be some simulation data 
     sets with both Na+ and K+ ions?}
+  \todo{CHARMM36-UA point for alpha in wrong place?}
+  \todo{MacRog POPS data missing. The equilibration yet to be checked, thought.}
+  \todo{In table \ref{IONsystems}: ''CKP1 referes to the version with 
+    Berger/chiu NH3 charges compatible with Berger
+    and CKP2 to the version with more Gromos compatible version.'' Is this correct
+    also in this figure?}
 \end{figure}
 
 \begin{figure}[]
@@ -307,7 +312,6 @@ The detailed structural differences between the headgroups is, however, not know
   \caption{\label{comparisonTablePS}
   Rough subjective ranking of force fields based on Figure~\ref{HGorderParametersPS}. Here ÒMÓ indicates a magnitude problem, ÒFÓ a forking problem; letter size increases with problem severity. Color scheme: Òwithin experimental errorÓ (dark green), Òalmost within experimental errorÓ (light green), Òclear deviation from experimentsÓ (light red), and Òmajor deviation from experimentsÓ (dark red). The $\Sigma$-column shows the total deviation of the force field, when individual carbons are given weights of 0 (matches experiment), 1, 2, and 4 (major deviation). For full details of the assessment, see Supplementary Information.
   }
-  \todo{CHARMM36-UA point for alpha in wrong place?}
 \end{figure}
 
 The headgroup order parameters of DOPS and POPS bilayers 
