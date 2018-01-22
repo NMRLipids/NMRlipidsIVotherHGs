@@ -85,13 +85,44 @@ Prague 6, Czech Republic}
 
 %\label{}
 \section{Introduction}
+Cellular membranes are composed of mixtures of zwitterionic
+and negatively charged lipids. Negatively charged lipids are important for
+the signalling and lateral organization of cellular membranes \cite{li4}.
+Direct interactions of cations and proteins with negatively charged
+lipids have been proposed to trigger signaling events \cite{li14,??}.
+On the other hand, it has been proposed that negatively charged lipids 
+only increase the local concentration of cations in the vicinity of
+the membrane and that the binding constant of cations is similar
+to zwitterionic and negatively charged lipids \cite{seelig90,??}.
 
-In NMRlipids I and II project we were looking for a MD model
-which would correctly reproduce headgroup and glycerol
-backbone structures and cation binding for PC lipid bilayers \cite{botan15,catte16}.
-Here we extend the same goal for lipids with negatively charged PS headgroup.
-Chemical structure of PS headgroup together with other common biological
-lipids is shown in Fig. \ref{lipids}.
+Details of negatively charged lipids and their interactions
+with ions and proteins have been experimentally analyzed with
+various spectroscopic methods \cite{borle85,macdonald87,roux90,seelig90,pan14,melcrova16,??}
+%NMR \cite{seelig90,??}, scattering \cite{pan14,??} and fluorescence spectroscopy
+which are often complemented with classical MD simulations \cite{pan14,melcrova16,??}.
+The structure of negatively charged lipids and their detailed
+interactions with ions or proteins have not, however, been fully resolved
+due to the difficulties to interpret the experimental data \cite{??} and
+the inaccuracies in simulation models at the
+headgroup region \cite{botan15,catte16,ollila16}.
+
+Headgroup and glycerol backbone C-H bond order parameters
+calculated from MD simulations have been
+recently used to interpret the lipid structures in NMR experiments
+and to validate lipid structure and ion binding in simulations of
+PC lipid bilayers \cite{botan15,catte16,ollila16,ferreira16}.
+In this work we apply the same approach to negatively charged
+phosphatidylserine lipids (PS) which compose   
+25-35\% of plasma membrane \cite{li14,??}, regulate
+surface charge and protein localization \cite{yeung08}, and
+induce protein aggregation \cite{zhao04,??}.
+
+%In NMRlipids I and II project we were looking for a MD model
+%which would correctly reproduce headgroup and glycerol
+%backbone structures and cation binding for PC lipid bilayers \cite{botan15,catte16}.
+%Here we extend the same goal for lipids with negatively charged PS headgroup.
+%Chemical structure of PS headgroup together with other common biological
+%lipids is shown in Fig. \ref{lipids}.
 \begin{figure}[]
   \centering
   \includegraphics[width=9.0cm]{../Figs/lipids.pdf}
@@ -100,7 +131,8 @@ lipids is shown in Fig. \ref{lipids}.
   }
 \end{figure}
 
-Glycerol backbone and headgroup structure and behaviour are similar in model membranes and in bacteria \cite{gally81,scherer87,seelig90}.
+Glycerol backbone and headgroup structure and behaviour are similar
+in model membranes and in bacteria \cite{gally81,scherer87,seelig90}.
 
 PC lipid headgroup order parameters can used to measure ion binding
 affinity, because their magnitude is proportional
@@ -186,6 +218,7 @@ The interpretation of this data and some other results has been that \cite{seeli
 
 \subsection{Solid state NMR experiments}
 The experimental protocol is the same used in Ref. \citenum{ferreira16}.
+\todo{Some basic details should be given.}
 
 \subsection{Molecular dynamics simulations}
 Molecular dynamics simulation data was collected with Open Collaboration method.
@@ -207,8 +240,6 @@ The simulation details are in SI or in references in the table.
   % some footnotes are not visible in typeset-MS (pdf)
  lipid/counter-ions & force field for lipids / ions & NaCl (mM) & CaCl$_2$\,(mM) &  \footnote{Number of lipid molecules with largest mole fraction}N$_{\rm l}$   &  \footnote{Number of water molecules}N$_{\rm w}$   & \footnote{Number of additional cations}N$_{\rm c}$  & \footnote{Simulation temperature}T (K)  & \footnote{Total simulation time}t$_{{\rm sim}}$(ns) & \footnote{Time used for analysis}t$_{{\rm anal}}$ (ns) &   \footnote{Reference for simulation files}files\\
   \hline
-  DPPE  & Slipids \cite{jambeck12b} &0 & 0        & 288 & 9386 & 0  & 336  & 200 & 100 & \cite{slipidsDPPEfiles}  \\
-    \hline
     DOPS/Na$^+$  & CHARMM36 \cite{??}  \todoi{Correct citation for CHARMM DOPS}      &0 & 0 & 128 & 4480 & 0  & 303  & 500 & 100 & \cite{charmm36DOPS303K} \\
     DOPS/Na$^+$  & CHARMM36ua \cite{??} \todoi{Correct citation for CHARMMua DOPS}        &0 & 0        & 128 & 4480 & 0  & 303  & 500 & 100 & \cite{charmm36uaDOPS303K} \\
     DOPS/Na$^+$  & Slipids \cite{jambeck13}        &0 & 0        & 128 	& 4480  & 0  & 303  & 500 & 100 & \cite{slipidsDOPS303K} \\
@@ -244,7 +275,8 @@ The simulation details are in SI or in references in the table.
 \subsection{Headgroup and glycerol backbone order parameters measured from POPS lipid bilayer}
 
 Figs. \ref{PShgSIGNSsimpson} and \ref{glycerolNMR} summarize the experimental NMR results for POPS
-bilayer sample. 
+bilayer sample. \todo{New figure, probably combining Figs. \ref{PShgSIGNSsimpson} and \ref{glycerolNMR}, should
+be done. This discussion to be finished after this.}
 
 \begin{figure}[!htb]
   \centering
