@@ -85,37 +85,57 @@ Prague 6, Czech Republic}
 
 %\label{}
 \section{Introduction}
-Cellular membranes are composed of mixtures of zwitterionic
-and negatively charged lipids. Negatively charged lipids are important for
-the signalling and lateral organization of cellular membranes \cite{li4}.
-Direct interactions of cations and proteins with negatively charged
-lipids have been proposed to trigger signaling events \cite{li14,??}.
-On the other hand, it has been proposed that negatively charged lipids 
-only increase the local concentration of cations in the vicinity of
-the membrane and that the binding constant of cations is similar
-to zwitterionic and negatively charged lipids \cite{seelig90,??}.
+Phosphatidylserine (PS) is the most common negatively
+charged lipid in eykaryotic membranes.
+PS lipids compose 8.5\% of total lipid weight of erythrocytes,
+but the abundance varies between different organelles up to
+25-35\% in plasma membrane \cite{lemmon08,leventis10,li14}.
+Despite of the relatively low abundance, PS lipids
+are important signaling molecules. They interact with
+signaling proteins \cite{leventis10}, regulate
+surface charge and protein localization \cite{yeung08}, and
+induce protein aggregation \cite{zhao04,??}.
+Some domains spesifically interact PS lipids,
+while others are attracted by general electrostatics and the
+binding can be regulated by calcium \cite{leventis10}.
+Therefore, it is crucial to resolve the structural details
+of PS headgroup and calcium binding in order to fully
+understand PS mediated signaling processes.
 
-Details of negatively charged lipids and their interactions
-with ions and proteins have been experimentally analyzed with
-various spectroscopic methods \cite{borle85,macdonald87,roux90,seelig90,pan14,melcrova16,??}
-%NMR \cite{seelig90,??}, scattering \cite{pan14,??} and fluorescence spectroscopy
-which are often complemented with classical MD simulations \cite{pan14,melcrova16,??}.
-The structure of negatively charged lipids and their detailed
-interactions with ions or proteins have not, however, been fully resolved
+The structure of PS lipid headgroups and their 
+interactions with ions have been studied with
+various experimental methods and theoretical techniques \cite{roux90,melcrova16,??}.
+However, the consesus has not been reached 
 due to the difficulties to interpret the experimental data \cite{??} and
 the inaccuracies in simulation models at the
 headgroup region \cite{botan15,catte16,ollila16}.
+Some studies propose specific binding of calcium directly to PS lipid
+headgroups \cite{??}, while others propose that only the local concentration
+of cations in the vicinity of negatively charged membranes containing PS lipids
+and that the binding constant of cations is similar
+to zwitterionic and negatively charged lipids \cite{seelig90,??}.
+The NMR data proposes that the PS headgroup is more rigid than PC,PE or PG
+headgroups, but more detailed interperetation has not been done.
+
+%Details of negatively charged lipids and their interactions
+%with ions and proteins have been experimentally analyzed with
+%various spectroscopic methods \cite{borle85,macdonald87,roux90,seelig90,pan14,melcrova16,??}
+%NMR \cite{seelig90,??}, scattering \cite{pan14,??} and fluorescence spectroscopy
+%which are often complemented with classical MD simulations \cite{pan14,melcrova16,??}.
+
 
 Headgroup and glycerol backbone C-H bond order parameters
 calculated from MD simulations have been
 recently used to interpret the lipid structures in NMR experiments
 and to validate lipid structure and ion binding in simulations of
 PC lipid bilayers \cite{botan15,catte16,ollila16,ferreira16}.
-In this work we apply the same approach to negatively charged
-phosphatidylserine lipids (PS) which compose   
-25-35\% of plasma membrane \cite{li14,??}, regulate
-surface charge and protein localization \cite{yeung08}, and
-induce protein aggregation \cite{zhao04,??}.
+In this work we apply this approach to PS lipid headgroup
+in order to elucidate the structural details and ion binding
+to negatively charged lipids. The results are expected to elucidate
+also PS mediated signalling events because 
+glycerol backbone and headgroup structure and behaviour are similar
+in model membranes and in bacteria \cite{gally81,scherer87,seelig90}.
+
 
 %In NMRlipids I and II project we were looking for a MD model
 %which would correctly reproduce headgroup and glycerol
@@ -131,8 +151,6 @@ induce protein aggregation \cite{zhao04,??}.
   }
 \end{figure}
 
-Glycerol backbone and headgroup structure and behaviour are similar
-in model membranes and in bacteria \cite{gally81,scherer87,seelig90}.
 
 PC lipid headgroup order parameters can used to measure ion binding
 affinity, because their magnitude is proportional
@@ -506,24 +524,27 @@ analysin the binding affinities.
   POPC bilayer is compared between simulations and experiments \cite{scherer89}.}
 \end{figure}
 
-\todo{When we have more data for Ca binding to PS containing bilayers, the discussion will be updated and PG results moved
-to other manuscript.}
-Comparison of Ca$2+$ binding in PG between CHARMM36 simulations and experiments \cite{borle85}
-is shown in Fig. \ref{changesWITHCaClPG}. The decrease of $\alpha$ order parameter
-is in agreement with experiments, while decerase of $\beta$ order parameter is overestimated.
-The result is very similar to the results with PC in NMRlipids II publication \cite{catte16}.
-It should be, however, noted that the $\beta$-order parameters are not actually measured for PG,
-but they are calculated from empirical relation $\Delta S_{\beta}=0.43\Delta S_{\alpha}$ \cite{akutsu81}.
-Anyway, the data presented in NMRlipids II project and in Fig. \ref{changesWITHCaClPG} together
-suggest that Calcium binding is similarly overestimated by CHARMM36 model in pure POPC bilayers and mixtures with
-POPG. The good agreement of $\alpha$ carbon would be explained by too weak dependence of its order
-parameter of bound charge
+The headgroup order parameter changes of POPC and POPS from POPC:POPS (5:1) bilayers
+as a function of Ca$2+$ concentration from different
+simulations and experiments \cite{roux90} are shown in Fig. \ref{changesWITHCaClPG}.
+As shown previously, the changes of PC headgroup order parameters can be
+used to measure the amount of bound ions to the bilayer according to the
+electrometer concept \cite{akutsu81,seelig87,catte16}.
+This would suggest that the Ca2+ binding is overestimated in
+MacRog simulation and underestimated in CHARMM36 simulation.
+It should be however noted, that MacRog simulation with low
+concetrations gives a good agreemet with experiments.
+The result from CHARMM simulation is somewhat surprising because
+previous study suggested that Ca2+ ions overbind to pure PC lipid
+bilayers \cite{catte16}.
+\todo{The role of counterions and equilibration should be somehow checked
+and discussed.}
 \begin{figure*}[]
   \centering
   \includegraphics[width=18cm]{../Figs/CHANGESwithCaClPS.eps}
   \caption{\label{changesWITHCaClPG}
-    PG order parameters as a function CaCl$_2$ concentration from experiments \cite{borle85} and CHARMM36 simulations.
-    Note that beta order parameter is calculated from empirical relation $\Delta S_{\beta}=0.43\Delta S_{\alpha}$ \cite{akutsu81}, not actually measured. 
+    POPC (left) and POPS (right) headgroup order parameters in lipid bilayer with POPC:POPS (5:1) mixture
+    as a function CaCl$_2$ concentration from experiments \cite{roux90} and different simulations.
   }
 \end{figure*}
 
@@ -535,12 +556,15 @@ In addition, absolute value in systems with CaCl$_2$ is in agreement with experi
 However, system with 4:1 mixture of POPC and POPG behaves differently, but experimental
 data is not available for comparison for this mixture.
 
-\todo{More simulation data for systems with negatively charged lipids and CaCl$_2$ to be collected}
+\todo{More simulation data for systems with PS lipids and CaCl$_2$ would be probably useful}
 
 %\subsection{Effect of Ca$2+$ binding to PS headgroup}
 
-Also the experimental order parameters for PS and PG headgroups
+Also the experimental order parameters of POPS headgroup 
 as a function of CaCl$_2$ concentration are shown in Fig. \ref{PSPGchangesWITHCaCl}.
+The order parameter changes with added CaCl$_2$ are overestimated in
+both simulation models. However, the changes can be considered qualitatively
+correct for both segments in CHARMM36 model and in $\beta$ segment in MacRog model. 
 \todo{These should be compared to simulations for potential structural interpretation of the changes.}
 %\begin{figure}[]
 %  \centering
@@ -575,7 +599,7 @@ as a function of CaCl$_2$ concentration are shown in Fig. \ref{PSPGchangesWITHCa
 \begin{acknowledgments}
 % Put your acknowledgments here.
 \end{acknowledgments}
-\newpage
+\pagebreak
 \appendix
 \begin{center}
 {\bf SUPPLEMENTARY INFORMATION}
