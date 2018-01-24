@@ -3,8 +3,11 @@
 # and
 # from https://github.com/NMRLipids/NMRlipidsIVotherHGs/issues/1
 # Na counterions
+# and by Jesper Madsen
+# http://nmrlipids.blogspot.com/2017/12/nmrlipids-iv-current-status-and.html?showComment=1516642859204#c3440534109745026509
 #
-#
-# mole fraction of PC        beta          alpha1       alpha2
-0                          -0.0665649      0.0130353   -0.0624143
-0.83                       -0.132365       0.0714638   -0.104298
+# mole fraction of PC        beta          alpha1             alpha2
+0                          -0.0665649      0.0130353         -0.0624143
+0.5                        -0.103787178949 0.0632404594328   -0.0823790872369
+0.83                       -0.142128483065 0.10087318918     -0.108092315804
+0.83                       -0.132365       0.0714638         -0.104298

@@ -247,6 +247,7 @@ The simulation details are in SI or in references in the table.
     DOPS/Na$^+$  & Berger \cite{mukhopadhyay04}    &0 & 0        & 128  & 4480  & 0  & 303  & 500 & 100 & \cite{bergerDOPS303K} \\
     DOPS/Na$^+$  & GROMOS-CKP1 \cite{??} \todoi{Correct citation(s) for CKP.} &0 & 0  & 128 & 4480 & 0  & 303  & 500 & 100 & \cite{ckp1DOPS303K} \\
     DOPS/Na$^+$  & GROMOS-CKP2 \cite{??} \todoi{Correct citation(s) for CKP.} &0 & 0  & 128 & 4480 & 0  & 303  & 500 & 100 & \cite{ckp2DOPS303K} \\
+    DOPS/Na$^+$  & lipid17 \cite{gould18}          &0 & 0        & ?    & ?   & ?  & ?  & ? & ? & \cite{??} \\
     \hline
     POPS/Na$^+$  & CHARMM36 \cite{??} \todoi{Correct citation for CHARMM POPS}&0 & 0 & 128 & 4480 & 0  & 298  & 500 & 100 & \cite{charmm36POPS298K} \\
     POPS/Na$^+$  & CHARMM36ua \cite{??} \todoi{Correct citation for CHARMMua DOPS}  &0 & 0 & 128 & 4480 & 0  & 298  & 500 & 100 & \cite{charmm36uaPOPS298K} \\
@@ -255,6 +256,7 @@ The simulation details are in SI or in references in the table.
     POPS/Na$^+$  & MacRog \cite{maciejewski14}  &0 & 0        & 128 & 5120 & 0  & 298  & 200 & ? \todoi{Equilibration?} & \cite{macrogPOPS298K} \\
     POPS/Na$^+$  & GROMOS-CKP1 \cite{??} \todoi{Correct citation(s) for CKP.} &0 & 0  & 128 & 4480 & 0  & 298  & 500 & 100 & \cite{ckp1POPS303K} \\
     POPS/Na$^+$  & GROMOS-CKP2 \cite{??} \todoi{Correct citation(s) for CKP.} &0 & 0  & 128 & 4480 & 0  & 298  & 500 & 100 & \cite{ckp2POPS303K} \\
+    POPS/Na$^+$  & lipid17 \cite{gould18}  &0 & 0  & ? & ? & ? & ? & ? & ? & ? \\
     \hline
     POPC:POPS (5:1)/K$^+$  & CHARMM36 \cite{klauda10,??} \todoi{Correct citation for CHARMM POPS}        &0 & 0        & 110:22	   		& 4935 & 0  & 298  & 100 & 100 \todoi{Equilibration?} & \cite{charmm36pops+83popcT298K}  \\
 %    \hline
@@ -367,13 +369,15 @@ The detailed structural differences between the headgroups is, however, not know
     The vertical bars shown for the computational values are not error bars, but demonstrate that for these systems we had at least two data sets; the ends of the bars mark the extreme values from the sets, and the dot marks their measurement-time-weighted average.
   }
   \todo{Check and report all the counterions. There may be some simulation data 
-    sets with both Na+ and K+ ions?}
-  \todo{CHARMM36-UA point for alpha in wrong place?}
-  \todo{MacRog POPS data missing. The equilibration yet to be checked, thought.}
-  \todo{In table \ref{IONsystems}: ''CKP1 referes to the version with 
+    sets with both Na+ and K+ ions?} \\
+  \todo{CHARMM36-UA point for alpha in wrong place?} \\
+  \todo{MacRog POPS data missing. The equilibration yet to be checked, thought.} \\
+  \todo{In table \ref{IONsystems}: ''CKP1 referes to the version with  
     Berger/chiu NH3 charges compatible with Berger
     and CKP2 to the version with more Gromos compatible version.'' Is this correct
-    also in this figure?}
+    also in this figure?} \\
+  \todo{Lipid17 results should be added.} \\
+  \todo{We should also add CHARMM36 POPS ran with K counterions: https://github.com/NMRLipids/NMRlipidsIVotherHGs/issues/1\#issuecomment-308570874}
 \end{figure}
 
 \begin{figure}[]

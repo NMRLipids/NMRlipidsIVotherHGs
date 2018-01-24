@@ -1,0 +1,13 @@
+# Binding of Ca2+ to Mixtures of POPC:POPS (5:1) mixture
+# Sodium counterions
+# Order parameters
+#
+# from 
+#  http://nmrlipids.blogspot.com/2017/12/nmrlipids-iv-current-status-and.html?showComment=1516642859204#c3440534109745026509
+# by Jesper Madsen 
+#
+#[CaCl]    POPC_a1           POPC_a2          POPC_b1            POPC_b2            POPS_a1            POPS_a2                POPS_b
+0          0.0378304702977   0.0328305609416  -0.0795243501265    -               0.10087318918       -0.108092315804      -0.142128483065
+0.15       0.0275224298165   0.0272430254303  -0.0916384830361   -                0.086389871872      -0.013709610963      -0.0369442827774
+1.0        0.0158700132578   0.0165112648353  -0.0952991114031   -                0.0591177169935     -0.0171054622452     -0.039232357525
+

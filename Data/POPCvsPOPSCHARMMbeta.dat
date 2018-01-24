@@ -4,7 +4,9 @@
 # delivered by Fernando Favela
 #
 # Results with PS taken from https://github.com/NMRLipids/MATCH/blob/master/Data/Lipid_Bilayers/POPS%2B83%25popc/T298K/MODEL_CHARMM_GUI/OrdPars.dat
-#
+# and
+# from http://nmrlipids.blogspot.com/2017/12/nmrlipids-iv-current-status-and.html?showComment=1516642859204#c3440534109745026509
+# 
 #
 # It should be noted that pure POPC are ran with Gromacs 4, but the results with
 # PG are ran with Gromacs 5. This has significant effect on acyl chains:
@@ -17,3 +19,5 @@
 #
 0     -0.0785491         -0.0755386
 0.17   -0.083284282985   -0.0807189583207
+0.17   -0.0795243501265  -
+0.5   -0.0851482081839   -
