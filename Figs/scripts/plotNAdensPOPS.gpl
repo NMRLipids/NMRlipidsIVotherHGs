@@ -1,0 +1,41 @@
+set size 1.0,1.1
+set terminal postscript portrait enhanced color dashed lw 1 "Helvetica" 14 
+set output "../NAdensPOPS.eps"
+set yrange [0:119] 
+#set xrange [-0.01:0.95] 
+#set ytic 0.05
+#set xtics ("{/Symbol b}" 1, "{/Symbol a}" 2, "g_{3R}" 3, "g_{3S}" 4, "g_{2}" 5, "g_{1R}" 6, "g_{1S}" 7)
+#set xtics ("{/Symbol g}" 0, "{/Symbol b}" 1, "{/Symbol a}" 2, "g_{3}" 3, "g_{2}" 4, "g_{1}" 5)
+#set key box linestyle 1 linecolor rgb 'black'
+set key at graph 0.65,0.9 maxcols 3 maxrows 5
+set multiplot layout 7,1
+
+set xtics format " " 
+
+set size 1.0,0.2
+set ylabel "Density profile"
+plot "../../../MATCH/Data/Lipid_Bilayers/POPS/T298K/MODEL_CHARMM36/NAdens.xvg" using 1:2 with lines title 'CHARMM36' lw 2 lc rgb 'black',\
+
+set size 1.0,0.2
+plot "../../../MATCH/Data/Lipid_Bilayers/POPS/T298K/MODEL_CHARMM36UA/NAdens.xvg" using 1:2 with lines title 'CHARMM36ua' lw 2 lc rgb 'black',\
+
+set size 1.0,0.2
+plot "../../../MATCH/Data/Lipid_Bilayers/POPS/T298K/MODEL_SLIPIDS/NAdens.xvg" using 1:2 with lines title 'Slipids' lw 2 lc rgb 'black',\
+
+set size 1.0,0.2
+plot "../../../MATCH/Data/Lipid_Bilayers/POPS/T298K/MODEL_Berger/NAdens.xvg" using 1:2 with lines title 'Berger' lw 2 lc rgb 'black',\
+
+set size 1.0,0.2
+plot "../../../MATCH/Data/Lipid_Bilayers/POPS/T298K/MODEL_MACROG/NAdens.xvg" using 1:2 with lines title 'MACROG' lw 2 lc rgb 'black',\
+
+set size 1.0,0.2
+plot "../../../MATCH/Data/Lipid_Bilayers/POPS/T298K/MODEL_GROMOS-CKP1/NAdens.xvg" using 1:2 with lines title 'Gromos-CKP1' lw 2 lc rgb 'black',\
+
+set size 1.0,0.2
+set xtics format "%G"
+set xlabel "Membrane normal coordinate (nm)"
+plot "../../../MATCH/Data/Lipid_Bilayers/POPS/T298K/MODEL_GROMOS-CKP2/NAdens.xvg" using 1:2 with lines title 'Gromos-CKP2' lw 2 lc rgb 'black',\
+
+
+
+
