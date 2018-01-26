@@ -90,7 +90,7 @@
 @timestamp rot 0
 @timestamp font 0
 @timestamp char size 1.000000
-@timestamp def "Fri Jan 26 20:01:39 2018"
+@timestamp def "Fri Jan 26 20:10:21 2018"
 @r0 off
 @link r0 to g0
 @r0 type above
@@ -141,11 +141,11 @@
 @    stack world 0, 0, 0, 0
 @    znorm 1
 @    view 0.150000, 0.150000, 0.750000, 0.850000
-@    title "Density profile of Ca2+ (1000mM CaCl_2)"
+@    title "Density of Ca2+ (1000mM CaCl_2)"
 @    title font 0
 @    title size 1.500000
 @    title color 1
-@    subtitle ""
+@    subtitle "CHARMM36"
 @    subtitle font 0
 @    subtitle size 1.000000
 @    subtitle color 1
@@ -211,7 +211,7 @@
 @    yaxis  bar color 1
 @    yaxis  bar linestyle 1
 @    yaxis  bar linewidth 1.0
-@    yaxis  label "Number density (nm\S-3\N)"
+@    yaxis  label "Number density"
 @    yaxis  label layout para
 @    yaxis  label place auto
 @    yaxis  label char size 1.000000
@@ -328,7 +328,7 @@
 @    s0 errorbar riser clip off
 @    s0 errorbar riser clip length 0.100000
 @    s0 comment "250POPC_50POPS_1MCaCl-1atm-298K/dens_CAL.xvg"
-@    s0 legend  "CHARMM36 POPC:POPS (5:1)"
+@    s0 legend  "POPC:POPS (5:1)"
 @    s1 hidden false
 @    s1 type xy
 @    s1 symbol 0
@@ -377,7 +377,56 @@
 @    s1 errorbar riser clip off
 @    s1 errorbar riser clip length 0.100000
 @    s1 comment "/home/samuli/work/NMRlipids/lipid_ionINTERACTION/Data/ionDistributions/C36/CaDensity_C36_POPC_1000mM-CaCl2.xvg"
-@    s1 legend  "CHARMM 36 POPC"
+@    s1 legend  "POPC"
+@    s2 hidden false
+@    s2 type xy
+@    s2 symbol 0
+@    s2 symbol size 1.000000
+@    s2 symbol color 3
+@    s2 symbol pattern 1
+@    s2 symbol fill color 3
+@    s2 symbol fill pattern 0
+@    s2 symbol linewidth 1.0
+@    s2 symbol linestyle 1
+@    s2 symbol char 65
+@    s2 symbol char font 0
+@    s2 symbol skip 0
+@    s2 line type 1
+@    s2 line linestyle 1
+@    s2 line linewidth 2.0
+@    s2 line color 3
+@    s2 line pattern 1
+@    s2 baseline type 0
+@    s2 baseline off
+@    s2 dropline off
+@    s2 fill type 0
+@    s2 fill rule 0
+@    s2 fill color 1
+@    s2 fill pattern 1
+@    s2 avalue off
+@    s2 avalue type 2
+@    s2 avalue char size 1.000000
+@    s2 avalue font 0
+@    s2 avalue color 1
+@    s2 avalue rot 0
+@    s2 avalue format general
+@    s2 avalue prec 3
+@    s2 avalue prepend ""
+@    s2 avalue append ""
+@    s2 avalue offset 0.000000 , 0.000000
+@    s2 errorbar on
+@    s2 errorbar place both
+@    s2 errorbar color 3
+@    s2 errorbar pattern 1
+@    s2 errorbar size 1.000000
+@    s2 errorbar linewidth 1.0
+@    s2 errorbar linestyle 1
+@    s2 errorbar riser linewidth 1.0
+@    s2 errorbar riser linestyle 1
+@    s2 errorbar riser clip off
+@    s2 errorbar riser clip length 0.100000
+@    s2 comment "/home/samuli/work/NMRlipids/NMRlipidsIVotherHGs/scratch/dens_profiles/400POPC_100POPG_1MCaCl-1atm-298K/dens_CAL.xvg"
+@    s2 legend  "POPC:POPG (4:1)"
 @target G0.S0
 @type xy
 -3.78236 0.67735886
@@ -583,4 +632,57 @@
 4.31288 0.468918
 4.37237 0.471694
 4.43186 0.471139
+&
+@target G0.S2
+@type xy
+-4.14719 0.64553604
+-3.97791 0.63981682
+-3.80864 0.63074625
+-3.63937 0.61320871
+-3.4701 0.57726126
+-3.30082 0.53308859
+-3.13155 0.45626426
+-2.96228 0.3982958
+-2.793 0.39820571
+-2.62373 0.52817718
+-2.45446 0.72974625
+-2.28518 0.81721321
+-2.11591 0.72322673
+-1.94664 0.46247147
+-1.77737 0.19597147
+-1.60809 0.05415
+-1.43882 0.010122387
+-1.26955 0.0012835991
+-1.10027 8.4143393e-05
+-0.931001 0
+-0.761728 0
+-0.592455 0
+-0.423182 0
+-0.253909 0
+-0.0846365 0
+0.0846365 0
+0.253909 0
+0.423182 0
+0.592455 0
+0.761728 2.1052402e-05
+0.931001 0.00052605856
+1.10027 0.0052177778
+1.26955 0.021864414
+1.43882 0.087587087
+1.60809 0.25039339
+1.77737 0.51857508
+1.94664 0.83027477
+2.11591 0.90888438
+2.28518 0.67466817
+2.45446 0.40625375
+2.62373 0.32995646
+2.793 0.38025375
+2.96228 0.46759009
+3.13155 0.55189339
+3.30082 0.58822222
+3.4701 0.61876276
+3.63937 0.64506607
+3.80864 0.64937087
+3.97791 0.64853153
+4.14719 0.64803604
 &
