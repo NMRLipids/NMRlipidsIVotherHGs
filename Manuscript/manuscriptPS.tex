@@ -547,12 +547,17 @@ electrometer concept \cite{akutsu81,seelig87,catte16}.
 This would suggest that the Ca2+ binding is overestimated in
 MacRog simulation and underestimated in CHARMM36 simulation.
 It should be however noted, that MacRog simulation with low
-concetrations gives a good agreemet with experiments.
+concentrations gives a good agreemet with experiments.
 The result from CHARMM simulation is somewhat surprising because
 previous study suggested that Ca2+ ions overbind to pure PC lipid
 bilayers \cite{catte16}.
 \todo{The role of counterions and equilibration should be somehow checked
-and discussed.}
+  and discussed.}
+The density profiles of Ca2+ from the simulations are shown in Fig. \ref{CAdensPCPSmixture}.
+Overall, it seems that calcium clearly overbinds in MacRog simulations
+as expected based on previous results \cite{catte16}.
+However, the calcium binding in CHARMM36 simulations seems to
+surprisingly low. Thi
 \begin{figure*}[]
   \centering
   \includegraphics[width=18cm]{../Figs/CHANGESwithCaClPS.eps}
@@ -561,6 +566,17 @@ and discussed.}
     as a function CaCl$_2$ concentration from experiments \cite{roux90} and different simulations.
   }
 \end{figure*}
+\begin{figure}[]
+  \centering
+  \includegraphics[width=9cm]{../Figs/CAdensPCPSmixture.eps}
+  \caption{\label{CAdensPCPSmixture}
+    Ca2+ density profiles from simulations.
+  }
+  \todo{Ca2+ binding in CHARMM is lower than to neutral membrane. The reason should be found out (probably equilibration).}
+  \todo{These are now mass densities, numbers would be probably better.}
+  \todo{Counterions should be also included.}
+  \todo{Not all the data from MacRog is included.}
+\end{figure}
 
 Also dependence of $\beta$-carbon of PG on CaCl$_2$ concentration is compared with
 experiments \cite{borle85} in Fig. \ref{PSPGchangesWITHCaCl}. Absolute value of
