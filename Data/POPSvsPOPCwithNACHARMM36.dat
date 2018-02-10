@@ -1,0 +1,11 @@
+# Data by Tom Piggot from:
+# http://nmrlipids.blogspot.com/2017/03/nmrlipids-iv-headgroup-glycerol.html?showComment=1491420308902#c1966486812509509804
+# and
+# from https://github.com/NMRLipids/NMRlipidsIVotherHGs/issues/1
+# Na counterions
+#
+# Average over two sets
+# 
+# mole fraction of PC        beta          alpha1             alpha2
+0                          -0.0734677      0.0105646          -0.0692441
+0.83                       -0.132581       0.0605178          -0.102864
