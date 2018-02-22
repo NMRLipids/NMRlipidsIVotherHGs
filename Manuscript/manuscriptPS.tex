@@ -388,27 +388,30 @@ from different simulation models are compared with the experimental
 data in Fig. \ref{HGorderParametersPS}. In line with the previous
 study for PC lipids \cite{botan15}, the glycerol backbone order 
 parameters in CHARMM36 roughly agree with the experimental data,
-while significant discrepancies are observed in other models at
-least for one glycerol backbone carbons.
+while significant discrepancies for glycerol backbone carbons
+are observed in other models.
 \todo{Discussion to be finished once all the results are in the plot.}
 
+Based on the subjective ranking shown in Fig. \ref{comparisonTablePS},
+the CHARMM36 is the best performing model for both lipids.
+However, none of the tested models give a satisfactory 
+agreement with experiments for the headgroup order paramaters of 
+PS lipids. The total deviation from the experiments ($\Sigma$ in Fig. \ref{comparisonTablePS})
+for the best performing CHARMM36 model is larger for PS lipids (8)
+than for PC (3) \cite{botan15}. Therefore the 
+interpretation of structural details of PS headgroup or
+differences between PC and PS lipids is very challenging 
+from the current MD simulation models.
+Figures \ref{dihedralsGLY} and \ref{dihedralsHG} show dihedral
+angle distributions calculated from different models. 
 The glycerol backbone structures from CHARMM36 and
 Slipids simulations visualized in Fig. \ref{glycerol_buslaev} reveal the
 missing structures in Slipids model, which probably lead to the incorrect
 order parameters. For the headgroup $\alpha$ and $\beta$ carbon order parameters of PS lipids,
 the tested models perform less well than for PC headgroup in previous
-study \cite{botan15}. None of the tested models give a satisfactory 
-agreement with experiments for the headgroup order paramaters of 
-PS lipids. Based on the subjective ranking shown in Fig. \ref{comparisonTablePS},
-the CHARMM36 is the best performing model for both lipids.
-However, the total deviation from the experiments for the PS lipids is significantly
-higher for PS lipids (8) than for PC (3) \cite{botan15}. Therefore the 
-interpretation of structural differences between PC and PS lipids 
-from current MD simulation models is very challenging.
-  
-\todo{Dihedral angle distribtions in Fig. \ref{dihedrals} should be analyzed from different models 
-  and included in the discussion. Maybe also figures similar to \ref{glycerol_buslaev}.}
-
+study \cite{botan15}.
+\todo{Discussion will be finished when we have all the data in
+  Figs. \ref{HGorderParametersPS}, \ref{dihedralsGLY} and \ref{dihedralsHG}}
 
 \begin{figure}[]
   \centering
@@ -419,17 +422,26 @@ from current MD simulation models is very challenging.
   }
 \end{figure}
 
-In contrast to PC lipids discussed previously \cite{botan15,catte16},
-systems with negatively charged lipids always contains counterions.
-Since the ion binding changes the headgroup order parameters \cite{seelig87,catte16},
-the counterion distribution have to be taken into account also
-when additional ions are not present.
-The Na+ density profiles from different simulation are shown in Fig. \ref{NAdensPOPS}.
+Since systems with negatively charged PS lipids always contain counterions
+and the ion binding presumably affects the PS headgroup
+order parameters, the discussion of ion binding affinity and
+headgroup structure cannot be separated as done previously
+for PC lipids \cite{botan15,catte16}. The density profiles
+of counterions along membrane normal from different simulations
+are shown in Fig. \ref{NAdensPOPS}.
+Significant differences are observed in counterion
+densities between different simulation models. 
+\todo{We should try to figure out which one of these are more
+  realistic. One option could be to use PS headgroup order parameter
+  data measured as a function of NaCl \cite{roux86}. Another
+  approach could be to use the area per molecule, which is suggested to
+  depend on the binding affinity of counterions \cite{pandit02,mukhopadhyay04,pedersen06}. The
+  experimental value for area per molecule is available at \cite{pan14}.}
 \begin{figure}[]
   \centering
   \includegraphics[width=9.0cm]{../Figs/NAdensPOPS.eps}
   \caption{\label{NAdensPOPS}
-    Sodium density of POPS lipid bilayer along the membrane normal from
+    Counterion densities of POPS lipid bilayer along the membrane normal from
     simulations with different force fields.
   }
 \end{figure}
