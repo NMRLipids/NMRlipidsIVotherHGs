@@ -94,7 +94,7 @@ Despite of the relatively low abundance, PS lipids
 are important signaling molecules. They interact with
 signaling proteins \cite{leventis10}, regulate
 surface charge and protein localization \cite{yeung08}, and
-induce protein aggregation \cite{zhao04,??}.
+induce protein aggregation \cite{zhao04,gorbenko06}.
 Some domains spesifically interact PS lipids,
 while others are attracted by general electrostatics and the
 binding can be regulated by calcium \cite{leventis10}.
@@ -109,11 +109,12 @@ However, the consesus has not been reached
 due to the difficulties to interpret the experimental data \cite{??} and
 the inaccuracies in simulation models at the
 headgroup region \cite{botan15,catte16,ollila16}.
-Some studies propose specific binding of calcium directly to PS lipid
-headgroups \cite{??}, while others propose that only the local concentration
-of cations in the vicinity of negatively charged membranes containing PS lipids
-and that the binding constant of cations is similar
-to zwitterionic and negatively charged lipids \cite{seelig90,??}.
+Some studies propose that the negatively charged lipids
+attract cations only due to the increase of local concentration
+in the vicinity of membranes and that the binding constant of cations is similar
+to zwitterionic and negatively charged lipids \cite{seelig90,sinn06,??}.
+On the other hand, some studies propose specific binding of calcium directly to PS lipid
+headgroups \cite{vernier09,boettcher11,??},
 The NMR data proposes that the PS headgroup is more rigid than PC,PE or PG
 headgroups, but more detailed interperetation has not been done.
 
@@ -244,10 +245,11 @@ The simulation details are in SI or in references in the table.
     DOPS/Na$^+$  & lipid17 \cite{gould18}          &0 & 0        & ?    & ?   & ?  & ?  & ? & ? & \cite{??} \\
     \hline
     POPS/Na$^+$  & CHARMM36 \cite{??} \todoi{Correct citation for CHARMM POPS}&0 & 0 & 128 & 4480 & 0  & 298  & 500 & 100 & \cite{charmm36POPS298K} \\
+    POPS/K$^+$   & CHARMM36 \cite{??} \todoi{Correct citation for CHARMM POPS}&0 & 0 & 128 & 4480 & 0  & 298  & 500 & 100 & \cite{charmm36POPS298Kpotassium} \\
     POPS/Na$^+$  & CHARMM36ua \cite{??} \todoi{Correct citation for CHARMMua DOPS}  &0 & 0 & 128 & 4480 & 0  & 298  & 500 & 100 & \cite{charmm36uaPOPS298K} \\
     POPS/Na$^+$  & Slipids \cite{jambeck13}        &0 & 0        & 128 & 4480 & 0  & 298  & 500 & 100 & \cite{slipidsPOPS298K} \\
     POPS/Na$^+$  & Berger \cite{??}        &0 & 0        & 128 & 4480 & 0  & 298  & 500 & 100 & \cite{bergerPOPS298K} \\
-    POPS/Na$^+$  & MacRog \cite{maciejewski14}  &0 & 0        & 128 & 5120 & 0  & 298  & 200 & ? \todoi{Equilibration?} & \cite{macrogPOPS298K} \\
+    POPS/Na$^+$  & MacRog \cite{maciejewski14}  &0 & 0        & 128 & 5120 & 0  & 298  & 200 & 100 & \cite{macrogPOPS298K} \\
     POPS/Na$^+$  & GROMOS-CKP1 \cite{??} \todoi{Correct citation(s) for CKP.} &0 & 0  & 128 & 4480 & 0  & 298  & 500 & 100 & \cite{ckp1POPS303K} \\
     POPS/Na$^+$  & GROMOS-CKP2 \cite{??} \todoi{Correct citation(s) for CKP.} &0 & 0  & 128 & 4480 & 0  & 298  & 500 & 100 & \cite{ckp2POPS303K} \\
     POPS/Na$^+$  & lipid17 \cite{gould18}  &0 & 0  & ? & ? & ? & ? & ? & ? & ? \\
@@ -362,10 +364,8 @@ The detailed structural differences between the headgroups is, however, not know
     Signs are taken from experiments for POPS described in Supplementary Information.
     The vertical bars shown for the computational values are not error bars, but demonstrate that for these systems we had at least two data sets; the ends of the bars mark the extreme values from the sets, and the dot marks their measurement-time-weighted average.
   }
-  \todo{Check and report all the counterions. There may be some simulation data 
-    sets with both Na+ and K+ ions?} \\
   \todo{CHARMM36-UA point for alpha in wrong place?} \\
-  \todo{MacRog POPS data missing. The equilibration yet to be checked, thought.} \\
+  \todo{MacRog POPS data should be added.} \\
   \todo{In table \ref{IONsystems}: ''CKP1 referes to the version with  
     Berger/chiu NH3 charges compatible with Berger
     and CKP2 to the version with more Gromos compatible version.'' Is this correct
