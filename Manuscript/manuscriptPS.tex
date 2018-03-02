@@ -411,7 +411,21 @@ order parameters. For the headgroup $\alpha$ and $\beta$ carbon order parameters
 the tested models perform less well than for PC headgroup in previous
 study \cite{botan15}.
 \todo{Discussion will be finished when we have all the data in
-  Figs. \ref{HGorderParametersPS}, \ref{dihedralsGLY} and \ref{dihedralsHG}}
+  Figs. \ref{HGorderParametersPS}, \ref{dihedralsGLY} and \ref{dihedralsHG}.
+  One possible conclusion could be the following:
+  The main differences between the models in the headgroup region are observed
+  for dihedrals C12-C11-O12-P and C11-C12-C13-O1A.
+  CHARMM36, CHARMM36UA and Slipids give very similar results to the
+  dihedral C11-C12-C13-O1A, which is close to the $\beta$-carbon.
+  The order parameters of $\beta$-carbons for these three models
+  are in best argeement with the experiments in figure \ref{HGorderParametersPS}.
+  On the other hand, Gromos-CKP models give better order parameters
+  for $\alpha$-carbon than Slipids, CHARMM36 or CHARMM36UA. 
+  In conclusion, the suggestion would be that the single peak for
+  observed at 120 degrees in CHARMMs and Slipids would
+  be more realistic for C11-C12-C13-O1A dihedral, while the single peak at 180 degrees observed
+  in CKP models and in Berger would be most realistic for C12-C11-O12-P dihedral.
+}
 
 \begin{figure}[]
   \centering
@@ -515,25 +529,23 @@ PS headgroup structures and mutual interactions with PC lipids.
 
 \subsection{Ca$^{2+}$ binding affinity in bilayers with negatively charged PS lipids}
 
-The headgroup order parameters of PC lipids can be used to measure ion binding
-affinity because they change proportionally
-to the amount of bound charge in bilayer \cite{seelig87,catte16}.
-This molecular electrometer concept can be applied also to
-lipid bilayers with mixtures of PC and negatively charged
-lipids \cite{borle85,macdonald87,roux90}.
-This is demonstrated in Fig. %s \ref{OrderParametersWithCaCl},
+The headgroup order parameters of PC lipids
+decrease proportionally to the bound positive
+charge in to a bilayer \cite{seelig87,catte16} and can be
+therefore used to measure the ion binding
+affinity. This molecular electrometer concept can
+be also applied to lipid bilayers with mixtures
+of PC and negatively charged lipids \cite{borle85,macdonald87,roux90}
+(see Fig. \ref{OrderParameterCHANGESWithCaClBELOW1M}).
+%This is demonstrated in Fig. %s \ref{OrderParametersWithCaCl},
 %\ref{OrderParametersWithCaClBELOW1M} and
-\ref{OrderParameterCHANGESWithCaClBELOW1M}
-using the previuosly reported experimental data
-for mixtures with varying proportions of
-negatively charged PS or PG lipids.
+%using the previuosly reported experimental data
+%for mixtures with varying proportions of
+%negatively charged PS or PG lipids.
 %
 %the changes of PC headgroup order parameters %for PC headgroup $\alpha$ and $\beta$ carbons
 %as a function of CaCl$_2$ concentration are shown
 %
-As expected, the decrease of order parameters with CaCl$_2$
-is more pronounced for systems with more
-negatively charged lipids.
 % (see Fig. \ref{OrderParameterCHANGESWithCaClBELOW1M}).
 
 
@@ -705,13 +717,16 @@ surfactants. The changes with the addition of neutral lipids is significantly sm
   \centering
   \includegraphics[width=9.0cm]{../Figs/CHANGESwithCaCl.eps}
   \caption{\label{OrderParameterCHANGESWithCaClBELOW1M}
-    The change of PC headgroup order parameters
-    in the presence of different amount of negatively charged lipids
-    respect to the values without added CaCl$_2$.
-    The original data is the same as in Fig. \ref{OrderParametersWithCaCl}. 
-    Pure DPPC data from \cite{akutsu81}, pure POPC data from \cite{altenbach84}, 
-    POPC:POPS mixture data from \cite{roux90}, POPC:POPG mixture data with 0.1M NaCl from \cite{macdonald87}
-    and POPC:POPG mixture data without NaCl from \cite{borle85}.
+    The change of PC headgroup order parameters as a function of CaCl$_2$
+    measured from bilayers containing different amount of negatively charged lipids.
+    The values are taken from 2H NMR experiments reported in the
+    literature (DPPC \cite{akutsu81}, POPC \cite{altenbach84}, POPC:POPS (5:1) \cite{roux90},
+    POPC:POPG  mixtures with 0.1M NaCl \cite{macdonald87}
+    and POPC:POPG (1:1) without NaCl \cite{borle85}).
+    As expected, the decrease of order parameters with the added CaCl$_2$
+    is more pronounced for systems with larger fraction of
+    negatively charged lipids, indicating larger amount amount
+    of bound cations.
   }
 \end{figure}
 
