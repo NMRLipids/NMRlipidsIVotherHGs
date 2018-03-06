@@ -1,0 +1,55 @@
+set size 1.0,1.1
+set terminal postscript portrait enhanced color dashed lw 1 "Helvetica" 14 
+set output "../NAdensPOPS.eps"
+set yrange [0:2.9] 
+set xrange [-4:4] 
+#set ytic 0.05
+#set xtics ("{/Symbol b}" 1, "{/Symbol a}" 2, "g_{3R}" 3, "g_{3S}" 4, "g_{2}" 5, "g_{1R}" 6, "g_{1S}" 7)
+#set xtics ("{/Symbol g}" 0, "{/Symbol b}" 1, "{/Symbol a}" 2, "g_{3}" 3, "g_{2}" 4, "g_{1}" 5)
+#set key box linestyle 1 linecolor rgb 'black'
+set multiplot layout 7,1
+
+set xtics format " " 
+
+set size 1.0,0.2
+set ylabel "Density profile"
+set label  "CHARMM36"  at graph  0.4,0.8
+set key at graph 0.6,0.5 maxcols 3 maxrows 5
+plot "../../../MATCH/Data/Lipid_Bilayers/POPS/T298K/MODEL_CHARMM36/NAdens.xvg" using 1:2 with lines title 'Na' lw 2 lc rgb 'black',\
+     "../../../MATCH/Data/Lipid_Bilayers/POPS/T298K/MODEL_CHARMM36_POTASSIUMcounterion/Kdens.xvg" using 1:2 with lines title 'K' lw 2 lc rgb 'red',\
+
+set size 1.0,0.2
+unset label
+set label  "CHARMM36ua"  at graph  0.4,0.8
+plot "../../../MATCH/Data/Lipid_Bilayers/POPS/T298K/MODEL_CHARMM36UA/NAdens.xvg" using 1:2 with lines notitle lw 2 lc rgb 'black',\
+
+set size 1.0,0.2
+unset label
+set label  "Slipids"  at graph  0.4,0.8
+plot "../../../MATCH/Data/Lipid_Bilayers/POPS/T298K/MODEL_SLIPIDS/NAdens.xvg" using 1:2 with lines notitle lw 2 lc rgb 'black',\
+
+set size 1.0,0.2
+unset label
+set label  "Berger"  at graph  0.4,0.8
+plot "../../../MATCH/Data/Lipid_Bilayers/POPS/T298K/MODEL_Berger/NAdens.xvg" using 1:2 with lines notitle lw 2 lc rgb 'black',\
+
+set size 1.0,0.2
+unset label
+set label  "MACROG"  at graph  0.4,0.8
+plot "../../../MATCH/Data/Lipid_Bilayers/POPS/T298K/MODEL_MACROG/NAdens.xvg" using 1:2 with lines notitle lw 2 lc rgb 'black',\
+
+set size 1.0,0.2
+unset label
+set label  "Gromos-CKP1"  at graph  0.4,0.8
+plot "../../../MATCH/Data/Lipid_Bilayers/POPS/T298K/MODEL_GROMOS-CKP1/NAdens.xvg" using 1:2 with lines notitle  lw 2 lc rgb 'black',\
+
+set size 1.0,0.2
+set xtics format "%G"
+set xlabel "Membrane normal coordinate (nm)"
+unset label
+set label  "Gromos-CKP2"  at graph  0.4,0.8
+plot "../../../MATCH/Data/Lipid_Bilayers/POPS/T298K/MODEL_GROMOS-CKP2/NAdens.xvg" using 1:2 with lines notitle lw 2 lc rgb 'black',\
+
+
+
+

@@ -1,0 +1,11 @@
+# MacRog simulations at 298K
+# Pure POPC result taken from https://github.com/NMRLipids/MATCH/tree/master/Data/Lipid_Bilayers/POPC/T298K/MODEL_MACROG
+#
+# Results with PS taken from https://github.com/NMRLipids/MATCH/tree/master/Data/Lipid_Bilayers/POPS%2B83%25popc/T298K/MODEL_MACROG
+# original data delivered by Matti Javanainen 
+# Counterions are potassium
+#
+#       beta1            beta2                 alpha1          alpha2   
+0      0.0104732119647  -0.000794028247912   0.027735846995   0.016139167758
+0.17   0.0274047556087  0.0253713902         0.0498335618254  0.0458714714803
+

@@ -1,0 +1,72 @@
+# This file was created Thu Jan 25 11:50:32 2018
+# Created by:
+# GROMACS:      gmx density, VERSION 5.0.4
+# Executable:   /software/gromacs-5.0-el6-x86_64+intelmpi-5.0+intel-15.0/bin/gmx_mpi
+# Library dir:  /software/gromacs-5.0-el6-x86_64+intelmpi-5.0+intel-15.0/share/gromacs/top
+# Command line:
+#   gmx_mpi density -f ../run.total.xtc -s ../step7_1.tpr -n index.ndx -d Z -dens mass -center -o dens_POPS.xvg
+# gmx_mpi is part of G R O M A C S:
+#
+# Guyana Rwanda Oman Macau Angola Cameroon Senegal
+#
+@    title "Partial density"
+@    xaxis  label "Relative position from center (nm)"
+@    yaxis  label "Density (kg m\S-3\N)"
+@TYPE xy
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "POPS"
+    -3.69951      0.000973318
+    -3.54851           0.0214
+    -3.39751         0.212466
+    -3.24651           1.3735
+     -3.0955           7.3117
+     -2.9445          27.1542
+     -2.7935          76.3846
+     -2.6425           167.77
+     -2.4915          284.944
+     -2.3405          388.644
+     -2.1895          446.415
+     -2.0385          465.183
+     -1.8875          477.223
+     -1.7365          485.992
+     -1.5855          476.426
+     -1.4345          452.729
+     -1.2835           437.21
+     -1.1325          429.664
+   -0.981502          426.066
+   -0.830501          419.785
+   -0.679501          408.458
+   -0.528501           387.53
+   -0.377501          354.918
+     -0.2265          328.971
+  -0.0755001          329.796
+   0.0755001          355.782
+      0.2265          387.343
+    0.377501          409.381
+    0.528501          421.124
+    0.679501          429.389
+    0.830501          432.768
+    0.981502          438.285
+      1.1325          455.028
+      1.2835           477.03
+      1.4345          486.507
+      1.5855          477.591
+      1.7365          461.737
+      1.8875          436.279
+      2.0385          376.086
+      2.1895          273.518
+      2.3405          160.755
+      2.4915          73.1555
+      2.6425          25.5973
+      2.7935          6.66193
+      2.9445          1.29331
+      3.0955         0.234297
+     3.24651        0.0358423
+     3.39751       0.00469104
+     3.54851      0.000976474
+     3.69951                0

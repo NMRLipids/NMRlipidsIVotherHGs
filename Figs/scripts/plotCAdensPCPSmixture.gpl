@@ -1,0 +1,34 @@
+set size 1.0,1.1
+set terminal postscript portrait enhanced color dashed lw 1 "Helvetica" 14 
+set output "../CAdensPCPSmixture.eps"
+set yrange [-1:70] 
+set xrange [-4.0:4.0] 
+#set ytic 0.05
+#set xtics ("{/Symbol b}" 1, "{/Symbol a}" 2, "g_{3R}" 3, "g_{3S}" 4, "g_{2}" 5, "g_{1R}" 6, "g_{1S}" 7)
+#set xtics ("{/Symbol g}" 0, "{/Symbol b}" 1, "{/Symbol a}" 2, "g_{3}" 3, "g_{2}" 4, "g_{1}" 5)
+#set key box linestyle 1 linecolor rgb 'black'
+set key at graph 0.7,0.9 maxcols 3 maxrows 5
+set multiplot layout 2,1
+
+set xtics format " " 
+
+set ylabel "Density profile"
+#set size 1.0,0.2
+plot "../../scratch/dens_profiles_PCPS/250POPC_50POPS_1MCaCl-1atm-298K/dens_CAL.xvg" using 1:2 with lines title '1000mM' lw 4 lc rgb 'green',\
+"../../scratch/dens_profiles_PCPS/250POPC_50POPS_0.15MCaCl-1atm-298K/dens_CAL.xvg" using 1:2 with lines title 'CHARMM36 150mM' lw 4 lc rgb 'red',\
+     
+
+#set size 1.0,0.2
+set xtics format "%G"
+set xlabel "Membrane normal coordinate (nm)"
+plot "../../../MATCH/Data/Lipid_Bilayers/POPS+83%popc+3000mMCaCl/T298K/MODEL_MACROG/CAdens.xvg" using 1:2 with lines notitle  lw 4 lc rgb 'black',\
+     "../../../MATCH/Data/Lipid_Bilayers/POPS+83%popc+1000mMCaCl/T298K/MODEL_MACROG/CAdens.xvg" using 1:2 with lines title 'MacRog 1000mM' lw 4 lc rgb 'green',\
+     "../../../MATCH/Data/Lipid_Bilayers/POPS+83%popc+300mMCaCl/T298K/MODEL_MACROG/CAdens.xvg" using 1:2 with lines notitle lw 4 lc rgb 'blue',\
+     "../../../MATCH/Data/Lipid_Bilayers/POPS+83%popc+100mMCaCl/T298K/MODEL_MACROG/CALdens.xvg" using 1:2 with lines title '100mM' lw 4 lc rgb 'red',\
+
+
+
+
+
+
+

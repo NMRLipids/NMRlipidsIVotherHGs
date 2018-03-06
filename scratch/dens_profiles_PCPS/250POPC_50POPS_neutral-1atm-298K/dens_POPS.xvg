@@ -1,0 +1,72 @@
+# This file was created Thu Jan 25 11:55:17 2018
+# Created by:
+# GROMACS:      gmx density, VERSION 5.0.4
+# Executable:   /software/gromacs-5.0-el6-x86_64+intelmpi-5.0+intel-15.0/bin/gmx_mpi
+# Library dir:  /software/gromacs-5.0-el6-x86_64+intelmpi-5.0+intel-15.0/share/gromacs/top
+# Command line:
+#   gmx_mpi density -f ../run.total.xtc -s ../step7_1.tpr -n index.ndx -d Z -dens mass -center -o dens_POPS.xvg
+# gmx_mpi is part of G R O M A C S:
+#
+# GROwing Monsters And Cloning Shrimps
+#
+@    title "Partial density"
+@    xaxis  label "Relative position from center (nm)"
+@    yaxis  label "Density (kg m\S-3\N)"
+@TYPE xy
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "POPS"
+    -3.66217      0.000950287
+    -3.51269        0.0141788
+    -3.36321         0.154786
+    -3.21374         0.668722
+    -3.06426          2.73409
+    -2.91479          9.01086
+    -2.76531          24.3824
+    -2.61583          51.4945
+    -2.46636          87.1286
+    -2.31688            119.5
+    -2.16741          140.567
+    -2.01793          149.034
+    -1.86845          155.506
+    -1.71898           157.48
+     -1.5695          155.182
+    -1.42002           149.88
+    -1.27055          145.425
+    -1.12107          142.396
+   -0.971595          141.411
+   -0.822119          139.378
+   -0.672643          134.731
+   -0.523167          127.089
+   -0.373691          117.192
+   -0.224214          109.555
+  -0.0747381          110.418
+   0.0747381          118.479
+    0.224214          127.852
+    0.373691           135.89
+    0.523167          140.361
+    0.672643          142.247
+    0.822119          142.637
+    0.971595          145.249
+     1.12107          150.372
+     1.27055          156.792
+     1.42002          157.411
+      1.5695          151.133
+     1.71898          147.152
+     1.86845          140.312
+     2.01793          120.183
+     2.16741          86.6223
+     2.31688          50.4373
+     2.46636          22.7529
+     2.61583          7.93105
+     2.76531          2.25584
+     2.91479         0.462674
+     3.06426        0.0942027
+     3.21374        0.0165113
+     3.36321       0.00362878
+     3.51269                0
+     3.66217                0

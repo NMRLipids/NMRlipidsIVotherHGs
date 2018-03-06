@@ -4,10 +4,12 @@
 # delivered by Fernando Favela
 #
 # Results with PS taken from https://github.com/NMRLipids/MATCH/blob/master/Data/Lipid_Bilayers/POPS%2B83%25popc/T298K/MODEL_CHARMM_GUI/OrdPars.dat
-#
+# and
+# from http://nmrlipids.blogspot.com/2017/12/nmrlipids-iv-current-status-and.html?showComment=1516642859204#c3440534109745026509
+# Counterions are potassium
 #
 # It should be noted that pure POPC are ran with Gromacs 4, but the results with
-# PG are ran with Gromacs 5. This has significant effect on acyl chains:
+# PS are ran with Gromacs 5. This has significant effect on acyl chains:
 # https://github.com/NMRLipids/NmrLipidsCholXray/issues/4
 # The effect for headgroups can be estimated by comparing these two data sets:
 # https://github.com/NMRLipids/MATCH/blob/master/Data/Lipid_Bilayers/POPC/T303K/MODEL_CHARMM36_GROMACS4.5/Headgroup_Glycerol_Order_Parameters_Simulation.dat
@@ -17,3 +19,5 @@
 #
 0     -0.0785491         -0.0755386
 0.17   -0.083284282985   -0.0807189583207
+0.17   -0.0795243501265  -0.0799929816489
+0.5   -0.0851482081839   -0.0822408190226
