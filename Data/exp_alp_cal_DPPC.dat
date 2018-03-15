@@ -1,0 +1,6 @@
+#concentration of CaCl_2 [mM] ; change in the alpha OP for DPPC
+0 0
+10 -0.008228
+100 -0.0195976
+350 -0.0323884
+1000 -0.0469744
