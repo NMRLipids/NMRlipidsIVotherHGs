@@ -35,7 +35,7 @@ BMARGIN = "set tmargin at screen 0.475; set bmargin at screen 0.10"
 unset xtics 
 set ylabel " " 
 set label 2 "number density / nm^{-3}" at graph -0.15,-0.5 rotate by 90 
-set label 1 'CHARMM36 (NBFix)' at graph 0.05,0.92 font 'Times,13'
+set label 1 'CHARMM36' at graph 0.05,0.92 font 'Times,13'
 set label 3 'Γ@_{Ca}^{w} =0.57' at graph 0.05,0.82 font 'Times,11'
 plot "../../Data/density_POPC_CaCl_CHARMM_no_NBFix.xvg" using 1:($2/5) with filledcurves below lc rgb("red") title "phosphate",\
       "../../Data/density_POPC_CaCl_CHARMM_no_NBFix.xvg" using 1:($3/600) with filledcurves x1 lc rgb("turquoise") title "water",\
@@ -51,7 +51,7 @@ plot "../../Data/density_POPC_CaCl_CHARMM_no_NBFix.xvg" using 1:($2/5) with fill
  set xlabel "membrane normal / nm" 
  set ylabel " " 
  set nolabel 2
-set label 1 'CHARMM36' at graph 0.05,0.92 font 'Times,13'
+set label 1 'CHARMM36 (NBFix)' at graph 0.05,0.92 font 'Times,13'
 set label 3 'Γ@_{Ca}^{w} =-0.10' at graph 0.05,0.82 font 'Times,11'
 
 plot "../../Data/density_POPC_CaCl_CHARMM_NBFix.xvg" using 1:($2/5) with filledcurves below lc rgb("red") notitle,\
