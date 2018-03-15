@@ -1,0 +1,57 @@
+set size 0.5,1
+set terminal pdf enhanced size 3.5,3
+set encoding utf8
+set output "OP_CHARMM_CaCl_POPC_NBFix.pdf"
+ 
+set yrange [-0.09:0.001] 
+set ytics format "%.2f"
+ 
+set key above center 
+set key reverse
+set key Left
+
+#set label format small
+
+set datafile commentschar "@#$%&"
+
+set multiplot layout 2,1 
+
+
+
+
+
+####################################################################################################33
+#plot the beta for calcium
+unset xtics
+#set size ratio 0.5
+set xrange [0:600] 
+
+set ylabel "ΔS^{β}_{CH}" 
+ #set size 1,0.45 
+plot "../../Data/OP_CHARMM_CaCl_POPC_without_NBFix.out" using 1:4 with linespoints pt 7  lw 3 ps 0.6 lc rgb("blue") title "CHARMM36 " ,\
+     "../../Data/OP_CHARMM_CaCl_POPC_without_NBFix.out"  using 1:5 with linespoints ls 7 lw 3 ps 0.6 lc rgb("blue") notitle,\
+     "../../Data/OP_CHARMM_CaCl_POPC_NBFix.out" using 1:4 with linespoints ls 7 lw 3 ps 0.6 lc rgb("red") title "CHARMM36 (NBFix)",\
+     "../../Data/OP_CHARMM_CaCl_POPC_NBFix.out" using 1:5 with linespoints ls 7 lw 3 ps 0.6 lc rgb("red") notitle ,\
+     "../../Data/exp_alpha_cal_POPC.dat" using ($1*0):($2*0) with linespoints ls 7 lw 3 ps 0.6 lc rgb("#000000") title "Experiment POPC",\
+     "../../Data/exp_beta_cal_DPPC.dat" with linespoints ls 5 lw 3 ps 0.6 lc rgb("#000000") title "Experiment DPPC" 
+ 
+
+
+##############################################################################3
+
+#plot the alpha for calcium
+
+set xrange [0:600] 
+set ylabel "ΔS^{α}_{CH}" 
+set xlabel "Concentration of CaCl2 / mM" 
+#set size 1,0.55 
+set xtics 
+ plot "../../Data/OP_CHARMM_CaCl_POPC_without_NBFix.out" using 1:2 with linespoints ls 7 lw 3 ps 0.6 lc rgb("blue") notitle  ,\
+      "../../Data/OP_CHARMM_CaCl_POPC_without_NBFix.out"  using 1:3 with linespoints ls 7 lw 3 ps 0.6 lc rgb("blue") notitle,\
+      "../../Data/OP_CHARMM_CaCl_POPC_NBFix.out" using 1:2 with linespoints ls 7 lw 3 ps 0.6 lc rgb("#FF0000") notitle ,\
+      "../../Data/OP_CHARMM_CaCl_POPC_NBFix.out" using 1:3 with linespoints ls 7 lw 3 ps 0.6 lc rgb("#FF0000") notitle ,\
+      "../../Data/exp_alpha_cal_POPC.dat" with linespoints ls 7 lw 3 ps 0.6 lc rgb("#000000") notitle ,\
+      "../../Data/exp_alp_cal_DPPC.dat" with linespoints ls 5 lw 3 ps 0.6 lc rgb("#000000") notitle 
+ 
+
+
