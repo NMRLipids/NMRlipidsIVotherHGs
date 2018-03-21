@@ -1,0 +1,14 @@
+Quadrupolar splittings in kHz (y-axis)
+concentrations (x-axis) in Moles
+
+From publication:
+all salt concentration dependence measurements 
+contain 100mM=0.1M NaCl salt
+except the dependence of NaCl itself 
+(zero-point is 0M NaCl -- only counterions?)
+
+values in dat files obtained through visual assignment 
+from the figures in publication roux1990 
+[Biochemistry, vol. 29, no. 30, 1990, Roux and Bloom]
+using the programme g3data
+https://github.com/pn2200/g3data  (Thanks!)
