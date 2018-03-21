@@ -441,21 +441,15 @@ study \cite{botan15}.
   }
 \end{figure}
 
+\subsection{Counterion binding to lipid bilayers containing PS lipids}
 Since systems with negatively charged PS lipids always contain counterions
 and the ion binding presumably affects the PS headgroup
 order parameters, the discussion of ion binding affinity and
 headgroup structure cannot be separated as done previously
 for PC lipids \cite{botan15,catte16}. The density profiles
 of counterions along membrane normal from different simulations
-are shown in Fig. \ref{NAdensPOPS}.
-Significant differences are observed in counterion
-densities between different simulation models. 
-\todo{We should try to figure out which one of these are more
-  realistic. One option could be to use PS headgroup order parameter
-  data measured as a function of NaCl \cite{roux86}. Another
-  approach could be to use the area per molecule, which is suggested to
-  depend on the binding affinity of counterions \cite{pandit02,mukhopadhyay04,pedersen06}. The
-  experimental value for area per molecule is available at \cite{pan14}.}
+show significant binding of counterions in bilayers in all
+models in Fig. \ref{NAdensPOPS}.
 \begin{figure}[]
   \centering
   \includegraphics[width=9.0cm]{../Figs/NAdensPOPS.eps}
@@ -464,6 +458,50 @@ densities between different simulation models.
     simulations with different force fields.
   }
 \end{figure}
+Differences are, however,
+observed in the total binding affinity and in the shape of density profiles.
+Comparison of bulk concentrations suggests that strongest binding
+is observed in MacRog, Berger and Lipid17 models, respectively.
+Other models gives roughly similar total binding affinity
+based on rough comparison of bulk concentrations.
+In CHARMM36, CHARMM36ua and Gromos-CKP models two maxima are observed
+in sodium density plots, possible corresponding binding to phoshate
+and carboxylic grops in the PS headgroup. In other models only
+a single maxima is observed. \todo{More quantitative analysis of
+binding positions and affinity may be useful.}
+
+Based on previous simulation results it has been suggested that
+the counterion binding and concomitant screening of headgroup repulsion
+leads to smaller area per lipid in PS lipid bilayers than in PC
+bilayers \cite{pandit02,mukhopadhyay04,pedersen06}. Therefore we also show the area per lipid from different models
+in Fig. \ref{NAdensPOPS}. The proposed trend is observed for Lipid17 model,
+for which the Joung-Cheatham ions give higher affinity and smaller area
+per molecule. However, the trend is not observed when comparing accross different
+force fields. For example, CHARMM36ua and MacRog give similar area per molecule
+but binding affinity is significantly higher in MacRog. On the other hand,
+Gromos-CKP models gives a larger area per lipid than other models, being only
+in agreement with experiments \cite{pan14}, but the binding affinity is comparable
+to the CHARMM36, CHARMM36us and Slipids, which give smaller are per molecule.
+
+In order to compare the sodium interaction with PS containing membranes between
+experiments and simulations, Fig. \ref{PSresponseTONaCl} shows the order parameters of the
+$\alpha$ carbon of PS headgroup measured from the mixture with PC as a
+function of added NaCl \cite{roux86} together with the resuls from CHARMM36 model. 
+\begin{figure}[]
+  \centering
+  \includegraphics[width=9.0cm]{../Figs/PSresponseTONaCl.eps}
+  \caption{\label{PSresponseTONaCl}
+    Order parameters of PS headgroup as a function of added NaCl measured from DMPC:DMPS (3:1) mixture \cite{roux86}.
+  }
+\end{figure}
+The experimental results show essentially no changes in the order parameters as a function of
+added NaCl, while significant changes are observed in simulations. However,
+the minimum buffer concentration of NaCl in the experimental was 100mM \cite{roux86}.
+Therefore, we cannot exclude the possibility that the NaCl induced changes were already
+saturated with 100mM NaCl concentration, which was the case for CaCl$_2$ in Fig. \ref{changesWITHCaClPS}.
+\todo{It would be probably better to use datasets for NaCl and KCl from Ref. \citenum{roux90}
+to compare monovalent ion binding to PS containing bilayer.}
+
 
 \subsection{Headgroup structure in PS and PC mixtures}
 Cellular membranes often compose of mixtures of zwitterionic and negatively
