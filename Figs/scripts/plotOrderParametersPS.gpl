@@ -8,8 +8,8 @@ set out "../HGorderparametersPS.pdf"
 set tmargin at screen 0.995
 set ylabel "S_{CH}" font "Arial,20" offset 2,-2.3
 
-set bmargin at screen 0.165 #0.31
-set key l at screen 0.01,0.16 Left reverse noautotitle samplen 2 width -1 maxrows 10
+set bmargin at screen 0.18 #0.31
+set key l at screen 0.01,0.175 Left reverse noautotitle samplen 2 width -1 maxrows 12
 #set key below horizontal left Left reverse noautotitle samplen 1 maxcols 2 maxrows 6
 
 set lmargin at screen 0.122 #0.157
@@ -133,10 +133,13 @@ plot [0.5:5.5][0.35:-0.35] \
      "../../../MATCH/Data/Lipid_Bilayers/DOPS/T303K/MODEL_LIPID17/JCions_head-glyc-OPs_ave_min_max.dat" \
          u ($1+dxL17do):($2):($3):($4) w ye lt Lipd17 pt 12 ps r t 'DOPS Lipid17 JC T=303K', \
      10 lc rgb "white" t "  ", \
+     10 lc rgb "white" t "  ", \
      horizLines(' ../../Data/POPSorderparametersNOCaEXP.dat') \
          u ($1):($3) w l ls 4 lc 16 lw 3 t "POPS experiment", \
      "../../../MATCH/Data/Lipid_Bilayers/POPS/T298K/MODEL_CHARMM36/head-glyc-OPs_ave_min_max.dat" \
          u ($1+dxC36po):($2):($3):($4) w ye lt CHARMM pt 7 ps r t 'POPS CHARMM36 T=298K',\
+     "../../../MATCH/Data/Lipid_Bilayers/POPS/T298K/MODEL_CHARMM36/counterionsK_head-glyc-OPs_ave_min_max.dat" \
+         u ($1+dxC36po):($2):($3):($4) w ye lt CHARMM pt 6 ps r t 'POPS CHARMM36 K^+ T=298K',\
      "../../../MATCH/Data/Lipid_Bilayers/POPS/T298K/MODEL_CHARMM36UA/head-glyc-OPs_ave_min_max.dat" \
          u ($1+dxCUApo):($2):($3):($4) w ye lt C36_UA pt 6 ps r t 'POPS CHARMM36-UA T=298K',\
      "../../../MATCH/Data/Lipid_Bilayers/POPS/T298K/MODEL_GROMOS-CKP1/head-glyc-OPs_ave_min_max.dat" \
