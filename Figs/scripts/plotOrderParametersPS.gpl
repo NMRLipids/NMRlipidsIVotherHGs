@@ -56,11 +56,11 @@ Berger = 21
 set linetype Berger lw w lc rgb "#D70039" # for Berger
 set linetype 32 lw w lc rgb "#FA0059" # for Tjornhammar
 CKP_QB = 25
-set linetype 25 lw w lc rgb "#FFA0A3" # for CKP-BergerQ
+set linetype 25 lw w lc rgb "#FFA0A3" # for CKP using the same charges as in the Berger simulations, with the NH3 group having the same charges as in the N(CH3)3 group of the PC lipids
 set linetype 27 lw w lc rgb "#F70000" # for Chiu
 set linetype 26 lw w lc rgb "#FF8300" # for Kukol
-CKP_QL = 31
-set linetype 31 lw w lc rgb "#E8007C" # for CKP-LysineQ
+CKP_QK = 31
+set linetype 31 lw w lc rgb "#E8007C" # for CKP using the charges for the NH3 group taken from a lysine side-chain (to be more GROMOS consistent).
 # between GROMOS and CHARMM:
 C36_UA = 231
 set linetype C36_UA lw w lc rgb "#9966B6" # for CHARMM36-UA
@@ -130,9 +130,9 @@ plot [0.5:5.5][0.35:-0.35] \
      "../../../MATCH/Data/Lipid_Bilayers/DOPS/T303K/MODEL_SLIPIDS/head-glyc-OPs_ave_min_max.dat" \
          u ($1+dxSLIdo):($2):($3):($4) w ye lt Slipid pt 12 ps r t 'DOPS SLIPIDS T=303K', \
      "../../../MATCH/Data/Lipid_Bilayers/DOPS/T303K/MODEL_GROMOS-CKP2/head-glyc-OPs_ave_min_max.dat" \
-         u ($1+dxCKPd2):($2):($3):($4) w ye lt CKP_QL pt 12 ps r t 'DOPS CKP2pme T=303K', \
+         u ($1+dxCKPd2):($2):($3):($4) w ye lt CKP_QK pt 12 ps r t 'DOPS CKP-Lys T=303K', \
      "../../../MATCH/Data/Lipid_Bilayers/DOPS/T303K/MODEL_GROMOS-CKP1/head-glyc-OPs_ave_min_max.dat" \
-         u ($1+dxCKPdo):($2):($3):($4) w ye lt CKP_QB pt 12 ps r t 'DOPS CKP1pme T=303K', \
+         u ($1+dxCKPdo):($2):($3):($4) w ye lt CKP_QB pt 12 ps r t 'DOPS CKP-TMA^+ T=303K', \
      10 lc rgb "white" t "  ", \
      "../../../MATCH/Data/Lipid_Bilayers/DOPS/T303K/MODEL_Berger/head-glyc-OPs_ave_min_max.dat" \
          u ($1+dxBERdo):($2):($3):($4) w ye lt Berger pt 13 ps r t 'DOPS Berger T=303K', \
@@ -151,9 +151,9 @@ plot [0.5:5.5][0.35:-0.35] \
      "../../../MATCH/Data/Lipid_Bilayers/POPS/T298K/MODEL_SLIPIDS/head-glyc-OPs_ave_min_max.dat" \
          u ($1+dxSLIpo):($2):($3):($4) w ye lt Slipid pt 6 ps r t 'POPS SLIPIDS T=298K', \
      "../../../MATCH/Data/Lipid_Bilayers/POPS/T298K/MODEL_GROMOS-CKP2/head-glyc-OPs_ave_min_max.dat" \
-         u ($1+dxCKPp2):($2):($3):($4) w ye lt CKP_QL pt 6 ps r t 'POPS CKP2pme T=298K', \
+         u ($1+dxCKPp2):($2):($3):($4) w ye lt CKP_QK pt 6 ps r t 'POPS CKP-Lys T=298K', \
      "../../../MATCH/Data/Lipid_Bilayers/POPS/T298K/MODEL_GROMOS-CKP1/head-glyc-OPs_ave_min_max.dat" \
-         u ($1+dxCKPpo):($2):($3):($4) w ye lt CKP_QB pt 6 ps r t 'POPS CKP1pme T=298K', \
+         u ($1+dxCKPpo):($2):($3):($4) w ye lt CKP_QB pt 6 ps r t 'POPS CKP-TMA^+ T=298K', \
      "../../../MATCH/Data/Lipid_Bilayers/POPS/T298K/MODEL_MACROG/head-glyc-OPs_forNMRlipidsIVplot.dat" \
           u ($1+dxMcRpo):($2) w p lt MacRog pt 7 ps r t 'POPS MacRog T=298K', \
      "../../../MATCH/Data/Lipid_Bilayers/POPS/T298K/MODEL_Berger/head-glyc-OPs_ave_min_max.dat" \
