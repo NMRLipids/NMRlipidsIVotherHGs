@@ -8,8 +8,8 @@ set out "../HGorderparametersPS.pdf"
 set tmargin at screen 0.995
 set ylabel "S_{CH}" font "Arial,20" offset 2,-2.3
 
-set bmargin at screen 0.13 #0.31
-set key l at screen 0.01,0.115 Left reverse noautotitle samplen 2 width -1 maxrows 7 #12
+set bmargin at screen 0.165 #0.31
+set key l at screen 0.01,0.16 Left reverse noautotitle samplen 2 width -1 maxrows 10
 #set key below horizontal left Left reverse noautotitle samplen 1 maxcols 2 maxrows 6
 
 set lmargin at screen 0.122 #0.157
@@ -72,11 +72,13 @@ Slipid = 22
 set linetype Slipid lw w lc rgb "#7AEE9E" # "#7AEE9E" # for Slipids
 set linetype 28 lw w lc rgb "#9FE100" # for HoNiLy
 # AMBER-family:
+Lipd17 = 241
 set linetype 24 lw w lc rgb "#FFD300" # for GAFF
-set linetype 241 lw w lc rgb "#FFD300" # for Amber Lipid14
+set linetype 241 lw w lc rgb "#FFD300" # for Amber Lipid17
 # OPLS-family:
+MacRog = 30
 set linetype 29 lw w lc rgb "#FF578F" # for OPLS-AA
-set linetype 30 lw w lc rgb "#00A368" # for MacRog
+set linetype MacRog lw w lc rgb "#00A368" # for MacRog
 
 # x-displacements to avoid ovelaps:
 d=0.06
@@ -84,12 +86,15 @@ dxC36do = -7*d
 dxC36po =  7*d
 dxCUAdo = -5*d
 dxCUApo =  5*d
+dxL17do = -5*d
+dxL17po =  5*d
 dxCKPdo = -3*d
 dxCKPpo =  3*d
 dxBERdo = -d
 dxBERpo =  d
 dxSLIdo =  dxBERdo
 dxSLIpo =  dxBERpo
+dxMcRpo =  dxBERpo
 
 # Arrows pointing data outside the graph:
 #set arrow 261 from 3.17, graph 0 to 3.17, graph -0.02 lt 26 lw 3 # Kukol g3
@@ -123,6 +128,11 @@ plot [0.5:5.5][0.35:-0.35] \
          u ($1+dxSLIdo):($2):($3):($4) w ye lt Slipid pt 12 ps r t 'DOPS SLIPIDS T=303K', \
      "../../../MATCH/Data/Lipid_Bilayers/DOPS/T303K/MODEL_Berger/head-glyc-OPs_ave_min_max.dat" \
          u ($1+dxBERdo):($2):($3):($4) w ye lt Berger pt 13 ps r t 'DOPS Berger T=303K', \
+     "../../../MATCH/Data/Lipid_Bilayers/DOPS/T303K/MODEL_LIPID17/head-glyc-OPs_ave_min_max.dat" \
+         u ($1+dxL17do):($2):($3):($4) w ye lt Lipd17 pt 13 ps r t 'DOPS Lipid17 T=303K', \
+     "../../../MATCH/Data/Lipid_Bilayers/DOPS/T303K/MODEL_LIPID17/JCions_head-glyc-OPs_ave_min_max.dat" \
+         u ($1+dxL17do):($2):($3):($4) w ye lt Lipd17 pt 12 ps r t 'DOPS Lipid17 JC T=303K', \
+     10 lc rgb "white" t "  ", \
      horizLines(' ../../Data/POPSorderparametersNOCaEXP.dat') \
          u ($1):($3) w l ls 4 lc 16 lw 3 t "POPS experiment", \
      "../../../MATCH/Data/Lipid_Bilayers/POPS/T298K/MODEL_CHARMM36/head-glyc-OPs_ave_min_max.dat" \
@@ -136,7 +146,13 @@ plot [0.5:5.5][0.35:-0.35] \
      "../../../MATCH/Data/Lipid_Bilayers/POPS/T298K/MODEL_SLIPIDS/head-glyc-OPs_ave_min_max.dat" \
          u ($1+dxSLIpo):($2):($3):($4) w ye lt Slipid pt 6 ps r t 'POPS SLIPIDS T=298K', \
      "../../../MATCH/Data/Lipid_Bilayers/POPS/T298K/MODEL_Berger/head-glyc-OPs_ave_min_max.dat" \
-         u ($1+dxBERpo):($2):($3):($4) w ye lt Berger pt 7 ps r t 'POPS Berger T=298K'
+         u ($1+dxBERpo):($2):($3):($4) w ye lt Berger pt 7 ps r t 'POPS Berger T=298K', \
+     "../../../MATCH/Data/Lipid_Bilayers/POPS/T298K/MODEL_LIPID17/head-glyc-OPs_ave_min_max.dat" \
+         u ($1+dxL17po):($2):($3):($4) w ye lt Lipd17 pt 7 ps r t 'POPS Lipid17 T=298K', \
+     "../../../MATCH/Data/Lipid_Bilayers/POPS/T298K/MODEL_LIPID17/JCions_head-glyc-OPs_ave_min_max.dat" \
+         u ($1+dxL17po):($2):($3):($4) w ye lt Lipd17 pt 6 ps r t 'POPS Lipid17 JC T=298K', \
+     "../../../MATCH/Data/Lipid_Bilayers/POPS/T298K/MODEL_MACROG/head-glyc-OPs_forNMRlipidsIVplot.dat" \
+          u ($1+dxMcRpo):($2) w p lt MacRog pt 7 ps r t 'POPS MacRog T=298K'
 	 
 #plot [0.5:5.5][0.153471:-0.3211] \
 #  "./DMPC/EXP-Gross1997.dat" u ($1):($2) w l ls 8 lc rgb "#5F5F5F" lw 6.5 \
