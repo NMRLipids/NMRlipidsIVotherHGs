@@ -14,8 +14,8 @@ set ylabel "{{/Symbol D}S_{CH}^{/Symbol b}"
 #set yrange [-0.075:-0.025] 
 plot       "../../Data/POPC-PS_5-1_mix/quadrupolar_splittings_roux1990/beta_pc_kclfig8.dat" using 1:((-1)*($2-3.991)*0.00784) with linespoint notitle pt 5 ps 2 lt 1 lw 4 dt 2 lc rgb 'black',\
 	   "../../Data/POPC-PS_5-1_mix/quadrupolar_splittings_roux1990/beta_pc_liclfig8.dat" using 1:((-1)*($2-3.991)*0.00784) with linespoint notitle pt 13 ps 2 lt 1 lw 4 dt 3 lc rgb 'black',\
- 	   "../../Data/POPC80_POPS20withNa_BERGER.dat" using 1:($4-0.0129448) with linespoint notitle pt 7 lt 1 lw 4 ps 1.5 lc rgb 'pink',\
-   	   "../../Data/POPC80_POPS20withNa_BERGER.dat" using 1:($5-0.032294) with linespoint notitle  pt 7 lt 1 lw 4 ps 1.5 lc rgb 'pink',\
+ 	   "../../Data/POPC80_POPS20withNa_BERGER.dat" using 1:($4-0.0129448) with linespoint notitle pt 7 lt 1 lw 4 ps 1.5 lc rgb 'red',\
+   	   "../../Data/POPC80_POPS20withNa_BERGER.dat" using 1:($5-0.032294) with linespoint notitle  pt 7 lt 1 lw 4 ps 1.5 lc rgb 'red',\
 
 
 set title 'POPS'
@@ -26,7 +26,7 @@ set xrange [0:1]
 plot         "../../Data/POPC-PS_5-1_mix/quadrupolar_splittings_roux1990/beta_ps_naclfig8.dat" using 1:((-1)*($2-12.5046728972)*0.00784) with linespoint title 'POPC:POPS NaCl (T=298K) 5:1 exp' pt 7 lt 1 lw 4 ps 1.5 lc rgb 'black',\
 	     "../../Data/POPC-PS_5-1_mix/quadrupolar_splittings_roux1990/beta_ps_kclfig8.dat" using 1:((-1)*($2-12.6945361203)*0.00784) with linespoint title 'POPC:POPS KCl (T=298K) 5:1 exp'  pt 5 ps 2 lt 1 lw 4 dt 2  lc rgb 'black',\
 	   "../../Data/POPC-PS_5-1_mix/quadrupolar_splittings_roux1990/beta_ps_liclfig8.dat" using 1:((-1)*($2-12.6945361203)*0.00784) with linespoint title 'POPC:POPS LiCl (T=298K) 5:1 exp' pt 13 ps 2 lt 1 lw 4 dt 3 lc rgb 'black',\
-   	   "../../Data/POPC80_POPS20withNa_BERGER.dat" using 1:($8-0.15793) with linespoint title 'POPC:POPS (T298K) NaCl 4:1 BERGER' pt 7 lt 1 lw 4 ps 1.5 lc rgb 'pink',\
+   	   "../../Data/POPC80_POPS20withNa_BERGER.dat" using 1:($8-0.15793) with linespoint title 'POPC:POPS (T298K) NaCl 4:1 BERGER' pt 7 lt 1 lw 4 ps 1.5 lc rgb 'red',\
 	   
 
 unset title
@@ -37,8 +37,8 @@ set xlabel "[ NaCl] M"
 set xrange [0:3] 
 plot  "../../Data/POPC-PS_5-1_mix/quadrupolar_splittings_roux1990/alpha_pc_kclfig8.dat" using 1:(($2-7.61625308476)*0.00784) with linespoint notitle pt 5 ps 2 dt 2 lt 1 lw 4 lc rgb 'black',\
      "../../Data/POPC-PS_5-1_mix/quadrupolar_splittings_roux1990/alpha_pc_liclfig8.dat" using 1:(($2-7.61625308476)*0.00784) with linespoint notitle pt 13  ps 2 dt 3 lt 1 lw 4 lc rgb 'black',\
-    "../../Data/POPC80_POPS20withNa_BERGER.dat" using 1:($2-0.0619829) with linespoint notitle pt 7 lt 1 lw 4 ps 1.5 lc rgb 'pink',\
-    "../../Data/POPC80_POPS20withNa_BERGER.dat" using 1:($3-0.121486) with linespoint notitle  pt 7 lt 1 lw 4 ps 1.5 lc rgb 'pink',\
+    "../../Data/POPC80_POPS20withNa_BERGER.dat" using 1:($2-0.0619829) with linespoint notitle pt 7 lt 1 lw 4 ps 1.5 lc rgb 'red',\
+    "../../Data/POPC80_POPS20withNa_BERGER.dat" using 1:($3-0.121486) with linespoint notitle  pt 7 lt 1 lw 4 ps 1.5 lc rgb 'red',\
 
 
 
@@ -57,8 +57,8 @@ plot  "../../Data/POPC-PS_5-1_mix/quadrupolar_splittings_roux1990/alpha1_ps_nacl
       "../../Data/POPC-PS_5-1_mix/quadrupolar_splittings_roux1990/alpha2_ps_kclfig8.dat" using 1:((-1)*($2-1.69899665552)*0.00784) with linespoint notitle pt 5 ps 2 lt 1 lw 4 dt 2  lc rgb 'black',\
       "../../Data/POPC-PS_5-1_mix/quadrupolar_splittings_roux1990/alpha1_ps_liclfig8.dat" using 1:(($2-8.00896860987)*0.00784) with linespoint notitle  pt 13 ps 2 lt 1 lw 4 dt 3 lc rgb 'black',\
       "../../Data/POPC-PS_5-1_mix/quadrupolar_splittings_roux1990/alpha2_ps_liclfig8.dat" using 1:((-1)*($2-1.69899665552)*0.00784) with linespoint notitle  pt 13 ps 2 lt 1 lw 4 dt 3 lc rgb 'black',\
-      "../../Data/POPC80_POPS20withNa_BERGER.dat" using 1:($6-0.262379) with linespoint notitle pt 7 lt 1 lw 4 ps 1.5 lc rgb 'pink',\
-      "../../Data/POPC80_POPS20withNa_BERGER.dat" using 1:($7-0.304819) with linespoint notitle pt 7 lt 1 lw 4 ps 1.5 lc rgb 'pink',\
+      "../../Data/POPC80_POPS20withNa_BERGER.dat" using 1:($6-0.262379) with linespoint notitle pt 7 lt 1 lw 4 ps 1.5 lc rgb 'red',\
+      "../../Data/POPC80_POPS20withNa_BERGER.dat" using 1:($7-0.304819) with linespoint notitle pt 7 lt 1 lw 4 ps 1.5 lc rgb 'red',\
 
 
 unset multiplot
