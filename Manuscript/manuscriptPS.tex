@@ -224,8 +224,11 @@ The simulation details are in SI or in references in the table.
 \centering
 \caption{List of MD simulations. The salt concentrations calculated as 
    [salt]=N$_{\rm c} \times$[water]\,/\,N$_{\rm w}$, where [water]\,=\,55.5~M.
-   CKP1 referes to the version with Berger/chiu NH3 charges compatible with Berger
-   and CKP2 to the version with more Gromos compatible version.
+   CKPM refers to the version with Berger/Chiu NH$_3$ charges compatible with Berger
+   (i.e. the NH$_3$ group having the same charges as in the N(CH$_3$)$_3$ group of the PC lipids;
+   'M' stands for Mukhopadhyay after the first published Berger-based PS simulation that used these charges)
+   and CKP refers to the version with more Gromos compatible version
+   (i.e. the charges for the NH$_3$ group taken from the lysine side-chain).  
    %   these correspond the concentrations reported in the experiments by Akutsu et al.~\cite{akutsu81}.
    %   The lipid force fields named as in our previous work~\cite{botan15}.
 }\label{IONsystems}
@@ -251,8 +254,8 @@ The simulation details are in SI or in references in the table.
     POPS/Na$^+$  & Slipids \cite{jambeck13}        &0 & 0        & 128 & 4480 & 0  & 298  & 500 & 100 & \cite{slipidsPOPS298K} \\
     POPS/Na$^+$  & Berger \cite{??}        &0 & 0        & 128 & 4480 & 0  & 298  & 500 & 100 & \cite{bergerPOPS298K} \\
     POPS/Na$^+$  & MacRog \cite{maciejewski14}  &0 & 0        & 128 & 5120 & 0  & 298  & 200 & 100 & \cite{macrogPOPS298K} \\
-    POPS/Na$^+$  & GROMOS-CKP1 \cite{??} \todoi{Correct citation(s) for CKP.} &0 & 0  & 128 & 4480 & 0  & 298  & 500 & 100 & \cite{ckp1POPS303K} \\
-    POPS/Na$^+$  & GROMOS-CKP2 \cite{??} \todoi{Correct citation(s) for CKP.} &0 & 0  & 128 & 4480 & 0  & 298  & 500 & 100 & \cite{ckp2POPS303K} \\
+    POPS/Na$^+$  & GROMOS-CKPM \cite{??} \todoi{Correct citation(s) for CKP.} &0 & 0  & 128 & 4480 & 0  & 298  & 500 & 100 & \cite{ckp1POPS303K} \\
+    POPS/Na$^+$  & GROMOS-CKP \cite{??} \todoi{Correct citation(s) for CKP.} &0 & 0  & 128 & 4480 & 0  & 298  & 500 & 100 & \cite{ckp2POPS303K} \\
     POPS/Na$^+$  & lipid17  \cite{gould18} / JC  \cite{joung08} &0 & 0        & 128    & 4480   & 0   & 298  & 600 & 100 & \cite{lipid17POPSjcions} \\
     POPS/Na$^+$  & lipid17 \cite{gould18} / ff99 \cite{aqvist90}  &0 & 0        & 128    & 4480   & 0   & 298  & 600 & 100 & \cite{lipid17POPSff99ions} \\
     \hline
@@ -366,15 +369,11 @@ The detailed structural differences between the headgroups is, however, not know
   \includegraphics[width=9.0cm]{../Figs/HGorderparametersPS.pdf}
   \caption{\label{HGorderParametersPS}
     Order parameters for PS headgroup and glycerol
-    backbone from simulations with different models and experiments without CaCl$_2$ 
-    Experimental data from \cite{browning80} contains 0.1M of NaCl.
+    backbone from simulations with different models and experiments without CaCl$_2$.
+    Experimental data from \cite{browning80} contain 0.1~M of NaCl.
     Signs are taken from experiments for POPS described in Supplementary Information.
     The vertical bars shown for most computational values are not error bars, but demonstrate that for these systems we had at least two data sets; the ends of the bars mark the extreme values from the sets, and the dot marks their measurement-time-weighted average.
   }
-  \todo{In table \ref{IONsystems}: ''CKP1 referes to the version with  
-    Berger/chiu NH3 charges compatible with Berger
-    and CKP2 to the version with more Gromos compatible version.'' Is this correct
-    also in this figure?} \\
 \end{figure}
 
 \begin{figure}[]
