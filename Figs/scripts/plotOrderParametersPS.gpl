@@ -130,9 +130,9 @@ plot [0.5:5.5][0.35:-0.35] \
      "../../../MATCH/Data/Lipid_Bilayers/DOPS/T303K/MODEL_SLIPIDS/head-glyc-OPs_ave_min_max.dat" \
          u ($1+dxSLIdo):($2):($3):($4) w ye lt Slipid pt 12 ps r t 'DOPS SLIPIDS T=303K', \
      "../../../MATCH/Data/Lipid_Bilayers/DOPS/T303K/MODEL_GROMOS-CKP2/head-glyc-OPs_ave_min_max.dat" \
-         u ($1+dxCKPd2):($2):($3):($4) w ye lt CKP_QK pt 12 ps r t 'DOPS CKP-Lys T=303K', \
+         u ($1+dxCKPd2):($2):($3):($4) w ye lt CKP_QK pt 12 ps r t 'DOPS CKP T=303K', \
      "../../../MATCH/Data/Lipid_Bilayers/DOPS/T303K/MODEL_GROMOS-CKP1/head-glyc-OPs_ave_min_max.dat" \
-         u ($1+dxCKPdo):($2):($3):($4) w ye lt CKP_QB pt 12 ps r t 'DOPS CKP-TMA^+ T=303K', \
+         u ($1+dxCKPdo):($2):($3):($4) w ye lt CKP_QB pt 12 ps r t 'DOPS CKPM T=303K', \
      10 lc rgb "white" t "  ", \
      "../../../MATCH/Data/Lipid_Bilayers/DOPS/T303K/MODEL_Berger/head-glyc-OPs_ave_min_max.dat" \
          u ($1+dxBERdo):($2):($3):($4) w ye lt Berger pt 13 ps r t 'DOPS Berger T=303K', \
@@ -151,9 +151,9 @@ plot [0.5:5.5][0.35:-0.35] \
      "../../../MATCH/Data/Lipid_Bilayers/POPS/T298K/MODEL_SLIPIDS/head-glyc-OPs_ave_min_max.dat" \
          u ($1+dxSLIpo):($2):($3):($4) w ye lt Slipid pt 6 ps r t 'POPS SLIPIDS T=298K', \
      "../../../MATCH/Data/Lipid_Bilayers/POPS/T298K/MODEL_GROMOS-CKP2/head-glyc-OPs_ave_min_max.dat" \
-         u ($1+dxCKPp2):($2):($3):($4) w ye lt CKP_QK pt 6 ps r t 'POPS CKP-Lys T=298K', \
+         u ($1+dxCKPp2):($2):($3):($4) w ye lt CKP_QK pt 6 ps r t 'POPS CKP T=298K', \
      "../../../MATCH/Data/Lipid_Bilayers/POPS/T298K/MODEL_GROMOS-CKP1/head-glyc-OPs_ave_min_max.dat" \
-         u ($1+dxCKPpo):($2):($3):($4) w ye lt CKP_QB pt 6 ps r t 'POPS CKP-TMA^+ T=298K', \
+         u ($1+dxCKPpo):($2):($3):($4) w ye lt CKP_QB pt 6 ps r t 'POPS CKPM T=298K', \
      "../../../MATCH/Data/Lipid_Bilayers/POPS/T298K/MODEL_MACROG/head-glyc-OPs_forNMRlipidsIVplot.dat" \
           u ($1+dxMcRpo):($2) w p lt MacRog pt 7 ps r t 'POPS MacRog T=298K', \
      "../../../MATCH/Data/Lipid_Bilayers/POPS/T298K/MODEL_Berger/head-glyc-OPs_ave_min_max.dat" \
