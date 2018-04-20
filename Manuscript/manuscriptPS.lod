@@ -29,16 +29,25 @@
 \contentsline {todos}{{29. }Maybe we should combine this with 3{}{}{}\hbox {}}{3}{}
 \contentsline {todos}{{30. }We need nicer figure for this data. Maybe combine with 2{}{}{}\hbox {}}{3}{}
 \contentsline {todos}{{31. }What are the top figures actually?}{3}{}
-\contentsline {todos}{{33. }Discussion to be finished once all the results are in the plot.}{4}{}
+\contentsline {todos}{{34. }Discussion to be finished once all the results are in the plot.}{4}{}
+\contentsline {todos}{{35. }Also the discussion about POPS/OPPS issue with MacRog model should be added.}{4}{}
 \contentsline {todos}{{32. }Issue about possible updates to this plot: https://github.com/NMRLipids/NMRlipidsIVotherHGs/issues/4}{5}{}
-\contentsline {todos}{{34. }Discussion will be finished when we have all the data in Figs. 5{}{}{}\hbox {}, 17{}{}{}\hbox {} and 18{}{}{}\hbox {}. One possible conclusion could be the following: The main differences between the models in the headgroup region are observed for dihedrals C12-C11-O12-P and C11-C12-C13-O1A. CHARMM36, CHARMM36UA and Slipids give very similar results to the dihedral C11-C12-C13-O1A, which is close to the $\beta $-carbon. The order parameters of $\beta $-carbons for these three models are in best argeement with the experiments in figure 5{}{}{}\hbox {}. On the other hand, Gromos-CKP models give better order parameters for $\alpha $-carbon than Slipids, CHARMM36 or CHARMM36UA. In conclusion, the suggestion would be that the single peak for observed at 120 degrees in CHARMMs and Slipids would be more realistic for C11-C12-C13-O1A dihedral, while the single peak at 180 degrees observed in CKP models and in Berger would be most realistic for C12-C11-O12-P dihedral. }{5}{}
-\contentsline {todos}{{35. }More quantitative analysis of binding positions and affinity may be useful.}{6}{}
-\contentsline {todos}{{36. }It would be probably better to use datasets for NaCl and KCl from Ref. \citenum {roux90} to compare monovalent ion binding to PS containing bilayer.}{6}{}
-\contentsline {todos}{{39. }Should be analyze/discuss this further?}{6}{}
-\contentsline {todos}{{40. }More simulation data for systems with PS lipids and CaCl$_2$ would be probably useful}{7}{}
-\contentsline {todos}{{37. }Simulation of CHARMM36 at 298K should be maybe rerun with Gromacs 5.}{8}{}
-\contentsline {todos}{{38. }We need results also from other than CHARMM36 force field.}{8}{}
-\contentsline {todos}{{41. }Ca2+ binding in CHARMM is lower than to neutral membrane. The reason should be found out (probably equilibration).}{11}{}
-\contentsline {todos}{{42. }These are now mass densities, numbers would be probably better.}{11}{}
-\contentsline {todos}{{43. }Counterions should be also included.}{11}{}
-\contentsline {todos}{{44. }Not all the data from MacRog is included.}{11}{}
+\contentsline {todos}{{33. }Lipid17 and MacRog results should be added into this plot.}{5}{}
+\contentsline {todos}{{36. }Discussion will be finished when we have all the data in Figs. 5{}{}{}\hbox {}, 17{}{}{}\hbox {} and 18{}{}{}\hbox {}. One possible conclusion could be the following: The main differences between the models in the headgroup region are observed for dihedrals C12-C11-O12-P and C11-C12-C13-O1A. CHARMM36, CHARMM36UA and Slipids give very similar results to the dihedral C11-C12-C13-O1A, which is close to the $\beta $-carbon. The order parameters of $\beta $-carbons for these three models are in best argeement with the experiments in figure 5{}{}{}\hbox {}. On the other hand, Gromos-CKP models give better order parameters for $\alpha $-carbon than Slipids, CHARMM36 or CHARMM36UA. In conclusion, the suggestion would be that the single peak for observed at 120 degrees in CHARMMs and Slipids would be more realistic for C11-C12-C13-O1A dihedral, while the single peak at 180 degrees observed in CKP models and in Berger would be most realistic for C12-C11-O12-P dihedral. }{5}{}
+\contentsline {todos}{{37. }More quantitative analysis of binding positions and affinity may be useful.}{6}{}
+\contentsline {todos}{{40. }Finish the discussion when more models are available}{6}{}
+\contentsline {todos}{{41. }This discussion will be finalized when we have the results for monovalent ions also from other simulations.}{6}{}
+\contentsline {todos}{{45. }The existing literature about this should be mentioned/discussed.}{6}{}
+\contentsline {todos}{{38. }The upcoming results from Lipid17 have been mentioned in the blog: http://nmrlipids.blogspot.com/2017/12/nmrlipids-iv-current-status-and.html?showComment=1522151331118\#c5876812436739342658}{7}{}
+\contentsline {todos}{{39. }Maybe we should get the CHARMM results as well?}{7}{}
+\contentsline {todos}{{46. }This discussion should be updated.}{7}{}
+\contentsline {todos}{{47. }Should be analyze/discuss this further?}{7}{}
+\contentsline {todos}{{48. }More simulation data for systems with PS lipids and CaCl$_2$ would be probably useful}{7}{}
+\contentsline {todos}{{42. }Simulation of CHARMM36 at 298K should be maybe rerun with Gromacs 5.}{9}{}
+\contentsline {todos}{{43. }The upcoming results from Lipid17 have been mentioned in the blog: http://nmrlipids.blogspot.com/2017/12/nmrlipids-iv-current-status-and.html?showComment=1522151331118\#c5876812436739342658}{9}{}
+\contentsline {todos}{{44. }Maybe we should show the changes also in this plot?}{9}{}
+\contentsline {todos}{{49. }Upcoming simulations with original CHARMM36 have been mentioned in the blog: http://nmrlipids.blogspot.com/2017/12/nmrlipids-iv-current-status-and.html?showComment=1520090718976\#c5569269391707740056}{10}{}
+\contentsline {todos}{{50. }Upcoming Lipid17 simulations have been mentioned in the blog http://nmrlipids.blogspot.com/2017/12/nmrlipids-iv-current-status-and.html?showComment=1515177306419\#c994825612316235467}{10}{}
+\contentsline {todos}{{51. }The CHARMM results are mass densities, numbers should be used.}{11}{}
+\contentsline {todos}{{52. }Should we include also counterions into the plot?}{11}{}
+\contentsline {todos}{{53. }Not all the data from MacRog is included.}{11}{}

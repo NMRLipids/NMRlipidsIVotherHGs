@@ -1,13 +1,12 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/Fink) (preloaded format=pdflatex 2017.9.25)  20 APR 2018 12:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.9.4)  20 APR 2018 14:43
 entering extended mode
- restricted \write18 enabled.
- file:line:error style messages enabled.
+ \write18 enabled.
  %&-line parsing enabled.
 **manuscriptPS.tex
 (./manuscriptPS.tex
-LaTeX2e <2014/05/01>
-Babel <3.9k> and hyphenation patterns for 78 languages loaded.
-(/sw/share/texmf-dist/tex/latex/revtex4/revtex4.cls
+LaTeX2e <2016/02/01>
+Babel <3.9q> and hyphenation patterns for 3 language(s) loaded.
+(/usr/share/texlive/texmf-dist/tex/latex/revtex4/revtex4.cls
 Document Class: revtex4 2001/08/02 v4.0 (http://publish.aps.org/revtex4/ for do
 cumentation)
  Copyright (c) 2001 The American Physical Society.
@@ -33,7 +32,7 @@ ltxgrid: portions licensed from W. E. Baxter (web@superscript.com)
 \pagegrid@col=\count82
 Class revtex4 Info: Incorporating package {textcase}  [1998/11/12 v0.06 Text on
 ly upper/lower case changing (DPC)]. on input line 3682.
-(/sw/share/texmf-dist/tex/latex/url/url.sty
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip10
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
@@ -50,7 +49,7 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 \c@figure=\count90
 \c@table=\count91
 
-(/sw/share/texmf-dist/tex/latex/natbib/natbib.sty
+(/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip43
 \bibsep=\skip44
@@ -60,47 +59,47 @@ LaTeX Info: Redefining \cite on input line 694.
 \widetext@top=\box32
 \widetext@bot=\box33
 
-(/sw/share/texmf-dist/tex/latex/revtex4/revsymb.sty
+(/usr/share/texlive/texmf-dist/tex/latex/revtex4/revsymb.sty
 Package: revsymb 2001/08/02 v4.0 (http://publish.aps.org/revtex4/ for documenta
 tion)
 LaTeX Info: Redefining \REV@mathfrak on input line 118.
 ))
-(/sw/share/texmf-dist/tex/latex/revtex4/aps.rtx
+(/usr/share/texlive/texmf-dist/tex/latex/revtex4/aps.rtx
 File: aps.rtx 2001/08/02 v4.0 (http://publish.aps.org/revtex4/ for documentatio
 n)
 )
-(/sw/share/texmf-dist/tex/latex/revtex4/10pt.rtx
+(/usr/share/texlive/texmf-dist/tex/latex/revtex4/10pt.rtx
 File: 10pt.rtx 2001/08/02 v4.0 (http://publish.aps.org/revtex4/ for documentati
 on)
 )
-(/sw/share/texmf-dist/tex/latex/rotating/rotating.sty
+(/usr/share/texlive/texmf-dist/tex/latex/rotating/rotating.sty
 Package: rotating 2009/03/28 v2.16a rotated objects in LaTeX
 
-(/sw/share/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 2014/04/25 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 
-(/sw/share/texmf-dist/tex/latex/graphics/keyval.sty
-Package: keyval 2014/05/08 v1.15 key=value parser (DPC)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks16
 )
-(/sw/share/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2016/01/03 v1.0q Standard LaTeX Graphics (DPC,SPQR)
 
-(/sw/share/texmf-dist/tex/latex/graphics/trig.sty
-Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-(/sw/share/texmf-dist/tex/latex/latexconfig/graphics.cfg
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
 File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
 )
-Package graphics Info: Driver file: pdftex.def on input line 91.
+Package graphics Info: Driver file: pdftex.def on input line 95.
 
-(/sw/share/texmf-dist/tex/latex/pdftex-def/pdftex.def
+(/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
 
-(/sw/share/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
 Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 )
-(/sw/share/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
 \Gread@gobject=\count93
@@ -108,8 +107,8 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \Gin@req@height=\dimen102
 \Gin@req@width=\dimen103
 )
-(/sw/share/texmf-dist/tex/latex/base/ifthen.sty
-Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
 \c@r@tfl@t=\count94
 \rotFPtop=\skip45
@@ -117,47 +116,47 @@ Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 \rot@float@box=\box34
 \rot@mess@toks=\toks17
 )
-(/sw/share/texmf-dist/tex/latex/psnfss/times.sty
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/times.sty
 Package: times 2005/04/12 PSNFSS-v9.2a (SPQR) 
 )
-(/sw/share/texmf-dist/tex/latex/setspace/setspace.sty
+(/usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
 Package: setspace 2011/12/19 v6.7a set line spacing
 )
-(/sw/share/texmf-dist/tex/latex/amsmath/amsmath.sty
-Package: amsmath 2013/01/14 v2.14 AMS math features
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2016/03/03 v2.15a AMS math features
 \@mathmargin=\skip47
 
 For additional information on amsmath, use the `?' option.
-(/sw/share/texmf-dist/tex/latex/amsmath/amstext.sty
-Package: amstext 2000/06/29 v2.01
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
 
-(/sw/share/texmf-dist/tex/latex/amsmath/amsgen.sty
-File: amsgen.sty 1999/11/30 v2.0
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks18
 \ex@=\dimen104
 ))
-(/sw/share/texmf-dist/tex/latex/amsmath/amsbsy.sty
-Package: amsbsy 1999/11/29 v1.2d
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen105
 )
-(/sw/share/texmf-dist/tex/latex/amsmath/amsopn.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
 )
 \inf@bad=\count95
-LaTeX Info: Redefining \frac on input line 210.
+LaTeX Info: Redefining \frac on input line 199.
 \uproot@=\count96
 \leftroot@=\count97
-LaTeX Info: Redefining \overline on input line 306.
+LaTeX Info: Redefining \overline on input line 297.
 \classnum@=\count98
 \DOTSCASE@=\count99
-LaTeX Info: Redefining \ldots on input line 378.
-LaTeX Info: Redefining \dots on input line 381.
-LaTeX Info: Redefining \cdots on input line 466.
+LaTeX Info: Redefining \ldots on input line 394.
+LaTeX Info: Redefining \dots on input line 397.
+LaTeX Info: Redefining \cdots on input line 518.
 \Mathstrutbox@=\box35
 \strutbox@=\box36
 \big@size=\dimen106
-LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
+LaTeX Font Info:    Redeclaring font encoding OML on input line 630.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 631.
 \macc@depth=\count100
 \c@MaxMatrixCols=\count101
 \dotsspace@=\muskip11
@@ -178,31 +177,31 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
 \multlinegap=\skip48
 \multlinetaggap=\skip49
 \mathdisplay@stack=\toks22
-LaTeX Info: Redefining \[ on input line 2665.
-LaTeX Info: Redefining \] on input line 2666.
+LaTeX Info: Redefining \[ on input line 2735.
+LaTeX Info: Redefining \] on input line 2736.
 )
-(/sw/share/texmf-dist/tex/latex/oberdiek/epstopdf.sty
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf.sty
 Package: epstopdf 2010/02/09 v2.5 Conversion with epstopdf on the fly (HO)
 
-(/sw/share/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
-(/sw/share/texmf-dist/tex/latex/oberdiek/grfext.sty
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
 Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
 
-(/sw/share/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
 Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
 ))
-(/sw/share/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
 
-(/sw/share/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
 Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
 
-(/sw/share/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
 Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
 
-(/sw/share/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
 Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
 )
@@ -211,11 +210,11 @@ Package etexcmds Info: Could not find \expanded.
 (etexcmds)             that some package has redefined \expanded.
 (etexcmds)             In the latter case, load this package earlier.
 )))
-(/sw/share/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
 
-(/sw/share/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
 Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
 Package ifpdf Info: pdfTeX in PDF mode is detected.
 )
@@ -229,22 +228,22 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 452.
 
-(/sw/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 )))
-(/sw/share/texmf-dist/tex/latex/easy-todo/easy-todo.sty
+(/usr/share/texlive/texmf-dist/tex/latex/easy-todo/easy-todo.sty
 Package: easy-todo 2014/01/01
 
-(/sw/share/texmf-dist/tex/latex/graphics/color.sty
-Package: color 2014/04/23 v1.1a Standard LaTeX Color (DPC)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2016/01/03 v1.1b Standard LaTeX Color (DPC)
 
-(/sw/share/texmf-dist/tex/latex/latexconfig/color.cfg
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
-Package color Info: Driver file: pdftex.def on input line 137.
+Package color Info: Driver file: pdftex.def on input line 143.
 )
-(/sw/share/texmf-dist/tex/latex/tocloft/tocloft.sty
+(/usr/share/texlive/texmf-dist/tex/latex/tocloft/tocloft.sty
 Package: tocloft 2013/05/02 v2.3f parameterised ToC, etc., typesetting
 Package tocloft Info: The document has section divisions on input line 44.
 \cftparskip=\skip50
@@ -281,7 +280,7 @@ Package tocloft Info: The document has section divisions on input line 44.
 \cfttabindent=\skip79
 \cfttabnumwidth=\skip80
 )
-(/sw/share/texmf-dist/tex/latex/oberdiek/ifdraft.sty
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/ifdraft.sty
 Package: ifdraft 2008/08/11 v1.3 Detect class options draft and final (HO)
 )
 \c@todos=\count109
@@ -292,42 +291,34 @@ Package: ifdraft 2008/08/11 v1.3 Detect class options draft and final (HO)
 \cftbeforelodtitleskip=\skip84
 \cftafterlodtitleskip=\skip85
 )
-(/sw/share/texmf-dist/tex/latex/csquotes/csquotes.sty
-Package: csquotes 2011/10/22 v5.1d context-sensitive quotations
+(/usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.sty
+Package: csquotes 2016/01/31 v5.1g context-sensitive quotations (JAW)
 
-(/sw/share/texmf-dist/tex/latex/etoolbox/etoolbox.sty
-Package: etoolbox 2011/01/03 v2.1 e-TeX tools for LaTeX
-
-(/sw/share/texmf-dist/tex/latex/etex-pkg/etex.sty
-Package: etex 1998/03/26 v2.0 eTeX basic definition package (PEB)
-\et@xins=\count111
+(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2015/08/02 v2.2a e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count111
 )
-\etb@tempcnta=\count112
-)
-\csq@reset=\count113
-\csq@gtype=\count114
-\csq@glevel=\count115
-\csq@qlevel=\count116
-\csq@maxlvl=\count117
-\csq@tshold=\count118
+\csq@reset=\count112
+\csq@gtype=\count113
+\csq@glevel=\count114
+\csq@qlevel=\count115
+\csq@maxlvl=\count116
+\csq@tshold=\count117
 \csq@ltx@everypar=\toks23
 
-(/sw/share/texmf-dist/tex/latex/csquotes/csquotes.def
-File: csquotes.def 2011/10/22 v5.1d csquotes generic definitions
+(/usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.def
+File: csquotes.def 2016/01/31 v5.1g csquotes generic definitions (JAW)
 )
 Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
 Package csquotes Info: ... configuration file loaded successfully.
 
-(/sw/share/texmf-dist/tex/latex/csquotes/csquotes.cfg
+(/usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.cfg
 File: csquotes.cfg 
 ))
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... none found.
- (./manuscriptPS.aux
 
-LaTeX Warning: Label `PSresponseTONaCl' multiply defined.
-
-)
+(./manuscriptPS.aux)
 \openout1 = `manuscriptPS.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 37.
@@ -343,25 +334,24 @@ LaTeX Font Info:    ... okay on input line 37.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 37.
 LaTeX Font Info:    ... okay on input line 37.
 LaTeX Font Info:    Try loading font information for OT1+ptm on input line 37.
- (/sw/share/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+ (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 Class revtex4 Info: Patching LaTeX tabular. on input line 37.
 Class revtex4 Info: cite was not loaded (OK!) on input line 37.
 Class revtex4 Info: multicol was not loaded (OK!) on input line 37.
-
-(/sw/share/texmf-dist/tex/context/base/supp-pdf.mkii
+(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count119
+\scratchcounter=\count118
 \scratchdimen=\dimen113
 \scratchbox=\box37
-\nofMPsegments=\count120
-\nofMParguments=\count121
+\nofMPsegments=\count119
+\nofMParguments=\count120
 \everyMPshowfont=\toks24
-\MPscratchCnt=\count122
+\MPscratchCnt=\count121
 \MPscratchDim=\dimen114
-\MPnumerator=\count123
-\makeMPintoPDFobject=\count124
+\MPnumerator=\count122
+\makeMPintoPDFobject=\count123
 \everyMPtoPDFconversion=\toks25
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
@@ -412,30 +402,6 @@ Package natbib Warning: Citation `??' on page 1 undefined on input line 246.
 Package natbib Warning: Citation `??' on page 1 undefined on input line 247.
 
 
-Package natbib Warning: Citation `gould18' on page 1 undefined on input line 24
-8.
-
-
-Package natbib Warning: Citation `joung08' on page 1 undefined on input line 24
-8.
-
-
-Package natbib Warning: Citation `lipid17DOPSjcions' on page 1 undefined on inp
-ut line 248.
-
-
-Package natbib Warning: Citation `gould18' on page 1 undefined on input line 24
-9.
-
-
-Package natbib Warning: Citation `aqvist90' on page 1 undefined on input line 2
-49.
-
-
-Package natbib Warning: Citation `lipid17DOPSff99ions' on page 1 undefined on i
-nput line 249.
-
-
 Package natbib Warning: Citation `??' on page 1 undefined on input line 251.
 
 
@@ -454,30 +420,6 @@ Package natbib Warning: Citation `??' on page 1 undefined on input line 257.
 Package natbib Warning: Citation `??' on page 1 undefined on input line 258.
 
 
-Package natbib Warning: Citation `gould18' on page 1 undefined on input line 25
-9.
-
-
-Package natbib Warning: Citation `joung08' on page 1 undefined on input line 25
-9.
-
-
-Package natbib Warning: Citation `lipid17POPSjcions' on page 1 undefined on inp
-ut line 259.
-
-
-Package natbib Warning: Citation `gould18' on page 1 undefined on input line 26
-0.
-
-
-Package natbib Warning: Citation `aqvist90' on page 1 undefined on input line 2
-60.
-
-
-Package natbib Warning: Citation `lipid17POPSff99ions' on page 1 undefined on i
-nput line 260.
-
-
 Package natbib Warning: Citation `??' on page 1 undefined on input line 262.
 
 
@@ -490,25 +432,13 @@ Package natbib Warning: Citation `??' on page 1 undefined on input line 263.
 Package natbib Warning: Citation `??' on page 1 undefined on input line 264.
 
 
-Package natbib Warning: Citation `charmm36pops+83popcT298Kpiggot' on page 1 und
-efined on input line 264.
-
-
 Package natbib Warning: Citation `??' on page 1 undefined on input line 265.
 
 
-Package natbib Warning: Citation `charmm36pops+83popcT298KpiggotSODIUM' on page
- 1 undefined on input line 265.
-
-
 Package natbib Warning: Citation `??' on page 1 undefined on input line 266.
 
 
 Package natbib Warning: Citation `??' on page 1 undefined on input line 266.
-
-
-Package natbib Warning: Citation `POPCpopsMACROG' on page 1 undefined on input 
-line 267.
 
 
 Package natbib Warning: Citation `??' on page 1 undefined on input line 269.
@@ -521,22 +451,6 @@ Package natbib Warning: Citation `??' on page 1 undefined on input line 270.
 
 
 Package natbib Warning: Citation `??' on page 1 undefined on input line 270.
-
-
-Package natbib Warning: Citation `POPCpopsMACROG' on page 1 undefined on input 
-line 271.
-
-
-Package natbib Warning: Citation `POPCpopsMACROG' on page 1 undefined on input 
-line 272.
-
-
-Package natbib Warning: Citation `POPCpopsMACROG' on page 1 undefined on input 
-line 273.
-
-
-Package natbib Warning: Citation `POPCpopsMACROG' on page 1 undefined on input 
-line 274.
 
 
 Overfull \hbox (33.79192pt too wide) in paragraph at lines 236--278
@@ -550,14 +464,14 @@ File: ../Figs/PShgSIGNSsimpson.pdf Graphic file (type pdf)
 Package pdftex.def Info: ../Figs/PShgSIGNSsimpson.pdf used on input line 291.
 (pdftex.def)             Requested size: 170.71652pt x 374.08763pt.
 Package epstopdf Info: Source file: <../Figs/g1_slice_large.eps>
-(epstopdf)                    date: 2017-12-06 11:28:21
+(epstopdf)                    date: 2017-12-18 15:36:07
 (epstopdf)                    size: 15059 bytes
 (epstopdf)             Output file: <../Figs/g1_slice_large-eps-converted-to.pd
 f>
-(epstopdf)                    date: 2018-03-06 16:47:27
+(epstopdf)                    date: 2018-01-23 10:37:46
 (epstopdf)                    size: 11673 bytes
-(epstopdf)             Command: <repstopdf --outfile=../Figs/g1_slice_large-eps
--converted-to.pdf ../Figs/g1_slice_large.eps>
+(epstopdf)             Command: <epstopdf --outfile=../Figs/g1_slice_large-eps-
+converted-to.pdf ../Figs/g1_slice_large.eps>
 (epstopdf)             \includegraphics on input line 320.
 Package epstopdf Info: Output file is already uptodate.
 
@@ -569,14 +483,14 @@ Package pdftex.def Info: ../Figs/g1_slice_large-eps-converted-to.pdf used on in
 put line 320.
 (pdftex.def)             Requested size: 156.49014pt x 185.63321pt.
 Package epstopdf Info: Source file: <../Figs/g1_slice_small.eps>
-(epstopdf)                    date: 2017-12-06 11:28:21
+(epstopdf)                    date: 2017-12-18 15:36:07
 (epstopdf)                    size: 14961 bytes
 (epstopdf)             Output file: <../Figs/g1_slice_small-eps-converted-to.pd
 f>
-(epstopdf)                    date: 2018-03-06 16:47:27
+(epstopdf)                    date: 2018-01-23 10:37:46
 (epstopdf)                    size: 10896 bytes
-(epstopdf)             Command: <repstopdf --outfile=../Figs/g1_slice_small-eps
--converted-to.pdf ../Figs/g1_slice_small.eps>
+(epstopdf)             Command: <epstopdf --outfile=../Figs/g1_slice_small-eps-
+converted-to.pdf ../Figs/g1_slice_small.eps>
 (epstopdf)             \includegraphics on input line 321.
 Package epstopdf Info: Output file is already uptodate.
 
@@ -588,13 +502,13 @@ Package pdftex.def Info: ../Figs/g1_slice_small-eps-converted-to.pdf used on in
 put line 321.
 (pdftex.def)             Requested size: 156.49014pt x 185.63321pt.
 Package epstopdf Info: Source file: <../Figs/g2_slice.eps>
-(epstopdf)                    date: 2017-12-06 11:28:21
+(epstopdf)                    date: 2017-12-18 15:36:07
 (epstopdf)                    size: 15279 bytes
 (epstopdf)             Output file: <../Figs/g2_slice-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-03-06 16:47:27
+(epstopdf)                    date: 2018-01-23 10:37:46
 (epstopdf)                    size: 11711 bytes
-(epstopdf)             Command: <repstopdf --outfile=../Figs/g2_slice-eps-conve
-rted-to.pdf ../Figs/g2_slice.eps>
+(epstopdf)             Command: <epstopdf --outfile=../Figs/g2_slice-eps-conver
+ted-to.pdf ../Figs/g2_slice.eps>
 (epstopdf)             \includegraphics on input line 322.
 Package epstopdf Info: Output file is already uptodate.
 
@@ -611,14 +525,14 @@ LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 343.
 
 Package epstopdf Info: Source file: <../Figs/HGorderparametersPCPS.eps>
-(epstopdf)                    date: 2018-03-06 16:47:27
+(epstopdf)                    date: 2018-01-23 10:37:46
 (epstopdf)                    size: 22634 bytes
 (epstopdf)             Output file: <../Figs/HGorderparametersPCPS-eps-converte
 d-to.pdf>
-(epstopdf)                    date: 2018-03-06 16:47:27
+(epstopdf)                    date: 2018-01-23 10:37:46
 (epstopdf)                    size: 7732 bytes
-(epstopdf)             Command: <repstopdf --outfile=../Figs/HGorderparametersP
-CPS-eps-converted-to.pdf ../Figs/HGorderparametersPCPS.eps>
+(epstopdf)             Command: <epstopdf --outfile=../Figs/HGorderparametersPC
+PS-eps-converted-to.pdf ../Figs/HGorderparametersPCPS.eps>
 (epstopdf)             \includegraphics on input line 345.
 Package epstopdf Info: Output file is already uptodate.
 
@@ -640,7 +554,7 @@ Package natbib Warning: Citation `??' on page 1 undefined on input line 353.
 
 Package natbib Warning: Citation `??' on page 1 undefined on input line 353.
 
-[1{/sw/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <../Figs/lipids.pdf>]
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <../Figs/lipids.pdf>]
 
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 367.
@@ -730,52 +644,52 @@ Missing character: There is no “ in font ptmr7t!
 to.pdf>]
 
 LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
- on input line 399.
+ on input line 401.
 
 [4 <../Figs/HGorderparametersPCPS-eps-converted-to.pdf> <../Figs/HGorderparamet
 ersPS.pdf>]
 
 LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
- on input line 434.
+ on input line 437.
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 435.
+               Default added (so using `tbp') on input line 438.
 
-<../Figs/glycerol_buslaev.png, id=182, 1766.6pt x 561.09625pt>
+<../Figs/glycerol_buslaev.png, id=181, 1766.6pt x 561.09625pt>
 File: ../Figs/glycerol_buslaev.png Graphic file (type png)
 
 <use ../Figs/glycerol_buslaev.png>
-Package pdftex.def Info: ../Figs/glycerol_buslaev.png used on input line 437.
+Package pdftex.def Info: ../Figs/glycerol_buslaev.png used on input line 440.
 (pdftex.def)             Requested size: 256.0748pt x 81.3269pt.
 
-Overfull \hbox (10.0748pt too wide) in paragraph at lines 437--438
+Overfull \hbox (10.0748pt too wide) in paragraph at lines 440--441
  [][] 
  []
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 453.
+               Default added (so using `tbp') on input line 456.
 
 Package epstopdf Info: Source file: <../Figs/NAdensPOPS.eps>
-(epstopdf)                    date: 2018-04-13 08:55:06
+(epstopdf)                    date: 2018-03-14 16:11:46
 (epstopdf)                    size: 54251 bytes
 (epstopdf)             Output file: <../Figs/NAdensPOPS-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-04-13 08:55:06
+(epstopdf)                    date: 2018-03-14 16:12:17
 (epstopdf)                    size: 14047 bytes
-(epstopdf)             Command: <repstopdf --outfile=../Figs/NAdensPOPS-eps-con
-verted-to.pdf ../Figs/NAdensPOPS.eps>
-(epstopdf)             \includegraphics on input line 455.
+(epstopdf)             Command: <epstopdf --outfile=../Figs/NAdensPOPS-eps-conv
+erted-to.pdf ../Figs/NAdensPOPS.eps>
+(epstopdf)             \includegraphics on input line 458.
 Package epstopdf Info: Output file is already uptodate.
-<../Figs/NAdensPOPS-eps-converted-to.pdf, id=184, 505.89pt x 939.51pt>
+<../Figs/NAdensPOPS-eps-converted-to.pdf, id=183, 505.89pt x 939.51pt>
 File: ../Figs/NAdensPOPS-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ../Figs/NAdensPOPS-eps-converted-to.pdf>
 Package pdftex.def Info: ../Figs/NAdensPOPS-eps-converted-to.pdf used on input 
-line 455.
+line 458.
 (pdftex.def)             Requested size: 256.0748pt x 475.57416pt.
 
-Overfull \hbox (10.0748pt too wide) in paragraph at lines 455--456
+Overfull \hbox (10.0748pt too wide) in paragraph at lines 458--459
  [][] 
  []
 
@@ -783,18 +697,18 @@ Overfull \hbox (10.0748pt too wide) in paragraph at lines 455--456
 nsPOPS-eps-converted-to.pdf>]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 490.
+               Default added (so using `tbp') on input line 495.
 
 Package epstopdf Info: Source file: <../Figs/CHANGESwithMONVALENTwithPS.eps>
-(epstopdf)                    date: 2018-04-19 19:07:15
+(epstopdf)                    date: 2018-04-18 15:12:29
 (epstopdf)                    size: 41611 bytes
 (epstopdf)             Output file: <../Figs/CHANGESwithMONVALENTwithPS-eps-con
 verted-to.pdf>
-(epstopdf)                    date: 2018-04-19 19:07:15
+(epstopdf)                    date: 2018-04-18 15:13:42
 (epstopdf)                    size: 14926 bytes
-(epstopdf)             Command: <repstopdf --outfile=../Figs/CHANGESwithMONVALE
-NTwithPS-eps-converted-to.pdf ../Figs/CHANGESwithMONVALENTwithPS.eps>
-(epstopdf)             \includegraphics on input line 492.
+(epstopdf)             Command: <epstopdf --outfile=../Figs/CHANGESwithMONVALEN
+TwithPS-eps-converted-to.pdf ../Figs/CHANGESwithMONVALENTwithPS.eps>
+(epstopdf)             \includegraphics on input line 497.
 Package epstopdf Info: Output file is already uptodate.
 
 <../Figs/CHANGESwithMONVALENTwithPS-eps-converted-to.pdf, id=240, 1011.78pt x 7
@@ -803,333 +717,334 @@ File: ../Figs/CHANGESwithMONVALENTwithPS-eps-converted-to.pdf Graphic file (typ
 e pdf)
  <use ../Figs/CHANGESwithMONVALENTwithPS-eps-converted-to.pdf>
 Package pdftex.def Info: ../Figs/CHANGESwithMONVALENTwithPS-eps-converted-to.pd
-f used on input line 492.
+f used on input line 497.
 (pdftex.def)             Requested size: 512.1496pt x 402.4089pt.
 
-Overfull \hbox (2.1496pt too wide) in paragraph at lines 492--493
+Overfull \hbox (2.1496pt too wide) in paragraph at lines 497--498
  [][] 
  []
 
 
+Package natbib Warning: Citation `??' on page 6 undefined on input line 507.
+
+
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 549.
+               Default added (so using `tbp') on input line 525.
+
+Package epstopdf Info: Source file: <../Figs/CIdensPSOCmixt.eps>
+(epstopdf)                    date: 2018-04-20 14:39:21
+(epstopdf)                    size: 32548 bytes
+(epstopdf)             Output file: <../Figs/CIdensPSOCmixt-eps-converted-to.pd
+f>
+(epstopdf)                    date: 2018-04-20 14:39:28
+(epstopdf)                    size: 10004 bytes
+(epstopdf)             Command: <epstopdf --outfile=../Figs/CIdensPSOCmixt-eps-
+converted-to.pdf ../Figs/CIdensPSOCmixt.eps>
+(epstopdf)             \includegraphics on input line 527.
+Package epstopdf Info: Output file is already uptodate.
+<../Figs/CIdensPSOCmixt-eps-converted-to.pdf, id=241, 505.89pt x 794.97pt>
+File: ../Figs/CIdensPSOCmixt-eps-converted-to.pdf Graphic file (type pdf)
+
+<use ../Figs/CIdensPSOCmixt-eps-converted-to.pdf>
+Package pdftex.def Info: ../Figs/CIdensPSOCmixt-eps-converted-to.pdf used on in
+put line 527.
+(pdftex.def)             Requested size: 227.62204pt x 357.69681pt.
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 581.
 
 Package epstopdf Info: Source file: <../Figs/HGorderparametersPCvsPS.eps>
-(epstopdf)                    date: 2018-04-19 19:07:15
+(epstopdf)                    date: 2018-04-16 18:44:48
 (epstopdf)                    size: 34528 bytes
 (epstopdf)             Output file: <../Figs/HGorderparametersPCvsPS-eps-conver
 ted-to.pdf>
-(epstopdf)                    date: 2018-04-19 19:07:15
+(epstopdf)                    date: 2018-04-16 18:44:54
 (epstopdf)                    size: 11712 bytes
-(epstopdf)             Command: <repstopdf --outfile=../Figs/HGorderparametersP
-CvsPS-eps-converted-to.pdf ../Figs/HGorderparametersPCvsPS.eps>
-(epstopdf)             \includegraphics on input line 551.
+(epstopdf)             Command: <epstopdf --outfile=../Figs/HGorderparametersPC
+vsPS-eps-converted-to.pdf ../Figs/HGorderparametersPCvsPS.eps>
+(epstopdf)             \includegraphics on input line 583.
 Package epstopdf Info: Output file is already uptodate.
 
-<../Figs/HGorderparametersPCvsPS-eps-converted-to.pdf, id=241, 1011.78pt x 722.
+<../Figs/HGorderparametersPCvsPS-eps-converted-to.pdf, id=242, 1011.78pt x 722.
 7pt>
 File: ../Figs/HGorderparametersPCvsPS-eps-converted-to.pdf Graphic file (type p
 df)
  <use ../Figs/HGorderparametersPCvsPS-eps-converted-to.pdf>
 Package pdftex.def Info: ../Figs/HGorderparametersPCvsPS-eps-converted-to.pdf u
-sed on input line 551.
+sed on input line 583.
 (pdftex.def)             Requested size: 455.24408pt x 325.17891pt.
-
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 566.
-
-Package epstopdf Info: Source file: <../Figs/CIdensPSOCmixt.eps>
-(epstopdf)                    date: 2018-04-13 08:55:06
-(epstopdf)                    size: 27171 bytes
-(epstopdf)             Output file: <../Figs/CIdensPSOCmixt-eps-converted-to.pd
-f>
-(epstopdf)                    date: 2018-04-13 08:55:06
-(epstopdf)                    size: 8164 bytes
-(epstopdf)             Command: <repstopdf --outfile=../Figs/CIdensPSOCmixt-eps
--converted-to.pdf ../Figs/CIdensPSOCmixt.eps>
-(epstopdf)             \includegraphics on input line 568.
-Package epstopdf Info: Output file is already uptodate.
-<../Figs/CIdensPSOCmixt-eps-converted-to.pdf, id=242, 505.89pt x 794.97pt>
-File: ../Figs/CIdensPSOCmixt-eps-converted-to.pdf Graphic file (type pdf)
-
-<use ../Figs/CIdensPSOCmixt-eps-converted-to.pdf>
-Package pdftex.def Info: ../Figs/CIdensPSOCmixt-eps-converted-to.pdf used on in
-put line 568.
-(pdftex.def)             Requested size: 227.62204pt x 357.69681pt.
-
-
-Package natbib Warning: Citation `kim16' on page 6 undefined on input line 637.
-
-
-[6]
+ [6]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 643.
+               Default added (so using `tbp') on input line 671.
 
 Package epstopdf Info: Source file: <../Figs/CHANGESwithCaClPS.eps>
-(epstopdf)                    date: 2018-04-19 19:07:15
+(epstopdf)                    date: 2018-04-16 18:35:08
 (epstopdf)                    size: 36447 bytes
 (epstopdf)             Output file: <../Figs/CHANGESwithCaClPS-eps-converted-to
 .pdf>
-(epstopdf)                    date: 2018-04-19 19:07:15
+(epstopdf)                    date: 2018-04-16 18:36:21
 (epstopdf)                    size: 16480 bytes
-(epstopdf)             Command: <repstopdf --outfile=../Figs/CHANGESwithCaClPS-
-eps-converted-to.pdf ../Figs/CHANGESwithCaClPS.eps>
-(epstopdf)             \includegraphics on input line 645.
+(epstopdf)             Command: <epstopdf --outfile=../Figs/CHANGESwithCaClPS-e
+ps-converted-to.pdf ../Figs/CHANGESwithCaClPS.eps>
+(epstopdf)             \includegraphics on input line 673.
 Package epstopdf Info: Output file is already uptodate.
 <../Figs/CHANGESwithCaClPS-eps-converted-to.pdf, id=246, 1011.78pt x 722.7pt>
 File: ../Figs/CHANGESwithCaClPS-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ../Figs/CHANGESwithCaClPS-eps-converted-to.pdf>
 Package pdftex.def Info: ../Figs/CHANGESwithCaClPS-eps-converted-to.pdf used on
- input line 645.
+ input line 673.
 (pdftex.def)             Requested size: 512.1496pt x 365.82626pt.
 
-Overfull \hbox (2.1496pt too wide) in paragraph at lines 645--646
+Overfull \hbox (2.1496pt too wide) in paragraph at lines 673--674
  [][] 
  []
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 651.
+               Default added (so using `tbp') on input line 683.
 
 Package epstopdf Info: Source file: <../Figs/CAdensPCPSmixture.eps>
-(epstopdf)                    date: 2018-03-06 16:47:27
-(epstopdf)                    size: 27256 bytes
+(epstopdf)                    date: 2018-04-20 14:17:11
+(epstopdf)                    size: 32450 bytes
 (epstopdf)             Output file: <../Figs/CAdensPCPSmixture-eps-converted-to
 .pdf>
-(epstopdf)                    date: 2018-03-06 16:47:27
-(epstopdf)                    size: 8119 bytes
-(epstopdf)             Command: <repstopdf --outfile=../Figs/CAdensPCPSmixture-
-eps-converted-to.pdf ../Figs/CAdensPCPSmixture.eps>
-(epstopdf)             \includegraphics on input line 653.
+(epstopdf)                    date: 2018-04-20 14:33:42
+(epstopdf)                    size: 9367 bytes
+(epstopdf)             Command: <epstopdf --outfile=../Figs/CAdensPCPSmixture-e
+ps-converted-to.pdf ../Figs/CAdensPCPSmixture.eps>
+(epstopdf)             \includegraphics on input line 685.
 Package epstopdf Info: Output file is already uptodate.
 <../Figs/CAdensPCPSmixture-eps-converted-to.pdf, id=247, 505.89pt x 794.97pt>
 File: ../Figs/CAdensPCPSmixture-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ../Figs/CAdensPCPSmixture-eps-converted-to.pdf>
 Package pdftex.def Info: ../Figs/CAdensPCPSmixture-eps-converted-to.pdf used on
- input line 653.
+ input line 685.
 (pdftex.def)             Requested size: 256.0748pt x 402.4089pt.
 
-Overfull \hbox (10.0748pt too wide) in paragraph at lines 653--654
- [][] 
- []
-
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 709.
-
-Package epstopdf Info: Source file: <../Figs/HGorderparametersPCvsPEPSPGchol.ep
-s>
-(epstopdf)                    date: 2017-12-06 11:28:21
-(epstopdf)                    size: 26808 bytes
-(epstopdf)             Output file: <../Figs/HGorderparametersPCvsPEPSPGchol-ep
-s-converted-to.pdf>
-(epstopdf)                    date: 2017-12-06 11:28:21
-(epstopdf)                    size: 10076 bytes
-(epstopdf)             Command: <repstopdf --outfile=../Figs/HGorderparametersP
-CvsPEPSPGchol-eps-converted-to.pdf ../Figs/HGorderparametersPCvsPEPSPGchol.eps>
-
-(epstopdf)             \includegraphics on input line 711.
-Package epstopdf Info: Output file is already uptodate.
-
-<../Figs/HGorderparametersPCvsPEPSPGchol-eps-converted-to.pdf, id=248, 505.89pt
- x 722.7pt>
-File: ../Figs/HGorderparametersPCvsPEPSPGchol-eps-converted-to.pdf Graphic file
- (type pdf)
- <use ../Figs/HGorderparametersPCvsPEPSPGchol-eps-converted-to.pdf>
-Package pdftex.def Info: ../Figs/HGorderparametersPCvsPEPSPGchol-eps-converted-
-to.pdf used on input line 711.
-(pdftex.def)             Requested size: 227.62204pt x 325.17891pt.
-
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 739.
-
-Package epstopdf Info: Source file: <../Figs/CHANGESwithCaCl.eps>
-(epstopdf)                    date: 2017-12-06 11:28:21
-(epstopdf)                    size: 29400 bytes
-(epstopdf)             Output file: <../Figs/CHANGESwithCaCl-eps-converted-to.p
-df>
-(epstopdf)                    date: 2017-12-06 11:28:21
-(epstopdf)                    size: 11087 bytes
-(epstopdf)             Command: <repstopdf --outfile=../Figs/CHANGESwithCaCl-ep
-s-converted-to.pdf ../Figs/CHANGESwithCaCl.eps>
-(epstopdf)             \includegraphics on input line 741.
-Package epstopdf Info: Output file is already uptodate.
-<../Figs/CHANGESwithCaCl-eps-converted-to.pdf, id=249, 505.89pt x 722.7pt>
-File: ../Figs/CHANGESwithCaCl-eps-converted-to.pdf Graphic file (type pdf)
-
-<use ../Figs/CHANGESwithCaCl-eps-converted-to.pdf>
-Package pdftex.def Info: ../Figs/CHANGESwithCaCl-eps-converted-to.pdf used on i
-nput line 741.
-(pdftex.def)             Requested size: 256.0748pt x 365.82626pt.
-
-Overfull \hbox (10.0748pt too wide) in paragraph at lines 741--742
- [][] 
- []
-
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 766.
-
-Package epstopdf Info: Source file: <../Figs/HGopsDHMDMAB.eps>
-(epstopdf)                    date: 2018-03-06 16:47:27
-(epstopdf)                    size: 27132 bytes
-(epstopdf)             Output file: <../Figs/HGopsDHMDMAB-eps-converted-to.pdf>
-
-(epstopdf)                    date: 2018-03-06 16:47:27
-(epstopdf)                    size: 9441 bytes
-(epstopdf)             Command: <repstopdf --outfile=../Figs/HGopsDHMDMAB-eps-c
-onverted-to.pdf ../Figs/HGopsDHMDMAB.eps>
-(epstopdf)             \includegraphics on input line 768.
-Package epstopdf Info: Output file is already uptodate.
-<../Figs/HGopsDHMDMAB-eps-converted-to.pdf, id=250, 505.89pt x 722.7pt>
-File: ../Figs/HGopsDHMDMAB-eps-converted-to.pdf Graphic file (type pdf)
-
-<use ../Figs/HGopsDHMDMAB-eps-converted-to.pdf>
-Package pdftex.def Info: ../Figs/HGopsDHMDMAB-eps-converted-to.pdf used on inpu
-t line 768.
-(pdftex.def)             Requested size: 256.0748pt x 365.82626pt.
-
-Overfull \hbox (10.0748pt too wide) in paragraph at lines 768--769
+Overfull \hbox (10.0748pt too wide) in paragraph at lines 685--686
  [][] 
  []
 
 [7 <../Figs/CHANGESwithMONVALENTwithPS-eps-converted-to.pdf>]
 
+LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
+ on input line 704.
+
+
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 776.
+               Default added (so using `tbp') on input line 740.
+
+Package epstopdf Info: Source file: <../Figs/HGorderparametersPCvsPEPSPGchol.ep
+s>
+(epstopdf)                    date: 2017-11-06 16:50:35
+(epstopdf)                    size: 26808 bytes
+(epstopdf)             Output file: <../Figs/HGorderparametersPCvsPEPSPGchol-ep
+s-converted-to.pdf>
+(epstopdf)                    date: 2017-11-06 16:50:35
+(epstopdf)                    size: 10076 bytes
+(epstopdf)             Command: <epstopdf --outfile=../Figs/HGorderparametersPC
+vsPEPSPGchol-eps-converted-to.pdf ../Figs/HGorderparametersPCvsPEPSPGchol.eps>
+(epstopdf)             \includegraphics on input line 742.
+Package epstopdf Info: Output file is already uptodate.
+
+<../Figs/HGorderparametersPCvsPEPSPGchol-eps-converted-to.pdf, id=262, 505.89pt
+ x 722.7pt>
+File: ../Figs/HGorderparametersPCvsPEPSPGchol-eps-converted-to.pdf Graphic file
+ (type pdf)
+ <use ../Figs/HGorderparametersPCvsPEPSPGchol-eps-converted-to.pdf>
+Package pdftex.def Info: ../Figs/HGorderparametersPCvsPEPSPGchol-eps-converted-
+to.pdf used on input line 742.
+(pdftex.def)             Requested size: 227.62204pt x 325.17891pt.
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 770.
+
+Package epstopdf Info: Source file: <../Figs/CHANGESwithCaCl.eps>
+(epstopdf)                    date: 2017-08-07 14:22:28
+(epstopdf)                    size: 29400 bytes
+(epstopdf)             Output file: <../Figs/CHANGESwithCaCl-eps-converted-to.p
+df>
+(epstopdf)                    date: 2017-08-07 14:22:28
+(epstopdf)                    size: 11087 bytes
+(epstopdf)             Command: <epstopdf --outfile=../Figs/CHANGESwithCaCl-eps
+-converted-to.pdf ../Figs/CHANGESwithCaCl.eps>
+(epstopdf)             \includegraphics on input line 772.
+Package epstopdf Info: Output file is already uptodate.
+<../Figs/CHANGESwithCaCl-eps-converted-to.pdf, id=263, 505.89pt x 722.7pt>
+File: ../Figs/CHANGESwithCaCl-eps-converted-to.pdf Graphic file (type pdf)
+
+<use ../Figs/CHANGESwithCaCl-eps-converted-to.pdf>
+Package pdftex.def Info: ../Figs/CHANGESwithCaCl-eps-converted-to.pdf used on i
+nput line 772.
+(pdftex.def)             Requested size: 256.0748pt x 365.82626pt.
+
+Overfull \hbox (10.0748pt too wide) in paragraph at lines 772--773
+ [][] 
+ []
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 797.
+
+Package epstopdf Info: Source file: <../Figs/HGopsDHMDMAB.eps>
+(epstopdf)                    date: 2017-12-18 15:36:07
+(epstopdf)                    size: 27132 bytes
+(epstopdf)             Output file: <../Figs/HGopsDHMDMAB-eps-converted-to.pdf>
+
+(epstopdf)                    date: 2017-12-18 15:36:07
+(epstopdf)                    size: 9441 bytes
+(epstopdf)             Command: <epstopdf --outfile=../Figs/HGopsDHMDMAB-eps-co
+nverted-to.pdf ../Figs/HGopsDHMDMAB.eps>
+(epstopdf)             \includegraphics on input line 799.
+Package epstopdf Info: Output file is already uptodate.
+<../Figs/HGopsDHMDMAB-eps-converted-to.pdf, id=264, 505.89pt x 722.7pt>
+File: ../Figs/HGopsDHMDMAB-eps-converted-to.pdf Graphic file (type pdf)
+
+<use ../Figs/HGopsDHMDMAB-eps-converted-to.pdf>
+Package pdftex.def Info: ../Figs/HGopsDHMDMAB-eps-converted-to.pdf used on inpu
+t line 799.
+(pdftex.def)             Requested size: 256.0748pt x 365.82626pt.
+
+Overfull \hbox (10.0748pt too wide) in paragraph at lines 799--800
+ [][] 
+ []
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 807.
 
 <../Figs/diheds_pops1.png, id=265, 1405.25pt x 945.5325pt>
 File: ../Figs/diheds_pops1.png Graphic file (type png)
 
 <use ../Figs/diheds_pops1.png>
-Package pdftex.def Info: ../Figs/diheds_pops1.png used on input line 778.
+Package pdftex.def Info: ../Figs/diheds_pops1.png used on input line 809.
 (pdftex.def)             Requested size: 227.62204pt x 153.14946pt.
 
 <../Figs/diheds_pops2.png, id=266, 1405.25pt x 945.5325pt>
 File: ../Figs/diheds_pops2.png Graphic file (type png)
 
 <use ../Figs/diheds_pops2.png>
-Package pdftex.def Info: ../Figs/diheds_pops2.png used on input line 779.
+Package pdftex.def Info: ../Figs/diheds_pops2.png used on input line 810.
 (pdftex.def)             Requested size: 227.62204pt x 153.14946pt.
 
 <../Figs/diheds_pops3.png, id=267, 1405.25pt x 945.5325pt>
 File: ../Figs/diheds_pops3.png Graphic file (type png)
 
 <use ../Figs/diheds_pops3.png>
-Package pdftex.def Info: ../Figs/diheds_pops3.png used on input line 780.
+Package pdftex.def Info: ../Figs/diheds_pops3.png used on input line 811.
 (pdftex.def)             Requested size: 227.62204pt x 153.14946pt.
 
 <../Figs/diheds_pops4.png, id=268, 1405.25pt x 945.5325pt>
 File: ../Figs/diheds_pops4.png Graphic file (type png)
 
 <use ../Figs/diheds_pops4.png>
-Package pdftex.def Info: ../Figs/diheds_pops4.png used on input line 781.
+Package pdftex.def Info: ../Figs/diheds_pops4.png used on input line 812.
 (pdftex.def)             Requested size: 227.62204pt x 153.14946pt.
 
 <../Figs/diheds_pops5.png, id=269, 1405.25pt x 945.5325pt>
 File: ../Figs/diheds_pops5.png Graphic file (type png)
 
 <use ../Figs/diheds_pops5.png>
-Package pdftex.def Info: ../Figs/diheds_pops5.png used on input line 782.
+Package pdftex.def Info: ../Figs/diheds_pops5.png used on input line 813.
 (pdftex.def)             Requested size: 227.62204pt x 153.14946pt.
 
 <../Figs/diheds_pops6.png, id=270, 1405.25pt x 945.5325pt>
 File: ../Figs/diheds_pops6.png Graphic file (type png)
 
 <use ../Figs/diheds_pops6.png>
-Package pdftex.def Info: ../Figs/diheds_pops6.png used on input line 783.
+Package pdftex.def Info: ../Figs/diheds_pops6.png used on input line 814.
 (pdftex.def)             Requested size: 227.62204pt x 153.14946pt.
 
 <../Figs/diheds_pops7.png, id=271, 1405.25pt x 945.5325pt>
 File: ../Figs/diheds_pops7.png Graphic file (type png)
 
 <use ../Figs/diheds_pops7.png>
-Package pdftex.def Info: ../Figs/diheds_pops7.png used on input line 784.
+Package pdftex.def Info: ../Figs/diheds_pops7.png used on input line 815.
 (pdftex.def)             Requested size: 227.62204pt x 153.14946pt.
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 790.
+               Default added (so using `tbp') on input line 821.
 
 <../Figs/diheds_pops8.png, id=272, 1405.25pt x 945.5325pt>
 File: ../Figs/diheds_pops8.png Graphic file (type png)
 
 <use ../Figs/diheds_pops8.png>
-Package pdftex.def Info: ../Figs/diheds_pops8.png used on input line 792.
+Package pdftex.def Info: ../Figs/diheds_pops8.png used on input line 823.
 (pdftex.def)             Requested size: 227.62204pt x 153.14946pt.
 
 <../Figs/diheds_pops9.png, id=273, 1405.25pt x 945.5325pt>
 File: ../Figs/diheds_pops9.png Graphic file (type png)
 
 <use ../Figs/diheds_pops9.png>
-Package pdftex.def Info: ../Figs/diheds_pops9.png used on input line 793.
+Package pdftex.def Info: ../Figs/diheds_pops9.png used on input line 824.
 (pdftex.def)             Requested size: 227.62204pt x 153.14946pt.
 
 <../Figs/diheds_pops10.png, id=274, 1405.25pt x 945.5325pt>
 File: ../Figs/diheds_pops10.png Graphic file (type png)
 
 <use ../Figs/diheds_pops10.png>
-Package pdftex.def Info: ../Figs/diheds_pops10.png used on input line 794.
+Package pdftex.def Info: ../Figs/diheds_pops10.png used on input line 825.
 (pdftex.def)             Requested size: 227.62204pt x 153.14946pt.
 
 <../Figs/diheds_pops11.png, id=275, 1405.25pt x 945.5325pt>
 File: ../Figs/diheds_pops11.png Graphic file (type png)
 
 <use ../Figs/diheds_pops11.png>
-Package pdftex.def Info: ../Figs/diheds_pops11.png used on input line 795.
+Package pdftex.def Info: ../Figs/diheds_pops11.png used on input line 826.
 (pdftex.def)             Requested size: 227.62204pt x 153.14946pt.
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 801.
+               Default added (so using `tbp') on input line 832.
 
 Package epstopdf Info: Source file: <../Figs/PSresponseTONaCl.eps>
-(epstopdf)                    date: 2018-04-13 08:55:06
+(epstopdf)                    date: 2018-03-20 12:16:41
 (epstopdf)                    size: 25127 bytes
 (epstopdf)             Output file: <../Figs/PSresponseTONaCl-eps-converted-to.
 pdf>
-(epstopdf)                    date: 2018-04-13 08:55:06
+(epstopdf)                    date: 2018-03-21 11:25:35
 (epstopdf)                    size: 9585 bytes
-(epstopdf)             Command: <repstopdf --outfile=../Figs/PSresponseTONaCl-e
-ps-converted-to.pdf ../Figs/PSresponseTONaCl.eps>
-(epstopdf)             \includegraphics on input line 803.
+(epstopdf)             Command: <epstopdf --outfile=../Figs/PSresponseTONaCl-ep
+s-converted-to.pdf ../Figs/PSresponseTONaCl.eps>
+(epstopdf)             \includegraphics on input line 834.
 Package epstopdf Info: Output file is already uptodate.
 <../Figs/PSresponseTONaCl-eps-converted-to.pdf, id=276, 505.89pt x 794.97pt>
 File: ../Figs/PSresponseTONaCl-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ../Figs/PSresponseTONaCl-eps-converted-to.pdf>
 Package pdftex.def Info: ../Figs/PSresponseTONaCl-eps-converted-to.pdf used on 
-input line 803.
+input line 834.
 (pdftex.def)             Requested size: 256.0748pt x 402.4089pt.
 
-Overfull \hbox (10.0748pt too wide) in paragraph at lines 803--804
+Overfull \hbox (10.0748pt too wide) in paragraph at lines 834--835
  [][] 
  []
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 809.
+               Default added (so using `tbp') on input line 847.
 
 <../Figs/OP_CHARMM_CaCl_POPC_NBFix.pdf, id=277, 397.485pt x 216.81pt>
 File: ../Figs/OP_CHARMM_CaCl_POPC_NBFix.pdf Graphic file (type pdf)
 
 <use ../Figs/OP_CHARMM_CaCl_POPC_NBFix.pdf>
 Package pdftex.def Info: ../Figs/OP_CHARMM_CaCl_POPC_NBFix.pdf used on input li
-ne 811.
+ne 849.
 (pdftex.def)             Requested size: 256.0748pt x 139.68092pt.
 
-Overfull \hbox (10.0748pt too wide) in paragraph at lines 811--812
+Overfull \hbox (10.0748pt too wide) in paragraph at lines 849--850
  [][] 
  []
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 817.
+               Default added (so using `tbp') on input line 855.
 
 
 <../Figs/density_profile_CHARMM_CaCl_POPC_NBFix.pdf, id=278, 252.945pt x 289.08
@@ -1138,70 +1053,46 @@ File: ../Figs/density_profile_CHARMM_CaCl_POPC_NBFix.pdf Graphic file (type pdf
 )
  <use ../Figs/density_profile_CHARMM_CaCl_POPC_NBFix.pdf>
 Package pdftex.def Info: ../Figs/density_profile_CHARMM_CaCl_POPC_NBFix.pdf use
-d on input line 819.
+d on input line 857.
 (pdftex.def)             Requested size: 256.0748pt x 292.66101pt.
 
-Overfull \hbox (10.0748pt too wide) in paragraph at lines 819--820
+Overfull \hbox (10.0748pt too wide) in paragraph at lines 857--858
  [][] 
  []
 
-LaTeX Font Info:    Try loading font information for OT1+phv on input line 841.
+[8 <../Figs/CIdensPSOCmixt-eps-converted-to.pdf>]
+LaTeX Font Info:    Try loading font information for OT1+phv on input line 879.
 
-(/sw/share/texmf-dist/tex/latex/psnfss/ot1phv.fd
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1phv.fd
 File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
 )
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <10> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 841.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 879.
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <5> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 841.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 879.
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <9> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 843.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 881.
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <12> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 845.
- [8 <../Figs/HGorderparametersPCvsPS-eps-converted-to.pdf>]
-
-LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
- on input line 847.
-
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 883.
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 847.
-[9 <../Figs/CIdensPSOCmixt-eps-converted-to.pdf>] (./manuscriptPS.bbl
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 1.
-
-(/sw/share/texmf-dist/tex/latex/psnfss/ot1pcr.fd
-File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
-) [10 <../Figs/CHANGESwithCaClPS-eps-converted-to.pdf>]
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 885.
+ [9 <../Figs/HGorderparametersPCvsPS-eps-converted-to.pdf>] [10 <../Figs/CHANGE
+SwithCaClPS-eps-converted-to.pdf>]
 
 LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
- on input line 198.
+ on input line 942.
 
-
-Underfull \hbox (badness 1642) in paragraph at lines 281--288
- []\OT1/ptm/m/n/9 A. Ma-ciejew-ski, M. Pasenkiewicz-Gierula, O. Cra-mar-iuc,
- []
-
+(./manuscriptPS.bbl
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 1.
+ (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pcr.fd
+File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
+)
 [11 <../Figs/CAdensPCPSmixture-eps-converted-to.pdf> <../Figs/HGorderparameters
 PCvsPEPSPGchol-eps-converted-to.pdf>]
 
 LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
- on input line 293.
-
-
-Underfull \hbox (badness 1082) in paragraph at lines 322--326
- []\OT1/ptm/m/n/9 O. H. S. Ollila, \OT1/ptm/m/it/9 POPS+83%popc lipid bi-layer 
-sim-u-la-tion
- []
-
-
-Underfull \hbox (badness 3168) in paragraph at lines 322--326
- \OT1/ptm/m/it/9 at T298K ran CHARMM[]GUI force field and Gro-macs
- []
-
-
-Underfull \hbox (badness 4569) in paragraph at lines 322--326
- \OT1/ptm/m/n/9 (2017), URL $\OT1/pcr/m/n/9 https : / / doi . org / 10 . 5281 /
- zenodo .
- []
+ on input line 129.
 
 [12 <../Figs/CHANGESwithCaCl-eps-converted-to.pdf> <../Figs/HGopsDHMDMAB-eps-co
 nverted-to.pdf>] [13 <../Figs/diheds_pops1.png (PNG copy)> <../Figs/diheds_pops
@@ -1210,40 +1101,142 @@ ng (PNG copy)> <../Figs/diheds_pops5.png (PNG copy)> <../Figs/diheds_pops6.png
 (PNG copy)> <../Figs/diheds_pops7.png (PNG copy)>]
 
 LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
- on input line 426.
-
-) (./manuscriptPS.lod
-
-Package natbib Warning: Citation `kim16' on page 14 undefined on input line 19.
+ on input line 237.
 
 
-
-Package natbib Warning: Citation `kim16' on page 14 undefined on input line 22.
-
-
-
-Underfull \hbox (badness 3281) in paragraph at lines 33--33
-[][] \OT1/ptm/m/n/10 32. Is-sue about pos-si-ble up-dates to this plot: 
- []
-
-
-Overfull \hbox (23.66658pt too wide) in paragraph at lines 33--33
-\OT1/ptm/m/n/10 https://github.com/NMRLipids/NMRlipidsIVotherHGs/issues/4 []  
+Underfull \hbox (badness 1642) in paragraph at lines 324--331
+ []\OT1/ptm/m/n/9 A. Ma-ciejew-ski, M. Pasenkiewicz-Gierula, O. Cra-mar-iuc,
  []
 
 [14 <../Figs/diheds_pops8.png (PNG copy)> <../Figs/diheds_pops9.png (PNG copy)>
  <../Figs/diheds_pops10.png (PNG copy)> <../Figs/diheds_pops11.png (PNG copy)>]
 
 LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
- on input line 35.
+ on input line 370.
+
+
+Underfull \hbox (badness 1082) in paragraph at lines 387--391
+ []\OT1/ptm/m/n/9 O. H. S. Ollila, \OT1/ptm/m/it/9 POPS+83%popc lipid bi-layer 
+sim-u-la-tion
+ []
+
+
+Underfull \hbox (badness 3168) in paragraph at lines 387--391
+ \OT1/ptm/m/it/9 at T298K ran CHARMM[]GUI force field and Gro-macs
+ []
+
+
+Underfull \hbox (badness 4569) in paragraph at lines 387--391
+ \OT1/ptm/m/n/9 (2017), URL $\OT1/pcr/m/n/9 https : / / doi . org / 10 . 5281 /
+ zenodo .
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 405--409
+ \OT1/ptm/m/it/9 cacl[]2. \OT1/ptm/m/n/9 (2017), URL $\OT1/pcr/m/n/9 https : / 
+/ doi . org / 10 . 5281 /
+ []
 
 [15 <../Figs/PSresponseTONaCl-eps-converted-to.pdf> <../Figs/OP_CHARMM_CaCl_POP
 C_NBFix.pdf> <../Figs/density_profile_CHARMM_CaCl_POPC_NBFix.pdf
 
-pdfTeX warning: /sw/bin/pdflatex (file ../Figs/density_profile_CHARMM_CaCl_POPC
-_NBFix.pdf): PDF inclusion: multiple pdfs with page group included in a single 
-page
->])
+pdfTeX warning: pdflatex (file ../Figs/density_profile_CHARMM_CaCl_POPC_NBFix.p
+df): PDF inclusion: multiple pdfs with page group included in a single page
+>]) (./manuscriptPS.lod
+Underfull \hbox (badness 3281) in paragraph at lines 34--34
+[][] \OT1/ptm/m/n/10 32. Is-sue about pos-si-ble up-dates to this plot: 
+ []
+
+
+Overfull \hbox (23.66658pt too wide) in paragraph at lines 34--34
+\OT1/ptm/m/n/10 https://github.com/NMRLipids/NMRlipidsIVotherHGs/issues/4 []  
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--41
+[][] \OT1/ptm/m/n/10 38. The up-com-ing re-sults from Lipid17 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--41
+\OT1/ptm/m/n/10 have been men-tioned in the blog: 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--41
+\OT1/ptm/m/n/10 http://nmrlipids.blogspot.com/2017/12/nmrlipids-iv- 
+ []
+
+
+Overfull \hbox (102.36794pt too wide) in paragraph at lines 41--41
+\OT1/ptm/m/n/10 current-status-and.html?showComment=1522151331118#c587681243673
+9342658 []  
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 48--48
+[][] \OT1/ptm/m/n/10 44. The up-com-ing re-sults from Lipid17 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 48--48
+\OT1/ptm/m/n/10 have been men-tioned in the blog: 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 48--48
+\OT1/ptm/m/n/10 http://nmrlipids.blogspot.com/2017/12/nmrlipids-iv- 
+ []
+
+
+Overfull \hbox (102.36794pt too wide) in paragraph at lines 48--48
+\OT1/ptm/m/n/10 current-status-and.html?showComment=1522151331118#c587681243673
+9342658 []  
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 50--50
+[][] \OT1/ptm/m/n/10 50. Up-com-ing sim-u-la-tions with orig-i-nal 
+ []
+
+
+Underfull \hbox (badness 3601) in paragraph at lines 50--50
+\OT1/ptm/m/n/10 CHARMM36 have been men-tioned in the blog: 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 50--50
+\OT1/ptm/m/n/10 http://nmrlipids.blogspot.com/2017/12/nmrlipids-iv- 
+ []
+
+
+Overfull \hbox (102.36794pt too wide) in paragraph at lines 50--50
+\OT1/ptm/m/n/10 current-status-and.html?showComment=1520090718976#c556926939170
+7740056 []  
+ []
+
+[16]
+Underfull \hbox (badness 10000) in paragraph at lines 51--51
+[][] \OT1/ptm/m/n/10 51. Up-com-ing Lipid17 sim-u-la-tions 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 51--51
+\OT1/ptm/m/n/10 have been men-tioned in the blog 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 51--51
+\OT1/ptm/m/n/10 http://nmrlipids.blogspot.com/2017/12/nmrlipids-iv- 
+ []
+
+
+Overfull \hbox (97.36794pt too wide) in paragraph at lines 51--51
+\OT1/ptm/m/n/10 current-status-and.html?showComment=1515177306419#c994825612316
+235467 []  
+ []
+
+)
 \tf@lod=\write3
 \openout3 = `manuscriptPS.lod'.
 
@@ -1251,36 +1244,34 @@ page
 
 Package natbib Warning: There were undefined citations.
 
-[16] (./manuscriptPS.aux)
-
-LaTeX Warning: There were multiply-defined labels.
-
- ) 
+[17] (./manuscriptPS.aux) ) 
 Here is how much of TeX's memory you used:
- 5621 strings out of 493117
- 79207 string characters out of 6141650
- 192395 words of memory out of 5000000
- 8942 multiletter control sequences out of 15000+600000
+ 5601 strings out of 494953
+ 80389 string characters out of 6180978
+ 188001 words of memory out of 5000000
+ 8748 multiletter control sequences out of 15000+600000
  35681 words of font info for 65 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
+ 14 hyphenation exceptions out of 8191
  42i,16n,31p,1550b,417s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/sw/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</sw/share/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmmi10.pfb></sw/share/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmmi7.pfb></sw/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10
-.pfb></sw/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></sw/share/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></sw/share/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmr7.pfb></sw/share/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmr9.pfb></sw/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb>
-</sw/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></sw/share/texmf
--dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></sw/share/texmf-dist/fonts/type
-1/public/tex-gyre/qtmr.pfb></sw/share/texmf-dist/fonts/type1/urw/courier/ucrr8a
-.pfb></sw/share/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></sw/share/texmf
--dist/fonts/type1/urw/times/utmb8a.pfb></sw/share/texmf-dist/fonts/type1/urw/ti
-mes/utmr8a.pfb></sw/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on manuscriptPS.pdf (16 pages, 2972042 bytes).
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/
+8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
+></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/t
+exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmsy9.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qtmr.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/time
+s/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on manuscriptPS.pdf (17 pages, 2980425 bytes).
 PDF statistics:
- 480 PDF objects out of 1000 (max. 8388607)
- 326 compressed objects within 4 object streams
+ 483 PDF objects out of 1000 (max. 8388607)
+ 328 compressed objects within 4 object streams
  0 named destinations out of 1000 (max. 500000)
  161 words of extra memory for PDF output out of 10000 (max. 10000000)
 

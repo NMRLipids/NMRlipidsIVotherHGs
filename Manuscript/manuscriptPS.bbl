@@ -1,4 +1,4 @@
-\begin{thebibliography}{53}
+\begin{thebibliography}{64}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \expandafter\ifx\csname bibnamefont\endcsname\relax
   \def\bibnamefont#1{#1}\fi
@@ -246,16 +246,59 @@
   with GROMOS NH3 charges and PME}}} (\bibinfo{year}{2017}{\natexlab{f}}),
   \urlprefix\url{https://doi.org/10.5281/zenodo.1129447}.
 
+\bibitem[{\citenamefont{Gould et~al.}(2018)\citenamefont{Gould, Skjevik,
+  Dickson, Madej, and Walker}}]{gould18}
+\bibinfo{author}{\bibfnamefont{I.}~\bibnamefont{Gould}},
+  \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Skjevik}},
+  \bibinfo{author}{\bibfnamefont{C.}~\bibnamefont{Dickson}},
+  \bibinfo{author}{\bibfnamefont{B.}~\bibnamefont{Madej}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{R.}~\bibnamefont{Walker}},
+  \emph{\bibinfo{title}{Lipid17: A comprehensive amber force field for the
+  simulation of zwitterionic and anionic lipids}} (\bibinfo{year}{2018}),
+  \bibinfo{note}{in preparation}.
+
+\bibitem[{\citenamefont{Joung and Cheatham}(2008)}]{joung08}
+\bibinfo{author}{\bibfnamefont{I.~S.} \bibnamefont{Joung}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{T.~E.} \bibnamefont{Cheatham}},
+  \bibinfo{journal}{The Journal of Physical Chemistry B}
+  \textbf{\bibinfo{volume}{112}}, \bibinfo{pages}{9020} (\bibinfo{year}{2008}).
+
+\bibitem[{\citenamefont{Kav and
+  Miettinen}(2018{\natexlab{a}})}]{lipid17DOPSjcions}
+\bibinfo{author}{\bibfnamefont{B.}~\bibnamefont{Kav}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{M.~S.} \bibnamefont{Miettinen}},
+  \emph{\bibinfo{title}{{Molecular dynamics simulation trajectory of an anionic
+  lipid bilayer: 100 mol\% DOPS with Na+ counterions using Joung-Cheetham
+  Ions}}} (\bibinfo{year}{2018}{\natexlab{a}}), \bibinfo{note}{{B.K
+  acknowledges financial support from International Max Planck Research School
+  on Multiscale Bio-Systems}},
+  \urlprefix\url{https://doi.org/10.5281/zenodo.1134871}.
+
+\bibitem[{\citenamefont{\r{A}qvist}(1990)}]{aqvist90}
+\bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{\r{A}qvist}},
+  \bibinfo{journal}{J. Phys. Chem.} \textbf{\bibinfo{volume}{94}},
+  \bibinfo{pages}{8021} (\bibinfo{year}{1990}).
+
+\bibitem[{\citenamefont{Kav and
+  Miettinen}(2018{\natexlab{b}})}]{lipid17DOPSff99ions}
+\bibinfo{author}{\bibfnamefont{B.}~\bibnamefont{Kav}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{M.~S.} \bibnamefont{Miettinen}},
+  \emph{\bibinfo{title}{{Molecular dynamics simulation trajectory of an anionic
+  lipid bilayer: 100 mol\% DOPS with Na+ counterions using ff99 Ions}}}
+  (\bibinfo{year}{2018}{\natexlab{b}}), \bibinfo{note}{{B.K acknowledges
+  financial support from International Max Planck Research School on Multiscale
+  Bio-Systems}}, \urlprefix\url{https://doi.org/10.5281/zenodo.1135142}.
+
 \bibitem[{\citenamefont{Piggot}(2017{\natexlab{g}})}]{charmm36POPS298K}
 \bibinfo{author}{\bibfnamefont{T.}~\bibnamefont{Piggot}},
   \emph{\bibinfo{title}{{CHARMM36 POPS simulations (versions 1 and 2) 298 K 1.0
   nm LJ switching}}} (\bibinfo{year}{2017}{\natexlab{g}}),
   \urlprefix\url{https://doi.org/10.5281/zenodo.1129415}.
 
-\bibitem[{\citenamefont{Piggot}(2018)}]{charmm36POPS298Kpotassium}
+\bibitem[{\citenamefont{Piggot}(2018{\natexlab{a}})}]{charmm36POPS298Kpotassium}
 \bibinfo{author}{\bibfnamefont{T.}~\bibnamefont{Piggot}},
   \emph{\bibinfo{title}{{CHARMM36 POPS simulations (versions 1 and 2) 298 K 1.0
-  nm LJ switching with K ions}}} (\bibinfo{year}{2018}),
+  nm LJ switching with K ions}}} (\bibinfo{year}{2018}{\natexlab{a}}),
   \urlprefix\url{https://doi.org/10.5281/zenodo.1182654}.
 
 \bibitem[{\citenamefont{Piggot}(2017{\natexlab{h}})}]{charmm36uaPOPS298K}
@@ -286,9 +329,10 @@
   \bibinfo{journal}{J. Phys. Chem. B} \textbf{\bibinfo{volume}{118}},
   \bibinfo{pages}{4571} (\bibinfo{year}{2014}).
 
-\bibitem[{\citenamefont{Javanainen}(2017)}]{macrogPOPS298K}
+\bibitem[{\citenamefont{Javanainen}(2017{\natexlab{a}})}]{macrogPOPS298K}
 \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Javanainen}},
-  \emph{\bibinfo{title}{Simulation of a pops bilayer}} (\bibinfo{year}{2017}),
+  \emph{\bibinfo{title}{Simulation of a pops bilayer}}
+  (\bibinfo{year}{2017}{\natexlab{a}}),
   \urlprefix\url{https://doi.org/10.5281/zenodo.1120287}.
 
 \bibitem[{\citenamefont{Piggot}(2017{\natexlab{k}})}]{ckp1POPS303K}
@@ -302,6 +346,27 @@
   \emph{\bibinfo{title}{{GROMOS-CKP POPS simulations (versions 1 and 2) 298 K
   with GROMOS NH3 charges and PME}}} (\bibinfo{year}{2017}{\natexlab{l}}),
   \urlprefix\url{https://doi.org/10.5281/zenodo.1129435}.
+
+\bibitem[{\citenamefont{Miettinen and
+  Kav}(2018{\natexlab{a}})}]{lipid17POPSjcions}
+\bibinfo{author}{\bibfnamefont{M.~S.} \bibnamefont{Miettinen}}
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{B.}~\bibnamefont{Kav}},
+  \emph{\bibinfo{title}{{Molecular dynamics simulation trajectory of an anionic
+  lipid bilayer: 100 mol\% POPS with Na+ counterions using Joung-Cheatham
+  Ions}}} (\bibinfo{year}{2018}{\natexlab{a}}), \bibinfo{note}{{B.K.
+  acknowledges financial support from International Max Planck Research School
+  on Multiscale Bio-Systems.}},
+  \urlprefix\url{https://doi.org/10.5281/zenodo.1148495}.
+
+\bibitem[{\citenamefont{Miettinen and
+  Kav}(2018{\natexlab{b}})}]{lipid17POPSff99ions}
+\bibinfo{author}{\bibfnamefont{M.~S.} \bibnamefont{Miettinen}}
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{B.}~\bibnamefont{Kav}},
+  \emph{\bibinfo{title}{{Molecular dynamics simulation trajectory of an anionic
+  lipid bilayer: 100 mol\% POPS with Na+ counterions using ff99 ions}}}
+  (\bibinfo{year}{2018}{\natexlab{b}}), \bibinfo{note}{{B.K. acknowledges
+  financial support from International Max Planck Research School on Multiscale
+  Bio-Systems}}, \urlprefix\url{https://doi.org/10.5281/zenodo.1134869}.
 
 \bibitem[{\citenamefont{Klauda et~al.}(2010)\citenamefont{Klauda, Venable,
   Freites, O'Connor, Tobias, Mondragon-Ramirez, Vorobyov, {MacKerell Jr}, and
@@ -323,6 +388,24 @@
   \emph{\bibinfo{title}{{POPS+83\%popc lipid bilayer simulation at T298K ran
   CHARMM\_GUI force field and Gromacs}}} (\bibinfo{year}{2017}),
   \urlprefix\url{https://doi.org/10.5281/zenodo.1011104}.
+
+\bibitem[{\citenamefont{Piggot}(2018{\natexlab{b}})}]{charmm36pops+83popcT298Kpiggot}
+\bibinfo{author}{\bibfnamefont{T.}~\bibnamefont{Piggot}},
+  \emph{\bibinfo{title}{{CHARMM36 POPS/POPC simulations (versions 1 and 2) 298
+  K 1.0 nm LJ switching with K ions}}} (\bibinfo{year}{2018}{\natexlab{b}}),
+  \urlprefix\url{https://doi.org/10.5281/zenodo.1182658}.
+
+\bibitem[{\citenamefont{Piggot}(2018{\natexlab{c}})}]{charmm36pops+83popcT298KpiggotSODIUM}
+\bibinfo{author}{\bibfnamefont{T.}~\bibnamefont{Piggot}},
+  \emph{\bibinfo{title}{{CHARMM36 POPS/POPC simulations (versions 1 and 2) 298
+  K 1.0 nm LJ switching with Na ions}}} (\bibinfo{year}{2018}{\natexlab{c}}),
+  \urlprefix\url{https://doi.org/10.5281/zenodo.1182665}.
+
+\bibitem[{\citenamefont{Javanainen}(2017{\natexlab{b}})}]{POPCpopsMACROG}
+\bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Javanainen}},
+  \emph{\bibinfo{title}{Simulations of popc/pops membranes with cacl\_2.}}
+  (\bibinfo{year}{2017}{\natexlab{b}}),
+  \urlprefix\url{https://doi.org/10.5281/zenodo.897467}.
 
 \bibitem[{\citenamefont{Roux and Bloom}(1991)}]{roux91}
 \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Roux}} \bibnamefont{and}
@@ -363,12 +446,6 @@
   ISSN \bibinfo{issn}{1432-1424},
   \urlprefix\url{http://dx.doi.org/10.1007/BF01870972}.
 
-\bibitem[{\citenamefont{Roux and Neumann}(1986)}]{roux86}
-\bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Roux}} \bibnamefont{and}
-  \bibinfo{author}{\bibfnamefont{J.-M.} \bibnamefont{Neumann}},
-  \bibinfo{journal}{FEBS Letters} \textbf{\bibinfo{volume}{199}},
-  \bibinfo{pages}{33} (\bibinfo{year}{1986}).
-
 \bibitem[{\citenamefont{Pandit and Berkowitz}(2002)}]{pandit02}
 \bibinfo{author}{\bibfnamefont{S.~A.} \bibnamefont{Pandit}} \bibnamefont{and}
   \bibinfo{author}{\bibfnamefont{M.~L.} \bibnamefont{Berkowitz}},
@@ -397,6 +474,12 @@
   \bibinfo{journal}{Soft Matter} \textbf{\bibinfo{volume}{10}},
   \bibinfo{pages}{3716} (\bibinfo{year}{2014}).
 
+\bibitem[{\citenamefont{Roux and Neumann}(1986)}]{roux86}
+\bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Roux}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{J.-M.} \bibnamefont{Neumann}},
+  \bibinfo{journal}{FEBS Letters} \textbf{\bibinfo{volume}{199}},
+  \bibinfo{pages}{33} (\bibinfo{year}{1986}).
+
 \bibitem[{\citenamefont{Seelig et~al.}(1987)\citenamefont{Seelig, MacDonald,
   and Scherer}}]{seelig87}
 \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Seelig}},
@@ -416,6 +499,20 @@
   \bibnamefont{and} \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Seelig}},
   \bibinfo{journal}{Biochemistry} \textbf{\bibinfo{volume}{26}},
   \bibinfo{pages}{1231} (\bibinfo{year}{1987}).
+
+\bibitem[{\citenamefont{Kim et~al.}(2016)\citenamefont{Kim, Patel, Park,
+  Slusky, Klauda, Widmalm, and Im}}]{kim16}
+\bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Kim}},
+  \bibinfo{author}{\bibfnamefont{D.}~\bibnamefont{Patel}},
+  \bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Park}},
+  \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Slusky}},
+  \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Klauda}},
+  \bibinfo{author}{\bibfnamefont{G.}~\bibnamefont{Widmalm}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{W.}~\bibnamefont{Im}},
+  \bibinfo{journal}{Biophysical Journal} \textbf{\bibinfo{volume}{111}},
+  \bibinfo{pages}{1750 } (\bibinfo{year}{2016}), ISSN
+  \bibinfo{issn}{0006-3495},
+  \urlprefix\url{http://www.sciencedirect.com/science/article/pii/S0006349516307615}.
 
 \bibitem[{\citenamefont{Scherer and Seelig}(1989)}]{scherer89}
 \bibinfo{author}{\bibfnamefont{P.~G.} \bibnamefont{Scherer}} \bibnamefont{and}
