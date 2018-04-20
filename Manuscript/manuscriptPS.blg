@@ -1,0 +1,52 @@
+This is BibTeX, Version 0.99d (TeX Live 2014/Fink)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: manuscriptPS.aux
+The style file: apsrev.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Database file #1: refs.bib.bib
+Warning--I didn't find a database entry for "??"
+Warning--I didn't find a database entry for "gould18"
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+You've used 53 entries,
+            3411 wiz_defined-function locations,
+            1453 strings with 20828 characters,
+and the built_in function-call counts, 36045 in all, are:
+= -- 2009
+> -- 1303
+< -- 195
++ -- 1099
+- -- 322
+* -- 4941
+:= -- 3920
+add.period$ -- 53
+call.type$ -- 53
+change.case$ -- 229
+chr.to.int$ -- 42
+cite$ -- 53
+duplicate$ -- 3264
+empty$ -- 2975
+format.name$ -- 799
+if$ -- 6715
+int.to.chr$ -- 12
+int.to.str$ -- 54
+missing$ -- 484
+newline$ -- 174
+num.names$ -- 159
+pop$ -- 837
+preamble$ -- 1
+purify$ -- 212
+quote$ -- 0
+skip$ -- 1321
+stack$ -- 0
+substring$ -- 1056
+swap$ -- 2592
+text.length$ -- 161
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 318
+warning$ -- 0
+while$ -- 142
+width$ -- 0
+write$ -- 550
+(There were 2 warnings)
