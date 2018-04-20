@@ -382,7 +382,8 @@ The detailed structural differences between the headgroups is, however, not know
   \caption{\label{comparisonTablePS}
   Rough subjective ranking of force fields based on Figure~\ref{HGorderParametersPS}. Here ÒMÓ indicates a magnitude problem, ÒFÓ a forking problem; letter size increases with problem severity. Color scheme: Òwithin experimental errorÓ (dark green), Òalmost within experimental errorÓ (light green), Òclear deviation from experimentsÓ (light red), and Òmajor deviation from experimentsÓ (dark red). The $\Sigma$-column shows the total deviation of the force field, when individual carbons are given weights of 0 (matches experiment), 1, 2, and 4 (major deviation). For full details of the assessment, see Supplementary Information.
   }
-  \todo{Issue about possible updates to this plot: https://github.com/NMRLipids/NMRlipidsIVotherHGs/issues/4}
+  \todo{Issue about possible updates to this plot: https://github.com/NMRLipids/NMRlipidsIVotherHGs/issues/4} \\
+  \todo{Lipid17 and MacRog results should be added into this plot.}
 \end{figure}
 
 The headgroup order parameters of DOPS and POPS bilayers 
@@ -392,7 +393,9 @@ study for PC lipids \cite{botan15}, the glycerol backbone order
 parameters in CHARMM36 roughly agree with the experimental data,
 while significant discrepancies for glycerol backbone carbons
 are observed in other models.
-\todo{Discussion to be finished once all the results are in the plot.}
+\todo{Discussion to be finished once all the results are in the plot.} \\
+\todo{Also the discussion about POPS/OPPS issue with MacRog model should be added.}
+
 
 Based on the subjective ranking shown in Fig. \ref{comparisonTablePS},
 the CHARMM36 is the best performing model for both lipids.
@@ -481,23 +484,51 @@ in agreement with experiments \cite{pan14}, but the binding affinity is comparab
 to the CHARMM36, CHARMM36us and Slipids, which give smaller are per molecule.
 
 In order to compare the sodium interaction with PS containing membranes between
-experiments and simulations, Fig. \ref{PSresponseTONaCl} shows the order parameters of the
-$\alpha$ carbon of PS headgroup measured from the mixture with PC as a
-function of added NaCl \cite{roux86} together with the resuls from CHARMM36 model. 
+experiments and simulations, Fig. \ref{PSresponseTONaCl} shows the headgroup
+order parameters of POPC and POPS measured from 5:1 mixture as a
+function of different monovalent ions added to the buffer.
+The experimental experimental results \cite{roux86} are compared with different simulation
+models.
 \begin{figure*}[]
   \centering
   \includegraphics[width=18.0cm]{../Figs/CHANGESwithMONVALENTwithPS.eps}
   \caption{\label{PSresponseTONaCl}
-    Order parameters of PC (left) and PS (right) headgroup as a function of added NaCl measured from POPC:POPS (5:1) mixture \cite{roux90}.
+    Order parameters of PC (left) and PS (right) headgroup as a function of
+    added NaCl, KCl and LiCl measured from POPC:POPS (5:1) mixture \cite{roux90}.
   }
+  \todo{The upcoming results from Lipid17 have been mentioned in the blog:
+    http://nmrlipids.blogspot.com/2017/12/nmrlipids-iv-current-status-and.html?showComment=1522151331118\#c5876812436739342658} \\
+  \todo{Maybe we should get the CHARMM results as well?}
 \end{figure*}
-The experimental results show essentially no changes in the order parameters as a function of
-added NaCl, while significant changes are observed in simulations. However,
-the minimum buffer concentration of NaCl in the experimental was 100mM \cite{roux86}.
-Therefore, we cannot exclude the possibility that the NaCl induced changes were already
-saturated with 100mM NaCl concentration, which was the case for CaCl$_2$ in Fig. \ref{changesWITHCaClPS}.
-\todo{It would be probably better to use datasets for NaCl and KCl from Ref. \citenum{roux90}
-to compare monovalent ion binding to PS containing bilayer.}
+In line with the trend observed for bilayers in the absence of negatively
+charged lipids \cite{??}, the POPC headgroup order parameter response to lithium ions is
+significantly larger than to potassium, indicating stronger binding of lithium
+ions to lipid bilayers. The unique nature of lithium is also evident in the
+response of PS headgroup order parameters to bounds ions, which decrease
+with the addition of lithium or divalent cations but increase with the
+addition of sodium or potassium. The headgroup order parameter response
+to the added NaCl in the Berger model is similar to the experiments of LiCl,
+except for the $\alpha$ carbon of POPS for which the change is overestimated
+with the order of magnitude. The results suggests that the binding affinity
+of sodium is overestimated by the Berger model, in line with the previous results \cite{catte16},
+and that the response of $\alpha$ carbon of POPS to the added sodium
+is significantly overestimated. The response of POPC to the added potassium
+in MacRog model is only slightly overestimated, in contrast to the response
+of POPS where order of magnitude overestimations of reposonse are observed. 
+In conclusion, it seems that the response of PS headgroup to bound cations
+is not correctly captured in the tested models.
+\todo{Finish the discussion when more models are available}
+
+\begin{figure}[]
+  \centering
+  \includegraphics[width=8.0cm]{../Figs/CIdensPSOCmixt.eps}
+  \caption{  Counterion density distributions from PC:PS mixtures.
+\label{CIdensPSOCmixt}
+  }
+  \todo{Add Berger results.}
+\end{figure}
+
+
 
 
 \subsection{Headgroup structure in PS and PC mixtures}
@@ -534,6 +565,8 @@ The cation binding probably neutralizes the effect of negatively
 charged lipids in CHARMM36 simulations, while the
 weaker binding of potassium in MacRog simulations enables the
 increase of order parameters with the added amount of PS.
+\todo{This discussion will be finalized when we have the
+results for monovalent ions also from other simulations.}
 
 %$\beta$-carbon of POPC decreases and almost negligible increase is 
 %seen in $\alpha$ order parameter with the addition of PS lipid 
@@ -557,22 +590,17 @@ increase of order parameters with the added amount of PS.
     Using sodium in simulations do not have a significant effect.
   }
   \todo{Simulation of CHARMM36 at 298K should be maybe rerun with Gromacs 5.} \\
-  \todo{We need results also from other than CHARMM36 force field.}
+  \todo{The upcoming results from Lipid17 have been mentioned in the blog:
+    http://nmrlipids.blogspot.com/2017/12/nmrlipids-iv-current-status-and.html?showComment=1522151331118\#c5876812436739342658} \\
+  \todo{Maybe we should show the changes also in this plot?}
 \end{figure*}
-
-\begin{figure}[]
-  \centering
-  \includegraphics[width=8.0cm]{../Figs/CIdensPSOCmixt.eps}
-  \caption{  Counterion density distributions from PC:PS mixtures.
-\label{CIdensPSOCmixt}
-  }
-\end{figure}
 
 Also the headgroup order parameters of POPS mixed with varying amounts of POPC
 from simulations and experiments \cite{borle85,roux90} are shown in Fig. \ref{HGorderparametersPCvsPS}.
 The $\beta$-carbon order parameter of POPS slightly decreases and positive 
 order parameter of $\alpha$-carbon slightly increases with increasing
 amount of PS lipids. This may indicate increasing order of the headgroup.
+\todo{The existing literature about this should be mentioned/discussed.}
 It should be, however, noted that the experimental data for pure POPS and
 POPC/POPS mixture come from different experimental sets, 13C NMR in this work
 and 2H NMR from Ref. \citenum{roux90}, respectively. Therefore the accuracy
@@ -587,6 +615,7 @@ The larger $\alpha$-carbon order parameter increase in MacRog and decrease in CH
 with increasing amount of PS, both model exhibiting a poor agreement with experiments. 
 Signifincant improvement in the MD simulation models are needed to interpret the
 PS headgroup structures and mutual interactions with PC lipids. 
+\todo{This discussion should be updated.}
 
 \subsection{Ca$^{2+}$ binding affinity in bilayers with negatively charged PS lipids}
 
@@ -644,6 +673,10 @@ The density profiles of Ca2+ from the simulations are shown in Fig. \ref{CAdensP
     POPC (left) and POPS (right) headgroup order parameters in lipid bilayer with POPC:POPS (5:1) mixture
     as a function CaCl$_2$ concentration from experiments \cite{roux90} and different simulations.
   }
+  \todo{Upcoming simulations with original CHARMM36 have been mentioned in the blog:
+  http://nmrlipids.blogspot.com/2017/12/nmrlipids-iv-current-status-and.html?showComment=1520090718976\#c5569269391707740056} \\
+  \todo{Upcoming Lipid17 simulations have been mentioned in the blog
+    http://nmrlipids.blogspot.com/2017/12/nmrlipids-iv-current-status-and.html?showComment=1515177306419\#c994825612316235467}
 \end{figure*}
 \begin{figure}[]
   \centering
@@ -798,10 +831,17 @@ analysin the binding affinities.
 \begin{figure}[]
   \centering
   \includegraphics[width=9.0cm]{../Figs/PSresponseTONaCl.eps}
-  \caption{\label{PSresponseTONaCl}
+  \caption{\label{PSresponseTONaClDMPC}
     Order parameters of PS headgroup as a function of added NaCl measured from DMPC:DMPS (3:1) mixture \cite{roux86}.
   }
 \end{figure}
+The experimental results show essentially no changes in the order parameters as a function of
+added NaCl, while significant changes are observed in simulations. However,
+the minimum buffer concentration of NaCl in the experimental was 100mM \cite{roux86}.
+Therefore, we cannot exclude the possibility that the NaCl induced changes were already
+saturated with 100mM NaCl concentration, which was the case for CaCl$_2$ in Fig. \ref{changesWITHCaClPS}.
+
+
 
 \begin{figure}[]
   \centering
