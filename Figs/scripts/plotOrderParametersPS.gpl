@@ -92,7 +92,7 @@ dxCUApo = -1*d
 dxCKPdo = -0.5*d
 dxCKPpo =  0.5*d
 dxBERdo =  2*d
-dxMcRpo =  2.5*d
+dxMcRpo =  4.5*d
 dxBERpo =  3*d
 dxSLIdo =  dxBERdo
 dxSLIpo =  dxBERpo
@@ -141,7 +141,7 @@ plot [0.5:5.5][0.35:-0.35] \
      "../../../MATCH/Data/Lipid_Bilayers/DOPS/T303K/MODEL_LIPID17/JCions_head-glyc-OPs_ave_min_max.dat" \
          u ($1+dxL17dJ):($2):($3):($4) w ye lt Lipd17 pt 12 ps r t 'DOPS Lipid17 JC T=303K', \
      horizLines(' ../../Data/POPSorderparametersNOCaEXP.dat') \
-         u ($1):($3) w l ls 4 lc 16 lw 3 t "POPS experiment", \
+         u ($1):($3) w l ls 4 lc 16 lw 3 t "POPS experiment T=298K", \
      "../../../MATCH/Data/Lipid_Bilayers/POPS/T298K/MODEL_CHARMM36/head-glyc-OPs_ave_min_max.dat" \
          u ($1+dxC36po):($2):($3):($4) w ye lt CHARMM pt 7 ps r t 'POPS CHARMM36 T=298K',\
      "../../../MATCH/Data/Lipid_Bilayers/POPS/T298K/MODEL_CHARMM36/counterionsK_head-glyc-OPs_ave_min_max.dat" \
@@ -154,8 +154,8 @@ plot [0.5:5.5][0.35:-0.35] \
          u ($1+dxCKPp2):($2):($3):($4) w ye lt CKP_QK pt 6 ps r t 'POPS CKP T=298K', \
      "../../../MATCH/Data/Lipid_Bilayers/POPS/T298K/MODEL_GROMOS-CKP1/head-glyc-OPs_ave_min_max.dat" \
          u ($1+dxCKPpo):($2):($3):($4) w ye lt CKP_QB pt 6 ps r t 'POPS CKPM T=298K', \
-     "../../../MATCH/Data/Lipid_Bilayers/POPS/T298K/MODEL_MACROG/head-glyc-OPs_forNMRlipidsIVplot.dat" \
-          u ($1+dxMcRpo):($2) w p lt MacRog pt 7 ps r t 'POPS MacRog T=298K', \
+     "../../../MATCH/Data/Lipid_Bilayers/POPS/T298K/MODEL_MACROG/head-glyc-OPs_ave_min_max.dat" \
+         u ($1+dxMcRpo):($2):($3):($4) w ye lt MacRog pt 7 ps r t 'POPS MacRog T=298K', \
      "../../../MATCH/Data/Lipid_Bilayers/POPS/T298K/MODEL_Berger/head-glyc-OPs_ave_min_max.dat" \
          u ($1+dxBERpo):($2):($3):($4) w ye lt Berger pt 7 ps r t 'POPS Berger T=298K', \
      "../../../MATCH/Data/Lipid_Bilayers/POPS/T298K/MODEL_LIPID17/head-glyc-OPs_ave_min_max.dat" \

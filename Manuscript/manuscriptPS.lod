@@ -1,0 +1,44 @@
+\contentsline {todos}{{1. }Some basic details should be given.}{1}{}
+\contentsline {todos}{{28. }New figure, probably combining Figs. 2{}{}{}\hbox {} and 3{}{}{}\hbox {}, should be done. This discussion to be finished after this.}{1}{}
+\contentsline {todos}{{2. }Should confirm that the amounts of water in experiments matched those in simulations.}{2}{}
+\contentsline {todos}{{3. }Correct citation for CHARMM DOPS}{2}{}
+\contentsline {todos}{{4. }Correct citation for CHARMMua DOPS}{2}{}
+\contentsline {todos}{{5. }Correct citation(s) for CKP.}{2}{}
+\contentsline {todos}{{6. }Correct citation(s) for CKP.}{2}{}
+\contentsline {todos}{{7. }Correct citation for CHARMM POPS}{2}{}
+\contentsline {todos}{{8. }Correct citation for CHARMM POPS}{2}{}
+\contentsline {todos}{{9. }Correct citation for CHARMMua DOPS}{2}{}
+\contentsline {todos}{{10. }Correct citation(s) for CKP.}{2}{}
+\contentsline {todos}{{11. }Correct citation(s) for CKP.}{2}{}
+\contentsline {todos}{{12. }Correct citation for CHARMM POPS}{2}{}
+\contentsline {todos}{{13. }Equilibration?}{2}{}
+\contentsline {todos}{{14. }Trajectories and further details to be added by J. Madsen}{2}{}
+\contentsline {todos}{{15. }Trajectories and further details to be added by J. Madsen}{2}{}
+\contentsline {todos}{{16. }This is also probably OPPS? These should be corrected in this table as well.}{2}{}
+\contentsline {todos}{{17. }Equilibration?}{2}{}
+\contentsline {todos}{{18. }These are with NBFIX from Ref. \citenum {kim16}}{2}{}
+\contentsline {todos}{{19. }Concentration to be checked}{2}{}
+\contentsline {todos}{{20. }Trajectories and further details to be added by J. Madsen}{2}{}
+\contentsline {todos}{{21. }These are with NBFIX from Ref. \citenum {kim16}}{2}{}
+\contentsline {todos}{{22. }Concentration to be checked}{2}{}
+\contentsline {todos}{{23. }Trajectories and further details to be added by J. Madsen}{2}{}
+\contentsline {todos}{{24. }Equilibration?}{2}{}
+\contentsline {todos}{{25. }Equilibration?}{2}{}
+\contentsline {todos}{{26. }Equilibration?}{2}{}
+\contentsline {todos}{{27. }Equilibration?}{2}{}
+\contentsline {todos}{{29. }Maybe we should combine this with 3{}{}{}\hbox {}}{3}{}
+\contentsline {todos}{{30. }We need nicer figure for this data. Maybe combine with 2{}{}{}\hbox {}}{3}{}
+\contentsline {todos}{{31. }What are the top figures actually?}{3}{}
+\contentsline {todos}{{33. }Discussion to be finished once all the results are in the plot.}{4}{}
+\contentsline {todos}{{32. }Issue about possible updates to this plot: https://github.com/NMRLipids/NMRlipidsIVotherHGs/issues/4}{5}{}
+\contentsline {todos}{{34. }Discussion will be finished when we have all the data in Figs. 5{}{}{}\hbox {}, 17{}{}{}\hbox {} and 18{}{}{}\hbox {}. One possible conclusion could be the following: The main differences between the models in the headgroup region are observed for dihedrals C12-C11-O12-P and C11-C12-C13-O1A. CHARMM36, CHARMM36UA and Slipids give very similar results to the dihedral C11-C12-C13-O1A, which is close to the $\beta $-carbon. The order parameters of $\beta $-carbons for these three models are in best argeement with the experiments in figure 5{}{}{}\hbox {}. On the other hand, Gromos-CKP models give better order parameters for $\alpha $-carbon than Slipids, CHARMM36 or CHARMM36UA. In conclusion, the suggestion would be that the single peak for observed at 120 degrees in CHARMMs and Slipids would be more realistic for C11-C12-C13-O1A dihedral, while the single peak at 180 degrees observed in CKP models and in Berger would be most realistic for C12-C11-O12-P dihedral. }{5}{}
+\contentsline {todos}{{35. }More quantitative analysis of binding positions and affinity may be useful.}{6}{}
+\contentsline {todos}{{36. }It would be probably better to use datasets for NaCl and KCl from Ref. \citenum {roux90} to compare monovalent ion binding to PS containing bilayer.}{6}{}
+\contentsline {todos}{{39. }Should be analyze/discuss this further?}{6}{}
+\contentsline {todos}{{40. }More simulation data for systems with PS lipids and CaCl$_2$ would be probably useful}{7}{}
+\contentsline {todos}{{37. }Simulation of CHARMM36 at 298K should be maybe rerun with Gromacs 5.}{8}{}
+\contentsline {todos}{{38. }We need results also from other than CHARMM36 force field.}{8}{}
+\contentsline {todos}{{41. }Ca2+ binding in CHARMM is lower than to neutral membrane. The reason should be found out (probably equilibration).}{11}{}
+\contentsline {todos}{{42. }These are now mass densities, numbers would be probably better.}{11}{}
+\contentsline {todos}{{43. }Counterions should be also included.}{11}{}
+\contentsline {todos}{{44. }Not all the data from MacRog is included.}{11}{}
