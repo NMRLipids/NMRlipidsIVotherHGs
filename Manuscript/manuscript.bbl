@@ -1,0 +1,261 @@
+\begin{thebibliography}{30}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+\expandafter\ifx\csname bibnamefont\endcsname\relax
+  \def\bibnamefont#1{#1}\fi
+\expandafter\ifx\csname bibfnamefont\endcsname\relax
+  \def\bibfnamefont#1{#1}\fi
+\expandafter\ifx\csname citenamefont\endcsname\relax
+  \def\citenamefont#1{#1}\fi
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{\texttt{#1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+\providecommand{\bibinfo}[2]{#2}
+\providecommand{\eprint}[2][]{\url{#2}}
+
+\bibitem[{\citenamefont{Botan et~al.}(2015)\citenamefont{Botan, Favela-Rosales,
+  Fuchs, Javanainen, Kandu{\v c}, Kulig, Lamberg, Loison, Lyubartsev, Miettinen
+  et~al.}}]{botan15}
+\bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Botan}},
+  \bibinfo{author}{\bibfnamefont{F.}~\bibnamefont{Favela-Rosales}},
+  \bibinfo{author}{\bibfnamefont{P.~F.~J.} \bibnamefont{Fuchs}},
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Javanainen}},
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Kandu{\v c}}},
+  \bibinfo{author}{\bibfnamefont{W.}~\bibnamefont{Kulig}},
+  \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Lamberg}},
+  \bibinfo{author}{\bibfnamefont{C.}~\bibnamefont{Loison}},
+  \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Lyubartsev}},
+  \bibinfo{author}{\bibfnamefont{M.~S.} \bibnamefont{Miettinen}},
+  \bibnamefont{et~al.}, \bibinfo{journal}{J. Phys. Chem. B}
+  \textbf{\bibinfo{volume}{119}}, \bibinfo{pages}{15075}
+  (\bibinfo{year}{2015}).
+
+\bibitem[{\citenamefont{Catte et~al.}(2016)\citenamefont{Catte, Girych,
+  Javanainen, Loison, Melcr, Miettinen, Monticelli, Maatta, Oganesyan, Ollila
+  et~al.}}]{catte16}
+\bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Catte}},
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Girych}},
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Javanainen}},
+  \bibinfo{author}{\bibfnamefont{C.}~\bibnamefont{Loison}},
+  \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Melcr}},
+  \bibinfo{author}{\bibfnamefont{M.~S.} \bibnamefont{Miettinen}},
+  \bibinfo{author}{\bibfnamefont{L.}~\bibnamefont{Monticelli}},
+  \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Maatta}},
+  \bibinfo{author}{\bibfnamefont{V.~S.} \bibnamefont{Oganesyan}},
+  \bibinfo{author}{\bibfnamefont{O.~H.~S.} \bibnamefont{Ollila}},
+  \bibnamefont{et~al.}, \bibinfo{journal}{Phys. Chem. Chem. Phys.}
+  \textbf{\bibinfo{volume}{18}}, \bibinfo{pages}{32560} (\bibinfo{year}{2016}).
+
+\bibitem[{\citenamefont{Ferreira et~al.}(2013)\citenamefont{Ferreira,
+  Coreta-Gomes, Ollila, Moreno, Vaz, and Topgaard}}]{ferreira13}
+\bibinfo{author}{\bibfnamefont{T.~M.} \bibnamefont{Ferreira}},
+  \bibinfo{author}{\bibfnamefont{F.}~\bibnamefont{Coreta-Gomes}},
+  \bibinfo{author}{\bibfnamefont{O.~H.~S.} \bibnamefont{Ollila}},
+  \bibinfo{author}{\bibfnamefont{M.~J.} \bibnamefont{Moreno}},
+  \bibinfo{author}{\bibfnamefont{W.~L.~C.} \bibnamefont{Vaz}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{D.}~\bibnamefont{Topgaard}},
+  \bibinfo{journal}{Phys. Chem. Chem. Phys.} \textbf{\bibinfo{volume}{15}},
+  \bibinfo{pages}{1976} (\bibinfo{year}{2013}).
+
+\bibitem[{\citenamefont{Browning and Seelig}(1980)}]{browning80}
+\bibinfo{author}{\bibfnamefont{J.~L.} \bibnamefont{Browning}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Seelig}},
+  \bibinfo{journal}{Biochemistry} \textbf{\bibinfo{volume}{19}},
+  \bibinfo{pages}{1262} (\bibinfo{year}{1980}).
+
+\bibitem[{\citenamefont{Borle and Seelig}(1985)}]{borle85}
+\bibinfo{author}{\bibfnamefont{F.}~\bibnamefont{Borle}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Seelig}},
+  \bibinfo{journal}{Chemistry and Physics of Lipids}
+  \textbf{\bibinfo{volume}{36}}, \bibinfo{pages}{263 } (\bibinfo{year}{1985}).
+
+\bibitem[{\citenamefont{Wohlgemuth et~al.}(1980)\citenamefont{Wohlgemuth,
+  Waespe-Sarcevic, and Seelig}}]{wohlgemuth80}
+\bibinfo{author}{\bibfnamefont{R.}~\bibnamefont{Wohlgemuth}},
+  \bibinfo{author}{\bibfnamefont{N.}~\bibnamefont{Waespe-Sarcevic}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Seelig}},
+  \bibinfo{journal}{Biochemistry} \textbf{\bibinfo{volume}{19}},
+  \bibinfo{pages}{3315} (\bibinfo{year}{1980}).
+
+\bibitem[{\citenamefont{Seelig and Gally}(1976)}]{seelig76}
+\bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Seelig}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{H.~U.} \bibnamefont{Gally}},
+  \bibinfo{journal}{Biochemistry} \textbf{\bibinfo{volume}{15}},
+  \bibinfo{pages}{5199} (\bibinfo{year}{1976}).
+
+\bibitem[{\citenamefont{Gally et~al.}(1981)\citenamefont{Gally, Pluschke,
+  Overath, and Seelig}}]{gally81}
+\bibinfo{author}{\bibfnamefont{H.~U.} \bibnamefont{Gally}},
+  \bibinfo{author}{\bibfnamefont{G.}~\bibnamefont{Pluschke}},
+  \bibinfo{author}{\bibfnamefont{P.}~\bibnamefont{Overath}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Seelig}},
+  \bibinfo{journal}{Biochemistry} \textbf{\bibinfo{volume}{20}},
+  \bibinfo{pages}{1826} (\bibinfo{year}{1981}).
+
+\bibitem[{\citenamefont{Scherer and Seelig}(1987)}]{scherer87}
+\bibinfo{author}{\bibfnamefont{P.}~\bibnamefont{Scherer}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Seelig}},
+  \bibinfo{journal}{EMBO J.} \textbf{\bibinfo{volume}{6}}
+  (\bibinfo{year}{1987}).
+
+\bibitem[{\citenamefont{Seelig}(1990)}]{seelig90}
+\bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Seelig}},
+  \bibinfo{journal}{Cell Biology International Reports}
+  \textbf{\bibinfo{volume}{14}}, \bibinfo{pages}{353 } (\bibinfo{year}{1990}),
+  ISSN \bibinfo{issn}{0309-1651},
+  \urlprefix\url{http://www.sciencedirect.com/science/article/pii/030916519091204H}.
+
+\bibitem[{\citenamefont{B{\"u}ldt and Wohlgemuth}(1981)}]{buldt81}
+\bibinfo{author}{\bibfnamefont{G.}~\bibnamefont{B{\"u}ldt}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{R.}~\bibnamefont{Wohlgemuth}},
+  \bibinfo{journal}{The Journal of Membrane Biology}
+  \textbf{\bibinfo{volume}{58}}, \bibinfo{pages}{81} (\bibinfo{year}{1981}),
+  ISSN \bibinfo{issn}{1432-1424},
+  \urlprefix\url{http://dx.doi.org/10.1007/BF01870972}.
+
+\bibitem[{\citenamefont{Tieleman et~al.}(2006)\citenamefont{Tieleman,
+  MacCallum, Ash, Kandt, Xu, and Monticelli}}]{tieleman06}
+\bibinfo{author}{\bibfnamefont{D.~P.} \bibnamefont{Tieleman}},
+  \bibinfo{author}{\bibfnamefont{J.~L.} \bibnamefont{MacCallum}},
+  \bibinfo{author}{\bibfnamefont{W.~L.} \bibnamefont{Ash}},
+  \bibinfo{author}{\bibfnamefont{C.}~\bibnamefont{Kandt}},
+  \bibinfo{author}{\bibfnamefont{Z.}~\bibnamefont{Xu}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{L.}~\bibnamefont{Monticelli}},
+  \bibinfo{journal}{J. Phys. Condens. Matter} \textbf{\bibinfo{volume}{18}},
+  \bibinfo{pages}{S1221} (\bibinfo{year}{2006}).
+
+\bibitem[{\citenamefont{Scherer and Seelig}(1989)}]{scherer89}
+\bibinfo{author}{\bibfnamefont{P.~G.} \bibnamefont{Scherer}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Seelig}},
+  \bibinfo{journal}{Biochemistry} \textbf{\bibinfo{volume}{28}},
+  \bibinfo{pages}{7720} (\bibinfo{year}{1989}).
+
+\bibitem[{\citenamefont{Ollila and Pabst}(2016)}]{ollila16}
+\bibinfo{author}{\bibfnamefont{O.~S.} \bibnamefont{Ollila}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{G.}~\bibnamefont{Pabst}},
+  \bibinfo{journal}{Biochimica et Biophysica Acta (BBA) - Biomembranes}
+  \textbf{\bibinfo{volume}{1858}}, \bibinfo{pages}{2512 }
+  (\bibinfo{year}{2016}).
+
+\bibitem[{\citenamefont{Roux and Bloom}(1990)}]{roux90}
+\bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Roux}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Bloom}},
+  \bibinfo{journal}{Biochemistry} \textbf{\bibinfo{volume}{29}},
+  \bibinfo{pages}{7077} (\bibinfo{year}{1990}).
+
+\bibitem[{\citenamefont{Seelig et~al.}(1987)\citenamefont{Seelig, MacDonald,
+  and Scherer}}]{seelig87}
+\bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Seelig}},
+  \bibinfo{author}{\bibfnamefont{P.~M.} \bibnamefont{MacDonald}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{P.~G.}
+  \bibnamefont{Scherer}}, \bibinfo{journal}{Biochemistry}
+  \textbf{\bibinfo{volume}{26}}, \bibinfo{pages}{7535} (\bibinfo{year}{1987}).
+
+\bibitem[{\citenamefont{Macdonald and Seelig}(1987)}]{macdonald87}
+\bibinfo{author}{\bibfnamefont{P.~M.} \bibnamefont{Macdonald}}
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Seelig}},
+  \bibinfo{journal}{Biochemistry} \textbf{\bibinfo{volume}{26}},
+  \bibinfo{pages}{1231} (\bibinfo{year}{1987}).
+
+\bibitem[{\citenamefont{Akutsu and Seelig}(1981)}]{akutsu81}
+\bibinfo{author}{\bibfnamefont{H.}~\bibnamefont{Akutsu}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Seelig}},
+  \bibinfo{journal}{Biochemistry} \textbf{\bibinfo{volume}{20}},
+  \bibinfo{pages}{7366} (\bibinfo{year}{1981}).
+
+\bibitem[{\citenamefont{Altenbach and Seelig}(1984)}]{altenbach84}
+\bibinfo{author}{\bibfnamefont{C.}~\bibnamefont{Altenbach}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Seelig}},
+  \bibinfo{journal}{Biochemistry} \textbf{\bibinfo{volume}{23}},
+  \bibinfo{pages}{3913} (\bibinfo{year}{1984}).
+
+\bibitem[{\citenamefont{J{\"a}mbeck and Lyubartsev}(2012)}]{jambeck12b}
+\bibinfo{author}{\bibfnamefont{J.~P.~M.} \bibnamefont{J{\"a}mbeck}}
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{A.~P.}
+  \bibnamefont{Lyubartsev}}, \bibinfo{journal}{J. Chem. Theory Comput.}
+  \textbf{\bibinfo{volume}{8}}, \bibinfo{pages}{2938} (\bibinfo{year}{2012}).
+
+\bibitem[{\citenamefont{Favela-Rosales}(2017{\natexlab{a}})}]{slipidsDPPEfiles}
+\bibinfo{author}{\bibfnamefont{F.}~\bibnamefont{Favela-Rosales}},
+  \emph{\bibinfo{title}{{MD simulation trajectory of a fully hydrated DPPE
+  bilayer: SLIPIDS, Gromacs 5.0.4. 2017.}}}
+  (\bibinfo{year}{2017}{\natexlab{a}}),
+  \urlprefix\url{https://doi.org/10.5281/zenodo.495247}.
+
+\bibitem[{\citenamefont{J{\"a}mbeck and Lyubartsev}(2013)}]{jambeck13}
+\bibinfo{author}{\bibfnamefont{J.~P.~M.} \bibnamefont{J{\"a}mbeck}}
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{A.~P.}
+  \bibnamefont{Lyubartsev}}, \bibinfo{journal}{Phys. Chem. Chem. Phys.}
+  \textbf{\bibinfo{volume}{15}}, \bibinfo{pages}{4677} (\bibinfo{year}{2013}).
+
+\bibitem[{\citenamefont{Favela-Rosales}(2017{\natexlab{b}})}]{slipidsDOPSfiles}
+\bibinfo{author}{\bibfnamefont{F.}~\bibnamefont{Favela-Rosales}},
+  \emph{\bibinfo{title}{{MD simulation trajectory of a fully hydrated DOPS
+  bilayer: SLIPIDS, Gromacs 5.0.4. 2017.}}}
+  (\bibinfo{year}{2017}{\natexlab{b}}),
+  \urlprefix\url{https://doi.org/10.5281/zenodo.495510}.
+
+\bibitem[{\citenamefont{Mukhopadhyay et~al.}(2004)\citenamefont{Mukhopadhyay,
+  Monticelli, and Tieleman}}]{mukhopadhyay04}
+\bibinfo{author}{\bibfnamefont{P.}~\bibnamefont{Mukhopadhyay}},
+  \bibinfo{author}{\bibfnamefont{L.}~\bibnamefont{Monticelli}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{D.~P.}
+  \bibnamefont{Tieleman}}, \bibinfo{journal}{Biophysical Journal}
+  \textbf{\bibinfo{volume}{86}}, \bibinfo{pages}{1601 } (\bibinfo{year}{2004}).
+
+\bibitem[{\citenamefont{Klauda et~al.}(2010)\citenamefont{Klauda, Venable,
+  Freites, O'Connor, Tobias, Mondragon-Ramirez, Vorobyov, {MacKerell Jr}, and
+  Pastor}}]{klauda10}
+\bibinfo{author}{\bibfnamefont{J.~B.} \bibnamefont{Klauda}},
+  \bibinfo{author}{\bibfnamefont{R.~M.} \bibnamefont{Venable}},
+  \bibinfo{author}{\bibfnamefont{J.~A.} \bibnamefont{Freites}},
+  \bibinfo{author}{\bibfnamefont{J.~W.} \bibnamefont{O'Connor}},
+  \bibinfo{author}{\bibfnamefont{D.~J.} \bibnamefont{Tobias}},
+  \bibinfo{author}{\bibfnamefont{C.}~\bibnamefont{Mondragon-Ramirez}},
+  \bibinfo{author}{\bibfnamefont{I.}~\bibnamefont{Vorobyov}},
+  \bibinfo{author}{\bibfnamefont{A.~D.} \bibnamefont{{MacKerell Jr}}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{R.~W.}
+  \bibnamefont{Pastor}}, \bibinfo{journal}{J. Phys. Chem. B}
+  \textbf{\bibinfo{volume}{114}}, \bibinfo{pages}{7830} (\bibinfo{year}{2010}).
+
+\bibitem[{\citenamefont{Favela-Rosales}(2017{\natexlab{c}})}]{slipidsPOPGfiles}
+\bibinfo{author}{\bibfnamefont{F.}~\bibnamefont{Favela-Rosales}},
+  \emph{\bibinfo{title}{{MD simulation trajectory of a fully hydrated POPG
+  bilayer: SLIPIDS, Gromacs 5.0.4. 2017.}}}
+  (\bibinfo{year}{2017}{\natexlab{c}}),
+  \urlprefix\url{https://doi.org/10.5281/zenodo.546133}.
+
+\bibitem[{\citenamefont{Favela-Rosales}(2017{\natexlab{d}})}]{slipidsDPPGfiles}
+\bibinfo{author}{\bibfnamefont{F.}~\bibnamefont{Favela-Rosales}},
+  \emph{\bibinfo{title}{{MD simulation trajectory of a fully hydrated DPPG
+  bilayer @314K: SLIPIDS, Gromacs 5.0.4. 2017.}}}
+  (\bibinfo{year}{2017}{\natexlab{d}}),
+  \urlprefix\url{https://doi.org/10.5281/zenodo.546136}.
+
+\bibitem[{\citenamefont{Favela-Rosales}(2017{\natexlab{e}})}]{slipidsDPPGfilesT298K}
+\bibinfo{author}{\bibfnamefont{F.}~\bibnamefont{Favela-Rosales}},
+  \emph{\bibinfo{title}{{MD simulation trajectory of a fully hydrated DPPG
+  bilayer @298K: SLIPIDS, Gromacs 5.0.4. 2017.}}}
+  (\bibinfo{year}{2017}{\natexlab{e}}),
+  \urlprefix\url{https://doi.org/10.5281/zenodo.546135}.
+
+\bibitem[{\citenamefont{Ferreira et~al.}(2016)\citenamefont{Ferreira, Sood,
+  B{\"a}renwald, Carlstr{\"o}m, Topgaard, Saalw{\"a}chter, Kinnunen, and
+  Ollila}}]{ferreira16}
+\bibinfo{author}{\bibfnamefont{T.~M.} \bibnamefont{Ferreira}},
+  \bibinfo{author}{\bibfnamefont{R.}~\bibnamefont{Sood}},
+  \bibinfo{author}{\bibfnamefont{R.}~\bibnamefont{B{\"a}renwald}},
+  \bibinfo{author}{\bibfnamefont{G.}~\bibnamefont{Carlstr{\"o}m}},
+  \bibinfo{author}{\bibfnamefont{D.}~\bibnamefont{Topgaard}},
+  \bibinfo{author}{\bibfnamefont{K.}~\bibnamefont{Saalw{\"a}chter}},
+  \bibinfo{author}{\bibfnamefont{P.~K.~J.} \bibnamefont{Kinnunen}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{O.~H.~S.}
+  \bibnamefont{Ollila}}, \bibinfo{journal}{Langmuir}
+  \textbf{\bibinfo{volume}{32}}, \bibinfo{pages}{6524} (\bibinfo{year}{2016}).
+
+\bibitem[{\citenamefont{Roux and Bloom}(1991)}]{roux91}
+\bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Roux}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Bloom}},
+  \bibinfo{journal}{Biophys. J.} \textbf{\bibinfo{volume}{60}},
+  \bibinfo{pages}{38 } (\bibinfo{year}{1991}).
+
+\end{thebibliography}

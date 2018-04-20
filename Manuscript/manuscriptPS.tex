@@ -228,7 +228,7 @@ The simulation details are in SI or in references in the table.
    (i.e. the NH$_3$ group having the same charges as in the N(CH$_3$)$_3$ group of the PC lipids;
    'M' stands for Mukhopadhyay after the first published Berger-based PS simulation that used these charges)
    and CKP refers to the version with more Gromos compatible version
-   (i.e. the charges for the NH$_3$ group taken from the lysine side-chain).  
+   (i.e. the charges for the NH$_3$ group taken from the lysine side-chain).
    %   these correspond the concentrations reported in the experiments by Akutsu et al.~\cite{akutsu81}.
    %   The lipid force fields named as in our previous work~\cite{botan15}.
 }\label{IONsystems}
@@ -236,7 +236,7 @@ The simulation details are in SI or in references in the table.
 \begin{tabular}{l c c r r r r r r c c}
   %\hline
   % some footnotes are not visible in typeset-MS (pdf)
- lipid/counter-ions & force field for lipids / ions & NaCl (mM) & CaCl$_2$\,(mM) &  \footnote{Number of lipid molecules with largest mole fraction}N$_{\rm l}$   &  \footnote{Number of water molecules}N$_{\rm w}$   & \footnote{Number of additional cations}N$_{\rm c}$  & \footnote{Simulation temperature}T (K)  & \footnote{Total simulation time}t$_{{\rm sim}}$(ns) & \footnote{Time used for analysis}t$_{{\rm anal}}$ (ns) &   \footnote{Reference for simulation files}files\\
+ lipid/counter-ions & force field for lipids / ions & NaCl (mM) & CaCl$_2$\,(mM) &  \footnote{Number of lipid molecules with largest mole fraction}N$_{\rm l}$   &  \footnote{Number of water molecules}N$_{\rm w}$ \todoi{Should confirm that the amounts of water in experiments matched those in simulations.}   & \footnote{Number of additional cations}N$_{\rm c}$  & \footnote{Simulation temperature}T (K)  & \footnote{Total simulation time}t$_{{\rm sim}}$(ns) & \footnote{Time used for analysis}t$_{{\rm anal}}$ (ns) &   \footnote{Reference for simulation files}files\\
   \hline
     DOPS/Na$^+$  & CHARMM36 \cite{??}  \todoi{Correct citation for CHARMM DOPS}      &0 & 0 & 128 & 4480 & 0  & 303  & 500 & 100 & \cite{charmm36DOPS303K} \\
     DOPS/Na$^+$  & CHARMM36ua \cite{??} \todoi{Correct citation for CHARMMua DOPS}        &0 & 0        & 128 & 4480 & 0  & 303  & 500 & 100 & \cite{charmm36uaDOPS303K} \\
@@ -370,9 +370,12 @@ The detailed structural differences between the headgroups is, however, not know
   \caption{\label{HGorderParametersPS}
     Order parameters for PS headgroup and glycerol
     backbone from simulations with different models and experiments without CaCl$_2$.
+    All DOPS data at 303~K, POPS at 298~K.
     Experimental data from \cite{browning80} contain 0.1~M of NaCl.
     Signs are taken from experiments for POPS described in Supplementary Information.
-    The vertical bars shown for most computational values are not error bars, but demonstrate that for these systems we had at least two data sets; the ends of the bars mark the extreme values from the sets, and the dot marks their measurement-time-weighted average.
+    The vertical bars shown %for most computational values
+    are not error bars, but demonstrate that %for these systems
+    we had at least two data sets; the ends of the bars mark the extreme values from the sets, and the dot marks their measurement-time-weighted average.
   }
 \end{figure}
 
