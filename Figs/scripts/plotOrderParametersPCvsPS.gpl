@@ -5,7 +5,7 @@ set multiplot layout 2,2
 
 set ytic 0.02
 #set key box linestyle 1 linecolor rgb 'black'
-set key at screen 0.95,0.935 maxcols 2 maxrows 5
+set key at screen 1.65,0.92 maxcols 2 maxrows 5
 
 set title "POPC"
 set size 1.0,0.5
@@ -18,7 +18,9 @@ plot "../../Data/POPCvsPOPSCHARMMbeta.dat" using 1:($2+0.0785491) with linespoin
      "../../Data/POPCvsPOPSCHARMMsodiumCI.dat" using 1:($3+0.0755386) with linespoints  notitle  pt 6 ps 1.6 lw 4 lc rgb 'blue',\
      "../../Data/POPCvsPOPSmacrog.dat" using 1:($2-0.0104732119647) with linespoints  title 'MacRog (K counterions)' pt 4 ps 1.6 lw 4 lc rgb 'pink',\
      "../../Data/POPCvsPOPSmacrog.dat" using 1:($3+0.000794028247912) with linespoints  notitle  pt 4 ps 1.6 lw 4 lc rgb 'pink',\
-     "../../Data/PCvsPSbeta.dat" using 1:((-$2+5.54502369668)*0.00784) with linespoints   title 'Experiment' pt 4 ps 1.6 lw 4 lc rgb 'black',\
+     "../../Data/POPCvsPOPSberger.dat" using 1:($2-0.0508277) with linespoints  title 'Berger (Na counterions)' pt 6 ps 1.6 lw 4 lc rgb 'red',\
+     "../../Data/POPCvsPOPSberger.dat" using 1:($3-0.0633637) with linespoints  notitle  pt 6 ps 1.6 lw 4 lc rgb 'red',\
+     "../../Data/PCvsPSbeta.dat" using 1:((-$2+5.54502369668)*0.00784) with linespoints   title 'Experiment (Na counterions)' pt 4 ps 1.6 lw 4 lc rgb 'black',\
 
 set key at screen 0.9,0.86 maxcols 2 maxrows 5
 set title "POPS"
@@ -44,6 +46,8 @@ plot "../../Data/POPCvsPOPSCHARMMalpha.dat" using 1:($2-0.0319465) with linespoi
      "../../Data/POPCvsPOPSCHARMMsodiumCI.dat" using 1:($5-0.0319465) with linespoints  notitle pt 6 ps 1.6 lw 4 lc rgb 'blue',\
      "../../Data/POPCvsPOPSmacrog.dat" using 1:($4-0.027735846995) with linespoints  notitle pt 4 ps 1.6 lw 4 lc rgb 'pink',\
      "../../Data/POPCvsPOPSmacrog.dat" using 1:($5-0.016139167758) with linespoints  notitle pt 4 ps 1.6 lw 4 lc rgb 'pink',\
+     "../../Data/POPCvsPOPSberger.dat" using 1:($4-0.095593) with linespoints  notitle pt 6 ps 1.6 lw 4 lc rgb 'red',\
+     "../../Data/POPCvsPOPSberger.dat" using 1:($5-0.160097) with linespoints  notitle pt 6 ps 1.6 lw 4 lc rgb 'red',\
      "../../Data/PCvsPSalpha.dat" using 1:(($2-5.99173553719)*0.00784) with linespoints   notitle  pt 4 ps 1.6 lw 4 lc rgb 'black',\
 
 unset ylabel

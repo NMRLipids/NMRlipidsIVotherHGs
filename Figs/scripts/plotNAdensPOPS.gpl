@@ -62,7 +62,7 @@ plot "../../Data/POPSlipid17ff99ionsDENSITY.txt" using 1:2 with lines title 'ff9
 set origin 0,0.15
 set size 1.0,0.2
 unset label
-set label  "Gromos-CKP1"  at graph  0.4,0.8
+set label  "Gromos-CKPM"  at graph  0.4,0.8
 set label  "A_{pl} = 63 {\305}^2"  at graph  0.02,0.8
 plot "../../../MATCH/Data/Lipid_Bilayers/POPS/T298K/MODEL_GROMOS-CKP1/NAdens.xvg" using 1:2 with lines notitle  lw 2 lc rgb 'black',\
 
@@ -70,7 +70,7 @@ set size 1.0,0.2
 set xtics format "%G"
 set xlabel "Membrane normal coordinate (nm)"
 unset label
-set label  "Gromos-CKP2"  at graph  0.4,0.8
+set label  "Gromos-CKP"  at graph  0.4,0.8
 set label  "A_{pl} = 63 {\305}^2"  at graph  0.02,0.8
 plot "../../../MATCH/Data/Lipid_Bilayers/POPS/T298K/MODEL_GROMOS-CKP2/NAdens.xvg" using 1:2 with lines notitle lw 2 lc rgb 'black',\
 

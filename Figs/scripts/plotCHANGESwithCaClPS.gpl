@@ -52,13 +52,13 @@ set ylabel "{/Symbol D}S_{CH}^{/Symbol a}"
 set xlabel "[ CaCl_2] M"
 set xrange [0:1] 
 #set yrange [-0.03:0.09] 
-plot  "../../Data/POPC80_POPS20withCa_MACROG.dat" using 1:($6+0.022711533122) with linespoint notitle   pt 7 lt 1 lw 4  lc rgb 'pink',\
+plot  "../../Data/POPC80_POPS20withCa_MACROG.dat" using 1:($6+0.154748709548) with linespoint notitle   pt 7 lt 1 lw 4  lc rgb 'pink',\
       "../../Data/POPC80_POPS20withCa_MACROG.dat" using 1:($7+0.154748709548) with linespoint notitle   pt 7 lt 1 lw 4  lc rgb 'pink',\
       "../../Data/POPC80_POPS20withCa_BERGER.dat" using 1:($6-0.262379) with linespoint notitle   pt 7 lt 1 lw 4  lc rgb 'red',\
-      "../../Data/POPC80_POPS20withCa_BERGER.dat" using 1:($7-0.304819) with linespoint notitle   pt 7 lt 1 lw 4  lc rgb 'red',\
-      "../../Data/POPC250_POPS50withCa_CHARMM36.dat" using 1:($6-0.10087318918) with linespoint notitle   pt 7 lt 1 lw 4  lc rgb 'blue',\
+      "../../Data/POPC80_POPS20withCa_BERGER.dat" using 1:($7-0.262379) with linespoint notitle   pt 7 lt 1 lw 4  lc rgb 'red',\
+      "../../Data/POPC250_POPS50withCa_CHARMM36.dat" using 1:($6+0.108092315804) with linespoint notitle   pt 7 lt 1 lw 4  lc rgb 'blue',\
        "../../Data/POPC250_POPS50withCa_CHARMM36.dat" using 1:($7+0.108092315804) with linespoint notitle   pt 7 lt 1 lw 4  lc rgb 'blue',\
-       "../../Data/POPS20_POPCwithCaALPHA1.dat" using 1:(($2-7.97441706306)*0.00784) with linespoint notitle pt 7 lt 1 lw 4  lc rgb 'black',\
+       "../../Data/POPS20_POPCwithCaALPHA1.dat" using 1:(($2-1.71790295675)*0.00784) with linespoint notitle pt 7 lt 1 lw 4  lc rgb 'black',\
       "../../Data/POPS20_POPCwithCaALPHA2.dat" using 1:((-1)*($2-1.71790295675)*0.00784) with linespoint notitle pt 7 lt 1 lw 4  lc rgb 'black',\
 
 

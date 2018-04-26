@@ -60,6 +60,9 @@ Academy of Sciences of the Czech Republic,
 Prague 6, Czech Republic}
 \affiliation{Institute of Biotechnology, University of Helsinki}
 
+\author{NMRlipids collaboration \todo{Authorship query to be sent soon.}}
+\affiliation{nmrlipids.blogspot.fi} 
+
 
 % Collaboration name, if desired (requires use of superscriptaddress option in \documentclass). 
 % \noaffiliation is required (may also be used with the \author command).
@@ -69,7 +72,7 @@ Prague 6, Czech Republic}
 \date{\today}
 
 \begin{abstract}
-% insert abstract here
+  % insert abstract here
   Primarily measured but also simulated NMR order parameters will be collected also for other than phophatidylcholine
   (these are discussed in NMRlipids I) headgroup. The information will be used to understand structural differences between 
   different lipid molecules in bilayers.
@@ -521,8 +524,12 @@ models.
   \centering
   \includegraphics[width=18.0cm]{../Figs/CHANGESwithMONVALENTwithPS.eps}
   \caption{\label{PSresponseTONaCl}
-    Order parameters of PC (left) and PS (right) headgroup as a function of
-    added NaCl, KCl and LiCl measured from POPC:POPS (5:1) mixture \cite{roux90}.
+    Changes of the PC (left) and PS (right) headgroup order parameters as a function of
+    added NaCl, KCl and LiCl from POPC:POPS (5:1) mixture. The experimental data is from Ref. \citenum{roux90}.
+    The values from counterion-only systems are set as a zero point of y-axis.
+    To correctly illustrate the significant forking of the $\alpha$-carbon order parameter
+    in PS headgroup (bottom, right), the y-axis is tranferred with the same value for both order parameters such that the lower order
+    parameter value is at zero.
   }
   \todo{The upcoming results from Lipid17 have been mentioned in the blog:
     http://nmrlipids.blogspot.com/2017/12/nmrlipids-iv-current-status-and.html?showComment=1522151331118\#c5876812436739342658} \\
@@ -608,19 +615,23 @@ results for monovalent ions also from other simulations.}
   \centering
   \includegraphics[width=16.0cm]{../Figs/HGorderparametersPCvsPS.eps}
   \caption{\label{HGorderparametersPCvsPS}
-    Headgroup order parameters from PC:PS mixtures from 
-    different simulation models and experiments.
-    Left panel shows the PC headgroup order parameters (experimental results from Ref. \citenum{scherer87},
-    signs are determined as discussed in \cite{botan15,ollila16}).
-    Rigth panel shows PS headgroup order parameters (experimental result for pure POPS measured in this
-    work at 298K, experimental result for mixture from Ref. \citenum{roux90} at 298K).
-    Counterions in expriments are sodium, while potassium is used in simulations.
-    Using sodium in simulations do not have a significant effect.
+    Changes of PC (left panel) and PS (right panel) headgroup order parameters
+    from POPC:POPS mixtures with increasing amount of POPS.
+    Experimental results of POPC are taken from Ref. \citenum{scherer87}
+    (signs are determined as discussed in \cite{botan15,ollila16}).
+    Experimental values for POPS in pure bilayer and in mixture are  
+    measured in this work and in Ref. \citenum{roux90} at 298K, respectively.
+    For POPC (left panel) the zero point of y-axis is set to the value of pure bilayer.
+    For $\beta$-carbon of POPS (right panel, top) the zero point of y-axis is
+    set to the value from POPC:POPS (5:1) mixture.
+    For $\alpha$-carbon of POPS (right panel, bottom) the y-axis is tranferred
+    with the same value for both order parameters such that the lower order
+    parameter value from POPC:POPS (5:1) mixture is at zero
+    to correctly illustrate the significant forking.
   }
   \todo{Simulation of CHARMM36 at 298K should be maybe rerun with Gromacs 5.} \\
   \todo{The upcoming results from Lipid17 have been mentioned in the blog:
     http://nmrlipids.blogspot.com/2017/12/nmrlipids-iv-current-status-and.html?showComment=1522151331118\#c5876812436739342658} \\
-  \todo{Maybe we should show the changes also in this plot?}
 \end{figure*}
 
 Also the headgroup order parameters of POPS mixed with varying amounts of POPC
@@ -680,27 +691,36 @@ of PC and negatively charged lipids \cite{borle85,macdonald87,roux90}
 %overcharging occurs above these concenterations.
 
 
-The headgroup order parameter changes of POPC and POPS from POPC:POPS (5:1) bilayers
-as a function of Ca$2+$ concentration from different
-simulations and experiments \cite{roux90} are shown in Fig. \ref{changesWITHCaClPS}.
-The results suggest that Ca2+ ions clearly overbind in simulations with
-MacRog model, as expected from previous results for PC lipid bilayers \cite{catte16}.
+The headgroup order parameter changes of POPC and POPS from POPC:POPS (5:1) mixtures
+are shown in Fig. \ref{changesWITHCaClPS} as a function of Ca$^{2+}$ concentration from different
+simulations and experiments \cite{roux90}. 
+The ion density distributions from the simulations are shown in Fig. \ref{CAdensPCPSmixture}.
+The results suggest that Ca$^{2+}$ ions clearly overbind in simulations with
+MacRog and Berger models, as expected from previous results for PC lipid bilayers \cite{catte16}.
 It should be noted, however, that the lowest concentration (100mM) gives
-a good agreemet with experiments \todo{Should be analyze/discuss this further?}.
+a good agreemet with experiments
+\todo{Should be analyze/discuss this further?
+  Binding with $\sim$100 mM is saturated in both Berger and MacRog simulations. Maybe this is realistic?
+It should be noted that Berger simulation do not have counterions.}.
 Surprisingly, the calcium binding seems to be too weak CHARMM36 simulations.
-This is due to the NBfix interaction parameters from Ref. \citenum{kim16}, which are incorporated
-to CHARMM-GUI. These parameters give also too weak binding of calcium to pure POPC bilayer,
+This is due to the NBfix interaction parameters from Ref. \citenum{kim16}, incorporated
+in the parameters from CHARMM-GUI at the time of running the simulations (January 2018).
+The binding of calcium to pure POPC bilayer is also too weak with these parameters
 as shown in Figs. \ref{OP_CHARMM_CaCl_POPC_NBFix} and \ref{density_profile_CHARMM_CaCl_POPC_NBFix}.
-The density profiles of Ca2+ from the simulations are shown in Fig. \ref{CAdensPCPSmixture}.
-\todo{More simulation data for systems with PS lipids and CaCl$_2$ would be probably useful}
+\todo{The discussion is to be finished when we have all the data in the plot.}
 
 \begin{figure*}[]
   \centering
   \includegraphics[width=18cm]{../Figs/CHANGESwithCaClPS.eps}
   \caption{\label{changesWITHCaClPS}
-    POPC (left) and POPS (right) headgroup order parameters in lipid bilayer with POPC:POPS (5:1) mixture
-    as a function CaCl$_2$ concentration from experiments \cite{roux90} and different simulations.
+    Changes of POPC (left) and POPS (right) headgroup order parameters in POPC:POPS (5:1) mixture
+    as a function CaCl$_2$ concentration. Experimental data is taken from \citenum{roux90}.
+    The values from counterion-only systems are set as a zero point of y-axis.
+    To correctly illustrate the significant forking of the $\alpha$-carbon order parameter
+    in PS headgroup (bottom, right), the y-axis is tranferred with the same value for both order parameters such that the lower order
+    parameter value is at zero. 
   }
+  \todo{Information about the cuonterions in different simulations should be added} \\
   \todo{Upcoming simulations with original CHARMM36 have been mentioned in the blog:
   http://nmrlipids.blogspot.com/2017/12/nmrlipids-iv-current-status-and.html?showComment=1520090718976\#c5569269391707740056} \\
   \todo{Upcoming Lipid17 simulations have been mentioned in the blog
@@ -718,15 +738,15 @@ The density profiles of Ca2+ from the simulations are shown in Fig. \ref{CAdensP
 \end{figure}
 
 
-Also the order parameters of PS headgroup as a function of CaCl$_2$ concentration
-%from mixtures with PC  
-are shown in Fig. \ref{changesWITHCaClPS}. The order parameters exhibit
-a strong dependence small CaCl$_2$ concentrations with a rapid saturation. 
+Also the order parameters of PS headgroup from POPC:POPS (5:1) mixture
+are shown in Fig. \ref{changesWITHCaClPS} as a function of CaCl$_2$ concentration.
+In experiments the order parameters exhibit a strong dependence of CaCl$_2$ with
+small concentrations with a rapid saturation around 50 mM. 
 The changes of PS headgroup order parameters with added CaCl$_2$ are overestimated in
-both simulation models. The response of $\beta$-carbon order parameter could be
-interpreted qualitatively correct in simulations, but the general agreement with
-experiments is not sufficient to use simulations to interpret the response of
-PS headgroup to the added CaCl$_2$.
+all tested simulation models. Furthermore, the changes of the headgroup order parameters
+do not qualitatively agree with experiments. This is in contrast to previous results
+for PC headgroup \cite{catte16}, where qualitatively correct reponse to bound ions was
+observed despite of significant discrepancies in the headgroup structure without additional ions. 
 
 
 \section{Conclusions}
@@ -770,6 +790,7 @@ PS headgroup to the added CaCl$_2$.
 \todo{To be wiritten by Piggot and Ollila}
 Simulations with sodium were taken directly from Ref. \citenum{??} and
 simulations with calcium directly from \citenum{melcrova16}.
+Simulation of POPC at 310 K was taken directly from Ref. \citenum{ollila07a}.
 
 \subsection{GROMOS-CKP}
 \todo{To be written by Piggot}

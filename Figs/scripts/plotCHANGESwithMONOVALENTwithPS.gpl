@@ -61,16 +61,16 @@ set xlabel "[ion] M"
 #set xrange [0:1] 
 #set yrange [-0.02:0.02]
 unset yrange
-plot  "../../Data/POPC-PS_5-1_mix/quadrupolar_splittings_roux1990/alpha1_ps_naclfig8.dat" using 1:(($2-7.79372197309)*0.00784) with linespoint notitle       pt 7 lt 1 lw 4 ps 1.5 lc rgb 'black',\
+plot  "../../Data/POPC-PS_5-1_mix/quadrupolar_splittings_roux1990/alpha1_ps_naclfig8.dat" using 1:(($2-1.43143812709)*0.00784) with linespoint notitle       pt 7 lt 1 lw 4 ps 1.5 lc rgb 'black',\
       "../../Data/POPC-PS_5-1_mix/quadrupolar_splittings_roux1990/alpha2_ps_naclfig8.dat" using 1:((-1)*($2-1.43143812709)*0.00784) with linespoint notitle  pt 7 lt 1 lw 4 ps 1.5 lc rgb 'black',\
-      "../../Data/POPC-PS_5-1_mix/quadrupolar_splittings_roux1990/alpha1_ps_kclfig8.dat" using 1:(($2-8.00896860987)*0.00784) with linespoint notitle     pt 5 ps 2 lt 1 lw 4 dt 2 lc rgb 'black',\
+      "../../Data/POPC-PS_5-1_mix/quadrupolar_splittings_roux1990/alpha1_ps_kclfig8.dat" using 1:(($2-1.69899665552)*0.00784) with linespoint notitle     pt 5 ps 2 lt 1 lw 4 dt 2 lc rgb 'black',\
       "../../Data/POPC-PS_5-1_mix/quadrupolar_splittings_roux1990/alpha2_ps_kclfig8.dat" using 1:((-1)*($2-1.69899665552)*0.00784) with linespoint notitle pt 5 ps 2 lt 1 lw 4 dt 2  lc rgb 'black',\
-      "../../Data/POPC-PS_5-1_mix/quadrupolar_splittings_roux1990/alpha1_ps_liclfig8.dat" using 1:(($2-8.00896860987)*0.00784) with linespoint notitle  pt 13 ps 2 lt 1 lw 4 dt 3 lc rgb 'black',\
+      "../../Data/POPC-PS_5-1_mix/quadrupolar_splittings_roux1990/alpha1_ps_liclfig8.dat" using 1:(($2-1.69899665552)*0.00784) with linespoint notitle  pt 13 ps 2 lt 1 lw 4 dt 3 lc rgb 'black',\
       "../../Data/POPC-PS_5-1_mix/quadrupolar_splittings_roux1990/alpha2_ps_liclfig8.dat" using 1:((-1)*($2-1.69899665552)*0.00784) with linespoint notitle  pt 13 ps 2 lt 1 lw 4 dt 3 lc rgb 'black',\
       "../../Data/POPC80_POPS20withNa_BERGER.dat" using 1:($6-0.262379) with linespoint notitle pt 7 lt 1 lw 4 ps 1.5 lc rgb 'red',\
-      "../../Data/POPC80_POPS20withNa_BERGER.dat" using 1:($7-0.304819) with linespoint notitle pt 7 lt 1 lw 4 ps 1.5 lc rgb 'red',\
-      "../../Data/POPC5_POPS1withK_MACROG.dat" using 1:($10+0.0227) with linespoint notitle pt 5 lt 1 lw 4 ps 1.5 lc rgb 'pink',\
-      "../../Data/POPC5_POPS1withK_MACROG.dat" using 1:($10+0.0227):11 with yerrorbars notitle pt 5 lt 1 lw 4 ps 1.5 lc rgb 'pink',\
+      "../../Data/POPC80_POPS20withNa_BERGER.dat" using 1:($7-0.262379) with linespoint notitle pt 7 lt 1 lw 4 ps 1.5 lc rgb 'red',\
+      "../../Data/POPC5_POPS1withK_MACROG.dat" using 1:($10+0.1547) with linespoint notitle pt 5 lt 1 lw 4 ps 1.5 lc rgb 'pink',\
+      "../../Data/POPC5_POPS1withK_MACROG.dat" using 1:($10+0.1547):11 with yerrorbars notitle pt 5 lt 1 lw 4 ps 1.5 lc rgb 'pink',\
       "../../Data/POPC5_POPS1withK_MACROG.dat" using 1:($12+0.1547) with linespoint notitle  pt 5 lt 1 lw 4 ps 1.5 lc rgb 'pink',\
       "../../Data/POPC5_POPS1withK_MACROG.dat" using 1:($12+0.1547):13 with yerrorbars notitle  pt 5 lt 1 lw 4 ps 1.5 lc rgb 'pink',\
 

@@ -10,8 +10,9 @@
 # MATCH/Data/Lipid_Bilayers/POPS+83%popc+4000mMKCl/T298/MODEL_MACROG/
 #
 # Order parameters as a function of CONCENTRATION NEEDS TO BE CHECKED!
+# STEREOCHEMISTRY MIGHT NOT BE CONSERVED AS A FUNCTION OF IONS
 #[KCl]    POPC_a1   error   POPC_a2   error    POPC_b1    error   POPC_b2   error   POPS_a1   error    POPS_a2   error   POPS_b   error 
-0        0.04983      -     0.04587     -      0.0274       -     0.02537     -     -0.0227     -      -0.1547    -     -0.09715   - 
+0        0.04983      -     0.04587     -      0.0274       -     0.02537     -     -0.1547     -      -0.0227    -     -0.09715   - 
 0.5      0.04386  0.01158   0.062548  0.0119   0.0237    0.0117   0.03539  0.0118   -0.1901  0.01152   -0.00593 0.0252   -0.1057   0.0186
 1.0      0.02751  0.01252   0.05157   0.0123   0.0074    0.0127   0.02658  0.0125   -0.1401  0.01183   -0.05374 0.0244   -0.1442   0.0159
 2.0      0.02642  0.01341   0.04529   0.0138   0.0092    0.0136   0.02143  0.0134   -0.1427  0.01896   -0.0645  0.0315   -0.1536   0.0165
