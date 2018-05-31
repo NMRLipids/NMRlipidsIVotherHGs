@@ -17,6 +17,10 @@ plot 	   "../../Data/POPC80_POPS20withNa_BERGER.dat" using 1:($4-0.0129448) with
      	   "../../Data/POPC5_POPS1withK_MACROG.dat" using 1:($6-0.0274):7 with yerrorbars notitle pt 5 lt 1 lw 4 ps 1.5 lc rgb 'pink',\
    	   "../../Data/POPC5_POPS1withK_MACROG.dat" using 1:($8-0.02537) with linespoint notitle  pt 5 lt 1 lw 4 ps 1.5 lc rgb 'pink',\
      	   "../../Data/POPC5_POPS1withK_MACROG.dat" using 1:($8-0.02537):9 with yerrorbars notitle  pt 5 lt 1 lw 4 ps 1.5 lc rgb 'pink',\
+      	   "../../Data/POPC5_POPS1withK_LIPID17.dat" using 1:($6+0.00214) with linespoint notitle pt 5 lt 1 lw 4 ps 1.5 lc rgb 'yellow',\
+     	   "../../Data/POPC5_POPS1withK_LIPID17.dat" using 1:($6+0.00214):7 with yerrorbars notitle pt 5 lt 1 lw 4 ps 1.5 lc rgb 'yellow',\
+      	   "../../Data/POPC5_POPS1withK_LIPID17.dat" using 1:($8-0.0018) with linespoint notitle pt 5 lt 1 lw 4 ps 1.5 lc rgb 'yellow',\
+     	   "../../Data/POPC5_POPS1withK_LIPID17.dat" using 1:($8-0.0018):7 with yerrorbars notitle pt 5 lt 1 lw 4 ps 1.5 lc rgb 'yellow',\
            "../../Data/POPC-PS_5-1_mix/quadrupolar_splittings_roux1990/beta_pc_kclfig8.dat" using 1:((-1)*($2-3.991)*0.00784) with linespoint notitle pt 5 ps 2 lt 1 lw 4 dt 2 lc rgb 'black',\
 	   "../../Data/POPC-PS_5-1_mix/quadrupolar_splittings_roux1990/beta_pc_liclfig8.dat" using 1:((-1)*($2-3.991)*0.00784) with linespoint notitle pt 13 ps 2 lt 1 lw 4 dt 3 lc rgb 'black',\
 
@@ -32,6 +36,8 @@ plot   	            "../../Data/POPC-PS_5-1_mix/quadrupolar_splittings_roux1990/
 	   "../../Data/POPC80_POPS20withNa_BERGER.dat" using 1:($8-0.15793) with linespoint title 'POPC:POPS (T298K) NaCl 4:1 BERGER' pt 7 lt 1 lw 4 ps 1.5 lc rgb 'red',\
       	   "../../Data/POPC5_POPS1withK_MACROG.dat" using 1:($14+0.09715) with linespoint title 'POPC:POPS (T298K) KCl 5:1 MACROG' pt 5 lt 1 lw 4 ps 1.5 lc rgb 'pink',\
      	   "../../Data/POPC5_POPS1withK_MACROG.dat" using 1:($14+0.09715):15 with yerrorbars notitle pt 5 lt 1 lw 4 ps 1.5 lc rgb 'pink',\
+	   "../../Data/POPC5_POPS1withK_LIPID17.dat" using 1:($14-0.04882) with linespoint title 'POPC:POPS (T298K) KCl 5:1 LIPID17' pt 5 lt 1 lw 4 ps 1.5 lc rgb 'yellow',\
+     	   "../../Data/POPC5_POPS1withK_LIPID17.dat" using 1:($14-0.04882):15 with yerrorbars notitle pt 5 lt 1 lw 4 ps 1.5 lc rgb 'yellow',\
 
 
 
@@ -47,6 +53,10 @@ plot    "../../Data/POPC80_POPS20withNa_BERGER.dat" using 1:($2-0.0619829) with 
      	"../../Data/POPC5_POPS1withK_MACROG.dat" using 1:($2-0.04983):3 with yerrorbars notitle pt 5 lt 1 lw 4 ps 1.5 lc rgb 'pink',\
    	"../../Data/POPC5_POPS1withK_MACROG.dat" using 1:($4-0.04587) with linespoint notitle  pt 5 lt 1 lw 4 ps 1.5 lc rgb 'pink',\
         "../../Data/POPC5_POPS1withK_MACROG.dat" using 1:($4-0.04587):5 with yerrorbars notitle  pt 5 lt 1 lw 4 ps 1.5 lc rgb 'pink',\
+	"../../Data/POPC5_POPS1withK_LIPID17.dat" using 1:($2-0.160485) with linespoint notitle pt 5 lt 1 lw 4 ps 1.5 lc rgb 'yellow',\
+     	"../../Data/POPC5_POPS1withK_LIPID17.dat" using 1:($2-0.160485):3 with yerrorbars notitle pt 5 lt 1 lw 4 ps 1.5 lc rgb 'yellow',\
+   	"../../Data/POPC5_POPS1withK_LIPID17.dat" using 1:($4-0.17849) with linespoint notitle  pt 5 lt 1 lw 4 ps 1.5 lc rgb 'yellow',\
+        "../../Data/POPC5_POPS1withK_LIPID17.dat" using 1:($4-0.17849):5 with yerrorbars notitle  pt 5 lt 1 lw 4 ps 1.5 lc rgb 'yellow',\
         "../../Data/POPC-PS_5-1_mix/quadrupolar_splittings_roux1990/alpha_pc_kclfig8.dat" using 1:(($2-7.61625308476)*0.00784) with linespoint notitle pt 5 ps 2 dt 2 lt 1 lw 4 lc rgb 'black',\
         "../../Data/POPC-PS_5-1_mix/quadrupolar_splittings_roux1990/alpha_pc_liclfig8.dat" using 1:(($2-7.61625308476)*0.00784) with linespoint notitle pt 13  ps 2 dt 3 lt 1 lw 4 lc rgb 'black',\
 
@@ -73,5 +83,9 @@ plot  "../../Data/POPC-PS_5-1_mix/quadrupolar_splittings_roux1990/alpha1_ps_nacl
       "../../Data/POPC5_POPS1withK_MACROG.dat" using 1:($10+0.1547):11 with yerrorbars notitle pt 5 lt 1 lw 4 ps 1.5 lc rgb 'pink',\
       "../../Data/POPC5_POPS1withK_MACROG.dat" using 1:($12+0.1547) with linespoint notitle  pt 5 lt 1 lw 4 ps 1.5 lc rgb 'pink',\
       "../../Data/POPC5_POPS1withK_MACROG.dat" using 1:($12+0.1547):13 with yerrorbars notitle  pt 5 lt 1 lw 4 ps 1.5 lc rgb 'pink',\
+      "../../Data/POPC5_POPS1withK_LIPID17.dat" using 1:($10-0.09235) with linespoint notitle pt 5 lt 1 lw 4 ps 1.5 lc rgb 'yellow',\
+      "../../Data/POPC5_POPS1withK_LIPID17.dat" using 1:($10-0.09235):11 with yerrorbars notitle pt 5 lt 1 lw 4 ps 1.5 lc rgb 'yellow',\
+      "../../Data/POPC5_POPS1withK_LIPID17.dat" using 1:($12-0.09235) with linespoint notitle  pt 5 lt 1 lw 4 ps 1.5 lc rgb 'yellow',\
+      "../../Data/POPC5_POPS1withK_LIPID17.dat" using 1:($12-0.09235):13 with yerrorbars notitle  pt 5 lt 1 lw 4 ps 1.5 lc rgb 'yellow',\
 
 unset multiplot

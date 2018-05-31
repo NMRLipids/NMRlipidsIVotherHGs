@@ -231,9 +231,16 @@ the signs were measured using S-DROSS experiments \cite{gross97}.
 \todo{Sample preparation should be described.}
 
 \subsection{Molecular dynamics simulations}
-Molecular dynamics simulation data was collected with Open Collaboration method.
-The simulated systems are listed in Table \ref{IONsystems}.
-The simulation details are in SI or in references in the table.
+Molecular dynamics simulation data was collected using
+the Open Collaboration method \cite{botan15}.
+The NMRlipids project blog (\url{nmrlipids.blogspot.fi}) and
+the GitHub repository (\url{github.com/NMRLipids/NMRlipidsIVotherHGs})
+were used as the communication platforms.
+The simulated systems are listed in Table \ref{IONsystems} and
+simulation details are given in the SI.
+The simulation data is also indexed in the
+searchable database (\url{nmrlipids.fi}),
+and in the NMRlipids/MATCH GitHub repository (\url{https://github.com/NMRLipids/MATCH}).  
 \begin{table*}[!htb]
 %\begin{sidewaystable*}[!p]
 \centering
@@ -317,7 +324,16 @@ The simulation details are in SI or in references in the table.
 
 \end{table*}
 
-
+The C-H bond order parameters were calculated directly
+from the definition
+\begin{equation}
+S_{\rm CH}=\frac{1}{2}\langle 3\cos^2\theta -1 \rangle,
+\end{equation}
+where $\theta$ is the angle between the C-H bond and the membrane normal.
+Angular brackets point to the average over all sampled configurations.
+\todo{Error estimation should be discussed.}\\
+The number density profiles were calculated using {\it gmx density} tool
+from Gromacs sofware package \cite{gromacsMANUAL}.
 
 \section{Results and Discussion}
 
