@@ -450,48 +450,50 @@ The detailed structural differences between the headgroups is, however, not know
 
 The headgroup order parameters of DOPS and POPS bilayers 
 from different simulation models are compared with the experimental
-data in Fig. \ref{HGorderParametersPS}. In line with the previous
-study for PC lipids \cite{botan15}, the glycerol backbone order 
-parameters in CHARMM36 roughly agree with the experimental data,
-while significant discrepancies for glycerol backbone carbons
-are observed in other models.
-\todo{Discussion is to be finished.} \\
+data in Fig. \ref{HGorderParametersPS}. Subjective ranking
+of the quality of the models is shown in Fig. \ref{comparisonTablePS}.
+The tested models perform generally less well than in the previous
+study for PC headgroup~\cite{botan15} and none of the models 
+reproduce the experimental order parameters within
+experimental error bars.
+Therefore, the models cannot be straightforwardly used to interpret the
+structure of PS headgroup. However, the differences between PC and PS headgroups
+are partially reproduced by some of the models.
+
+The two best performing models for the $\alpha$ and $\beta$-carbons of
+PS, Slipids and CHARMM36, reproduce the large forking in the $\alpha$-carbon
+and the Slipids model gives also a good agreement with experiments for
+the $\beta$-carbon order parameter in both PC and PS headgroups
+(Fig. \ref{HGorderParametersPS} and Ref.~\citenum{botan15}).
+Interestingly, the dihedral angle distributions of CHARMM36
+and Slipids in Fig.~\ref{dihedralsHG} share significant similarities
+in the headgroup region. However, the experimental order parameters in the
+glycerol backbone region are not well reproduced by the Slipids model,
+which was also the case in for PC lipids \cite{botan15}.
+This difference probably arises from the differences in
+the dihedral angle distributions of C1-C2-C3-O31 and C2-C3-O31-C31
+in Figure \ref{dihedralsGLY}, which are also illustrated in
+Figure \ref{glycerol_buslaev}. 
+
+%\todo{Discussion is to be finished.
+%  One possible conclusion could be the following:
+%  The main differences between the models in the headgroup region are observed
+%  for dihedrals C12-C11-O12-P and C11-C12-C13-O1A.
+%  CHARMM36, CHARMM36UA and Slipids give very similar results to the
+%  dihedral C11-C12-C13-O1A, which is close to the $\beta$-carbon.
+%  The order parameters of $\beta$-carbons for these three models
+%  are in best argeement with the experiments in figure \ref{HGorderParametersPS}.
+%  On the other hand, Gromos-CKP models give better order parameters
+%  for $\alpha$-carbon than Slipids, CHARMM36 or CHARMM36UA. 
+%  In conclusion, the suggestion would be that the single peak for
+%  observed at 120 degrees in CHARMMs and Slipids would
+%  be more realistic for C11-C12-C13-O1A dihedral, while the single peak at 180 degrees observed
+%  in CKP models and in Berger would be most realistic for C12-C11-O12-P dihedral.
+%}
+
+
+
 \todo{Also the discussion about POPS/OPPS issue with MacRog model should be added.}
-
-
-Based on the subjective ranking shown in Fig. \ref{comparisonTablePS},
-the CHARMM36 is the best performing model for both lipids.
-However, none of the tested models give a satisfactory 
-agreement with experiments for the headgroup order paramaters of 
-PS lipids. The total deviation from the experiments ($\Sigma$ in Fig. \ref{comparisonTablePS})
-for the best performing CHARMM36 model is larger for PS lipids (8)
-than for PC (3) \cite{botan15}. Therefore the 
-interpretation of structural details of PS headgroup or
-differences between PC and PS lipids is very challenging 
-from the current MD simulation models.
-Figures \ref{dihedralsGLY} and \ref{dihedralsHG} show dihedral
-angle distributions calculated from different models. 
-The glycerol backbone structures from CHARMM36 and
-Slipids simulations visualized in Fig. \ref{glycerol_buslaev} reveal the
-missing structures in Slipids model, which probably lead to the incorrect
-order parameters. For the headgroup $\alpha$ and $\beta$ carbon order parameters of PS lipids,
-the tested models perform less well than for PC headgroup in previous
-study \cite{botan15}.
-\todo{Discussion is to be finished.
-  One possible conclusion could be the following:
-  The main differences between the models in the headgroup region are observed
-  for dihedrals C12-C11-O12-P and C11-C12-C13-O1A.
-  CHARMM36, CHARMM36UA and Slipids give very similar results to the
-  dihedral C11-C12-C13-O1A, which is close to the $\beta$-carbon.
-  The order parameters of $\beta$-carbons for these three models
-  are in best argeement with the experiments in figure \ref{HGorderParametersPS}.
-  On the other hand, Gromos-CKP models give better order parameters
-  for $\alpha$-carbon than Slipids, CHARMM36 or CHARMM36UA. 
-  In conclusion, the suggestion would be that the single peak for
-  observed at 120 degrees in CHARMMs and Slipids would
-  be more realistic for C11-C12-C13-O1A dihedral, while the single peak at 180 degrees observed
-  in CKP models and in Berger would be most realistic for C12-C11-O12-P dihedral.
-}
 
 \begin{figure}[]
   \centering
@@ -501,6 +503,15 @@ study \cite{botan15}.
     by Pavel Buslaev.
   }
 \end{figure}
+
+%
+%The total deviation from the experiments ($\Sigma$ in Fig. \ref{comparisonTablePS})
+%for the best performing CHARMM36 model is larger for PS lipids (8)
+%than for PC (3) \cite{botan15}.
+%Therefore the interpretation of structural details of PS headgroup or
+%differences between PC and PS lipids is very challenging 
+%from the current MD simulation models.
+
 
 \subsection{Counterion binding to lipid bilayers containing PS lipids}
 Since systems with negatively charged PS lipids always contain counterions
