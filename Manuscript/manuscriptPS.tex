@@ -227,8 +227,10 @@ Shortly, the absolute values of the order parameters were determined from the di
 given by the indirect dimension of 2D R-PDFL experiment \cite{dvinskikh04} and
 the signs were measured using S-DROSS experiments \cite{gross97}.
 
-\todo{Details of the used spectrometer and maybe some other details should be given.}
-\todo{Sample preparation should be described.}
+\todo{Details of the used spectrometer and maybe some other details should be given.} \\
+\todo{Sample preparation should be described.} \\
+\todo{How is the peak assignment done?}
+
 
 \subsection{Molecular dynamics simulations}
 Molecular dynamics simulation data was collected using
@@ -339,24 +341,28 @@ from Gromacs sofware package \cite{gromacsMANUAL}.
 
 \subsection{Headgroup and glycerol backbone order parameters measured from POPS lipid bilayer}
 
-Figure \ref{PShgSIGNSsimpson} summarizes the experimental NMR results for POPS bilayer sample.
-showing one single
-    splitting for beta (which gives an order parameter equal to 0.12), and for alpha a superposition
-    of a large splitting (order parameter equal to 0.09) and a very small splitting which cannot
-    resolved with the available resolution.
-    S-DROSS slice for beta clearly shows that the order parameter is negative,
-    which is confirmed by SIMPSON simulations using the 
-    The S-DROSS slice for alpha suggests that the higher order parameter is positive
-    and the deviation towards negative values in the longer t1 times suggests
-    that the smaller order parameter is negative.
-    This is confirmed by SIMPSON simulation using value of 0.09
-    for the larger alpha order parameter and the value of -0.02 for
-    smaller (black curve). The value for the smaller
-    alpha order parameter for SIMPSON calculation was taken from Fig 3 in Ref. \citenum{roux91},
-    because resolution in 13C NMR experiments was nor high enough to determine
-    numerical value for this. The S-DROSS curve from SIMPSON simulation with positive value
-    for the smaller order parameter (dashed grey), did not agree with experiments 
-    confirming the interpretation that the smaller order parameter is negative.
+The INEPT and 2D R-PDLF experiments from POPS sample give well resolved spectras for all the
+carbons in headgroup and glycerol backbone region, except for g$_3$ for which the resolution
+was not sufficient to determine the numerical value of the order paramater (Fig. \ref{PShgSIGNSsimpson}).
+Slices of the R-PDFL spectra (Fig. \ref{PShgSIGNSsimpson} C)) 
+show a single splitting for the $\beta$-carbon with the order parameter value of 0.12,
+and a superposition of a large and a very small splitting for the $\alpha$-carbon.
+The larger splitting gives a order parameter value of 0.09, while the numerical value
+from the small splitting cannot resolved with the available resolution.
+Since only the absolute values of the PS headgroup order parameters were measured
+previously \cite{browning80,roux91}, we used the S-DROSS experiment \cite{??} to determine the signs of
+the order parameters. The S-DROSS slice for the $\beta$-carbon (Fig. \ref{PShgSIGNSsimpson} D)) clearly shows that the
+order parameter is negative, which is confirmed by SIMPSON simulations.
+The beginning of the S-DROSS slice suggests that the higher order parameter of
+the $\alpha$-carbon is positive and the deviation towards negative values with the longer T$_1$ times suggests
+that the smaller order parameter is negative. This is confirmed by a SIMPSON simulation
+where the value of -0.02 was taken from $^2$H NMR experiment \cite{roux91} for the smaller order parameter.
+The literature value was used because the
+resolution of our experiment was not sufficient to determine the
+small value of the order parameter. The S-DROSS curve from
+SIMPSON simulation with a positive value for the smaller order parameter
+(dashed grey in Fig. \ref{PShgSIGNSsimpson} D)) did not agree with the experiment, 
+confirming the interpretation that the smaller order parameter is negative.
 \begin{figure}[!htb]
   \centering
   \includegraphics[width=8.5cm]{../scratch/figIDEA.eps}
@@ -387,18 +393,16 @@ showing one single
 %\end{figure}
 
 The headgroup and glycerol backbone order parameters of 
-POPS measured in this work are compared to the literature values of
-DOPS \cite{browning80} and POPC \cite{ferreira13} in Fig. \ref{HGorderParameters}. 
-Our results for POPS are in good agreement with the previously reported
-values for DOPS measured with $^2$H NMR. Significant differences are
-observed between PC and PS lipids, especially at the headgroup region.  
-Previous discussions in the literature have concluded that  
-glycerol backbone structure is largely similar in
-PC, PE, PG and PS lipids \cite{gally81}. The headgroup region was
-found to be similar in PC, PE and PG lipid (assuming that the signs of PE and PG
-order parameters are the same as in PC), while the PS headgroup was suggested
-to be more rigid \cite{wohlgemuth80,buldt81}. 
-The detailed structural differences between the headgroups is, however, not known.
+POPS measured in this work are in good agreement with the previously reported
+values from $^2$H NMR experiments of DOPS \cite{browning80} (Fig. \ref{HGorderParameters}).
+The $\beta$-carbon order parameter is significantly more negative and $\alpha$-carbon
+experiences a significant forking in PS headgroup when compared with
+the values previously measured for POPC \cite{ferreira13} (Fig. \ref{HGorderParameters}).  
+These features have been intepreted to arise from a rigid PS headgroup
+conformation, stabilized by hydrogen bonds or electrostatic
+interactions \cite{browning80,buldt81}, but detailed structrural interpretation is not
+available. 
+%The detailed structural differences between the headgroups is, however, not known.
 \begin{figure}[]
   \centering
   \includegraphics[width=9.0cm]{../Figs/PCPScomp.pdf}
@@ -410,6 +414,7 @@ The detailed structural differences between the headgroups is, however, not know
     %POPG from \cite{borle85} contains 10nM PIPES, DPPG from \cite{wohlgemuth80} contains  10mM PIPES and 100mM NaCl,
     %DPPE from \cite{seelig76}, E.coliPE and E.coliPG are from \cite{gally81}.
   }
+  \todo{There should be values in \cite{roux90} which should be added.}
 \end{figure}
 
 
