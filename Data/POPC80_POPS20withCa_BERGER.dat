@@ -1,0 +1,13 @@
+# Binding of Ca2+ to Mixtures of 80 mol % POPC plus 20 mol % POPS from Berger model
+#
+# from MATCH/Data/Lipid_Bilayers/POPS+80%popc/T310K/MODEL_berger
+# MATCH/Data/Lipid_Bilayers/POPS+80%popc+102mMCaCl/T310K/MODEL_Berger/
+# 
+#
+# Order parameters as a function of excess [NaCl]
+#CONCENTRATION NEEDS TO BE CHECKED!
+#[NaCl]    POPC_a1           POPC_a2          POPC_b1            POPC_b2            POPS_a1            POPS_a2                POPS_b
+0          0.0619829         0.121486        0.0129448           0.032294          0.262379            0.304819               0.15793 
+0.102      0.000979502       0.120488        0.0100224           0.0373899         0.0668661           0.204246               0.221466            
+0.715      -0.0656663        -0.0450902     -0.0433126          -0.0525654          0.0870403          0.256041               0.433421
+
