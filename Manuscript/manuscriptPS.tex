@@ -109,12 +109,12 @@ Previous experimental studies have concluded that
 PS headgroups have more rigid conformation than
 phophocholines (PC) due to hydrogen bonding or
 electrostatic interactions \cite{browning80,buldt81}.
-Multivalent cations or Li$^+$ are able to form strong
+Multivalent cations and Li$^+$ are able to form strong
 dehydrated molecular complexes with PS lipids,
 while monovalent ions interact more weakly with PS
 containing bilayers \cite{hauser77,kurland79,hauser83,hauser85,feigenson86,mattai89,roux90,roux91}.
-Dilution of PS rich bilayers with PC lipids
-reduces the rigidity and propensity of the
+Dilution of bilayers with PC lipids makes PS headgroups
+less rigid and reduces propensity for the formation of
 strong complexes with multivalent ions \cite{browning80,buldt81,roux90,roux91}.
 
 
@@ -274,7 +274,7 @@ and in the NMRlipids/MATCH GitHub repository (\url{https://github.com/NMRLipids/
   % some footnotes are not visible in typeset-MS (pdf)
  lipid/counter-ions & force field for lipids / ions & NaCl (mM) & CaCl$_2$\,(mM) &  \footnote{Number of lipid molecules with largest mole fraction}N$_{\rm l}$   &  \footnote{Number of water molecules}N$_{\rm w}$ \todoi{Should confirm that the amounts of water in experiments matched those in simulations.}   & \footnote{Number of additional cations}N$_{\rm c}$  & \footnote{Simulation temperature}T (K)  & \footnote{Total simulation time}t$_{{\rm sim}}$(ns) & \footnote{Time used for analysis}t$_{{\rm anal}}$ (ns) &   \footnote{Reference for simulation files}files\\
   \hline
-    DOPS/Na$^+$  & CHARMM36 \cite{??}  \todoi{Correct citation for CHARMM DOPS}      &0 & 0 & 128 & 4480 & 0  & 303  & 500 & 100 & \cite{charmm36DOPS303K} \\
+    DOPS/Na$^+$  & CHARMM36 \cite{venable13}       &0 & 0 & 128 & 4480 & 0  & 303  & 500 & 100 & \cite{charmm36DOPS303K} \\
     DOPS/Na$^+$  & CHARMM36ua \cite{??} \todoi{Correct citation for CHARMMua DOPS}        &0 & 0        & 128 & 4480 & 0  & 303  & 500 & 100 & \cite{charmm36uaDOPS303K} \\
     DOPS/Na$^+$  & Slipids \cite{jambeck13}        &0 & 0        & 128 	& 4480  & 0  & 303  & 500 & 100 & \cite{slipidsDOPS303K} \\
     DOPS/Na$^+$  & Slipids \cite{jambeck13}        &0 & 0        & 288 	& 11232 & 0  & 303  & 200 & 100 & \cite{slipidsDOPSfiles} \\
@@ -284,8 +284,8 @@ and in the NMRlipids/MATCH GitHub repository (\url{https://github.com/NMRLipids/
     DOPS/Na$^+$  & lipid17 \cite{gould18} / JC  \cite{joung08} &0 & 0        & 128    & 4480   & 0   & 303  & 600 & 100 & \cite{lipid17DOPSjcions} \\
     DOPS/Na$^+$  & lipid17 \cite{gould18} / ff99 \cite{aqvist90}  &0 & 0        & 128    & 4480   & 0   & 303  & 600 & 100 & \cite{lipid17DOPSff99ions} \\
     \hline
-    POPS/Na$^+$  & CHARMM36 \cite{??} \todoi{Correct citation for CHARMM POPS}&0 & 0 & 128 & 4480 & 0  & 298  & 500 & 100 & \cite{charmm36POPS298K} \\
-    POPS/K$^+$   & CHARMM36 \cite{??} \todoi{Correct citation for CHARMM POPS}&0 & 0 & 128 & 4480 & 0  & 298  & 500 & 100 & \cite{charmm36POPS298Kpotassium} \\
+    POPS/Na$^+$  & CHARMM36 \cite{venable13} &0 & 0 & 128 & 4480 & 0  & 298  & 500 & 100 & \cite{charmm36POPS298K} \\
+    POPS/K$^+$   & CHARMM36 \cite{venable13} &0 & 0 & 128 & 4480 & 0  & 298  & 500 & 100 & \cite{charmm36POPS298Kpotassium} \\
     POPS/Na$^+$  & CHARMM36ua \cite{??} \todoi{Correct citation for CHARMMua DOPS}  &0 & 0 & 128 & 4480 & 0  & 298  & 500 & 100 & \cite{charmm36uaPOPS298K} \\
     POPS/Na$^+$  & Slipids \cite{jambeck13}        &0 & 0        & 128 & 4480 & 0  & 298  & 500 & 100 & \cite{slipidsPOPS298K} \\
     POPS/Na$^+$  & Berger \cite{??}        &0 & 0        & 128 & 4480 & 0  & 298  & 500 & 100 & \cite{bergerPOPS298K} \\
@@ -317,13 +317,13 @@ and in the NMRlipids/MATCH GitHub repository (\url{https://github.com/NMRLipids/
 \begin{tabular}{l c c r r r r r r c c}
   lipid/counter-ions & force field for lipids / ions & NaCl (mM) & CaCl$_2$\,(mM) &  \footnote{Number of lipid molecules with largest mole fraction}N$_{\rm l}$   &  \footnote{Number of water molecules}N$_{\rm w}$ \todoi{Should confirm that the amounts of water in experiments matched those in simulations.}   & \footnote{Number of additional cations}N$_{\rm c}$  & \footnote{Simulation temperature}T (K)  & \footnote{Total simulation time}t$_{{\rm sim}}$(ns) & \footnote{Time used for analysis}t$_{{\rm anal}}$ (ns) &   \footnote{Reference for simulation files}files\\
   \hline
-    POPC:POPS (5:1)/K$^+$  & CHARMM36 \cite{klauda10,??} \todoi{Correct citation for CHARMM POPS}  &0 & 0  & 110:22 & 4935 & 0  & 298  & 100 & 100 \todoi{Equilibration?} & \cite{charmm36pops+83popcT298K}  \\
-    POPC:POPS (5:1)/K$^+$  & CHARMM36 \cite{??}          &0 & 0 & 250:50 & ?     & 0  & 298  & 200 & ?   & \cite{??} \todoi{Trajectories and further details to be added by J. Madsen}  \\
-    POPC:POPS (5:1)/K$^+$  & CHARMM36 \cite{??}          &0 & 0 & 110:22 & 4620  & 0  & 298  & 500 & 100 & \cite{charmm36pops+83popcT298Kpiggot}  \\
-    POPC:POPS (5:1)/Na$^+$ & CHARMM36 \cite{??}          &0 & 0 & 110:22 & 4620  & 0  & 298  & 500 & 100 & \cite{charmm36pops+83popcT298KpiggotSODIUM}  \\
-    POPC:POPS (1:1)/K$^+$  & CHARMM36 \cite{??}          &0 & 0 & 150:150 & ?    & 0  & 298  & 200 & ?   & \cite{??} \todoi{Trajectories and further details to be added by J. Madsen}  \\
-     POPC:POPS (5:1)        & CHARMM36 \cite{??}\todoi{These are with NBFIX from Ref. \citenum{kim16}}          &0 & 150 \todoi{Concentration to be checked} & 250:50 & ?  & ?  & 298  & 200 & ?  & \cite{??} \todoi{Trajectories and further details to be added by J. Madsen}  \\
-    POPC:POPS (5:1)        & CHARMM36 \cite{??}\todoi{These are with NBFIX from Ref. \citenum{kim16}}          &0 & 1000 \todoi{Concentration to be checked} & 250:50 & ?  & ?  & 298  & 200 & ?  & \cite{??} \todoi{Trajectories and further details to be added by J. Madsen}  \\
+    POPC:POPS (5:1)/K$^+$  & CHARMM36 \cite{klauda10,venable13} &0 & 0  & 110:22 & 4935 & 0  & 298  & 100 & 100 \todoi{Equilibration?} & \cite{charmm36pops+83popcT298K}  \\
+    POPC:POPS (5:1)/K$^+$  & CHARMM36 \cite{klauda10,venable13}          &0 & 0 & 250:50 & ?     & 0  & 298  & 200 & ?   & \cite{??} \todoi{Trajectories and further details to be added by J. Madsen}  \\
+    POPC:POPS (5:1)/K$^+$  & CHARMM36 \cite{klauda10,venable13}          &0 & 0 & 110:22 & 4620  & 0  & 298  & 500 & 100 & \cite{charmm36pops+83popcT298Kpiggot}  \\
+    POPC:POPS (5:1)/Na$^+$ & CHARMM36 \cite{klauda10,venable13}          &0 & 0 & 110:22 & 4620  & 0  & 298  & 500 & 100 & \cite{charmm36pops+83popcT298KpiggotSODIUM}  \\
+    POPC:POPS (1:1)/K$^+$  & CHARMM36 \cite{klauda10,venable13}          &0 & 0 & 150:150 & ?    & 0  & 298  & 200 & ?   & \cite{??} \todoi{Trajectories and further details to be added by J. Madsen}  \\
+     POPC:POPS (5:1)        & CHARMM36 \cite{klauda10,venable13,kim16}   &0 & 150 \todoi{Concentration to be checked} & 250:50 & ?  & ?  & 298  & 200 & ?  & \cite{??} \todoi{Trajectories and further details to be added by J. Madsen}  \\
+    POPC:POPS (5:1)        & CHARMM36 \cite{klauda10,venable13,kim16}    &0 & 1000 \todoi{Concentration to be checked} & 250:50 & ?  & ?  & 298  & 200 & ?  & \cite{??} \todoi{Trajectories and further details to be added by J. Madsen}  \\
     \hline
     POPC:POPS\todoi{This is also probably OPPS? These should be corrected in this table as well.} (5:1)/K$^+$  & MacRog \cite{maciejewski14} &0 & 0  & 120:24 & 5760 & 0  & 298  & 200 & 200 \todoi{Equilibration?} & \cite{POPCpopsMACROG}  \\
    POPC:POPS (5:1)/K$^+$  & MacRog \cite{maciejewski14} &0 &100 & 120:24 & 5760 & 10  & 298  & 200 & 200 \todoi{Equilibration?} & \cite{POPCpopsMACROG}  \\
@@ -592,7 +592,7 @@ models.
   }
   \todo{The upcoming results from Lipid17 have been mentioned in the blog:
     http://nmrlipids.blogspot.com/2017/12/nmrlipids-iv-current-status-and.html?showComment=1522151331118\#c5876812436739342658} \\
-  \todo{Maybe we should get the CHARMM results as well?}
+  \todo{CHARMM36 results for this plot would be highly useful.}
 \end{figure*}
 In line with the trend observed for bilayers in the absence of negatively
 charged lipids \cite{??}, the POPC headgroup order parameter response to lithium ions is
@@ -619,7 +619,7 @@ is not correctly captured in the tested models.
   \caption{  Counterion density distributions from PC:PS mixtures.
 \label{CIdensPSOCmixt}
   }
-  \todo{Fix CKP1 and CKP2 captions.}
+  \todo{Lipid 17 is to be added.}
 \end{figure}
 
 
@@ -689,8 +689,8 @@ results for monovalent ions also from other simulations.}
     to correctly illustrate the significant forking.
   }
   \todo{Simulation of CHARMM36 at 298K should be maybe rerun with Gromacs 5.} \\
-  \todo{The upcoming results from Lipid17 have been mentioned in the blog:
-    http://nmrlipids.blogspot.com/2017/12/nmrlipids-iv-current-status-and.html?showComment=1522151331118\#c5876812436739342658} \\
+  \todo{Simulation of pure POPC at 298K with Lipid14 would be useful for this plot (only at 303 K is available from NMRlipids I)} \\
+  \todo{MacRog simulations of pure POPS with potassium counterions only would be useful for this and other plots.}
 \end{figure*}
 
 Also the headgroup order parameters of POPS mixed with varying amounts of POPC

@@ -27,14 +27,14 @@ set title "POPS"
 unset ylabel
 set origin 1.0,0.5
 set size 1.0,0.5
-plot "../../Data/POPSvsPOPCwithMACROG.dat" using (1-$1):($2+0.0971539928598) with linespoints notitle pt 4 ps 1.6  lw 4 lc rgb 'pink',\
-     "../../Data/POPSvsPOPC.dat" using (1-$1):($2+0.0991) with linespoints   notitle pt 4 ps 1.6  lw 4 lc rgb 'black',\
+plot "../../Data/POPSvsPOPC.dat" using (1-$1):($2+0.0991) with linespoints   notitle pt 4 ps 1.6  lw 4 lc rgb 'black',\
      "../../Data/POPSvsPOPCwithNACHARMM36.dat" using (1-$1):($2+0.132581) with linespoints  notitle pt 6 ps 1.6  lw 4 lc rgb 'blue',\
      "../../Data/POPSvsPOPCwithKCHARMM36.dat" using (1-$1):($2+0.142128483065) with linespoints  notitle pt 4 ps 1.6  lw 4 lc rgb 'blue',\
      "../../Data/POPSvsPOPCwithNALIPID17.dat" using (1-$1):($2-0.04882) with linespoints  notitle pt 6 ps 1.6  lw 4 lc rgb 'yellow',\
      "../../Data/POPSvsPOPCwithNALIPID17.dat" using (1-$1):($2-0.04882):($3) with yerrorbars  title 'Lipid17 (Na counterions)' pt 6 ps 1.6  lw 4 lc rgb 'yellow',\
 #"../../Data/POPSvsPOPCwithKCHARMM36set1.dat" using (1-$1):($2) with linespoints  notitle pt 4 ps 1.6 lw 4 lc rgb 'blue',\
 #     "../../Data/POPSvsPOPCwithKCHARMM36set2.dat" using (1-$1):($2) with linespoints  notitle pt 4 ps 1.6  lw 4 lc rgb 'blue',\
+#"../../Data/POPSvsPOPCwithMACROG.dat" using (1-$1):($2+0.0971539928598) with linespoints notitle pt 4 ps 1.6  lw 4 lc rgb 'pink',\
 
 
 unset title
@@ -57,9 +57,7 @@ set size 1.0,0.5
 set origin 1.0,0
 set xrange [0:1] 
 set xlabel "mole fraction of PS"
-plot      "../../Data/POPSvsPOPCwithMACROG.dat" using (1-$1):($3+0.154748709548) with linespoints  notitle  pt 4 ps 1.6  lw 4 lc rgb 'pink',\
-     "../../Data/POPSvsPOPCwithMACROG.dat" using (1-$1):($4+0.154748709548) with linespoints  notitle  pt 4 ps 1.6  lw 4 lc rgb 'pink',\
-     "../../Data/POPSvsPOPC.dat" using (1-$1):($3+0.0134848) with linespoints  notitle pt 4 ps 1.6  lw 4 lc rgb 'black',\
+plot "../../Data/POPSvsPOPC.dat" using (1-$1):($3+0.0134848) with linespoints  notitle pt 4 ps 1.6  lw 4 lc rgb 'black',\
      "../../Data/POPSvsPOPC.dat" using (1-$1):($4+0.0134848) with linespoints  notitle pt 4 ps 1.6  lw 4 lc rgb 'black',\
      "../../Data/POPSvsPOPCwithNACHARMM36.dat" using (1-$1):($3+0.102864) with linespoints  notitle  pt 6 ps 1.6  lw 4 lc rgb 'blue',\
      "../../Data/POPSvsPOPCwithNACHARMM36.dat" using (1-$1):($4+0.102864) with linespoints  notitle  pt 6 ps 1.6  lw 4 lc rgb 'blue',\
@@ -73,6 +71,8 @@ plot      "../../Data/POPSvsPOPCwithMACROG.dat" using (1-$1):($3+0.154748709548)
 #     "../../Data/POPSvsPOPCwithKCHARMM36set1.dat" using (1-$1):($4) with linespoints  notitle  pt 4 ps 1.6  lw 4 lc rgb 'blue',\
 #     "../../Data/POPSvsPOPCwithKCHARMM36set2.dat" using (1-$1):($3) with linespoints  notitle  pt 4 ps 1.6  lw 4 lc rgb 'blue',\
 #     "../../Data/POPSvsPOPCwithKCHARMM36set2.dat" using (1-$1):($4) with linespoints  notitle  pt 4 ps 1.6  lw 4 lc rgb 'blue',\
+#     "../../Data/POPSvsPOPCwithMACROG.dat" using (1-$1):($3+0.154748709548) with linespoints  notitle  pt 4 ps 1.6  lw 4 lc rgb 'pink',\
+#"../../Data/POPSvsPOPCwithMACROG.dat" using (1-$1):($4+0.154748709548) with linespoints  notitle  pt 4 ps 1.6  lw 4 lc rgb 'pink',\
 
 
 
