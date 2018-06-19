@@ -532,14 +532,29 @@ Figure \ref{glycerol_buslaev}.
 
 
 \subsection{Counterion binding to lipid bilayers containing PS lipids}
-Since systems with negatively charged PS lipids always contain counterions
-and the ion binding presumably affects the PS headgroup
-order parameters, the discussion of ion binding affinity and
-headgroup structure cannot be separated as done previously
-for PC lipids \cite{botan15,catte16}. The density profiles
-of counterions along membrane normal from different simulations
-show significant binding of counterions in bilayers in all
-models in Fig. \ref{NAdensPOPS}.
+Membranes containing PS lipids are always accomppanied with counterions, which
+modulate electrostatic interactions between lipids and other biomolecules. 
+Counterions are also suggested screen the repulsion between charged lipid headgroups 
+in MD simulations and reduce the area per lipid of PS bilayers to be smaller than in PC
+bilayers~\cite{pandit02,mukhopadhyay04,pedersen06}. 
+The counterion density profiles along membrane normal 
+show significant differences between simulation models (Fig. \ref{NAdensPOPS}).
+The strongest counterion binding, i.e., the lowest concentrations in bulk water,
+are observed in MacRog, Berger and Lipid17/JC simulations.
+CHARMM36, CHARMM36ua and Gromos-CKP models exhibit two local maxima in counterion
+density, while a single maxima is observed in the other models. 
+\todo{More detailed discussion may be possible after comparing monovalent ion binding
+to bilayers between CHARMM simulations and experiments.}
+Area per lipid is in agreement with experiments \cite{pan14} only
+in the Gromos-CKP models, while other models give significantly lower values (Fig. \ref{NAdensPOPS}).
+The difference cannot be explained by the electrostatic screening of the headgroup repulsion due to 
+counterion binding because CHARMM36, CHARMM36ua and Slipid models give
+smaller area per lipid than Gromos-CKP models with similar counterion binding affinity.
+%The proposed trend is observed for Lipid17 model,
+%for which the Joung-Cheatham ions give higher affinity and smaller area
+%per molecule. However, the trend is not observed when comparing accross different
+%force fields. For example, CHARMM36ua and MacRog give similar area per molecule
+%but binding affinity is significantly higher in MacRog. 
 \begin{figure}[]
   \centering
   \includegraphics[width=9.0cm]{../Figs/NAdensPOPS.eps}
@@ -548,37 +563,10 @@ models in Fig. \ref{NAdensPOPS}.
     simulations with different force fields.
   }
 \end{figure}
-Differences are, however,
-observed in the total binding affinity and in the shape of density profiles.
-Comparison of bulk concentrations suggests that strongest binding
-is observed in MacRog, Berger and Lipid17 models, respectively.
-Other models gives roughly similar total binding affinity
-based on rough comparison of bulk concentrations.
-In CHARMM36, CHARMM36ua and Gromos-CKP models two maxima are observed
-in sodium density plots, possible corresponding binding to phoshate
-and carboxylic grops in the PS headgroup. In other models only
-a single maxima is observed. \todo{More quantitative analysis of
-binding positions and affinity may be useful.}
 
-Based on previous simulation results it has been suggested that
-the counterion binding and concomitant screening of headgroup repulsion
-leads to smaller area per lipid in PS lipid bilayers than in PC
-bilayers \cite{pandit02,mukhopadhyay04,pedersen06}. Therefore we also show the area per lipid from different models
-in Fig. \ref{NAdensPOPS}. The proposed trend is observed for Lipid17 model,
-for which the Joung-Cheatham ions give higher affinity and smaller area
-per molecule. However, the trend is not observed when comparing accross different
-force fields. For example, CHARMM36ua and MacRog give similar area per molecule
-but binding affinity is significantly higher in MacRog. On the other hand,
-Gromos-CKP models gives a larger area per lipid than other models, being only
-in agreement with experiments \cite{pan14}, but the binding affinity is comparable
-to the CHARMM36, CHARMM36us and Slipids, which give smaller are per molecule.
-
-In order to compare the sodium interaction with PS containing membranes between
-experiments and simulations, Fig. \ref{PSresponseTONaCl} shows the headgroup
-order parameters of POPC and POPS measured from 5:1 mixture as a
-function of different monovalent ions added to the buffer.
-The experimental experimental results \cite{roux86} are compared with different simulation
-models.
+To evaluate counterion binding in different simulation against experimental data~\cite{roux90},
+we plot the headgroup order parameters measured from POPC:POPS 5:1 mixture
+as a function of function of different monovalent ions added to the buffer (Fig. \ref{PSresponseTONaCl}). 
 \begin{figure*}[]
   \centering
   \includegraphics[width=18.0cm]{../Figs/CHANGESwithMONVALENTwithPS.eps}
