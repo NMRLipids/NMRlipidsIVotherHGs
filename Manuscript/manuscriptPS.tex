@@ -564,9 +564,31 @@ smaller area per lipid than Gromos-CKP models with similar counterion binding af
   }
 \end{figure}
 
-To evaluate counterion binding in different simulation against experimental data~\cite{roux90},
+To evaluate counterion binding in different simulation models against experimental data~\cite{roux90},
 we plot the headgroup order parameters measured from POPC:POPS 5:1 mixture
-as a function of function of different monovalent ions added to the buffer (Fig. \ref{PSresponseTONaCl}). 
+as a function of different monovalent ions added to the buffer (Fig. \ref{PSresponseTONaCl}). 
+Experimental order parameter data for POPC headgroup in the mixture is available as a function
+of LiCl and KCl concentrations, while POPS headgroup order parameters are measured also
+as a function of NaCl. Lithium interacts more strongly with PS headgroups than other monovalent 
+ions~\cite{hauser83,hauser85,roux86,mattai89,roux90}, as also observed for PC headgroups~\cite{cevc90}. 
+This is evident also in the changes of PS headgroup order parameters, which decrease with the addition of lithium 
+but increase with the addition of sodium or potassium (Fig. \ref{PSresponseTONaCl}). 
+POPC headgroup order parameters exhibit a clear decrease as a function of LiCl concentration
+but only modest changes as a function of KCl concentration, indicating singificant 
+Li$^+$ binding but only weak Na$^+$ binding to the mixture when interpreted using the
+electrometer concept~\cite{akutsu81,altenbach84,seelig87}. In simulations with the
+Berger model, the headgroup order parameter response of POPC
+to the added NaCl is similar to the experiments of LiCl,
+indicating overestimated binding affinity of sodium, in line with the results for PC bilayers \cite{catte16}.
+Indeed, the sodium density profile shows a significant binding peak in the 
+Berger model (Fig. \ref{CIdensPSOCmixt}). Potassium binding in the MacRog simulation
+is significantly weaker  (Fig. \ref{CIdensPSOCmixt}) and the headgroup order parameter 
+changes are also in better agreement with simulations (Fig. \ref{PSresponseTONaCl}).
+\todo{Discussion about Lipid17 to be written when we have the density profiles.}
+All the tested models overestimate the changes of POPS headgroup order parameters as
+a function of monovalent ions (Fig. \ref{PSresponseTONaCl}), suggesting that
+model development is necessary to interpret the PS headgroup-ion interactions 
+from MD simulations.
 \begin{figure*}[]
   \centering
   \includegraphics[width=18.0cm]{../Figs/CHANGESwithMONVALENTwithPS.eps}
@@ -578,28 +600,9 @@ as a function of function of different monovalent ions added to the buffer (Fig.
     in PS headgroup (bottom, right), the y-axis is tranferred with the same value for both order parameters such that the lower order
     parameter value is at zero.
   }
-  \todo{The upcoming results from Lipid17 have been mentioned in the blog:
-    http://nmrlipids.blogspot.com/2017/12/nmrlipids-iv-current-status-and.html?showComment=1522151331118\#c5876812436739342658} \\
   \todo{CHARMM36 results for this plot would be highly useful.}
 \end{figure*}
-In line with the trend observed for bilayers in the absence of negatively
-charged lipids \cite{??}, the POPC headgroup order parameter response to lithium ions is
-significantly larger than to potassium, indicating stronger binding of lithium
-ions to lipid bilayers. The unique nature of lithium is also evident in the
-response of PS headgroup order parameters to bounds ions, which decrease
-with the addition of lithium or divalent cations but increase with the
-addition of sodium or potassium. The headgroup order parameter response
-to the added NaCl in the Berger model is similar to the experiments of LiCl,
-except for the $\alpha$ carbon of POPS for which the change is overestimated
-with the order of magnitude. The results suggests that the binding affinity
-of sodium is overestimated by the Berger model, in line with the previous results \cite{catte16},
-and that the response of $\alpha$ carbon of POPS to the added sodium
-is significantly overestimated. The response of POPC to the added potassium
-in MacRog model is only slightly overestimated, in contrast to the response
-of POPS where order of magnitude overestimations of reposonse are observed. 
-In conclusion, it seems that the response of PS headgroup to bound cations
-is not correctly captured in the tested models.
-\todo{Finish the discussion when more models are available}
+
 
 \begin{figure}[]
   \centering
@@ -614,49 +617,34 @@ is not correctly captured in the tested models.
 
 
 \subsection{Headgroup structure in PS and PC mixtures}
-Cellular membranes often compose of mixtures of zwitterionic and negatively
-charged lipids. The response of PC headgroup to mixtures of differently charged
-lipids are collected from different experiments in Fig. \ref{HGorderparametersPCvsPEPSPGchol}.
-As expected from the electrometer concept \cite{seelig87}, the headgroup 
-order parameters increase with the addition of negatively charged PS and PG lipids,
-decrease when mixed with positively charged surfactants and
-are less affected by the addition of zwitterionic PE lipids or cholesterol.
-In addition to the results summarized in Fig. \ref{HGorderparametersPCvsPEPSPGchol},
-also mixtures of PC with negatively charged PI, CL, PA, and zwitterionic SM
-follow the eletrometer concept \cite{scherer87}.
+Dilution of PS lipid bilayers with PC lipids reduces propensity for the formation of
+strong complexes with multivalent ions and is proposed to make PS headgroups 
+less rigid~\cite{browning80,buldt81,roux90,roux91}. Therefore, the intermolecular
+interactions at the headgroup region seems to determine important physical properties 
+of mixed lipid bilayers. The headgroup order parameters of POPC increase in experiments 
+with increasing amount of POPS in the mixed lipid bilayer (Fig.~\ref{HGorderparametersPCvsPS})~\cite{scherer87}. 
+This behaviour is generally observed when negatively charged lipids or surfactants 
+are mixed with PC lipids~\cite{scherer87,scherer89} and can be understood by the 
+tilting of lipid headgroup more parallel to the membrane plane according to
+the electrometer concept \cite{seelig87}. The headgroup order parameters of PS lipids
+shift closer to zero when bilayer is diluted with PC lipids in 
+experiments (Fig.~\ref{HGorderparametersPCvsPS})~\cite{browning80,scherer87,roux90},
+which is intepreted to indicate reduced rigidity~\cite{browning80,buldt81}.
 
-%Also the Ca2+ binding affinity to bilayers containing
-%PS lipids is measured from mixtures with PC, because pure PS
-%bilayers exhibit instant transition to the ordered phase with the
-%addition of the ions.
-%Therefore, the characterization of mutual interactions
-%between PC and PS lipid headgroups is necessary in order to
-%understand PS lipids in biological environments.
-
-Fig. \ref{HGorderparametersPCvsPS} shows the PC and PS headgroup order parameters
-from POPC:POPS mixtures with various mole fractions from 
-simulations and experiments \cite{scherer87,roux90}.
-The experimentally observed increase of PC headgroup order parameters with the increasing
-amount of negatively charged PS lipid is reproduced in
-MacRog simulations with potassium counterions, but not in CHARMM36 simulations
-with potassium or sodium conterions. The results can be
-understood from the counterion density distributions shown in Fig. \ref{CIdensPSOCmixt}.
-Both counterions are more strongly bound to bilayers in
-CHARMM36 simulations than potassium in MacRog simulation.
-The cation binding probably neutralizes the effect of negatively
-charged lipids in CHARMM36 simulations, while the
-weaker binding of potassium in MacRog simulations enables the
-increase of order parameters with the added amount of PS.
-\todo{This discussion will be finalized when we have the
-results for monovalent ions also from other simulations.}
-
-%$\beta$-carbon of POPC decreases and almost negligible increase is 
-%seen in $\alpha$ order parameter with the addition of PS lipid 
-%This may indicate incorrect interactions between PC and PS headgroups
-%in simulations. On the other hand, the previously reported overestimated
-%ion binding affinity may also play a role, as the amount of counterions
-%is increasing with PS.
-%\todo{Data from other force fields to be collected before discussion can be finalized.}
+The increase of POPC headgroup order parameters with the increasing
+amount of negatively charged POPS lipid is reproduced in
+MacRog simulations with potassium counterions, but not in 
+Berger simulations with sodium or in CHARMM36 simulations
+with potassium or sodium conterions (Fig. \ref{HGorderparametersPCvsPS}). 
+The observations can be explained using the electrometer concept.
+The Berger simulation exhibits very strong sodium binding (Fig. \ref{CIdensPSOCmixt}), 
+which surpasses the effect of negatively charged lipids as the amount of
+counterions increase with increasing amount of PS.
+In CHARMM36 simulations, the counterion binding neutralizes the effect
+of PS and the headgroup order parameters are not changed with increasing amount
+of PS. Finally, the weak binding of potassium in the MacRog simulations
+enables the increase of order parameters with the added amount of PS 
+(Figs. \ref{HGorderparametersPCvsPS} and \ref{CIdensPSOCmixt}).
 
 \begin{figure*}[]
   \centering
@@ -704,6 +692,15 @@ PS headgroup structures and mutual interactions with PC lipids.
 \todo{This discussion should be updated.}
 
 \subsection{Ca$^{2+}$ binding affinity in bilayers with negatively charged PS lipids}
+
+%Also the Ca2+ binding affinity to bilayers containing
+%PS lipids is measured from mixtures with PC, because pure PS
+%bilayers exhibit instant transition to the ordered phase with the
+%addition of the ions.
+%Therefore, the characterization of mutual interactions
+%between PC and PS lipid headgroups is necessary in order to
+%understand PS lipids in biological environments.
+
 
 The headgroup order parameters of PC lipids
 decrease proportionally to the bound positive
@@ -848,20 +845,6 @@ Simulation of POPC at 310 K was taken directly from Ref. \citenum{ollila07a}.
 \subsection{MacRog}
 \todo{To be written by Javanainen and Piggot}
 
-\section{PC lipid headgroup response to different mixtures in experiments}
-As shown in Fig. \ref{HGorderparametersPCvsPEPSPGchol}, order parameters of PC
-headgroup behave in various lipid mixtures as expected from the electrometer concept \cite{seelig87, scherer87},
-i.e., order parameters increase when anionic lipids are mixed with PC and decrease with cationic
-surfactants. The changes with the addition of neutral lipids is significantly smaller.
-\begin{figure}[]
-  \centering
-  \includegraphics[width=8.0cm]{../Figs/HGorderparametersPCvsPEPSPGchol.eps}
-  \caption{\label{HGorderparametersPCvsPEPSPGchol}
-    PC headgroup order parameters from experiments of mixtures with
-    PE, PS, PG and cholesterol \cite{scherer87,scherer89,ferreira13}.
-    Signs are determined as discussed in \cite{botan15,ollila16}.
-  }
-\end{figure}
 
 \section{Cation binding affinity to lipid bilayers with different amount of charge}
 
