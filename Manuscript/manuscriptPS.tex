@@ -656,6 +656,11 @@ enables the increase of order parameters with the added amount of PS
     (signs are determined as discussed in \cite{botan15,ollila16}).
     Experimental values for POPS in pure bilayer and in mixture are  
     measured in this work and in Ref. \citenum{roux90} at 298K, respectively.
+    Since the experimental data of POPS in pure and diluted mixture come from
+    different experimental sets (13C NMR in this work and 2H NMR from Ref. \citenum{roux90}),
+    the experimental change of the order parameter is less accurate than in typical measurements
+    where same technique is used in all conditions, see discussion about qualitative and quantitative 
+    accuracy in Ref. \citenum{ollila16}.
     For POPC (left panel) the zero point of y-axis is set to the value of pure bilayer.
     For $\beta$-carbon of POPS (right panel, top) the zero point of y-axis is
     set to the value from POPC:POPS (5:1) mixture.
@@ -669,27 +674,22 @@ enables the increase of order parameters with the added amount of PS
   \todo{MacRog simulations of pure POPS with potassium counterions only would be useful for this and other plots.}
 \end{figure*}
 
-Also the headgroup order parameters of POPS mixed with varying amounts of POPC
-from simulations and experiments \cite{borle85,roux90} are shown in Fig. \ref{HGorderparametersPCvsPS}.
-The $\beta$-carbon order parameter of POPS slightly decreases and positive 
-order parameter of $\alpha$-carbon slightly increases with increasing
-amount of PS lipids. This may indicate increasing order of the headgroup.
-\todo{The existing literature about this should be mentioned/discussed.}
-It should be, however, noted that the experimental data for pure POPS and
-POPC/POPS mixture come from different experimental sets, 13C NMR in this work
-and 2H NMR from Ref. \citenum{roux90}, respectively. Therefore the accuracy
-of the order parameter change is not as high as typically in the measurements
-of order parameter changes, see discussion about qualitative and quantitative 
-accuracy in Ref. \citenum{ollila16}. The changes of PS headgroup order parameters
-are not reproduced by the tested simulation models. The $\beta$-carbon order parameter
-increase with increasing amount of PS in CHARMM36 and MacRog simulations in contrast
-to the experimental data. The smaller $\alpha$-carbon order parameter increase in both
-simulation models with increasing amount of PS, while it is almost unchanged in experiments.
-The larger $\alpha$-carbon order parameter increase in MacRog and decrease in CHARMM36
-with increasing amount of PS, both model exhibiting a poor agreement with experiments. 
-Signifincant improvement in the MD simulation models are needed to interpret the
-PS headgroup structures and mutual interactions with PC lipids. 
-\todo{This discussion should be updated.}
+Oppositely to experiments, the headgroup order parameter of POPS shift away
+from zero in CHARM36 simulations when bilayer is diluted with POPC (Fig. \ref{HGorderparametersPCvsPS}).
+In lipid14/17 simulations, the POPS order parameter shift closer to zero when
+bilayer is diluted with POPC, but the numerical values of order parameters
+are too far from experiments to enable interpretation of the experimental data.
+Therefore, we conlcude that the force field development is necessary before
+MD simulations can be used to interpret the interactions between PC and PS headgroups.
+%The $\beta$-carbon order parameter
+%increase with increasing amount of PS in CHARMM36 and MacRog simulations in contrast
+%to the experimental data.
+%The smaller $\alpha$-carbon order parameter increase in both
+%simulation models with increasing amount of PS, while it is almost unchanged in experiments.
+%The larger $\alpha$-carbon order parameter increase in MacRog and decrease in CHARMM36
+%with increasing amount of PS, both model exhibiting a poor agreement with experiments. 
+
+
 
 \subsection{Ca$^{2+}$ binding affinity in bilayers with negatively charged PS lipids}
 
