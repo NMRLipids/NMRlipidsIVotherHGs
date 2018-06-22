@@ -350,6 +350,40 @@ Angular brackets point to the average over all sampled configurations.
 The number density profiles were calculated using {\it gmx density} tool
 from Gromacs sofware package \cite{gromacsMANUAL}.
 
+\subsection{Comparison of ion binding between simulations and experiments using the electrometer concept}
+
+The headgroup order parameters of PC lipids
+decrease proportionally to the bound positive
+charge in to a bilayer \cite{seelig87,catte16} and can be
+therefore used to measure the ion binding
+affinity. This molecular electrometer concept can
+be also applied to lipid bilayers with mixtures
+of PC and negatively charged lipids \cite{borle85,macdonald87,roux90}
+(see Fig. \ref{OrderParameterCHANGESWithCaClBELOW1M}).
+%This is demonstrated in Fig. %s \ref{OrderParametersWithCaCl},
+%\ref{OrderParametersWithCaClBELOW1M} and
+%using the previuosly reported experimental data
+%for mixtures with varying proportions of
+%negatively charged PS or PG lipids.
+%
+%the changes of PC headgroup order parameters %for PC headgroup $\alpha$ and $\beta$ carbons
+%as a function of CaCl$_2$ concentration are shown
+%
+% (see Fig. \ref{OrderParameterCHANGESWithCaClBELOW1M}).
+
+%PC headgroup order parameters increase when negatively charged
+%PS or PG are added to PC bilayer in the absense of added CaCl$_2$,
+%as expected based on electrometer concept \cite{seelig87}
+%(see Fig. \ref{OrderParametersWithCaClBELOW1M}).
+%In electrometer concept this is explained by the tilting of
+%headgroup more parallel to membrane normal \cite{??}.
+
+%Order parameters reach the values of pure PC bilayer close to CaCl$_2$ concentrations of $\sim$ 50-300mM.
+%At this point the Ca2+ binding presumably fully cancels the charge from negative lipids and
+%overcharging occurs above these concenterations.
+
+
+
 \section{Results and Discussion}
 
 \subsection{Headgroup and glycerol backbone order parameters measured from POPS lipid bilayer}
@@ -617,12 +651,15 @@ from MD simulations.
 
 
 \subsection{Headgroup structure in PS and PC mixtures}
-Dilution of PS lipid bilayers with PC lipids reduces propensity for the formation of
-strong complexes with multivalent ions and is proposed to make PS headgroups 
-less rigid~\cite{browning80,buldt81,roux90,roux91}. Therefore, the intermolecular
-interactions at the headgroup region seems to determine important physical properties 
-of mixed lipid bilayers. The headgroup order parameters of POPC increase in experiments 
-with increasing amount of POPS in the mixed lipid bilayer (Fig.~\ref{HGorderparametersPCvsPS})~\cite{scherer87}. 
+Dilution of PS lipid bilayers with PC lipids reduces the propensity
+of PS headgroup-multivalent ion complexes and is proposed to make PS
+headgroups less rigid~\cite{browning80,buldt81,roux90,roux91}.
+Therefore, the intermolecular interactions at the headgroup region seems
+to be important for the physical properties of mixed lipid bilayers.
+These interactions can be indirectly monitored by measuring the
+headgroup order parameters from PS:PC mixtures with different molar
+ratios. The headgroup order parameters of POPC increase in such experiments 
+with increasing amount of POPS (Fig.~\ref{HGorderparametersPCvsPS})~\cite{scherer87}. 
 This behaviour is generally observed when negatively charged lipids or surfactants 
 are mixed with PC lipids~\cite{scherer87,scherer89} and can be understood by the 
 tilting of lipid headgroup more parallel to the membrane plane according to
@@ -638,13 +675,13 @@ Berger simulations with sodium or in CHARMM36 simulations
 with potassium or sodium conterions (Fig. \ref{HGorderparametersPCvsPS}). 
 The observations can be explained using the electrometer concept.
 The Berger simulation exhibits very strong sodium binding (Fig. \ref{CIdensPSOCmixt}), 
-which surpasses the effect of negatively charged lipids as the amount of
+which surpasses the effect of negatively charged lipids as also the amount of
 counterions increase with increasing amount of PS.
 In CHARMM36 simulations, the counterion binding neutralizes the effect
 of PS and the headgroup order parameters are not changed with increasing amount
 of PS. Finally, the weak binding of potassium in the MacRog simulations
-enables the increase of order parameters with the added amount of PS 
-(Figs. \ref{HGorderparametersPCvsPS} and \ref{CIdensPSOCmixt}).
+enables the increase of order parameters with the increasing amount of
+negatively charged PS lipids (Figs. \ref{HGorderparametersPCvsPS} and \ref{CIdensPSOCmixt}).
 
 \begin{figure*}[]
   \centering
@@ -693,49 +730,15 @@ MD simulations can be used to interpret the interactions between PC and PS headg
 
 \subsection{Ca$^{2+}$ binding affinity in bilayers with negatively charged PS lipids}
 
-%Also the Ca2+ binding affinity to bilayers containing
-%PS lipids is measured from mixtures with PC, because pure PS
-%bilayers exhibit instant transition to the ordered phase with the
-%addition of the ions.
-%Therefore, the characterization of mutual interactions
-%between PC and PS lipid headgroups is necessary in order to
-%understand PS lipids in biological environments.
+Calcium ions form strong dehydrated molecular complexes with PS lipids,
+which can also lead to phase separation \cite{hauser77,kurland79,hauser85,feigenson86,mattai89,roux90,roux91}.
+Such complexes and phase separation are not observed in
+bilayers that are sufficiently diluted with PC
+lipids \cite{feigenson86,mattai89,roux90,roux91}.
+Therefore, the Ca2+ binding affinity to bilayers if often measured
+from POPC:POPS (5:1) mixtures \cite{roux90,roux91}.
 
-
-The headgroup order parameters of PC lipids
-decrease proportionally to the bound positive
-charge in to a bilayer \cite{seelig87,catte16} and can be
-therefore used to measure the ion binding
-affinity. This molecular electrometer concept can
-be also applied to lipid bilayers with mixtures
-of PC and negatively charged lipids \cite{borle85,macdonald87,roux90}
-(see Fig. \ref{OrderParameterCHANGESWithCaClBELOW1M}).
-%This is demonstrated in Fig. %s \ref{OrderParametersWithCaCl},
-%\ref{OrderParametersWithCaClBELOW1M} and
-%using the previuosly reported experimental data
-%for mixtures with varying proportions of
-%negatively charged PS or PG lipids.
-%
-%the changes of PC headgroup order parameters %for PC headgroup $\alpha$ and $\beta$ carbons
-%as a function of CaCl$_2$ concentration are shown
-%
-% (see Fig. \ref{OrderParameterCHANGESWithCaClBELOW1M}).
-
-
-
-%PC headgroup order parameters increase when negatively charged
-%PS or PG are added to PC bilayer in the absense of added CaCl$_2$,
-%as expected based on electrometer concept \cite{seelig87}
-%(see Fig. \ref{OrderParametersWithCaClBELOW1M}).
-%In electrometer concept this is explained by the tilting of
-%headgroup more parallel to membrane normal \cite{??}.
-
-%Order parameters reach the values of pure PC bilayer close to CaCl$_2$ concentrations of $\sim$ 50-300mM.
-%At this point the Ca2+ binding presumably fully cancels the charge from negative lipids and
-%overcharging occurs above these concenterations.
-
-
-The headgroup order parameter changes of POPC and POPS from POPC:POPS (5:1) mixtures
+The headgroup order parameter changes of POPC and POPS from 
 are shown in Fig. \ref{changesWITHCaClPS} as a function of Ca$^{2+}$ concentration from different
 simulations and experiments \cite{roux90}. 
 The ion density distributions from the simulations are shown in Fig. \ref{CAdensPCPSmixture}.
