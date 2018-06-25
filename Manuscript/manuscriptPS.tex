@@ -127,32 +127,26 @@ however, not available.
 
 Several classical molecular dynamics (MD) simulation studies are done
 to understand PS headgroups, their influence on lipid bilayer properties and
-interactions with ions \cite{vernier09,boettcher11,melcrova16,??}.
-However, the consesus has not been reached 
-due to the difficulties to interpret the experimental data \cite{??} and
-the inaccuracies in simulation models at the
-headgroup region \cite{botan15,catte16,ollila16}.
-
-
-
-%Details of negatively charged lipids and their interactions
-%with ions and proteins have been experimentally analyzed with
-%various spectroscopic methods \cite{borle85,macdonald87,roux90,seelig90,pan14,melcrova16,??}
-%NMR \cite{seelig90,??}, scattering \cite{pan14,??} and fluorescence spectroscopy
-%which are often complemented with classical MD simulations \cite{pan14,melcrova16,??}.
-
-
-Headgroup and glycerol backbone C-H bond order parameters
-calculated from MD simulations have been
-recently used to interpret the lipid structures in NMR experiments
-and to validate lipid structure and ion binding in simulations of
-PC lipid bilayers \cite{botan15,catte16,ollila16,ferreira16}.
-In this work we apply this approach to PS lipid headgroup
-in order to elucidate the structural details and ion binding
-to negatively charged lipids. The results are expected to elucidate
-also PS mediated signalling events because 
-glycerol backbone and headgroup structure and behaviour are similar
-in model membranes and in bacteria \cite{gally81,scherer87,seelig90}.
+interactions with ions \cite{vernier09,boettcher11,pan14,melcrova16,??}.
+However, the recent comparisons of PC lipid headgroup and glycerol backbone
+C-H bond order parameters calculated from different simulation models
+revealed that improvements in the current force fields are needed
+to correctly reproduce the headgroup structure and ion binding to
+lipid bilayers \cite{botan15,catte16,ollila16}. The ion binding affinity
+to POPC bilayer was then improved by implicitly including the electronic
+polarizability using the electronic continuum correction \cite{melcr18}.
+Here, we collect the set of experimentally measured lipid headgroup and
+glycerol backbone C-H bond order parameters, which can be used to
+evaluate the quality of headgroup structure and the ion binding affinity
+in MD simulations of lipid bilayers containing PS lipids. 
+The available MD simulation models of PS are then compared against
+the collected experimental data. The results pave the way for the
+development of MD simulation force fields that correctly describe
+PS lipid headgroup structure and its interactions with ions.
+Such models are expected to be useful in elucidating the biological
+role of PS and other lipid headgroups because glycerol backbone and
+lipid headgroups behave similarly in model membranes and in
+bacteria \cite{gally81,scherer87,seelig90}.
 
 
 %In NMRlipids I and II project we were looking for a MD model
