@@ -114,7 +114,7 @@ electrostatic interactions \cite{browning80,buldt81}.
 Multivalent cations and Li$^+$ are able to form strong
 dehydrated molecular complexes with PS lipids,
 while monovalent ions interact more weakly with PS
-containing bilayers \cite{hauser77,kurland79,hauser83,hauser85,feigenson86,mattai89,roux90,roux91,boettcher11}.
+containing bilayers \cite{hauser77,kurland79,eisenberg79,hauser83,dluhy83,hauser85,feigenson86,mattai89,roux90,roux91,boettcher11}.
 On the other hand, some studies propose that the specific binding
 affinity is similar to the negatively charged and zwitterionic lipids and that
 the increased cation binding to negatively charged lipid bilayer arise only due
@@ -127,7 +127,7 @@ however, not available.
 
 Several classical molecular dynamics (MD) simulation studies are done
 to understand PS headgroups, their influence on lipid bilayer properties and
-interactions with ions \cite{vernier09,boettcher11,pan14,melcrova16,??}.
+interactions with ions \cite{cascales96,pandit02,mukhopadhyay04,pedersen06,vernier09,boettcher11,molina12,venable13,pan14,vangaveti14,melcrova16}.
 However, the recent comparisons of PC lipid headgroup and glycerol backbone
 C-H bond order parameters calculated from different simulation models
 revealed that improvements in the current force fields are needed
@@ -376,7 +376,7 @@ see section \ref{electrometerFORmixtures} in the supplementary information.
 
 \section{Results and Discussion}
 
-\subsection{Headgroup and glycerol backbone order parameters measured from POPS lipid bilayer}
+\subsection{Headgroup and glycerol backbone order parameters POPS from $^{13}$C NMR}
 
 The INEPT and 2D R-PDLF experiments from POPS sample give well resolved spectras for all the
 carbons in headgroup and glycerol backbone region, except for g$_3$ for which the resolution
@@ -387,7 +387,7 @@ and a superposition of a large and a very small splitting for the $\alpha$-carbo
 The larger splitting gives a order parameter value of 0.09, while the numerical value
 from the small splitting cannot resolved with the available resolution.
 Since only the absolute values of the PS headgroup order parameters were measured
-previously \cite{browning80,roux91}, we used the S-DROSS experiment \cite{??} to determine the signs of
+previously \cite{browning80,roux91}, we used the S-DROSS experiment \cite{gross97} to determine the signs of
 the order parameters. The S-DROSS slice for the $\beta$-carbon (Fig. \ref{PShgSIGNSsimpson} D)) clearly shows that the
 order parameter is negative, which is confirmed by SIMPSON simulations.
 The beginning of the S-DROSS slice suggests that the higher order parameter of
@@ -490,32 +490,32 @@ available.
   \todo{Lipid17 and MacRog results should be added into this plot.}
 \end{figure}
 
-The headgroup order parameters of DOPS and POPS bilayers 
-from different simulation models are compared with the experimental
-data in Fig. \ref{HGorderParametersPS}. Subjective ranking
-of the quality of the models is shown in Fig. \ref{comparisonTablePS}.
-The tested models perform generally less well than in the previous
-study for PC headgroup~\cite{botan15} and none of the models 
-reproduce the experimental order parameters within
-experimental error bars.
+None of the tested models reproduce the experimental headgroup and 
+glycerol backbone order parameters of DOPS and POPS within the
+experimental error bars (Fig. \ref{HGorderParametersPS}). 
+The tested models perform generally less well than the models tested
+for PC headgroup in the previous study (Fig. 2 in Ref.~\cite{botan15}),
+which is also evindent from the comparison between subjective rankings
+of the model quality for the headgroup and glycerol backbone 
+(Fig. \ref{comparisonTablePS} and Fig. 4 in Ref.~\cite{botan15}).
 Therefore, the models cannot be straightforwardly used to interpret the
-structure of PS headgroup. However, the differences between PC and PS headgroups
-are partially reproduced by some of the models.
-
-The two best performing models for the $\alpha$ and $\beta$-carbons of
-PS, Slipids and CHARMM36, reproduce the large forking in the $\alpha$-carbon
-and the Slipids model gives also a good agreement with experiments for
-the $\beta$-carbon order parameter in both PC and PS headgroups
-(Fig. \ref{HGorderParametersPS} and Ref.~\citenum{botan15}).
-Interestingly, the dihedral angle distributions of CHARMM36
-and Slipids in Fig.~\ref{dihedralsHG} share significant similarities
-in the headgroup region. However, the experimental order parameters in the
-glycerol backbone region are not well reproduced by the Slipids model,
-which was also the case in for PC lipids \cite{botan15}.
-This difference probably arises from the differences in
-the dihedral angle distributions of C1-C2-C3-O31 and C2-C3-O31-C31
-in Figure \ref{dihedralsGLY}, which are also illustrated in
-Figure \ref{glycerol_buslaev}. 
+structural differences between PC and PS headgroups. 
+However, the differences are partially reproduced by the two best performing 
+models for the $\alpha$ and $\beta$-carbons of PS headgroups, Slipids and CHARMM36.
+Both reproduce the larger forking of the $\alpha$-carbon 
+and the Slipids model reproduces also the lower of the $\beta$-carbon order 
+in parameter in the PS headgroups (Fig. \ref{HGorderParametersPS} and Fig. 2 in Ref.~\citenum{botan15}).
+Interestingly, the dihedral angle distributions 
+%of CHARMM36 and Slipids in 
+in these two models share significant similarities in the headgroup region (Fig.~\ref{dihedralsHG}). 
+\todo{Notation of dihedrals in Fig.~\ref{dihedralsHG} should be made somehow combatible with the
+chemical structures in Fig.~\ref{HGorderParameters} and the discussion should be then finished.}
+However, the glycerol backbone order parameters in Slipids model
+significantly differ from CHARMM36 results and experiments (Fig. \ref{HGorderParametersPS}),
+which can be related to the differences in the dihedral angle distributions 
+of C1-C2-C3-O31 and C2-C3-O31-C31 (Fig.~\ref{dihedralsGLY}). 
+Similar difference was previously observed for PC lipids \cite{botan15}
+and the conformational differences are illustrated in Figure \ref{glycerol_buslaev}. 
 
 %\todo{Discussion is to be finished.
 %  One possible conclusion could be the following:
@@ -536,15 +536,6 @@ Figure \ref{glycerol_buslaev}.
 
 
 \todo{Also the discussion about POPS/OPPS issue with MacRog model should be added.}
-
-\begin{figure}[]
-  \centering
-  \includegraphics[width=9.0cm]{../Figs/glycerol_buslaev.png}
-  \caption{\label{glycerol_buslaev}
-    Snapshots overlayed from different simulations for glycerol backbone region
-    by Pavel Buslaev.
-  }
-\end{figure}
 
 %
 %The total deviation from the experiments ($\Sigma$ in Fig. \ref{comparisonTablePS})
