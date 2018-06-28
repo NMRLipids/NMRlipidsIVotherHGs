@@ -75,9 +75,26 @@ Prague 6, Czech Republic}
 
 \begin{abstract}
   % insert abstract here
-  Primarily measured but also simulated NMR order parameters will be collected also for other than phophatidylcholine
-  (these are discussed in NMRlipids I) headgroup. The information will be used to understand structural differences between 
-  different lipid molecules in bilayers.
+Phosphatidylserine (PS) is the most common negatively
+charged lipid in eykaryotic membranes.
+PS lipids interact with signaling and other proteins via
+electrostatic interactions and direct binding, and induce
+membrane fusion and phase separation together with calcium ions.
+Molecular details of these phenomena are not well understood
+because accurate models to interpret the experimental data has not
+been available. Here, we collect a set of experimental NMR data which
+could be used together with molecular dynamics (MD) simulations
+to interpret the lipid headgroup structures and details of ion binding
+in pure and mixed PS and PS:PC lipid bilayers. Aiming to interpret the
+data, we use the open collaboration method to go through the available MD simulation models for PS lipids.
+However, none of the models reproduce the experimental data with sufficient
+accuracy to interpet the structural details of lipid headgroups or
+ion binding details in lipid bilayers containing PS lipids.
+In contrast to PC lipids, the tested MD simulation models do not
+correctly reproduce the qualitative response of PS lipid headgroups
+to the bound ions or changes in the lipid composition. 
+Our results pave the way for the model improvement to correctly
+describe negatively charged membranes and their interactions with ions.
 \end{abstract}
 
 %\pacs{}% insert suggested PACS numbers in braces on next line
@@ -224,33 +241,7 @@ bacteria \cite{gally81,scherer87,seelig90}.
 %were found to be significantly overestimated in several models and 
 %none of the available models was able to Ca$2+$ 
 
-\section{Methods}
 
-\subsection{Solid state NMR experiments}
-The magnitude and signs of the C-H bond order parameters in
-headgroup and glycerol backbone were measured
-using natural abundance $^{13}$C solid state NMR spectroscopy as
-described previously \cite{ferreira13,ferreira16}.
-Shortly, the absolute values of the order parameters were determined from the dipolar splittings
-given by the indirect dimension of 2D R-PDFL experiment \cite{dvinskikh04} and
-the signs were measured using S-DROSS experiments \cite{gross97}.
-
-\todo{Details of the used spectrometer and maybe some other details should be given.} \\
-\todo{Sample preparation should be described.} \\
-\todo{How is the peak assignment done?}
-
-
-\subsection{Molecular dynamics simulations}
-Molecular dynamics simulation data was collected using
-the Open Collaboration method \cite{botan15}.
-The NMRlipids project blog (\url{nmrlipids.blogspot.fi}) and
-the GitHub repository (\url{github.com/NMRLipids/NMRlipidsIVotherHGs})
-were used as the communication platforms.
-The simulated systems are listed in Table \ref{IONsystems} and
-simulation details are given in the SI.
-The simulation data is also indexed in the
-searchable database (\url{nmrlipids.fi}),
-and in the NMRlipids/MATCH GitHub repository (\url{https://github.com/NMRLipids/MATCH}).  
 \begin{table*}[!htb]
 %\begin{sidewaystable*}[!p]
 \centering
@@ -333,6 +324,35 @@ and in the NMRlipids/MATCH GitHub repository (\url{https://github.com/NMRLipids/
 %\end{sidewaystable*} 
 
 \end{table*}
+
+\section{Methods}
+
+\subsection{Solid state NMR experiments}
+The magnitude and signs of the C-H bond order parameters in
+headgroup and glycerol backbone were measured
+using natural abundance $^{13}$C solid state NMR spectroscopy as
+described previously \cite{ferreira13,ferreira16}.
+Shortly, the absolute values of the order parameters were determined from the dipolar splittings
+given by the indirect dimension of 2D R-PDFL experiment \cite{dvinskikh04} and
+the signs were measured using S-DROSS experiments \cite{gross97}.
+
+\todo{Details of the used spectrometer and maybe some other details should be given.} \\
+\todo{Sample preparation should be described.} \\
+\todo{How is the peak assignment done?}
+
+
+
+\subsection{Molecular dynamics simulations}
+Molecular dynamics simulation data was collected using
+the Open Collaboration method \cite{botan15}.
+The NMRlipids project blog (\url{nmrlipids.blogspot.fi}) and
+the GitHub repository (\url{github.com/NMRLipids/NMRlipidsIVotherHGs})
+were used as the communication platforms.
+The simulated systems are listed in Table \ref{IONsystems} and
+simulation details are given in the SI.
+The simulation data is also indexed in the
+searchable database (\url{nmrlipids.fi}),
+and in the NMRlipids/MATCH GitHub repository (\url{https://github.com/NMRLipids/MATCH}).
 
 The C-H bond order parameters were calculated directly
 from the definition
