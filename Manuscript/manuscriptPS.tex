@@ -54,16 +54,21 @@
 % \affiliation command applies to all authors since the last \affiliation command. 
 % The \affiliation command should follow the other information.
 
-\author{O. H. Samuli Ollila}
+\author{Tiago M. Ferreira}
+\affiliation{Halle, Germany}
+\author{Josef Melcr}
+\affiliation{Institute of Organic Chemistry and Biochemistry,
+Academy of Sciences of the Czech Republic, 
+Prague 6, Czech Republic}
+\author{O. H. Samuli Ollila  \todo{Authorlist is not yet complete}}
 \email[]{samuli.ollila@helsinki.fi}
 %\homepage[]{Your web page}
 \affiliation{Institute of Organic Chemistry and Biochemistry,
 Academy of Sciences of the Czech Republic, 
 Prague 6, Czech Republic}
 \affiliation{Institute of Biotechnology, University of Helsinki}
-
-\author{NMRlipids collaboration \todo{Authorship query to be sent soon.}}
-\affiliation{nmrlipids.blogspot.fi} 
+%\author{NMRlipids collaboration}
+%\affiliation{nmrlipids.blogspot.fi} 
 
 
 % Collaboration name, if desired (requires use of superscriptaddress option in \documentclass). 
@@ -144,7 +149,7 @@ however, not available.
 
 Several classical molecular dynamics (MD) simulation studies are done
 to understand PS headgroups, their influence on lipid bilayer properties and
-interactions with ions \cite{cascales96,pandit02,mukhopadhyay04,pedersen06,vernier09,boettcher11,molina12,venable13,pan14,vangaveti14,melcrova16}.
+interactions with ions \cite{cascales96,pandit02,mukhopadhyay04,pedersen06,vernier09,boettcher11,molina12,jurkiewicz12,venable13,pan14,vangaveti14,melcrova16}.
 However, the recent comparisons of PC lipid headgroup and glycerol backbone
 C-H bond order parameters calculated from different simulation models
 revealed that improvements in the current force fields are needed
@@ -275,7 +280,7 @@ bacteria \cite{gally81,scherer87,seelig90}.
     POPS/Na$^+$  & CHARMM36ua \cite{??} \todoi{Correct citation for CHARMMua DOPS}  &0 & 0 & 128 & 4480 & 0  & 298  & 500 & 100 & \cite{charmm36uaPOPS298K} \\
     POPS/Na$^+$  & Slipids \cite{jambeck13}        &0 & 0        & 128 & 4480 & 0  & 298  & 500 & 100 & \cite{slipidsPOPS298K} \\
     POPS/Na$^+$  & Berger \cite{??}        &0 & 0        & 128 & 4480 & 0  & 298  & 500 & 100 & \cite{bergerPOPS298K} \\
-    POPS/Na$^+$  & MacRog \cite{maciejewski14}  &0 & 0        & ? & ?? & 0  & ?  & ? & ?  & \cite{??} \todoi{Data to be added by Piggot} \\
+    POPS/Na$^+$  & MacRog \cite{maciejewski14}  &0 & 0        & 128 & 4480 & 0  & 298  & 500 & 100  & \cite{macrogPOPS298Kcorrect} \\
     OPPS/Na$^+$  & MacRog \cite{maciejewski14}  &0 & 0        & 128 & 5120 & 0  & 298  & 200 & 100 & \cite{macrogPOPS298K} \\
     POPS/Na$^+$  & GROMOS-CKPM \cite{??} \todoi{Correct citation(s) for CKP.} &0 & 0  & 128 & 4480 & 0  & 298  & 500 & 100 & \cite{ckp1POPS303K} \\
     POPS/Na$^+$  & GROMOS-CKP \cite{??} \todoi{Correct citation(s) for CKP.} &0 & 0  & 128 & 4480 & 0  & 298  & 500 & 100 & \cite{ckp2POPS303K} \\
@@ -708,7 +713,9 @@ negatively charged PS lipids (Figs. \ref{HGorderparametersPCvsPS} and \ref{CIden
   }
   \todo{Simulation of CHARMM36 at 298K should be maybe rerun with Gromacs 5.} \\
   \todo{Simulation of pure POPC at 298K with Lipid14 would be useful for this plot (only at 303 K is available from NMRlipids I)} \\
-  \todo{MacRog simulations of pure POPS with potassium counterions only would be useful for this and other plots.}
+  \todo{MacRog simulations of pure POPS with potassium counterions only would be useful for this and other plots.} \\
+  \todo{The data for Gromos-CKP by Tom Piggot: http://nmrlipids.blogspot.com/2017/03/nmrlipids-iv-headgroup-glycerol.html?showComment=1528213129976\#c8319083196182661431
+    should be added into the plot.}
 \end{figure*}
 
 Oppositely to experiments, the headgroup order parameter of POPS shift away
