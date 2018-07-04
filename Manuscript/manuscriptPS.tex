@@ -56,6 +56,12 @@
 
 \author{Tiago M. Ferreira}
 \affiliation{Halle, Germany}
+\author{Matti Javanainen}
+\affiliation{Institute of Organic Chemistry and Biochemistry,
+Academy of Sciences of the Czech Republic, 
+Prague 6, Czech Republic}
+\author{Markus Miettinen}
+\affiliation{Potsdam, Germany}
 \author{Josef Melcr}
 \affiliation{Institute of Organic Chemistry and Biochemistry,
 Academy of Sciences of the Czech Republic, 
@@ -250,42 +256,42 @@ bacteria \cite{gally81,scherer87,seelig90}.
 \begin{table*}[!htb]
 %\begin{sidewaystable*}[!p]
 \centering
-\caption{List of MD simulations without additional salt.
+\caption{List of MD simulations of pure PS bilayers without additional salt.
    CKPM refers to the version with Berger/Chiu NH$_3$ charges compatible with Berger
    (i.e. the NH$_3$ group having the same charges as in the N(CH$_3$)$_3$ group of the PC lipids;
-   'M' stands for Mukhopadhyay after the first published Berger-based PS simulation that used these charges)
+   'M' stands for Mukhopadhyay after the first published Berger-based PS simulation that used these charges~\cite{mukhopadhyay04})
    and CKP refers to the version with more Gromos compatible version
    (i.e. the charges for the NH$_3$ group taken from the lysine side-chain).
    %   these correspond the concentrations reported in the experiments by Akutsu et al.~\cite{akutsu81}.
    %   The lipid force fields named as in our previous work~\cite{botan15}.
 }\label{IONsystems}
 %begin{minipage}[t]{\textwidth}
-\begin{tabular}{l c c r r r r r r c c}
+\begin{tabular}{l c r r r r r c c}
   %\hline
   % some footnotes are not visible in typeset-MS (pdf)
- lipid/counter-ions & force field for lipids / ions & NaCl (mM) & CaCl$_2$\,(mM) &  \footnote{Number of lipid molecules with largest mole fraction}N$_{\rm l}$   &  \footnote{Number of water molecules}N$_{\rm w}$ \todoi{Should confirm that the amounts of water in experiments matched those in simulations.}   & \footnote{Number of additional cations}N$_{\rm c}$  & \footnote{Simulation temperature}T (K)  & \footnote{Total simulation time}t$_{{\rm sim}}$(ns) & \footnote{Time used for analysis}t$_{{\rm anal}}$ (ns) &   \footnote{Reference for simulation files}files\\
+ lipid/counter-ions & force field for lipids / ions & \footnote{Number of lipid molecules with largest mole fraction}N$_{\rm l}$   &  \footnote{Number of water molecules}N$_{\rm w}$  & \footnote{Number of additional cations}N$_{\rm c}$  & \footnote{Simulation temperature}T (K)  & \footnote{Total simulation time}t$_{{\rm sim}}$(ns) & \footnote{Time used for analysis}t$_{{\rm anal}}$ (ns) &   \footnote{Reference for simulation files}files\\
   \hline
-    DOPS/Na$^+$  & CHARMM36 \cite{venable13}       &0 & 0 & 128 & 4480 & 0  & 303  & 500 & 100 & \cite{charmm36DOPS303K} \\
-    DOPS/Na$^+$  & CHARMM36ua \cite{??} \todoi{Correct citation for CHARMMua DOPS}        &0 & 0        & 128 & 4480 & 0  & 303  & 500 & 100 & \cite{charmm36uaDOPS303K} \\
-    DOPS/Na$^+$  & Slipids \cite{jambeck13}        &0 & 0        & 128 	& 4480  & 0  & 303  & 500 & 100 & \cite{slipidsDOPS303K} \\
-    DOPS/Na$^+$  & Slipids \cite{jambeck13}        &0 & 0        & 288 	& 11232 & 0  & 303  & 200 & 100 & \cite{slipidsDOPSfiles} \\
-    DOPS/Na$^+$  & Berger \cite{mukhopadhyay04}    &0 & 0        & 128  & 4480  & 0  & 303  & 500 & 100 & \cite{bergerDOPS303K} \\
-    DOPS/Na$^+$  & GROMOS-CKP1 \cite{??} \todoi{Correct citation(s) for CKP.} &0 & 0  & 128 & 4480 & 0  & 303  & 500 & 100 & \cite{ckp1DOPS303K} \\
-    DOPS/Na$^+$  & GROMOS-CKP2 \cite{??} \todoi{Correct citation(s) for CKP.} &0 & 0  & 128 & 4480 & 0  & 303  & 500 & 100 & \cite{ckp2DOPS303K} \\
-    DOPS/Na$^+$  & lipid17 \cite{gould18} / JC  \cite{joung08} &0 & 0        & 128    & 4480   & 0   & 303  & 600 & 100 & \cite{lipid17DOPSjcions} \\
-    DOPS/Na$^+$  & lipid17 \cite{gould18} / ff99 \cite{aqvist90}  &0 & 0        & 128    & 4480   & 0   & 303  & 600 & 100 & \cite{lipid17DOPSff99ions} \\
+    DOPS/Na$^+$  & CHARMM36 \cite{venable13}       & 128 & 4480 & 0  & 303  & 500 & 100 & \cite{charmm36DOPS303K} \\
+    DOPS/Na$^+$  & CHARMM36ua \cite{??} \todoi{Correct citation for CHARMMua DOPS}   & 128 & 4480 & 0  & 303  & 500 & 100 & \cite{charmm36uaDOPS303K} \\
+    DOPS/Na$^+$  & Slipids \cite{jambeck13}        & 128 	& 4480  & 0  & 303  & 500 & 100 & \cite{slipidsDOPS303K} \\
+    DOPS/Na$^+$  & Slipids \cite{jambeck13}        & 288 	& 11232 & 0  & 303  & 200 & 100 & \cite{slipidsDOPSfiles} \\
+    DOPS/Na$^+$  & Berger \cite{mukhopadhyay04}    & 128  & 4480  & 0  & 303  & 500 & 100 & \cite{bergerDOPS303K} \\
+    DOPS/Na$^+$  & GROMOS-CKP1 \cite{??} \todoi{Correct citation(s) for CKP.} & 128 & 4480 & 0  & 303  & 500 & 100 & \cite{ckp1DOPS303K} \\
+    DOPS/Na$^+$  & GROMOS-CKP2 \cite{??} \todoi{Correct citation(s) for CKP.} & 128 & 4480 & 0  & 303  & 500 & 100 & \cite{ckp2DOPS303K} \\
+    DOPS/Na$^+$  & lipid17 \cite{gould18} / JC  \cite{joung08}    & 128    & 4480   & 0   & 303  & 600 & 100 & \cite{lipid17DOPSjcions} \\
+    DOPS/Na$^+$  & lipid17 \cite{gould18} / ff99 \cite{aqvist90}  & 128    & 4480   & 0   & 303  & 600 & 100 & \cite{lipid17DOPSff99ions} \\
     \hline
-    POPS/Na$^+$  & CHARMM36 \cite{venable13} &0 & 0 & 128 & 4480 & 0  & 298  & 500 & 100 & \cite{charmm36POPS298K} \\
-    POPS/K$^+$   & CHARMM36 \cite{venable13} &0 & 0 & 128 & 4480 & 0  & 298  & 500 & 100 & \cite{charmm36POPS298Kpotassium} \\
-    POPS/Na$^+$  & CHARMM36ua \cite{??} \todoi{Correct citation for CHARMMua DOPS}  &0 & 0 & 128 & 4480 & 0  & 298  & 500 & 100 & \cite{charmm36uaPOPS298K} \\
-    POPS/Na$^+$  & Slipids \cite{jambeck13}        &0 & 0        & 128 & 4480 & 0  & 298  & 500 & 100 & \cite{slipidsPOPS298K} \\
-    POPS/Na$^+$  & Berger \cite{??}        &0 & 0        & 128 & 4480 & 0  & 298  & 500 & 100 & \cite{bergerPOPS298K} \\
-    POPS/Na$^+$  & MacRog \cite{maciejewski14}  &0 & 0        & 128 & 4480 & 0  & 298  & 500 & 100  & \cite{macrogPOPS298Kcorrect} \\
-    OPPS/Na$^+$  & MacRog \cite{maciejewski14}  &0 & 0        & 128 & 5120 & 0  & 298  & 200 & 100 & \cite{macrogPOPS298K} \\
-    POPS/Na$^+$  & GROMOS-CKPM \cite{??} \todoi{Correct citation(s) for CKP.} &0 & 0  & 128 & 4480 & 0  & 298  & 500 & 100 & \cite{ckp1POPS303K} \\
-    POPS/Na$^+$  & GROMOS-CKP \cite{??} \todoi{Correct citation(s) for CKP.} &0 & 0  & 128 & 4480 & 0  & 298  & 500 & 100 & \cite{ckp2POPS303K} \\
-    POPS/Na$^+$  & lipid17  \cite{gould18} / JC  \cite{joung08} &0 & 0        & 128    & 4480   & 0   & 298  & 600 & 100 & \cite{lipid17POPSjcions} \\
-    POPS/Na$^+$  & lipid17 \cite{gould18} / ff99 \cite{aqvist90}  &0 & 0        & 128    & 4480   & 0   & 298  & 600 & 100 & \cite{lipid17POPSff99ions} \\
+    POPS/Na$^+$  & CHARMM36 \cite{venable13} & 128 & 4480 & 0  & 298  & 500 & 100 & \cite{charmm36POPS298K} \\
+    POPS/K$^+$   & CHARMM36 \cite{venable13} & 128 & 4480 & 0  & 298  & 500 & 100 & \cite{charmm36POPS298Kpotassium} \\
+    POPS/Na$^+$  & CHARMM36ua \cite{??} \todoi{Correct citation for CHARMMua DOPS} & 128 & 4480 & 0  & 298  & 500 & 100 & \cite{charmm36uaPOPS298K} \\
+    POPS/Na$^+$  & Slipids \cite{jambeck13}  & 128 & 4480 & 0  & 298  & 500 & 100 & \cite{slipidsPOPS298K} \\
+    POPS/Na$^+$  & Berger \cite{??}          & 128 & 4480 & 0  & 298  & 500 & 100 & \cite{bergerPOPS298K} \\
+    POPS/Na$^+$  & MacRog \cite{maciejewski14}  & 128 & 4480 & 0  & 298  & 500 & 100  & \cite{macrogPOPS298Kcorrect} \\
+    OPPS/Na$^+$  & MacRog \cite{maciejewski14}  & 128 & 5120 & 0  & 298  & 200 & 100 & \cite{macrogPOPS298K} \\
+    POPS/Na$^+$  & GROMOS-CKPM \cite{??} \todoi{Correct citation(s) for CKP.} & 128 & 4480 & 0  & 298  & 500 & 100 & \cite{ckp1POPS303K} \\
+    POPS/Na$^+$  & GROMOS-CKP \cite{??} \todoi{Correct citation(s) for CKP.}  & 128 & 4480 & 0  & 298  & 500 & 100 & \cite{ckp2POPS303K} \\
+    POPS/Na$^+$  & lipid17  \cite{gould18} / JC  \cite{joung08}   & 128    & 4480   & 0   & 298  & 600 & 100 & \cite{lipid17POPSjcions} \\
+    POPS/Na$^+$  & lipid17 \cite{gould18} / ff99 \cite{aqvist90}  & 128    & 4480   & 0   & 298  & 600 & 100 & \cite{lipid17POPSff99ions} \\
     \end{tabular}
 %\end{minipage}
 %\end{sidewaystable*} 
@@ -294,40 +300,49 @@ bacteria \cite{gally81,scherer87,seelig90}.
 \begin{table*}[!htb]
 %\begin{sidewaystable*}[!p]
 \centering
-\caption{  List of MD simulations. The salt concentrations calculated as 
-   [salt]=N$_{\rm c} \times$[water]\,/\,N$_{\rm w}$, where [water]\,=\,55.5~M.
-   CKPM refers to the version with Berger/Chiu NH$_3$ charges compatible with Berger
-   (i.e. the NH$_3$ group having the same charges as in the N(CH$_3$)$_3$ group of the PC lipids;
-   'M' stands for Mukhopadhyay after the first published Berger-based PS simulation that used these charges \cite{??})
-   and CKP refers to the version with more Gromos compatible version
-   (i.e. the charges for the NH$_3$ group taken from the lysine side-chain).
-   %   these correspond the concentrations reported in the experiments by Akutsu et al.~\cite{akutsu81}.
-   %   The lipid force fields named as in our previous work~\cite{botan15}.
+\caption{List of POPC:POPS mixture simulations with different amounts of added ions. 
+   % The salt concentrations calculated as [salt]=N$_{\rm c} \times$[water]\,/\,N$_{\rm w}$, where [water]\,=\,55.5~M.
+   % these correspond the concentrations reported in the experiments by Akutsu et al.~\cite{akutsu81}.
+   % The lipid force fields named as in our previous work~\cite{botan15}.
 }\label{IONsystems}
-    \todo{Berger simulations with NaCl and CaCl to be added}
+    \todo{Berger simulations with NaCl and CaCl to be added} \\
+    \todo{The used definition of ion concentrations needs to be specified and standardized.} 
 %begin{minipage}[t]{\textwidth}
-\begin{tabular}{l c c r r r r r r c c}
-  lipid/counter-ions & force field for lipids / ions & NaCl (mM) & CaCl$_2$\,(mM) &  \footnote{Number of lipid molecules with largest mole fraction}N$_{\rm l}$   &  \footnote{Number of water molecules}N$_{\rm w}$ \todoi{Should confirm that the amounts of water in experiments matched those in simulations.}   & \footnote{Number of additional cations}N$_{\rm c}$  & \footnote{Simulation temperature}T (K)  & \footnote{Total simulation time}t$_{{\rm sim}}$(ns) & \footnote{Time used for analysis}t$_{{\rm anal}}$ (ns) &   \footnote{Reference for simulation files}files\\
+\begin{tabular}{l c c c c c c c c c c}
+  lipid/counter-ions & force field for lipids / ions & \footnote{Excess Na$^+$ or K$^+$ concentration}C$_{\rm ci}$ (M) & CaCl$_2$\,(M)  &  \footnote{Number of lipid molecules with largest mole fraction}N$_{\rm l}$   &  \footnote{Number of water molecules}N$_{\rm w}$   & \footnote{Number of additional cations}N$_{\rm c}$  & \footnote{Simulation temperature}T (K)  & \footnote{Total simulation time}t$_{{\rm sim}}$(ns) & \footnote{Time used for analysis}t$_{{\rm anal}}$ (ns) &   \footnote{Reference for simulation files}files\\
   \hline
     POPC:POPS (5:1)/K$^+$  & CHARMM36 \cite{klauda10,venable13} &0 & 0  & 110:22 & 4935 & 0  & 298  & 100 & 100 \todoi{Equilibration?} & \cite{charmm36pops+83popcT298K}  \\
-    POPC:POPS (5:1)/K$^+$  & CHARMM36 \cite{klauda10,venable13}          &0 & 0 & 250:50 & ?     & 0  & 298  & 200 & ?   & \cite{??} \todoi{Trajectories and further details to be added by J. Madsen}  \\
-    POPC:POPS (5:1)/K$^+$  & CHARMM36 \cite{klauda10,venable13}          &0 & 0 & 110:22 & 4620  & 0  & 298  & 500 & 100 & \cite{charmm36pops+83popcT298Kpiggot}  \\
-    POPC:POPS (5:1)/Na$^+$ & CHARMM36 \cite{klauda10,venable13}          &0 & 0 & 110:22 & 4620  & 0  & 298  & 500 & 100 & \cite{charmm36pops+83popcT298KpiggotSODIUM}  \\
-    POPC:POPS (1:1)/K$^+$  & CHARMM36 \cite{klauda10,venable13}          &0 & 0 & 150:150 & ?    & 0  & 298  & 200 & ?   & \cite{??} \todoi{Trajectories and further details to be added by J. Madsen}  \\
-     POPC:POPS (5:1)        & CHARMM36 \cite{klauda10,venable13,kim16}   &0 & 150 \todoi{Concentration to be checked} & 250:50 & ?  & ?  & 298  & 200 & ?  & \cite{??} \todoi{Trajectories and further details to be added by J. Madsen}  \\
-    POPC:POPS (5:1)        & CHARMM36 \cite{klauda10,venable13,kim16}    &0 & 1000 \todoi{Concentration to be checked} & 250:50 & ?  & ?  & 298  & 200 & ?  & \cite{??} \todoi{Trajectories and further details to be added by J. Madsen}  \\
+    POPC:POPS (5:1)/K$^+$  & CHARMM36 \cite{klauda10,venable13} &0 & 0 & 250:50 & ?     & 0  & 298  & 200 & ?   & \cite{??} \todoi{Trajectories and further details to be added by J. Madsen}  \\
+    POPC:POPS (5:1)/K$^+$  & CHARMM36 \cite{klauda10,venable13} &0 & 0 & 110:22 & 4620  & 0  & 298  & 500 & 100 & \cite{charmm36pops+83popcT298Kpiggot}  \\
+    POPC:POPS (5:1)/Na$^+$ & CHARMM36 \cite{klauda10,venable13} &0 & 0 & 110:22 & 4620  & 0  & 298  & 500 & 100 & \cite{charmm36pops+83popcT298KpiggotSODIUM}  \\
+    POPC:POPS (1:1)/K$^+$  & CHARMM36 \cite{klauda10,venable13} &0 & 0 & 150:150 & ?    & 0  & 298  & 200 & ?   & \cite{??} \todoi{Trajectories and further details to be added by J. Madsen}  \\
+    POPC:POPS (5:1)        & CHARMM36 \cite{klauda10,venable13,kim16}  &0 & 0.15 \todoi{Concentration to be checked} & 250:50 & ?  & ?  & 298  & 200 & ?  & \cite{??} \todoi{Trajectories and further details to be added by J. Madsen}  \\
+    POPC:POPS (5:1)        & CHARMM36 \cite{klauda10,venable13,kim16}  &0 & 1 \todoi{Concentration to be checked} & 250:50 & ?  & ?  & 298  & 200 & ?  & \cite{??} \todoi{Trajectories and further details to be added by J. Madsen}  \\
     \hline
-    POPC:POPS\todoi{This is also probably OPPS? These should be corrected in this table as well.} (5:1)/K$^+$  & MacRog \cite{maciejewski14} &0 & 0  & 120:24 & 5760 & 0  & 298  & 200 & 200 \todoi{Equilibration?} & \cite{POPCpopsMACROG}  \\
-   POPC:POPS (5:1)/K$^+$  & MacRog \cite{maciejewski14} &0 &100 & 120:24 & 5760 & 10  & 298  & 200 & 200 \todoi{Equilibration?} & \cite{POPCpopsMACROG}  \\
-    POPC:POPS (5:1)/K$^+$  & MacRog \cite{maciejewski14} &0 &300 & 120:24 & 5760 & 31  & 298  & 200 & 200 \todoi{Equilibration?} & \cite{POPCpopsMACROG}  \\
-    POPC:POPS (5:1)/K$^+$  & MacRog \cite{maciejewski14} &0 &1000 & 120:24 & 5760 & 104  & 298  & 200 & 200 \todoi{Equilibration?} & \cite{POPCpopsMACROG}  \\
-    POPC:POPS (5:1)/K$^+$  & MacRog \cite{maciejewski14} &0 &3000 & 120:24 & 5760 & 311  & 298  & 200 & 200 \todoi{Equilibration?} & \cite{POPCpopsMACROG}  \\
+    POPC:OPPS (5:1)/K$^+$  & MacRog \cite{maciejewski14} &0    & 0   & 120:24 & 5760 & 0    & 298  & 200 & 200 \todoi{Equilibration?} & \cite{POPCpopsMACROG}  \\
+    POPC:OPPS (5:1)/K$^+$  & MacRog \cite{maciejewski14} &0    & 0.1 & 120:24 & 5760 & 10   & 298  & 200 & 200 \todoi{Equilibration?} & \cite{POPCpopsMACROG}  \\
+    POPC:OPPS (5:1)/K$^+$  & MacRog \cite{maciejewski14} &0    & 0.3 & 120:24 & 5760 & 31   & 298  & 200 & 200 \todoi{Equilibration?} & \cite{POPCpopsMACROG}  \\
+    POPC:OPPS (5:1)/K$^+$  & MacRog \cite{maciejewski14} &0    & 1   & 120:24 & 5760 & 104  & 298  & 200 & 200 \todoi{Equilibration?} & \cite{POPCpopsMACROG}  \\
+    POPC:OPPS (5:1)/K$^+$  & MacRog \cite{maciejewski14} &0    & 3   & 120:24 & 5760 & 311  & 298  & 200 & 200 \todoi{Equilibration?} & \cite{POPCpopsMACROG}  \\
+    POPC:OPPS (5:1)/K$^+$  & MacRog \cite{maciejewski14} &0.5  & 0   & 120:24 & 5760 & 52   & 298  & 200 & 190 & \cite{POPCpopsMACROGwithK}  \\
+    POPC:OPPS (5:1)/K$^+$  & MacRog \cite{maciejewski14} &1    & 0   & 120:24 & 5760 & 104  & 298  & 200 & 190 & \cite{POPCpopsMACROGwithK}  \\
+    POPC:OPPS (5:1)/K$^+$  & MacRog \cite{maciejewski14} &2    & 0   & 120:24 & 5760 & 208  & 298  & 200 & 145 & \cite{POPCpopsMACROGwithK}  \\
+    POPC:OPPS (5:1)/K$^+$  & MacRog \cite{maciejewski14} &3    & 0   & 120:24 & 5760 & 311  & 298  & 200 & 125 & \cite{POPCpopsMACROGwithK}  \\
+    POPC:OPPS (5:1)/K$^+$  & MacRog \cite{maciejewski14} &4    & 0   & 120:24 & 5760 & 415  & 298  & 200 & 125 & \cite{POPCpopsMACROGwithK}  \\
     \hline
+    POPC:POPS (5:1)/K$^+$  & Lipid14/17 \cite{dickson14,gould18} &0.5  & 0   & 120:24 & 5760 & ?   & 298  & 300 & 200 & \cite{POPCpopsLIPID17withK}  \\
+    POPC:POPS (5:1)/K$^+$  & Lipid14/17 \cite{dickson14,gould18} &1    & 0   & 120:24 & 5760 & ?   & 298  & 300 & 200 & \cite{POPCpopsLIPID17withK}  \\
+    POPC:POPS (5:1)/K$^+$  & Lipid14/17 \cite{dickson14,gould18} &2    & 0   & 120:24 & 5760 & ?   & 298  & 300 & 200 & \cite{POPCpopsLIPID17withK}  \\
+    POPC:POPS (5:1)/K$^+$  & Lipid14/17 \cite{dickson14,gould18} &3    & 0   & 120:24 & 5760 & ?   & 298  & 300 & 200 & \cite{POPCpopsLIPID17withK}  \\
+    POPC:POPS (5:1)/K$^+$  & Lipid14/17 \cite{dickson14,gould18} &4    & 0   & 120:24 & 5760 & ?   & 298  & 300 & 200 & \cite{POPCpopsLIPID17withK}  \\
+    \hline
+    POPC:POPS (4:1)/Na$^+$  & Lipid14/17 \cite{dickson14,gould18} &0    & 0   & 120:24 & 5760 & ?   & 298  & 300 & 200 & \cite{POPCpopsLIPID17withK}  \\
+    POPC:POPS (4:1)/Na$^+$  & Lipid14/17 \cite{dickson14,gould18} &1    & 0   & 102:26 & 4290 & 80  & 310  & 200 & 50 & \cite{POPCpopsBERGERwith1000mMNa}  \\
 \end{tabular}
 %\end{minipage}
-%\end{sidewaystable*} 
+%end{sidewaystable*} 
 
-\end{table*}
+ \end{table*}
 
 \section{Methods}
 
@@ -397,6 +412,8 @@ to the negatively charged PS headgroups, which also follows the electrometer
 concept in the experiments~\cite{scherer87},
 see section \ref{electrometerFORmixtures} in the supplementary information.
 
+\todo{How close are the hydration levels in experiments and simulations?} \\
+\todo{We need to decide how to report the ion concentrations, see discussion in Ref.~\citenum{melcr18}.} 
 
 \section{Results and Discussion}
 
