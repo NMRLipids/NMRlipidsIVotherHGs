@@ -1,0 +1,12 @@
+# Data from:
+# https://github.com/NMRLipids/MATCH/blob/master/Data/Lipid_Bilayers/POPS/T298K/MODEL_GROMOS-CKP1/head-glyc-OPs_ave_min_max.dat
+# and 
+# https://github.com/NMRLipids/MATCH/blob/master/Data/Lipid_Bilayers/POPS%2B83%25popc/T298K/MODEL_GROMOS-CKPM/head-glyc-OPs_ave_min_max.dat
+# Na counterions, T=298K
+#
+# Average over two sets
+# 
+# mole fraction of PC        beta          error           alpha1    error         alpha2   error
+0                          -0.0128447      -               -0.0370011   -          0.127126    -
+0.83                       -0.0385339      -               -0.0040062   -          0.177607    -
+
