@@ -54,6 +54,8 @@
 % \affiliation command applies to all authors since the last \affiliation command. 
 % The \affiliation command should follow the other information.
 
+\author{Pavel Buslaev}
+\affiliation{Moscow Institute of Physics and Technology}
 \author{Tiago M. Ferreira}
 \affiliation{Halle, Germany}
 \author{Ivan Gushchin}
@@ -556,6 +558,7 @@ available.
   \todo{Lipid17 and MacRog results should be added into this plot.}
 \end{figure}
 
+\todo{New figures are delivered by Pavel Buslaev. This should be rewritten.}
 None of the tested models reproduce the experimental headgroup and 
 glycerol backbone order parameters of DOPS and POPS within the
 experimental error bars (Fig. \ref{HGorderParametersPS}). 
@@ -574,14 +577,20 @@ in parameter in the PS headgroups (Fig. \ref{HGorderParametersPS} and Fig. 2 in 
 Interestingly, the dihedral angle distributions 
 %of CHARMM36 and Slipids in 
 in these two models share significant similarities in the headgroup region (Fig.~\ref{dihedralsHG}). 
-\todo{Notation of dihedrals in Fig.~\ref{dihedralsHG} should be made somehow combatible with the
-chemical structures in Fig.~\ref{HGorderParameters} and the discussion should be then finished.}
 However, the glycerol backbone order parameters in Slipids model
 significantly differ from CHARMM36 results and experiments (Fig. \ref{HGorderParametersPS}),
 which can be related to the differences in the dihedral angle distributions 
 of C1-C2-C3-O31 and C2-C3-O31-C31 (Fig.~\ref{dihedralsGLY}). 
 Similar difference was previously observed for PC lipids \cite{botan15}
 and the conformational differences are illustrated in Figure \ref{glycerol_buslaev}. 
+\begin{figure*}[]
+  \centering
+  \includegraphics[width=18.0cm]{../Figs/figS8.png}
+  \caption{\label{HGstructuresPS}
+    Overlayed snapshots from glycerol backbone and headgroup region from 
+    different simulations of PS lipids.
+  }
+\end{figure*}
 
 %\todo{Discussion is to be finished.
 %  One possible conclusion could be the following:
