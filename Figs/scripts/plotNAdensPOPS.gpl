@@ -1,6 +1,6 @@
 set size 1.0,1.3
 set encoding iso_8859_1
-set terminal postscript portrait enhanced color dashed lw 1 "Helvetica" 14 
+set terminal postscript portrait enhanced color dashed lw 1 "Helvetica" 14 background rgb 'white'
 set output "../NAdensPOPS.eps"
 set yrange [0:2.9] 
 set xrange [-4:4] 
@@ -48,7 +48,7 @@ set size 1.0,0.2
 unset label
 set label  "MACROG"  at graph  0.4,0.8
 set label  "A_{pl} = 53 {\305}^2"  at graph  0.02,0.8
-plot "../../../MATCH/Data/Lipid_Bilayers/POPS/T298K/MODEL_MACROG/NAdens.xvg" using 1:2 with lines notitle lw 2 lc rgb 'black',\
+plot "../../../MATCH/Data/Lipid_Bilayers/OPPS/T298K/MODEL_MACROG/NAdens.xvg" using 1:2 with lines notitle lw 2 lc rgb 'black',\
 
 set origin 0,0.3
 set size 1.0,0.2

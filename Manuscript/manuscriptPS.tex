@@ -812,14 +812,16 @@ in the CHARMM36/NBfix model, but overestimated in the other tested models.
   \centering
   \includegraphics[width=18cm]{../Figs/CHANGESwithCaClPS.eps}
   \caption{\label{changesWITHCaClPS}
-    Changes of POPC (left) and POPS (right) headgroup order parameters in POPC:POPS (5:1) mixture
-    as a function CaCl$_2$ concentration. Experimental data is taken from \citenum{roux90}.
-    The values from counterion-only systems are set as a zero point of y-axis.
-    To correctly illustrate the significant forking of the $\alpha$-carbon order parameter
-    in PS headgroup (bottom, right), the y-axis is tranferred with the same value for both order parameters such that the lower order
-    parameter value is at zero. 
+    Changes of POPC (left) and POPS (right) headgroup order parameters from POPC:POPS (5:1) mixture
+    as a function CaCl$_2$ concentration from experiments \citenum{roux90} and different simulations
+    at 298K (except the data for Berger model is from simulation of POPC:POPS (4:1) mixture at 310K \cite{ollila07a,melcrova16}). 
+    The order parameter values from systems without calcium are set as the zero point of y-axis,
+    except for the $\alpha$-carbon order parameter of POPS (bottom, right) for which the both order parameters are shifted
+    such that the lower order parameter is zero without additional ions to correctly illustrate
+    the forking with different concentrations of calcium.
+    Potassium counterions are used in MacRog simulations and sodium counterions in Lipid14/17 simulations.
+    In CHARMM36 and Berger simulation with added calcium, the charge is neutralized with calcium and monovalent counterions are not present.
   }
-  \todo{Information about the cuonterions in different simulations should be added} \\
   \todo{Upcoming simulations with original CHARMM36 have been mentioned in the blog:
   http://nmrlipids.blogspot.com/2017/12/nmrlipids-iv-current-status-and.html?showComment=1520090718976\#c5569269391707740056} \\
   \todo{Upcoming Lipid17 simulations have been mentioned in the blog

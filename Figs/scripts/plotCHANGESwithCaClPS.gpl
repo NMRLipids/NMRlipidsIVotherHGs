@@ -1,5 +1,5 @@
 set size 2.0,1.0
-set terminal postscript portrait enhanced color dashed lw 1 "Helvetica" 14 
+set terminal postscript portrait enhanced color dashed lw 1 "Helvetica" 14 background rgb 'white'
 set output "../CHANGESwithCaClPS.eps"
 set multiplot  layout 2,2
 
@@ -12,18 +12,19 @@ set title 'POPC'
 set size 1.0,0.5
 set ylabel "{{/Symbol D}S_{CH}^{/Symbol b}"
 #set yrange [-0.075:-0.025] 
-plot 	   "../../Data/POPC80_POPS20withCa_MACROG.dat" using 1:($4-0.0274047556087) with linespoint title 'POPC:POPS (298 K) 5:1 MACROG' pt 7 lt 1 lw 4 ps 1.5 lc rgb 'pink',\
+plot 	   "../../Data/POPC80_POPS20withCa_MACROG.dat" using 1:($4-0.0274047556087) with linespoint title 'MACROG' pt 7 lt 1 lw 4 ps 1.5 lc rgb 'pink',\
    	   "../../Data/POPC80_POPS20withCa_MACROG.dat" using 1:($5-0.0253713902) with linespoint notitle pt 7 lt 1 lw 4 ps 1.5 lc rgb 'pink',\
-    	   "../../Data/POPC80_POPS20withCa_BERGER.dat" using 1:($4-0.0129448) with linespoint title 'POPC:POPS (310 K) 4:1 Berger' pt 7 lt 1 lw 4 ps 1.5 lc rgb 'red',\
+    	   "../../Data/POPC80_POPS20withCa_BERGER.dat" using 1:($4-0.0129448) with linespoint title 'Berger' pt 7 lt 1 lw 4 ps 1.5 lc rgb 'red',\
     	   "../../Data/POPC80_POPS20withCa_BERGER.dat" using 1:($5-0.032294) with linespoint notitle pt 7 lt 1 lw 4 ps 1.5 lc rgb 'red',\
-    	   "../../Data/POPC250_POPS50withCa_CHARMM36.dat" using 1:($4+0.0795243501265) with linespoint title 'POPC:POPS (298 K) 5:1 CHARMM36' pt 7 lt 1 lw 4 ps 1.5 lc rgb 'blue',\
-      	   "../../Data/POPC5_POPS1withCa_LIPID17.dat" using 1:($4+0.00305) with linespoint title 'POPC:POPS (298 K) 5:1 Lipid14/17' pt 7 lt 1 lw 4 ps 1.5 lc rgb 'yellow',\
-           "../../Data/POPC_POPSwithCaBETA.dat" using 1:((-1)*($2-4.0)*0.00784) with linespoint title 'POPC:POPS (T=298K) 5:1 exp' pt 7 lt 1 lw 4 lc rgb 'black',\
+    	   "../../Data/POPC250_POPS50withCa_CHARMM36.dat" using 1:($4+0.0795243501265) with linespoint title 'CHARMM36' pt 7 lt 1 lw 4 ps 1.5 lc rgb 'blue',\
+      	   "../../Data/POPC5_POPS1withCa_LIPID17.dat" using 1:($4+0.00305) with linespoint title 'Lipid14/17' pt 7 lt 1 lw 4 ps 1.5 lc rgb 'yellow',\
+           "../../Data/POPC_POPSwithCaBETA.dat" using 1:((-1)*($2-4.0)*0.00784) with linespoint title 'Experiment' pt 7 lt 1 lw 4 lc rgb 'black',\
 
 set title 'POPS'
 set origin 1.0,0.5
 set size 1.0,0.5
-set ylabel "{/Symbol D}S_{CH}^{/Symbol b}"
+unset ylabel
+#set ylabel "{/Symbol D}S_{CH}^{/Symbol b}"
 set xrange [0:1] 
 plot      "../../Data/POPC80_POPS20withCa_MACROG.dat" using 1:($8+0.0971539928598) with linespoint notitle pt 7 lt 1 lw 4  lc rgb 'pink',\
           "../../Data/POPC80_POPS20withCa_BERGER.dat" using 1:($8-0.15793) with linespoint notitle pt 7 lt 1 lw 4  lc rgb 'red',\
@@ -52,7 +53,8 @@ unset title
 set origin 1.0,0
 set size 1.0,0.5
 set key at screen 0.9,0.87 maxcols 1 maxrows 6
-set ylabel "{/Symbol D}S_{CH}^{/Symbol a}"
+unset ylabel
+#set ylabel "{/Symbol D}S_{CH}^{/Symbol a}"
 set xlabel "[ CaCl_2] M"
 set xrange [0:1] 
 #set yrange [-0.03:0.09] 
