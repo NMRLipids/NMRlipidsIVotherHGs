@@ -288,8 +288,8 @@ bacteria \cite{gally81,scherer87,seelig90}.
     DOPS/Na$^+$  & Slipids \cite{jambeck13}        & 128 	& 4480  & 0  & 303  & 500 & 100 & \cite{slipidsDOPS303K} \\
     DOPS/Na$^+$  & Slipids \cite{jambeck13}        & 288 	& 11232 & 0  & 303  & 200 & 100 & \cite{slipidsDOPSfiles} \\
     DOPS/Na$^+$  & Berger \cite{mukhopadhyay04}    & 128  & 4480  & 0  & 303  & 500 & 100 & \cite{bergerDOPS303K} \\
-    DOPS/Na$^+$  & GROMOS-CKP1 \cite{??} \todoi{Correct citation(s) for CKP.} & 128 & 4480 & 0  & 303  & 500 & 100 & \cite{ckp1DOPS303K} \\
-    DOPS/Na$^+$  & GROMOS-CKP2 \cite{??} \todoi{Correct citation(s) for CKP.} & 128 & 4480 & 0  & 303  & 500 & 100 & \cite{ckp2DOPS303K} \\
+    DOPS/Na$^+$  & GROMOS-CKPM \cite{??} \todoi{Correct citation(s) for CKP.} & 128 & 4480 & 0  & 303  & 500 & 100 & \cite{ckp1DOPS303K} \\
+    DOPS/Na$^+$  & GROMOS-CKP  \cite{??} \todoi{Correct citation(s) for CKP.} & 128 & 4480 & 0  & 303  & 500 & 100 & \cite{ckp2DOPS303K} \\
     DOPS/Na$^+$  & lipid17 \cite{gould18} / JC  \cite{joung08}    & 128    & 4480   & 0   & 303  & 600 & 100 & \cite{lipid17DOPSjcions} \\
     DOPS/Na$^+$  & lipid17 \cite{gould18} / ff99 \cite{aqvist90}  & 128    & 4480   & 0   & 303  & 600 & 100 & \cite{lipid17DOPSff99ions} \\
     \hline
@@ -431,8 +431,7 @@ can be better characterized by measuring the PC headgroup order parameters from
 mixed bilayers~\cite{roux86,roux90,roux91}, see section \ref{electrometerFORmixtures} in the supplementary information.
 
 Before using the PC headgroup order parameters to quantify the ion binding
-affinity, it is important to quantify the response of the headgroup order
-parameters to the known amount of bound charge~\cite{catte16,melcr18}.
+affinity, it is important to quantify their response to the known amount of bound charge~\cite{catte16,melcr18}.
 This can be done using the experimental data from the mixtures of
 monovalent cationic surfactants (dihexadecyldimethylammonium) and POPC~\cite{scherer89,melcr18},
 see section \ref{electrometerCALIBRATION} in the supplementary information.
@@ -503,9 +502,9 @@ confirming the interpretation that the smaller order parameter is negative.
 The headgroup and glycerol backbone order parameters of 
 POPS measured in this work are in good agreement with the previously reported
 values from $^2$H NMR experiments of DOPS \cite{browning80} (Fig. \ref{HGorderParameters}).
-The $\beta$-carbon order parameter is significantly more negative and $\alpha$-carbon
-experiences a significant forking in PS headgroup when compared with
-the values previously measured for POPC \cite{ferreira13} (Fig. \ref{HGorderParameters}).  
+When compared with the previously measured values for POPC \cite{ferreira13} (Fig. \ref{HGorderParameters}),
+the $\beta$-carbon order parameter is significantly more negative and $\alpha$-carbon
+experiences a significant forking in PS headgroup.
 These features have been intepreted to arise from a rigid PS headgroup
 conformation, stabilized by hydrogen bonds or electrostatic
 interactions \cite{browning80,buldt81}, but detailed structrural interpretation is not
@@ -567,29 +566,40 @@ available.
   \todo{Lipid17 and MacRog results should be added into this plot.}
 \end{figure}
 
-As previously observed for PC lipids, the order parameters and structures
-of headgroup and glycerol backbone show wide variety between different simulation
-models for PS lipids (Figs. \ref{HGorderParametersPS} and \ref{HGstructuresPS}).
-The models for PS lipids perform generally less well than for
+The headgroup and glycerol backbone of PS lipids show wide variety between different simulation
+models in the order parameters and structures (Figs. \ref{HGorderParametersPS} and \ref{HGstructuresPS}),
+as previously observed also for PC lipids. The models for PS lipids perform generally less well than for
 PC lipids in the previous study
 (Figs. 2 and 4 in Ref.~\cite{botan15} vs. Figs.~\ref{HGorderParametersPS} and \ref{comparisonTablePS}).
 Therefore, interpretation of structural differences between PC and PS headgroups
-from simulations is not straightforward. The two best performing models,
-Slipids and CHARMM36, reproduce the larger forking of the $\alpha$-carbon 
+from simulations is not straightforward.
+
+The best performing models,
+Slipids, CHARMM36 and CHARMM36ua, reproduce the larger forking of the $\alpha$-carbon 
 and the Slipids model reproduces also the lower of the $\beta$-carbon order parameter
 when comparing the PS results to PC (Fig. 2 in Ref.~\citenum{botan15} vs. Fig. \ref{HGorderParametersPS}).
-Interestingly, the dihedral angle distributions 
-%of CHARMM36 and Slipids in 
-in these two models share significant similarities in the headgroup region (Fig.~\ref{dihedralsHG}). 
-However, the glycerol backbone order parameters in Slipids model
-significantly differ from CHARMM36 results and experiments (Fig. \ref{HGorderParametersPS}),
-which can be related to the differences in the dihedral angle distributions 
-of C1-C2-C3-O31 and C2-C3-O31-C31 (Fig.~\ref{dihedralsGLY}). 
-Similar difference was previously observed for PC lipids \cite{botan15}
-and the conformational differences are illustrated in Figure \ref{glycerol_buslaev}. 
+Interestingly, the headgroup structures of these models share significant similarities
+and are distinct from other models (Figs.~\ref{HGstructuresPS} and \ref{dihedralsHG}). 
+The distribution of the dihedral angle for C$_\alpha$-C$_\beta$-C$_\gamma$-O$_\gamma$ shows
+a single narrow maximum close to 120$^{\circ}$ in the best three models, while other models give several maxima
+in different locations (Fig. \ref{dihedralsHG}). The restricted motion is also
+visible in the sampled conformations (Fig.~\ref{HGstructuresPS}) and might
+manifest the increased rigidity anticipated from the early experimental studies \cite{browning80,buldt81}.
+Another distinct feature in the three best performing models is the distribution
+of N-C$_\beta$-C$_\alpha$-O$_\alpha$ dihedral, which gives a large maxima close to 300$^{\circ}$
+and a smaller maxima close to 60$^{\circ}$. This is also visible in the sampled
+structures (Fig.~\ref{HGstructuresPS}).
+\todo{There seems to be discrepancy between structures and dihedral distributions for CHARMM36ua}.
+The glycerol backbone order parameters of C$_2$ and C$_3$ from Slipids simulations
+differ significantly from the other simulation results and experiments (Fig. \ref{HGorderParametersPS}),
+as observed previously also for PC lipids \cite{botan15}.
+The origin of this difference is more difficult to track without more elaborate analysis,
+because different models show very complicated patterns of distinct structures
+in the glycerol backbone region (Figs.~\ref{HGstructuresPS} and \ref{dihedralsHG}).
 
+%which can be related to the differences in the dihedral angle distributions 
+%of C1-C2-C3-O31 and C2-C3-O31-C31 (Fig.~\ref{dihedralsGLY}). 
 
-%\todo{Discussion is to be finished.
 %  One possible conclusion could be the following:
 %  The main differences between the models in the headgroup region are observed
 %  for dihedrals C12-C11-O12-P and C11-C12-C13-O1A.
@@ -611,9 +621,7 @@ and the conformational differences are illustrated in Figure \ref{glycerol_busla
 %The total deviation from the experiments ($\Sigma$ in Fig. \ref{comparisonTablePS})
 %for the best performing CHARMM36 model is larger for PS lipids (8)
 %than for PC (3) \cite{botan15}.
-%Therefore the interpretation of structural details of PS headgroup or
-%differences between PC and PS lipids is very challenging 
-%from the current MD simulation models.
+
 
 
 \subsection{Counterion binding to lipid bilayers containing PS lipids}
