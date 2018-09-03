@@ -377,18 +377,37 @@ bacteria \cite{gally81,scherer87,seelig90}.
 \section{Methods}
 
 \subsection{Solid state NMR experiments}
-The magnitude and signs of the C-H bond order parameters in
-headgroup and glycerol backbone were measured
-using natural abundance $^{13}$C solid state NMR spectroscopy as
-described previously \cite{ferreira13,ferreira16}.
-Shortly, the absolute values of the order parameters were determined from the dipolar splittings
-given by the indirect dimension of 2D R-PDFL experiment \cite{dvinskikh04} and
-the signs were measured using S-DROSS experiments \cite{gross97}.
 
-\todo{Details of the used spectrometer and maybe some other details should be given.} \\
+Headgroup and glycerol backbone C-H bond order parameters of POPS
+were determined from chemical-shift resolved dipolar splittings
+measured with a R-type Proton Detected Local Field (R-PDFL) experiment~\cite{dvinskikh04}
+and corresponding order parameter signs were measured with a S-DROSS experiment~\cite{gross97}
+using natural abundance $^{13}$C solid state NMR spectroscopy as described previously \cite{ferreira13,ferreira16}.
+The experiments were done in a Bruker Avance III 400 spectrometer operating at a $^1$H Larmor frequency of 400.03 MHz.
+Magic angle spinning (MAS) of the sample was used at a frequency of 5.15 kHz (R-PDLF experiment) and 5 kHz (S-DROSS experiment).
+The following experimental setups were used.
+
+{\emph{R-PDLF experiment}}. The parameters are described according to Figures 1c and 2c of the original reference
+for the R-PDLF experiment~\cite{dvinskikh04}.  The refocused-INEPT delays $\tau_1$ and $\tau_2$ were 1.94 ms and 0.97 ms, respectively.
+Radio frequency pulses with the nutation frequencies: 46.35 kHz (R18$^7_1$ pulses), 63.45 kHz ($^{13}$C 90$^{\rm{o}}$ and 180$^{\rm{o}}$),
+50 kHz (SPINAL64 $^1$H decoupling pulses). The $t_1$ increment was equal to 10.79 $\mu$s $\times18\times2$ and 32 points in the indirect
+dimension were recorded using 1024 scans for each, with recycle delay of 5 s and a spectral with of 149.5 ppm.
+
+\emph{S-DROSS experiment}. The parameters are described according to Figures 1b and 1c of the original reference for the S-DROSS
+experiment~\cite{gross97}. The refocused-INEPT delay $\delta_2$ was 1.19 ms. The $\tau_1$ and $\tau_2$ in the S-DROSS recoupling
+blocks $R$ were set as 39.4 $\mu$s and 89.4 $\mu$s, respectively. Radio frequency pulses with the nutation
+frequencies: 63.45 kHz ($^{13}$C 90$^{\rm{o}}$ and 180$^{\rm{o}}$), 50 kHz ($^1$H SPINAL64 decoupling).
+The $t_1$ increment (dipolar recoupling dimension) was 800 $\mu$s and a total of 8 points along $t_1$ were
+measured using 1024 scans for each with a recycle delay of 5 s and a spectral with of 149.5 ppm.
+
+\emph{NMR numerical simulations}
+The numerical simulations of S-DROSS curves were performed with the SIMPSON simulation package using the $^{13}$C--$^1$H
+dipolar couplings determined by the R-PDLF experiments or calculated from known $^2$H quadrupolar couplings as input.
+Chemical shift anisotropy and homonuclear couplings were neglected, and the input file {\it{rep2000}} was used to simulate the random
+distribution of bilayer orientations in the samples studied.
+
+\emph{Sample preparation}
 \todo{Sample preparation should be described.} \\
-\todo{How is the peak assignment done?}
-
 
 
 \subsection{Molecular dynamics simulations}
@@ -469,6 +488,8 @@ to the results is simulations with realistic ion binding affinity.
 
 \subsection{Headgroup and glycerol backbone order parameters of POPS from $^{13}$C NMR}
 
+\todo{How is the peak assignment done?}
+
 The INEPT and 2D R-PDLF experiments from POPS sample give well resolved spectras for all the
 carbons in headgroup and glycerol backbone region, except for g$_3$ for which the resolution
 was not sufficient to determine the numerical value of the order paramater (Fig. \ref{PShgSIGNSsimpson}).
@@ -492,21 +513,17 @@ small value of the order parameter. The S-DROSS curve from
 SIMPSON simulation with a positive value for the smaller order parameter
 (dashed grey in Fig. \ref{PShgSIGNSsimpson} D)) did not agree with the experiment, 
 confirming the interpretation that the smaller order parameter is negative.
-\begin{figure}[!htb]
+\begin{figure}[!tb]
   \centering
-  \includegraphics[width=8.5cm]{../scratch/figIDEA.eps}
+  \includegraphics[width=8.5cm]{../Figs/fig1_POPS.pdf}
   \caption{\label{PShgSIGNSsimpson}
-    (a) The headgroup region of the INEPT spectrum with headgroup and glycerol backbone carbons assigned.
-    (b) 2D R-PDLF spectra for headgroup and glycerol backbone regions.
-    (c) Slices for $\alpha$ and $\beta$ barbons.
-    (d) Experimental SDROSS data (points) and SIMPSON simulations (lines).
-    Order parameter values of -0.12 for the $\beta$-carbon, and 0.09 and -0.02
-    for the larger and smaller $\alpha$-carbon slittings were used in the
-    SIMPSON calculations. The S-DROSS curve from SIMPSON simulation with positive value
-    for the smaller order parameter (dashed grey).
+    The headgroup and glycerol backbone region of the (A) INEPT spectrum and
+    (B) 2D R-PDLF spectra.
+    (C) Experimental SDROSS data (points) and SIMPSON simulations (blue lines) with
+    the order parameter values of -0.12 for the $\beta$-carbon, and 0.09 and -0.02
+    for the $\alpha$-carbon slittings. The S-DROSS curve from SIMPSON simulation with positive value
+    for the smaller $\alpha$-carbon order parameter (dashed grey).
   }
-  \todo{This is preliminary figure, should be polished.} \\
-  \todo{Should we show slices for all the analyzed carbons in (c)?}
 \end{figure}
 
 %\begin{figure}[!htb]
