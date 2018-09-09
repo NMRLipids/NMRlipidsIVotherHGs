@@ -3,7 +3,7 @@ set terminal postscript portrait enhanced color dashed lw 1 "Helvetica" 14
 set output "../CHANGESwithMONVALENTwithPS.eps"
 set multiplot  layout 2,2
 
-set xrange [-0:4.1] 
+set xrange [-0.1:4.1] 
 #set ytic 0.05
 #set key box linestyle 1 linecolor rgb 'black'
 set key at screen 1.6,1.08 maxcols 2 maxrows 4
@@ -23,14 +23,14 @@ plot 	   "../../Data/POPC80_POPS20withNa_BERGER.dat" using 1:($4-0.0129448) with
      	   "../../Data/POPC5_POPS1withK_LIPID17.dat" using 1:($8-0.011335):9 with yerrorbars notitle pt 5 lt 1 lw 4 ps 1.5 lc rgb 'yellow',\
       	   "../../Data/POPC5_POPS1withNa_LIPID17.dat" using 1:($6+0.00214) with linespoint notitle pt 7 lt 1 lw 4 ps 1.5 lc rgb 'yellow',\
       	   "../../Data/POPC5_POPS1withNa_LIPID17.dat" using 1:($8-0.0018) with linespoint notitle pt 7 lt 1 lw 4 ps 1.5 lc rgb 'yellow',\
+     	   "../../Data/POPC5_POPS1withNa_LIPID17.dat" using 1:($6+0.00214):7 with yerrorbars notitle pt 7 lt 1 lw 4 ps 1.5 lc rgb 'yellow',\
+     	   "../../Data/POPC5_POPS1withNa_LIPID17.dat" using 1:($8-0.0018):9 with yerrorbars notitle pt 7 lt 1 lw 4 ps 1.5 lc rgb 'yellow',\
        	   "../../Data/POPC5_POPS1withNa_CHARMM36.dat" using 1:($6+0.08391) with linespoint notitle pt 5 lt 1 lw 4 ps 1.5 lc rgb 'blue',\
      	   "../../Data/POPC5_POPS1withNa_CHARMM36.dat" using 1:($6+0.08391):7 with yerrorbars notitle pt 5 lt 1 lw 4 ps 1.5 lc rgb 'blue',\
       	   "../../Data/POPC5_POPS1withNa_CHARMM36.dat" using 1:($8+0.08533) with linespoint notitle pt 5 lt 1 lw 4 ps 1.5 lc rgb 'blue',\
      	   "../../Data/POPC5_POPS1withNa_CHARMM36.dat" using 1:($8+0.08533):9 with yerrorbars notitle pt 5 lt 1 lw 4 ps 1.5 lc rgb 'blue',\
            "../../Data/POPC-PS_5-1_mix/quadrupolar_splittings_roux1990/beta_pc_kclfig8.dat" using 1:((-1)*($2-3.991)*0.00784) with linespoint notitle pt 5 ps 2 lt 1 lw 4 dt 2 lc rgb 'black',\
 	   "../../Data/POPC-PS_5-1_mix/quadrupolar_splittings_roux1990/beta_pc_liclfig8.dat" using 1:((-1)*($2-3.991)*0.00784) with linespoint notitle pt 13 ps 2 lt 1 lw 4 dt 3 lc rgb 'black',\
-     	   #"../../Data/POPC5_POPS1withNa_LIPID17.dat" using 1:($6+0.00214):7 with yerrorbars notitle pt 7 lt 1 lw 4 ps 1.5 lc rgb 'yellow',\
-     	   #"../../Data/POPC5_POPS1withNa_LIPID17.dat" using 1:($8-0.0018):9 with yerrorbars notitle pt 7 lt 1 lw 4 ps 1.5 lc rgb 'yellow',\
 
 
 set title 'POPS'
