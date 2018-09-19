@@ -36,13 +36,13 @@ horizLines(filename)="< awk '{ if(substr($1,1,1)!~/#/) {print $1-0.46,$2,$3;prin
 # Subjective sweet spots:
 set style rectangle fc rgb "#D6F0FE" fs solid noborder
 set object 1 rectangle \
-         from 0.0,-0.091744 to 1.5,-0.131744 
+         from 0.0,-0.08675 to 1.5,-0.12675 
 set object 2 rectangle \
          from 1.5,-0.033528 to 2.5, 0.006472
 set object 3 rectangle \
          from 1.5, 0.073216 to 2.5, 0.113216
 set object 4 rectangle \
-         from 2.5,-0.176 to 3.5,-0.216
+         from 2.5,-0.183 to 3.5,-0.223
 set object 5 rectangle \
          from 3.5,-0.16 to 4.5,-0.20
 set object 6 rectangle \
