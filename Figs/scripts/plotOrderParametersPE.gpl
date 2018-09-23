@@ -11,7 +11,8 @@ set xtics ("{/Symbol g}" 0, "{/Symbol b}" 1, "{/Symbol a}" 2, "g_{3}" 3, "g_{2}"
 set key above maxcols 2 maxrows 5
 
 plot "../../../MATCH/Data/Lipid_Bilayers/DPPE/T336K/MODEL_SLIPIDS/Headgroup_Glycerol_Order_Parameters_Simulations.dat" using 1:(-$2) title 'DPPE T=336K Slipids' pt 5 ps 1.6 lc rgb 'green',\
-     "../../../MATCH/Data/Lipid_Bilayers/DPPE/T336K/Headgroup_Glycerol_Order_Parameters_Experiments.dat" using 1:(-$2*0.00784) title 'DPPE T=336K' pt 5 ps 1.6 lc rgb 'black',\
-     "../../../MATCH/Data/Lipid_Bilayers/DPPE/T336K/Headgroup_Glycerol_Order_Parameters_Experiments.dat" using 1:(-$3*0.00784) notitle pt 5 ps 1.6 lc rgb 'black',\
+     "../../../MATCH/Data/Lipid_Bilayers/POPE/T310K/Slipids/OrdParsPOPEplot.dat" using 1:(-$2) title 'POPE T=310K Slipids' pt 7 ps 2.0 lc rgb 'green',\
+     "../../../MATCH/Data/Lipid_Bilayers/DPPE/T341K/Headgroup_Glycerol_Order_Parameters_Experiments.dat" using 1:(-$2*0.00784) title 'DPPE T=341K' pt 5 ps 1.6 lc rgb 'black',\
+     "../../../MATCH/Data/Lipid_Bilayers/DPPE/T341K/Headgroup_Glycerol_Order_Parameters_Experiments.dat" using 1:(-$3*0.00784) notitle pt 5 ps 1.6 lc rgb 'black',\
      "../../../MATCH/Data/Lipid_Bilayers/E.coliPE/T310K/Headgroup_Glycerol_Order_Parameters_Experiments.dat" using 1:(-$2*0.00784) title 'PE from E.Coli T=310K' pt 3 ps 1.6 lc rgb 'black',\
      "../../../MATCH/Data/Lipid_Bilayers/E.coliPE/T310K/Headgroup_Glycerol_Order_Parameters_Experiments.dat" using 1:(-$3*0.00784) notitle pt 3 ps 1.6 lc rgb 'black',\
