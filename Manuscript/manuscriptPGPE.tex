@@ -149,14 +149,15 @@ The simulations are listed in table \ref{systems}.
       % some footnotes are not visible in typeset-MS (pdf)
       lipid/counter-ions & force field for lipids / ions & NaCl (mM) & CaCl$_2$\,(mM) &  \footnote{Number of lipid molecules with largest mole fraction}N$_{\rm l}$   &  \footnote{Number of water molecules}N$_{\rm w}$   & \footnote{Number of additional cations}N$_{\rm c}$  & \footnote{Simulation temperature}T (K)  & \footnote{Total simulation time}t$_{{\rm sim}}$(ns) & \footnote{Time used for analysis}t$_{{\rm anal}}$ (ns) &   \footnote{Reference for simulation files}files\\
       \hline
-      DPPE  & Slipids \cite{jambeck12b} &0 & 0        & 288 			   		& 9386 & 0  & 336  & 200 & 100 & \cite{slipidsDPPEfiles}  \\
+      DPPE  & Slipids \cite{jambeck12b} &0 & 0           & 288 	& 9386 & 0  & 336  & 200 & 100 & \cite{slipidsDPPEfiles}  \\
+      POPE  & Slipids \cite{jambeck12b,??} &0 & 0        & 336	& ?    & 0  & 310  & 200 & 100 & \cite{slipidsPOPEfiles}  \\
       \hline
       POPG/Na$^+$  & CHARMM36 \cite{??} \todoi{Correct citation for CHARMM POPG}        &0 & 0        & ? 			   		& ? & 0  & ?  & ? & ? & \cite{??}
       \todoi{Details to be filled and data to be uploaded in Zenodo by Ollila.}  \\
-      POPG/Na$^+$  & Slipids \cite{jambeck13}     &0 & 0        & 288 			   		& 10664 & 0  & 298  & 250 & 100 & \cite{slipidsPOPGfiles} \\
+      POPG/Na$^+$  & Slipids \cite{jambeck13}     &0 & 0        & 288 	& 10664 & 0  & 298  & 250 & 100 & \cite{slipidsPOPGfiles} \\
       \hline
-      DPPG/Na$^+$  & Slipids \cite{jambeck13}     &0 & 0        & 288 			   		& 11232 & 0  & 314  & 200 & 100 & \cite{slipidsDPPGfiles} \\
-      DPPG/Na$^+$  & Slipids \cite{jambeck13}     &0 & 0        & 288 			   		& 11232 & 0  & 298  & 400 & 100 & \cite{slipidsDPPGfilesT298K} \\
+      DPPG/Na$^+$  & Slipids \cite{jambeck13}     &0 & 0        & 288 	& 11232 & 0  & 314  & 200 & 100 & \cite{slipidsDPPGfiles} \\
+      DPPG/Na$^+$  & Slipids \cite{jambeck13}     &0 & 0        & 288 	& 11232 & 0  & 298  & 400 & 100 & \cite{slipidsDPPGfilesT298K} \\
     \end{tabular}
   \end{minipage}
   %\end{sidewaystable*} 
@@ -296,9 +297,9 @@ Interestingly, the $\alpha$-carbon order parameters are closer to experiments
 in pure PS system with K+ counterions than with Na+. 
 The changes in PG headgroup order parameters are minor in simulations, which
 is in line with the only available experiment for the $\beta$-carbon.
-\begin{figure*}[]
+\begin{figure}[]
   \centering
-  \includegraphics[width=16.0cm]{../Figs/HGorderparametersPSPGvsPC.eps}
+  \includegraphics[width=8.0cm]{../Figs/HGorderparametersPGvsPC.eps}
   \caption{\label{HGorderparametersPSPGvsPC}
     PS and PG lipid headgroup order parameters from mixtures with PC
     lipids with various mole fractions from different simulation models and experiments \cite{borle85,roux90}.
@@ -310,7 +311,7 @@ is in line with the only available experiment for the $\beta$-carbon.
     ion concentrations for comparison should be figured out.} \\
   \todo{Why there is difference between CHARMM36 simulation results from POPS:POPC mixture and
   pure POPS? Discussion in https://github.com/NMRLipids/NMRlipidsIVotherHGs/issues/1}
-\end{figure*}
+\end{figure}
 
 
 
@@ -396,7 +397,7 @@ parameter of bound charge
   I have already ran the simulations, analysis to be done.}.
 \begin{figure}[]
   \centering
-  \includegraphics[width=9.0cm]{../Figs/CHANGESwithCaClPGPS.eps}
+  \includegraphics[width=9.0cm]{../Figs/CHANGESwithCaClPG.eps}
   \caption{\label{changesWITHCaClPG}
     PG order parameters as a function CaCl$_2$ concentration from experiments \cite{borle85} and CHARMM36 simulations.
     Note that beta order parameter is calculated from empirical relation $\Delta S_{\beta}=0.43\Delta S_{\alpha}$ \cite{akutsu81}, not actually measured. 
@@ -421,7 +422,7 @@ as a function of CaCl$_2$ concentration are shown in Fig. \ref{PSPGchangesWITHCa
 \todo{These should be compared to simulations for potential structural interpretation of the changes.}
 \begin{figure}[]
   \centering
-  \includegraphics[width=9.0cm]{../Figs/PSPGwithCaCl.eps}
+  \includegraphics[width=9.0cm]{../Figs/PGwithCaCl.eps}
   \caption{\label{PSPGchangesWITHCaCl}
     PG and PS order parameters a function CaCl$_2$ concentration taken from \cite{borle85} and \cite{roux90}, respectively.
   }
