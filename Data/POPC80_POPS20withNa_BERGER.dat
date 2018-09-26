@@ -4,10 +4,9 @@
 # MATCH/Data/Lipid_Bilayers/POPS+80%popc+1000mMNaCl/T310K/MODEL_berger/
 #
 # Order parameters as a function of excess [NaCl]
-#CONCENTRATION NEEDS TO BE CHECKED!
 #[NaCl]    POPC_a1           POPC_a2          POPC_b1            POPC_b2            POPS_a1            POPS_a2                POPS_b
 0          0.0619829         0.121486        0.0129448           0.032294          0.262379            0.304819               0.15793 
-1.0        0.0333287         0.0997378      -0.00178196         0.00726657         0.122696            0.422123 	      0.178558 
+1.03        0.0333287         0.0997378      -0.00178196         0.00726657         0.122696            0.422123 	      0.178558 
 
 
 

@@ -1,7 +1,7 @@
 set size 1.0,1.1
-set terminal postscript portrait enhanced color dashed lw 1 "Helvetica" 14 
+set terminal postscript portrait enhanced color dashed lw 1 "Helvetica" 14 background rgb 'white'
 set output "../CIdensPSOCmixt.eps"
-#set yrange [0:0.18] 
+set yrange [0:1.2] 
 set xrange [-4:4] 
 #set ytic 0.05
 #set xtics ("{/Symbol b}" 1, "{/Symbol a}" 2, "g_{3R}" 3, "g_{3S}" 4, "g_{2}" 5, "g_{1R}" 6, "g_{1S}" 7)
@@ -14,9 +14,13 @@ set xtics format " "
 #set size 1.0,0.2
 set ylabel "Density profile"
 set label  "CHARMM36"  at graph  0.4,0.8
-set key at graph 0.6,0.5 maxcols 3 maxrows 5
+set key at graph 0.6,0.5 maxcols 3 maxrows 6
 plot "../../../MATCH/Data/Lipid_Bilayers/POPS+83%popc/T298K/MODEL_CHARMM/NAdens.xvg" using 1:2 with lines title 'Na' lw 2 lc rgb 'black',\
+     "../../../MATCH/Data/Lipid_Bilayers/POPS+83%popc+500mMNaCl/T298K/MODEL_CHARMM/IONdens.xvg" using 1:2 with lines title '500mM' lw 4 lc rgb 'black',\
+     "../../../MATCH/Data/Lipid_Bilayers/POPS+83%popc+1000mMNaCl/T298K/MODEL_CHARMM/IONdens.xvg" using 1:2 with lines title '1000mM' lw 6 lc rgb 'black',\
      "../../../MATCH/Data/Lipid_Bilayers/POPS+83%popc/T298K/MODEL_CHARMM_POTASSIUMcounterion2/Kdens.xvg" using 1:2 with lines title 'K' lw 2 lc rgb 'red',\
+     "../../../MATCH/Data/Lipid_Bilayers/POPS+83%popc+500mMKCl/T298K/MODEL_CHARMM/IONdens.xvg" using 1:2 with lines title '500mM' lw 4 lc rgb 'red',\
+     "../../../MATCH/Data/Lipid_Bilayers/POPS+83%popc+1000mMKCl/T298/model_CHARMM/IONdens.xvg" using 1:2 with lines title '1000mM' lw 6 lc rgb 'red',\
 
 
 
@@ -29,11 +33,10 @@ set label  "500mM"  at graph  0.85,0.35
 set label  "1000mM"  at graph  0.85,0.6
 set label  "2000mM"  at graph  0.7,0.9
 plot "../../../MATCH/Data/Lipid_Bilayers/POPS+83%popc/T298K/MODEL_MACROG/Kdens.xvg" using 1:2 with lines notitle lw 2 lc rgb 'red',\
-     "../../../MATCH/Data/Lipid_Bilayers/POPS+83%popc+500mMKCl/T298K/MODEL_MACROG/Kdens.xvg" using 1:2 with lines notitle lw 4 lc rgb 'red',\
-     "../../../MATCH/Data/Lipid_Bilayers/POPS+83%popc+1000mMKCl/T298/MODEL_MACROG/Kdens.xvg" using 1:2 with lines notitle lw 6 lc rgb 'red',\
-     "../../../MATCH/Data/Lipid_Bilayers/POPS+83%popc+2000mMKCl/T298/MODEL_MACROG/Kdens.xvg" using 1:2 with lines notitle lw 8 lc rgb 'red',\
-#     "../../../MATCH/Data/Lipid_Bilayers/POPS+83%popc+3000mMKCl/T298/MODEL_MACROG/Kdens.xvg" using 1:2 with lines notitle lw 2 lc rgb 'red',\
-#     "../../../MATCH/Data/Lipid_Bilayers/POPS+83%popc+4000mMKCl/T298/MODEL_MACROG/Kdens.xvg" using 1:2 with lines notitle lw 2 lc rgb 'red',\
+     "../../../MATCH/Data/Lipid_Bilayers/POPS+83%popc+500mMKCl/T298K/MODEL_MACROG/IONdens.xvg" using 1:2 with lines notitle lw 4 lc rgb 'red',\
+     "../../../MATCH/Data/Lipid_Bilayers/POPS+83%popc+1000mMKCl/T298/MODEL_MACROG/IONdens.xvg" using 1:2 with lines notitle lw 6 lc rgb 'red',\
+#     "../../../MATCH/Data/Lipid_Bilayers/POPS+83%popc+2000mMKCl/T298/MODEL_MACROG/IONdens.xvg" using 1:2 with lines notitle lw 8 lc rgb 'red',\
+
 
 #set size 1.0,0.2
 set xtics format "%G"

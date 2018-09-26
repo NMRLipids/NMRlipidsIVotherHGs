@@ -1,5 +1,5 @@
 set size 1.0,1.1
-set terminal postscript portrait enhanced color dashed lw 1 "Helvetica" 14 
+set terminal postscript portrait enhanced color dashed lw 1 "Helvetica" 14  background rgb 'white'
 set output "../CAdensPCPSmixture.eps"
 #set yrange [-1:70] 
 set xrange [-4.0:4.0] 
@@ -12,25 +12,35 @@ set multiplot layout 3,1
 
 set xtics format " " 
 
-set ylabel "Density profile"
+set ytic
+set ylabel " "
+set label  "CHARMM36"  at graph  0.4,0.8
+set key at graph 0.6,0.7
 #set size 1.0,0.2
 plot "../../scratch/dens_profiles_PCPS/250POPC_50POPS_1MCaCl-1atm-298K/dens_CAL.xvg" using 1:2 with lines title '1000mM' lw 4 lc rgb 'green',\
-"../../scratch/dens_profiles_PCPS/250POPC_50POPS_0.15MCaCl-1atm-298K/dens_CAL.xvg" using 1:2 with lines title 'CHARMM36 150mM' lw 4 lc rgb 'red',\
-     
+"../../scratch/dens_profiles_PCPS/250POPC_50POPS_0.15MCaCl-1atm-298K/dens_CAL.xvg" using 1:2 with lines title '150mM' lw 4 lc rgb 'red',\
 
+set ylabel "Number density of calcium ions"
+unset label
+set label  "MacRog"  at graph  0.4,0.8
+set yrange [0:2.1]
+set ytic 0.25
 #set size 1.0,0.2
 #set xtics format "%G"
 #set xlabel "Membrane normal coordinate (nm)"
-plot "../../../MATCH/Data/Lipid_Bilayers/POPS+83%popc+3000mMCaCl/T298K/MODEL_MACROG/CAdens.xvg" using 1:2 with lines notitle  lw 4 lc rgb 'black',\
-     "../../../MATCH/Data/Lipid_Bilayers/POPS+83%popc+1000mMCaCl/T298K/MODEL_MACROG/CAdens.xvg" using 1:2 with lines title 'MacRog 1000mM' lw 4 lc rgb 'green',\
-     "../../../MATCH/Data/Lipid_Bilayers/POPS+83%popc+300mMCaCl/T298K/MODEL_MACROG/CAdens.xvg" using 1:2 with lines notitle lw 4 lc rgb 'blue',\
-     "../../../MATCH/Data/Lipid_Bilayers/POPS+83%popc+100mMCaCl/T298K/MODEL_MACROG/CALdens.xvg" using 1:2 with lines title '100mM' lw 4 lc rgb 'red',\
+plot "../../../MATCH/Data/Lipid_Bilayers/POPS+83%popc+3000mMCaCl/T298K/MODEL_MACROG/IONdens.xvg" using 1:2 with lines title '3000mM'  lw 4 lc rgb 'black',\
+     "../../../MATCH/Data/Lipid_Bilayers/POPS+83%popc+1000mMCaCl/T298K/MODEL_MACROG/IONdens.xvg" using 1:2 with lines title '1000mM' lw 4 lc rgb 'green',\
+     "../../../MATCH/Data/Lipid_Bilayers/POPS+83%popc+300mMCaCl/T298K/MODEL_MACROG/IONdens.xvg" using 1:2 with lines title '300mM' lw 4 lc rgb 'blue',\
+     "../../../MATCH/Data/Lipid_Bilayers/POPS+83%popc+100mMCaCl/T298K/MODEL_MACROG/IONdens.xvg" using 1:2 with lines title '100mM' lw 4 lc rgb 'red',\
 
+set ylabel " "
+unset label
+set label  "Berger"  at graph  0.4,0.8
 #set size 1.0,0.2
 set xtics format "%G"
 set xlabel "Membrane normal coordinate (nm)"
-plot      "../../../MATCH/Data/Lipid_Bilayers/POPS+80%popc+715mMCaCl/T310K/MODEL_Berger/CAdens.xvg" using 1:2 with lines title 'Berger 715mM' lw 4 lc rgb 'green',\
-	  "../../../MATCH/Data/Lipid_Bilayers/POPS+80%popc+102mMCaCl/T310K/MODEL_Berger/CAdens.xvg" using 1:2 with lines title 'Berger 102mM'  lw 4 lc rgb 'red',\
+plot      "../../../MATCH/Data/Lipid_Bilayers/POPS+80%popc+715mMCaCl/T310K/MODEL_Berger/CAdens.xvg" using 1:2 with lines title '715mM' lw 4 lc rgb 'green',\
+	  "../../../MATCH/Data/Lipid_Bilayers/POPS+80%popc+102mMCaCl/T310K/MODEL_Berger/CAdens.xvg" using 1:2 with lines title '102mM'  lw 4 lc rgb 'red',\
 
 
 

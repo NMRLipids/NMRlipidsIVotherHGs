@@ -1,0 +1,17 @@
+# Binding of Na+ to Mixtures of POPC:POPS (5:1) mixtures from CHARMM36 model
+#
+# Original data http://doi.org/10.5281/zenodo.1182665
+# and TO BE UPLOADED
+#
+# Results from
+# MATCH/Data/Lipid_Bilayers/POPS+83%popc+500mMNaCl/T298/MODEL_CHARMM/
+# MATCH/Data/Lipid_Bilayers/POPS+83%popc+1000mMNaCl/T298/MODEL_CHARMM/
+#
+# Order parameters as a function of CONCENTRATION NEEDS TO BE CHECKED!
+# STEREOCHEMISTRY MIGHT NOT BE CONSERVED AS A FUNCTION OF IONS
+#[NaCl]    POPC_a1   error      POPC_a2   error       POPC_b1   error      POPC_b2     error    POPS_a1   error     POPS_a2     error       POPS_b   error
+0     0.03765    0.00450   0.02839    0.00416   -0.08391    0.00341   -0.08533    0.00354   0.07202    0.01340   -0.10456    0.00612   -0.13221    0.00595    
+0.44  0.02680    0.00342   0.02399    0.00322   -0.09549    0.00257   -0.09391    0.00257   0.07738    0.01295   -0.08569    0.00915   -0.12695    0.01032    
+0.89  0.01571    0.00300   0.02318    0.00343   -0.09990    0.00258   -0.10546    0.00284   0.05124    0.01374   -0.09183    0.00896   -0.11640    0.00841   
+
+

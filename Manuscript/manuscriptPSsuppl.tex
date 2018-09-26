@@ -11,8 +11,33 @@
 \usepackage{multirow}
 \usepackage{lmodern}
 \usepackage{microtype}
+\usepackage{xr}
+\externaldocument{manuscriptPS}
 
-
+\author{Pavel Buslaev}
+\affiliation{Moscow Institute of Physics and Technology}
+\author{Tiago M. Ferreira}
+\affiliation{Halle, Germany}
+\author{Ivan Gushchin}
+\affiliation{Moscow Institute of Physics and Technology}
+\author{Matti Javanainen}
+\affiliation{Institute of Organic Chemistry and Biochemistry,
+Academy of Sciences of the Czech Republic, 
+Prague 6, Czech Republic}
+\author{Batuhan Kav}
+\affiliation{Potsdam, Germany}
+\author{Jesper J. Madsen}
+\affiliation{Department of Chemistry, The University of Chicago, Chicago, Illinois 60637, United States of America}
+\author{Markus Miettinen}
+\affiliation{Potsdam, Germany}
+\author{Josef Melcr}
+\affiliation{Institute of Organic Chemistry and Biochemistry,
+Academy of Sciences of the Czech Republic, 
+Prague 6, Czech Republic}
+\author{Ricky Nencini}
+\affiliation{Institute of Organic Chemistry and Biochemistry,
+Academy of Sciences of the Czech Republic, 
+Prague 6, Czech Republic}
 \author{O. H. Samuli Ollila}
 \email{samuli.ollila@helsinki.fi}
 %\homepage[]{Your web page}
@@ -20,9 +45,10 @@
 Academy of Sciences of the Czech Republic, 
 Prague 6, Czech Republic}
 \affiliation{Institute of Biotechnology, University of Helsinki}
+\author{Thomas Piggot   \todo{Authorlist is not yet complete}}
+\affiliation{Southampton, United Kingdom}
 
-\author{NMRlipids collaboration \todo{Authorship query to be sent soon.}}
-\affiliation{nmrlipids.blogspot.fi} 
+
 
 
 
@@ -53,8 +79,8 @@ Prague 6, Czech Republic}
 \todo{To be written by Piggot and Favela}
 
 \subsection{Berger}
-\todo{To be wiritten by Piggot and Ollila}
-Simulations with sodium were taken directly from Ref. \citenum{??} and
+\todo{To be written by Piggot and Ollila}
+Simulations with excess sodium were taken directly from Ref. \citenum{jurkiewicz12} and
 simulations with calcium directly from \citenum{melcrova16}.
 Simulation of POPC at 310 K was taken directly from Ref. \citenum{ollila07a}.
 
@@ -62,7 +88,7 @@ Simulation of POPC at 310 K was taken directly from Ref. \citenum{ollila07a}.
 \todo{To be written by Piggot}
 
 \subsection{Lipid17}
-\todo{To be written by Kav and Miettinen}
+\todo{To be written by Kav, Miettinen and Meclr.}
 
 \subsection{MacRog}
 \todo{To be written by Javanainen and Piggot}
@@ -73,139 +99,150 @@ Simulation of POPC at 310 K was taken directly from Ref. \citenum{ollila07a}.
 The electrometer concept is based on the empirical observations that
 the order parameters of $\alpha$ and $\beta$ carbons in PC lipid headgroup
 decrease (increase) proportionally to the bound positive (negative) 
-charge~\cite{akutsu81,altenbach84,seelig87,scherer89}. 
-The concept is also valid for lipid mixtures where PC order parameters 
-increase when mixed with anionic lipids, in contrast to the mixtures with neutral or
-cationic surfactants~\cite{seelig87, scherer87} (Fig. \ref{HGorderparametersPCvsPEPSPGchol}).
+charge~\cite{akutsu81,altenbach84,seelig87,scherer89} (Fig. \ref{HGorderparametersPCvsPEPSPGchol}). 
+Therefore, the headgroup order parameters can be used to measure the
+ion binding affinity to lipid bilayers containing PC
+lipids~\cite{akutsu81,altenbach84,borle85,seelig87,macdonald87,roux90}.
+Changes of the headgroup order parameters of other lipids with bound charge,
+like negatively charged PS and PG lipids,  are also systematic,
+but less well characterized~\cite{borle85,macdonald87,roux86,roux90}.
+Therefore, the ion binding affinity to negatively charged bilayers
+can be better characterized measuring the PC headgroup order parameters from 
+mixed bilayers~\cite{borle85,roux86,macdonald87,roux90,roux91}.
 \begin{figure}[]
   \centering
   \includegraphics[width=8.0cm]{../Figs/HGorderparametersPCvsPEPSPGchol.eps}
   \caption{\label{HGorderparametersPCvsPEPSPGchol}
-    PC headgroup order parameters from experiments of mixtures with
-    PE, PS, PG and cholesterol \cite{scherer87,scherer89,ferreira13}.
-    Signs are determined as discussed in \cite{botan15,ollila16}.
+    Headgroup order parameters of POPC measured from mixtures with
+    PS (bovine brain), POPG, POPE, cholesterol and cationic surfactant~\cite{scherer87,scherer89,ferreira13}.
+    Signs are taken from separate experiments~\cite{ollila16,ferreira16}.
   }
 \end{figure}
 
-Based on the electrometer concept, the headgroup order parameters of
-PC lipids can be used to measure the ion binding affinity to lipid 
-bilayers \cite{akutsu81,altenbach84,seelig87}. Changes of the headgroup order 
-parameters of negatively charged PS and PG lipids with bound charge are also systematic,
-but less well characterized~\cite{borle85,macdonald87,roux86,roux90}.
-Therefore, the ion binding affinity to negatively charged bilayers
-can be better characterized measuring the PC headgroup order parameters from 
-mixed bilayers. The PC headgroup order parameters in mixtures with anionic
-lipids are larger than in pure PC lipid because addition of
-negative charges increase the order parameters (Figs. \ref{HGorderparametersPCvsPEPSPGchol} 
-and \ref{OrderParametersWithCaCl}). Upon addition of CaCl$_2$, the PC headgroup order 
-parameters in the mixed bilayers decrease and reach the values of pure PC bilayer close 
+When comparing ion binding measured from the PC headgroup order parameters between
+neutral and anionic membranes, it is important to note that the order parameters
+increase due to the addition of negative charged lipids according to the electrometer
+concept~\cite{seelig87, scherer87} (Fig. \ref{HGorderparametersPCvsPEPSPGchol}).
+Therefore, the headgroup order parameters of POPC in mixtures with anionic
+lipids are larger than in pure POPC lipid bilayer, which is also seen in the ion binding
+experiments from different mixtures in the absence of added calcium (Fig. \ref{OrderParametersWithCaCl}).
+Upon addition of CaCl$_2$, the order parameters decrease and reach the values of pure PC bilayer close 
 to the CaCl$_2$ concentrations of $\sim$ 50-300mM, depending on the amount of negatively charged
-lipids in the mixture (Fig. \ref{OrderParametersWithCaCl}). At this point the charge of
-bound Ca$^{2+}$ probably cancels the charge of anionic negative lipids and the bilayer 
-has neutral charge. The overcharging then occurs with larger concenterations.
+lipids in the mixture (Fig. \ref{OrderParametersWithCaCl}).
+Around these concentrations the positive charge of bound Ca$^{2+}$ cancels
+the negative charge lipids, resulting to a neutral membrane. 
+Above such concentrations, the specific binding of calcium leads to
+the overcharging of the membrane.
 \begin{figure}[]
   \centering
   \includegraphics[width=8.0cm]{../Figs/LIPIDSwithCaCl.eps}
   \includegraphics[width=8.0cm]{../Figs/LIPIDSwithCaClBELOW1M.eps}
   \caption{\label{OrderParametersWithCaCl}
-    PC headgroup order parameters as a function of CaCl concentration from experiments 
-    different mole fractions of negatively charged lipids.
-    Pure DPPC data from \cite{akutsu81}, pure POPC data from \cite{altenbach84}, 
-    POPC:POPS mixture data from \cite{roux90}, POPC:POPG mixture data with 0.1M NaCl from \cite{macdonald87}
-    and POPC:POPG mixture data without NaCl from \cite{borle85}.
-    The right column shows the results zoomed to concentrations below 1M.
+    Headgroup order parameters of POPC as a function of CaCl concentration from experiments 
+    different mole fractions of negatively charged lipids (left column).
+    Right column shows the same data zoomed to the concentrations below 1M.
+    Data for Pure DPPC from~\cite{akutsu81},
+    for pure POPC from~\cite{altenbach84}, 
+    for POPC:POPS (5:1) mixture from~\cite{roux90},
+    for POPC:POPG (8:2,1:1) mixtures with 0.1M NaCl from~\cite{macdonald87}
+    and for POPC:POPG (1:1) mixture data without NaCl from \cite{borle85}.
   }
 \end{figure}
-As expected, the more pronounced order parameter decrease is observed in systems with more
-negatively charged lipids (Fig. \ref{OrderParameterCHANGESWithCaClBELOW1M}) indicating 
-higher binding affitiny of cations into the negatively charged membranes. In conclusion,
-the consistency of the experimental results suggests that the electrometer concept can
-be used to determine the cation binding also to the lipid bilayers containing negatively
-charged lipids.  
+
+Because the POPC headgroup order parameters in mixtures with different amounts of anionic lipids
+but without additional salt are not equal, the binding affinity of calcium can be better compared
+by plotting the changes of order parameters as a function of added calcium.
+As expected, such a plot reveals more pronounced order parameter decrease in systems
+with larger fractions of negatively charged lipids (Fig. \ref{OrderParameterCHANGESWithCaClBELOW1M}),
+indicating an increase in the calcium binding affinity with the increasing amount of negatively charged
+lipids in membranes. In conclusion, the presented empirical comparison of headgroup order parameter changes
+from various mixtures of POPC and anionic lipids with added calcium gives physically
+consistent results, suggesting that the electrometer concept can be used to determine
+the cation binding affinity also to the lipid bilayers containing mixtures of PC and anionic lipids.  
 \begin{figure}[]
   \centering
   \includegraphics[width=9.0cm]{../Figs/CHANGESwithCaCl.eps}
   \caption{\label{OrderParameterCHANGESWithCaClBELOW1M}
-    The change of PC headgroup order parameters as a function of CaCl$_2$
-    measured from bilayers containing different amount of negatively charged lipids.
-    The values are taken from 2H NMR experiments reported in the
-    literature (DPPC \cite{akutsu81}, POPC \cite{altenbach84}, POPC:POPS (5:1) \cite{roux90},
-    POPC:POPG  mixtures with 0.1M NaCl \cite{macdonald87}
-    and POPC:POPG (1:1) without NaCl \cite{borle85}).
-    As expected, the decrease of order parameters with the added CaCl$_2$
-    is more pronounced for systems with larger fraction of
-    negatively charged lipids, indicating larger amount amount
-    of bound cations.
+    Changes of POPC headgroup order parameters as a function of CaCl$_2$
+    measured from mixed bilayers containing different amounts of anionic lipids.
+    The original data is the same as in figure~\ref{OrderParametersWithCaCl}.
+%    The values are taken from 2H NMR experiments reported in the
+%    literature (DPPC \cite{akutsu81}, POPC \cite{altenbach84}, POPC:POPS (5:1) \cite{roux90},
+%    POPC:POPG  mixtures with 0.1M NaCl \cite{macdonald87}
+%    and POPC:POPG (1:1) without NaCl \cite{borle85}).
   }
 \end{figure}
 
 \pagebreak
 \section{Calibration of PC headgroup order parameter response to the bound cations}\label{electrometerCALIBRATION}
 Before using the headgroup order parameters to compare ion binding affinity between simulations
-and experiments, it is important to quantify the response of the order parameters to the
-bound charge in simulations~\cite{catte16,melcr18}. Comparison of the headgroup order parameter
-response to the cationic surfactants in POPC bilayer to the experiments \cite{scherer89} shows
-that the both order parameters are too sensitive to the bound charge in the Lipid14 model,
+and experiments, the response of the order parameters to the bound charge in simulations should be quantified
+against experiments~\cite{catte16,melcr18}. In our previous work~\cite{catte16},
+the ratio $\Delta S_{\rm CH}^\beta / \Delta S_{\rm CH}^\alpha$ was in good agreement with the experiments~\cite{akutsu81}
+in the Lipid14 model, but was underestimated by other models. In the more recent study~\cite{melcr18},
+the headgroup order parameter responses were compared more carefully with the experiments of cationic
+surfactants in POPC bilayer~\cite{scherer89}. The comparison reveals that the both headgroup
+order parameters in the Lipid14 model are too sensitive to the bound charge,
 while CHARMM36 gives better agreement for the $\alpha$ carbon (Fig. \ref{CHANGESwithDHMDMAB}).
-The ratio $\Delta S_{\rm CH}^\beta / \Delta S_{\rm CH}^\alpha$ from Lipid14 model was in good agreement 
-with experiments in the previous study~\cite{catte16} because both order parameters are equally too 
-sensitive to the bound cations (Fig. \ref{CHANGESwithDHMDMAB}). The ratio was, however, overestimated
-for the CHARMM36 model because the $\beta$ order parameter relatively more sensitive than the $\alpha$
-order parameter. These have to be taken into account when analysing the ion binding affinities
-using headgroup order parameters in simulations.
+Therefore, the headgroup order parameter response to the bound charge is actually more realistic
+in CHARMM36 model than in the Lipid14. In the latter, both order parameters are equally too 
+sensitive to the bound cations giving a good result for the $\Delta S_{\rm CH}^\beta / \Delta S_{\rm CH}^\alpha$ ratio.
+The ratio was overestimated for the CHARMM36 model because the $\beta$-carbon order parameter
+is relatively more sensitive than the $\alpha$-carbon order parameter. These results have to be taken
+into account when analysing the ion binding affinities using headgroup order parameters in simulations.
+However, we conclude that the discrepancies arising from the sentivity of lipid headgroup to
+bound charge are typically smaller than then discrepancies arising from ion binding affinity.
 \begin{figure}[]
   \centering
   \includegraphics[width=9.0cm]{../Figs/HGopsDHMDMAB.eps}
   \caption{\label{CHANGESwithDHMDMAB}
-  The response of headgroup order parameters to the fixed amount of cationic surfactants in
-  POPC bilayer is compared between simulations and experiments \cite{scherer89}.}
+  Responses of headgroup order parameters to the fixed amount of cationic surfactants in
+  POPC bilayer from simulations and experiments \cite{scherer89}.
+  The simulation results for Lipid14 are directly from Ref.~\citenum{melcr18}.
+  The CHARMM36 simulation data and details are available from Ref.~\citenum{CHARMM36cationicSURF}.
+}
 \end{figure}
 
 \pagebreak
-\section{Difference between POPC and OPPS in MacRog model}
+\section{Dipolar slices of the R-PDFL experiment}
 
+Slices of the R-PDFL spectra (Fig. \ref{DPslices}) 
+show a single splitting for the $\beta$-carbon with the order parameter value of 0.12,
+and a superposition of a large and a very small splitting for the $\alpha$-carbon.
+The larger splitting gives a order parameter value of 0.09, while the numerical value
+from the small splitting cannot resolved with the available resolution.
 \begin{figure}[]
-  \centering
-  \includegraphics[width=9.0cm]{../Figs/HGorderparametersPOPSvsOPPS.eps}
-  \caption{\label{CHANGESwithCaClPGPS}
-    Headgroup order parameters from POPS and OPPS simulations with MacRog model.}
+%  \centering
+  \includegraphics[width=20.0cm]{../Figs/SI_slices.pdf}
+  \caption{\label{DPslices}
+    Dipolar coupling slices from the R-PDFL experiment.
+  }
+  \todo{Labeling of carbons and explanations of numbers (chemical shift and order parameter) would be good.
+  Also, the size of the figure in the file may not be optimal.}
 \end{figure}
 
 \pagebreak
-\section{Dihedrals}
-\begin{figure*}[]
-  \centering
-  \includegraphics[width=8.0cm]{../Figs/diheds_pops1.png}
-  \includegraphics[width=8.0cm]{../Figs/diheds_pops2.png}
-  \includegraphics[width=8.0cm]{../Figs/diheds_pops3.png}
-  \includegraphics[width=8.0cm]{../Figs/diheds_pops4.png}
-  \includegraphics[width=8.0cm]{../Figs/diheds_pops5.png}
-  \includegraphics[width=8.0cm]{../Figs/diheds_pops6.png}
-  \includegraphics[width=8.0cm]{../Figs/diheds_pops7.png}
-  \caption{\label{dihedralsGLY}
-    Dihedral angle distributions of bonds from phosphate to acyl chain carbonyls from different simulation models.
-  }
-\end{figure*}
+\section{Dihedral angle distributions of the headgroup and glycerol backbone
+  regions of PS lipids from different simulation models}
 
 \begin{figure*}[]
   \centering
-  \includegraphics[width=8.0cm]{../Figs/diheds_pops8.png}
-  \includegraphics[width=8.0cm]{../Figs/diheds_pops9.png}
-  \includegraphics[width=8.0cm]{../Figs/diheds_pops10.png}
-  \includegraphics[width=8.0cm]{../Figs/diheds_pops11.png}
+  \includegraphics[width=8.0cm]{../Figs/PS_Labels.png}
+  \includegraphics[width=16.0cm]{../Figs/figS7.png}
   \caption{\label{dihedralsHG}
-    Dihedral angle distributions of bonds from phosphate to headgroup from different simulation models.
+    Dihedral angle distributions of headgroup region of PS lipids from different simulation models.
   }
 \end{figure*}
 
-\begin{figure}[]
+\begin{figure*}[]
   \centering
-  \includegraphics[width=9.0cm]{../Figs/glycerol_buslaev.png}
-  \caption{\label{glycerol_buslaev}
-    Snapshots overlayed from different simulations for glycerol backbone region
-    by Pavel Buslaev.
+  \includegraphics[width=15.0cm]{../Figs/figS6.png}
+  \caption{\label{dihedralsGLY}
+    Dihedral angle distributions of glycerol backbone region of PS lipids from different simulation models.
   }
-\end{figure}
+\end{figure*}
+
+
 \pagebreak
 
 \section{Sodium binding to DMPC:DOPS mixture}
@@ -224,22 +261,47 @@ Therefore, we cannot exclude the possibility that the NaCl induced changes were 
 saturated with 100mM NaCl concentration, which was the case for CaCl$_2$ in Fig. \ref{changesWITHCaClPS}.
 \pagebreak
 
-\section{Calcium bindinf to POPC in CHARMM36 simulation with NBfix}
+\section{Calcium binding to POPC in CHARMM36 simulation with NBfix}\label{CHARMMcalciumNBfix}
+
+The response of POPC headgroup order parameters to the CaCl$_2$ concentration
+are underestimated in simulations of POPC:POPS (5:1) mixture with CHARMM36 containing
+the NBfix for interactions between calicum and lipid oxygens \cite{kim16}
+(Fig. \ref{changesWITHCaClPS} in the main text),
+indicating that the calcium binding to the bilayer is too weak with these
+parameters. Without the NBfix term, the calcium binding affinity to pure POPC
+lipid bilayers was overestimated in the CHARMM36 model \cite{catte16}.
+However, after employing the NBfix term, the response of headgroup order
+parameters (Fig. \ref{OP_CHARMM_CaCl_POPC_NBFix}) and the binding affinity
+(Fig. \ref{density_profile_CHARMM_CaCl_POPC_NBFix}) of calcium also to a pure
+POPC bilayer are underestimated. Notably, CHARMM36 simulations with the NBfix
+terms \cite{venable13,kim16} employed predict similar binding affinity for sodium and calcium.
+In conclusion, the special NBfix~\cite{kim16} for calcium, 
+incorporated in the parameters give by the CHARMM-GUI at the time
+of running the simulations (January 2018), leads to the underestimation of
+calcium binding affinity to pure PC and mixed PC:PS bilayers.
 
 \begin{figure}[]
   \centering
-  \includegraphics[width=9.0cm]{../Figs/OP_CHARMM_CaCl_POPC_NBFix.pdf}
+  \includegraphics[width=17.0cm]{../Figs/OP_CHARMM_CaCl_POPC_NBFix.pdf}
   \caption{\label{OP_CHARMM_CaCl_POPC_NBFix}
-  The response of headgroup order parameters to the fixed amount of cationic surfactants in
-  POPC bilayer is compared between simulations and experiments \cite{scherer89}.}
+    Headgroup order parameters from CHARMM36 simulations of POPC mixed with ions having
+    the NBfix term employed for sodium \cite{venable13} ({\it left})
+    and calcium \cite{kim16} ({\it right}) compared with the experimental data \cite{akutsu81,altenbach84}.
+    Simulation files without ions are available at Ref. \citenum{nencineCHARMM36popcT310K},
+    with the NBfix term in sodium at Ref. \citenum{CHARMM36withCaClNBfix}, 
+    with the NBfix term in calcium at Ref. \citenum{CHARMM36withCaClNBfix} and
+    without the NBfix in calcium at Ref. \citenum{charmmPOPC450mMCaClfiles}.
+  }
 \end{figure}
 
 \begin{figure}[]
   \centering
   \includegraphics[width=9.0cm]{../Figs/density_profile_CHARMM_CaCl_POPC_NBFix.pdf}
   \caption{\label{density_profile_CHARMM_CaCl_POPC_NBFix}
-  The response of headgroup order parameters to the fixed amount of cationic surfactants in
-  POPC bilayer is compared between simulations and experiments \cite{scherer89}.}
+    Density profiles along membrane normal from CHARMM36 simulations with (middle)
+    and without (top) the NBfix term for calcium \cite{kim16} compared to the simulation
+    with the NBfix term for sodium \cite{venable13} (bottom). The simulation data are the same as in figure \ref{OP_CHARMM_CaCl_POPC_NBFix}.
+  }
 \end{figure}
 
 \pagebreak
@@ -333,6 +395,7 @@ and the weights of the five carbons were summed up.
 The sum, given in the $\Sigma$-column of Fig.~\ref{HGorderParametersPS},
 was then used to (roughly and subjectively, as should be clear from the
 above description) rank the force fields.
+
 
 
 \newpage

@@ -131,9 +131,43 @@ Several simulations containing PE, PG and PS lipids have been published \cite{??
 however, glycerol backbone and headgroup order parameters are not compared to
 the experiments (based on superficial reading of literature).
 
+\section{Methods}
+\section{Molecular dynamics simulations}
+Molecular dynamics simulation data was collected using open collaboration \cite{botan15}.
+The simulations are listed in table \ref{systems}.
+\begin{table*}[htb]
+  %\begin{sidewaystable*}[!p]
+  \centering
+  \caption{List of MD simulations. The salt concentrations calculated as 
+    [salt]=N$_{\rm c} \times$[water]\,/\,N$_{\rm w}$, where [water]\,=\,55.5~M.
+    %   these correspond the concentrations reported in the experiments by Akutsu et al.~\cite{akutsu81}.
+    %   The lipid force fields named as in our previous work~\cite{botan15}.
+  }\label{systems}
+  \begin{minipage}[t]{\textwidth}
+    \begin{tabular}{l c c r r r r r r c c}
+      %\hline
+      % some footnotes are not visible in typeset-MS (pdf)
+      lipid/counter-ions & force field for lipids / ions & NaCl (mM) & CaCl$_2$\,(mM) &  \footnote{Number of lipid molecules with largest mole fraction}N$_{\rm l}$   &  \footnote{Number of water molecules}N$_{\rm w}$   & \footnote{Number of additional cations}N$_{\rm c}$  & \footnote{Simulation temperature}T (K)  & \footnote{Total simulation time}t$_{{\rm sim}}$(ns) & \footnote{Time used for analysis}t$_{{\rm anal}}$ (ns) &   \footnote{Reference for simulation files}files\\
+      \hline
+      DPPE  & Slipids \cite{jambeck12b} &0 & 0           & 288 	& 9386 & 0  & 336  & 200 & 100 & \cite{slipidsDPPEfiles}  \\
+      POPE  & Slipids \cite{jambeck12b,??} &0 & 0        & 336	& ?    & 0  & 310  & 200 & 100 & \cite{slipidsPOPEfiles}  \\
+      \hline
+      POPG/Na$^+$  & CHARMM36 \cite{??} \todoi{Correct citation for CHARMM POPG}        &0 & 0        & ? 			   		& ? & 0  & ?  & ? & ? & \cite{??}
+      \todoi{Details to be filled and data to be uploaded in Zenodo by Ollila.}  \\
+      POPG/Na$^+$  & Slipids \cite{jambeck13}     &0 & 0        & 288 	& 10664 & 0  & 298  & 250 & 100 & \cite{slipidsPOPGfiles} \\
+      \hline
+      DPPG/Na$^+$  & Slipids \cite{jambeck13}     &0 & 0        & 288 	& 11232 & 0  & 314  & 200 & 100 & \cite{slipidsDPPGfiles} \\
+      DPPG/Na$^+$  & Slipids \cite{jambeck13}     &0 & 0        & 288 	& 11232 & 0  & 298  & 400 & 100 & \cite{slipidsDPPGfilesT298K} \\
+    \end{tabular}
+  \end{minipage}
+  %\end{sidewaystable*} 
+\end{table*}
+
+
 \section{Results and Discussion}
 
 \subsection{PE headgroup and glycerol backbone}
+\todo{Add results from this discussion: \url{http://nmrlipids.blogspot.com/2017/03/nmrlipids-iv-headgroup-glycerol.html?showComment=1502290977005#c4964787551006026647}}
 Order parameters from Slipids simulations 
 and experiments for DPPE are shown in Fig. \ref{HGorderParametersPE}.
 Glycerol backbone order parameters in Slipids are off from experiments,
@@ -263,9 +297,9 @@ Interestingly, the $\alpha$-carbon order parameters are closer to experiments
 in pure PS system with K+ counterions than with Na+. 
 The changes in PG headgroup order parameters are minor in simulations, which
 is in line with the only available experiment for the $\beta$-carbon.
-\begin{figure*}[]
+\begin{figure}[]
   \centering
-  \includegraphics[width=16.0cm]{../Figs/HGorderparametersPSPGvsPC.eps}
+  \includegraphics[width=8.0cm]{../Figs/HGorderparametersPGvsPC.eps}
   \caption{\label{HGorderparametersPSPGvsPC}
     PS and PG lipid headgroup order parameters from mixtures with PC
     lipids with various mole fractions from different simulation models and experiments \cite{borle85,roux90}.
@@ -277,7 +311,7 @@ is in line with the only available experiment for the $\beta$-carbon.
     ion concentrations for comparison should be figured out.} \\
   \todo{Why there is difference between CHARMM36 simulation results from POPS:POPC mixture and
   pure POPS? Discussion in https://github.com/NMRLipids/NMRlipidsIVotherHGs/issues/1}
-\end{figure*}
+\end{figure}
 
 
 
@@ -363,7 +397,7 @@ parameter of bound charge
   I have already ran the simulations, analysis to be done.}.
 \begin{figure}[]
   \centering
-  \includegraphics[width=9.0cm]{../Figs/CHANGESwithCaClPGPS.eps}
+  \includegraphics[width=9.0cm]{../Figs/CHANGESwithCaClPG.eps}
   \caption{\label{changesWITHCaClPG}
     PG order parameters as a function CaCl$_2$ concentration from experiments \cite{borle85} and CHARMM36 simulations.
     Note that beta order parameter is calculated from empirical relation $\Delta S_{\beta}=0.43\Delta S_{\alpha}$ \cite{akutsu81}, not actually measured. 
@@ -388,14 +422,15 @@ as a function of CaCl$_2$ concentration are shown in Fig. \ref{PSPGchangesWITHCa
 \todo{These should be compared to simulations for potential structural interpretation of the changes.}
 \begin{figure}[]
   \centering
-  \includegraphics[width=9.0cm]{../Figs/PSPGwithCaCl.eps}
+  \includegraphics[width=9.0cm]{../Figs/PGwithCaCl.eps}
   \caption{\label{PSPGchangesWITHCaCl}
     PG and PS order parameters a function CaCl$_2$ concentration taken from \cite{borle85} and \cite{roux90}, respectively.
   }
   \todo{Get the small concentration data from the inserts}
 \end{figure}
 
-
+\todo{There are mass density profiles available from CHARMM simulations, preliminary figures should be made:
+http://nmrlipids.blogspot.com/2017/03/nmrlipids-iv-headgroup-glycerol.html?showComment=1501446779291#c7311317114567929503}
 
 
 \section{Conclusions}
@@ -424,55 +459,6 @@ as a function of CaCl$_2$ concentration are shown in Fig. \ref{PSPGchangesWITHCa
 {\bf SUPPLEMENTARY INFORMATION}
 \end{center}
 
-\section{Simulated systems}
-\begin{table*}[!p]
-%\begin{sidewaystable*}[!p]
-\centering
-\caption{List of MD simulations. The salt concentrations calculated as 
-   [salt]=N$_{\rm c} \times$[water]\,/\,N$_{\rm w}$, where [water]\,=\,55.5~M.
-%   these correspond the concentrations reported in the experiments by Akutsu et al.~\cite{akutsu81}.
-%   The lipid force fields named as in our previous work~\cite{botan15}.
-}\label{IONsystems}
-\begin{minipage}[t]{\textwidth}
-\begin{tabular}{l c c r r r r r r c c}
-  %\hline
-  % some footnotes are not visible in typeset-MS (pdf)
- lipid/counter-ions & force field for lipids / ions & NaCl (mM) & CaCl$_2$\,(mM) &  \footnote{Number of lipid molecules with largest mole fraction}N$_{\rm l}$   &  \footnote{Number of water molecules}N$_{\rm w}$   & \footnote{Number of additional cations}N$_{\rm c}$  & \footnote{Simulation temperature}T (K)  & \footnote{Total simulation time}t$_{{\rm sim}}$(ns) & \footnote{Time used for analysis}t$_{{\rm anal}}$ (ns) &   \footnote{Reference for simulation files}files\\
-  \hline
-  DPPE  & Slipids \cite{jambeck12b} &0 & 0        & 288 			   		& 9386 & 0  & 336  & 200 & 100 & \cite{slipidsDPPEfiles}  \\
-    \hline
-    DOPS/Na$^+$  & CHARMM36 \cite{??}  \todoi{Correct citation for CHARMM DOPS}      &0 & 0        & 128 			   		& 4480 & 0  & 303  & 500 & 100 & \cite{??}
-    \todoi{By Piggot: http://nmrlipids.blogspot.com/2017/03/nmrlipids-iv-headgroup-glycerol.html?showComment=1491425687561\#c4932902612512697301. We need to decide the switching version or discuss this somehow.}  \\
-    DOPS/Na$^+$  & CHARMM36ua \cite{??} \todoi{Correct citation for CHARMMua DOPS}        &0 & 0        & 128 			   		& 4480 & 0  & 303  & 500 & 100 & \cite{??}
-    \todoi{Delivered by Piggot. We need to decide the switching version or discuss this somehow. Data to be uploaded in Zenodo?}  \\
-    DOPS/Na$^+$  & Slipids \cite{jambeck13}        &0 & 0        & 128 			   		& 4480 & 0  & 303  & 500 & 100 & \cite{??}
-    \todoi{Delivered by Piggot. We need to decide the cut-off version or discuss this somehow. Data to be uploaded in Zenodo?}  \\
-    DOPS/Na$^+$  & Slipids \cite{jambeck13}        &0 & 0        & 288 			   		& 11232 & 0  & 303  & 200 & 100 & \cite{slipidsDOPSfiles} \\
-    DOPS/Na$^+$  & Berger \cite{mukhopadhyay04}        &0 & 0        & 128 			   		& 4480 & 0  & 303  & 500 & 100 & \cite{??}
-    \todoi{Delivered by Piggot. Data to be uploaded in Zenodo?}  \\
-    DOPS/Na$^+$  & GROMOS-CKP \cite{??} \todoi{Correct citation(s) for CKP.}       &0 & 0        & 128 			   		& 4480 & 0  & 303  & 500 & 100 & \cite{??}
-    \todoi{Delivered by Piggot. We need to decide between RF and PME or discuss this somehow. Data to be uploaded in Zenodo?}  \\
-    \hline
-    POPS/Na$^+$  & CHARMM36 \cite{??} \todoi{Correct citation for CHARMM POPS}        &0 & 0        & 128 			   		& 4480 & 0  & 298  & 500 & 100 & \cite{??}
-    \todoi{Delivered by Piggot. We need to decide the switching version or discuss this somehow. Data to be uploaded in Zenodo?}  \\
-    POPS/Na$^+$  & CHARMM36ua \cite{??} \todoi{Correct citation for CHARMMua DOPS}        &0 & 0        & 128 			   		& 4480 & 0  & 298  & 500 & 100 & \cite{??}
-    \todoi{Delivered by Piggot. We need to decide the switching version or discuss this somehow. Data to be uploaded in Zenodo?}  \\
-    POPS/Na$^+$  & Slipids \cite{jambeck13}        &0 & 0        & 128 			   		& 4480 & 0  & 298  & 500 & 100 & \cite{??}
-    \todoi{Delivered by Piggot. We need to decide the cut-off version or discuss this somehow. Data to be uploaded in Zenodo?}  \\
-    \hline
-    POPC:POPS (5:1)/Na$^+$  & CHARMM36 \cite{klauda10,??} \todoi{Correct citation for CHARMM POPS}        &0 & 0        & ? 			   		& ? & 0  & ?  & ? & ? & \cite{??}
-    \todoi{Details to be filled and data to be uploaded in Zenodo by Ollila.}  \\
-    \hline
-    POPG/Na$^+$  & CHARMM36 \cite{??} \todoi{Correct citation for CHARMM POPG}        &0 & 0        & ? 			   		& ? & 0  & ?  & ? & ? & \cite{??}
-    \todoi{Details to be filled and data to be uploaded in Zenodo by Ollila.}  \\
-    POPG/Na$^+$  & Slipids \cite{jambeck13}     &0 & 0        & 288 			   		& 10664 & 0  & 298  & 250 & 100 & \cite{slipidsPOPGfiles} \\
-    \hline
-    DPPG/Na$^+$  & Slipids \cite{jambeck13}     &0 & 0        & 288 			   		& 11232 & 0  & 314  & 200 & 100 & \cite{slipidsDPPGfiles} \\
-    DPPG/Na$^+$  & Slipids \cite{jambeck13}     &0 & 0        & 288 			   		& 11232 & 0  & 298  & 400 & 100 & \cite{slipidsDPPGfilesT298K} \\
-\end{tabular}
-\end{minipage}
-%\end{sidewaystable*} 
-\end{table*}
 
 
 %\section{Measurements of order parameter sign}

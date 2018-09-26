@@ -5,7 +5,8 @@
 # original data delivered by Matti Javanainen 
 # Counterions are potassium
 #
-#       beta1            beta2                 alpha1          alpha2   
-0      0.0104732119647  -0.000794028247912   0.027735846995   0.016139167758
-0.17   0.0274047556087  0.0253713902         0.0498335618254  0.0458714714803
+#POPSfrac  POPC_a1   error      POPC_a2   error       POPC_b1   error      POPC_b2     error    POPS_a1   error     POPS_a2     error       POPS_b   error
+0         0.02774    0.01177   0.01614    0.01194   0.01047    0.01178   -0.00079    0.01209     -         -         -          -            -        -
+0.17      0.04174    0.01025   0.04001    0.01210   0.02324    0.00988   0.02009    0.01217   -0.01649    0.02976   -0.17017    0.01471   -0.13222    0.02386 
+
 
