@@ -156,6 +156,8 @@ plot [0.5:5.5][0.35:-0.35] \
          u ($1+dxCKPpo):($2):($3):($4) w ye lt CKP_QB pt 6 ps r t 'POPS CKPM T=298K', \
      "../../../MATCH/Data/Lipid_Bilayers/POPS/T298K/MODEL_MACROG/head-glyc-OPs_ave_min_max.dat" \
          u ($1+dxMcRpo):($2):($3):($4) w ye lt MacRog pt 7 ps r t 'POPS MacRog T=298K', \
+     "../../../MATCH/Data/Lipid_Bilayers/POPS/T298K/MODEL_MACROG_POTASSIUMcounterion/OrdParsFORplot.dat" \
+         u ($1+dxMcRpo):($2):($3) w ye lt MacRog pt 6 ps r t 'POPS MacRog K^+ T=298K', \
      "../../../MATCH/Data/Lipid_Bilayers/POPS/T298K/MODEL_Berger/head-glyc-OPs_ave_min_max.dat" \
          u ($1+dxBERpo):($2):($3):($4) w ye lt Berger pt 7 ps r t 'POPS Berger T=298K', \
      "../../../MATCH/Data/Lipid_Bilayers/POPS/T298K/MODEL_LIPID17/head-glyc-OPs_ave_min_max.dat" \

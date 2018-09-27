@@ -48,7 +48,10 @@ set size 1.0,0.2
 unset label
 set label  "MACROG"  at graph  0.4,0.8
 set label  "A_{pl} = 53 {\305}^2"  at graph  0.02,0.8
-plot "../../../MATCH/Data/Lipid_Bilayers/OPPS/T298K/MODEL_MACROG/NAdens.xvg" using 1:2 with lines notitle lw 2 lc rgb 'black',\
+set label  "A_{pl} = 63 {\305}^2"  at graph  0.02,0.65 tc rgb 'red'
+set key at graph 0.6,0.5 maxcols 3 maxrows 5
+plot "../../../MATCH/Data/Lipid_Bilayers/POPS/T298K/MODEL_MACROG/NAdensAV.xvg" using 1:2 with lines title 'Na' lw 2 lc rgb 'black',\
+     "../../../MATCH/Data/Lipid_Bilayers/POPS/T298K/MODEL_MACROG_POTASSIUMcounterion/Kdens.xvg" using 1:2 with lines title 'K' lw 2 lc rgb 'red',\
 
 set origin 0,0.3
 set size 1.0,0.2
