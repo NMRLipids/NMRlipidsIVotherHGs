@@ -1,0 +1,74 @@
+
+
+####################################################################################
+
+set size 0.5,1
+set terminal pdf enhanced size 3,4
+set encoding utf8
+set output "OP_ECC_POPC_DPPC_water_conc2_dppc_bulk.pdf"
+ 
+set yrange [-0.03:0.001] 
+set ytics format "%.3f"
+ 
+set key above left 
+set key reverse
+set key Left
+
+#set label format small
+
+set datafile commentschar "@#$%&"
+
+
+
+
+set multiplot layout 2,1
+
+
+
+TMARGIN = "set tmargin at screen 0.75; set bmargin at screen 0.5"
+BMARGIN = "set tmargin at screen 0.4; set bmargin at screen 0.15"
+      
+
+
+@TMARGIN
+####################################################################################################33
+#plot the beta for calcium
+unset xtics
+#set size ratio 0.5
+set xrange [0:1000] 
+
+set ylabel "ΔS^{β}_{CH}" 
+ #set size 1,0.45 
+plot "../experimental_value/exp_beta_cal_DPPC.dat" with linespoints ls 5 lw 3 ps 0.6 lc rgb("#000000") title "Experiment DPPC",\
+     "../experimental_value/exp_alpha_cal_POPC.dat" using ($1*0):($2*0) with linespoints ls 7 lw 3 ps 0.6 lc rgb("#000000") title "Experiment POPC",\
+     "../simulation_value/simulation_ECC-POPC_calcium.out" using 1:4 with linespoints pt 7  lw 3 ps 0.6 lc rgb("red") title "ECC-POPC, buffer conc.",\
+     "../simulation_value/simulation_ECC-POPC_calcium.out"  using 1:5 with linespoints ls 7 lw 3 ps 0.6 lc rgb("red") notitle,\
+     "../simulation_value/simulation_ECC-POPC_calcium_bulk.out" using 1:4 with linespoints pt 7  lw 3 ps 0.6 lc rgb("#ffaaaa") title "ECC-POPC, bulk conc.",\
+     "../simulation_value/simulation_ECC-POPC_calcium_bulk.out"  using 1:5 with linespoints ls 7 lw 3 ps 0.6 lc rgb("#ffaaaa") notitle
+     
+      
+ 
+
+
+
+##############################################################################3
+
+@BMARGIN
+
+set yrange [-0.05:0.001] 
+set ytics format "%.3f"
+
+#plot the alpha for calcium
+
+set xrange [0:1000] 
+set ylabel "ΔS^{α}_{CH}" 
+set xlabel "Concentration of CaCl2 / mM" 
+#set size 1,0.55 
+set xtics 
+ plot "../experimental_value/exp_alpha_cal_POPC.dat" with linespoints ls 7 lw 3 ps 0.6 lc rgb("#000000") notitle ,\
+      "../experimental_value/exp_alp_cal_DPPC.dat" with linespoints ls 5 lw 3 ps 0.6 lc rgb("#000000") notitle ,\
+      "../simulation_value/simulation_ECC-POPC_calcium.out" using 1:2 with linespoints ls 7 lw 3 ps 0.6 lc rgb("red") notitle  ,\
+      "../simulation_value/simulation_ECC-POPC_calcium.out"  using 1:3 with linespoints ls 7 lw 3 ps 0.6 lc rgb("red") notitle,\
+      "../simulation_value/simulation_ECC-POPC_calcium_bulk.out" using 1:2 with linespoints ls 7 lw 3 ps 0.6 lc rgb("#ffaaaa") notitle  ,\
+      "../simulation_value/simulation_ECC-POPC_calcium_bulk.out"  using 1:3 with linespoints ls 7 lw 3 ps 0.6 lc rgb("#ffaaaa") notitle
+
