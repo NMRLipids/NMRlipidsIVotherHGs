@@ -491,8 +491,8 @@ The concentrations are reported either in water before solvating the lipids \cit
 or in bulk water after solvating the lipids \cite{altenbach84,melcr18}.
 In this work, we use the former definition to be consistent with the reference
 experimental data \cite{roux90}. The used definition has only a marginal effect
-to the results is simulations with realistic ion binding affinity.
-\todo{Maybe we should add a figure in the SI.}
+to the results is simulations with realistic ion binding affinity
+(section \ref{concentrationDEFsection} in the supplementary information).
 
 \section{Results and Discussion}
 
@@ -743,36 +743,27 @@ containing PS lipids.
     to correctly illustrate the significant forking.
   }
   \todo{Simulation of CHARMM36 at 298K should be maybe rerun with Gromacs 5.} \\
-  \todo{Simulation of pure POPC at 298K with Lipid14 would be useful for this plot (only at 303 K is available from NMRlipids I)} \\
-  \todo{MacRog simulations of pure POPS with potassium counterions only would be useful for this and other plots.} \\
   \todo{The data from POPC used in Gromos-CKP by would be useful for this plot.}
 \end{figure*}
-
-The headgroup order parameters of PS lipids
-shift closer to zero when bilayer is diluted with PC lipids in 
-experiments (Fig.~\ref{HGorderparametersPCvsPS})~\cite{browning80,scherer87,roux90},
-which is intepreted to indicate reduced rigidity~\cite{browning80,buldt81}.
 
 
 
 Dilution of PS lipid bilayers with PC lipids reduces the propensity
 of PS headgroup-multivalent ion complexes and is proposed to make PS
 headgroups less rigid~\cite{browning80,buldt81,roux90,roux91}.
-Therefore, the intermolecular interactions at the headgroup region seems
-to be important for the physical properties of mixed lipid bilayers.
-These interactions can be indirectly monitored by measuring the
-headgroup order parameters from PS:PC mixtures with different molar
-ratios.
-
-
-
-Oppositely to experiments, the headgroup order parameter of POPS shift away
-from zero in CHARM36 simulations when bilayer is diluted with POPC (Fig. \ref{HGorderparametersPCvsPS}).
-In lipid14/17 simulations, the POPS order parameter shift closer to zero when
-bilayer is diluted with POPC, but the numerical values of order parameters
-are too far from experiments to enable interpretation of the experimental data.
-Therefore, we conlcude that the force field development is necessary before
-MD simulations can be used to interpret the interactions between PC and PS headgroups.
+This is related to the shift of the PS headgroup order parameters 
+closer to zero when bilayer is diluted with PC
+lipids (Fig.~\ref{HGorderparametersPCvsPS})~\cite{browning80,scherer87,roux90}.
+%which is intepreted to indicate reduced rigidity~\cite{browning80,buldt81}.
+This shift is not seen in CHARM36 and Gromos-CKP simulations when bilayer is
+diluted with POPC (Fig. \ref{HGorderparametersPCvsPS}).
+In lipid14/17 simulations, the headgroup order parameters of POPS shift closer
+to zero when the bilayer is diluted with POPC, but the numerical values of
+order parameters are too far from experiments, having also different signs,
+for the proper interpretation of the experimental data.
+Therefore, the imporvements in force fields are necessary
+for accurate studies of interactions between PC and PS headgroups
+with MD simulations.
 %The $\beta$-carbon order parameter
 %increase with increasing amount of PS in CHARMM36 and MacRog simulations in contrast
 %to the experimental data.
@@ -780,6 +771,12 @@ MD simulations can be used to interpret the interactions between PC and PS headg
 %simulation models with increasing amount of PS, while it is almost unchanged in experiments.
 %The larger $\alpha$-carbon order parameter increase in MacRog and decrease in CHARMM36
 %with increasing amount of PS, both model exhibiting a poor agreement with experiments. 
+
+%Therefore, the intermolecular interactions at the headgroup region seems
+%to be important for the physical properties of mixed lipid bilayers.
+%These interactions can be indirectly monitored by measuring the
+%headgroup order parameters from PS:PC mixtures with different molar
+%ratios.
 
 
 
