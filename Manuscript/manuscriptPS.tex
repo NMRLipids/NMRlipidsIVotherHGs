@@ -664,27 +664,36 @@ bilayers~\cite{pandit02,mukhopadhyay04,pedersen06}.
 The counterion density profiles along membrane normal 
 show significant differences between simulation models in both binding affinity
 and distribution of ions in the interface (Fig. \ref{NAdensPOPS}).
-The strongest sodium counterion binding, i.e., the lowest concentrations in bulk water,
-is observed in MacRog, Berger and Lipid17/JC simulations.
-Slipids, Berger, MacRog, and Lipid17 exhibit a clear single maxima in the
-counterion density, but slightly at different distances from the bilayer
-center. Other models exhibit more complicated distribution, often including
-two local maxima in the density profile.
+The experimental area per lipid (62.7 $\AA^2$) \cite{pan14} 
+is reproduced only in Gromos-CKP simulations and in the MacRog simulation
+with potassium counterions, while other models give significantly lower values (Fig. \ref{NAdensPOPS}).
+The counterion binding and concomintant electrostatic screening of the headgroup
+repulsion does not fully explain the low area per molecule values
+because the MacRog simulation with strongest sodium binding
+(the lowest concentrations in bulk water) gives the same area per molecule
+as CHARMM36ua simulation with significantly weaker counterion binding
+affinity.
+%CHARMM36, CHARMM36ua and Slipid models give
+%smaller area per lipid than Gromos-CKP models with similar counterion binding affinity.
+On the other hand, changing counterions from sodium to potassium, having weaker binding
+affinity, increase the area per molecule from 53 $\AA^2$ to 63 $\AA^2$ in MacRog simulations.
+%with potassium counterions and weaker
+%binding affinity give larger area per molecule 
+%increasing counterion binding affinity reduces the area per molecule
+%when comparing between sodium and potassium in 
+%or between
+%ff99 and jc ions in Lipid 17 simulations.
+In conclusion, the results are in line with the previous study suggesting that the
+low area per molecule in PS lipid bilayers originate from the combination
+of both counterion binding and hydrogen bonding network between lipid
+headgroups \cite{petrache04}.
+%, Berger and Lipid17/JC simulations.
+%Slipids, Berger, MacRog, and Lipid17 exhibit a clear single maxima in the
+%counterion density, but slightly at different distances from the bilayer
+%center. Other models exhibit more complicated distribution, often including
+%two local maxima in the density profile.
 %CHARMM36, CHARMM36ua and Gromos-CKP models exhibit two local maxima in counterion
 %density, while a single maxima is observed in the other models. 
-
-Area per lipid is in agreement with experiments \cite{pan14} only
-in the MacRog simulation with potassium counterions and in Gromos-CKP models,
-while other models give significantly lower values (Fig. \ref{NAdensPOPS}).
-The difference cannot be explained only by the electrostatic screening of the headgroup repulsion due to 
-counterion binding because CHARMM36, CHARMM36ua and Slipid models give
-smaller area per lipid than Gromos-CKP models with similar counterion binding affinity.
-On the other hand, increasing counterion binding affinity reduces the area per molecule
-when comparing between sodium and potassium in MacRog simulations or between
-ff99 and jc ions in Lipid 17 simulations.
-This suggests that the counterion binding alone cannot explain the low area per molecule
-in PS lipid bilayers but also the hydrogen bonding network has to
-be taken into account, as also previously suggested based on scattering experiments \cite{petrache04}.
 \begin{figure}[]
   \centering
   \includegraphics[width=9.0cm]{../Figs/NAdensPOPS.eps}
@@ -694,11 +703,12 @@ be taken into account, as also previously suggested based on scattering experime
   }
 \end{figure}
 
-Evaluation of counterion binding affinity to charged lipid bilayers
-using the changes of headgroup order parameters is difficult because
-reference state without ions does not exist, in contrast to previous
-studies with zwitterionic membranes and coions \cite{catte16},
-see also section \ref{mixtureTOadditionalCIs} in the supplementary information.
+Binding of coions to zwitterionic PC lipid bilayers has been previously
+evaluated against experiments using the changes of headgroup order parameters
+as a function of ion concentration \cite{catte16}. This is less straighforward
+for charged lipid bilayers because counterions are always present and the
+ion free reference state does not exist
+(section \ref{mixtureTOadditionalCIs} in the supplementary information).
 However, the counterion binding affinity is
 reflected to the increase of POPC headgroup order parameters due to the
 increasing amount of negatively charged POPS lipids in the bilayer.
