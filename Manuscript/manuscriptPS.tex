@@ -764,23 +764,20 @@ binding affinity.
 \end{figure*}
 
 
-
-Dilution of PS lipid bilayers with PC lipids reduces the propensity
-of PS headgroup-multivalent ion complexes and is proposed to make PS
-headgroups less rigid~\cite{browning80,buldt81,roux90,roux91}.
-This is related to the shift of the PS headgroup order parameters 
-closer to zero when bilayer is diluted with PC
-lipids (Fig.~\ref{HGorderparametersPCvsPS})~\cite{browning80,scherer87,roux90}.
-%which is intepreted to indicate reduced rigidity~\cite{browning80,buldt81}.
-This shift is not seen in CHARM36 and Gromos-CKP simulations when bilayer is
-diluted with POPC (Fig. \ref{HGorderparametersPCvsPS}).
-In lipid14/17 simulations, the headgroup order parameters of POPS shift closer
-to zero when the bilayer is diluted with POPC, but the numerical values of
-order parameters are too far from experiments, having also different signs,
+The headgroup order parameteres of POPS shift closer to zero when bilayer
+is diluted with POPC (Fig.~\ref{HGorderparametersPCvsPS}),
+which is intereted to indicate less rigid structure of PS headgroups in
+the mixture~\cite{browning80,buldt81,roux90,roux91,scherer87}.
+This shift is observed only in lipid14/17 simulations
+%, the headgroup order parameters of POPS shift closer
+%to zero when the bilayer is diluted with POPC,
+but the numerical values of order parameters are too far from experiments, having also different signs,
 for the proper interpretation of the experimental data.
-Therefore, the imporvements in force fields are necessary
-for accurate studies of interactions between PC and PS headgroups
-with MD simulations.
+In CHARM36 and Gromos-CKP simulations, the shift of headgroup order
+parameters toward zero are not observed when bilayer
+diluted with POPC (Fig. \ref{HGorderparametersPCvsPS}).
+Therefore, we conclude that more accurate force fields are necessary
+for MD simulation studies of PC-PS headgroup interactions.  
 %The $\beta$-carbon order parameter
 %increase with increasing amount of PS in CHARMM36 and MacRog simulations in contrast
 %to the experimental data.
