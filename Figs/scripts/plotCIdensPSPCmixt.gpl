@@ -22,16 +22,16 @@ plot "../../../MATCH/Data/Lipid_Bilayers/POPS+83%popc/T298K/MODEL_CHARMM/NAdens.
      "../../../MATCH/Data/Lipid_Bilayers/POPS+83%popc+500mMKCl/T298K/MODEL_CHARMM/IONdens.xvg" using 1:2 with lines title '500mM' lw 4 lc rgb 'red',\
      "../../../MATCH/Data/Lipid_Bilayers/POPS+83%popc+1000mMKCl/T298/model_CHARMM/IONdens.xvg" using 1:2 with lines title '1000mM' lw 6 lc rgb 'red',\
 
-unset yrange
+#unset yrange
 unset label
 set label  "LIPID17"  at graph  0.4,0.8
 set key at graph 0.6,0.5 maxcols 3 maxrows 6
-plot "../../../MATCH/Data/Lipid_Bilayers/POPS+83%popc/T298K/MODEL_LIPID17/NAdens.xvg" using ($1*0.1):2 with lines title 'Na' lw 2 lc rgb 'black',\
-     "../../../MATCH/Data/Lipid_Bilayers/POPS+83%popc+500mMNaCl/T298K/MODEL_LIPID17/number_density.out" using ($1*0.1):2 with lines title '500mM' lw 4 lc rgb 'black',\
-     "../../../MATCH/Data/Lipid_Bilayers/POPS+83%popc+1000mMNaCl/T298K/MODEL_LIPID17/number_density.out" using ($1*0.1):2 with lines title '1000mM' lw 6 lc rgb 'black',\
-     "../../../MATCH/Data/Lipid_Bilayers/POPS+83%popc/T298K/MODEL_LIPID17_POTASSIUMcounterion2/Kdens.xvg" using ($1*0.1):2 with lines title 'K' lw 2 lc rgb 'red',\
-     "../../../MATCH/Data/Lipid_Bilayers/POPS+83%popc+500mMKCl/T298K/MODEL_LIPID17/number_density.out" using ($1*0.1):2 with lines title '500mM' lw 4 lc rgb 'red',\
-     "../../../MATCH/Data/Lipid_Bilayers/POPS+83%popc+1000mMKCl/T298/MODEL_LIPID17/number_density.out" using ($1*0.1):2 with lines title '1000mM' lw 6 lc rgb 'red',\
+plot "../../../MATCH/Data/Lipid_Bilayers/POPS+83%popc/T298K/MODEL_LIPID17-GMX/density.xvg" using ($1):2 with lines title 'Na' lw 2 lc rgb 'black',\
+     "../../../MATCH/Data/Lipid_Bilayers/POPS+83%popc+1000mMNaCl/T298K/MODEL_LIPID17-GMX/density.xvg" using ($1):2 with lines title '590 mM' lw 6 lc rgb 'black',\
+#     "../../../MATCH/Data/Lipid_Bilayers/POPS+83%popc+500mMNaCl/T298K/MODEL_LIPID17/number_density.out" using ($1*0.1):2 with lines title '500mM' lw 4 lc rgb 'black',\
+#     "../../../MATCH/Data/Lipid_Bilayers/POPS+83%popc/T298K/MODEL_LIPID17_POTASSIUMcounterion2/Kdens.xvg" using ($1*0.1):2 with lines title 'K' lw 2 lc rgb 'red',\
+#     "../../../MATCH/Data/Lipid_Bilayers/POPS+83%popc+500mMKCl/T298K/MODEL_LIPID17/number_density.out" using ($1*0.1):2 with lines title '500mM' lw 4 lc rgb 'red',\
+#     "../../../MATCH/Data/Lipid_Bilayers/POPS+83%popc+1000mMKCl/T298/MODEL_LIPID17/number_density.out" using ($1*0.1):2 with lines title '1000mM' lw 6 lc rgb 'red',\
 #     "../../../MATCH/Data/Lipid_Bilayers/POPS+83%popc+2000mMNaCl/T298K/MODEL_LIPID17/number_density.out" using ($1*0.1):2 with lines title '2000mM' lw 6 lc rgb 'black',\
 #     "../../../MATCH/Data/Lipid_Bilayers/POPS+83%popc+3000mMNaCl/T298K/MODEL_LIPID17/number_density.out" using ($1*0.1):2 with lines title '3000mM' lw 6 lc rgb 'black',\
 #     "../../../MATCH/Data/Lipid_Bilayers/POPS+83%popc+4000mMNaCl/T298K/MODEL_LIPID17/number_density.out" using ($1*0.1):2 with lines title '4000mM' lw 6 lc rgb 'black',\
