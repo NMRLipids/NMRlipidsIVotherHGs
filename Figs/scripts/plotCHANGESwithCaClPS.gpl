@@ -19,7 +19,7 @@ plot 	   "../../Data/POPC80_POPS20withCa_MACROG.dat" using 1:($6-0.02324) with l
     	   "../../Data/POPC80_POPS20withCa_BERGER.dat" using 1:($4-0.0129448) with linespoint title 'Berger' pt 7 lt 1 lw 4 ps 1.5 lc rgb 'red',\
     	   "../../Data/POPC80_POPS20withCa_BERGER.dat" using 1:($5-0.032294) with linespoint notitle pt 7 lt 1 lw 4 ps 1.5 lc rgb 'red',\
     	   "../../Data/POPC250_POPS50withCa_CHARMM36.dat" using 1:($4+0.0795243501265) with linespoint title 'CHARMM36' pt 7 lt 1 lw 4 ps 1.5 lc rgb 'blue',\
-      	   "../../Data/POPC5_POPS1withCa_LIPID17.dat" using 1:($4+0.00305) with linespoint title 'Lipid14/17' pt 7 lt 1 lw 4 ps 1.5 lc rgb 'yellow',\
+      	   "../../Data/POPC5_POPS1withCa_LIPID17.dat" using 1:($4+0.00231) with linespoint title 'Lipid14/17' pt 7 lt 1 lw 4 ps 1.5 lc rgb 'yellow',\
       	   "../../Data/POPC5_POPS1withCa_LIPID17withAMBER.dat" using ($1*0.001):($6-0.00214) with linespoint title 'Lipid14/17amber' pt 7 lt 1 lw 4 ps 1.5 lc rgb 'orange',\
       	   "../../Data/POPC5_POPS1withCa_LIPID17withAMBER.dat" using ($1*0.001):($6-0.00214):7 with yerrorbars notitle pt 7 lt 1 lw 4 ps 1.5 lc rgb 'orange',\
       	   "../../Data/POPC5_POPS1withCa_LIPID17withAMBER.dat" using ($1*0.001):($8-0.00214) with linespoint notitle pt 7 lt 1 lw 4 ps 1.5 lc rgb 'orange',\
@@ -36,7 +36,7 @@ plot      "../../Data/POPC80_POPS20withCa_MACROG.dat" using 1:($14+0.13222) with
           "../../Data/POPC80_POPS20withCa_MACROG.dat" using 1:($14+0.13222):15 with yerrorbars notitle pt 7 lt 1 lw 4  lc rgb 'pink',\
           "../../Data/POPC80_POPS20withCa_BERGER.dat" using 1:($8-0.15793) with linespoint notitle pt 7 lt 1 lw 4  lc rgb 'red',\
           "../../Data/POPC250_POPS50withCa_CHARMM36.dat" using 1:($8+0.142128483065) with linespoint notitle pt 7 lt 1 lw 4  lc rgb 'blue',\
-          "../../Data/POPC5_POPS1withCa_LIPID17.dat" using 1:($8-0.08239) with linespoint notitle pt 7 lt 1 lw 4  lc rgb 'yellow',\
+          "../../Data/POPC5_POPS1withCa_LIPID17.dat" using 1:($8-0.07634) with linespoint notitle pt 7 lt 1 lw 4  lc rgb 'yellow',\
           "../../Data/POPC5_POPS1withCa_LIPID17withAMBER.dat" using ($1*0.001):($14-0.04882) with linespoint notitle pt 7 lt 1 lw 4  lc rgb 'orange',\
           "../../Data/POPC5_POPS1withCa_LIPID17withAMBER.dat" using ($1*0.001):($14-0.04882):15 with yerrorbars notitle pt 7 lt 1 lw 4  lc rgb 'orange',\
           "../../Data/POPS20_POPCwithCaBETA.dat" using 1:((-1)*($2-12.6411468615)*0.00784) with linespoint notitle pt 7 lt 1 lw 4 lc rgb 'black',\
@@ -56,8 +56,8 @@ plot  "../../Data/POPC80_POPS20withCa_MACROG.dat" using 1:($2-0.04174) with line
       "../../Data/POPC80_POPS20withCa_BERGER.dat" using 1:($3-0.121486) with linespoint notitle pt 7 lt 1 lw 4 ps 1.5 lc rgb 'red',\
       "../../Data/POPC250_POPS50withCa_CHARMM36.dat" using 1:($2-0.0378304702977) with linespoint notitle pt 7 lt 1 lw 4 ps 1.5 lc rgb 'blue',\
       "../../Data/POPC250_POPS50withCa_CHARMM36.dat" using 1:($3-0.0328305609416) with linespoint notitle pt 7 lt 1 lw 4 ps 1.5 lc rgb 'blue',\
-      "../../Data/POPC5_POPS1withCa_LIPID17.dat" using 1:($2-0.07413) with linespoint notitle pt 7 lt 1 lw 4 ps 1.5 lc rgb 'yellow',\
-      "../../Data/POPC5_POPS1withCa_LIPID17.dat" using 1:($3-0.06580) with linespoint notitle pt 7 lt 1 lw 4 ps 1.5 lc rgb 'yellow',\
+      "../../Data/POPC5_POPS1withCa_LIPID17.dat" using 1:($2-0.07035) with linespoint notitle pt 7 lt 1 lw 4 ps 1.5 lc rgb 'yellow',\
+      "../../Data/POPC5_POPS1withCa_LIPID17.dat" using 1:($3-0.06608) with linespoint notitle pt 7 lt 1 lw 4 ps 1.5 lc rgb 'yellow',\
       "../../Data/POPC5_POPS1withCa_LIPID17withAMBER.dat" using ($1*0.001):($2-0.160485) with linespoint notitle pt 7 lt 1 lw 4 ps 1.5 lc rgb 'orange',\
       "../../Data/POPC5_POPS1withCa_LIPID17withAMBER.dat" using ($1*0.001):($2-0.160485):3 with yerrorbars notitle pt 7 lt 1 lw 4 ps 1.5 lc rgb 'orange',\
       "../../Data/POPC5_POPS1withCa_LIPID17withAMBER.dat" using ($1*0.001):($4-0.17849) with linespoint notitle pt 7 lt 1 lw 4 ps 1.5 lc rgb 'orange',\
@@ -81,8 +81,8 @@ plot  "../../Data/POPC80_POPS20withCa_MACROG.dat" using 1:($10+0.17017) with lin
       "../../Data/POPC80_POPS20withCa_BERGER.dat" using 1:($7-0.262379) with linespoint notitle   pt 7 lt 1 lw 4  lc rgb 'red',\
       "../../Data/POPC250_POPS50withCa_CHARMM36.dat" using 1:($6+0.108092315804) with linespoint notitle   pt 7 lt 1 lw 4  lc rgb 'blue',\
       "../../Data/POPC250_POPS50withCa_CHARMM36.dat" using 1:($7+0.108092315804) with linespoint notitle   pt 7 lt 1 lw 4  lc rgb 'blue',\
-      "../../Data/POPC5_POPS1withCa_LIPID17.dat" using 1:($6-0.11574) with linespoint notitle   pt 7 lt 1 lw 4  lc rgb 'yellow',\
-      "../../Data/POPC5_POPS1withCa_LIPID17.dat" using 1:($7-0.11574) with linespoint notitle   pt 7 lt 1 lw 4  lc rgb 'yellow',\
+      "../../Data/POPC5_POPS1withCa_LIPID17.dat" using 1:($6-0.11423) with linespoint notitle   pt 7 lt 1 lw 4  lc rgb 'yellow',\
+      "../../Data/POPC5_POPS1withCa_LIPID17.dat" using 1:($7-0.11423) with linespoint notitle   pt 7 lt 1 lw 4  lc rgb 'yellow',\
       "../../Data/POPC5_POPS1withCa_LIPID17withAMBER.dat" using ($1*0.001):($10-0.09235) with linespoint notitle   pt 7 lt 1 lw 4  lc rgb 'orange',\
       "../../Data/POPC5_POPS1withCa_LIPID17withAMBER.dat" using ($1*0.001):($10-0.09235):11 with yerrorbars notitle   pt 7 lt 1 lw 4  lc rgb 'orange',\
       "../../Data/POPC5_POPS1withCa_LIPID17withAMBER.dat" using ($1*0.001):($12-0.09235) with linespoint notitle   pt 7 lt 1 lw 4  lc rgb 'orange',\
