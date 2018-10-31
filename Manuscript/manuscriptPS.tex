@@ -365,7 +365,7 @@ bacteria \cite{gally81,scherer87,seelig90}.
     POPC:POPS (5:1)/Na$^+$ & Lipid14/17 \cite{dickson14,gould18} &0\todoi{Concentration to be checked after the amount of ions and water is known.}    & 0.17 & 60:12 & ?     & ?   & 298  & ?  & ?  & \cite{??} \todoi{Data to be delivered by Melcr}  \\
     POPC:POPS (5:1)/Na$^+$ & Lipid14/17 \cite{dickson14,gould18} &0\todoi{Concentration to be checked after the amount of ions and water is known.}    & 0.36 & 60:12 & ?     & ?   & 298  & ?  & ?  & \cite{??} \todoi{Data to be delivered by Melcr}  \\
     \hline
-    POPC:POPS (4:1)/Na$^+$  & Berger \cite{tieleman99,mukhopadhyay04} &0    & 0   & 102:26 & 4290 & 0   & 310  & ? & ? & \cite{??} \todoi{To be added by Ollila}  \\
+    POPC:POPS (4:1)/Na$^+$  & Berger \cite{tieleman99,mukhopadhyay04} &0    & 0   & 102:26 & 4290 & 0   & 310  & 80 & 120 & \cite{bergerPOPSPOPC4:1mixtureT310K}  \\
     POPC:POPS (4:1)/Na$^+$  & Berger \cite{tieleman99,mukhopadhyay04}\todoi{Are these correct references?} &1.03    & 0   & 102:26 & 4290 & 80  & 310  & 200 & 50 & \cite{POPCpopsBERGERwith1000mMNa}  \\
     POPC:POPS (4:1)  & Berger \cite{tieleman99,mukhopadhyay04} &  0  & 0.12\footnote{Calculation of concetration complicated due the scaled ions. Concentration taken as reported in the delivered data.}   & 104:24 & 4306 & 24 & 310  & 300 & 100 & \cite{POPCpopsBERGERwith102mMCa}  \\
     POPC:POPS (4:1)  & Berger \cite{tieleman99,mukhopadhyay04} &  0  & 0.715\footnote{Calculation of concetration complicated due the scaled ions. Concentration taken as reported in the delivered data.}  & 104:24 & 4306 & 72 & 310  & 300 & 100 & \cite{POPCpopsBERGERwith715mMCa}  \\
@@ -597,8 +597,6 @@ available.
   \caption{\label{comparisonTablePS}
   Rough subjective ranking of force fields based on Figure~\ref{HGorderParametersPS}. Here ÒMÓ indicates a magnitude problem, ÒFÓ a forking problem; letter size increases with problem severity. Color scheme: Òwithin experimental errorÓ (dark green), Òalmost within experimental errorÓ (light green), Òclear deviation from experimentsÓ (light red), and Òmajor deviation from experimentsÓ (dark red). The $\Sigma$-column shows the total deviation of the force field, when individual carbons are given weights of 0 (matches experiment), 1, 2, and 4 (major deviation). For full details of the assessment, see Supplementary Information.
   }
-  \todo{Issue about possible updates to this plot: https://github.com/NMRLipids/NMRlipidsIVotherHGs/issues/4} \\
-  \todo{Lipid17 and MacRog results should be added into this plot.}
 \end{figure}
 
 The headgroup and glycerol backbone of PS lipids show wide variety between different simulation
@@ -655,7 +653,7 @@ in the glycerol backbone region (Figs.~\ref{HGstructuresPS} and \ref{dihedralsHG
 
 
 
-\subsection{Counterion binding and interactions between PC and PS headgroups}
+\subsection{Counterion binding and interactions between PC and PS headgroups}\label{ciBINDINGsection}
 Membranes containing PS lipids are always accomppanied with counterions which
 modulate electrostatic interactions between lipids and other biomolecules. 
 Counterions are also suggested to screen the repulsion between charged lipid headgroups 
@@ -676,7 +674,7 @@ affinity.
 %CHARMM36, CHARMM36ua and Slipid models give
 %smaller area per lipid than Gromos-CKP models with similar counterion binding affinity.
 On the other hand, changing counterions from sodium to potassium, having weaker binding
-affinity, increase the area per molecule from 53 $\AA^2$ to 63 $\AA^2$ in MacRog simulations.
+affinity, increases the area per molecule from 53 $\AA^2$ to 63 $\AA^2$ in MacRog simulations.
 %with potassium counterions and weaker
 %binding affinity give larger area per molecule 
 %increasing counterion binding affinity reduces the area per molecule
@@ -707,9 +705,10 @@ Binding of coions to zwitterionic PC lipid bilayers has been previously
 evaluated against experiments using the changes of headgroup order parameters
 as a function of ion concentration \cite{catte16}. This is less straighforward
 for charged lipid bilayers because counterions are always present and the
-ion free reference state does not exist
-(section \ref{mixtureTOadditionalCIs} in the supplementary information).
-Here we evaluate the amount of bound charge using the changes of
+ion free reference state does not exist.
+In addition, the analysis is complicated by the artificial aggregation of counterions
+in solution observed in some simulations (section \ref{mixtureTOadditionalCIs} in the supplementary information).
+Here, we evaluate the amount of bound charge using the changes of
 headgroup order parameters with increasing amount of negatively charged lipids in the bilayer.
 According to the electrometer concept, the headgroup order parameters of POPC
 increase when negativaly charged POPS lipids are incorporated in lipid bilayer
@@ -732,7 +731,9 @@ Therefore, we suggest that the relatively weak binding of potassium
 in the MacRog simulations (Fig. \ref{NAdensPOPS}) predicts the most
 realistic surface charge density in membranes containing PS lipids,
 while the other tested simulation models overestimate the counterion
-binding affinity.
+binding affinity. The results are in line with the changes of headgroup order
+parameters as a function of added counterions analyzed in section \ref{mixtureTOadditionalCIs}
+in the supplementary information.
 %reproduces the correct
 %response of POPC headgroup to the increasing amount of negatively charged lipids,
 %indicating that these simulations have 
@@ -766,7 +767,7 @@ binding affinity.
 
 The headgroup order parameteres of POPS shift closer to zero when bilayer
 is diluted with POPC (Fig.~\ref{HGorderparametersPCvsPS}),
-which is intereted to indicate less rigid structure of PS headgroups in
+which is interpreted to indicate less rigid structure of PS headgroups in
 the mixture~\cite{browning80,buldt81,roux90,roux91,scherer87}.
 This shift is observed only in lipid14/17 simulations
 %, the headgroup order parameters of POPS shift closer

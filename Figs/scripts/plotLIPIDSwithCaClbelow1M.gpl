@@ -11,7 +11,7 @@ set xrange [0:1]
 set ylabel "{S_{CH}^{/Symbol b}"
 #set yrange [-0.075:-0.025] 
 plot "../../Data/POPC_POPSwithCaBETA.dat" using 1:((-1)*$2*0.00784) with linespoint notitle pt 5 lt 1 lc rgb 'red',\
-     "../../../lipid_ionINTERACTION/Data/DPPC/CaCl/EXP-Akutsu1981-T323K.dat" using ($1*0.001):((-1)*$2*0.00784) with linespoint notitle pt 7 lt 1 lc rgb 'black',\
+     "../../Data/EXP-Akutsu1981-T323Kbeta.dat" using ($1*0.001):((-1)*$2*0.00784) with linespoint notitle pt 7 lt 1 lc rgb 'black',\
      "../../../lipid_ionINTERACTION/Data/DPPC/CaCl/EXP-Akutsu1981-T332K.dat" using ($1*0.001):((-1)*$2*0.00784) with linespoint notitle pt 6 lt 1 lc rgb 'black',\
 
 unset key
