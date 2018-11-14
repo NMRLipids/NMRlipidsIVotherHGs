@@ -6,6 +6,9 @@
 # 60 POPC : 12 POPS (36 lipids per leaflet)
 # total length 1 us = 1000 ns each
 #
+# files:
+# https://doi.org/10.5281/zenodo.1487761
+#
 # topologies in Gromacs format available at
 # https://github.com/jmelcr/ecc_lipids
 #

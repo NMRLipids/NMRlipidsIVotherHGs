@@ -1,5 +1,8 @@
 # Lipid17 simulations at 298K
 #
+# files:
+# https://doi.org/10.5281/zenodo.1487906
+#
 #
 #POPSfrac  POPC_a1   error      POPC_a2   error       POPC_b1   error      POPC_b2     error    POPS_a1   error     POPS_a2     error       POPS_b   error
 # 128 POPC lipids, Charmm-style atom naming conventions
