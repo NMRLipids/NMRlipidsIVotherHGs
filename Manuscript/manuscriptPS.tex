@@ -584,25 +584,26 @@ available.
   }
 \end{figure}
 
-\begin{figure*}[]
+\begin{figure}[]
   \centering
-  \includegraphics[width=18.0cm]{../Figs/figS8.png}
-  \caption{\label{HGstructuresPS}
+  \includegraphics[width=9.0cm]{../Figs/structures.eps}
+  \caption{\label{HGstructuresPSandPC}
     Overlayed snapshots from glycerol backbone and headgroup region from 
     different simulations of PS lipids.
   }
-\end{figure*}
+\end{figure}
 
 \begin{figure}[]
   \centering
   \includegraphics[width=9.0cm]{../Figs/comparisonTablePS.pdf}
   \caption{\label{comparisonTablePS}
-  Rough subjective ranking of force fields based on Figure~\ref{HGorderParametersPS}. Here ÒMÓ indicates a magnitude problem, ÒFÓ a forking problem; letter size increases with problem severity. Color scheme: Òwithin experimental errorÓ (dark green), Òalmost within experimental errorÓ (light green), Òclear deviation from experimentsÓ (light red), and Òmajor deviation from experimentsÓ (dark red). The $\Sigma$-column shows the total deviation of the force field, when individual carbons are given weights of 0 (matches experiment), 1, 2, and 4 (major deviation). For full details of the assessment, see Supplementary Information.
+    Rough subjective ranking of force fields based on Figure~\ref{HGorderParametersPS}.
+    Here ÒMÓ indicates a magnitude problem, ÒFÓ a forking problem; letter size increases with problem severity. Color scheme: Òwithin experimental errorÓ (dark green), Òalmost within experimental errorÓ (light green), Òclear deviation from experimentsÓ (light red), and Òmajor deviation from experimentsÓ (dark red). The $\Sigma$-column shows the total deviation of the force field, when individual carbons are given weights of 0 (matches experiment), 1, 2, and 4 (major deviation). For full details of the assessment, see Supplementary Information.
   }
 \end{figure}
 
 The headgroup and glycerol backbone of PS lipids show wide variety between different simulation
-models in the order parameters and structures (Figs. \ref{HGorderParametersPS} and \ref{HGstructuresPS}),
+models in the order parameters and structures (Figs. \ref{HGorderParametersPS} and \ref{HGandGLYstructuresPS}),
 as previously observed also for PC lipids \cite{botan15}.
 The models perform generally less well for PS lipids than for PC lipids in the previous study
 (Figs. 2 and 4 in Ref.~\cite{botan15} vs. Figs.~\ref{HGorderParametersPS} and \ref{comparisonTablePS}).
@@ -616,19 +617,18 @@ when comparing the PS results to PC (Fig. 2 in Ref.~\citenum{botan15} vs. Fig. \
 Interestingly, the dihedral angle distributions of C$_\alpha$-C$_\beta$-C$_\gamma$-O$_\gamma$ show
 a single narrow maximum close to 120$^{\circ}$ in the best three models, while other models give several maxima
 in different locations (Fig. \ref{dihedralsHG}). The restricted motion is also
-visible in the sampled conformations (Fig.~\ref{HGstructuresPS}) and might
-manifest the increased rigidity anticipated from the early experimental studies \cite{browning80,buldt81}.
-\todo{We should consider making the conformation figures from CHARMM36 and Slipids POPC, and compare these
-  to the results from POPS.}
+visible in the sampled conformations (Figs.~\ref{HGstructuresPSandPC} a) and \ref{HGandGLYstructuresPS})
+suggesting that the rotation of carboxyl group is limited in the serine headgroup.
+In addition, the comparison of N-C$_\beta$-C$_\alpha$-O$_\alpha$ dihedral between PC and PS headgroups
+from CHARMM36 simulations, which are in best agreement with experiments for both lipids,
+shows a more asymmetric and restricted
+rotations around this bond (Figs.~\ref{HGstructuresPSandPC} b) and \ref{dihedralsHGpc}).
+These results might manifest the increased rigidity anticipated from the early experimental studies \cite{browning80,buldt81}.
+Also the dihedral distributions and sampled conformations of glycerol backbone region
+from different models are shown in the supplementary information
+(Figs. \ref{dihedralsGLY}, \ref{HGandGLYstructuresPS}, \ref{dihedralsGLYpc} and \ref{HGandGLYstructuresPSPC}),
+but further analysis is beyond the scope of this work which the PS headgroup.
 
-\todo{Maybe we should move the glycerol backbone results to SI and focus here on the headgroup,
-and especially to the difference between PC and PS.}
-The glycerol backbone order parameters of C$_2$ and C$_3$ from Slipids simulations
-differ significantly from the other simulation results and experiments (Fig. \ref{HGorderParametersPS}),
-as observed previously also for PC lipids \cite{botan15}.
-The origin of this difference is more difficult to track without more elaborate analysis,
-because different models show very complicated patterns of distinct structures
-in the glycerol backbone region (Figs.~\ref{HGstructuresPS} and \ref{dihedralsHG}).
 
 %which can be related to the differences in the dihedral angle distributions 
 %of C1-C2-C3-O31 and C2-C3-O31-C31 (Fig.~\ref{dihedralsGLY}). 
