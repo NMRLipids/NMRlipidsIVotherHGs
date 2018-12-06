@@ -211,30 +211,30 @@ bound charge are typically smaller than then discrepancies arising from ion bind
 \pagebreak
 \section{Effect of the definition of concentration on the headgroup order parameters as a function of ion concentration.}\label{concentrationDEFsection}
 Previous studies using the electrometer concept to assess the ion binding affinity to lipid
-bilayers report ion concentrations either in water before solvating the lipids \cite{akutsu81,roux90,catte16}
-or in bulk water after solvating the lipids \cite{altenbach84,melcr18}.
+bilayers report ion concentrations either in water before solvating the lipids (buffer concentration) \cite{akutsu81,roux90,catte16}
+or in bulk water after solvating the lipids (bulk concentration) \cite{altenbach84,melcr18}.
 In this work, we use the former definition to be consistent with the reference
 experimental data \cite{roux90}. The difference between these two concentrations increases
 with the increasing ion binding affinity. However, the difference is essentially negligible
 in the recent model \cite{melcr18} with realistic ion binding affinity (Fig. \ref{concentrationDEFfigure}).
 \begin{figure}[]
   \centering
-  \includegraphics[width=9.0cm]{../Figs/OP_ECC_POPC_DPPC_water_conc2_dppc_bulk.pdf}
+  \includegraphics[width=8.3cm]{../Figs/OP_ECC_POPC_DPPC_water_conc2_dppc_bulk.pdf}
   \caption{\label{concentrationDEFfigure}
-    Difference between order parameter changes as a function of CaCl$_2$ concentration demonstrated
-    for the two possible definitions of ion concentration, concentration in buffer before solvating the
-    lipids (buffer concentration) and concentration in bulk after solvating the lipids (bulk concentration),
-    from the recent model with realistic calcium binding affinity to a POPC bilayer \cite{melcr18}. 
-}
+    Changes of the headgroup order parameters as a function of CaCl$_2$ concentration using
+    two possible definitions of ion concentration from the recent force field
+    with realistic calcium binding affinity to a POPC bilayer \cite{melcr18}
+    together with the experimental data \cite{akutsu81,altenbach84}. 
+  }
 \end{figure}
 
 \pagebreak
 \section{Dipolar slices of the R-PDFL experiment}
 
 Slices of the R-PDFL spectra (Fig. \ref{DPslices}) 
-show a single splitting for the $\beta$-carbon with the order parameter value of 0.12,
+show a single splitting for the $\beta$-carbon with the order parameter value of 0.11,
 and a superposition of a large and a very small splitting for the $\alpha$-carbon.
-The larger splitting gives a order parameter value of 0.09, while the numerical value
+The larger splitting from the $\alpha$-carbon gives a order parameter value of 0.09, while the numerical value
 from the small splitting cannot resolved with the available resolution.
 \begin{figure}[]
 %  \centering
@@ -243,6 +243,7 @@ from the small splitting cannot resolved with the available resolution.
     Dipolar coupling slices from the R-PDFL experiment.
   }
   \todo{Labeling of carbons and explanations of numbers (chemical shift and order parameter) would be good.
+    The splitting corresponding the larger $\alpha$-carbon order parameter should be also shown.
   Also, the size of the figure in the file may not be optimal.}
 \end{figure}
 
@@ -250,27 +251,36 @@ from the small splitting cannot resolved with the available resolution.
 \section{Dihedral angle distributions of the headgroup and glycerol backbone
   regions of PS lipids from different simulation models}
 
-The glycerol backbone order parameters of C$_2$ and C$_3$ from Slipids simulations
-differ significantly from the other simulation results and experiments (Fig. \ref{HGorderParametersPS}),
-as observed previously also for PC lipids \cite{botan15}.
-The origin of this difference is more difficult to track without more elaborate analysis,
-because different models show very complicated patterns of distinct structures
-in the glycerol backbone region (Figs.~\ref{HGstructuresPS} and \ref{dihedralsHG}).
+The dihedral angles and structures of the glycerol backbone and headgroup regions of POPS lipids show
+wide variety between different simulation models (Figs. \ref{dihedralsHG}, \ref{dihedralsGLY} and \ref{HGandGLYstructuresPS}).
+Detailed discussion of the structural differences is limited by the lack of realistic model that would correctly reproduce the
+headgroup and glycerol backbone order parameters. However, some structural characteristics
+of PS headgroup can be suggested based on the best available models
+(Figs. \ref{dihedralsHGpc}, \ref{dihedralsGLYpc} and \ref{HGandGLYstructuresPSPC}), as discussed in the main text.
+The glycerol backbone structures are not discussed in this works because our focus is on PS headgroup.
+However, the data presented here can be useful for future investigations.
+%backbone order parameters of C$_2$ and C$_3$ from Slipids simulations
+%differ significantly from the other simulation results and experiments (Fig. \ref{HGorderParametersPS}),
+%as observed previously also for PC lipids \cite{botan15}.
+%The origin of this difference is more difficult to track without more elaborate analysis,
+%because different models show very complicated patterns of distinct structures
+%in the glycerol backbone region (Figs.~\ref{HGstructuresPS} and \ref{dihedralsHG}).
 
 \begin{figure*}[]
   \centering
   \includegraphics[width=8.0cm]{../Figs/PS_Labels.png}
   \includegraphics[width=16.0cm]{../Figs/figS7.png}
   \caption{\label{dihedralsHG}
-    Dihedral angle distributions of headgroup region of PS lipids from different simulation models.
+    Dihedral angle distributions of the headgroup region of POPS from different simulation models.
   }
 \end{figure*}
 
 \begin{figure*}[]
   \centering
-  \includegraphics[width=15.0cm]{../Figs/figS6.png}
+    \includegraphics[width=8.0cm]{../Figs/PS_Labels.png}
+  \includegraphics[width=13.0cm]{../Figs/figS6.png}
   \caption{\label{dihedralsGLY}
-    Dihedral angle distributions of glycerol backbone region of PS lipids from different simulation models.
+    Dihedral angle distributions of the glycerol backbone region of POPS lipids from different simulation models.
   }
 \end{figure*}
 
@@ -278,8 +288,7 @@ in the glycerol backbone region (Figs.~\ref{HGstructuresPS} and \ref{dihedralsHG
   \centering
   \includegraphics[width=18.0cm]{../Figs/figS8.png}
   \caption{\label{HGandGLYstructuresPS}
-    Overlayed snapshots from glycerol backbone and headgroup region from 
-    different simulations of PS lipids.
+    Overlayed snapshots of the glycerol backbone and headgroup regions from different POPS simulations.
   }
 \end{figure*}
 
@@ -287,7 +296,9 @@ in the glycerol backbone region (Figs.~\ref{HGstructuresPS} and \ref{dihedralsHG
   \centering
   \includegraphics[width=16.0cm]{../Figs/figS7PC.png}
   \caption{\label{dihedralsHGpc}
-    Dihedral angle distributions of headgroup region of PS lipids from different simulation models.
+    Dihedral angle distributions of the headgroup regions from CHARMM36 and Slipids simulations
+    compared between the POPC and POPS lipids. 
+    The CHARMM36 POPC simulation is from Ref. \citenum{POPCcharmm36T303K} and Slipids POPC from Ref. \citenum{POPCslipids298K}.
   }
 \end{figure*}
 
@@ -295,7 +306,9 @@ in the glycerol backbone region (Figs.~\ref{HGstructuresPS} and \ref{dihedralsHG
   \centering
   \includegraphics[width=15.0cm]{../Figs/figS6PC.png}
   \caption{\label{dihedralsGLYpc}
-    Dihedral angle distributions of glycerol backbone region of PS lipids from different simulation models.
+    Dihedral angle distributions of the glycerol backbone regions from CHARMM36 and Slipids simulations
+    compared between the POPC and POPS lipids.
+    The CHARMM36 POPC simulation is from Ref. \citenum{POPCcharmm36T303K} and Slipids POPC from Ref. \citenum{POPCslipids298K}.
   }
 \end{figure*}
 
@@ -303,8 +316,9 @@ in the glycerol backbone region (Figs.~\ref{HGstructuresPS} and \ref{dihedralsHG
   \centering
   \includegraphics[width=9.0cm]{../Figs/figS8_POPC.png}
   \caption{\label{HGandGLYstructuresPSPC}
-    Overlayed snapshots from glycerol backbone and headgroup region from 
-    different simulations of PS lipids.
+    Overlayed snapshots of the headgroup and glycerol backbone regions 
+    from CHARMM36 and Slipids simulations compared between the POPC and POPS lipids.
+    The CHARMM36 POPC simulation is from Ref. \citenum{POPCcharmm36T303K} and Slipids POPC from Ref. \citenum{POPCslipids298K}.
   }
 \end{figure}
 
@@ -321,16 +335,16 @@ Experimental order parameters of POPC headgroup in the mixture are available as 
 of LiCl and KCl concentrations, while POPS headgroup order parameters are measured also
 as a function of NaCl. Lithium interacts more strongly with PS headgroups than other monovalent 
 ions~\cite{hauser83,hauser85,roux86,mattai89,roux90}, as also observed for PC headgroups~\cite{cevc90}. 
-This is evident also in the changes of PS headgroup order parameters, which decrease with the addition of lithium 
+The different binding behaviour is evident also in the changes of PS headgroup order parameters, which decrease with the addition of lithium 
 but increase with the addition of sodium or potassium (Fig. \ref{PSresponseTONaCl}). 
 POPC headgroup order parameters exhibit a clear decrease as a function of LiCl concentration
 but only modest changes as a function of KCl concentration, indicating singificant 
-Li$^+$ binding but only weak Na$^+$ binding to the mixture when interpreted using the
+Li$^+$ binding but only weak K$^+$ binding to the mixture when interpreted using the
 electrometer concept~\cite{akutsu81,altenbach84,seelig87}.
 
-In simulations with Berger and CHARMM36 models, the responses of both headgroup order parameter
-of POPC and the $\beta$ carbon of POPS to the added sodium or potassium are similar to the experiments
-of LiCl (Fig. \ref{PSresponseTONaCl}), indicating overestimated binding affinity of the counterions 
+In simulations with Berger and CHARMM36 models, the responses of headgroup order parameter
+of both POPC and POPS to the added sodium or potassium are more similar to the experiments
+with LiCl (Fig. \ref{PSresponseTONaCl}), indicating overestimated binding affinity of sodium and potassium 
 in these simulations. The MacRog simulations with potassium exhibit weaker counterion binding affinity
 (Fig. \ref{CIdensPSOCmixt}), but significantly larger error bars and
 less systematic changes in the order parameters (Fig. \ref{PSresponseTONaCl}).
@@ -338,11 +352,11 @@ Similar unsystematic behaviour was also observed in the simulations of Lipid14/1
 with the additional counterions \cite{POPCpopsLIPID17withKCI,POPCpopsLIPID17withK,POPCpopsLIPID17withNaCI,POPCpopsLIPID17withNa},
 for which the data is not shown due to the formation of
 ion clusters in water with relatively low (1 M) ion concentrations (Fig. \ref{ionCLUSTERS}).
-Such clusters appering also in MagRog simulations with 4 M concentration of KCl
+Appearance of such clusters also in the MagRog simulations with 4 M concentration of KCl
 could explain the unsystematic changes of the order parameters in this model with the added KCl.
 In conclusion, the results are in line with the section \ref{ciBINDINGsection}
 in the main text, suggesting that the MacRog simulations with KCl give the most
-realistic surface charge at the lipid bilayer interface.
+realistic surface charge at the lipid bilayer interface among the tested simulation models.
 \begin{figure*}[]
   \centering
   \includegraphics[width=17.0cm]{../Figs/CHANGESwithMONVALENTwithPS.eps}
