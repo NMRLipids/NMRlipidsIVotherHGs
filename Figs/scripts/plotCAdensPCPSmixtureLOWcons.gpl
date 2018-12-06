@@ -1,4 +1,4 @@
-set size 1.0,1.1
+set size 1.0,0.73
 set terminal postscript portrait enhanced color dashed lw 1 "Helvetica" 14  background rgb 'white'
 set output "../CAdensPCPSmixtureLOWcons.eps"
 #set yrange [-1:70] 
@@ -10,29 +10,35 @@ set xrange [-4.0:4.0]
 set key at graph 0.7,0.9 maxcols 3 maxrows 5
 set multiplot layout 4,1
 
+set label at screen 0.03,0.25 rotate by 90 "Number density of calcium ions"
+
 set xtics format " " 
 
+set size 1.0,0.23
+set origin 0,0.53
 set ytic
 set ylabel " "
 set label  "CHARMM36"  at graph  0.4,0.8
 set key at graph 0.6,0.7
-#set size 1.0,0.2
+set size 1.0,0.2
 plot "../../scratch/dens_profiles_PCPS/250POPC_50POPS_0.15MCaCl-1atm-298K/dens_CAL.xvg" using 1:2 with lines title '150mM' lw 4 lc rgb 'black',\
 
+set size 1.0,0.23
+set origin 0,0.38
 set ytic
 set ylabel " "
 unset label
 set label  "LIPID17"  at graph  0.4,0.8
 set key at graph 0.6,0.7
-#set size 1.0,0.2
+set size 1.0,0.2
 plot "../../../MATCH/Data/Lipid_Bilayers/POPS+83%popc+500mMCaCl/T298K/MODEL_LIPID17/number_density.out" using ($1*0.1):2 with lines title '500mM' lw 4 lc rgb 'black',\
 
-set ylabel "Number density of calcium ions"
 unset label
 set label  "MacRog"  at graph  0.4,0.8
-set yrange [0:2.1]
+set yrange [0:0.74]
 set ytic 0.25
-#set size 1.0,0.2
+set size 1.0,0.23
+set origin 0,0.2
 #set xtics format "%G"
 #set xlabel "Membrane normal coordinate (nm)"
 plot "../../../MATCH/Data/Lipid_Bilayers/POPS+83%popc+100mMCaCl/T298K/MODEL_MACROG/IONdens.xvg" using 1:2 with lines title '100mM' lw 4 lc rgb 'black',\
@@ -40,7 +46,7 @@ plot "../../../MATCH/Data/Lipid_Bilayers/POPS+83%popc+100mMCaCl/T298K/MODEL_MACR
 set ylabel " "
 unset label
 set label  "Berger"  at graph  0.4,0.8
-#set size 1.0,0.2
+set size 1.0,0.25
 set xtics format "%G"
 set xlabel "Membrane normal coordinate (nm)"
 plot   	  "../../../MATCH/Data/Lipid_Bilayers/POPS+80%popc+102mMCaCl/T310K/MODEL_Berger/CAdens.xvg" using 1:2 with lines title '102mM'  lw 4 lc rgb 'black',\
