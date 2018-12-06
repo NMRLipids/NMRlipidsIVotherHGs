@@ -38,7 +38,7 @@ set style rectangle fc rgb "#D6F0FE" fs solid noborder
 set object 1 rectangle \
          from 0.0,-0.08675 to 1.5,-0.12675 
 set object 2 rectangle \
-         from 1.5,-0.033528 to 2.5, 0.006472
+         from 1.5, -0.0235 to 2.5, 0.01645 
 set object 3 rectangle \
          from 1.5, 0.073216 to 2.5, 0.113216
 set object 4 rectangle \
