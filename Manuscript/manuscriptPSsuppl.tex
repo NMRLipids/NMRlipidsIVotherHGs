@@ -70,19 +70,103 @@ Prague 6, Czech Republic}
 \section{Simulated systems}
 
 \subsection{CHARMM36}
-\todo{To be written by Piggot, Madsen and Ollila}
+
+\noindent
+{\it POPC bilayer}
+\todo{By Fernando Favela at http://dx.doi.org/10.5281/zenodo.16830} \\
+% It should be noted that pure POPC are ran with Gromacs 4, but the results with
+% PS are ran with Gromacs 5. This has significant effect on acyl chains:
+% https://github.com/NMRLipids/NmrLipidsCholXray/issues/4
+% The effect for headgroups can be estimated by comparing these two data sets:
+% https://github.com/NMRLipids/MATCH/blob/master/Data/Lipid_Bilayers/POPC/T303K/MODEL_CHARMM36_GROMACS4.5/Headgroup_Glycerol_Order_Parameters_Simulation.dat
+% https://github.com/NMRLipids/MATCH/blob/master/Data/Lipid_Bilayers/POPC/T303K/MODEL_CHARMM36_GROMACS5.1.2/Headgroup_Glycerol_Order_Parameters_Simulation.dat}
+
+\noindent
+{\it DOPS and POPS bilayers.} \\
+The data in Table \ref{PSsystems} and Refs \citenum{charmm36DOPS303K,charmm36POPS298K,charmm36POPS298Kpotassium}
+\todo{T. Piggot, please write simulation details} \\
+
+\noindent
+{\it POPC:POPS mixtures without additional ions}\\
+Simulations of POPC:POPS (5:1) mixture containing total 132 (110:22) lipids
+with potassium and sodium countertions were ran using CHARMM36 force field.
+The data are available from Refs. \citenum{charmm36pops+83popcT298Kpiggot}
+and \citenum{charmm36pops+83popcT298KpiggotSODIUM}, respectively\todo{T. Piggot, please write simulation details}.
+
+Simulations of POPC:POPS (5:1) ans POPC:POPS (1:1) mixtures containing total 300 lipids
+with potassium countertions were ran using CHARMM36 force field.
+The data are available from Refs. \citenum{??} \todo{J. Madsen, please write simulation details}. \\
+
+\noindent
+{\it POPC:POPS (5:1) mixtures with additional monovalent ions} \\
+POPC:POPS (5:1) mixtures containing total 132 (110:22) lipids
+were simulated with the additional potassium and sodium countertion concentrations
+of $\sim$450 mM and 890 mM using CHARMM36 force field at 298 K. The data, force field and
+input files generated using parameters given by CHARMM-GUI \cite{lee16,jo18} are
+available from Refs. \citenum{charmm36pops+83popcT298Kwith450mMK,charmm36pops+83popcT298Kwith890mMK,charmm36pops+83popcT298Kwith440mMNa,charmm36pops+83popcT298Kwith890mMNa}. \\
+
+
+\noindent
+{\it POPC:POPS (5:1) mixtures with additional calcium} \\
+POPC:POPS (5:1) mixtures containing total 300 (250:50) lipids
+were simulated with the additional calcium concentrations
+\todo{J. Madsen, please write simulation details}. \\
 
 \subsection{CHARMM36ua}
-\todo{To be written by Piggot}
+\noindent
+{\it DOPS and POPS bilayers.} \\
+The data in Table \ref{PSsystems} and Refs \citenum{charmm36uaDOPS303K,charmm36uaPOPS298K}
+\todo{T. Piggot, please write simulation details} \\
+
+\subsection{MacRog}
+\noindent
+{\it POPC bilayers.} \\
+
+\noindent
+{\it POPS bilayers.} \\
+The data in Table \ref{PSsystems} and Refs \citenum{macrogPOPS298Kcorrect,macrogPOPS298KwithK}
+\todo{T. Piggot and M. Javanainen, please write simulation details} \\
+
+\noindent
+{\it POPC:POPS (5:1) mixtures with additional potassium ions} \\
+The data in Table \ref{mixedIONsystems} and Refs \citenum{POPCpopsMACROG,POPCpopsMACROGwithK}
+\todo{M. Javanainen, please write simulation details} \\
+
+\subsection{Lipid17}
+{\it DOPS and POPS bilayers.} \\
+The data in Table \ref{PSsystems} and Refs \citenum{lipid17POPSjcions,lipid17POPSff99ions,lipid17DOPSjcions,lipid17DOPSff99ions}
+\todo{B. Kav and M. Miettinen, please write simulation details} \\
+
+\noindent
+{\it POPC:POPS (5:1) mixtures with additional potassium and sodium ions} \\
+The data in Table \ref{mixedIONsystems} and Refs \citenum{POPCpopsLIPID17withKCI,POPCpopsLIPID17withK,POPCpopsLIPID17withNaCI,POPCpopsLIPID17withNa}
+\todo{B. Kav and M. Miettinen, please write simulation details} \\
+
+\noindent
+{\it POPC:POPS (5:1) mixtures with additional calcium} \\
+The data in Table \ref{mixedIONsystems} and Refs \citenum{lipid17_cacl_series}
+\todo{J. Melcr, please write simulation details} \\
+
+\subsection{Berger}
+\noindent
+{\it POPC bilayers.} \\
+Previously published simulation of POPC at 310 K \cite{ollila07a}, available from Ref. \cite{bergerPOPC310K},
+was used.
+
+\noindent
+{\it DOPS and POPS bilayers.} \\
+The data in Table \ref{PSsystems} and Refs \citenum{bergerPOPS298K,bergerDOPS303K}
+\todo{T. Piggot, please write simulation details} \\
+
+\noindent
+{\it POPC:POPS (4:1) mixtures with additional sodium and calcium ions} \\
+Simulations with excess sodium were taken directly from Ref. \citenum{jurkiewicz12} and
+simulations with calcium directly from \citenum{melcrova16}.
+
 
 \subsection{Slipids}
 \todo{To be written by Piggot and Favela}
 
-\subsection{Berger}
-\todo{To be written by Piggot and Ollila}
-Simulations with excess sodium were taken directly from Ref. \citenum{jurkiewicz12} and
-simulations with calcium directly from \citenum{melcrova16}.
-Simulation of POPC at 310 K was taken directly from Ref. \citenum{ollila07a}.
 
 \subsection{GROMOS-CKP}
 \todo{To be written by Piggot}
@@ -92,11 +176,7 @@ Simulation of POPC at 310 K was taken directly from Ref. \citenum{ollila07a}.
    and CKP refers to the version with more Gromos compatible version
    (i.e. the charges for the NH$_3$ group taken from the lysine side-chain).
 
-\subsection{Lipid17}
-\todo{To be written by Kav, Miettinen and Meclr.}
 
-\subsection{MacRog}
-\todo{To be written by Javanainen and Piggot}
 
 
 \section{Electrometer concept in PC lipid bilayers mixed with negatively charged lipids}\label{electrometerFORmixtures}
