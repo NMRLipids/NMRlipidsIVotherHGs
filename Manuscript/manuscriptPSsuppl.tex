@@ -98,8 +98,8 @@ with potassium countertions were ran using CHARMM36 force field.
 The data are available from Refs. \citenum{??} \todo{J. Madsen, please write simulation details}. \\
 
 \noindent
-{\it POPC:POPS (5:1) mixtures with additional monovalent ions} \\
-POPC:POPS (5:1) mixtures containing total 132 (110:22) lipids
+{\it POPC:POPS (5:1) mixtures with additional monovalent ions.}
+Systems containing total 132 (110:22) lipids
 were simulated with the additional potassium and sodium countertion concentrations
 of $\sim$450 mM and 890 mM using CHARMM36 force field at 298 K. The data, force field and
 input files generated using parameters given by CHARMM-GUI \cite{lee16,jo18} are
@@ -120,7 +120,9 @@ The data in Table \ref{PSsystems} and Refs \citenum{charmm36uaDOPS303K,charmm36u
 
 \subsection{MacRog}
 \noindent
-{\it POPC bilayers.} \\
+    {\it POPC bilayers.} Simulation data available from Ref. \citenum{macrogPOPC298K}.
+    \todo{For example this data set has pretty good description of simulation details in the
+      reference. I am not sure how much we should repeat these in here.}
 
 \noindent
 {\it POPS bilayers.} \\
@@ -149,9 +151,9 @@ The data in Table \ref{mixedIONsystems} and Refs \citenum{lipid17_cacl_series}
 
 \subsection{Berger}
 \noindent
-{\it POPC bilayers.} \\
-Previously published simulation of POPC at 310 K \cite{ollila07a}, available from Ref. \cite{bergerPOPC310K},
-was used.
+{\it POPC bilayers.} 
+Previously published simulation \cite{ollila07a} available from Ref. \citenum{bergerPOPC310K}
+was used for POPC at 310 K.
 
 \noindent
 {\it DOPS and POPS bilayers.} \\
@@ -159,22 +161,42 @@ The data in Table \ref{PSsystems} and Refs \citenum{bergerPOPS298K,bergerDOPS303
 \todo{T. Piggot, please write simulation details} \\
 
 \noindent
-{\it POPC:POPS (4:1) mixtures with additional sodium and calcium ions} \\
-Simulations with excess sodium were taken directly from Ref. \citenum{jurkiewicz12} and
-simulations with calcium directly from \citenum{melcrova16}.
+{\it POPC:POPS (4:1) mixtures with additional sodium and calcium ions.} 
+Previously published simulations with the additional amount of sodium \cite{jurkiewicz12}
+available from Ref. \citenum{POPCpopsBERGERwith1000mMNa} and with the additional amounts
+of calcium \cite{melcrova16} available from Refs. \citenum{POPCpopsBERGERwith102mMCa,POPCpopsBERGERwith715mMCa}
+were used. The additional sodium ions were removed from the structure file of the simulation
+with excess amount of sodium \cite{POPCpopsBERGERwith1000mMNa} to generate the initial structure for the reference simulation
+with sodium counterions only. The data, input and force field parameter files of the reference simulation
+are available from Ref. \citenum{bergerPOPSPOPC4:1mixtureT310K}. \todo{The simulation details of this are
+  not clearly described in Zenodo repository, but can be read from the mdp file available there. Should we
+write the detailes here or not?}
 
 
-\subsection{Slipids}
-\todo{To be written by Piggot and Favela}
-
-
-\subsection{GROMOS-CKP}
-\todo{To be written by Piggot}
+\subsection{GROMOS-CKP and GROMOS-CKPM}
   CKPM refers to the version with Berger/Chiu NH$_3$ charges compatible with Berger
    (i.e. the NH$_3$ group having the same charges as in the N(CH$_3$)$_3$ group of the PC lipids;
    'M' stands for Mukhopadhyay after the first published Berger-based PS simulation that used these charges~\cite{mukhopadhyay04})
    and CKP refers to the version with more Gromos compatible version
    (i.e. the charges for the NH$_3$ group taken from the lysine side-chain).
+\todo{T. Piggot, please write the description of force field.}
+
+\noindent
+{\it DOPS and POPS bilayers.} \\
+The data in Table \ref{PSsystems} and Refs. \citenum{ckp1POPS303K,ckp2POPS303K,ckp1DOPS303K,ckp2DOPS303K}
+\todo{T. Piggot, please write simulation details} \\
+
+\noindent
+    {\it POPC:POPS (5:1) mixtures without additional ions}\\
+    The data in Table \ref{mixedIONsystems} and Refs. \citenum{POPCpopsGROMOSCKPwithNa,POPCpopsGROMOSCKPMwithNa}
+\todo{T. Piggot, please write simulation details} \\
+
+\subsection{Slipids}
+
+\noindent
+{\it DOPS and POPS bilayers.} \\
+The data in Table \ref{PSsystems} and Refs. \citenum{slipidsPOPS298K,slipidsDOPS303K,slipidsDOPSfiles}.
+\todo{T. Piggot and F. Favela, please write simulation details} \\
 
 
 
