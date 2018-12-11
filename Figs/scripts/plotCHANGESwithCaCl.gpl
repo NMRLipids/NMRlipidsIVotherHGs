@@ -3,6 +3,7 @@ set terminal postscript portrait enhanced color dashed lw 1 "Helvetica" 14
 set output "../CHANGESwithCaCl.eps"
 set multiplot  layout 2,1
 
+set pointsize 1.5
 set xrange [0:5] 
 #set ytic 0.05
 #set key box linestyle 1 linecolor rgb 'black'
