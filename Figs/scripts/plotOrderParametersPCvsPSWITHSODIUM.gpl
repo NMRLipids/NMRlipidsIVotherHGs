@@ -1,6 +1,6 @@
 set size 2.0,1.0
 set terminal postscript portrait enhanced color dashed lw 1 "Helvetica" 14 
-set output "../HGorderparametersPCvsPS.eps"
+set output "../HGorderparametersPCvsPSwithSODIUM.eps"
 set multiplot layout 2,2	
 
 set ytic 0.02

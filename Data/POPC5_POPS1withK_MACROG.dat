@@ -1,6 +1,6 @@
 # Binding of K+ to Mixtures of POPC:POPS (5:1) mixtures from MacRog model
 #
-# Original data from https://doi.org/10.5281/zenodo.1210255
+# Original data from https://doi.org/10.5281/zenodo.1404040
 #
 # Results from
 # MATCH/Data/Lipid_Bilayers/POPS+83%popc+500mMKCl/T298/MODEL_MACROG/
@@ -9,15 +9,15 @@
 # MATCH/Data/Lipid_Bilayers/POPS+83%popc+3000mMKCl/T298/MODEL_MACROG/
 # MATCH/Data/Lipid_Bilayers/POPS+83%popc+4000mMKCl/T298/MODEL_MACROG/
 #
-# Order parameters as a function of CONCENTRATION NEEDS TO BE CHECKED!
+# Order parameters as a function of KCl concentration
 # STEREOCHEMISTRY MIGHT NOT BE CONSERVED AS A FUNCTION OF IONS
-#[KCl]    POPC_a1   error   POPC_a2   error    POPC_b1    error   POPC_b2   error   POPS_a1   error    POPS_a2   error   POPS_b   error 
-0        0.04983      -     0.04587     -      0.0274       -     0.02537     -     -0.1547     -      -0.0227    -     -0.09715   - 
-0.5      0.04386  0.01158   0.062548  0.0119   0.0237    0.0117   0.03539  0.0118   -0.1901  0.01152   -0.00593 0.0252   -0.1057   0.0186
-1.0      0.02751  0.01252   0.05157   0.0123   0.0074    0.0127   0.02658  0.0125   -0.1401  0.01183   -0.05374 0.0244   -0.1442   0.0159
-2.0      0.02642  0.01341   0.04529   0.0138   0.0092    0.0136   0.02143  0.0134   -0.1427  0.01896   -0.0645  0.0315   -0.1536   0.0165
-3.0      0.02200  0.01625   0.04071   0.0154   0.0024    0.0165   0.01539  0.0153   -0.1137  0.02964   -0.0083  0.0391   -0.0998   0.0331
-4.0      0.03441  0.01247   0.05855   0.0134   0.0147    0.0126   0.03633  0.0131   -0.1493  0.01540   -0.0914  0.0294   -0.1655   0.0203
+#[KCl]    POPC_a1   error      POPC_a2   error       POPC_b1   error      POPC_b2     error    POPS_a1   error     POPS_a2     error       POPS_b   error
+0         0.04174    0.01025   0.04001    0.01210   0.02324    0.00988   0.02009    0.01217   -0.01649    0.02976   -0.17017    0.01471   -0.13222    0.02386    
+500      0.06345    0.01170   0.04468    0.01134   0.03606    0.01162   0.02493    0.01151   -0.01111    0.02451   -0.18469    0.01231   -0.10920    0.01832    
+1000      0.04947    0.01341   0.02103    0.01554   0.02509    0.01324   0.00375    0.01530   -0.00866    0.03026   -0.14521    0.02487   -0.12425    0.02269    
+2000      0.01806    0.01017   0.00865    0.01346   -0.00249    0.01023   -0.01124    0.01345   -0.02944    0.03823   -0.18732    0.01734   -0.12577    0.03217    
+3000      -0.00246    0.01265   0.03734    0.01686   -0.02483    0.01170   0.02203    0.01626   -0.02098    0.04289   -0.18398    0.01993   -0.10952    0.03433    
+
 
 
 

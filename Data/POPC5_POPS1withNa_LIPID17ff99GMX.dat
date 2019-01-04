@@ -1,0 +1,16 @@
+# Binding of Na+ to POPC:POPS (5:1) mixtures from LIPID17 ran with Gromacs
+#
+# Results from
+# https://github.com/NMRLipids/NMRlipidsIVotherHGs/issues/21
+# 
+# 
+#
+# Order parameters as a function of CONCENTRATION NEEDS TO BE CHECKED!
+# STEREOCHEMISTRY MIGHT NOT BE CONSERVED AS A FUNCTION OF IONS
+#[NaCl]       POPC_a1   error    POPC_a2   error   POPC_b1    error    POPC_b2   error    POPS_a1   error    POPS_a2   error    POPS_b   error 
+0      0.084512  0.002483   0.083016  0.002072    0.007816  0.001747   0.003882  0.001989 
+0.59   0.067843  0.002318   0.070836  0.001840    -0.000353  0.001725  -0.003821  0.001675
+
+
+
+
