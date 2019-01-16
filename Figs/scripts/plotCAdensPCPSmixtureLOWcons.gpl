@@ -21,10 +21,30 @@ set ylabel " "
 set label  "CHARMM36"  at graph  0.4,0.8
 set key at graph 0.6,0.7
 #set size 1.0,0.2
-plot "../../scratch/dens_profiles_PCPS/250POPC_50POPS_0.15MCaCl-1atm-298K/dens_CAL.xvg" using 1:2 with lines title '150mM' lw 4 lc rgb 'black',\
+set yrange [0:0.7]
+set ytic 0.2
+plot "../../../MATCH/Data/Lipid_Bilayers/POPS+83%popc+150mMCaCl/T298K/MODEL_CHARMM36/IONdens.xvg" using 1:2 with lines title '260 mM' lw 4 lc rgb 'black',\
 
+set ylabel " "
+unset label
+set label  "Berger"  at graph  0.4,0.8
 set size 1.0,0.23
 set origin 0,0.38
+plot   	  "../../../MATCH/Data/Lipid_Bilayers/POPS+80%popc+102mMCaCl/T310K/MODEL_Berger/CAdens.xvg" using 1:2 with lines title '102 mM'  lw 4 lc rgb 'black',\
+
+unset label
+set label  "MacRog"  at graph  0.4,0.8
+set yrange [0:0.7]
+set ytic 0.2
+set size 1.0,0.23
+set origin 0,0.2
+#set xtics format "%G"
+#set xlabel "Membrane normal coordinate (nm)"
+plot "../../../MATCH/Data/Lipid_Bilayers/POPS+83%popc+100mMCaCl/T298K/MODEL_MACROG/IONdens.xvg" using 1:2 with lines title '100 mM' lw 4 lc rgb 'black',\
+
+set xtics format "%G"
+set xlabel "Membrane normal coordinate (nm)"
+set size 1.0,0.25
 set ytic
 set yrange [0:1.19]
 set ylabel " "
@@ -32,25 +52,9 @@ unset label
 set label  "LIPID17"  at graph  0.4,0.8
 set key at graph 0.6,0.7
 #set size 1.0,0.2
-plot "../../../MATCH/Data/Lipid_Bilayers/POPS+83%popc+500mMCaCl/T298K/MODEL_LIPID17/number_density_ions.dat" using 1:2 with lines title '500mM' lw 4 lc rgb 'black',\
+plot "../../../MATCH/Data/Lipid_Bilayers/POPS+83%popc+500mMCaCl/T298K/MODEL_LIPID17/number_density_ions.dat" using 1:2 with lines title '500 mM' lw 4 lc rgb 'black',\
 
-unset label
-set label  "MacRog"  at graph  0.4,0.8
-set yrange [0:0.74]
-set ytic 0.2
-set size 1.0,0.23
-set origin 0,0.2
-#set xtics format "%G"
-#set xlabel "Membrane normal coordinate (nm)"
-plot "../../../MATCH/Data/Lipid_Bilayers/POPS+83%popc+100mMCaCl/T298K/MODEL_MACROG/IONdens.xvg" using 1:2 with lines title '100mM' lw 4 lc rgb 'black',\
 
-set ylabel " "
-unset label
-set label  "Berger"  at graph  0.4,0.8
-set size 1.0,0.25
-set xtics format "%G"
-set xlabel "Membrane normal coordinate (nm)"
-plot   	  "../../../MATCH/Data/Lipid_Bilayers/POPS+80%popc+102mMCaCl/T310K/MODEL_Berger/CAdens.xvg" using 1:2 with lines title '102mM'  lw 4 lc rgb 'black',\
 
 
 
