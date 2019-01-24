@@ -89,7 +89,7 @@ Prague 6, Czech Republic}
   lipid/counter-ions & force field for lipids / ions & \footnote{Excess Na$^+$ or K$^+$ concentration}C$_{\rm ci}$ (M) &  \footnote{Number of lipid molecules with largest mole fraction}N$_{\rm l}$   &  \footnote{Number of water molecules}N$_{\rm w}$   & \footnote{Number of additional cations}N$_{\rm c}$  & \footnote{Simulation temperature}T (K)  & \footnote{Total simulation time}t$_{{\rm sim}}$(ns) & \footnote{Time used for analysis}t$_{{\rm anal}}$ (ns) &   \footnote{Reference for simulation files}files\\
   \hline
 %    POPC:POPS (5:1)/K$^+$  & CHARMM36 \cite{klauda10,venable13} &0 & 0  & 110:22 & 4935 & 0  & 298  & 100 & 100 \todoi{Equilibration?} & \cite{charmm36pops+83popcT298K}  \\
-    POPC:POPS (5:1)/K$^+$  & CHARMM36 \cite{klauda10,venable13} &0 & 250:50 & ?     & 0  & 298  & 200 & ?   & \cite{??} \todo{Trajectories and further details to be added by J. Madsen}  \\
+    POPC:POPS (5:1)/K$^+$  & CHARMM36 \cite{klauda10,venable13} &0 & 250:50 & 11207 & 0  & 298  & 200 & 180   & \citenum{POPC5POPS1noCaClCHARMM}  \\
     POPC:POPS (5:1)/K$^+$  & CHARMM36 \cite{klauda10,venable13} &0     & 110:22 & 4620  & 0  & 298  & 500 & 100 & \citenum{charmm36pops+83popcT298Kpiggot}  \\
     POPC:POPS (5:1)/K$^+$  & CHARMM36 \cite{klauda10,venable13} &0.45  & 110:22 & 4926  & 40 & 298  & 200 & 150 & \citenum{charmm36pops+83popcT298Kwith450mMK}  \\
     POPC:POPS (5:1)/K$^+$  & CHARMM36 \cite{klauda10,venable13} &0.89  & 110:22 & 4946  & 79 & 298  & 200 & 150 & \citenum{charmm36pops+83popcT298Kwith890mMK}  \\
@@ -153,7 +153,8 @@ and \citenum{charmm36pops+83popcT298KpiggotSODIUM}, respectively\todo{T. Piggot,
 
 Simulations of POPC:POPS (5:1) ans POPC:POPS (1:1) mixtures containing total 300 lipids
 with potassium countertions were ran using CHARMM36 force field.
-The data are available from Refs. \citenum{??} \todo{J. Madsen, please write simulation details}. \\
+The data are available from Refs. \citenum{POPC5POPS1noCaClCHARMM} and  \citenum{POPC1POPS1noCaClCHARMM}
+\todo{J. Madsen, please write simulation details}. \\
 
 \noindent
 {\it POPC:POPS (5:1) mixtures with additional monovalent ions.}
@@ -167,7 +168,8 @@ available from Refs. \citenum{charmm36pops+83popcT298Kwith450mMK,charmm36pops+83
 \noindent
 {\it POPC:POPS (5:1) mixtures with additional calcium} \\
 POPC:POPS (5:1) mixtures containing total 300 (250:50) lipids
-were simulated with the additional calcium concentrations
+were simulated with the additional calcium concentrations.
+The data is available from Refs. \citenum{POPC5POPS1withCaClCHARMM} and \citenum{POPC5POPS1with1MCaClCHARMM}.
 \todo{J. Madsen, please write simulation details}. \\
 
 \subsection{CHARMM36ua}
@@ -729,7 +731,6 @@ calcium binding affinity to pure PC and mixed PC:PS bilayers.
   \caption{\label{CAdensPCPSmixtureALL}
     Ca2+ density profiles from simulations.
   }
-  \todo{The CHARMM results are mass densities, number densities should be used when the data by Jesper Madsen is available.} \\
   \todo{Should we include also counterions into the plot?} \\
 \end{figure}
 
