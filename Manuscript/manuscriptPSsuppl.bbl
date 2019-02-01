@@ -1,0 +1,876 @@
+\providecommand{\latin}[1]{#1}
+\providecommand*\mcitethebibliography{\thebibliography}
+\csname @ifundefined\endcsname{endmcitethebibliography}
+  {\let\endmcitethebibliography\endthebibliography}{}
+\begin{mcitethebibliography}{102}
+\providecommand*\natexlab[1]{#1}
+\providecommand*\mciteSetBstSublistMode[1]{}
+\providecommand*\mciteSetBstMaxWidthForm[2]{}
+\providecommand*\mciteBstWouldAddEndPuncttrue
+  {\def\EndOfBibitem{\unskip.}}
+\providecommand*\mciteBstWouldAddEndPunctfalse
+  {\let\EndOfBibitem\relax}
+\providecommand*\mciteSetBstMidEndSepPunct[3]{}
+\providecommand*\mciteSetBstSublistLabelBeginEnd[3]{}
+\providecommand*\EndOfBibitem{}
+\mciteSetBstSublistMode{f}
+\mciteSetBstMaxWidthForm{subitem}{(\alph{mcitesubitemcount})}
+\mciteSetBstSublistLabelBeginEnd
+  {\mcitemaxwidthsubitemform\space}
+  {\relax}
+  {\relax}
+
+\bibitem[Roux and Bloom(1990)Roux, and Bloom]{roux90}
+Roux,~M.; Bloom,~M. Calcium, magnesium, lithium, sodium, and potassium
+  distributions in the headgroup region of binary membranes of
+  phosphatidylcholine and phosphatidylserine as seen by deuterium {NMR}.
+  \emph{Biochemistry} \textbf{1990}, \emph{29}, 7077--7089\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Klauda \latin{et~al.}(2010)Klauda, Venable, Freites, O'Connor, Tobias,
+  Mondragon-Ramirez, Vorobyov, {MacKerell Jr}, and Pastor]{klauda10}
+Klauda,~J.~B.; Venable,~R.~M.; Freites,~J.~A.; O'Connor,~J.~W.; Tobias,~D.~J.;
+  Mondragon-Ramirez,~C.; Vorobyov,~I.; {MacKerell Jr},~A.~D.; Pastor,~R.~W.
+  Update of the {CHARMM} All-Atom Additive Force Field for Lipids: Validation
+  on Six Lipid Types. \emph{J. Phys. Chem. B} \textbf{2010}, \emph{114},
+  7830--7843\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Venable \latin{et~al.}(2013)Venable, Luo, Gawrisch, Roux, and
+  Pastor]{venable13}
+Venable,~R.~M.; Luo,~Y.; Gawrisch,~K.; Roux,~B.; Pastor,~R.~W. Simulations of
+  Anionic Lipid Membranes: Development of Interaction-Specific Ion Parameters
+  and Validation Using NMR Data. \emph{The Journal of Physical Chemistry B}
+  \textbf{2013}, \emph{117}, 10183--10192\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Madsen(2019)]{POPC5POPS1noCaClCHARMM}
+Madsen,~J.~J. {MD simulations of bilayers containing PC/PS mixtures and
+  CaCl\_2: 150POPC\_150POPS\_neutral}. 2019;
+  \url{https://doi.org/10.5281/zenodo.2542164}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Piggot(2018)]{charmm36pops+83popcT298Kpiggot}
+Piggot,~T. {CHARMM36 POPS/POPC simulations (versions 1 and 2) 298 K 1.0 nm LJ
+  switching with K ions}. 2018;
+  \url{https://doi.org/10.5281/zenodo.1182658}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Ollila(2018)]{charmm36pops+83popcT298Kwith450mMK}
+Ollila,~O. H.~S. {POPC:POPS (5:1) with 450 mM potassium simulation with
+  CHARMM36 at 298K}. 2018; \url{https://doi.org/10.5281/zenodo.1493241}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Ollila(2018)]{charmm36pops+83popcT298Kwith890mMK}
+Ollila,~O. H.~S. {POPC:POPS (5:1) with 890 mM potassium simulation with
+  CHARMM36 at 298K}. 2018; \url{https://doi.org/10.5281/zenodo.1493246}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Piggot(2018)]{charmm36pops+83popcT298KpiggotSODIUM}
+Piggot,~T. {CHARMM36 POPS/POPC simulations (versions 1 and 2) 298 K 1.0 nm LJ
+  switching with Na ions}. 2018;
+  \url{https://doi.org/10.5281/zenodo.1182665}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Ollila(2018)]{charmm36pops+83popcT298Kwith440mMNa}
+Ollila,~O. H.~S. {POPC:POPS (5:1) with 440 mM sodium simulation with CHARMM36
+  at 298K}. 2018; \url{https://doi.org/10.5281/zenodo.1493190}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Ollila(2018)]{charmm36pops+83popcT298Kwith890mMNa}
+Ollila,~O. H.~S. {POPC:POPS (5:1) with 890 mM sodium simulation with CHARMM36
+  at 298K}. 2018; \url{https://doi.org/10.5281/zenodo.1493229}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Maciejewski \latin{et~al.}(2014)Maciejewski, Pasenkiewicz-Gierula,
+  Cramariuc, Vattulainen, and R{\'o}g]{maciejewski14}
+Maciejewski,~A.; Pasenkiewicz-Gierula,~M.; Cramariuc,~O.; Vattulainen,~I.;
+  R{\'o}g,~T. Refined {OPLS} All-Atom Force Field for Saturated
+  Phosphatidylcholine Bilayers at Full Hydration. \emph{J. Phys. Chem. B}
+  \textbf{2014}, \emph{118}, 4571--4581\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Javanainen(2017)]{POPCpopsMACROG}
+Javanainen,~M. Simulations of POPC/POPS membranes with CaCl\_2. 2017;
+  \url{https://doi.org/10.5281/zenodo.1409551}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Javanainen(2018)]{POPCpopsMACROGwithK}
+Javanainen,~M. Simulations of POPC/POPS membranes with KCl. 2018;
+  \url{https://doi.org/10.5281/zenodo.1404040}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Dickson \latin{et~al.}(2014)Dickson, Madej, Skjevik, Betz, Teigen,
+  Gould, and Walker]{dickson14}
+Dickson,~C.~J.; Madej,~B.~D.; Skjevik,~A.~A.; Betz,~R.~M.; Teigen,~K.;
+  Gould,~I.~R.; Walker,~R.~C. Lipid14: The Amber Lipid Force Field. \emph{J.
+  Chem. Theory Comput.} \textbf{2014}, \emph{10}, 865--879\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Gould \latin{et~al.}(2018)Gould, Skjevik, Dickson, Madej, and
+  Walker]{gould18}
+Gould,~I.; Skjevik,~A.; Dickson,~C.; Madej,~B.; Walker,~R. Lipid17: A
+  Comprehensive AMBER Force Field for the Simulation of Zwitterionic and
+  Anionic Lipids. 2018; In preparation\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Kav and Miettinen(2018)Kav, and Miettinen]{POPCpopsLIPID17withKCI}
+Kav,~B.; Miettinen,~M.~S. {Amber Lipid17 Simulations of POPC/POPS Membranes
+  with KCl Counterions}. 2018; \url{https://doi.org/10.5281/zenodo.1250969},
+  {B.K acknowledges financial support from International Max Planck Research
+  School on Multiscale Bio-Systems}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Kav and Miettinen(2018)Kav, and Miettinen]{POPCpopsLIPID17withK}
+Kav,~B.; Miettinen,~M.~S. {Amber Lipid17 Simulations of POPC/POPS Membranes
+  with KCl}. 2018; \url{https://doi.org/10.5281/zenodo.1227257}, {B.K
+  acknowledges financial support from International Max Planck Research School
+  on Multiscale Bio-Systems}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Kav and Miettinen(2018)Kav, and Miettinen]{POPCpopsLIPID17withNaCI}
+Kav,~B.; Miettinen,~M.~S. {Amber Lipid17 Simulations of POPC/POPS Membranes
+  with NaCl Counterions}. 2018; \url{https://doi.org/10.5281/zenodo.1250975},
+  {B.K acknowledges financial support from International Max Planck Research
+  School on Multiscale Bio-Systems}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Kav and Miettinen(2018)Kav, and Miettinen]{POPCpopsLIPID17withNa}
+Kav,~B.; Miettinen,~M.~S. {Amber Lipid17 Simulations of POPC/POPS Membranes
+  with NaCl}. 2018; \url{https://doi.org/10.5281/zenodo.1227272}, {B.K
+  acknowledges financial support from International Max Planck Research School
+  on Multiscale Bio-Systems}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Tieleman \latin{et~al.}(1999)Tieleman, Berendsen, and
+  Sansom]{tieleman99}
+Tieleman,~D.~P.; Berendsen,~H.~J.; Sansom,~M.~S. An Alamethicin Channel in a
+  Lipid Bilayer: Molecular Dynamics Simulations. \emph{Biophys. J.}
+  \textbf{1999}, \emph{76}, 1757 -- 1769\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Mukhopadhyay \latin{et~al.}(2004)Mukhopadhyay, Monticelli, and
+  Tieleman]{mukhopadhyay04}
+Mukhopadhyay,~P.; Monticelli,~L.; Tieleman,~D.~P. Molecular Dynamics Simulation
+  of a Palmitoyl-Oleoyl Phosphatidylserine Bilayer with Na+ Counterions and
+  NaCl. \emph{Biophysical Journal} \textbf{2004}, \emph{86}, 1601 -- 1609\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Samuli(2018)]{bergerPOPSPOPC4:1mixtureT310K}
+Samuli,~O. O.~H. {POPC:POPS (4:1) simulation with Berger model at 310K}. 2018;
+  \url{https://doi.org/10.5281/zenodo.1475285}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Cwiklik(2017)]{POPCpopsBERGERwith1000mMNa}
+Cwiklik,~L. {MD simulation trajectory of a POPC/POPS (4:1) bilayer with 1M
+  NaCl, Berger force field for lipids and ffgmx for ions}. 2017;
+  \url{https://doi.org/10.5281/zenodo.838219}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Botan \latin{et~al.}(2015)Botan, Favela-Rosales, Fuchs, Javanainen,
+  Kandu{\v c}, Kulig, Lamberg, Loison, Lyubartsev, Miettinen, Monticelli,
+  M{\"a}{\"a}tt{\"a}, Ollila, Retegan, R{\'o}g, Santuz, and Tynkkynen]{botan15}
+Botan,~A.; Favela-Rosales,~F.; Fuchs,~P. F.~J.; Javanainen,~M.; Kandu{\v
+  c},~M.; Kulig,~W.; Lamberg,~A.; Loison,~C.; Lyubartsev,~A.; Miettinen,~M.~S.
+  \latin{et~al.}  Toward Atomistic Resolution Structure of Phosphatidylcholine
+  Headgroup and Glycerol Backbone at Different Ambient Conditions. \emph{J.
+  Phys. Chem. B} \textbf{2015}, \emph{119}, 15075--15088\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Fernando(2015)]{charmmPOPC512files}
+Fernando,~F.-R. POPC\_Glycerol\_CHARMM36\_0-10-15-20-25-35-50\%CHOL. 2015;
+  \url{http://dx.doi.org/10.5281/zenodo.16830}, {Because of the system size,
+  the files ONLY contain the coordinates of Glycerol saved every 10ps, this is
+  the real contribution to the nmrlipids project.}\relax
+\mciteBstWouldAddEndPunctfalse
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Piggot(2017)]{charmm36DOPS303K}
+Piggot,~T. {CHARMM36 DOPS simulations (versions 1 and 2) 303 K 1.0 nm LJ
+  switching}. 2017; \url{https://doi.org/10.5281/zenodo.1129411}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Piggot(2017)]{charmm36POPS298K}
+Piggot,~T. {CHARMM36 POPS simulations (versions 1 and 2) 298 K 1.0 nm LJ
+  switching}. 2017; \url{https://doi.org/10.5281/zenodo.1129415}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Piggot(2018)]{charmm36POPS298Kpotassium}
+Piggot,~T. {CHARMM36 POPS simulations (versions 1 and 2) 298 K 1.0 nm LJ
+  switching with K ions}. 2018;
+  \url{https://doi.org/10.5281/zenodo.1182654}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Madsen(2019)]{POPC1POPS1noCaClCHARMM}
+Madsen,~J.~J. {MD simulations of bilayers containing PC/PS mixtures and
+  CaCl\_2: 250POPC\_50POPS\_neutral}. 2019;
+  \url{https://doi.org/10.5281/zenodo.2542151}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Lee \latin{et~al.}(2016)Lee, Cheng, Swails, Yeom, Eastman, Lemkul,
+  Wei, Buckner, Jeong, Qi, Jo, Pande, Case, Brooks, MacKerell, Klauda, and
+  Im]{lee16}
+Lee,~J.; Cheng,~X.; Swails,~J.~M.; Yeom,~M.~S.; Eastman,~P.~K.; Lemkul,~J.~A.;
+  Wei,~S.; Buckner,~J.; Jeong,~J.~C.; Qi,~Y. \latin{et~al.}  CHARMM-GUI Input
+  Generator for NAMD, GROMACS, AMBER, OpenMM, and CHARMM/OpenMM Simulations
+  Using the CHARMM36 Additive Force Field. \emph{Journal of Chemical Theory and
+  Computation} \textbf{2016}, \emph{12}, 405--413\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Jo \latin{et~al.}()Jo, Kim, Iyer, and Im]{jo18}
+Jo,~S.; Kim,~T.; Iyer,~V.~G.; Im,~W. CHARMM-GUI: A web-based graphical user
+  interface for CHARMM. \emph{Journal of Computational Chemistry} \emph{29},
+  1859--1865\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Madsen(2019)]{POPC5POPS1withCaClCHARMM}
+Madsen,~J.~J. {MD simulations of bilayers containing PC/PS mixtures and
+  CaCl\_2: 250POPC\_50POPS\_0.15MCaCl\_2}. 2019;
+  \url{https://doi.org/10.5281/zenodo.2542176}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Madsen(2019)]{POPC5POPS1with1MCaClCHARMM}
+Madsen,~J.~J. {MD simulations of bilayers containing PC/PS mixtures and
+  CaCl\_2: 250POPC\_50POPS\_1MCaCl\_2}. 2019;
+  \url{https://doi.org/10.5281/zenodo.2542135}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Piggot(2017)]{charmm36uaDOPS303K}
+Piggot,~T. {CHARMM36-UA DOPS simulations (versions 1 and 2) 303 K 1.0 nm LJ
+  switching}. 2017; \url{https://doi.org/10.5281/zenodo.1129456}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Piggot(2017)]{charmm36uaPOPS298K}
+Piggot,~T. {CHARMM36-UA POPS simulations (versions 1 and 2) 298 K 1.0 nm LJ
+  switching}. 2017; \url{https://doi.org/10.5281/zenodo.1129458}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Javanainen(2018)]{macrogPOPC298K}
+Javanainen,~M. {Simulation of a POPC bilayer at 298K, lipid model by
+  Maciejewski and Rog}. 2018;
+  \url{https://doi.org/10.5281/zenodo.1167532}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Kulig \latin{et~al.}(2015)Kulig, Pasenkiewicz-Gierula, and
+  Róg]{kulig15c}
+Kulig,~W.; Pasenkiewicz-Gierula,~M.; Róg,~T. Topologies, structures and
+  parameter files for lipid simulations in GROMACS with the OPLS-aa force
+  field: DPPC, POPC, DOPC, PEPC, and cholesterol. \emph{Data in Brief}
+  \textbf{2015}, \emph{5}, 333 -- 336\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Kulig \latin{et~al.}(2016)Kulig, Pasenkiewicz-Gierula, and
+  R{\'o}g]{kulig15b}
+Kulig,~W.; Pasenkiewicz-Gierula,~M.; R{\'o}g,~T. Cis and trans unsaturated
+  phosphatidylcholine bilayers: A molecular dynamics simulation study.
+  \emph{Chem. Phys. Lipids} \textbf{2016}, \emph{195}, 12 -- 20\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Jorgensen \latin{et~al.}(1983)Jorgensen, Chandrasekhar, Madura, Impey,
+  and Klein]{jorgensen83}
+Jorgensen,~W.~L.; Chandrasekhar,~J.; Madura,~J.~D.; Impey,~R.~W.; Klein,~M.~L.
+  Comparison of simple potential functions for simulating liquid water.
+  \emph{J. Chem. Phys.} \textbf{1983}, \emph{79}, 926--935\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Piggot(2018)]{macrogPOPS298Kcorrect}
+Piggot,~T. {MacRog POPS simulations (versions 1 and 2) 298 K with corrected PO
+  not OP tails}. 2018; \url{https://doi.org/10.5281/zenodo.1283335}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Javanainen(2018)]{macrogPOPS298KwithK}
+Javanainen,~M. {Simulation of a POPS membrane with potassium counterions}.
+  2018; \url{https://doi.org/10.5281/zenodo.1434990}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[\r{A}qvist(1990)]{aqvist90}
+\r{A}qvist,~J. Ion-water interaction potentials derived from free energy
+  perturbation simulations. \emph{J. Phys. Chem.} \textbf{1990}, \emph{94},
+  8021--8024\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Róg \latin{et~al.}(2016)Róg, Orłowski, Llorente, Skotland,
+  Sylvänne, Kauhanen, Ekroos, Sandvig, and Vattulainen]{rog16}
+Róg,~T.; Orłowski,~A.; Llorente,~A.; Skotland,~T.; Sylvänne,~T.;
+  Kauhanen,~D.; Ekroos,~K.; Sandvig,~K.; Vattulainen,~I. Data including GROMACS
+  input files for atomistic molecular dynamics simulations of mixed, asymmetric
+  bilayers including molecular topologies, equilibrated structures, and force
+  field for lipids compatible with OPLS-AA parameters. \emph{Data in Brief}
+  \textbf{2016}, \emph{7}, 1171 -- 1174\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Essman \latin{et~al.}(1995)Essman, Perera, Berkowitz, Larden, Lee, and
+  Pedersen]{essman95}
+Essman,~U.~L.; Perera,~M.~L.; Berkowitz,~M.~L.; Larden,~T.; Lee,~H.;
+  Pedersen,~L.~G. A smooth particle mesh ewald potential. \emph{J. Chem. Phys.}
+  \textbf{1995}, \emph{103}, 8577--8592\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Shirts \latin{et~al.}(2007)Shirts, Mobley, Chodera, and
+  Pande]{shirts07}
+Shirts,~M.~R.; Mobley,~D.~L.; Chodera,~J.~D.; Pande,~V.~S. Accurate and
+  Efficient Corrections for Missing Dispersion Interactions in Molecular
+  Simulations. \emph{The Journal of Physical Chemistry B} \textbf{2007},
+  \emph{111}, 13052--13063\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Nose(1984)]{nose84}
+Nose,~S. A molecular dynamics method for simulations in the canonical ensemble.
+  \emph{Mol. Phys.} \textbf{1984}, \emph{52}, 255--268\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Hoover(1985)]{hoover85}
+Hoover,~W.~G. Canonical dynamics: Equilibrium phase-space distributions.
+  \emph{Phys. Rev. A} \textbf{1985}, \emph{31}, 1695--1697\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Parrinello and Rahman(1981)Parrinello, and Rahman]{parrinello81}
+Parrinello,~M.; Rahman,~A. Polymorphic transitions in single crystals: A new
+  molecular dynamics method. \emph{J. Appl. Phys.} \textbf{1981}, \emph{52},
+  7182--7190\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Hess \latin{et~al.}(1997)Hess, Bekker, Berendsen, and Fraaije]{hess97}
+Hess,~B.; Bekker,~H.; Berendsen,~H. J.~C.; Fraaije,~J. G. E.~M. {LINCS}: a
+  linear constraint solver for molecular dynamics simulations. \emph{J. Comput.
+  Chem.} \textbf{1997}, \emph{18}, 1463--1472\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Hess(2008)]{hess07}
+Hess,~B. P-LINCS: A Parallel Linear Constraint Solver for Molecular Simulation.
+  \emph{J. Chem. Theory Comput.} \textbf{2008}, \emph{4}, 116--122\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Miyamoto and Kollman(1992)Miyamoto, and Kollman]{miyamoto92}
+Miyamoto,~S.; Kollman,~P.~A. {SETTLE}: An analytical Version of the {SHAKE} and
+  {RATTLE} Algorithm for Rigid Water Models. \emph{J. Comput. Chem}
+  \textbf{1992}, \emph{13}, 952--962\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Jorgensen \latin{et~al.}(1983)Jorgensen, Chandrasekhar, Madura, Impey,
+  and Klein]{jorgensen1983comparison}
+Jorgensen,~W.~L.; Chandrasekhar,~J.; Madura,~J.~D.; Impey,~R.~W.; Klein,~M.~L.
+  Comparison of simple potential functions for simulating liquid water.
+  \emph{The Journal of chemical physics} \textbf{1983}, \emph{79},
+  926--935\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Joung and Cheatham~III(2008)Joung, and
+  Cheatham~III]{joung2008determination}
+Joung,~I.~S.; Cheatham~III,~T.~E. Determination of alkali and halide monovalent
+  ion parameters for use in explicitly solvated biomolecular simulations.
+  \emph{The journal of physical chemistry B} \textbf{2008}, \emph{112},
+  9020--9041\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Miettinen and Kav(2018)Miettinen, and Kav]{lipid17POPSjcions}
+Miettinen,~M.~S.; Kav,~B. {Molecular dynamics simulation trajectory of an
+  anionic lipid bilayer: 100 mol\% POPS with Na+ counterions using
+  Joung-Cheatham Ions}. 2018; \url{https://doi.org/10.5281/zenodo.1148495},
+  {B.K. acknowledges financial support from International Max Planck Research
+  School on Multiscale Bio-Systems.}\relax
+\mciteBstWouldAddEndPunctfalse
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Miettinen and Kav(2018)Miettinen, and Kav]{lipid17POPSff99ions}
+Miettinen,~M.~S.; Kav,~B. {Molecular dynamics simulation trajectory of an
+  anionic lipid bilayer: 100 mol\% POPS with Na+ counterions using ff99 ions}.
+  2018; \url{https://doi.org/10.5281/zenodo.1134869}, {B.K. acknowledges
+  financial support from International Max Planck Research School on Multiscale
+  Bio-Systems}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Kav and Miettinen(2018)Kav, and Miettinen]{lipid17DOPSjcions}
+Kav,~B.; Miettinen,~M.~S. {Molecular dynamics simulation trajectory of an
+  anionic lipid bilayer: 100 mol\% DOPS with Na+ counterions using
+  Joung-Cheetham Ions}. 2018; \url{https://doi.org/10.5281/zenodo.1134871},
+  {B.K acknowledges financial support from International Max Planck Research
+  School on Multiscale Bio-Systems}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Kav and Miettinen(2018)Kav, and Miettinen]{lipid17DOPSff99ions}
+Kav,~B.; Miettinen,~M.~S. {Molecular dynamics simulation trajectory of an
+  anionic lipid bilayer: 100 mol\% DOPS with Na+ counterions using ff99 Ions}.
+  2018; \url{https://doi.org/10.5281/zenodo.1135142}, {B.K acknowledges
+  financial support from International Max Planck Research School on Multiscale
+  Bio-Systems}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Melcr(2018)]{lipid17_cacl_series}
+Melcr,~J. {Molecular dynamics simulations of lipid bilayers containing POPC and
+  POPS with the lipid17 force field, only counterions, and CaCl2
+  concentrations}. 2018; \url{https://doi.org/10.5281/zenodo.1487761}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Kav and Miettinen(2018)Kav, and Miettinen]{POPCpopsLIPID17withCaCl}
+Kav,~B.; Miettinen,~M.~S. {Amber Lipid17 Simulations of POPC/POPS Membranes
+  with CaCl2}. 2018; \url{https://doi.org/10.5281/zenodo.1438848}, {B.K
+  acknowledges financial support from International Max Planck Research School
+  on Multiscale Bio-Systems}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Ollila \latin{et~al.}(2007)Ollila, Hyv{\"o}nen, and
+  Vattulainen]{ollila07a}
+Ollila,~S.; Hyv{\"o}nen,~M.~T.; Vattulainen,~I. Polyunsaturation in Lipid
+  Membranes: Dynamic Properties and Lateral Pressure Profiles. \emph{J. Phys.
+  Chem. B} \textbf{2007}, \emph{111}, 3139--3150\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Ollila(2018)]{bergerPOPC310K}
+Ollila,~O. H.~S. {MD simulation of POPC lipids bilayer at 310K (Berger, Gromacs
+  3.1.4)}. 2018; \url{https://doi.org/10.5281/zenodo.1230170}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Piggot(2017)]{bergerPOPS298K}
+Piggot,~T. {Berger POPS simulations (versions 1 and 2) 298 K 1.0 nm cut-off}.
+  2017; \url{https://doi.org/10.5281/zenodo.1129425}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Piggot(2017)]{bergerDOPS303K}
+Piggot,~T. {Berger DOPS simulations (versions 1 and 2) 303 K 1.0 nm cut-off}.
+  2017; \url{https://doi.org/10.5281/zenodo.1129419}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Jurkiewicz \latin{et~al.}(2012)Jurkiewicz, Cwiklik, Vojtíšková,
+  Jungwirth, and Hof]{jurkiewicz12}
+Jurkiewicz,~P.; Cwiklik,~L.; Vojtíšková,~A.; Jungwirth,~P.; Hof,~M.
+  Structure, dynamics, and hydration of POPC/POPS bilayers suspended in NaCl,
+  KCl, and CsCl solutions. \emph{Biochimica et Biophysica Acta (BBA) -
+  Biomembranes} \textbf{2012}, \emph{1818}, 609 -- 616\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Melcrov{\' a} \latin{et~al.}(2016)Melcrov{\' a}, Pokorna, Pullanchery,
+  Kohagen, Jurkiewicz, Hof, Jungwirth, Cremer, and Cwiklik]{melcrova16}
+Melcrov{\' a},~A.; Pokorna,~S.; Pullanchery,~S.; Kohagen,~M.; Jurkiewicz,~P.;
+  Hof,~M.; Jungwirth,~P.; Cremer,~P.~S.; Cwiklik,~L. The complex nature of
+  calcium cation interactions with phospholipid bilayers. \emph{Sci. Reports}
+  \textbf{2016}, \emph{6}, 38035\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Lukasz(2017)]{POPCpopsBERGERwith102mMCa}
+Lukasz,~C. {MD simulation trajectory of a POPC/POPS (4:1) bilayer with 102mM
+  CaCl2, Berger force field for lipids, scaled charges for Ca2+ and Cl-}. 2017;
+  \url{https://doi.org/10.5281/zenodo.887398}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Lukasz(2017)]{POPCpopsBERGERwith715mMCa}
+Lukasz,~C. {MD simulation trajectory of a POPC/POPS (4:1) bilayer with 715mM
+  CaCl2, Berger force field for lipids, scaled charges for Ca2+ and Cl-}. 2017;
+  \url{https://doi.org/10.5281/zenodo.887400}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Piggot(2017)]{ckp1POPS303K}
+Piggot,~T. {GROMOS-CKP POPS simulations (versions 1 and 2) 298 K with
+  Berger/Chiu NH3 charges and PME}. 2017;
+  \url{https://doi.org/10.5281/zenodo.1129431}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Piggot(2017)]{ckp2POPS303K}
+Piggot,~T. {GROMOS-CKP POPS simulations (versions 1 and 2) 298 K with GROMOS
+  NH3 charges and PME}. 2017;
+  \url{https://doi.org/10.5281/zenodo.1129435}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Piggot(2017)]{ckp1DOPS303K}
+Piggot,~T. {GROMOS-CKP DOPS simulations (versions 1 and 2) 303 K with
+  Berger/Chiu NH3 charges and PME}. 2017;
+  \url{https://doi.org/10.5281/zenodo.1129429}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Piggot(2017)]{ckp2DOPS303K}
+Piggot,~T. {GROMOS-CKP DOPS simulations (versions 1 and 2) 303 K with GROMOS
+  NH3 charges and PME}. 2017;
+  \url{https://doi.org/10.5281/zenodo.1129447}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Piggot(2018)]{POPCpopsGROMOSCKPwithNa}
+Piggot,~T. {GROMOS-CKP POPS/POPC simulations (versions 1 and 2) 298 K with
+  GROMOS NH3 charges and PME}. 2018;
+  \url{https://doi.org/10.5281/zenodo.1283333}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Piggot(2018)]{POPCpopsGROMOSCKPMwithNa}
+Piggot,~T. {GROMOS-CKP POPS/POPC simulations (versions 1 and 2) 298 K with
+  Berger/Chiu NH3 charges and PME}. 2018;
+  \url{https://doi.org/10.5281/zenodo.1283331}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Piggot(2017)]{slipidsPOPS298K}
+Piggot,~T. {Slipids POPS simulations (versions 1 and 2) 298 K 1.0 nm cut-off
+  with LJ-PME}. 2017; \url{https://doi.org/10.5281/zenodo.1129441}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Piggot(2017)]{slipidsDOPS303K}
+Piggot,~T. {Slipids DOPS simulations (versions 1 and 2) 303 K 1.0 nm cut-off
+  with LJ-PME}. 2017; \url{https://doi.org/10.5281/zenodo.1129439}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Favela-Rosales(2017)]{slipidsDOPSfiles}
+Favela-Rosales,~F. {MD simulation trajectory of a fully hydrated DOPS bilayer:
+  SLIPIDS, Gromacs 5.0.4. 2017.} 2017;
+  \url{https://doi.org/10.5281/zenodo.495510}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Akutsu and Seelig(1981)Akutsu, and Seelig]{akutsu81}
+Akutsu,~H.; Seelig,~J. Interaction of metal ions with phosphatidylcholine
+  bilayer membranes. \emph{Biochemistry} \textbf{1981}, \emph{20},
+  7366--7373\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Altenbach and Seelig(1984)Altenbach, and Seelig]{altenbach84}
+Altenbach,~C.; Seelig,~J. Calcium binding to phosphatidylcholine bilayers as
+  studied by deuterium magnetic resonance. {E}vidence for the formation of a
+  calcium complex with two phospholipid molecules. \emph{Biochemistry}
+  \textbf{1984}, \emph{23}, 3913--3920\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Seelig \latin{et~al.}(1987)Seelig, MacDonald, and Scherer]{seelig87}
+Seelig,~J.; MacDonald,~P.~M.; Scherer,~P.~G. Phospholipid head groups as
+  sensors of electric charge in membranes. \emph{Biochemistry} \textbf{1987},
+  \emph{26}, 7535--7541\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Scherer and Seelig(1989)Scherer, and Seelig]{scherer89}
+Scherer,~P.~G.; Seelig,~J. Electric charge effects on phospholipid headgroups.
+  Phosphatidylcholine in mixtures with cationic and anionic amphiphiles.
+  \emph{Biochemistry} \textbf{1989}, \emph{28}, 7720--7728\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Borle and Seelig(1985)Borle, and Seelig]{borle85}
+Borle,~F.; Seelig,~J. Ca2+ binding to phosphatidylglycerol bilayers as studied
+  by differential scanning calorimetry and 2H- and 31P-nuclear magnetic
+  resonance. \emph{Chemistry and Physics of Lipids} \textbf{1985}, \emph{36},
+  263 -- 283\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Macdonald and Seelig(1987)Macdonald, and Seelig]{macdonald87}
+Macdonald,~P.~M.; Seelig,~J. Calcium binding to mixed
+  phosphatidylglycerol-phosphatidylcholine bilayers as studied by deuterium
+  nuclear magnetic resonance. \emph{Biochemistry} \textbf{1987}, \emph{26},
+  1231--1240\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Roux and Neumann(1986)Roux, and Neumann]{roux86}
+Roux,~M.; Neumann,~J.-M. Deuterium NMR study of head-group deuterated
+  phosphatidylserine in pure and binary phospholipid bilayers. \emph{FEBS
+  Letters} \textbf{1986}, \emph{199}, 33--38\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Roux and Bloom(1991)Roux, and Bloom]{roux91}
+Roux,~M.; Bloom,~M. Calcium binding by phosphatidylserine headgroups. Deuterium
+  {NMR} study. \emph{Biophys. J.} \textbf{1991}, \emph{60}, 38 -- 44\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Scherer and Seelig(1987)Scherer, and Seelig]{scherer87}
+Scherer,~P.; Seelig,~J. Structure and dynamics of the phosphatidylcholine and
+  the phosphatidylethanolamine head group in {L}-{M} fibroblasts as studied by
+  deuterium nuclear magnetic resonance. \emph{EMBO J.} \textbf{1987},
+  \emph{6}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Ferreira \latin{et~al.}(2013)Ferreira, Coreta-Gomes, Ollila, Moreno,
+  Vaz, and Topgaard]{ferreira13}
+Ferreira,~T.~M.; Coreta-Gomes,~F.; Ollila,~O. H.~S.; Moreno,~M.~J.; Vaz,~W.
+  L.~C.; Topgaard,~D. Cholesterol and {POPC} segmental order parameters in
+  lipid membranes: solid state $^1${H}-$^{13}${C} {NMR} and {MD} simulation
+  studies. \emph{Phys. Chem. Chem. Phys.} \textbf{2013}, \emph{15},
+  1976--1989\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Ollila and Pabst(2016)Ollila, and Pabst]{ollila16}
+Ollila,~O.~S.; Pabst,~G. Atomistic resolution structure and dynamics of lipid
+  bilayers in simulations and experiments. \emph{Biochimica et Biophysica Acta
+  (BBA) - Biomembranes} \textbf{2016}, \emph{1858}, 2512 -- 2528\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Ferreira \latin{et~al.}(2016)Ferreira, Sood, B{\"a}renwald,
+  Carlstr{\"o}m, Topgaard, Saalw{\"a}chter, Kinnunen, and Ollila]{ferreira16}
+Ferreira,~T.~M.; Sood,~R.; B{\"a}renwald,~R.; Carlstr{\"o}m,~G.; Topgaard,~D.;
+  Saalw{\"a}chter,~K.; Kinnunen,~P. K.~J.; Ollila,~O. H.~S. Acyl Chain Disorder
+  and Azelaoyl Orientation in Lipid Membranes Containing Oxidized Lipids.
+  \emph{Langmuir} \textbf{2016}, \emph{32}, 6524--6533\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Catte \latin{et~al.}(2016)Catte, Girych, Javanainen, Loison, Melcr,
+  Miettinen, Monticelli, Maatta, Oganesyan, Ollila, Tynkkynen, and
+  Vilov]{catte16}
+Catte,~A.; Girych,~M.; Javanainen,~M.; Loison,~C.; Melcr,~J.; Miettinen,~M.~S.;
+  Monticelli,~L.; Maatta,~J.; Oganesyan,~V.~S.; Ollila,~O. H.~S. \latin{et~al.}
+   Molecular electrometer and binding of cations to phospholipid bilayers.
+  \emph{Phys. Chem. Chem. Phys.} \textbf{2016}, \emph{18}, 32560--32569\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Melcr \latin{et~al.}(2018)Melcr, Martinez-Seara, Nencini, Kolafa,
+  Jungwirth, and Ollila]{melcr18}
+Melcr,~J.; Martinez-Seara,~H.; Nencini,~R.; Kolafa,~J.; Jungwirth,~P.;
+  Ollila,~O. H.~S. Accurate Binding of Sodium and Calcium to a POPC Bilayer by
+  Effective Inclusion of Electronic Polarization. \emph{The Journal of Physical
+  Chemistry B} \textbf{2018}, \emph{122}, 4546--4557\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Ollila(2018)]{CHARMM36cationicSURF}
+Ollila,~O. H.~S. {CHARMM36 simulations of POPC mixed with cationic surfactant}.
+  2018; \url{https://doi.org/10.5281/zenodo.1288297}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Melcr(2016)]{POPCcharmm36T303K}
+Melcr,~J. {POPC lipid membrane, 303K, Charmm36 force field, simulation files
+  and 200 ns trajectory for Gromacs MD simulation engine v5.1.2}. 2016;
+  \url{https://doi.org/10.5281/zenodo.153944}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Favela-Rosales(2016)]{POPCslipids298K}
+Favela-Rosales,~F. {MD simulation trajectory of a lipid bilayer: Pure POPC in
+  water. SLIPIDS, Gromacs 4.6.3. 2016.} 2016;
+  \url{https://doi.org/10.5281/zenodo.166034}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Hauser and Shipley(1983)Hauser, and Shipley]{hauser83}
+Hauser,~H.; Shipley,~G.~G. Interactions of monovalent cations with
+  phosphatidylserine bilayer membranes. \emph{Biochemistry} \textbf{1983},
+  \emph{22}, 2171--2178\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Hauser and Shipley(1985)Hauser, and Shipley]{hauser85}
+Hauser,~H.; Shipley,~G. Comparative structural aspects of cation binding to
+  phosphatidylserine bilayers. \emph{Biochimica et Biophysica Acta (BBA) -
+  Biomembranes} \textbf{1985}, \emph{813}, 343 -- 346\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Mattai \latin{et~al.}(1989)Mattai, Hauser, Demel, and
+  Shipley]{mattai89}
+Mattai,~J.; Hauser,~H.; Demel,~R.~A.; Shipley,~G.~G. Interactions of metal ions
+  with phosphatidylserine bilayer membranes: effect of hydrocarbon chain
+  unsaturation. \emph{Biochemistry} \textbf{1989}, \emph{28}, 2322--2330\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Cevc(1990)]{cevc90}
+Cevc,~G. Membrane electrostatics. \emph{Biochim. Biophys. Acta - Rev. Biomemb.}
+  \textbf{1990}, \emph{1031}, 311 -- 382\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Kim \latin{et~al.}(2016)Kim, Patel, Park, Slusky, Klauda, Widmalm, and
+  Im]{kim16}
+Kim,~S.; Patel,~D.; Park,~S.; Slusky,~J.; Klauda,~J.; Widmalm,~G.; Im,~W.
+  Bilayer Properties of Lipid A from Various Gram-Negative Bacteria.
+  \emph{Biophysical Journal} \textbf{2016}, \emph{111}, 1750 -- 1760\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Nencini(2018)]{nencineCHARMM36popcT310K}
+Nencini,~R. {Simulation data for CHARMM36 POPC bilayer, 100 lipids/leaflet,
+  310K, GROMACS 5.1.4}. 2018;
+  \url{https://doi.org/10.5281/zenodo.1198158}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Nencini(2018)]{CHARMM36withCaClNBfix}
+Nencini,~R. {Simulation data for CHARMM36 POPC bilayer, 100 lipids/leaflet, 450
+  mM CaCl2 ("NB-Fix" used), 310K, GROMACS 5.1.4}. 2018;
+  \url{https://doi.org/10.5281/zenodo.1198171}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Javanainen(2016)]{charmmPOPC450mMCaClfiles}
+Javanainen,~M. {POPC @ 310K, 450 mM of CaCl\_2. Charmm36 with default Charmm
+  ions}. 2016; \url{http://dx.doi.org/10.5281/zenodo.51185}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\end{mcitethebibliography}
