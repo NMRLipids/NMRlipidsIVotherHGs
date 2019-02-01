@@ -1,0 +1,13 @@
+# Pure POPS data from https://github.com/NMRLipids/MATCH/blob/master/Data/Lipid_Bilayers/POPS/T298K/MODEL_MACROG/OrdParsPOPS.dat
+#
+#
+# Data with PC from https://github.com/NMRLipids/MATCH/blob/master/Data/Lipid_Bilayers/POPS%2B83%25popc/T298K/MODEL_MACROG/OrdParsPOPS.dat
+#
+# K counterions
+#
+# Average over two datasets if available
+#
+# mole fraction of PC        beta    error       alpha1   error      alpha2    error
+0                          -0.01754  0.03003   -0.0066    0.02866    -0.0278   0.02999
+0.83                       -0.13222  0.02386   -0.01649   0.02976    -0.17017  0.01471 
+

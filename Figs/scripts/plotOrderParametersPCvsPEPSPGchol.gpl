@@ -23,7 +23,7 @@ plot  "../../Data/sceherer89fig4BETAC16.dat" using 1:(-0.00784*($2+5.5)) with li
 #set origin 2.0,0.5
 #set yrange [0:0.15] 
 set ylabel "S_{CH}^{/Symbol a}"
-set xlabel "mole fraction of PE"
+set xlabel "mole fraction of PS, PG, PE, cholesterol or cationic surfactant"
 plot "../../Data/sceherer89fig4ALPHAC16.dat" using 1:(0.00784*($2+6.4)) with linespoints notitle pt 5 lw 4 ps 1.2 lc rgb 'red',\
      "../../Data/cholALPHAexp.dat" using ($1/100):($2) with linespoints notitle pt 7 lw 4 ps 1.2 lc rgb 'black',\
      "../../Data/PCvsPEalpha.dat" using 1:($2*0.00784) with linespoints  notitle pt 5 ps 1.6 lw 4 lc rgb 'black',\

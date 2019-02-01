@@ -1,8 +1,10 @@
 # Binding of Na+ to Mixtures of POPC:POPS (5:1) mixtures from CHARMM36 model
 #
-# Original data http://doi.org/10.5281/zenodo.1182665
-# and TO BE UPLOADED
-#
+# Original data from
+# http://doi.org/10.5281/zenodo.1182665
+# https://doi.org/10.5281/zenodo.1493190
+# https://doi.org/10.5281/zenodo.1493229
+# 
 # Results from
 # MATCH/Data/Lipid_Bilayers/POPS+83%popc+500mMNaCl/T298/MODEL_CHARMM/
 # MATCH/Data/Lipid_Bilayers/POPS+83%popc+1000mMNaCl/T298/MODEL_CHARMM/

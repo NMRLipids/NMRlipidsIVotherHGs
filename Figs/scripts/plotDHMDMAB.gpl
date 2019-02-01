@@ -19,7 +19,7 @@ plot "../../../NMRlipids_VI-NewIonModel/Data/POPC/DHMDMAB/sceherer89fig4BETAC16.
 
 
 set ylabel "{/Symbol D}S^{/Symbol a}_{CH}"
-set xlabel "Mole fraction of DHMDMAB"
+set xlabel "Mole fraction of DHAB"
 plot "../../../NMRlipids_VI-NewIonModel/Data/POPC/DHMDMAB/sceherer89fig4ALPHAC16.dat" using 1:(0.00748*$2) with linespoints notitle pt 5 ps 1.2 lc rgb 'black',\
      "../../../NMRlipids_VI-NewIonModel/Data/POPC/DHMDMAB/lipid14simulationsALPHA.dat" using 1:($2-0.0799104708936) with linespoints notitle pt 5 ps 1.2 lc rgb 'green',\
      "../../../NMRlipids_VI-NewIonModel/Data/POPC/DHMDMAB/lipid14simulationsALPHA.dat" using 1:($3-0.0708998940251) with linespoints notitle pt 5 ps 1.2 lc rgb 'green',\
