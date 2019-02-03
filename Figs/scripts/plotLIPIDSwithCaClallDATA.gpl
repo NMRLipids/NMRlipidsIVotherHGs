@@ -1,5 +1,5 @@
 set size 1.0,1.0
-set terminal postscript portrait enhanced color dashed lw 1 "Helvetica" 14 
+set terminal postscript portrait enhanced color dashed lw 1 "Helvetica" 14
 set output "../LIPIDSwithCaCl.eps"
 set multiplot  layout 2,1
 
@@ -7,6 +7,8 @@ set xrange [0:5]
 #set ytic 0.05
 #set key box linestyle 1 linecolor rgb 'black'
 set key at screen 0.95,0.95 maxcols 1 maxrows 10
+
+set pointsize 1.5
 
 set ylabel "{S_{CH}^{/Symbol b}"
 #set yrange [-0.075:-0.025] 

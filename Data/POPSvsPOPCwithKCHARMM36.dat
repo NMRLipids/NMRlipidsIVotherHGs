@@ -2,7 +2,8 @@
 # https://github.com/NMRLipids/NMRlipidsIVotherHGs/issues/1
 #
 # and by Jesper Madsen
-# http://nmrlipids.blogspot.com/2017/12/nmrlipids-iv-current-status-and.html?showComment=1516642859204#c3440534109745026509
+# /MATCH/Data/Lipid_Bilayers/POPS+83%popc/T298K/MODEL_CHARMM36
+# /MATCH/Data/Lipid_Bilayers/POPS+50%popc/T298K/MODEL_CHARMM36
 #
 # K counterions
 #
@@ -10,6 +11,6 @@
 #
 # mole fraction of PC        beta          alpha1             alpha2
 0                          -0.0662314      0.0628028         -0.0463657
-0.5                        -0.103787178949 0.0632404594328   -0.0823790872369
-0.83                       -0.142128483065 0.10087318918     -0.108092315804
+0.5                        -0.10282        0.06229           -0.08170
+0.83                       -0.147044962519 0.11183494298     -0.111750586974
 

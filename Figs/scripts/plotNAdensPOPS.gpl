@@ -11,10 +11,10 @@ set xrange [-4:4]
 set multiplot layout 8,1
 
 set xtics format " " 
+set label at screen 0.02,0.5 rotate by 90 "Number density of counterions" font ',15'
 
 set origin 0,1.05
 set size 1.0,0.2
-set ylabel "Density profile"
 set label  "CHARMM36"  at graph  0.4,0.8
 set label  "A_{pl} = 55 {\305}^2"  at graph  0.02,0.85
 set label  "A_{pl} = 56 {\305}^2"  at graph  0.02,0.7 tc rgb 'red'

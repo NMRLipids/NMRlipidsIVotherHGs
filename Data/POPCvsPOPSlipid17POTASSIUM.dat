@@ -1,0 +1,10 @@
+# Lipid17 simulations at 298K
+#
+#
+#POPSfrac  POPC_a1   error      POPC_a2   error       POPC_b1   error      POPC_b2     error    POPS_a1   error     POPS_a2     error       POPS_b   error
+# 128 POPC lipids, Charmm-style atom naming conventions
+#0       0.073955  0.001792   0.075471  0.001940   0.001283  0.001507  -0.001068  0.001419     -         -         -          -            -        -
+#  72 POPC lipids, Lipid14-style atom naming conventions
+0       0.076372  0.002768   0.077614  0.002430  -0.000137  0.001962   0.002520  0.002198     -         -         -          -            -        -
+#  120 POPC : 24 POPS lipids, potassium counterion
+0.17   0.17553  0.00535  0.17999  0.004665  0.00711  0.00291  0.011335  0.00231  0.10558  0.010225  0.10323  0.01075  0.063605  0.01164

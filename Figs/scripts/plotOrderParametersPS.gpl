@@ -9,7 +9,7 @@ set tmargin at screen 0.995
 set ylabel "S_{CH}" font "Arial,20" offset 2,-2.3
 
 set bmargin at screen 0.20
-set key l at screen 0.01,0.195 Left reverse noautotitle samplen 2 width -1 maxrows 12
+set key l at screen 0.01,0.195 Left reverse noautotitle samplen 2 width 3 maxrows 12
 #set key below horizontal left Left reverse noautotitle samplen 1 maxcols 2 maxrows 6
 
 set lmargin at screen 0.122 #0.157
@@ -38,7 +38,7 @@ set style rectangle fc rgb "#D6F0FE" fs solid noborder
 set object 1 rectangle \
          from 0.0,-0.08675 to 1.5,-0.12675 
 set object 2 rectangle \
-         from 1.5,-0.033528 to 2.5, 0.006472
+         from 1.5, -0.0235 to 2.5, 0.01645 
 set object 3 rectangle \
          from 1.5, 0.073216 to 2.5, 0.113216
 set object 4 rectangle \
@@ -117,54 +117,54 @@ dxL17pJ =  7*d
 
 plot [0.5:5.5][0.35:-0.35] \
      horizLines(' ../../../MATCH/Data/Lipid_Bilayers/DOPS/T303K/Headgroup_Glycerol_Order_Parameters_Experiments.dat') \
-         u ($1):(($2)*0.00784) w l ls 8 lc rgb "#5F5F5F" lw 6.5 t "DOPS experiment T=303K", \
+         u ($1):(($2)*0.00784) w l ls 8 lc rgb "#5F5F5F" lw 6.5 t "DOPS experiment", \
      horizLines(' ../../../MATCH/Data/Lipid_Bilayers/DOPS/T303K/Headgroup_Glycerol_Order_Parameters_Experiments.dat') \
          u ($1):(($3)*0.00784) w l ls 8 lc rgb "#5F5F5F" lw 6.5, \
      horizLines(' ../../Data/POPSorderparametersNOCaEXP.dat') \
          u ($1):($2) w l ls 4 lc 16 lw 3, \
      "../../../MATCH/Data/Lipid_Bilayers/DOPS/T303K/MODEL_CHARMM36/head-glyc-OPs_ave_min_max.dat" \
-         u ($1+dxC36do):($2):($3):($4) w ye lt CHARMM pt 13 ps r t 'DOPS CHARMM36 T=303K',\
+         u ($1+dxC36do):($2):($3):($4) w ye lt CHARMM pt 13 ps r t 'DOPS CHARMM36',\
      10 lc rgb "white" t "  ", \
      "../../../MATCH/Data/Lipid_Bilayers/DOPS/T303K/MODEL_CHARMM36UA/head-glyc-OPs_ave_min_max.dat" \
-         u ($1+dxCUAdo):($2):($3):($4) w ye lt C36_UA pt 12 ps r t 'DOPS CHARMM36-UA T=303K',\
+         u ($1+dxCUAdo):($2):($3):($4) w ye lt C36_UA pt 12 ps r t 'DOPS CHARMM36-UA',\
      "../../../MATCH/Data/Lipid_Bilayers/DOPS/T303K/MODEL_SLIPIDS/head-glyc-OPs_ave_min_max.dat" \
-         u ($1+dxSLIdo):($2):($3):($4) w ye lt Slipid pt 12 ps r t 'DOPS SLIPIDS T=303K', \
+         u ($1+dxSLIdo):($2):($3):($4) w ye lt Slipid pt 12 ps r t 'DOPS SLIPIDS', \
      "../../../MATCH/Data/Lipid_Bilayers/DOPS/T303K/MODEL_GROMOS-CKP2/head-glyc-OPs_ave_min_max.dat" \
-         u ($1+dxCKPd2):($2):($3):($4) w ye lt CKP_QK pt 12 ps r t 'DOPS CKP T=303K', \
+         u ($1+dxCKPd2):($2):($3):($4) w ye lt CKP_QK pt 12 ps r t 'DOPS CKP', \
      "../../../MATCH/Data/Lipid_Bilayers/DOPS/T303K/MODEL_GROMOS-CKP1/head-glyc-OPs_ave_min_max.dat" \
-         u ($1+dxCKPdo):($2):($3):($4) w ye lt CKP_QB pt 12 ps r t 'DOPS CKPM T=303K', \
+         u ($1+dxCKPdo):($2):($3):($4) w ye lt CKP_QB pt 12 ps r t 'DOPS CKPM', \
      10 lc rgb "white" t "  ", \
      10 lc rgb "white" t "  ", \
      "../../../MATCH/Data/Lipid_Bilayers/DOPS/T303K/MODEL_Berger/head-glyc-OPs_ave_min_max.dat" \
-         u ($1+dxBERdo):($2):($3):($4) w ye lt Berger pt 13 ps r t 'DOPS Berger T=303K', \
+         u ($1+dxBERdo):($2):($3):($4) w ye lt Berger pt 13 ps r t 'DOPS Berger', \
      "../../../MATCH/Data/Lipid_Bilayers/DOPS/T303K/MODEL_LIPID17/head-glyc-OPs_ave_min_max.dat" \
-         u ($1+dxL17do):($2):($3):($4) w ye lt Lipd17 pt 13 ps r t 'DOPS Lipid17 T=303K', \
+         u ($1+dxL17do):($2):($3):($4) w ye lt Lipd17 pt 13 ps r t 'DOPS Lipid17', \
      "../../../MATCH/Data/Lipid_Bilayers/DOPS/T303K/MODEL_LIPID17/JCions_head-glyc-OPs_ave_min_max.dat" \
-         u ($1+dxL17dJ):($2):($3):($4) w ye lt Lipd17 pt 12 ps r t 'DOPS Lipid17 JC T=303K', \
+         u ($1+dxL17dJ):($2):($3):($4) w ye lt Lipd17 pt 12 ps r t 'DOPS Lipid17 JC', \
      horizLines(' ../../Data/POPSorderparametersNOCaEXP.dat') \
-         u ($1):($3) w l ls 4 lc 16 lw 3 t "POPS experiment T=298K", \
+         u ($1):($3) w l ls 4 lc 16 lw 3 t "POPS experimen", \
      "../../../MATCH/Data/Lipid_Bilayers/POPS/T298K/MODEL_CHARMM36/head-glyc-OPs_ave_min_max.dat" \
-         u ($1+dxC36po):($2):($3):($4) w ye lt CHARMM pt 7 ps r t 'POPS CHARMM36 T=298K',\
+         u ($1+dxC36po):($2):($3):($4) w ye lt CHARMM pt 7 ps r t 'POPS CHARMM36',\
      "../../../MATCH/Data/Lipid_Bilayers/POPS/T298K/MODEL_CHARMM36/counterionsK_head-glyc-OPs_ave_min_max.dat" \
-         u ($1+dxC36pK):($2):($3):($4) w ye lt CHARMM pt 6 ps r t 'POPS CHARMM36 K^+ T=298K',\
+         u ($1+dxC36pK):($2):($3):($4) w ye lt CHARMM pt 6 ps r t 'POPS CHARMM36 K^+',\
      "../../../MATCH/Data/Lipid_Bilayers/POPS/T298K/MODEL_CHARMM36UA/head-glyc-OPs_ave_min_max.dat" \
-         u ($1+dxCUApo):($2):($3):($4) w ye lt C36_UA pt 6 ps r t 'POPS CHARMM36-UA T=298K',\
+         u ($1+dxCUApo):($2):($3):($4) w ye lt C36_UA pt 6 ps r t 'POPS CHARMM36-UA',\
      "../../../MATCH/Data/Lipid_Bilayers/POPS/T298K/MODEL_SLIPIDS/head-glyc-OPs_ave_min_max.dat" \
-         u ($1+dxSLIpo):($2):($3):($4) w ye lt Slipid pt 6 ps r t 'POPS SLIPIDS T=298K', \
+         u ($1+dxSLIpo):($2):($3):($4) w ye lt Slipid pt 6 ps r t 'POPS SLIPIDS', \
      "../../../MATCH/Data/Lipid_Bilayers/POPS/T298K/MODEL_GROMOS-CKP2/head-glyc-OPs_ave_min_max.dat" \
-         u ($1+dxCKPp2):($2):($3):($4) w ye lt CKP_QK pt 6 ps r t 'POPS CKP T=298K', \
+         u ($1+dxCKPp2):($2):($3):($4) w ye lt CKP_QK pt 6 ps r t 'POPS CKP', \
      "../../../MATCH/Data/Lipid_Bilayers/POPS/T298K/MODEL_GROMOS-CKP1/head-glyc-OPs_ave_min_max.dat" \
-         u ($1+dxCKPpo):($2):($3):($4) w ye lt CKP_QB pt 6 ps r t 'POPS CKPM T=298K', \
+         u ($1+dxCKPpo):($2):($3):($4) w ye lt CKP_QB pt 6 ps r t 'POPS CKPM', \
      "../../../MATCH/Data/Lipid_Bilayers/POPS/T298K/MODEL_MACROG/head-glyc-OPs_ave_min_max.dat" \
-         u ($1+dxMcRpo):($2):($3):($4) w ye lt MacRog pt 7 ps r t 'POPS MacRog T=298K', \
+         u ($1+dxMcRpo):($2):($3):($4) w ye lt MacRog pt 7 ps r t 'POPS MacRog', \
      "../../../MATCH/Data/Lipid_Bilayers/POPS/T298K/MODEL_MACROG_POTASSIUMcounterion/OrdParsFORplot.dat" \
-         u ($1+dxMcRpo):($2):($3) w p lt MacRog pt 6 ps r t 'POPS MacRog K^+ T=298K', \
+         u ($1+dxMcRpo):($2):($3) w p lt MacRog pt 6 ps r t 'POPS MacRog K^+', \
      "../../../MATCH/Data/Lipid_Bilayers/POPS/T298K/MODEL_Berger/head-glyc-OPs_ave_min_max.dat" \
-         u ($1+dxBERpo):($2):($3):($4) w ye lt Berger pt 7 ps r t 'POPS Berger T=298K', \
+         u ($1+dxBERpo):($2):($3):($4) w ye lt Berger pt 7 ps r t 'POPS Berger', \
      "../../../MATCH/Data/Lipid_Bilayers/POPS/T298K/MODEL_LIPID17/head-glyc-OPs_ave_min_max.dat" \
-         u ($1+dxL17po):($2):($3):($4) w ye lt Lipd17 pt 7 ps r t 'POPS Lipid17 T=298K', \
+         u ($1+dxL17po):($2):($3):($4) w ye lt Lipd17 pt 7 ps r t 'POPS Lipid17', \
      "../../../MATCH/Data/Lipid_Bilayers/POPS/T298K/MODEL_LIPID17/JCions_head-glyc-OPs_ave_min_max.dat" \
-         u ($1+dxL17pJ):($2):($3):($4) w ye lt Lipd17 pt 6 ps r t 'POPS Lipid17 JC T=298K'
+         u ($1+dxL17pJ):($2):($3):($4) w ye lt Lipd17 pt 6 ps r t 'POPS Lipid17 JC'
 	 
 #plot [0.5:5.5][0.153471:-0.3211] \
 #  "./DMPC/EXP-Gross1997.dat" u ($1):($2) w l ls 8 lc rgb "#5F5F5F" lw 6.5 \
