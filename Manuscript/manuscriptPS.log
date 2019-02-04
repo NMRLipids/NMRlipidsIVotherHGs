@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/Fink) (preloaded format=pdflatex 2018.5.25)  1 FEB 2019 14:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/Fink) (preloaded format=pdflatex 2018.5.25)  4 FEB 2019 09:02
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -499,14 +499,17 @@ Overfull \hbox (10.0748pt too wide) in paragraph at lines 486--487
  [][] 
  []
 
+
+LaTeX Warning: Float too large for page by 16.89021pt on input line 501.
+
 [5 <../Figs/fig1_POPS.pdf> <../Figs/PCPScomp-eps-converted-to.pdf>]
 
 LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
- on input line 513.
+ on input line 514.
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 519.
+               Default added (so using `tbp') on input line 520.
 
 Package epstopdf Info: Source file: <../Figs/structures.eps>
 (epstopdf)                    date: 2019-02-01 12:33:25
@@ -516,7 +519,7 @@ Package epstopdf Info: Source file: <../Figs/structures.eps>
 (epstopdf)                    size: 162207 bytes
 (epstopdf)             Command: <repstopdf --outfile=../Figs/structures-eps-con
 verted-to.pdf ../Figs/structures.eps>
-(epstopdf)             \includegraphics on input line 521.
+(epstopdf)             \includegraphics on input line 522.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -527,25 +530,25 @@ File: ../Figs/structures-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ../Figs/structures-eps-converted-to.pdf>
 Package pdftex.def Info: ../Figs/structures-eps-converted-to.pdf used on input 
-line 521.
+line 522.
 (pdftex.def)             Requested size: 256.0748pt x 251.17366pt.
 
-Overfull \hbox (10.0748pt too wide) in paragraph at lines 521--522
+Overfull \hbox (10.0748pt too wide) in paragraph at lines 522--523
  [][] 
  []
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 532.
+               Default added (so using `tbp') on input line 533.
 
 <../Figs/comparisonTablePS.pdf, id=114, 463.70073pt x 718.24635pt>
 File: ../Figs/comparisonTablePS.pdf Graphic file (type pdf)
 
 <use ../Figs/comparisonTablePS.pdf>
-Package pdftex.def Info: ../Figs/comparisonTablePS.pdf used on input line 534.
+Package pdftex.def Info: ../Figs/comparisonTablePS.pdf used on input line 535.
 (pdftex.def)             Requested size: 256.0748pt x 396.64777pt.
 
-Overfull \hbox (10.0748pt too wide) in paragraph at lines 534--535
+Overfull \hbox (10.0748pt too wide) in paragraph at lines 535--536
  [][] 
  []
 
@@ -605,7 +608,7 @@ Package epstopdf Info: Source file: <../Figs/NAdensPOPS.eps>
 (epstopdf)                    size: 15103 bytes
 (epstopdf)             Command: <repstopdf --outfile=../Figs/NAdensPOPS-eps-con
 verted-to.pdf ../Figs/NAdensPOPS.eps>
-(epstopdf)             \includegraphics on input line 551.
+(epstopdf)             \includegraphics on input line 552.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -616,15 +619,15 @@ File: ../Figs/NAdensPOPS-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ../Figs/NAdensPOPS-eps-converted-to.pdf>
 Package pdftex.def Info: ../Figs/NAdensPOPS-eps-converted-to.pdf used on input 
-line 551.
+line 552.
 (pdftex.def)             Requested size: 256.0748pt x 475.57416pt.
 
-Overfull \hbox (10.0748pt too wide) in paragraph at lines 551--552
+Overfull \hbox (10.0748pt too wide) in paragraph at lines 552--553
  [][] 
  []
 
 
-Underfull \hbox (badness 1337) in paragraph at lines 560--580
+Underfull \hbox (badness 1337) in paragraph at lines 561--581
 \OT1/ptm/m/n/10 cuses only on the head-group ($\OML/cmm/m/it/10 $ \OT1/ptm/m/n
 /10 and $\OML/cmm/m/it/10 ^^L$\OT1/ptm/m/n/10 ) or-der pa-ram-e-
  []
@@ -632,7 +635,7 @@ Underfull \hbox (badness 1337) in paragraph at lines 560--580
 [6 <../Figs/HGorderparametersPS.pdf> <../Figs/structures-eps-converted-to.pdf>]
 
 LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
- on input line 580.
+ on input line 581.
 
 Package epstopdf Info: Source file: <../Figs/HGorderparametersPCvsPS.eps>
 (epstopdf)                    date: 2019-02-01 12:33:25
@@ -728,7 +731,8 @@ Overfull \hbox (2.1496pt too wide) in paragraph at lines 652--653
  []
 
 [8 <../Figs/HGorderparametersPCvsPS-eps-converted-to.pdf> <../Figs/HGorderparam
-etersPSvsPC-eps-converted-to.pdf>]
+etersPSvsPC-eps-converted-to.pdf>] [9 <../Figs/CHANGESwithCaClPS-eps-converted-
+to.pdf>]
 Package epstopdf Info: Source file: <../Figs/CAdensPCPSmixtureLOWcons.eps>
 (epstopdf)                    date: 2019-02-01 12:33:25
 (epstopdf)                    size: 33410 bytes
@@ -746,7 +750,7 @@ pdfTeX warning: /sw/bin/pdflatex (file ../Figs/CAdensPCPSmixtureLOWcons-eps-con
 verted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.
 5> allowed
 
-<../Figs/CAdensPCPSmixtureLOWcons-eps-converted-to.pdf, id=239, 505.89pt x 578.
+<../Figs/CAdensPCPSmixtureLOWcons-eps-converted-to.pdf, id=251, 505.89pt x 578.
 16pt>
 File: ../Figs/CAdensPCPSmixtureLOWcons-eps-converted-to.pdf Graphic file (type 
 pdf)
@@ -759,8 +763,8 @@ Overfull \hbox (10.0748pt too wide) in paragraph at lines 710--711
  [][] 
  []
 
-[9 <../Figs/CHANGESwithCaClPS-eps-converted-to.pdf>] [10 <../Figs/CAdensPCPSmix
-tureLOWcons-eps-converted-to.pdf>] (./manuscriptPS.bbl
+[10 <../Figs/CAdensPCPSmixtureLOWcons-eps-converted-to.pdf>]
+(./manuscriptPS.bbl
 Underfull \hbox (badness 4036) in paragraph at lines 87--92
  []\OT1/ptm/m/n/9 R. J. Kur-land, Bio-chem-i-cal and Bio-phys-i-cal Re-search
  []
@@ -894,10 +898,10 @@ Package natbib Warning: There were undefined citations.
 
 [14] (./manuscriptPS.aux) ) 
 Here is how much of TeX's memory you used:
- 5661 strings out of 493117
- 79020 string characters out of 6141650
+ 5662 strings out of 493117
+ 79030 string characters out of 6141650
  189382 words of memory out of 5000000
- 9007 multiletter control sequences out of 15000+600000
+ 9008 multiletter control sequences out of 15000+600000
  29128 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  42i,15n,27p,1113b,522s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -915,7 +919,7 @@ share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></sw/share/texmf-dist
 /courier/ucrr8a.pfb></sw/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></sw
 /share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></sw/share/texmf-dist/fonts/
 type1/urw/times/utmri8a.pfb>
-Output written on manuscriptPS.pdf (14 pages, 1991564 bytes).
+Output written on manuscriptPS.pdf (14 pages, 1991752 bytes).
 PDF statistics:
  327 PDF objects out of 1000 (max. 8388607)
  225 compressed objects within 3 object streams
