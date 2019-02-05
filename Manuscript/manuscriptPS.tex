@@ -716,49 +716,49 @@ to correctly describe the PC-PS headgroup interactions in MD simulations.
   \todo{Should we include also counterions into the plot?} \\
 \end{figure}
 
-Calcium binding affinity to membranes containing negative charged PS lipids can be
-measured by detecteding the PC lipid headgroup order parameters
+Calcium binding affinity to membranes containing the negative charged PS lipids can be
+experimentally measured by detecting the PC lipid headgroup order parameters
 from POPC:POPS (5:1) mixtures (section~\ref{electrometerFORmixtures}),
 where the dehydrated lipid-ion complexes and phase separation are 
 not observed~\cite{feigenson86,mattai89,roux90,roux91}.
-Despite the lack of ion free reference state
-in the presence of negatively charged lipids, the simulations give
+Despite the lack of an ion-free reference state
+in the presence of negatively charged lipids, our simulations give
 coherent results for POPC headgroup order parameters as a function of
 CaCl$_2$ in the POPC:POPS (5:1) mixtures (Fig. \ref{changesWITHCaClPS}).
 As expected from the previous study of pure PC lipid
 bilayers \cite{catte16}, almost all the tested simulation models overestimate the
 experimentally observed~\cite{roux90} decrease of the POPC headgroup order parameters
 in POPC:POPS (5:1) mixtures as a function of Ca$^{2+}$ concentration (Fig. \ref{changesWITHCaClPS}),
-indicating overestimated calcium binding binding affinity.
-Only exception is the CHARMM36 model with the NBfix
-interaction employed for calcium~\cite{kim16}, which underestimates the changes in order parameter 
+indicating overestimated calcium binding affinity.
+The only exception is the CHARMM36 model with the NBfix
+interaction employed for calcium~\cite{kim16}, which underestimates the changes in order parameters, 
 indicating weaker binding affinity than experiments.
 %incorporated in the parameters give by the CHARMM-GUI at the time of running the simulations (January 2018),
 Notably, CHARMM36 simulations with the NBfix corrections \cite{venable13,kim16} give similar binding affinities of
 calcium and sodium to POPC bilayer (see section \ref{CHARMMcalciumNBfix}), in contrast to the experimental 
 data~\cite{cevc90,akutsu81,altenbach84}. Therefore, we conclude that the calcium binding affinity
-is underestimated in CHARMM36 simulations with the NBfix for calcium \cite{kim16} but overestimated 
+is underestimated in CHARMM36 simulations with the NBfix for calcium \cite{kim16}, but overestimated 
 in all the other tested models. This is evident in the calcium density distributions
-along membrane normal where almost all Ca$^{2+}$ ions bind to the membrane interface in
+along membrane normal, where almost all Ca$^{2+}$ ions bind to the membrane interface in
 all simulation models except CHARMM36 (Fig. \ref{CAdensPCPSmixture}).
 
 
-The headgroup order parameters of POPS measured from POPC:POPS (5:1) mixture
+The headgroup order parameters of POPS experimentally measured from a POPC:POPS (5:1) mixture
 exhibit a strong dependence of CaCl$_2$ with small concentrations and rapid saturation
 below 100 mM (Fig. \ref{changesWITHCaClPS}).
-The order parameter of POPS $\beta$-carbon increase and the larger $\alpha$-carbon 
-decrease with the added CaCl$_2$ in experiments. Slight increase is observed in
-the smaller $\alpha$-carbon. All the changes are significantly overestimated in the
-tested simulation models, including the CHARMM36 with underestimated binding affinity.
+In experiments, the order parameter of the POPS $\beta$-carbon increases with added CaCl$_2$,
+whereas the larger $\alpha$-carbon order parameter decreases; a slight increase is observed in
+the smaller $\alpha$-carbon. All these changes are significantly overestimated in the
+tested simulation models, including CHARMM36 with underestimated binding affinity.
 In addition, different simulation models predict qualitatively different behaviour
-for the POPS $\alpha$-carbon order parameters with the added calcium.
-For example, both order parameters decrease in Berger simulations but increase
-in MacRog simulations, while behaviour in Lipid14/17 and CHARMM36 simulations is
-more complicated. This is in contrast to the PC headgroup, where
-qualitatively correct reponse to the bound ions is observed
-in all simulation models despite of the significant discrepancies in the headgroup
+for the POPS $\alpha$-carbon order parameters with added calcium.
+For example, both order parameters decrease in Berger, but increase
+in MacRog, and in Lipid14/17 and CHARMM36 a more complicated behavior is seen.
+This is in contrast to the PC headgroup, where
+qualitatively correct reponse to bound ions is observed
+in all simulation models, despite significant discrepancies in the headgroup
 structure without additional ions~\cite{catte16}. Therefore, we conclude that
-the improvement of force fields is necessary to correctly describe interactions between
+improvement of force fields is necessary to correctly describe interactions between the
 PS headgroup and calcium ions in MD simulations.
 
 \section{Conclusions}
