@@ -56,6 +56,8 @@
 
 \author{Pavel Buslaev}
 \affiliation{Moscow Institute of Physics and Technology}
+\author{Fernando Favela}
+\affiliation{Mexico}
 \author{Tiago M. Ferreira}
 \affiliation{Halle, Germany}
 \author{Ivan Gushchin}
@@ -65,11 +67,11 @@
 Academy of Sciences of the Czech Republic, 
 Prague 6, Czech Republic}
 \author{Batuhan Kav}
-\affiliation{Potsdam, Germany}
+\affiliation{Department of Theory and Bio-Systems, Max Planck Institute of Colloids and Interfaces, 14424 Potsdam, Germany}
 \author{Jesper J. Madsen}
 \affiliation{Department of Chemistry, The University of Chicago, Chicago, Illinois 60637, United States of America}
 \author{Markus Miettinen}
-\affiliation{Potsdam, Germany}
+\affiliation{Department of Theory and Bio-Systems, Max Planck Institute of Colloids and Interfaces, 14424 Potsdam, Germany}
 \author{Josef Melcr}
 \affiliation{Institute of Organic Chemistry and Biochemistry,
 Academy of Sciences of the Czech Republic, 
@@ -138,7 +140,7 @@ Phosphatidylserine (PS) is the most common negatively
 charged lipid in eykaryotic membranes.
 PS lipids compose 8.5\% of total lipid weight of erythrocytes,
 but the abundance varies between different organelles up to
-25-35\% in plasma membrane \cite{lemmon08,leventis10,li14}.
+25-35\% in the cytosolic leaflet of plasma membranes \cite{lemmon08,leventis10,li14}.
 Despite of the relatively low abundance, PS lipids
 are important signaling molecules. They interact with
 signaling proteins \cite{leventis10}, regulate
@@ -249,10 +251,10 @@ they behave similarly in model membranes and in bacterial cells \cite{gally81,sc
 
 
 
-\begin{table*}[!p]
+\begin{table*}[tb]
 %\begin{sidewaystable*}[!p]
 \centering
-\caption{The list of POPC:POPS mixtures simulated with different amounts of added ions. 
+\caption{The list of POPC:POPS mixtures simulated with different molar fractions and different amounts of added calcium. 
   The salt concentrations are calculated as [salt]=N$_{\rm c} \times$[water]\,/\,N$_{\rm w}$, where [water]\,=\,55.5~M.
   This corresponds the concentration in buffer before solvating lipids, which are
   reported in the experiments by Roux et al.~\cite{roux90}.
@@ -260,63 +262,51 @@ they behave similarly in model membranes and in bacterial cells \cite{gally81,sc
    % The lipid force fields named as in our previous work~\cite{botan15}.
 }\label{mixedIONsystems}
 %begin{minipage}[t]{\textwidth}
-\begin{tabular}{l c c c c c c c c c c}
-  lipid/counter-ions & force field for lipids / ions & \footnote{Excess Na$^+$ or K$^+$ concentration}C$_{\rm ci}$ (M) & [CaCl$_2$]\,(M)  &  \footnote{Number of lipid molecules with largest mole fraction}N$_{\rm l}$   &  \footnote{Number of water molecules}N$_{\rm w}$   & \footnote{Number of additional cations}N$_{\rm c}$  & \footnote{Simulation temperature}T (K)  & \footnote{Total simulation time}t$_{{\rm sim}}$(ns) & \footnote{Time used for analysis}t$_{{\rm anal}}$ (ns) &   \footnote{Reference for simulation files}files\\
+\begin{tabular}{l c c c c c c c c c }
+  lipid/counter-ions & force field for lipids / ions & [CaCl$_2$]\,(M)  &  \footnote{Number of lipid molecules with largest mole fraction}N$_{\rm l}$   &  \footnote{Number of water molecules}N$_{\rm w}$   & \footnote{Number of additional cations}N$_{\rm c}$  & \footnote{Simulation temperature}T (K)  & \footnote{Total simulation time}t$_{{\rm sim}}$(ns) & \footnote{Time used for analysis}t$_{{\rm anal}}$ (ns) &   \footnote{Reference for simulation files}files\\
   \hline
-%    POPC:POPS (5:1)/K$^+$  & CHARMM36 \cite{klauda10,venable13} &0 & 0  & 110:22 & 4935 & 0  & 298  & 100 & 100 \todoi{Equilibration?} & \cite{charmm36pops+83popcT298K}  \\
-    POPC:POPS (5:1)/K$^+$  & CHARMM36 \cite{klauda10,venable13} &0 & 0 & 250:50 & ?     & 0  & 298  & 200 & ?   & \cite{??} \todoi{Trajectories and further details to be added by J. Madsen}  \\
-    POPC:POPS (5:1)/K$^+$  & CHARMM36 \cite{klauda10,venable13} &0 & 0 & 110:22 & 4620  & 0  & 298  & 500 & 100 & \cite{charmm36pops+83popcT298Kpiggot}  \\
-    POPC:POPS (5:1)/K$^+$  & CHARMM36 \cite{klauda10,venable13} &0.45 & 0 & 110:22 & 4926  & 40 & 298  & 200 & 150 & \cite{charmm36pops+83popcT298Kwith450mMK}  \\
-    POPC:POPS (5:1)/K$^+$  & CHARMM36 \cite{klauda10,venable13} &0.89 & 0 & 110:22 & 4946  & 79 & 298  & 200 & 150 & \cite{charmm36pops+83popcT298Kwith890mMK}  \\
-    POPC:POPS (5:1)/Na$^+$ & CHARMM36 \cite{klauda10,venable13} &0 & 0 & 110:22 & 4620  & 0  & 298  & 500 & 100 & \cite{charmm36pops+83popcT298KpiggotSODIUM}  \\
-    POPC:POPS (5:1)/Na$^+$  & CHARMM36 \cite{klauda10,venable13} &0.44 & 0 & 110:22 & 4965  & 39 & 298  & 200 & 150 & \cite{charmm36pops+83popcT298Kwith440mMNa}  \\
-    POPC:POPS (5:1)/Na$^+$  & CHARMM36 \cite{klauda10,venable13} &0.89 & 0 & 110:22 & 4932  & 79 & 298  & 200 & 150 & \cite{charmm36pops+83popcT298Kwith890mMNa}  \\
-    POPC:POPS (5:1)        & CHARMM36 \cite{klauda10,venable13,kim16}  &0 & 0.15 \todoi{Concentration to be checked after the amount of water molecules is known.} & 250:50 & ?  & ?  & 298  & 200 & ?  & \cite{??} \todoi{Trajectories and further details to be added by J. Madsen}  \\
-    POPC:POPS (5:1)        & CHARMM36 \cite{klauda10,venable13,kim16}  &0 & 1 \todoi{Concentration to be checked after the amount of water molecules is known.} & 250:50 & ?  & ?  & 298  & 200 & ?  & \cite{??} \todoi{Trajectories and further details to be added by J. Madsen}  \\
-    POPC:POPS (1:1)/K$^+$  & CHARMM36 \cite{klauda10,venable13} &0 & 0 & 150:150 & ?    & 0  & 298  & 200 & ?   & \cite{??} \todoi{Trajectories and further details to be added by J. Madsen}  \\
+%    POPC:POPS (5:1)/K$^+$  & CHARMM36 \cite{klauda10,venable13} &0  & 110:22 & 4935 & 0  & 298  & 100 & 100 \todoi{Equilibration?} & \cite{charmm36pops+83popcT298K}  \\
+    POPC:POPS (5:1)/K$^+$  & CHARMM36 \cite{klauda10,venable13} &0 & 250:50 & 11207 & 0  & 298  & 200 & 180   & \cite{POPC5POPS1noCaClCHARMM}  \\
+    POPC:POPS (5:1)/K$^+$  & CHARMM36 \cite{klauda10,venable13} &0 & 110:22 & 4620  & 0  & 298  & 500 & 100 & \cite{charmm36pops+83popcT298Kpiggot}  \\
+    POPC:POPS (5:1)/Na$^+$ & CHARMM36 \cite{klauda10,venable13} &0 & 110:22 & 4620  & 0  & 298  & 500 & 100 & \cite{charmm36pops+83popcT298KpiggotSODIUM}  \\
+    POPC:POPS (5:1)        & CHARMM36 \cite{klauda10,venable13,kim16}  & 0.26 & 250:50  & 11190  & 53  & 298  & 200 & 180 & \cite{POPC5POPS1withCaClCHARMM}   \\
+    POPC:POPS (5:1)        & CHARMM36 \cite{klauda10,venable13,kim16}  & 1.06 & 250:50  & 11174  & 214  & 298  & 200 & 180  & \cite{POPC5POPS1with1MCaClCHARMM}  \\
+    POPC:POPS (1:1)/K$^+$  & CHARMM36 \cite{klauda10,venable13}        & 0    & 150:150 & 10785    & 0  & 298  & 200 & 180   & \cite{POPC1POPS1noCaClCHARMM}  \\
     \hline
-    POPC:POPS (5:1)/K$^+$  & MacRog \cite{maciejewski14} &0    & 0   & 120:24 & 5760 & 0    & 298  & 400 & 250 & \cite{POPCpopsMACROG}  \\
-    POPC:POPS (5:1)/K$^+$  & MacRog \cite{maciejewski14} &0.50  & 0   & 120:24 & 5760 & 52   & 298  & 300 & 200 & \cite{POPCpopsMACROGwithK}  \\
-    POPC:POPS (5:1)/K$^+$  & MacRog \cite{maciejewski14} &1.00    & 0   & 120:24 & 5760 & 104  & 298  & 300 & 200 & \cite{POPCpopsMACROGwithK}  \\
-    POPC:POPS (5:1)/K$^+$  & MacRog \cite{maciejewski14} &2.00    & 0   & 120:24 & 5760 & 208  & 298  & 300 & 200 & \cite{POPCpopsMACROGwithK}  \\
-    POPC:POPS (5:1)/K$^+$  & MacRog \cite{maciejewski14} &3.00    & 0   & 120:24 & 5760 & 311  & 298  & 300 & 200 & \cite{POPCpopsMACROGwithK}  \\
-    POPC:POPS (5:1)/K$^+$  & MacRog \cite{maciejewski14} &0    & 0.10 & 120:24 & 5760 & 10   & 298  & 600 & 300 & \cite{POPCpopsMACROG}  \\
-    POPC:POPS (5:1)/K$^+$  & MacRog \cite{maciejewski14} &0    & 0.30 & 120:24 & 5760 & 31   & 298  & 600 & 300  & \cite{POPCpopsMACROG}  \\
-    POPC:POPS (5:1)/K$^+$  & MacRog \cite{maciejewski14} &0    & 1.00   & 120:24 & 5760 & 104  & 298  & 600 & 300  & \cite{POPCpopsMACROG}  \\
-    POPC:POPS (5:1)/K$^+$  & MacRog \cite{maciejewski14} &0    & 3.00   & 120:24 & 5760 & 311  & 298  & 600 & 300  & \cite{POPCpopsMACROG}  \\
+    POPC:POPS (5:1)/K$^+$  & MacRog \cite{maciejewski14} &0    & 120:24 & 5760 & 0    & 298  & 400 & 250 & \cite{POPCpopsMACROG}  \\
+    POPC:POPS (5:1)/K$^+$  & MacRog \cite{maciejewski14} & 0.10 & 120:24 & 5760 & 10   & 298  & 600 & 300 & \cite{POPCpopsMACROG}  \\
+    POPC:POPS (5:1)/K$^+$  & MacRog \cite{maciejewski14} & 0.30 & 120:24 & 5760 & 31   & 298  & 600 & 300  & \cite{POPCpopsMACROG}  \\
+    POPC:POPS (5:1)/K$^+$  & MacRog \cite{maciejewski14} & 1.00   & 120:24 & 5760 & 104  & 298  & 600 & 300  & \cite{POPCpopsMACROG}  \\
+    POPC:POPS (5:1)/K$^+$  & MacRog \cite{maciejewski14} & 3.00   & 120:24 & 5760 & 311  & 298  & 600 & 300  & \cite{POPCpopsMACROG}  \\
 %    POPC:OPPS (5:1)/K$^+$  & MacRog \cite{maciejewski14} &4.00    & 0   & 120:24 & 5760 & 415  & 298  & 300 & 200 & \cite{POPCpopsMACROGwithK}  \\
     \hline
-    POPC:POPS (5:1)/K$^+$  & Lipid14/17 \cite{dickson14,gould18} &0  & 0     & 120:24 & 5760 & 0   & 298  & 500 & 200 & \cite{POPCpopsLIPID17withKCI}  \\
-    POPC:POPS (5:1)/K$^+$  & Lipid14/17 \cite{dickson14,gould18} &0.5\todoi{Concentration to be checked after the amount of ions is known.}  & 0   & 120:24 & 5760 & ?   & 298  & 300 & 200 & \cite{POPCpopsLIPID17withK}  \\
-    POPC:POPS (5:1)/K$^+$  & Lipid14/17 \cite{dickson14,gould18} &1\todoi{Concentration to be checked after the amount of ions is known.}    & 0   & 120:24 & 5760 & ?   & 298  & 300 & 200 & \cite{POPCpopsLIPID17withK}  \\
-    POPC:POPS (5:1)/K$^+$  & Lipid14/17 \cite{dickson14,gould18} &2\todoi{Concentration to be checked after the amount of ions is known.}    & 0   & 120:24 & 5760 & ?   & 298  & 300 & 200 & \cite{POPCpopsLIPID17withK}  \\
-    POPC:POPS (5:1)/K$^+$  & Lipid14/17 \cite{dickson14,gould18} &3\todoi{Concentration to be checked after the amount of ions is known.}    & 0   & 120:24 & 5760 & ?   & 298  & 300 & 200 & \cite{POPCpopsLIPID17withK}  \\
-    POPC:POPS (5:1)/K$^+$  & Lipid14/17 \cite{dickson14,gould18} &4\todoi{Concentration to be checked after the amount of ions is known.}    & 0   & 120:24 & 5760 & ?   & 298  & 300 & 200 & \cite{POPCpopsLIPID17withK}  \\
-    POPC:POPS (5:1)/Na$^+$  & Lipid14/17 \cite{dickson14,gould18} &0   & 0   & 120:24 & 5760 & 0   & 298  & 500 & 200 & \cite{POPCpopsLIPID17withNaCI}  \\
-    POPC:POPS (5:1)/Na$^+$  & Lipid14/17 \cite{dickson14,gould18} &0.5\todoi{Concentration to be checked after the amount of ions is known.}  & 0   & 120:24 & 5760 & ?   & 298  & 300 & 200 & \cite{POPCpopsLIPID17withNa}  \\
-    POPC:POPS (5:1)/Na$^+$  & Lipid14/17 \cite{dickson14,gould18} &1\todoi{Concentration to be checked after the amount of ions is known.}    & 0   & 120:24 & 5760 & ?   & 298  & 300 & 200 & \cite{POPCpopsLIPID17withNa}  \\
-    POPC:POPS (5:1)/Na$^+$  & Lipid14/17 \cite{dickson14,gould18} &2\todoi{Concentration to be checked after the amount of ions is known.}    & 0   & 120:24 & 5760 & ?   & 298  & 300 & 200 & \cite{POPCpopsLIPID17withNa}  \\
-    POPC:POPS (5:1)/Na$^+$  & Lipid14/17 \cite{dickson14,gould18} &3\todoi{Concentration to be checked after the amount of ions is known.}    & 0   & 120:24 & 5760 & ?   & 298  & 300 & 200 & \cite{POPCpopsLIPID17withNa}  \\
-    POPC:POPS (5:1)/Na$^+$  & Lipid14/17 \cite{dickson14,gould18} &4\todoi{Concentration to be checked after the amount of ions is known.}    & 0   & 120:24 & 5760 & ?   & 298  & 300 & 200 & \cite{POPCpopsLIPID17withNa}  \\
-    POPC:POPS (5:1)/Na$^+$ & Lipid14/17 \cite{dickson14,gould18} &0    & 0      & 60:12 & 3600  & 0   & 298  & 1000  & 1000  & \cite{lipid17_cacl_series}   \\
-    POPC:POPS (5:1)/Na$^+$ & Lipid14/17 \cite{dickson14,gould18} &0    & 0.08   & 60:12 & 3561  & 5   & 298  & 1000  & 1000  & \cite{lipid17_cacl_series}   \\
-    POPC:POPS (5:1)/Na$^+$ & Lipid14/17 \cite{dickson14,gould18} &0    & 0.13   & 60:12 & 3561  & 8   & 298  & 1000  & 1000  & \cite{lipid17_cacl_series}   \\
-    POPC:POPS (5:1)/Na$^+$ & Lipid14/17 \cite{dickson14,gould18} &0    & 0.20   & 60:12 & 3561  & 13  & 298  & 1000  & 1000  & \cite{lipid17_cacl_series}   \\
-    POPC:POPS (5:1)/Na$^+$ & Lipid14/17 \cite{dickson14,gould18} &0    & 0.41   & 60:12 & 3522  & 26  & 298  & 1000  & 1000  & \cite{lipid17_cacl_series}   \\
-    POPC:POPS (5:1)/Na$^+$ & Lipid14/17 \cite{dickson14,gould18} &0    & 0.62   & 60:12 & 3483  & 39  & 298  & 1000  & 1000  & \cite{lipid17_cacl_series}   \\
+    POPC:POPS (5:1)/K$^+$  & Lipid14/17 \cite{dickson14,gould18}  & 0      & 120:24 & 5760 & 0   & 298  & 500 & 200 & \cite{POPCpopsLIPID17withKCI}  \\
+    POPC:POPS (5:1)/Na$^+$  & Lipid14/17 \cite{dickson14,gould18} & 0      & 120:24 & 5760 & 0   & 298  & 500 & 200 & \cite{POPCpopsLIPID17withNaCI}  \\
+    POPC:POPS (5:1)         & Lipid14/17 \cite{dickson14,gould18} &0.50    & 120:24 & 5760 & 52   & 298  & 300 & 200 & \cite{POPCpopsLIPID17withCaCl}  \\
+    POPC:POPS (5:1)  & Lipid14/17 \cite{dickson14,gould18}        &1.00    & 120:24 & 5760 & 104   & 298  & 300 & 200 & \cite{POPCpopsLIPID17withCaCl}  \\
+    POPC:POPS (5:1)  & Lipid14/17 \cite{dickson14,gould18}        &2.00    & 120:24 & 5760 & 208   & 298  & 300 & 200 & \cite{POPCpopsLIPID17withCaCl}  \\
+    POPC:POPS (5:1)  & Lipid14/17 \cite{dickson14,gould18}        &3.00    & 120:24 & 5760 & 311   & 298  & 300 & 200 & \cite{POPCpopsLIPID17withCaCl}  \\
+    POPC:POPS (5:1)  & Lipid14/17 \cite{dickson14,gould18}        &4.00    & 120:24 & 5760 & 415   & 298  & 300 & 200 & \cite{POPCpopsLIPID17withCaCl}  \\
+    POPC:POPS (5:1)/Na$^+$ & Lipid14/17 \cite{dickson14,gould18}  & 0      & 60:12 & 3600  & 0   & 298  & 1000  & 1000  & \cite{lipid17_cacl_series}   \\
+    POPC:POPS (5:1)/Na$^+$ & Lipid14/17 \cite{dickson14,gould18,smith94,dang06}  & 0.08   & 60:12 & 3561  & 5   & 298  & 1000  & 1000  & \cite{lipid17_cacl_series}   \\
+    POPC:POPS (5:1)/Na$^+$ & Lipid14/17 \cite{dickson14,gould18,smith94,dang06}  & 0.13   & 60:12 & 3561  & 8   & 298  & 1000  & 1000  & \cite{lipid17_cacl_series}   \\
+    POPC:POPS (5:1)/Na$^+$ & Lipid14/17 \cite{dickson14,gould18,smith94,dang06}  & 0.20   & 60:12 & 3561  & 13  & 298  & 1000  & 1000  & \cite{lipid17_cacl_series}   \\
+    POPC:POPS (5:1)/Na$^+$ & Lipid14/17 \cite{dickson14,gould18,smith94,dang06}  & 0.41   & 60:12 & 3522  & 26  & 298  & 1000  & 1000  & \cite{lipid17_cacl_series}   \\
+    POPC:POPS (5:1)/Na$^+$ & Lipid14/17 \cite{dickson14,gould18,smith94,dang06}  & 0.62   & 60:12 & 3483  & 39  & 298  & 1000  & 1000  & \cite{lipid17_cacl_series}   \\
     \hline
-    POPC:POPS (4:1)/Na$^+$  & Berger \cite{tieleman99,mukhopadhyay04} &0    & 0   & 102:26 & 4290 & 0   & 310  & 120 & 80 & \cite{bergerPOPSPOPC4:1mixtureT310K}  \\
-    POPC:POPS (4:1)/Na$^+$  & Berger \cite{tieleman99,mukhopadhyay04} &1.03    & 0   & 102:26 & 4290 & 80  & 310  & 200 & 50 & \cite{POPCpopsBERGERwith1000mMNa}  \\
-    POPC:POPS (4:1)  & Berger \cite{tieleman99,mukhopadhyay04} &  0  & 0.102\footnote{Calculation of concetration complicated due the scaled ions. Concentration taken as reported in the delivered data.}   & 104:24 & 4306 & 24 & 310  & 300 & 100 & \cite{POPCpopsBERGERwith102mMCa}  \\
-    POPC:POPS (4:1)  & Berger \cite{tieleman99,mukhopadhyay04} &  0  & 0.715\footnote{Calculation of concetration complicated due the scaled ions. Concentration taken as reported in the delivered data.}  & 104:24 & 4306 & 72 & 310  & 300 & 100 & \cite{POPCpopsBERGERwith715mMCa}  \\
+    POPC:POPS (4:1)/Na$^+$  & Berger \cite{tieleman99,mukhopadhyay04}  & 0   & 102:26 & 4290 & 0   & 310  & 120 & 80 & \cite{bergerPOPSPOPC4:1mixtureT310K}  \\
+    POPC:POPS (4:1)  & Berger \cite{tieleman99,mukhopadhyay04}         & 0.102\footnote{Calculation of concetration complicated due the scaled ions. Concentration taken as reported in the delivered data.}   & 104:24 & 4306 & 24 & 310  & 300 & 100 & \cite{POPCpopsBERGERwith102mMCa}  \\
+    POPC:POPS (4:1)  & Berger \cite{tieleman99,mukhopadhyay04}         & 0.715\footnote{Calculation of concetration complicated due the scaled ions. Concentration taken as reported in the delivered data.}  & 104:24 & 4306 & 72 & 310  & 300 & 100 & \cite{POPCpopsBERGERwith715mMCa}  \\
     \hline
-    POPC:POPS (5:1)/Na$^+$  & GROMOS-CKP \cite{??}             &0    & 0     & 110:22 & ?     & 0  & 298  & 500 & 100 & \cite{POPCpopsGROMOSCKPwithNa}  \\
-    POPC:POPS (5:1)/Na$^+$  & GROMOS-CKPM \cite{??}            &0    & 0     & 110:22 & ?     & 0  & 298  & 500 & 100 & \cite{POPCpopsGROMOSCKPMwithNa}  \\
+    POPC:POPS (5:1)/Na$^+$  & GROMOS-CKP \cite{??}             & 0     & 110:22 & ?     & 0  & 298  & 500 & 100 & \cite{POPCpopsGROMOSCKPwithNa}  \\
+    POPC:POPS (5:1)/Na$^+$  & GROMOS-CKPM \cite{??}            & 0     & 110:22 & ?     & 0  & 298  & 500 & 100 & \cite{POPCpopsGROMOSCKPMwithNa}  \\
 \end{tabular}
 %\end{minipage}
 %end{sidewaystable*} 
 
- \end{table*}
+\end{table*}
+
+
 
 \section{Methods}
 
@@ -457,7 +447,7 @@ to the results is simulations with realistic ion binding affinity
 \end{figure}
 \begin{figure}[!htb]
   \centering
-  \includegraphics[width=9.0cm]{../Figs/PCPScomp.eps}
+  \includegraphics[width=9.0cm]{../Figs/PCPScomp-eps-converted-to.pdf}
   \caption{\label{HGorderParameters}
     (A) Chemical structures and labels for the headgroup and glycerol backbone carbons.
     (B) Headgroup and glycerol backbone order parameters of POPS measured in this work compared
@@ -495,14 +485,15 @@ confirming the interpretation that the smaller order parameter is negative.
   \centering
   \includegraphics[width=9.0cm]{../Figs/HGorderparametersPS.pdf}
   \caption{\label{HGorderParametersPS}
-    Order parameters of PS headgroup and glycerol backbone from experiments
-    and simulations with different force fields.
-    Experimental data for DOPS is measured with 0.1~M of NaCl~\cite{browning80},
-    while all the other data is without additional ions.
-    All the data for DOPS is at 303~K and all the data for POPS is at 298~K.
+    Order parameters of PS headgroup ($\beta$ and $\alpha$) and
+    glycerol backbone (g$_3$, g$_2$, g$_1$) from NMR experiments (horizontal lines),
+    and MD simulations with different force fields (dots).
+    Experimental data for DOPS are measured with 0.1~M of NaCl~\cite{browning80},
+    while all the other data are without additional salt.
+    All the data for DOPS at 303~K and all the data for POPS at 298~K.
     Light blue areas span 0.04 units around the average of the extremal experimental values,
-    which is the expected quantitative accuracy of experimental values~\cite{ollila16}.
-    The vertical bars shown for some simulation values
+    in accordance with the expected quantitative accuracy of experimental values~\cite{ollila16}.
+    The vertical bars shown for all simulation values except MacRog~K$^+$
     are not error bars, but demonstrate that for these systems
     we had at least two data sets; the ends of the bars mark the extreme values
     from the sets, and the dot marks their measurement-time-weighted average.
@@ -537,7 +528,6 @@ available.
     dihedrals of PS and PC headgroups.
     The CHARMM36 POPC simulation is from Ref. \citenum{POPCcharmm36T303K} and Slipids POPC from Ref. \citenum{POPCslipids298K}.
   }
-  \todo{We need larger labels in (B).} \\
 \end{figure}
 
 \begin{figure}[]
@@ -549,10 +539,10 @@ available.
   }
 \end{figure}
 
-The headgroup and glycerol backbone of PS lipids show wide variety in the order parameters and structures
-between different simulation models (Figs. \ref{HGorderParametersPS} and \ref{HGandGLYstructuresPS}),
+The headgroup and glycerol backbone of PS lipids show a wide variety in the order parameters (Fig.~\ref{HGorderParametersPS})
+and structures (Fig.~\ref{HGandGLYstructuresPS}) between different simulation models,
 as previously observed also for PC lipids \cite{botan15}.
-The models perform generally less well for PS lipids than for PC lipids 
+The models perform generally less well for PS than for PC
 (Figs.~\ref{HGorderParametersPS} and \ref{comparisonTablePS} vs. Figs. 2 and 4 in Ref.~\cite{botan15}).
 Therefore, the interpretation of structural differences between PC and PS headgroups
 from simulations is not straightforward.
@@ -568,17 +558,18 @@ from simulations is not straightforward.
 
 
 
-However, the best performing models,
-Slipids, CHARMM36 and CHARMM36ua, reproduce the larger forking of the $\alpha$-carbon 
-and the Slipids model reproduces also the lower of the $\beta$-carbon order parameter
-when comparing the PS results to PC (Fig. \ref{HGorderParametersPS} vs. Fig. 2 in Ref.~\citenum{botan15}).
+However, if one excludes the glycerol backbone and focuses only on the headgroup ($\alpha$ and $\beta$) order parameters,
+the best performing models,
+Slipids, CHARMM36 and CHARMM36ua, do reproduce the larger-than-in-PC forking of the $\alpha$-carbon.
+Slipids reproduces also the feature that the $\beta$-carbon order parameter
+in PS is significantly smaller than in PC (Fig. \ref{HGorderParametersPS} vs. Fig. 2 in Ref.~\citenum{botan15}).
 Interestingly, the C$_\alpha$-C$_\beta$-C$_\gamma$-O$_\gamma$  dihedral with
 a single and narrow peak in the angle distribution close to 120$^{\circ}$ is more restricted
 in the best three models than in other models which give two maxima with different angles (Fig. \ref{dihedralsHG}).
 The restricted motion is also
 visible in the sampled conformations (Figs.~\ref{HGstructuresPSandPC} (A) and \ref{HGandGLYstructuresPS})
-suggesting that the rotation of carboxyl group is limited in the serine headgroup.
-In addition, the N-C$_\beta$-C$_\alpha$-O$_\alpha$ dihedral exhibit a more asymmetric
+suggesting that the rotation of the carboxyl group is limited in the serine headgroup.
+In addition, the N-C$_\beta$-C$_\alpha$-O$_\alpha$ dihedral exhibits a more asymmetric
 and restricted angle distribution for PS than for PC headgroup in
 CHARMM36 simulations in best agreement with experiments
 (Figs.~\ref{HGstructuresPSandPC} (B) and \ref{dihedralsHGpc}).
@@ -586,13 +577,12 @@ The results might manifest the increased rigidity anticipated in the early exper
 Also, the sampled conformations of glycerol backbone
 significantly vary between different simulation models 
 (Figs. \ref{dihedralsGLY}, \ref{HGandGLYstructuresPS}, \ref{dihedralsGLYpc} and \ref{HGandGLYstructuresPSPC}),
-but further analysis is beyond the scope of this work which the PS headgroup.
+but further analysis is beyond the scope of this work which focuses on the PS headgroup.
 
-The suggested characteristic conformations of PS headgroup may be useful when interpreting experiments and
-can guide the further force field development. However, more accurate simulations are
+The suggested characteristic conformations of the PS headgroup may be useful when interpreting experiments and
+can guide further force field development. However, more accurate MD force fields are
 required to confirm the suggested conformations because the simulated PS headgroup order parameters
-are not within the experimental error bars in any of the tested models.
-
+are not within the experimental error in any of the tested models.
 
 %
 %The total deviation from the experiments ($\Sigma$ in Fig. \ref{comparisonTablePS})
@@ -634,26 +624,26 @@ are not within the experimental error bars in any of the tested models.
 \end{figure}
 
 
-Membranes containing PS lipids are always accomppanied with counterions which
+Membranes containing PS lipids are always accompanied with counterions that
 modulate electrostatic interactions between lipids and other biomolecules. 
 Counterions are also suggested to screen the repulsion between charged lipid headgroups 
-in MD simulations and reduce the area per lipid of PS bilayers to be smaller than in PC
+in MD simulations and thus to reduce the area per lipid of PS bilayers to be smaller than in PC
 bilayers~\cite{pandit02,mukhopadhyay04,pedersen06}. 
-The counterion density profiles along membrane normal 
-show significant differences between simulation models in both binding affinity
+Counterion density profiles along membrane normal 
+indicate significant differences between force fields in both binding affinity
 and distribution of ions in the interface (Fig. \ref{NAdensPOPS}).
-The experimental area per lipid (62.7 $\AA^2$) \cite{pan14} 
-is reproduced only in Gromos-CKP simulations and in the MacRog simulation
-with potassium counterions, while other models give significantly lower values (Fig. \ref{NAdensPOPS}).
-The counterion binding and concomintant electrostatic screening of the headgroup
-repulsion does not fully explain the low area per molecule values
-because the MacRog simulation with strongest sodium binding
-(the lowest concentrations in bulk water) gives the same area per molecule
-as CHARMM36ua simulation with significantly weaker counterion binding
+The experimental area per lipid (62.7~\AA$^2$) \cite{pan14} 
+is reproduced only in Gromos-CKP and in the MacRog simulation
+with potassium counterions, while other models give significantly lower areas (Fig. \ref{NAdensPOPS}).
+The counterion binding and the concomitant electrostatic screening of the headgroup
+repulsion does not fully explain the low area per molecule values,
+because the MacRog simulation, which has the strongest sodium binding
+(the lowest concentrations in bulk water), gives the same area per molecule
+as the CHARMM36ua simulation, which has significantly weaker counterion binding
 affinity. On the other hand, changing counterions from sodium to potassium, having weaker binding
-affinity, increases the area per molecule from 53 $\AA^2$ to 63 $\AA^2$ in MacRog simulations.
+affinity, increases the area per molecule from 53~\AA$^2$ to 63~\AA$^2$ in MacRog simulations.
 In conclusion, the results are in line with the previous study suggesting that the
-low area per molecule in PS lipid bilayers originate from the combination
+low areas per molecule in PS lipid bilayers originate from the combination
 of both counterion binding and hydrogen bonding network between lipid
 headgroups \cite{petrache04}.
 
@@ -680,21 +670,23 @@ headgroups \cite{petrache04}.
 
 Binding of cations to zwitterionic PC lipid bilayers has been previously
 evaluated against experiments using the changes of headgroup order parameters
-as a function of ion concentration \cite{catte16}. This is less straighforward
-for charged lipid bilayers because counterions are always present and the
-ion free reference state does not exist.
+as a function of salt concentration \cite{catte16}.
+Studying binding of cations to negatively charged lipid bilayers is less straighforward,
+because the cationic counterions are always present and the ion-free reference state does thus not exist.
 In addition, the analysis is complicated by the artificial aggregation of counterions
 in solution observed in some simulations (section \ref{mixtureTOadditionalCIs} in the supplementary information).
-Therefore, we evaluate the amount of bound charge also using the changes of
-headgroup order parameters with increasing amount of negatively charged lipids in the bilayer.
-According to the electrometer concept, the headgroup order parameters of POPC
-increase when negativaly charged POPS lipids are incorporated in lipid bilayer
+Therefore, we evaluate here the amount of bound charge not by adding salt
+(although also this is discussed in the section \ref{mixtureTOadditionalCIs} in the supplementary information),
+but by studying the changes of the headgroup order parameters with increasing amount of
+negatively charged lipids (and thus increasing amount of cationic counterions) in the bilayer.
+According to the molecular electrometer concept, the headgroup order parameters of POPC
+increase when negatively charged POPS lipids are incorporated in lipid bilayer
 (section \ref{HGorderparametersPCvsPEPSPGchol})~\cite{seelig87,scherer87}.
-This is reproduced in the MacRog simulations with potassium counterions (Fig. \ref{HGorderparametersPCvsPS})
-having the weakest binding affinity to POPS lipid bilayers (Fig.~\ref{NAdensPOPS}).
-The CHARMM36 and Berger simulations predict no change or decrease
+This is reproduced in the MacRog simulations with potassium counterions (Fig. \ref{HGorderparametersPCvsPS}),
+which have the weakest binding affinity to POPS lipid bilayers (Fig.~\ref{NAdensPOPS}).
+The CHARMM36 and Berger simulations predict no change, or a decrease,
 in the POPC headgroup order parameters as a function of increased amount of POPS (Fig. \ref{HGorderparametersPCvsPS}).
-This can be explained by the stronger counterion binding affinity which cancels
+This can be explained by the stronger counterion binding affinity, which cancels
 the effect of negatively charged headgroups and prevents the experimentally observed
 increase of headgroup order parameters with increasing amount of PS lipids.
 Therefore, we suggest that the relatively weak binding of potassium
@@ -724,7 +716,6 @@ to correctly describe the PC-PS headgroup interactions in MD simulations.
     For the density profiles from all the simulated concentrations see figure \ref{CAdensPCPSmixtureALL}
     in the supplementary information.
   }
-  \todo{The CHARMM results are mass densities, number densities should be used when the data by Jesper Madsen is available.} \\
   \todo{Should we include also counterions into the plot?} \\
 \end{figure}
 
