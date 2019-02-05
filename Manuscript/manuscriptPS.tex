@@ -67,11 +67,11 @@
 Academy of Sciences of the Czech Republic, 
 Prague 6, Czech Republic}
 \author{Batuhan Kav}
-\affiliation{Potsdam, Germany}
+\affiliation{Department of Theory and Bio-Systems, Max Planck Institute of Colloids and Interfaces, 14424 Potsdam, Germany}
 \author{Jesper J. Madsen}
 \affiliation{Department of Chemistry, The University of Chicago, Chicago, Illinois 60637, United States of America}
 \author{Markus Miettinen}
-\affiliation{Potsdam, Germany}
+\affiliation{Department of Theory and Bio-Systems, Max Planck Institute of Colloids and Interfaces, 14424 Potsdam, Germany}
 \author{Josef Melcr}
 \affiliation{Institute of Organic Chemistry and Biochemistry,
 Academy of Sciences of the Czech Republic, 
@@ -447,7 +447,7 @@ to the results is simulations with realistic ion binding affinity
 \end{figure}
 \begin{figure}[!htb]
   \centering
-  \includegraphics[width=9.0cm]{../Figs/PCPScomp.eps}
+  \includegraphics[width=9.0cm]{../Figs/PCPScomp-eps-converted-to.pdf}
   \caption{\label{HGorderParameters}
     (A) Chemical structures and labels for the headgroup and glycerol backbone carbons.
     (B) Headgroup and glycerol backbone order parameters of POPS measured in this work compared
@@ -485,14 +485,15 @@ confirming the interpretation that the smaller order parameter is negative.
   \centering
   \includegraphics[width=9.0cm]{../Figs/HGorderparametersPS.pdf}
   \caption{\label{HGorderParametersPS}
-    Order parameters of PS headgroup and glycerol backbone from experiments
-    and simulations with different force fields.
-    Experimental data for DOPS is measured with 0.1~M of NaCl~\cite{browning80},
-    while all the other data is without additional ions.
-    All the data for DOPS is at 303~K and all the data for POPS is at 298~K.
+    Order parameters of PS headgroup ($\beta$ and $\alpha$) and
+    glycerol backbone (g$_3$, g$_2$, g$_1$) from NMR experiments (horizontal lines),
+    and MD simulations with different force fields (dots).
+    Experimental data for DOPS are measured with 0.1~M of NaCl~\cite{browning80},
+    while all the other data are without additional salt.
+    All the data for DOPS at 303~K and all the data for POPS at 298~K.
     Light blue areas span 0.04 units around the average of the extremal experimental values,
-    which is the expected quantitative accuracy of experimental values~\cite{ollila16}.
-    The vertical bars shown for some simulation values
+    in accordance with the expected quantitative accuracy of experimental values~\cite{ollila16}.
+    The vertical bars shown for all simulation values except MacRog~K$^+$
     are not error bars, but demonstrate that for these systems
     we had at least two data sets; the ends of the bars mark the extreme values
     from the sets, and the dot marks their measurement-time-weighted average.
@@ -538,10 +539,10 @@ available.
   }
 \end{figure}
 
-The headgroup and glycerol backbone of PS lipids show wide variety in the order parameters and structures
-between different simulation models (Figs. \ref{HGorderParametersPS} and \ref{HGandGLYstructuresPS}),
+The headgroup and glycerol backbone of PS lipids show a wide variety in the order parameters (Fig.~\ref{HGorderParametersPS})
+and structures (Fig.~\ref{HGandGLYstructuresPS}) between different simulation models,
 as previously observed also for PC lipids \cite{botan15}.
-The models perform generally less well for PS lipids than for PC lipids 
+The models perform generally less well for PS than for PC
 (Figs.~\ref{HGorderParametersPS} and \ref{comparisonTablePS} vs. Figs. 2 and 4 in Ref.~\cite{botan15}).
 Therefore, the interpretation of structural differences between PC and PS headgroups
 from simulations is not straightforward.
@@ -557,17 +558,18 @@ from simulations is not straightforward.
 
 
 
-However, the best performing models,
-Slipids, CHARMM36 and CHARMM36ua, reproduce the larger forking of the $\alpha$-carbon 
-and the Slipids model reproduces also the lower of the $\beta$-carbon order parameter
-when comparing the PS results to PC (Fig. \ref{HGorderParametersPS} vs. Fig. 2 in Ref.~\citenum{botan15}).
+However, if one excludes the glycerol backbone and focuses only on the headgroup ($\alpha$ and $\beta$) order parameters,
+the best performing models,
+Slipids, CHARMM36 and CHARMM36ua, do reproduce the larger-than-in-PC forking of the $\alpha$-carbon.
+Slipids reproduces also the feature that the $\beta$-carbon order parameter
+in PS is significantly smaller than in PC (Fig. \ref{HGorderParametersPS} vs. Fig. 2 in Ref.~\citenum{botan15}).
 Interestingly, the C$_\alpha$-C$_\beta$-C$_\gamma$-O$_\gamma$  dihedral with
 a single and narrow peak in the angle distribution close to 120$^{\circ}$ is more restricted
 in the best three models than in other models which give two maxima with different angles (Fig. \ref{dihedralsHG}).
 The restricted motion is also
 visible in the sampled conformations (Figs.~\ref{HGstructuresPSandPC} (A) and \ref{HGandGLYstructuresPS})
-suggesting that the rotation of carboxyl group is limited in the serine headgroup.
-In addition, the N-C$_\beta$-C$_\alpha$-O$_\alpha$ dihedral exhibit a more asymmetric
+suggesting that the rotation of the carboxyl group is limited in the serine headgroup.
+In addition, the N-C$_\beta$-C$_\alpha$-O$_\alpha$ dihedral exhibits a more asymmetric
 and restricted angle distribution for PS than for PC headgroup in
 CHARMM36 simulations in best agreement with experiments
 (Figs.~\ref{HGstructuresPSandPC} (B) and \ref{dihedralsHGpc}).
@@ -575,13 +577,12 @@ The results might manifest the increased rigidity anticipated in the early exper
 Also, the sampled conformations of glycerol backbone
 significantly vary between different simulation models 
 (Figs. \ref{dihedralsGLY}, \ref{HGandGLYstructuresPS}, \ref{dihedralsGLYpc} and \ref{HGandGLYstructuresPSPC}),
-but further analysis is beyond the scope of this work which the PS headgroup.
+but further analysis is beyond the scope of this work which focuses on the PS headgroup.
 
-The suggested characteristic conformations of PS headgroup may be useful when interpreting experiments and
-can guide the further force field development. However, more accurate simulations are
+The suggested characteristic conformations of the PS headgroup may be useful when interpreting experiments and
+can guide further force field development. However, more accurate MD force fields are
 required to confirm the suggested conformations because the simulated PS headgroup order parameters
-are not within the experimental error bars in any of the tested models.
-
+are not within the experimental error in any of the tested models.
 
 %
 %The total deviation from the experiments ($\Sigma$ in Fig. \ref{comparisonTablePS})

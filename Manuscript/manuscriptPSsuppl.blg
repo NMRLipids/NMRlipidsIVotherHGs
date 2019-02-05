@@ -1,0 +1,48 @@
+This is BibTeX, Version 0.99d (TeX Live 2014/Fink)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: manuscriptPSsuppl.aux
+The style file: achemso.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Database file #1: acs-manuscriptPSsuppl.bib
+Database file #2: refs.bib.bib
+You've used 102 entries,
+            2478 wiz_defined-function locations,
+            1315 strings with 27678 characters,
+and the built_in function-call counts, 28918 in all, are:
+= -- 2472
+> -- 1646
+< -- 77
++ -- 637
+- -- 535
+* -- 2983
+:= -- 4025
+add.period$ -- 202
+call.type$ -- 102
+change.case$ -- 3
+chr.to.int$ -- 2
+cite$ -- 102
+duplicate$ -- 1531
+empty$ -- 1972
+format.name$ -- 681
+if$ -- 5648
+int.to.chr$ -- 0
+int.to.str$ -- 1
+missing$ -- 0
+newline$ -- 628
+num.names$ -- 303
+pop$ -- 179
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 1
+stack$ -- 0
+substring$ -- 1275
+swap$ -- 1468
+text.length$ -- 202
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 711
+warning$ -- 0
+while$ -- 296
+width$ -- 0
+write$ -- 1235
