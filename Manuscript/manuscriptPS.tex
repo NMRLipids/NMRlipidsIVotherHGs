@@ -353,33 +353,34 @@ Then 20 mg of the sample was  transferred to an NMR insert suitable for 4 mm NMR
 
 
 \subsection{Molecular dynamics simulations}
-Molecular dynamics simulation data was collected using
-the Open Collaboration method \cite{botan15}.
-The NMRlipids project blog (\url{www.nmrlipids.blogspot.fi}) and
-the GitHub repository (\url{www.github.com/NMRLipids/NMRlipidsIVotherHGs})
-were used as the communication platforms.
+Molecular dynamics simulation data were collected using
+the Open Collaboration method \cite{botan15}, with
+the NMR\-lipids Project blog (\url{nmrlipids.blogspot.fi}) and
+GitHub repository (\url{github.com/NMRlipids/NMRlipidsIVotherHGs})
+as the communication platforms.
 The simulated systems are listed in 
-Tables \ref{PSsystems} (pure PS systems without additional ions) 
-and \ref{mixedIONsystems} (mixed PC:PS systems with various ions concentrations).
+Tables \ref{PSsystems} (pure PS bilayers without additional ions) 
+and \ref{mixedIONsystems} (mixed PC:PS bilayers at various salt concentrations).
 Further simulation details are given in the SI.
-The simulation data is also indexed in the
-searchable database (\url{www.nmrlipids.fi}),
-and in the NMRlipids/MATCH GitHub repository (\url{https://github.com/NMRLipids/MATCH}).
+The simulation data are also indexed in a
+searchable database available at \url{www.nmrlipids.fi},
+and in the NMRlipids/MATCH repository (\url{github.com/NMRlipids/MATCH}).
 
-The C-H bond order parameters were calculated directly
-from the definition
+The C--H bond order parameters were calculated directly
+from the carbon and hydrogen positions using the definition
 \begin{equation}
 S_{\rm CH}=\frac{1}{2}\langle 3\cos^2\theta -1 \rangle,
 \end{equation}
-where $\theta$ is the angle between the C-H bond and the membrane normal.
-Angular brackets point to the average over all sampled configurations.
+where $\theta$ is the angle between the C--H bond and the membrane normal
+(taken to align with $z$, with bilayer periodic in the $xy$-plane).
+Angular brackets denote average over all sampled configurations.
 The order parameters were first calculated averaging over time separately
-for each lipid molecule in the system. The average and
+for each lipid in the system. The average and
 the standard error of the mean were then calculated over different lipids.
-The python program ({\it scripts/calcOrderParameters.py}) utilizing
+Python program ({\tt scripts/calcOrderParameters.py}) that uses the
 MDAnalysis library \cite{agrawal11,gowers16} is available in Ref. \citenum{MATCHgit}. 
-The number density profiles were calculated using {\it gmx density} tool
-from Gromacs sofware package \cite{gromacsMANUAL}.
+The number density profiles were calculated using the {\tt gmx density} tool
+of the Gromacs sofware package \cite{gromacsMANUAL}.
 
 \subsection{Comparison of ion binding to negatively charged lipid bilayers 
 between simulations and experiments using the electrometer concept}
