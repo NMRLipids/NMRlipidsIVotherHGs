@@ -154,8 +154,8 @@ of lipid headgroups and the details of cation binding
 are crucial for the PS-mediated signaling processes.
 
 Previous experimental studies have concluded that the
-PS headgroup is more rigid than the phosphocholine (PC)
-due to the hydrogen bonding network or
+PS headgroup is more rigid than the phosphatidylcholine (PC)
+due to hydrogen bonding network or
 electrostatic interactions \cite{browning80,buldt81}.
 Multivalent cations and Li$^+$ are able to form strong
 dehydrated molecular complexes with PS lipids,
@@ -166,7 +166,7 @@ phase separation \cite{hauser77,kurland79,hauser85,feigenson86,mattai89,roux90,r
 On the other hand, some studies propose that the specific binding
 affinity is similar for the negatively charged and zwitterionic lipids, and
 the increased cation binding to negatively charged lipid bilayers arises only due
-to the increased local cation concentration in the membranes vicinity~\cite{seelig90,sinn06}.
+to the increased local cation concentration in the membrane vicinity~\cite{seelig90,sinn06}.
 Dilution of bilayers with PC lipids makes PS headgroups
 less rigid and reduces their propensity to form
 strong complexes with multivalent ions~\cite{browning80,buldt81,roux90,roux91}.
@@ -213,11 +213,11 @@ however, lacking.
 \end{table*}
 
 Several classical molecular dynamics (MD) simulation studies have been done
-to understand PS headgroups, their influence on lipid bilayer properties, and their
+to understand the PS headgroups, their influence on lipid bilayer properties, and their
 interaction with
 ions \cite{cascales96,pandit02,mukhopadhyay04,pedersen06,vernier09,boettcher11,molina12,jurkiewicz12,venable13,pan14,vangaveti14,melcrova16,valentine18,hallock18}.
-However, the results depend strongly on the force field used.
-For example, the recent simulations using NBfix parameters for calcium \cite{kim16} in
+However, the results have depended strongly on the force field used.
+For example, recent simulations using the NBfix parameters for calcium \cite{kim16} in
 CHARMM36 force field \cite{klauda10,venable13}, combined with 2D infrared spectroscopy,
 suggest that calcium ions interact only with the carboxylate group of PS lipids \cite{valentine18}; in contrast,
 the same force field without the NBfix parameters, combined with NMR chemical shifts and
@@ -232,23 +232,25 @@ measured from NMR experiments with high accuracy and compared to simulations
 in order to evaluate the simulation model quality or to interpret the experiments \cite{ollila16}.
 Previous studies showed that the structure of PC lipid headgroup and glycerol backbone are not well
 captured by most MD force fields~\cite{botan15}, and that the cation binding to PC
-lipid bilayers is overestimated \cite{catte16}. Based on these data, the cation binding
-affinity to POPC bilayer has since been improved by implicitly including the electronic polarizability
-using the electronic continuum correction \cite{melcr18}.
+lipid bilayers is overestimated \cite{catte16}.
+%
+Based on these data, the cation binding affinity to POPC bilayer has since been improved by implicitly including the electronic polarizability using the electronic continuum correction \cite{melcr18}.
+\todo{Should we leave the mention of ECC out from the Introduction
+(i.e., mention it only in the Conclusions) as the ECC parameters are not used in the paper?} 
 
 Here, we collect a set of experimentally measured lipid headgroup and
-glycerol backbone C-H bond order parameters, which can be used to
-evaluate the quality of headgroup structure and the ion binding affinity
+glycerol backbone C--H bond order parameters, which can be used to
+evaluate the quality of headgroup structure and ion binding affinity
 in MD simulations of lipid bilayers containing PS lipids. 
 The available MD simulation models of PS are then compared with
 the collected experimental data.
 %using the NMRlipids open collaboration project (\url{nmrlipids.blogspot.fi}).
 The results pave the way
-for the development of lipid force fields with realistic description of
+for development of lipid force fields with realistic description of
 the headgroup region of negatively charged lipids in physiological salt
 conditions. Such models are expected to be useful in understanding
-biological function of lipid headgroups and glycerol backbone because
-they behave similarly in model membranes and in bacterial cells \cite{gally81,scherer87,seelig90}.
+biological function of lipid headgroups and glycerol backbone, as
+these behave similarly in model membranes and in bacterial cells \cite{gally81,scherer87,seelig90}.
 
 
 
