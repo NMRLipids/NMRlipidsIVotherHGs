@@ -176,38 +176,37 @@ however, lacking.
 \begin{table*}[htb]
 %\begin{sidewaystable*}[!p]
 \centering
-\caption{The list of MD simulations of pure PS bilayers without additional salt.
-  Simulation details are given in the supplementary information
-    %   The lipid force fields named as in our previous work~\cite{botan15}.
+\caption{The list of MD simulations of pure PS bilayers without additional salt along with the references to the force fields used and the MD trajectories. Notation 2$\times$[time] indicates that more than two independent MD runs was conducted. Additional simulation details are given in the supplementary information.
+    %   The lipid force fields named as in our previous work~\cite{botan15}. 
 }\label{PSsystems}
 %begin{minipage}[t]{\textwidth}
-\begin{tabular}{l c r r r r r c c}
-  %\hline
-  % some footnotes are not visible in typeset-MS (pdf)
- lipid/counter-ions & force field for lipids / ions & \footnote{Number of lipid molecules with largest mole fraction}N$_{\rm l}$   &  \footnote{Number of water molecules}N$_{\rm w}$  & \footnote{Number of additional cations}N$_{\rm c}$  & \footnote{Simulation temperature}T (K)  & \footnote{Total simulation time}t$_{{\rm sim}}$(ns) & \footnote{Time used for analysis}t$_{{\rm anal}}$ (ns) &   \footnote{Reference for simulation files}files\\
-    \hline
-    POPS/Na$^+$  & CHARMM36 \cite{venable13} & 128 & 4480 & 0  & 298  & 500 & 100 & \cite{charmm36POPS298K} \\
-    POPS/K$^+$   & CHARMM36 \cite{venable13} & 128 & 4480 & 0  & 298  & 500 & 100 & \cite{charmm36POPS298Kpotassium} \\
-    POPS/Na$^+$  & CHARMM36ua \cite{??} \todoi{Correct citation for CHARMMua DOPS} & 128 & 4480 & 0  & 298  & 500 & 100 & \cite{charmm36uaPOPS298K} \\
-    POPS/Na$^+$  & MacRog \cite{maciejewski14}  & 128 & 4480 & 0  & 298  & 500 & 100  & \cite{macrogPOPS298Kcorrect} \\
-    POPS/K$^+$   & MacRog \cite{maciejewski14}  & 128 & 4480 & 0  & 298  & 200 & 150 & \cite{macrogPOPS298KwithK} \\
-    POPS/Na$^+$  & lipid17  \cite{gould18} / JC  \cite{joung08}   & 128    & 4480   & 0   & 298  & 600 & 100 & \cite{lipid17POPSjcions} \\
-    POPS/Na$^+$  & lipid17 \cite{gould18} / ff99 \cite{aqvist90}  & 128    & 4480   & 0   & 298  & 600 & 100 & \cite{lipid17POPSff99ions} \\
-    POPS/Na$^+$  & Berger \cite{mukhopadhyay04,??}          & 128 & 4480 & 0  & 298  & 500 & 100 & \cite{bergerPOPS298K} \\
-    POPS/Na$^+$  & GROMOS-CKPM \cite{??} \todoi{Correct citation(s) for CKP.} & 128 & 4480 & 0  & 298  & 500 & 100 & \cite{ckp1POPS303K} \\
-    POPS/Na$^+$  & GROMOS-CKP \cite{??} \todoi{Correct citation(s) for CKP.}  & 128 & 4480 & 0  & 298  & 500 & 100 & \cite{ckp2POPS303K} \\
-    POPS/Na$^+$  & Slipids \cite{jambeck13}  & 128 & 4480 & 0  & 298  & 500 & 100 & \cite{slipidsPOPS298K} \\
-  \hline
-    DOPS/Na$^+$  & CHARMM36 \cite{venable13}       & 128 & 4480 & 0  & 303  & 500 & 100 & \cite{charmm36DOPS303K} \\
-    DOPS/Na$^+$  & CHARMM36ua \cite{??} \todoi{Correct citation for CHARMMua DOPS}   & 128 & 4480 & 0  & 303  & 500 & 100 & \cite{charmm36uaDOPS303K} \\
-    DOPS/Na$^+$  & lipid17 \cite{gould18} / JC  \cite{joung08}    & 128    & 4480   & 0   & 303  & 600 & 100 & \cite{lipid17DOPSjcions} \\
-    DOPS/Na$^+$  & lipid17 \cite{gould18} / ff99 \cite{aqvist90}  & 128    & 4480   & 0   & 303  & 600 & 100 & \cite{lipid17DOPSff99ions} \\
-    DOPS/Na$^+$  & Berger \cite{mukhopadhyay04,??}    & 128  & 4480  & 0  & 303  & 500 & 100 & \cite{bergerDOPS303K} \\
-    DOPS/Na$^+$  & GROMOS-CKPM \cite{??} \todoi{Correct citation(s) for CKP.} & 128 & 4480 & 0  & 303  & 500 & 100 & \cite{ckp1DOPS303K} \\
-    DOPS/Na$^+$  & GROMOS-CKP  \cite{??} \todoi{Correct citation(s) for CKP.} & 128 & 4480 & 0  & 303  & 500 & 100 & \cite{ckp2DOPS303K} \\
-    DOPS/Na$^+$  & Slipids \cite{jambeck13}        & 128 	& 4480  & 0  & 303  & 500 & 100 & \cite{slipidsDOPS303K} \\
-    DOPS/Na$^+$  & Slipids \cite{jambeck13}        & 288 	& 11232 & 0  & 303  & 200 & 100 & \cite{slipidsDOPSfiles} \\
-    \end{tabular}
+\begin{tabular}{lcrrrrrcc}
+%\hline
+% some footnotes are not visible in typeset-MS (pdf)
+lipid/counter-ions  & force field for lipids / ions  & \footnote{Number of lipid molecules with largest mole fraction}N$_{{\rm l}}$  & \footnote{Number of water molecules}N$_{{\rm w}}$  & \footnote{Simulation temperature}T (K)  & \footnote{Total simulation time}t$_{{\rm sim}}$(ns)  & \footnote{Time used for analysis}t$_{{\rm anal}}$ (ns)  & \footnote{Reference for simulation files}files & \tabularnewline
+\hline 
+POPS/Na$^{+}$  & CHARMM36 \cite{venable13}  & 128  & 4480  & 298  & 2$\times$500  & 2$\times$100  & \cite{charmm36POPS298K}  & \tabularnewline
+POPS/K$^{+}$  & CHARMM36 \cite{venable13}  & 128  & 4480  & 298  & 2$\times$500  & 2$\times$100  & \cite{charmm36POPS298Kpotassium}  & \tabularnewline
+POPS/Na$^{+}$  & CHARMM36ua \cite{??} \todoi{Correct citation for CHARMMua DOPS}  & 128  & 4480  & 298  & 2$\times$500  & 2$\times$100  & \cite{charmm36uaPOPS298K}  & \tabularnewline
+POPS/Na$^{+}$  & MacRog \cite{maciejewski14}  & 128  & 4480  & 298  & 2$\times$500  & 2$\times$100  & \cite{macrogPOPS298Kcorrect}  & \tabularnewline
+POPS/K$^{+}$  & MacRog \cite{maciejewski14}  & 128  & 4480  & 298  & 200  & 150  & \cite{macrogPOPS298KwithK}  & \tabularnewline
+POPS/Na$^{+}$  & lipid17 \cite{gould18} / JC \cite{joung08}  & 128  & 4480  & 298  & 2$\times$600  & 2$\times$100  & \cite{lipid17POPSjcions}  & \tabularnewline
+POPS/Na$^{+}$  & lipid17 \cite{gould18} / ff99 \cite{aqvist90}  & 128  & 4480  & 298  & 2$\times$600  & 2$\times$100  & \cite{lipid17POPSff99ions}  & \tabularnewline
+POPS/Na$^{+}$  & Berger \cite{mukhopadhyay04,??}  & 128  & 4480  & 298  & 2$\times$500  & 2$\times$100  & \cite{bergerPOPS298K}  & \tabularnewline
+POPS/Na$^{+}$  & GROMOS-CKPM \cite{??} \todoi{Correct citation(s) for CKP.}  & 128  & 4480  & 298  & 2$\times$500  & 2$\times$100  & \cite{ckp1POPS303K}  & \tabularnewline
+POPS/Na$^{+}$  & GROMOS-CKP \cite{??} \todoi{Correct citation(s) for CKP.}  & 128  & 4480  & 298  & 2$\times$500  & 2$\times$100  & \cite{ckp2POPS303K}  & \tabularnewline
+POPS/Na$^{+}$  & Slipids \cite{jambeck13}  & 128  & 4480  & 298  & 2$\times$500  & 2$\times$100  & \cite{slipidsPOPS298K}  & \tabularnewline
+\hline 
+DOPS/Na$^{+}$  & CHARMM36 \cite{venable13}  & 128  & 4480  & 303  & 2$\times$500  & 2$\times$100  & \cite{charmm36DOPS303K}  & \tabularnewline
+DOPS/Na$^{+}$  & CHARMM36ua \cite{??} \todoi{Correct citation for CHARMMua DOPS}  & 128  & 4480  & 303  & 2$\times$500  & 2$\times$100  & \cite{charmm36uaDOPS303K}  & \tabularnewline
+DOPS/Na$^{+}$  & lipid17 \cite{gould18} / JC \cite{joung08}  & 128  & 4480  & 303  & 2$\times$600  & 2$\times$100  & \cite{lipid17DOPSjcions}  & \tabularnewline
+DOPS/Na$^{+}$  & lipid17 \cite{gould18} / ff99 \cite{aqvist90}  & 128  & 4480  & 303  & 2$\times$600  & 2$\times$100  & \cite{lipid17DOPSff99ions}  & \tabularnewline
+DOPS/Na$^{+}$  & Berger \cite{mukhopadhyay04,??}  & 128  & 4480  & 303  & 2$\times$500  & 2$\times$100  & \cite{bergerDOPS303K}  & \tabularnewline
+DOPS/Na$^{+}$  & GROMOS-CKPM \cite{??} \todoi{Correct citation(s) for CKP.}  & 128  & 4480  & 303  & 2$\times$500  & 2$\times$100  & \cite{ckp1DOPS303K}  & \tabularnewline
+DOPS/Na$^{+}$  & GROMOS-CKP \cite{??} \todoi{Correct citation(s) for CKP.}  & 128  & 4480  & 303  & 2$\times$500  & 2$\times$100  & \cite{ckp2DOPS303K}  & \tabularnewline
+DOPS/Na$^{+}$  & Slipids \cite{jambeck13}  & 128  & 4480  & 303  & 2$\times$500  & 2$\times$100  & \cite{slipidsDOPS303K}  & \tabularnewline
+DOPS/Na$^{+}$  & Slipids \cite{jambeck13}  & 288  & 11232  & 303  & 200  & 100  & \cite{slipidsDOPSfiles}  & \tabularnewline
+\end{tabular}
 %\end{minipage}
 %\end{sidewaystable*} 
 \end{table*}
