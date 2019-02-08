@@ -540,8 +540,8 @@ available.
   \centering
   \includegraphics[width=9.0cm]{../Figs/structures.eps}
   \caption{\label{HGstructuresPSandPC}
-    Overlayed snapshots from CHARMM36 simulations in best agreement with experiments
-    to demonstrate the conformational fluctuations around
+    Overlayed snapshots from simulations conducted with CHARMM36 --- the force field producing the best agreement with experiments ---
+     demonstrate the conformational fluctuations around
     (A) C$_\alpha$-C$_\beta$-C$_\gamma$-O$_\gamma$ and  O$_\alpha$-C$_\alpha$-C$_\beta$-N
     of PS headgroup and (B) N-C$_\beta$-C$_\alpha$-O$_\alpha$ and C$_\beta$-C$_\alpha$-O$_\alpha$-P
     dihedrals of PS and PC headgroups.
@@ -558,13 +558,11 @@ available.
   }
 \end{figure}
 
-The headgroup and glycerol backbone of PS lipids show a wide variety in the order parameters (Fig.~\ref{HGorderParametersPS})
+The different PS MD models produce a wide variety of headgroup and glycerol backbone order parameters (Fig.~\ref{HGorderParametersPS})
 and structures (Fig.~\ref{HGandGLYstructuresPS}) between different simulation models,
-as previously observed also for PC lipids \cite{botan15}.
-The models perform generally less well for PS than for PC
+as previously observed also for PC lipids \cite{botan15}. None of the models produces a set of order parameters in full agreement with the experiments. The models perform generally less well for PS than for PC
 (Figs.~\ref{HGorderParametersPS} and \ref{comparisonTablePS} vs. Figs. 2 and 4 in Ref.~\cite{botan15}).
-Therefore, the interpretation of structural differences between PC and PS headgroups
-from simulations is not straightforward.
+which complicates the interpretation of structural differences between PC and PS headgroups.
 
 \begin{figure}[!htb]
   \centering
@@ -579,36 +577,20 @@ from simulations is not straightforward.
 
 
 
-However, if one excludes the glycerol backbone and focuses only on the headgroup ($\alpha$ and $\beta$) order parameters,
-the best performing models,
-Slipids, CHARMM36 and CHARMM36ua, do reproduce the larger-than-in-PC forking of the $\alpha$-carbon.
-Slipids reproduces also the feature that the $\beta$-carbon order parameter
-in PS is significantly smaller than in PC (Fig. \ref{HGorderParametersPS} vs. Fig. 2 in Ref.~\citenum{botan15}).
+However, concentrating on the headgroup, we see that the best performing models (Slipids, CHARMM36 and CHARMM36ua) do replicate the larger-than-in-PC forking of the $\alpha$-carbon \todo{observed in the experiments?} and the Slipids force field additionally correctly produces the significantly smaller $\beta$-carbon order parameter for PS compared to PC (Fig. \ref{HGorderParametersPS} vs. Fig. 2 in Ref.~\citenum{botan15}) \todo{refer to experiments also?}.
+
 Interestingly, the C$_\alpha$-C$_\beta$-C$_\gamma$-O$_\gamma$  dihedral with
 a single and narrow peak in the angle distribution close to 120$^{\circ}$ is more restricted
-in the best three models than in other models which give two maxima with different angles (Fig. \ref{dihedralsHG}).
-The restricted motion is also
-visible in the sampled conformations (Figs.~\ref{HGstructuresPSandPC} (A) and \ref{HGandGLYstructuresPS})
+in the best three force field while other models give two maxima with different angles (Fig. \ref{dihedralsHG}).
+The restricted motion is also visible in the sampled conformations (Figs.~\ref{HGstructuresPSandPC} (A) and \ref{HGandGLYstructuresPS})
 suggesting that the rotation of the carboxyl group is limited in the serine headgroup.
 In addition, the N-C$_\beta$-C$_\alpha$-O$_\alpha$ dihedral exhibits a more asymmetric
-and restricted angle distribution for PS than for PC headgroup in
-CHARMM36 simulations in best agreement with experiments
+and restricted\todo{rather: narrow?} angle distribution for PS than for PC headgroup in
+CHARMM36 simulations that have the best agreement with experiments
 (Figs.~\ref{HGstructuresPSandPC} (B) and \ref{dihedralsHGpc}).
-The results might manifest the increased rigidity anticipated in the early experimental studies \cite{browning80,buldt81}.
-Also, the sampled conformations of glycerol backbone
-significantly vary between different simulation models 
-(Figs. \ref{dihedralsGLY}, \ref{HGandGLYstructuresPS}, \ref{dihedralsGLYpc} and \ref{HGandGLYstructuresPSPC}),
-but further analysis is beyond the scope of this work which focuses on the PS headgroup.
+The results might reflect the increased rigidity anticipated\todo{detected, predicted, speculated?} in the early experimental studies \cite{browning80,buldt81}. %Also, the sampled conformations of glycerol backbone significantly vary between different simulation models (Figs. \ref{dihedralsGLY}, \ref{HGandGLYstructuresPS}, \ref{dihedralsGLYpc} and \ref{HGandGLYstructuresPSPC}),but further analysis is beyond the scope of this work which focuses on the PS headgroup. There is very little actual information in this statement. The variance was already noted above
 
-The suggested characteristic conformations of the PS headgroup may be useful when interpreting experiments and
-can guide further force field development. However, more accurate MD force fields are
-required to confirm the suggested conformations because the simulated PS headgroup order parameters
-are not within the experimental error in any of the tested models.
-
-%
-%The total deviation from the experiments ($\Sigma$ in Fig. \ref{comparisonTablePS})
-%for the best performing CHARMM36 model is larger for PS lipids (8)
-%than for PC (3) \cite{botan15}.
+The suggested characteristic conformations of the PS headgroup can be useful when interpreting experiments. However, as the none of the tested models fully reproduces the experimental order parameters, more accurate MD force fields are required to confirm the correct conformational ensemble.
 
 
 
