@@ -137,11 +137,10 @@ This work is part of the NMRlipids open collaboration project (\url{nmrlipids.bl
 \section{Introduction}
 Phosphatidylserine (PS) is the most common negatively
 charged lipid in eukaryotic membranes.
-PS lipids compose 8.5\% of total lipid weight of red blood cells,
-but the abundance varies between different organelles up to
-25-35\% in the cytosolic leaflet of plasma membranes \cite{lemmon08,leventis10,li14}.
-Despite of the relatively low abundance \todo{Relatively low compared to what?}, PS lipids
-are important signaling molecules. They interact with
+PS lipids compose 8.5\% of total lipid weight of red blood cells. 
+The abundance, however, varies between different organelles, and up to
+25-35\% of the cytosolic leaflet of plasma membranes \cite{lemmon08,leventis10,li14} consists of PS lipids.
+PS lipids are vastly important signaling molecules. They interact with
 signaling proteins \cite{leventis10}, regulate
 surface charge and protein localization \cite{yeung08}, and
 induce protein aggregation \cite{zhao04,gorbenko06}.
@@ -152,15 +151,13 @@ Therefore, the structural details
 of lipid headgroups and the details of cation binding
 are crucial for the PS-mediated signaling processes.
 
-Previous experimental studies have concluded that the
+Experimental studies have indicated that the
 PS headgroup is more rigid than the phosphatidylcholine (PC)
 due to hydrogen bonding network or
 electrostatic interactions \cite{browning80,buldt81}.
-Multivalent cations and Li$^+$ are able to form strong
-dehydrated molecular complexes with PS lipids,
-while monovalent ions interact more weakly with
-PS-containing bilayers \cite{hauser77,kurland79,eisenberg79,hauser83,dluhy83,hauser85,feigenson86,mattai89,roux90,roux91,boettcher11}.
-The dehydrated complexes of PS headgroup and calcium ions can also lead to
+While monovalent ions interact weakly with
+PS-containing bilayers, multivalent cations and Li$^+$ are able to form strong
+dehydrated molecular complexes with PS lipids \cite{hauser77,kurland79,eisenberg79,hauser83,dluhy83,hauser85,feigenson86,mattai89,roux90,roux91,boettcher11}. The dehydrated complexes of PS headgroup and calcium ions can even lead to
 phase separation \cite{hauser77,kurland79,hauser85,feigenson86,mattai89,roux90,roux91}.
 On the other hand, some studies propose that the specific binding
 affinity is similar for the negatively charged and zwitterionic lipids, and
@@ -169,8 +166,6 @@ to the increased local cation concentration in the membrane vicinity~\cite{seeli
 Dilution of bilayers with PC lipids makes PS headgroups
 less rigid and reduces their propensity to form
 strong complexes with multivalent ions~\cite{browning80,buldt81,roux90,roux91}.
-The molecular level interpretation of these observations is,
-however, lacking.
 
 \begin{table*}[htb]
 %\begin{sidewaystable*}[!p]
@@ -211,11 +206,13 @@ however, lacking.
 %\end{sidewaystable*} 
 \end{table*}
 
-Several classical molecular dynamics (MD) simulation studies have been done
-to understand the PS headgroups, their influence on lipid bilayer properties, and their
+
+The molecular level interpretation of these observations is,
+however, lacking, and  classical molecular dynamics (MD) simulations have been widely used in efforts to
+to understand the PS headgroup structure, their influence on lipid bilayer properties, and their
 interaction with
 ions \cite{cascales96,pandit02,mukhopadhyay04,pedersen06,vernier09,boettcher11,molina12,jurkiewicz12,venable13,pan14,vangaveti14,melcrova16,valentine18,hallock18}.
-However, the results have depended strongly on the force field used.
+Unfortunately, the results have depended strongly on the force field used.
 For example, recent simulations using the NBfix parameters for calcium \cite{kim16} in
 CHARMM36 force field \cite{klauda10,venable13}, combined with 2D infrared spectroscopy,
 suggest that calcium ions interact only with the carboxylate group of PS lipids \cite{valentine18}; in contrast,
@@ -224,6 +221,7 @@ REDOR \todo{Spell out REDOR?} experiments, suggests a significant binding affini
 On the other hand, simulations with the Berger force field \cite{berger97,mukhopadhyay04},
 combined with fluorescent and vibrational sum frequency spectroscopy, suggest a significant
 calcium binding also to the carbonyls in the acyl chains \cite{melcrova16}.
+
 We have recently demonstrated that such controversies can be resolved by
 comparing the C--H bond order parameters, $S_\mathrm{CH}$, of lipid headgroups between simulations
 and experiments \cite{botan15,catte16}. The $S_\mathrm{CH}$ can be directly
@@ -245,12 +243,11 @@ The available MD simulation models of PS are then compared with
 the collected experimental data.
 %using the NMRlipids open collaboration project (\url{nmrlipids.blogspot.fi}).
 The results pave the way
-for development of lipid force fields with realistic description of
+for development of lipid models that correctly describe 
 the headgroup region of negatively charged lipids in physiological salt
-conditions. Such models are expected to be useful in understanding
+conditions. Such force fields are expected to be useful in understanding
 biological function of lipid headgroups and glycerol backbone, as
-these behave similarly in model membranes and in bacterial cells \cite{gally81,scherer87,seelig90}.
-
+these are knwon to behave similarly in simple model membranes and in cells \cite{gally81,scherer87,seelig90}.
 
 
 \begin{table*}[tb]
