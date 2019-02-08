@@ -382,55 +382,37 @@ The ion \todo{There are ion number densities, right?} number density profiles we
 of the Gromacs sofware package \cite{gromacsMANUAL}.
 
 \subsection{Comparison of ion binding to negatively charged lipid bilayers 
-between simulations and experiments using the molecular electrometer}
+between simulations and experiments using the molecular electrometer concept}
 
-As the order parameters of the $\alpha$ and $\beta$ carbons in the PC headgroup
+The order parameters of the $\alpha$ and $\beta$ carbons in the PC headgroup
 decrease proportionally to the amount of positive
 charge bound to the bilayer \cite{akutsu81,altenbach84,seelig87},
-they can be used to measure the ion binding affinity.
+and can therefore be used to measure the ion binding affinity.
 This concept, known as the molecular electrometer, is especially useful for 
 comparison between simulations and experiments, as
 the headgroup order parameters at varying cation
-concentrations can be directly calculated from 
-simulations and compared to the corresponding experimental data~\cite{catte16}. The headgroup order parameters
+concentrations can be easily calculated from
+simulations and compared to experimental data~\cite{catte16}. The headgroup order parameters
 of negatively charged PS and PG lipids also exhibit systematic, but less
 understood dependencies on the bound charge~\cite{borle85,macdonald87,roux86,roux90}.
-Therefore, the ion binding affinity to negatively charged bilayers
-can be better characterized by measuring the PC headgroup order parameters from 
-mixed bilayers~\cite{roux86,roux90,roux91}, see section \ref{electrometerFORmixtures} in the supplementary information.
+Therefore, measuring the PC headgroup order parameters from 
+mixed (here PS:PC) bilayers~\cite{roux86,roux90,roux91} (see SI section \ref{electrometerFORmixtures} provides a more straightforward way of characterizing the ion binding to negatively charged membranes.
+% Removed a paragraph here because it was out of place in the molecular electrometer section and contained some results. I  rewrote it and added to the end of next section
 
-Before using the PC headgroup order parameters to quantify the ion binding
-affinity, it is important to quantify their response to a known amount of bound charge~\cite{catte16,melcr18}.
+Important preliminary step for using the molecular electrometer concept is to calibrate the PC order parameter response to a known amount of bound charge~\cite{catte16,melcr18}.
 This can be done using experimental data from mixtures of
 monovalent cationic surfactants (dihexadecyldimethylammonium) and POPC~\cite{scherer89,melcr18},
-see section \ref{electrometerCALIBRATION} in the supplementary information.
-In this work, we also quantify the response of PC headgroup order parameters
-to the negatively charged PS headgroups, which also follows the molecular electrometer
-concept in experiments~\cite{scherer87},
-see section \ref{electrometerFORmixtures} in the supplementary information.
+(see SI section \ref{electrometerCALIBRATION}). Additionally, we quantify the response of PC headgroup order parameters
+to the negatively charged PS, which also follows the molecular electrometer
+concept in experiments~\cite{scherer87} (see SI section \ref{electrometerFORmixtures}).
 
-In the experimental $^2$H~NMR literature data used in this work~\cite{browning80,roux90},
-the lipids were first solvated to the buffer and then centrifuged to a pellet that
-was used in the measurements. Such samples have a lower lipid concentration
-(approximately 10~wt~\% of lipids~\cite{browning80,roux88,roux90}) than 
-gravimetric samples (60~wt~\%) and simulations (approximately 50-60~wt~\%) in this work.
-Larger multilamellar repeat distances are expected in the samples with lower lipid
-concentrations due to the swelling caused by electrostatic repulsion in pure PS lipid systems~\cite{millman82}.
-However, the PS headgroup order parameters measured from gravimetric samples in this work
-are in good agreement with the results from centrifuged samples in the literature~\cite{browning80} (Fig.~\ref{HGorderParameters}).
-Furthermore, the equilibrium repeat distance rapidly decreases with the addition of monovalent
-salts, and is close to the typical simulation box sizes already above 500~mM concentrations~\cite{millman82,rand89}.
-Therefore, the hydration levels of multilamellae are expected to be sufficiently similar
-in the used simulations and reference experiments.
-
-Two different definitions for the salt concentrations have been used when the molecular
-electrometer concept is applied to study ion binding affinities.
+Studies applying the molecular electrometer concept have utilized two different definitions for salt concentration:
 The concentrations are reported either in water before solvating the lipids \cite{akutsu81,roux90,catte16},
 or in bulk water after solvating the lipids \cite{altenbach84,melcr18}.
 In this work, we use the former definition to be consistent with the reference
-experimental data \cite{roux90}. The choice of definition has only a marginal effect
+experimental data \cite{roux90}. However, the choice of definition has only a marginal effect
 to the results in simulations with realistic ion binding affinity
-(section \ref{concentrationDEFsection} in the supplementary information).
+(see SI section \ref{concentrationDEFsection}).
 
 \section{Results and Discussion}
 
