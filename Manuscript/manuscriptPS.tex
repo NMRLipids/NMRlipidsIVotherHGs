@@ -756,11 +756,10 @@ PS headgroup and calcium ions in MD simulations.
 \section{Conclusions}
 Lipids with PS headgroups, and their interactions with ions,
 play an important role in lipid-mediated signaling
-processes \cite{leventis10,yeung08}. Recent studies using MD
-simulations to interpret the various spectroscopic data
-give contradictory results for the calcium binding details to PS
+processes \cite{leventis10,yeung08}. Attemps to use MD
+simulations to interpret the spectroscopic data have produced contradictory results for the calcium binding details to PS
 headgroups \cite{melcrova16,valentine18,hallock18}.  
-Here, as was previously done for PC lipids \cite{botan15,catte16},
+Here (as was previously done for PC lipids \cite{botan15,catte16})
 we used the headgroup C--H bond order parameters and the open collaboration approach to evaluate the quality
 of the headgroup structure and ion binding affinity to PS lipids
 in available MD force fields.
@@ -768,28 +767,22 @@ The main advantage of this approach is the direct connection
 between the accurately measured experimental order parameters and the simulations,
 which reduces the ambiguity in the interpretation of experiments.
 
-First, we complemented the available experimental data of PS
-lipid headgroup order parameters \cite{browning80,roux90} by measuring the signs of the order parameters.
+First, we complemented the available experimental data \cite{browning80,roux90} by measuring the signs of the PS headgroup order parameters.
 Comparison to these data revealed that none of the available force fields
 %tested using the NMRlipids open collaboration
-was accurate enough to reproduce the PS
-headgroup order parameters within the experimental accuracy. However,
+reproduce the PS headgroup order parameters within the experimental accuracy. However,
 the best models for the serine headgroup suggested a characteristic rigid conformation for its
-carboxyl group. Comparison to the previously
-measured headgroup order parameters from POPC:POPS (5:1) bilayers with different ion
+carboxyl group. Comparison to the experimentally observed order parameters in POPC:POPS (5:1) bilayers  at varying ion
 concentrations \cite{roux90} then showed that the tested MD force fields
-overestimate the cation binding affinity to the negatively charged bilayers
-containing PS lipids with two exceptions. 1) The apparently most realistic monovalent ion binding
-affinity to PS-containing lipid bilayers was observed in the MacRog
-simulations with potassium counterions. 2) The CHARMM36 force field with the recently introduced
+overestimate the cation binding affinity to these bilayers with two exceptions. 1) The MacRog simulation with potassium counterion appear to produce the most realistic monovalent ion binding
+affinity to PS-containing lipid bilayers. 2) The CHARMM36 force field with the recently introduced
 NBfix correction for calcium \cite{kim16} underestimated the calcium binding affinity.
-The experimentally measured trends of the PS headgroup order parameter response
-to the bound calcium, and to the dilution of bilayer with zwitterionic PC lipids, were not
-qualitatively reproduced in any of the tested force fields, which indicates that improvements in
-the MD force fields are necessary to study interactions between PS lipids and other biomolecules.
-This is different to the previous results with PC lipids,
+The experimentally measured response of the PS headgroup order parameter to the bound calcium, and to the dilution of bilayer with zwitterionic PC lipids, were not
+qualitatively reproduced in any of the tested force fields, which underlines the need for more accurate
+the MD force fields to study interactions between PS lipids and other biomolecules.
+This is in contrast to the previous results with PC lipids,
 where the experimentally measured headgroup order parameter responses to the bound charge
-were qualitative reproduced even though the headgroup structures themselves were
+were in qualitative agreement even though the headgroup structures themselves were
 incorrect and the cation binding affinities overestimated \cite{catte16}.
 
 Our results pave the way for the development of better MD force fields
