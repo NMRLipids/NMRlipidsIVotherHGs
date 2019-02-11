@@ -583,6 +583,7 @@ The suggested characteristic conformations of the PS headgroup can be useful whe
 \subsection{Counterion binding and interactions between PC and PS headgroups}\label{ciBINDINGsection}
 
 
+
 \begin{figure}[!tb]
   \centering
   \includegraphics[width=8.0cm]{../Figs/HGorderparametersPCvsPS.eps}
@@ -598,7 +599,7 @@ The suggested characteristic conformations of the PS headgroup can be useful whe
   \centering
   \includegraphics[width=8.0cm]{../Figs/HGorderparametersPSvsPC.eps}
   \caption{\label{HGorderparametersPSvsPC}
-    Changes of POPS headgroup order parameters with increasing amount of POPC in POPC:POPS mixtures at 298~K.
+    Modulation of POPS headgroup order parameters with increasing amount of POPC in POPC:POPS mixtures at 298~K.
     Experimental values with the signs are measured for pure POPS system in this work.
     The signs are assumed to be the same for the mixture and the values are from Ref. \citenum{roux90}.
 %    Since the experimental data of POPS in pure and diluted mixture come from
@@ -614,38 +615,36 @@ The suggested characteristic conformations of the PS headgroup can be useful whe
 
 
 Membranes containing PS lipids are always accompanied with counterions that
-modulate electrostatic interactions between lipids and other biomolecules. 
-Counterions are also suggested to screen the repulsion between charged lipid headgroups 
-in MD simulations and thus to reduce the area per lipid of PS bilayers to be smaller than in PC
-bilayers~\cite{pandit02,mukhopadhyay04,pedersen06}. 
+modulate electrostatic interactions between lipids and other biomolecules. MD simulations have suggested
+that counterions reduce the area per lipid of PS bilayers to be smaller than in PC
+bilayers~\cite{pandit02,mukhopadhyay04,pedersen06} by screening the repulsion between charged lipid headgroups. 
 Counterion density profiles along membrane normal 
-indicate significant differences between force fields in both binding affinity
+show significant differences between force fields in both binding affinity
 and distribution of ions in the interface (Fig. \ref{NAdensPOPS}).
 The experimental area per lipid (62.7~\AA$^2$) \cite{pan14} 
 is reproduced only in Gromos-CKP and in the MacRog simulation
-with potassium counterions, while other models give significantly lower areas (Fig. \ref{NAdensPOPS}).
-The counterion binding and the concomitant electrostatic screening of the headgroup
-repulsion does not fully explain the low area per molecule values,
-because the MacRog simulation, which has the strongest sodium binding
+with potassium counterions, while other models give considerably smaller areas (Fig. \ref{NAdensPOPS}).
+However, the counterion binding and the concomitant electrostatic screening of the headgroup
+repulsion does not fully explain the low area per molecule values.
+since the MacRog simulation, which has the strongest sodium binding
 (the lowest concentrations in bulk water), gives the same area per molecule
 as the CHARMM36ua simulation, which has significantly weaker counterion binding
-affinity. On the other hand, changing counterions from sodium to potassium, having weaker binding
-affinity, increases the area per molecule from 53~\AA$^2$ to 63~\AA$^2$ in MacRog simulations.
+affinity. On the other hand, MacRog simulations with potassium produce a larger area per molecule (63~\AA$^2$) than with natrium (53~\AA$^2$) in line with the weaker potassium binding affinity (Fig.~\ref{NAdensPOPS}).
 In conclusion, the results are in line with the previous study suggesting that the
 low areas per molecule in PS lipid bilayers originate from the combination
 of both counterion binding and hydrogen bonding network between lipid
-headgroups \cite{petrache04}.
+headgroups \cite{petrache04}. \todo{can we really say this based on our data? We don't discuss hydrogen bonding} 
 
 \begin{figure*}[ht]
   \centering
   \includegraphics[width=18cm]{../Figs/CHANGESwithCaClPS.eps}
   \caption{\label{changesWITHCaClPS}
-    Changes of POPC (left) and POPS (right) headgroup order parameters from POPC:POPS (5:1) mixture
+   Variation of POPC (left) and POPS (right) headgroup order parameters from POPC:POPS (5:1) mixture
     as a function CaCl$_2$ concentration from experiments \cite{roux90} and different simulations
     at 298K (except the data for Berger model is from simulation of POPC:POPS (4:1) mixture at 310K \cite{ollila07a,melcrova16}). 
     The order parameter values from systems without calcium are set as the zero point of y-axis,
-    except for the $\alpha$-carbon order parameter of POPS (bottom, right) for which the both order parameters are shifted
-    such that the lower order parameter is zero without additional ions to correctly illustrate
+    except for the $\alpha$-carbon order parameter of POPS (bottom, right) for which both order parameters are shifted
+    such that the lower order parameter is zero without additional ions. This is to correctly illustrate
     the forking with different concentrations of calcium.
     Potassium counterions are used in MacRog simulations and sodium counterions in Lipid14/17 simulations.
     In CHARMM36 and Berger simulation with added calcium, the charge is neutralized with calcium and monovalent counterions are not present.
@@ -657,43 +656,41 @@ headgroups \cite{petrache04}.
 
 
 
-Binding of cations to zwitterionic PC lipid bilayers has been previously
-evaluated against experiments using the changes of headgroup order parameters
-as a function of salt concentration \cite{catte16}.
-Studying binding of cations to negatively charged lipid bilayers is less straighforward,
-because the cationic counterions are always present and the ion-free reference state does thus not exist.
-In addition, the analysis is complicated by the artificial aggregation of counterions
-in solution observed in some simulations (section \ref{mixtureTOadditionalCIs} in the supplementary information).
+The experimentally observed modulation of headgroup order parameters
+by increasing salt concentration (the molecular electrometer concept) has been previously used to evaluate the cation binding to zwitterionic PC bilayers in simulations \cite{catte16}.
+Studying binding of cations to negatively charged lipid bilayers is less straighforward due to the presence of cationic counterions and the lack of a ion-free reference state. The analysis is further complicated by the artificial aggregation of counterions
+observed in some simulations (section \ref{mixtureTOadditionalCIs} in the SI)\todo{Why isn't this a problem with PC}.
 Therefore, we evaluate here the amount of bound charge not by adding salt
-(although also this is discussed in the section \ref{mixtureTOadditionalCIs} in the supplementary information),
+(although also this is discussed in the SI section \ref{mixtureTOadditionalCIs}),
 but by studying the changes of the headgroup order parameters with increasing amount of
 negatively charged lipids (and thus increasing amount of cationic counterions) in the bilayer.
+
 According to the molecular electrometer concept, the headgroup order parameters of POPC
 increase when negatively charged POPS lipids are incorporated in lipid bilayer
 (section \ref{HGorderparametersPCvsPEPSPGchol})~\cite{seelig87,scherer87}.
 This is reproduced in the MacRog simulations with potassium counterions (Fig. \ref{HGorderparametersPCvsPS}),
 which have the weakest binding affinity to POPS lipid bilayers (Fig.~\ref{NAdensPOPS}).
-The CHARMM36 and Berger simulations predict no change, or a decrease,
-in the POPC headgroup order parameters as a function of increased amount of POPS (Fig. \ref{HGorderparametersPCvsPS}).
+The CHARMM36 and Berger simulations either exhibit no change or show a decrease
+in the POPC headgroup order parameters as the amount of POPS increases (Fig. \ref{HGorderparametersPCvsPS}).
 This can be explained by the stronger counterion binding affinity, which cancels
 the effect of negatively charged headgroups and prevents the experimentally observed
-increase of headgroup order parameters with increasing amount of PS lipids.
+increase of headgroup order parameters with growing amount of PS lipids.
 Therefore, we suggest that the relatively weak binding of potassium
-in the MacRog simulations (Fig. \ref{NAdensPOPS}) predicts the most
+in the MacRog simulations (Fig. \ref{NAdensPOPS}) produces the most
 realistic surface charge density in membranes containing PS lipids,
 while the other tested simulation models overestimate the counterion
-binding affinity. The results are in line with the changes of headgroup order
+binding affinity. The results are in line with the behaviour of headgroup order
 parameters as a function of added counterions analyzed in section \ref{mixtureTOadditionalCIs}
-in the supplementary information.
+in the SI.
 
 The reduced forking of the POPS $\alpha$-carbon (Fig.~\ref{HGorderparametersPSvsPC})
 together with other experimental results suggest less rigid structure of PS headgroups when diluted with
 POPC~\cite{browning80,buldt81,roux90,roux91,scherer87}.
-None of the tested models reproduce the changes of POPS headgroup order
+Unfortunately, none of the tested models correctly reproduce the modulation of POPS headgroup order
 parameters with increasing amount of POPC in POPC:POPS mixtures (Fig. \ref{HGorderparametersPSvsPC}).
-Therefore, we conclude that more accurate force fields are necessary
+and we conclude that more accurate force fields are needed
 to correctly describe the PC-PS headgroup interactions in MD simulations.
-
+%Having this conclusion in every paragraph gets a bit repetive
 
 \subsection{Ca$^{2+}$ binding affinity to bilayers with negatively charged PS lipids}
 \begin{figure}[tb]
