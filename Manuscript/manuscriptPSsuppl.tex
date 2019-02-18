@@ -191,7 +191,7 @@ from Ref.~\citenum{kulig15c}. The bilayer was hydrated by a total of 5120 water
 molecules, corresponding to 40 water molecules per lipid.
 The MacRog lipid parameters \cite{kulig15b}, obtained from Ref.~\citenum{kulig15c}, were used,
 along with the TIP3P water model~\cite{jorgensen83}. The simulation parameters were identical to those used for 
-POPC/POPC mixtures with the MacRog force field, see below. The simulation was run for 200~ns using Gromacs 2016.3~\cite{abraham15}, 
+POPC/POPC mixtures with the MacRog force field, see below. The simulation was run for 200~ns using Gromacs 2016.3~\cite{abraham2015gromacs}, 
 out of which 150~ns were used for analyses. The simulation data and related files are available from Ref. \citenum{macrogPOPC298K}.
 
 \noindent
@@ -326,11 +326,12 @@ One set of simulations of POPC:POPS (5:1) mixtures with additional calcium ions 
 \todo{J. Melcr, please write simulation details} \\
 
 \subsection{Slipids}
-\todo{To be written by Piggot and Favela}
 {\it DOPC with 288 lipids.}
 The starting structure for simulation was contructed with the MEMBRANE BUILDER website~\cite{ghahremanpour13}: 288 DOPS lipids, 11232 water molecules and 288 Na ions. The Slipids~\cite{jambeck12,jambeck2012another} forcefield was used for DOPS, the TIP3P~\cite{jorgensen83} water model was used to solvate the system and Ions are described by the parameters derived by Aqvist~\cite{aqvist90}.
 Simulation was performed for 200~ns, and the last 100~ns were used for the analysis. Simulation was carried out within the NPT ensemble using the GROMACS 5.0.4 package~\cite{abraham2015gromacs}. Timestep of 2~fs was used with the leapfrog integrator. The Nos\'{e}--Hoover thermostat~\cite{nose84,hoover85} was used with reference temperature of 303~K and a relaxation time constant of 0.5~ps; lipids and water plus ions were coupled separately to the heat bath. Pressure was kept constant at 1.013~bar using a semi--isotropic Parrinello--Rahman
 barostat~\cite{parrinello81} with a time constant of 10.0~ps. Long-range electrostatic interactions were calculated using the PME method~\cite{darden93,essman95}. A real space cut-off of 1.0~nm was employed with grid spacing of 0.12~nm in the reciprocal space. Lennard-Jones potentials were cut off at 1.4~nm, with a dispersion correction applied to both energy and pressure. All covalent bonds in lipids were constrained using the LINCS algorithm~\cite{hess97}, whereas water molecules were constrained using SETTLE~\cite{miyamoto92}. Twin-range cutoffs, 1.0~nm and 1.6~nm, were used for the neighbor lists with the long-range neighbor list updated every 10 steps.
+
+\todo{Other systems to be written by Piggot}
 
 
 \subsection{Berger}
