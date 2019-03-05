@@ -59,7 +59,7 @@
 \author{Fernando Favela}
 \affiliation{Mexico}
 \author{Tiago M. Ferreira}
-\affiliation{Halle, Germany}
+\affiliation{NMR group - Institut for Physics, Martin-Luther University Halle-Wittenberg}
 \author{Ivan Gushchin}
 \affiliation{Moscow Institute of Physics and Technology}
 \author{Matti Javanainen}
@@ -108,10 +108,11 @@ electrostatic interactions and direct binding, and can induce
 membrane fusion and phase separation in the presence of calcium ions.
 Molecular details of these phenomena are not well understood,
 because accurate models to interpret the experimental data have not
-been available. Here, we gather a set of experimental NMR data that 
-can, together with molecular dynamics (MD) simulations, be used
-to decipher the lipid headgroup structures and ion binding
-in pure PS and mixed (here PS:PC) lipid bilayers. Using the open collaboration
+been available. Here, we use solid-state NMR S-DROSS experiments to measure the signs of the previous set of experimental NMR
+order parameter magnitudes available for POPS to assess the phosphoserine structure in the different atomistic force-fields presently used.    
+We also gather a set of experimental NMR data that can be used to assess the ion binding to pure PS and mixed PC:PS lipid bilayers
+in molecular dynamics (MD) simulations.
+Using the open collaboration
 method, we extract data from wide range of available PS MD models (force fields) and perform a comparison to NMR results.
 %or: Using the open collaboration method, we collect a database of MD simulations using wide range of available PS models (force fields) and perform a comparison to NMR results
 We find that none of the models reproduce the NMR data within experimental accuracy,
@@ -145,7 +146,7 @@ signaling proteins \cite{leventis10}, regulate
 surface charge and protein localization \cite{yeung08}, and
 induce protein aggregation \cite{zhao04,gorbenko06}.
 Some protein domains interact specifically with PS lipids,
-while others are attracted by nonspecific electrostatics and the
+while other protein sites are attracted by nonspecific electrostatics and the
 binding can be regulated by calcium \cite{leventis10}.
 Therefore, the structural details
 of lipid headgroups and the details of cation binding
@@ -157,10 +158,11 @@ due to hydrogen bonding network or
 electrostatic interactions \cite{browning80,buldt81}.
 While monovalent ions interact weakly with
 PS-containing bilayers, multivalent cations and Li$^+$ are able to form strong
-dehydrated molecular complexes with PS lipids \cite{hauser77,kurland79,eisenberg79,hauser83,dluhy83,hauser85,feigenson86,mattai89,roux90,roux91,boettcher11}. The dehydrated complexes of PS headgroup and calcium ions can even lead to
+dehydrated molecular complexes with PS lipids \cite{hauser77,kurland79,eisenberg79,hauser83,dluhy83,hauser85,feigenson86,mattai89,roux90,roux91,boettcher11}.
+The dehydrated complexes of PS headgroup and calcium ions can even lead to
 phase separation \cite{hauser77,kurland79,hauser85,feigenson86,mattai89,roux90,roux91}.
-On the other hand, some studies propose that the specific binding
-affinity is similar for the negatively charged and zwitterionic lipids, and
+On the other hand, some studies suggest that the specific binding affinity of Ca$^{2+}$
+to negatively charged and zwiterionic phospholipids is similar, and that
 the increased cation binding to negatively charged lipid bilayers arises only due
 to the increased local cation concentration in the membrane vicinity~\cite{seelig90,sinn06}.
 Dilution of bilayers with PC lipids makes PS headgroups
@@ -234,12 +236,12 @@ Based on these data, the cation binding affinity to POPC bilayer has since been 
 \todo{Should we leave the mention of ECC out from the Introduction
 (i.e., mention it only in the Conclusions) as the ECC parameters are not used in the paper?} 
 
-Here, we collect a set of experimentally measured lipid headgroup and
-glycerol backbone C--H bond order parameters, which can be used to
-evaluate the quality of headgroup structure and ion binding affinity
-in MD simulations of lipid bilayers containing PS lipids. 
-The available MD simulation models of PS are then compared with
-the collected experimental data.
+Here, we extend the available set of experimentally measured PS lipid headgroup and
+glycerol backbone C--H bond order parameters
+by measuring the signs of the order parameters with S-DROSS solid-state NMR spectroscopy.
+The quality of headgroup structures and ion binding affinity in
+%MD simulations of lipid bilayers containing PS lipids
+the available MD simulation models of PS are then compared with the collected experimental data.
 %using the NMRlipids open collaboration project (\url{nmrlipids.blogspot.fi}).
 The results pave the way
 for development of lipid models that correctly describe 
@@ -310,11 +312,11 @@ POPC:POPS (5:1)/Na$^{+}$  & GROMOS-CKPM \cite{??}  & 0  & 110 & ?  & 0  & 298  &
 
 \section{Methods}
 
-\subsection{C--H bond order parameters from the natural abundance $^{13}$C\,NMR}
+\subsection{Experimental C--H bond order parameters}% from the natural abundance $^{13}$C\,NMR}
 
-Headgroup and glycerol backbone C--H bond order parameters of POPS
-were determined from the chemical-shift resolved dipolar splittings
-measured with a R-type Proton Detected Local Field (R-PDLF) experiment~\cite{dvinskikh04}.
+The headgroup and glycerol backbone C--H bond order parameter magnitudes of 1-palmitoyl-2-oleoyl-{\it sn}-glycero-3-phospho-L-serine (POPS)
+were determined by measuring the chemical-shift resolved dipolar splittings
+with a R-type Proton Detected Local Field (R-PDLF) experiment~\cite{dvinskikh04}.
 The corresponding order parameter signs were measured with a S-DROSS experiment~\cite{gross97}
 using natural abundance $^{13}$C solid state NMR spectroscopy as described previously \cite{ferreira13,ferreira16}.
 The experiments were done in a Bruker Avance III 400 spectrometer operating at a $^1$H Larmor frequency of 400.03 MHz.
@@ -323,33 +325,32 @@ The following experimental setups were used.
 
 {\emph{C--H bond order parameters from the R-PDLF experiment.}} The parameters are described according to Figures 1c and 2c of the original reference
 for the R-PDLF experiment~\cite{dvinskikh04}.  The refocused-INEPT delays were $\tau_1=$\,1.94\,ms and $\tau_2=$\,0.97\,ms.
-Radio frequency pulses with the nutation frequencies: 46.35 kHz (R18$^7_1$ pulses), 63.45 kHz ($^{13}$C 90$^{\rm{o}}$ and 180$^{\rm{o}}$),
+The used radio frequency pulses had the following nutation frequencies: 46.35 kHz (R18$^7_1$ pulses), 63.45 kHz ($^{13}$C 90$^{\rm{o}}$ and 180$^{\rm{o}}$),
 50 kHz (SPINAL64 $^1$H decoupling pulses).
-\todo{Verb missing. Would it be correct to say: 'Radio frequency pulses had the nutation frequencies:'?}
 The $t_1$ increment was equal to 10.79 $\mu$s $\times18\times2$, and 32 points in the indirect
-dimension were recorded using 1024 scans for each, with a recycle delay of 5\,s and a spectral with \todo{'with' $\to$ 'width'?} of 149.5 ppm.
+dimension were recorded using 1024 scans for each, with a recycle delay of 5\,s and a spectral width of 149.5 ppm.
 
 \emph{Order parameter signs from the S-DROSS experiment.}
 The parameters are described according to Figures 1b and 1c of the original reference for the S-DROSS
 experiment~\cite{gross97}. The refocused-INEPT delay $\delta_2$ was 1.19 ms. The $\tau_1$ and $\tau_2$ in the S-DROSS recoupling
-blocks $R$ were set as $\tau_1=$\,39.4\,$\mu$s and $\tau_2=$\,89.4 $\mu$s. Radio frequency pulses with the nutation
+blocks $R$ were set as $\tau_1=$\,39.4\,$\mu$s and $\tau_2=$\,89.4 $\mu$s. The used radio frequency pulses had the nutation
 frequencies: 63.45 kHz ($^{13}$C 90$^{\rm{o}}$ and 180$^{\rm{o}}$), 50 kHz ($^1$H\,SPINAL64 decoupling).
-\todo{Verb missing. Would it be correct to say: 'Radio frequency pulses had the nutation frequencies:'?}
 The $t_1$ increment (dipolar recoupling dimension) was 800 $\mu$s, and a total of 8 points along $t_1$ were
-measured using 1024 scans for each, with a recycle delay of 5\,s and a spectral with \todo{'with' $\to$ 'width'?}  of 149.5 ppm.
+measured using 1024 scans for each, with a recycle delay of 5\,s and a spectral width of 149.5 ppm.
 
 \emph{Numerical simulations of S-DROSS curves.}
-The numerical simulations of S-DROSS curves were performed with the SIMPSON simulation package \cite{bak00}
-using as input the $^{13}$C--$^1$H
+The numerical simulations of S-DROSS curves were performed using the SIMPSON simulation package \cite{bak00}
+by inputing the $^{13}$C--$^1$H
 dipolar couplings, either as determined by the R-PDLF experiments, or as calculated from the known $^2$H quadrupolar couplings \cite{browning80}.
 The chemical shift anisotropy and homonuclear couplings were neglected, and the input file {\it{rep2000}}\todo{citation needed?} was used to simulate a random
 distribution of bilayer orientations in the samples studied.
 
 \emph{Sample preparation.}
-The sample was prepared simply by mixing the POPS \todo{From some company?} with water (lipid:water 60:40\,wt-\%) in an Eppendorf
-tube by mixing and centrifuging the sample repeatedly until a \todo{visually(?)} homogeneous viscous fluid was obtained.
-Then 20 mg of the sample was  transferred to an NMR insert suitable for 4 mm NMR rotors.  
-\todo{Maybe we need little bit more information about the mixing procedure?} 
+The sample was prepared simply by mixing POPS (1-palmitoyl-2-oleoyl-{\it sn}-glycero-3-phospho-L-serine, purchased from Avanti Polar Lipids
+as sodium salt) with water (lipid:water 60:40\,wt-\%) in an Eppendorf tube by mixing and centrifuging the sample repeatedly until a homogeneous viscous fluid was obtained
+\todo{How long and how many repeats did this take approximately? Was the homogeneity determined visually?}.
+Then 20 mg of the sample was transferred to an NMR insert suitable for 4 mm NMR rotors.  
+
 
 \subsection{Molecular dynamics simulations}
 Molecular dynamics simulation data were collected using
@@ -371,7 +372,7 @@ from the carbon and hydrogen positions using the definition
 S_{\rm CH}=\frac{1}{2}\langle 3\cos^2\theta -1 \rangle,
 \end{equation}
 where $\theta$ is the angle between the C--H bond and the membrane normal
-(taken to align with $z$, with bilayer periodic in the $xy$-plane).
+(taken to align with $z$, with bilayer periodicity in the $xy$-plane).
 Angular brackets denote average over all sampled configurations.
 The order parameters were first calculated averaging over time separately
 for each lipid in the system. The average and
@@ -425,14 +426,14 @@ to the results in simulations with realistic ion binding affinity
     The headgroup and glycerol backbone region of the (A) INEPT spectrum and
     (B) 2D R-PDLF spectra.
     (C) Experimental S-DROSS data (points), and SIMPSON simulations (blue lines) with
-    the order parameter values of -0.12 for the $\beta$-carbon, and 0.09 and -0.02
-    for the $\alpha$-carbon splittings.
+    the C--H bond order parameter values of -0.12 for the $\beta$-carbon, and +0.09 and -0.02
+    for the $\alpha$-carbon.
     Dashed gray line is the S-DROSS curve from a SIMPSON simulation with a positive value (+0.02) 
-    for the smaller $\alpha$-carbon order parameter.
+    for the smaller $\alpha$-carbon C--H bond order parameter.
   }
   \todo{I think that the peak labeling would be good to show also in (A).}\\
-  \todo{Also for $\alpha$ these are OPs, right,  thus we could just exclude the word 'splittings'?}
-  \todo{Please confirm: Was the positive value used for $\alpha$ in the gray curve 0.02?}
+%  \todo{Also for $\alpha$ these are OPs, right,  thus we could just exclude the word 'splittings'?}
+%  \todo{Please confirm: Was the positive value used for $\alpha$ in the gray curve 0.02?}
 \end{figure}
 \begin{figure}[!htb]
   \centering
@@ -458,24 +459,37 @@ The peaks for $\beta$ and $\alpha$ carbons were assigned according to the
 known order parameters from the $^2$H\,NMR experiments~\cite{browning80}.
 Slices of the R-PDLF spectra and the resulting order parameter values
 are shown in the supplementary information (Fig. \ref{DPslices}). 
+
 Since the R-PDLF and previous $^2$H\,NMR experiments \cite{browning80,roux91} give 
 only the absolute values of order parameters, we determined the signs of the PS headgroup
 order parameters using the S-DROSS experiment \cite{gross97}.
-The S-DROSS slice clearly shows that the order parameter of
-the $\beta$-carbon is negative (Fig. \ref{PShgSIGNSsimpson} C)), \todo{
-Could we explain in a few words how this is clearly seen?}
-which is confirmed by SIMPSON simulations. The beginning of the S-DROSS slice
-suggests that the larger order parameter of the $\alpha$-carbon 
-is positive and the deviation towards negative values with longer T$_1$ times suggests
-that the smaller order parameter is negative. This is confirmed by a SIMPSON simulation
+For a given carbon, its S-DROSS dipolar modulation profile in the indirect dimension is a superposition
+of sinusoidal functions from the possible orientations of crystallites in the sample (or bilayer patches).
+We phase corrected the 2D spectrum in the direct dimension such that positive and negative signs for the C—H
+bond order parameter give rise to profiles that initially increase and decrease, respectively.
+In practice, it is useful to use the known negative sign of the acyl chain carbons as a reference to perform
+the phase correction and interpret the distinct initial slopes of the S-DROSS profiles as shown in figure 1. 
+The S-DROSS slice for the $\beta$-carbon clearly shows an initial decrease and therefore its order parameter must be negative.
+For the $\alpha$-carbon such analysis is not as trivial due to the two inequivalent order parameters of the two distinct C—H bonds.
+However, the beginning of its S-DROSS slice suggests that the larger order parameter of the alpha-carbon is positive and the
+decrease towards negative values at longer $t_1$ suggests that the smaller order parameter is negative.    
+%
+%The S-DROSS slice clearly shows that the order parameter of
+%the $\beta$-carbon is negative (Fig. \ref{PShgSIGNSsimpson} C)), \todo{
+%Could we explain in a few words how this is clearly seen?}
+%which is confirmed by SIMPSON simulations. The beginning of the S-DROSS slice
+%suggests that the larger order parameter of the $\alpha$-carbon 
+%is positive and the deviation towards negative values with longer T$_1$ times suggests
+%that the smaller order parameter is negative.
+%
+This is confirmed by a SIMPSON simulation
 using the value of -0.02 from $^2$H\,NMR experiment \cite{roux91} for the smaller order parameter.
 The literature value was used because the
-resolution of our experiment was not sufficient to determine the
+resolution of our R-PDLF experiment was not sufficient to determine the
 small value of the order parameter.
 The S-DROSS curve from SIMPSON simulation with a positive value for the smaller order parameter
 (dashed grey in Fig. \ref{PShgSIGNSsimpson} C)) did not agree with the experiment, 
-confirming \todo{Or rather 'corroborating'?}
-the interpretation that the smaller order parameter is negative.
+corroborating the interpretation that the smaller order parameter is negative.
 
 \begin{figure}[]
   \centering
@@ -511,7 +525,8 @@ available.
 %Moved here from the molecular electrometer paragraph because there it distrupted the flow of the section and it contains results. This also enables referring to figures in order. I also removed the refs which do not seem to refer to the actual data used in the figure.
 %Rewrote the paragraph, see if ok.
 
-We note that the the DOPS $^2$H~NMR reference data found in the literature~\cite{browning80,roux90} was obtained by first solvating the lipids to the buffer and then centrifuging the sample to a pellet that was used in the measurements. Such samples have a lower lipid concentration
+We note that the the DOPS $^2$H~NMR reference data found in the literature~\cite{browning80,roux90} was obtained by first solvating
+the lipids with a buffer solution and then centrifuging the sample to a pellet that was used for the measurements. Such samples have a lower lipid concentration
 (approximately 10~wt~\% of lipids~\cite{browning80,roux88,roux90}) than 
 gravimetric samples (60~wt~\%) and simulations (approximately 50-60~wt~\%) in this work.
 Larger multilamellar repeat distances are expected in the samples with lower lipid
@@ -531,8 +546,10 @@ are in good agreement with the results from centrifuged samples~\cite{browning80
     (A) C$_\alpha$-C$_\beta$-C$_\gamma$-O$_\gamma$ and  O$_\alpha$-C$_\alpha$-C$_\beta$-N
     of PS headgroup and (B) N-C$_\beta$-C$_\alpha$-O$_\alpha$ and C$_\beta$-C$_\alpha$-O$_\alpha$-P
     dihedrals of PS and PC headgroups.
-    The CHARMM36 POPC simulation is from Ref. \citenum{POPCcharmm36T303K} and Slipids POPC from Ref. \citenum{POPCslipids298K}.
+    The publicly available trajectories via Zenodo were used for CHARMM36 POPC and Slipids POPC
+    (Refs. \citenum{POPCcharmm36T303K} and \citenum{POPCslipids298K}, respectively).
   }
+  \todo{Figure clarity is questioned in: https://github.com/NMRLipids/NMRlipidsIVotherHGs/issues/48}
 \end{figure}
 
 \begin{figure}[]
@@ -546,7 +563,8 @@ are in good agreement with the results from centrifuged samples~\cite{browning80
 
 The different PS MD models produce a wide variety of headgroup and glycerol backbone order parameters (Fig.~\ref{HGorderParametersPS})
 and structures (Fig.~\ref{HGandGLYstructuresPS}) between different simulation models,
-as previously observed also for PC lipids \cite{botan15}. None of the models produces a set of order parameters in full agreement with the experiments. The models perform generally less well for PS than for PC
+as previously observed also for PC lipids \cite{botan15}. None of the models produces a set of order parameters in full agreement with the experiments.
+The models perform generally less well for PS than for PC
 (Figs.~\ref{HGorderParametersPS} and \ref{comparisonTablePS} vs. Figs. 2 and 4 in Ref.~\cite{botan15}).
 which complicates the interpretation of structural differences between PC and PS headgroups.
 
@@ -554,8 +572,9 @@ which complicates the interpretation of structural differences between PC and PS
   \centering
   \includegraphics[width=9.0cm]{../Figs/NAdensPOPS.eps}
   \caption{\label{NAdensPOPS}
-    Counterion densities of POPS lipid bilayer along the membrane normal from
-    simulations with different force fields.
+    Counterion density profiles along the membrane normal and areas per lipid (A$_{\rm pl}$)
+    of POPS lipid bilayer from simulations with different force fields.
+    The experimental area per lipid is~62.7~$\pm$~1.3~\AA$^2$~\cite{pan14}.
   }
   \todo{Commented by M. Javanainen in blog:
     MacRog pure POPS is simulated with Verlet cutoff scheme, Piggot is rerunning with group cutoff scheme. Check if affects results \& update figures when ready}
@@ -565,9 +584,11 @@ which complicates the interpretation of structural differences between PC and PS
 
 However, concentrating on the headgroup, we see that the best performing models (Slipids, CHARMM36 and CHARMM36ua) do replicate the larger-than-in-PC forking of the $\alpha$-carbon \todo{observed in the experiments?} and the Slipids force field additionally correctly produces the significantly smaller $\beta$-carbon order parameter for PS compared to PC (Fig. \ref{HGorderParametersPS} vs. Fig. 2 in Ref.~\citenum{botan15}) \todo{refer to experiments also?}.
 
-Interestingly, the C$_\alpha$-C$_\beta$-C$_\gamma$-O$_\gamma$  dihedral with
-a single and narrow peak in the angle distribution close to 120$^{\circ}$ is more restricted
-in the best three force field while other models give two maxima with different angles (Fig. \ref{dihedralsHG}).
+%Interestingly, the C$_\alpha$-C$_\beta$-C$_\gamma$-O$_\gamma$  dihedral with
+%a single and narrow peak in the angle distribution close to 120$^{\circ}$ is more restricted
+%in the best three force field while other models give two maxima with different angles (Fig. \ref{dihedralsHG}).
+Interestingly, the three models that best fit the experimental data have a narrower distribution in the C$_\alpha$-C$_\beta$-C$_\gamma$-O$_\gamma$
+dihedral angle (single peak around 120$^{\circ}$) in comparison to the other models which yield a distribution between two angles (Fig. \ref{dihedralsHG}).
 The restricted motion is also visible in the sampled conformations (Figs.~\ref{HGstructuresPSandPC} (A) and \ref{HGandGLYstructuresPS})
 suggesting that the rotation of the carboxyl group is limited in the serine headgroup.
 In addition, the N-C$_\beta$-C$_\alpha$-O$_\alpha$ dihedral exhibits a more asymmetric
@@ -621,7 +642,7 @@ bilayers~\cite{pandit02,mukhopadhyay04,pedersen06} by screening the repulsion be
 Counterion density profiles along membrane normal 
 show significant differences between force fields in both binding affinity
 and distribution of ions in the interface (Fig. \ref{NAdensPOPS}).
-The experimental area per lipid (62.7~\AA$^2$) \cite{pan14} 
+The experimental area per lipid (62.7~$\pm$~1.3~\AA$^2$) \cite{pan14} 
 is reproduced only in Gromos-CKP and in the MacRog simulation
 with potassium counterions, while other models give considerably smaller areas (Fig. \ref{NAdensPOPS}).
 However, the counterion binding and the concomitant electrostatic screening of the headgroup
@@ -704,7 +725,7 @@ to correctly describe the PC-PS headgroup interactions in MD simulations.
   \todo{Should we include also counterions into the plot?} \\
 \end{figure}
 
-Calcium binding affinity to membranes containing the negative charged PS lipids can be
+Calcium binding affinity to membranes containing the negatively charged PS lipids can be
 experimentally measured by detecting the PC lipid headgroup order parameters
 from POPC:POPS (5:1) mixtures (section~\ref{electrometerFORmixtures}),
 where the measurement is not complicated by the dehydrated lipid-ion complexes and phase separation and the bilayer remains uniform~\cite{feigenson86,mattai89,roux90,roux91}.
