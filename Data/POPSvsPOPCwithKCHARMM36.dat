@@ -7,10 +7,12 @@
 #
 # K counterions
 #
+# Error bars of pure POPS calculated from two idependent simulations
+#
 # Average over two datasets if available
 #
-# mole fraction of PC        beta          alpha1             alpha2
-0                          -0.0662314      0.0628028         -0.0463657
-0.5                        -0.10282        0.06229           -0.08170
-0.83                       -0.147044962519 0.11183494298     -0.111750586974
+# mole fraction of PC        beta         err       alpha1         err           alpha2             err
+0                          -0.0662314     0.002     0.0628028      0.003         -0.0463657      0.009
+0.5                        -0.10282       0.00507   0.06229        0.00665       -0.08170        0.00469
+0.83                       -0.14008       0.00464   0.10243        0.00824       -0.10749        0.00508 
 

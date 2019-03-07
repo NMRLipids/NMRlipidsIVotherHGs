@@ -575,7 +575,8 @@ which complicates the interpretation of structural differences between PC and PS
     The experimental area per lipid is~62.7~$\pm$~1.3~\AA$^2$~\cite{pan14}.
   }
   \todo{Commented by M. Javanainen in blog:
-    MacRog pure POPS is simulated with Verlet cutoff scheme, Piggot is rerunning with group cutoff scheme. Check if affects results \& update figures when ready}
+    MacRog pure POPS is simulated with Verlet cutoff scheme, Piggot is rerunning with group cutoff scheme. Check if affects results \& update figures when ready} \\
+  \todo{It has been suggested that we should format this with the same style as in NMRlipids II: https://github.com/NMRLipids/NMRlipidsIVotherHGs/issues/44}
 \end{figure}
 
 
@@ -609,6 +610,8 @@ The suggested characteristic conformations of the PS headgroup can be useful whe
   \caption{\label{HGorderparametersPCvsPS}
     Changes of POPC headgroup order parameters with increasing amount of POPS in POPC:POPS mixtures at 298~K.
     Experimental values are from Ref. \citenum{scherer87} with the signs measured in Ref.~\citenum{ferreira16}.
+    The value from the CHARMM36 simulation with sodium is the average of two independent simulations and
+    the error bar is given as the difference between the results divided by two.
   }
   \todo{After we know which force field is used for POPC in Gromos-CKP simulations, we might be able to
     add Gromos-CKP data into this plot.}
@@ -621,14 +624,13 @@ The suggested characteristic conformations of the PS headgroup can be useful whe
     Modulation of POPS headgroup order parameters with increasing amount of POPC in POPC:POPS mixtures at 298~K.
     Experimental values with the signs are measured for pure POPS system in this work.
     The signs are assumed to be the same for the mixture and the values are from Ref. \citenum{roux90}.
-%    Since the experimental data of POPS in pure and diluted mixture come from
-%    different experimental sets ($^{13}$C NMR in this work and $^{2}$H NMR in Ref. \citenum{roux90}),
-%    the experimental change of the order parameter is less accurate than in typical measurements
-%    where same technique is used in all conditions, see discussion about qualitative and quantitative 
-%    accuracy in Ref. \citenum{ollila16}.
+    Because the experimental values of POPS in pure and mixed bilayers come from $^{13}$C NMR (this work) and $^2$H NMR (Ref. \citenum{roux90}), respectively,
+    the error bars of 0.02 are used here \cite{botan15,ollila16}.
     The y-axis for the $\alpha$-carbon results of POPS (bottom) is transferred
     with the same value for both order parameters such that the lower order
     parameter value from pure POPS is at zero to correctly illustrate the significant forking.
+    The values from CHARMM36 and Gromos simulations are averages of two independent simulations and
+    the error bars are given as the difference between the results divided by two.
   }
 \end{figure}
 
@@ -721,6 +723,7 @@ to correctly describe the PC-PS headgroup interactions in MD simulations.
     The density profiles for all the simulated concentrations are given in SI figure \ref{CAdensPCPSmixtureALL}.
   }
   \todo{Should we include also counterions into the plot?} \\
+  \todo{It has been suggested that we should format this with the same style as in NMRlipids II: https://github.com/NMRLipids/NMRlipidsIVotherHGs/issues/44}
 \end{figure}
 
 Calcium binding affinity to membranes containing the negatively charged PS lipids can be

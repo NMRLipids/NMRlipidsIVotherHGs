@@ -8,6 +8,9 @@
 #
 # Order parameters reported
 #
-# mole fraction of PC        beta     alpha1       alpha2
-0                           -0.12     -0.02         0.09      
-0.83                        -0.0991   -0.0134848    0.0625
+# Because the results of POPS in pure and mixed bilayers come from 13C NMR and 2H NMR, respectively, the error bars of 0.02 should be used here
+# as discussed in http://dx.doi.org/10.1021/acs.jpcb.5b04878 and http://dx.doi.org/10.1016/j.bbamem.2016.01.019
+#
+# mole fraction of PC        beta     alpha1       alpha2     err 
+0                           -0.12     -0.02         0.09      0.02
+0.83                        -0.0991   -0.0134848    0.0625    0.02
