@@ -344,14 +344,13 @@ measured using 1024 scans for each, with a recycle delay of 5\,s and a spectral 
 The numerical simulations of S-DROSS curves were performed using the SIMPSON simulation package \cite{bak00}
 by inputing the $^{13}$C--$^1$H
 dipolar couplings, either as determined by the R-PDLF experiments, or as calculated from the known $^2$H quadrupolar couplings \cite{browning80}.
-The chemical shift anisotropy and homonuclear couplings were neglected, and the input file {\it{rep2000}}\todo{citation needed?} was used to simulate a random
+The chemical shift anisotropy and homonuclear couplings were neglected, and the SIMPSON input file {\it{rep2000}} was used to simulate a random
 distribution of bilayer orientations in the samples studied.
 
 \emph{Sample preparation.}
-The sample was prepared simply by mixing POPS (1-palmitoyl-2-oleoyl-{\it sn}-glycero-3-phospho-L-serine, purchased from Avanti Polar Lipids
-as sodium salt) with water (lipid:water 60:40\,wt-\%) in an Eppendorf tube by mixing and centrifuging the sample repeatedly until a homogeneous viscous fluid was obtained
-\todo{How long and how many repeats did this take approximately? Was the homogeneity determined visually?}.
-Then 20 mg of the sample was transferred to an NMR insert suitable for 4 mm NMR rotors.  
+The sample was prepared simply by mixing POPS powder (1-palmitoyl-2-oleoyl-{\it sn}-glycero-3-phospho-L-serine, purchased from Avanti Polar Lipids
+as sodium salt) with water (lipid:water 60:40\,wt-\%) in an Eppendorf tube by mixing and centrifuging the sample approximately 5 to 6 times
+until a homogeneous viscous fluid was visually observed. Then 20 mg of the sample was transferred to an NMR insert suitable for 4 mm NMR rotors.  
 
 
 \subsection{Molecular dynamics simulations}
@@ -433,8 +432,6 @@ to the results in simulations with realistic ion binding affinity
     Dashed gray line is the S-DROSS curve from a SIMPSON simulation with a positive value (+0.02) 
     for the smaller $\alpha$-carbon C--H bond order parameter.
   }
-  \todo{I think that the peak labeling would be good to show also in (A).
-  There is possibly a new version of (C) coming.}\\
 \end{figure}
 \begin{figure}[!htb]
   \centering
@@ -466,8 +463,8 @@ For a given carbon, its S-DROSS dipolar modulation profile in the indirect dimen
 of sinusoidal functions from the possible orientations of crystallites in the sample (or bilayer patches).
 We phase corrected the 2D spectrum in the direct dimension such that positive and negative signs for the C—H
 bond order parameter give rise to profiles that initially increase and decrease, respectively.
-In practice, it is useful to use the known negative sign of the acyl chain carbons as a reference to perform
-the phase correction and interpret the distinct initial slopes of the S-DROSS profiles as shown in figure 1. 
+In practice, we use the known negative sign of the acyl chain carbons as a reference to perform
+the phase correction and interpret the distinct initial slopes of the S-DROSS profiles (Fig. \ref{DPslices}). 
 The S-DROSS slice for the $\beta$-carbon clearly shows an initial decrease and therefore its order parameter must be negative.
 For the $\alpha$-carbon such analysis is not as trivial due to the two inequivalent order parameters of the two distinct C—H bonds.
 However, the beginning of its S-DROSS slice suggests that the larger order parameter of the alpha-carbon is positive and the
@@ -482,8 +479,9 @@ decrease towards negative values at longer $t_1$ suggests that the smaller order
 %that the smaller order parameter is negative.
 %
 This is confirmed by a SIMPSON simulation
-using the value of -0.02 from $^2$H\,NMR experiment \cite{roux91} for the smaller order parameter.
-The literature value was used because the
+using the order parameter values of +0.09 from dipolar coupling measured here (Fig. \ref{DPslices})
+and -0.02 from the $^2$H\,NMR experiment~\cite{roux91}.
+The literature value for the smaller order parameter was used because the
 resolution of our R-PDLF experiment was not sufficient to determine the
 small value of the order parameter.
 The S-DROSS curve from SIMPSON simulation with a positive value for the smaller order parameter
