@@ -50,9 +50,10 @@ set yrange [0:1.19]
 set ylabel " "
 unset label
 set label  "LIPID17"  at graph  0.4,0.8
-set key at graph 0.6,0.7
+set key at graph 0.72,0.7
 #set size 1.0,0.2
-plot "../../../MATCH/Data/Lipid_Bilayers/POPS+83%popc+500mMCaCl/T298K/MODEL_LIPID17/number_density_ions.dat" using 1:2 with lines title '500 mM' lw 4 lc rgb 'black',\
+plot "../../../MATCH/Data/Lipid_Bilayers/POPS+83%popc+500mMCaCl/T298K/MODEL_LIPID17/number_density_ions.dat" using 1:2 with lines title '500 mM ff99 ions' lw 4 lc rgb 'black',\
+     "../../../MATCH/Data/Lipid_Bilayers/POPS+83%popc+410mMCaCl/T298K/MODEL_LIPID17/IONdens.xvg" using 1:2 with lines title '410 mM Dang ions' lw 4 lc rgb 'red',\
 
 
 
