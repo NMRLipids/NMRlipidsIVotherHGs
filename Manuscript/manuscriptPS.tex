@@ -362,11 +362,11 @@ S_{\rm CH}=\frac{1}{2}\langle 3\cos^2\theta -1 \rangle,
 where $\theta$ is the angle between the C--H bond and the membrane normal
 (taken to align with $z$, with bilayer periodicity in the $xy$-plane).
 Angular brackets denote average over all sampled configurations.
-The order parameters were first calculated averaging over time separately
-for each lipid in the system. The average and
-the standard error of the mean were then calculated over different lipids.
-Python program ({\tt scripts/calcOrderParameters.py}) that uses the
-MDAnalysis library \cite{agrawal11,gowers16} is available in Ref. \citenum{MATCHgit}. 
+The order parameters were calculated by first averaging over time separately
+for each lipid in the system, and then calculating the average and
+the standard error of the mean over the different lipids. The analysis was conducted using a
+Python program ({\tt calcOrderParameters.py}, available in Ref. \citenum{MATCHgit}) that utilizes the
+MDAnalysis library \cite{agrawal11,gowers16}. 
 The ion number density profiles were calculated using the {\tt gmx density} tool
 of the Gromacs sofware package \cite{gromacsMANUAL}.
 
@@ -381,14 +381,13 @@ This concept, known as the molecular electrometer, is especially useful for
 comparison between simulations and experiments, as
 the headgroup order parameters at varying cation
 concentrations can be easily calculated from
-simulations and compared to experimental data~\cite{catte16}. The headgroup order parameters
+simulations~\cite{catte16}. The headgroup order parameters
 of negatively charged PS and PG lipids also exhibit systematic, but less
 understood dependencies on the bound charge~\cite{borle85,macdonald87,roux86,roux90}.
 Therefore, measuring the PC headgroup order parameters from 
-mixed (here PS:PC) bilayers~\cite{roux86,roux90,roux91} (see SI section \ref{electrometerFORmixtures} provides a more straightforward way of characterizing the ion binding to negatively charged membranes.
-% Removed a paragraph here because it was out of place in the molecular electrometer section and contained some results. I  rewrote it and added to the end of next section
+mixed (here PS:PC) bilayers~\cite{roux86,roux90,roux91} (see also SI section \ref{electrometerFORmixtures}) provides a more straightforward way of characterizing the ion binding to negatively charged membranes.
 
-Important preliminary step for using the molecular electrometer concept is to calibrate the PC order parameter response to a known amount of bound charge~\cite{catte16,melcr18}.
+Calibrating the PC order parameter response to a known amount of bound charge~\cite{catte16,melcr18} is an important preliminary step for using the molecular electrometer concept.
 This can be done using experimental data from mixtures of
 monovalent cationic surfactants (dihexadecyldimethylammonium) and POPC~\cite{scherer89,melcr18},
 (see SI section \ref{electrometerCALIBRATION}). Additionally, we quantify the response of PC headgroup order parameters
@@ -396,7 +395,7 @@ to the negatively charged PS, which also follows the molecular electrometer
 concept in experiments~\cite{scherer87} (see SI section \ref{electrometerFORmixtures}).
 
 Studies applying the molecular electrometer concept have utilized two different definitions for salt concentration:
-The concentrations are reported either in water before solvating the lipids \cite{akutsu81,roux90,catte16},
+the concentrations are reported either in water before solvating the lipids \cite{akutsu81,roux90,catte16},
 or in bulk water after solvating the lipids \cite{altenbach84,melcr18}.
 In this work, we use the former definition to be consistent with the reference
 experimental data \cite{roux90}. However, the choice of definition has only a marginal effect
