@@ -464,22 +464,20 @@ the cation binding affinity also to the lipid bilayers containing mixtures of PC
 
 \pagebreak
 \section{Calibration of PC headgroup order parameter response to the bound cations}\label{electrometerCALIBRATION}
-Before using the headgroup order parameters to compare ion binding affinity between simulations
-and experiments, the response of the order parameters to the bound charge in simulations should be quantified
-against experiments~\cite{catte16,melcr18}. In our previous work~\cite{catte16},
-the ratio $\Delta S_{\rm CH}^\beta / \Delta S_{\rm CH}^\alpha$ was in good agreement with the experiments~\cite{akutsu81}
-in the Lipid14 model, but was underestimated by other models. In the more recent study~\cite{melcr18},
+%HA: I rewrote this paragraph based on discussion with markus to make it more clear. Please verify that the statements are still accurate
+When using the molecular electrometer concept to compare ion binding affinity between simulations
+and experiments, one needs to keep in mind that two things affect how much a given order parameter changes when solution charge content is varied: 1) the change in the amount of bound charge and 2) the sensitivity of the order parameter to bound charge. Therefore, the response of the order parameters to the bound charge in simulations needs to be first calibrated
+against experiments~\cite{catte16,melcr18}. 
+
+In our previous work~\cite{catte16}, we investigated the change in order parameters under varying concentrations of mono- and divalent salts and concluded that the experimental $\Delta S_{\rm CH}^\beta / \Delta S_{\rm CH}^\alpha$ ratio~\cite{akutsu81} was well reproduced by the Lipid14 model, but underestimated by other force fields. In a more recent study~\cite{melcr18},
 the headgroup order parameter responses were compared more carefully with the experiments of
-cationic dihexadecyldimethylammonium bromide (DHAB) surfactants in POPC bilayer~\cite{scherer89}.
-The comparison reveals that the both headgroup order parameters in the Lipid14 model are too sensitive to the bound charge,
-while CHARMM36 gives better agreement for the $\alpha$ carbon (Fig. \ref{CHANGESwithDHMDMAB}).
-Therefore, the headgroup order parameter response to the bound charge is actually more realistic
-in CHARMM36 model than in the Lipid14. In the latter, both order parameters are equally too 
-sensitive to the bound cations giving a good result for the $\Delta S_{\rm CH}^\beta / \Delta S_{\rm CH}^\alpha$ ratio.
-The ratio was overestimated for the CHARMM36 model because the $\beta$-carbon order parameter
-is relatively more sensitive than the $\alpha$-carbon order parameter. These results have to be taken
-into account when analysing the ion binding affinities using headgroup order parameters in simulations.
-However, we conclude that the discrepancies arising from the sentivity of lipid headgroup to
+cationic dihexadecyldimethylammonium bromide (DHAB) surfactants in POPC bilayer~\cite{scherer89}. The advantage of this approach is that the amount of DHAB in the bilayer is exactly know in experiments, which can be exploited to extract the sensitivity of the order parameters.
+This revealed that both $S_{\rm CH}^\beta$ and $S_{\rm CH}^\alpha$ in the Lipid14 model are equally oversensitive (and thus giving the correct $\Delta S_{\rm CH}^\beta / \Delta S_{\rm CH}^\alpha$) to the bound charge,
+whereas CHARMM36 gives better agreement for the $\alpha$ carbon (Fig. \ref{CHANGESwithDHMDMAB}), indicating that the headgroup order parameter response to the bound charge is actually more realistic
+in CHARMM36 compared to Lipid14. The ratio was overestimated for the CHARMM36 model because the $\beta$-carbon order parameter
+is relatively more sensitive than the $\alpha$-carbon order parameter. 
+
+That said, in the force fields investigated so far, the discrepancies arising from the sentivity of lipid headgroup to
 bound charge are typically smaller than then discrepancies arising from ion binding affinity.
 \begin{figure}[]
   \centering
@@ -492,25 +490,6 @@ bound charge are typically smaller than then discrepancies arising from ion bind
 }
 \end{figure}
 
-\pagebreak
-\section{Effect of the definition of concentration on the headgroup order parameters as a function of ion concentration.}\label{concentrationDEFsection}
-Previous studies using the electrometer concept to assess the ion binding affinity to lipid
-bilayers report ion concentrations either in water before solvating the lipids (buffer concentration) \cite{akutsu81,roux90,catte16}
-or in bulk water after solvating the lipids (bulk concentration) \cite{altenbach84,melcr18}.
-In this work, we use the former definition to be consistent with the reference
-experimental data \cite{roux90}. The difference between these two concentrations increases
-with the increasing ion binding affinity. However, the difference is essentially negligible
-in the recent model \cite{melcr18} with realistic ion binding affinity (Fig. \ref{concentrationDEFfigure}).
-\begin{figure}[]
-  \centering
-  \includegraphics[width=8.3cm]{../Figs/OP_ECC_POPC_DPPC_water_conc2_dppc_bulk.pdf}
-  \caption{\label{concentrationDEFfigure}
-    Changes of the headgroup order parameters as a function of CaCl$_2$ concentration using
-    two possible definitions of ion concentration from the recent force field
-    with realistic calcium binding affinity to a POPC bilayer \cite{melcr18}
-    together with the experimental data \cite{akutsu81,altenbach84}. 
-  }
-\end{figure}
 
 \pagebreak
 \section{Spectral slices in the indirect dimension from the R-PDLF and SDROSS experiments}
