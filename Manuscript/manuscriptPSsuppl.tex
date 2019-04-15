@@ -717,33 +717,29 @@ realistic surface charge at the lipid bilayer interface among the tested simulat
 %Therefore, we cannot exclude the possibility that the NaCl induced changes were already
 %saturated with 100mM NaCl concentration, which was the case for CaCl$_2$ in Fig. \ref{changesWITHCaClPS}.
 
-
-
 \section{Calcium binding to POPC in CHARMM36 simulation with NBfix}\label{CHARMMcalciumNBfix}
 
 The response of POPC headgroup order parameters to the CaCl$_2$ concentration
-are underestimated in simulations of POPC:POPS (5:1) mixture with CHARMM36 containing
-the NBfix for interactions between calicum and lipid oxygens \cite{kim16}
+are underestimated in simulations of POPC:POPS (5:1) mixture with CHARMM36 when employing NBfix (as obtained from CHARMM_GUI in January 2018) for interactions between calcium and lipid oxygens \cite{kim16}
 (Fig. \ref{changesWITHCaClPS} in the main text),
 indicating that the calcium binding to the bilayer is too weak with these
-parameters. Without the NBfix term, the calcium binding affinity to pure POPC
-lipid bilayers was overestimated in the CHARMM36 model \cite{catte16}.
-However, after employing the NBfix term, the response of headgroup order
+parameters. The response of headgroup order
 parameters (Fig. \ref{OP_CHARMM_CaCl_POPC_NBFix}) and the binding affinity
 (Fig. \ref{density_profile_CHARMM_CaCl_POPC_NBFix}) of calcium also to a pure
-POPC bilayer are underestimated. Notably, CHARMM36 simulations with the NBfix
-terms \cite{venable13,kim16} employed predict similar binding affinity for sodium and calcium.
-In conclusion, the special NBfix~\cite{kim16} for calcium, 
-incorporated in the parameters give by the CHARMM-GUI at the time
-of running the simulations (January 2018), leads to the underestimation of
-calcium binding affinity to pure PC and mixed PC:PS bilayers.
+POPC bilayer are underestimated when using NBfix ions.  Notably, CHARMM36 simulations with the NBfix
+terms \cite{venable13,kim16} predict similar binding affinity for sodium and calcium. Without the NBfix term, the calcium binding affinity to pure POPC lipid bilayers was overestimated in the CHARMM36 model \cite{catte16}.
+
+%HA: this just repeats the above? 
+%In conclusion, the special NBfix~\cite{kim16} for calcium, 
+%incorporated in the parameters give by the CHARMM-GUI at the time
+%of running the simulations (January 2018), leads to the underestimation of
+%calcium binding affinity to pure PC and mixed PC:PS bilayers.
 
 \begin{figure}[]
   \centering
   \includegraphics[width=17.0cm]{../Figs/OP_CHARMM_CaCl_POPC_NBFix.pdf}
   \caption{\label{OP_CHARMM_CaCl_POPC_NBFix}
-    Headgroup order parameters from CHARMM36 simulations of POPC mixed with ions having
-    the NBfix term employed for sodium \cite{venable13} ({\it left})
+    Headgroup order parameters from CHARMM36 simulations of POPC, where the NBfix term was employed employed for sodium \cite{venable13} ({\it left})
     and calcium \cite{kim16} ({\it right}) compared with the experimental data \cite{akutsu81,altenbach84}
     and simulations without NBfix for the calcium.
     Simulation files without ions are available at Ref. \citenum{nencineCHARMM36popcT310K},
@@ -763,16 +759,6 @@ calcium binding affinity to pure PC and mixed PC:PS bilayers.
   }
 \end{figure}
 
-\pagebreak
-\section{Calcium density profiles from simulations with \\ POPC:POPS(5:1) mixture}
-\begin{figure}[ht]
-  \centering
-  \includegraphics[width=10cm]{../Figs/CAdensPCPSmixture.eps}
-  \caption{\label{CAdensPCPSmixtureALL}
-    Ca2+ density profiles from simulations.
-  }
-  \todo{Should we include also counterions into the plot?} \\
-\end{figure}
 
 \pagebreak
 \section{Details of the rough subjective force field ranking (Fig.~\ref{comparisonTablePS})} 
