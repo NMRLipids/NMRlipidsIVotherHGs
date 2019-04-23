@@ -577,7 +577,6 @@ CHARMM36 simulations that have the best agreement with experiments
 
 These results might reflect the increased rigidity proposed in the early experimental studies \cite{browning80,buldt81}, and the suggested characteristic conformations of the PS headgroup can be useful when interpreting experiments. However, as the none of the tested models fully reproduces the experimental order parameters, more accurate MD force fields are required to confirm the correct conformational ensemble.
 
-
 \subsection{Counterion binding and interactions between PC and PS headgroups}\label{ciBINDINGsection}
 
 
@@ -604,7 +603,7 @@ These results might reflect the increased rigidity proposed in the early experim
     The signs are assumed to be the same for the mixture and the values are from Ref. \citenum{roux90}.
     Because the experimental values of POPS in pure and mixed bilayers come from $^{13}$C NMR (this work) and $^2$H NMR (Ref. \citenum{roux90}), respectively,
     the error bars of 0.02 are used here \cite{botan15,ollila16}.
-    The y-axis for the $\alpha$-carbon results of POPS (bottom) is transferred
+    The y-axis for the $\alpha$-carbon results of POPS (bottom) is shifted
     with the same value for both order parameters such that the lower order
     parameter value from pure POPS is at zero to correctly illustrate the significant forking.
     The values from CHARMM36 and Gromos simulations are averages of two independent simulations and
@@ -615,24 +614,23 @@ These results might reflect the increased rigidity proposed in the early experim
 
 Membranes containing PS lipids are always accompanied with counterions that
 modulate electrostatic interactions between lipids and other biomolecules. MD simulations have suggested
-that counterions reduce the area per lipid of PS bilayers to be smaller than in PC
-bilayers~\cite{pandit02,mukhopadhyay04,pedersen06} by screening the repulsion between charged lipid headgroups. 
-Counterion density profiles along membrane normal 
-show significant differences between force fields in both binding affinity
-and distribution of ions in the interface (Fig. \ref{NAdensPOPS}).
+that counterions reduce the area per lipid of PS bilayers compared to PC
+bilayers~\cite{pandit02,mukhopadhyay04,pedersen06} by screening the repulsion between charged lipid headgroups. We explore this by quantifying the counterion density profiles along the membrane normal accompanied by the areas per lipid in Fig.~\ref{NAdensPOPS}.
+The force fields studied show significant differences in both binding affinity
+and distribution of ions at the interface.
 The experimental area per lipid (62.7~$\pm$~1.3~\AA$^2$) \cite{pan14} 
 is reproduced only in Gromos-CKP and in the MacRog simulation
-with potassium counterions, while other models give considerably smaller areas (Fig. \ref{NAdensPOPS}).
+with potassium counterions, while other models give considerably smaller values.
 However, the counterion binding and the concomitant electrostatic screening of the headgroup
-repulsion does not fully explain the low area per molecule values.
+repulsion does not fully explain the low area per molecule values
 since the MacRog simulation, which has the strongest sodium binding
 (the lowest concentrations in bulk water), gives the same area per molecule
 as the CHARMM36ua simulation, which has significantly weaker counterion binding
 affinity. On the other hand, MacRog simulations with potassium produce a larger area per molecule (63~\AA$^2$) than
 with sodium (53~\AA$^2$) in line with the weaker potassium binding affinity (Fig.~\ref{NAdensPOPS}).
-In conclusion, the results are in line with the previous study suggesting that the
+The results are in line with the previous study suggesting that the
 low areas per molecule in PS lipid bilayers originate from the combination
-of both counterion binding and intermolecular interactions between lipid headgroups~\cite{petrache04}.
+of both the counterion binding and intermolecular interactions between lipid headgroups~\cite{petrache04}.
 
 \begin{figure*}[ht]
   \centering
@@ -657,42 +655,41 @@ of both counterion binding and intermolecular interactions between lipid headgro
 
 The experimentally observed modulation of headgroup order parameters
 by increasing salt concentration (the molecular electrometer concept) has been previously used to evaluate the cation binding to zwitterionic PC bilayers in simulations \cite{catte16}.
-Studying binding of cations to negatively charged lipid bilayers is less straighforward due to the presence of cationic counterions and the lack of a ion-free reference state.
-The analysis is further complicated by the artificial aggregation of counterions
+Studying binding of cations to negatively charged lipid bilayers is less straighforward due to the presence of cationic counterions (the lack of a ion-free reference state) and the analysis is further complicated by the artificial aggregation of counterions
 observed in some simulations (section \ref{mixtureTOadditionalCIs} in the SI)
 % \todo{Why isn't this a problem with PC}.
 % SAMULI: The difference between ion-free state (present in PC) and low amount of monovalent ions is larger than
 % between counterion only and low amount of monovalent ions in charged lipids. I believe that therefore we can
 % make conclusions from smaller ion concentrations without aggregation in PC lipids, but not in charged lipids.
 Therefore, we evaluate here the amount of bound charge not by adding salt
-(although also this is discussed in the SI section \ref{mixtureTOadditionalCIs}),
+(although this is discussed in the SI section \ref{mixtureTOadditionalCIs}),
 but by studying the changes of the headgroup order parameters with increasing amount of
 negatively charged lipids (and thus increasing amount of cationic counterions) in the bilayer.
 
-According to the molecular electrometer concept, the headgroup order parameters of POPC
+Experimentally, the headgroup order parameters of POPC
 increase when negatively charged POPS lipids are incorporated in lipid bilayer
 (section \ref{HGorderparametersPCvsPEPSPGchol})~\cite{seelig87,scherer87}.
 This is reproduced in the MacRog simulations with potassium counterions (Fig. \ref{HGorderparametersPCvsPS}),
 which have the weakest binding affinity to POPS lipid bilayers (Fig.~\ref{NAdensPOPS}).
 The CHARMM36 and Berger simulations either exhibit no change or show a decrease
 in the POPC headgroup order parameters as the amount of POPS increases (Fig. \ref{HGorderparametersPCvsPS}).
-This can be explained by the stronger counterion binding affinity, which cancels
+Therein, the stronger counterion binding cancels
 the effect of negatively charged headgroups and prevents the experimentally observed
 increase of headgroup order parameters with growing amount of PS lipids.
 Therefore, we suggest that the relatively weak binding of potassium
 in the MacRog simulations (Fig. \ref{NAdensPOPS}) produces the most
 realistic surface charge density in membranes containing PS lipids,
-while the other tested simulation models overestimate the counterion
+while the other tested models overestimate the counterion
 binding affinity. The results are in line with the behaviour of headgroup order
 parameters as a function of added counterions analyzed in section \ref{mixtureTOadditionalCIs}
 in the SI.
 
 The reduced forking of the POPS $\alpha$-carbon (Fig.~\ref{HGorderparametersPSvsPC})
-together with other experimental results suggest less rigid structure of PS headgroups when diluted with
+together with other experimental results suggest that the PS headgroup structure becomes less rigid when diluted with
 POPC~\cite{browning80,buldt81,roux90,roux91,scherer87}.
 Unfortunately, none of the tested models correctly reproduce the modulation of POPS headgroup order
-parameters with increasing amount of POPC in POPC:POPS mixtures (Fig. \ref{HGorderparametersPSvsPC}).
-and we conclude that more accurate force fields are needed
+parameters with increasing amount of POPC in POPC:POPS mixtures (Fig. \ref{HGorderparametersPSvsPC})
+and more accurate force fields are needed
 to correctly describe the PC-PS headgroup interactions in MD simulations.
 %Having this conclusion in every paragraph gets a bit repetive
 
