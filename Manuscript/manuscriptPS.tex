@@ -133,37 +133,34 @@ This work is part of the NMRlipids open collaboration project (\url{nmrlipids.bl
 %\label{}
 \section{Introduction}
 Phosphatidylserine (PS) is the most common negatively
-charged lipid in eukaryotic membranes.
-PS lipids compose 8.5\% of total lipid weight of red blood cells. 
+charged lipid in eukaryotic membranes. In red blood cells, for example,
+PS lipids compose 8.5\% of the total lipid weight. 
 The abundance, however, varies between different organelles, and up to
 25-35\% of the cytosolic leaflet of plasma membranes \cite{lemmon08,leventis10,li14} consists of PS lipids.
-PS lipids are vastly important signaling molecules. They interact with
+PS lipids are vastly important biomolecules that interact with
 signaling proteins \cite{leventis10}, regulate
 surface charge and protein localization \cite{yeung08}, and
 induce protein aggregation \cite{zhao04,gorbenko06}.
 Some protein domains interact specifically with PS lipids,
-while other protein sites are attracted by nonspecific electrostatics and the
+while other protein sites attract PS lipids by nonspecific electrostatics and the
 binding can be regulated by calcium \cite{leventis10}.
-Therefore, the structural details
+Therefore, the deciphering structural details
 of lipid headgroups and the details of cation binding
-are crucial for the PS-mediated signaling processes.
+are crucial for understanding the PS-mediated processes in the cell membranes.
 
 Experimental studies have indicated that the
 PS headgroup is more rigid than the phosphatidylcholine (PC)
-due to hydrogen bonding network or
-electrostatic interactions \cite{browning80,buldt81}.
-While monovalent ions interact weakly with
+owing to electrostatic interactions or the formation of hydrogen bonding network between the headgroups~\cite{browning80,buldt81}.
+While most monovalent ions interact weakly with
 PS-containing bilayers, multivalent cations and Li$^+$ are able to form strong
 dehydrated molecular complexes with PS lipids \cite{hauser77,kurland79,eisenberg79,hauser83,dluhy83,hauser85,feigenson86,mattai89,roux90,roux91,boettcher11}.
-The dehydrated complexes of PS headgroup and calcium ions can even lead to
-phase separation \cite{hauser77,kurland79,hauser85,feigenson86,mattai89,roux90,roux91}.
-On the other hand, some studies suggest that the specific binding affinity of Ca$^{2+}$
-to negatively charged and zwiterionic phospholipids is similar, and that
+The dehydrated complexes of PS headgroup with calcium ions can even lead to
+phase separation \cite{hauser77,kurland79,hauser85,feigenson86,mattai89,roux90,roux91}. Mixing PS lipids with PC lipids reduces their propensity to form strong complexes with multivalent ions and makes the PS headgroup less rigid~\cite{browning80,buldt81,roux90,roux91}.
+That said, some studies suggest Ca$^{2+}$ has similar specific binding affinity 
+to negatively charged and zwiterionic phospholipids, and that
 the increased cation binding to negatively charged lipid bilayers arises only due
-to the increased local cation concentration in the membrane vicinity~\cite{seelig90,sinn06}.
-Dilution of bilayers with PC lipids makes PS headgroups
-less rigid and reduces their propensity to form
-strong complexes with multivalent ions~\cite{browning80,buldt81,roux90,roux91}.
+to the increased local cation concentration in the membrane vicinity~\cite{seelig90,sinn06}. 
+
 
 \begin{table*}[htb]
 %\begin{sidewaystable*}[!p]
@@ -207,25 +204,23 @@ DOPS/Na$^{+}$  & Slipids \cite{jambeck13}  & 288  & 11232  & 303  & 200  & 100  
 
 The molecular level interpretation of these observations is,
 however, lacking, and  classical molecular dynamics (MD) simulations have been widely used in efforts to
-to understand the PS headgroup structure, their influence on lipid bilayer properties, and their
+to understand the PS headgroup structure, its influence on lipid bilayer properties, and its
 interaction with
 ions \cite{cascales96,pandit02,mukhopadhyay04,pedersen06,vernier09,boettcher11,molina12,jurkiewicz12,venable13,pan14,vangaveti14,melcrova16,valentine18,hallock18}.
-Unfortunately, the results have depended strongly on the force field used.
+Unfortunately, the results have depended on the force field used.
 For example, recent simulations using the NBfix parameters for calcium \cite{kim16} in
 CHARMM36 force field \cite{klauda10,venable13}, combined with 2D infrared spectroscopy,
 suggest that calcium ions interact only with the carboxylate group of PS lipids \cite{valentine18}; in contrast,
-the same force field without the NBfix parameters, combined with NMR chemical shifts and
-rotational-echo double-resonance (REDOR) experiments, suggests a significant binding affinity also to the phosphate region \cite{hallock18}.
-On the other hand, simulations with the Berger force field \cite{berger97,mukhopadhyay04},
-combined with fluorescent and vibrational sum frequency spectroscopy, suggest a significant
+the results from same lipid model without the NBfix ion parameters, combined with NMR chemical shifts and
+rotational-echo double-resonance (REDOR) experiments, indicate a significant binding affinity also to the phosphate region \cite{hallock18}.
+Meanwhile, simulations with the Berger force field \cite{berger97,mukhopadhyay04},
+combined with fluorescent and vibrational sum frequency spectroscopy, suggest substantial
 calcium binding also to the carbonyls in the acyl chains \cite{melcrova16}.
 
-We have recently demonstrated that such controversies can be resolved by
-comparing the C--H bond order parameters, $S_\mathrm{CH}$, of lipid headgroups between simulations
-and experiments \cite{botan15,catte16}. The $S_\mathrm{CH}$ can be directly
-measured from NMR experiments with high accuracy and compared to simulations
-in order to evaluate the simulation model quality or to interpret the experiments \cite{ollila16}.
-Previous studies showed that the structure of PC lipid headgroup and glycerol backbone are not well
+We have recently demonstrated that the lipid C--H bond order parameters, $S_\mathrm{CH}$~\cite{botan15,catte16}, can be utilized to resolve such controversies. The $S_\mathrm{CH}$ can be
+measured from NMR experiments with high accuracy and directly compared to simulations
+in order to evaluate the simulation model quality or to interpret the experiments \cite{ollila16}. Using this approach,
+it established that the structure of PC lipid headgroup and glycerol backbone are not well
 captured by most MD force fields~\cite{botan15}, and that the cation binding to PC
 lipid bilayers is overestimated \cite{catte16}.
 %
@@ -235,17 +230,17 @@ lipid bilayers is overestimated \cite{catte16}.
 
 Here, we extend the available set of experimentally measured PS lipid headgroup and
 glycerol backbone C--H bond order parameters
-by measuring the signs of the order parameters with S-DROSS solid-state NMR spectroscopy.
-The quality of headgroup structures and ion binding affinity in
+by measuring the signs of the order parameters using S-DROSS solid-state NMR spectroscopy.
+The quality of headgroup structures and the ion binding affinity in
 %MD simulations of lipid bilayers containing PS lipids
-the available MD simulation models of PS are then compared with the collected experimental data.
+the available MD simulation models of PS lipids are then asessed based on the collected experimental data.
 %using the NMRlipids open collaboration project (\url{nmrlipids.blogspot.fi}).
 The results pave the way
 for development of lipid models that correctly describe 
 the headgroup region of negatively charged lipids in physiological salt
 conditions. Such force fields are expected to be useful in understanding
 biological function of lipid headgroups and glycerol backbone, as
-these are knwon to behave similarly in simple model membranes and in cells \cite{gally81,scherer87,seelig90}.
+these are known to behave similarly in simple model membranes and in cells \cite{gally81,scherer87,seelig90}.
 
 
 \begin{table*}[tb]
@@ -305,8 +300,6 @@ POPC:POPS (5:1)/Na$^{+}$  & GROMOS-CKPM \cite{??}  & 0  & 110 & ?  & 0  & 298  &
 %end{sidewaystable*} 
 
 \end{table*}
-
-
 
 \section{Methods}
 
