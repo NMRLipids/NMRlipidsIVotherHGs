@@ -18,7 +18,7 @@ set label  "CHARMM36"  at graph  0.4,0.8
 set key at graph 0.6,0.7
 #set size 1.0,0.2
 plot "../../../MATCH/Data/Lipid_Bilayers/POPS+83%popc+1000mMCaCl/T298K/MODEL_CHARMM36/IONdens.xvg" using 1:2 with lines title '1000 mM' lw 4 lc rgb 'forest-green',\
-     "../../../MATCH/Data/Lipid_Bilayers/POPS+83%popc+150mMCaCl/T298K/MODEL_CHARMM36/IONdens.xvg" using 1:2 with lines title '150 mM' lw 4 lc rgb 'red',\
+     "../../../MATCH/Data/Lipid_Bilayers/POPS+83%popc+150mMCaCl/T298K/MODEL_CHARMM36/IONdens.xvg" using 1:2 with lines title '260 mM' lw 4 lc rgb 'red',\
 
 set ytic 0.4
 set ylabel " "
