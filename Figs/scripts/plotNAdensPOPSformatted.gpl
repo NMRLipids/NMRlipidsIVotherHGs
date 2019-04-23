@@ -1,0 +1,159 @@
+set term pdfcairo enhanced color dashed dashlength 0.5 size 10cm, 16cm font "Arial,15" 
+set out "../NAdensPOPSformatted.pdf"
+
+
+nPanels=10
+set multiplot layout nPanels, 1
+top = 0.993
+heightY = 1.065/nPanels
+bottom = top-heightY
+right = 0.985
+left = 0.15
+
+zMax=4.0
+set xtics format '' 1
+set mxtics 4
+
+dMax=3.0
+set ytics format "%2.1f" 0.5
+#set mytics 2
+
+cMax=1000.0 #-- highest salt concentration
+
+wNa = 2        #-- line width Na
+wK = 0.5*wNa   #-- line width K
+dash = 2       #-- dash type K 
+
+# Colour palette to indicate ion concentrations:
+set palette model RGB maxcolors 11
+set palette defined (0 "#FFD300", 1 "#D70039", 2 "#0088BF", 3 "#00A368")
+set key at graph 0.02, graph 0.675 left reverse Left noautotitle textcolor variable samplen -1
+unset colorbox
+
+# Indicator for Phosphorus peak positions:
+pCol="#8FFF00" #-- color of phosphorus indicator lines
+plw=2 #-- line width of phosphorus indicator lines
+
+set label 1 "CHARMM36" at graph 0.05, graph 0.8 font "Arial,20" 
+set label 2 "Na"  at graph  0.8,0.85 tc palette frac 510/cMax
+set label 3 "K"  at graph  0.8,0.7 tc palette frac 350/cMax
+
+set rmargin at screen right
+set lmargin at screen left
+set tmargin at screen top
+set bmargin at screen bottom
+plot [0:zMax][0:dMax] \
+  "../../../MATCH/Data/Lipid_Bilayers/POPS/T298K/MODEL_CHARMM36/NAdens.xvg" \
+  u (abs($1)):($2) w l lc palette frac 510/cMax lw wNa t "A_{pl} = 55 {\305}^2", \
+  "../../../MATCH/Data/Lipid_Bilayers/POPS/T298K/MODEL_CHARMM36_POTASSIUMcounterion/Kdens.xvg" \
+  u (abs($1)):($2) w l lc palette frac 350/cMax lw wK dt dash t "A_{pl} = 56 {\305}^2"
+
+
+# do not write the highest tick mark on y-axis:
+set ytics 0,0.5,dMax-0.5
+
+unset label 2
+unset label 3
+
+
+set label 1 "CHARMM36ua"
+top = bottom
+bottom = bottom - heightY
+set tmargin at screen top
+set bmargin at screen bottom 
+plot [0:zMax][0:dMax] \
+  "../../../MATCH/Data/Lipid_Bilayers/POPS/T298K/MODEL_CHARMM36UA/NAdens.xvg" \
+  u (abs($1)):($2) w l lc palette frac 510/cMax lw wNa t "A_{pl} = 53 {\305}^2"
+
+
+set label 1 "Slipids"
+top = bottom
+bottom = bottom - heightY
+set tmargin at screen top
+set bmargin at screen bottom
+plot [0:zMax][0:dMax] \
+  "../../../MATCH/Data/Lipid_Bilayers/POPS/T298K/MODEL_SLIPIDS/NAdens.xvg" \
+  u (abs($1)):($2) w l lc palette frac 510/cMax lw wNa t "A_{pl} = 58 {\305}^2"
+
+
+# set label for y-axis:
+set ylabel "number density of ions (nm^{-3})" font "Arial,20" offset graph -0.017, graph -0.5
+
+set label 1 "Berger"
+top = bottom
+bottom = bottom - heightY
+set tmargin at screen top
+set bmargin at screen bottom
+plot [0:zMax][0:dMax] \
+  "../../../MATCH/Data/Lipid_Bilayers/POPS/T298K/MODEL_Berger/NAdens.xvg" \
+  u (abs($1)):($2) w l lc palette frac 510/cMax lw wNa t "A_{pl} = 50 {\305}^2"
+
+unset ylabel
+
+
+set label 1 "MACROG"
+set label 2 "Na"  at graph  0.8,0.85 tc palette frac 510/cMax
+set label 3 "K"  at graph  0.8,0.7 tc palette frac 350/cMax
+
+top = bottom
+bottom = bottom - heightY
+set tmargin at screen top
+set bmargin at screen bottom
+plot [0:zMax][0:dMax] \
+  "../../../MATCH/Data/Lipid_Bilayers/POPS/T298K/MODEL_MACROG/NAdensAV.xvg" \
+  u (abs($1)):($2) w l lc palette frac 510/cMax lw wNa t "A_{pl} = 53 {\305}^2", \
+  "../../../MATCH/Data/Lipid_Bilayers/POPS/T298K/MODEL_MACROG_POTASSIUMcounterion/Kdens.xvg" \
+  u (abs($1)):($2) w l lc palette frac 340/cMax lw wK dt dash t "A_{pl} = 63 {\305}^2"
+
+
+unset label 2
+unset label 3
+
+set label 1 "Lipid17"
+set label 2 "ff99ions"  at graph  0.8,0.85 tc palette frac 510/cMax
+set label 3 "jcions"  at graph  0.8,0.7 tc palette frac 440/cMax
+top = bottom
+bottom = bottom - heightY
+set tmargin at screen top
+set bmargin at screen bottom
+plot [0:zMax][0:dMax] \
+  "../../Data/POPSlipid17ff99ionsDENSITY.txt" \
+  u (abs($1)):($2) w l lc palette frac 510/cMax lw wNa t "A_{pl} = 57 {\305}^2", \
+  "../../Data/POPSlipid17jcionsDENSITY.txt" \
+  u (abs($1)):($2) w l lc palette frac 440/cMax lw wK dt dash t "A_{pl} = 53 {\305}^2"
+
+unset label 2
+unset label 3
+
+
+
+
+set label 1 "Gromos-CKPM"
+top = bottom
+bottom = bottom - heightY
+set tmargin at screen top
+set bmargin at screen bottom
+plot [0:zMax][0:dMax] \
+  "../../../MATCH/Data/Lipid_Bilayers/POPS/T298K/MODEL_GROMOS-CKP1/NAdens.xvg" \
+  u (abs($1)):($2) w l lc palette frac 510/cMax lw wNa t "A_{pl} = 63 {\305}^2"
+ 
+
+set xtics format '%1.0f'
+
+
+set label 1 "Gromos-CKP"
+set xlabel "distance to bilayer center (nm)" font "Arial,20"
+
+top = bottom
+bottom = bottom - heightY
+set tmargin at screen top
+set bmargin at screen bottom
+plot [0:zMax][0:dMax] \
+  "../../../MATCH/Data/Lipid_Bilayers/POPS/T298K/MODEL_GROMOS-CKP2/NAdens.xvg" \
+  u (abs($1)):($2) w l lc palette frac 510/cMax lw wNa t "A_{pl} = 63 {\305}^2"
+ 
+
+
+unset label 2
+unset obj 2
+unset multiplot
