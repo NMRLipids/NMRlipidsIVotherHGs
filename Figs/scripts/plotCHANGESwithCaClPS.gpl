@@ -3,7 +3,7 @@ set terminal postscript portrait enhanced color dashed lw 1 "Helvetica" 14 backg
 set output "../CHANGESwithCaClPS.eps"
 set multiplot  layout 2,2
 
-set xrange [-0.02:3.02] 
+set xrange [-0.05:3.05] 
 #set ytic 0.05
 #set key box linestyle 1 linecolor rgb 'black'
 set key at screen 0.95,0.93 maxcols 1 maxrows 10
@@ -12,7 +12,7 @@ set title 'POPC'
 set size 1.0,0.5
 set ylabel "{{/Symbol D}S_{CH}^{/Symbol b}"
 #set yrange [-0.075:-0.025] 
-plot 	   "../../Data/POPC80_POPS20withCa_MACROG.dat" using 1:($6-0.02324) with linespoint title 'MACROG' pt 7 lt 1 lw 4 ps 1.5 lc rgb '#00A368',\
+plot 	   "../../Data/POPC80_POPS20withCa_MACROG.dat" using 1:($6-0.02324) with linespoint title 'MacRog' pt 7 lt 1 lw 4 ps 1.5 lc rgb '#00A368',\
            "../../Data/POPC80_POPS20withCa_MACROG.dat" using 1:($6-0.02324):7 with yerrorbars notitle  pt 7 lt 1 lw 4 ps 1.5 lc rgb '#00A368',\
    	   "../../Data/POPC80_POPS20withCa_MACROG.dat" using 1:($8-0.02009) with linespoint notitle pt 7 lt 1 lw 4 ps 1.5 lc rgb '#00A368',\
            "../../Data/POPC80_POPS20withCa_MACROG.dat" using 1:($8-0.02009):9 with yerrorbars notitle  pt 7 lt 1 lw 4 ps 1.5 lc rgb '#00A368',\
@@ -35,7 +35,7 @@ set origin 1.0,0.5
 set size 1.0,0.5
 unset ylabel
 #set ylabel "{/Symbol D}S_{CH}^{/Symbol b}"
-set xrange [-0.01:1.01] 
+set xrange [-0.02:1.02] 
 plot      "../../Data/POPC80_POPS20withCa_MACROG.dat" using 1:($14+0.13222) with linespoint notitle pt 7 ps 1.5 lt 1 lw 4  lc rgb '#00A368',\
           "../../Data/POPC80_POPS20withCa_MACROG.dat" using 1:($14+0.13222):15 with yerrorbars notitle pt 7 ps 1.5 lt 1 lw 4  lc rgb '#00A368',\
           "../../Data/POPC80_POPS20withCa_BERGER.dat" using 1:($8-0.15793) with linespoint notitle pt 7 ps 1.5 lt 1 lw 4  lc rgb '#D70039',\
@@ -52,7 +52,7 @@ set size 1.0,0.5
 set key at screen 0.95,0.9 maxcols 1 maxrows 10
 set ylabel "{{/Symbol D}S_{CH}^{/Symbol a}"
 set xlabel "[ CaCl_2] M"
-set xrange [-0.02:3.02] 
+set xrange [-0.05:3.05] 
 plot  "../../Data/POPC80_POPS20withCa_MACROG.dat" using 1:($2-0.04174) with linespoint notitle pt 7 lt 1 lw 4 ps 1.5 lc rgb '#00A368',\
       "../../Data/POPC80_POPS20withCa_MACROG.dat" using 1:($2-0.04174):3 with yerrorbars notitle pt 7 lt 1 lw 4 ps 1.5 lc rgb '#00A368',\
       "../../Data/POPC80_POPS20withCa_MACROG.dat" using 1:($4-0.04001) with linespoint notitle pt 7 lt 1 lw 4 ps 1.5 lc rgb '#00A368',\
@@ -78,7 +78,7 @@ set key at screen 0.9,0.87 maxcols 1 maxrows 6
 unset ylabel
 #set ylabel "{/Symbol D}S_{CH}^{/Symbol a}"
 set xlabel "[ CaCl_2] M"
-set xrange [-0.01:1.01] 
+set xrange [-0.02:1.02] 
 #set yrange [-0.03:0.09] 
 plot  "../../Data/POPC80_POPS20withCa_MACROG.dat" using 1:($10+0.17017) with linespoint notitle   pt 7 ps 1.5 lt 1 lw 4  lc rgb '#00A368',\
       "../../Data/POPC80_POPS20withCa_MACROG.dat" using 1:($10+0.17017):11 with yerrorbars notitle   pt 7 ps 1.5 lt 1 lw 4  lc rgb '#00A368',\

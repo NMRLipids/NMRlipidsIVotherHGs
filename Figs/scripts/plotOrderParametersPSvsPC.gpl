@@ -13,9 +13,12 @@ set ylabel
 #set origin 1.0,0.5
 set size 1.0,0.5
 set xrange [-0.01:1]
+set yrange [-0.14:0.04]
 set ylabel "{/Symbol D}S_{CH}^{/Symbol b}"
 plot "../../Data/POPSvsPOPCwithNACHARMM36.dat" using ($1):($2+0.0734677) with linespoints   title 'CHARMM36 (Na^+)' pt 7 ps 1.6  lw 4 lc rgb '#0088BF',\
+     "../../Data/POPSvsPOPCwithNACHARMM36.dat" using ($1):($2+0.0734677):($3) with yerrorbars  notitle pt 7 ps 1.6  lw 4 lc rgb '#0088BF',\
      "../../Data/POPSvsPOPCwithKCHARMM36.dat" using ($1):($2+0.0662314) with linespoints  title 'CHARMM36 (K^+)' pt 6 ps 1.6  lw 4 lc rgb '#0088BF',\
+     "../../Data/POPSvsPOPCwithKCHARMM36.dat" using ($1):($2+0.0662314):($3) with yerrorbars  notitle pt 6 ps 1.6  lw 4 lc rgb '#0088BF',\
      "../../Data/POPSvsPOPCwithKmacrog.dat" using ($1):($2+0.01754) with linespoints  title 'MacRog (K^+)' pt 6 ps 1.6  lw 4 lc rgb '#00A368',\
      "../../Data/POPSvsPOPCwithKmacrog.dat" using ($1):($2+0.01754):($3) with yerrorbars  notitle pt 6 ps 1.6  lw 4 lc rgb '#00A368',\
      "../../Data/POPSvsPOPCwithNALIPID17.dat" using ($1):($2-0.124413) with linespoints  title 'Lipid17 (ff99 Na^+)' pt 7 ps 1.6  lw 4 lc rgb '#FFD300',\
@@ -25,18 +28,25 @@ plot "../../Data/POPSvsPOPCwithNACHARMM36.dat" using ($1):($2+0.0734677) with li
      "../../Data/POPSvsPOPCwithNAgromosCKPM.dat" using ($1):($2+0.0128447) with linespoints  notitle pt 7 ps 1.6  lw 4 lc rgb '#FFA0A3',\
      "../../Data/POPSvsPOPCwithNAgromosCKPM.dat" using ($1):($2+0.0128447):($3) with yerrorbars  title 'gromos-CKPM (Na^+)' pt 7 ps 1.6  lw 4 lc rgb '#FFA0A3',\
      "../../Data/POPSvsPOPC.dat" using ($1):($2+0.12) with linespoints   title 'Experiment (Na^+)' pt 7 ps 1.6  lw 4 lc rgb 'black',\
+     "../../Data/POPSvsPOPC.dat" using ($1):($2+0.12):5 with yerrorbars notitle pt 7 ps 1.6  lw 4 lc rgb 'black',\
 
 unset title
 unset ylabel
 set size 1.0,0.5
 #set origin 1.0,0
 #set xrange [0:1]
+set yrange [-0.16:0.22]
+set ytic 0.04
 set ylabel "{/Symbol D}S_{CH}^{/Symbol a}"
 set xlabel "mole fraction of PC"
-plot "../../Data/POPSvsPOPCwithNACHARMM36.dat" using ($1):($3+0.0692441) with linespoints  notitle  pt 7 ps 1.6  lw 4 lc rgb '#0088BF',\
-     "../../Data/POPSvsPOPCwithNACHARMM36.dat" using ($1):($4+0.0692441) with linespoints  notitle  pt 7 ps 1.6  lw 4 lc rgb '#0088BF',\
-     "../../Data/POPSvsPOPCwithKCHARMM36.dat" using ($1):($3+0.0463657) with linespoints  notitle  pt 6 ps 1.6  lw 4 lc rgb '#0088BF',\
+plot "../../Data/POPSvsPOPCwithNACHARMM36.dat" using ($1):($4+0.0692441) with linespoints  notitle  pt 7 ps 1.6  lw 4 lc rgb '#0088BF',\
+     "../../Data/POPSvsPOPCwithNACHARMM36.dat" using ($1):($4+0.0692441):($5) with yerrorbars  notitle  pt 7 ps 1.6  lw 4 lc rgb '#0088BF',\
+     "../../Data/POPSvsPOPCwithNACHARMM36.dat" using ($1):($6+0.0692441) with linespoints  notitle  pt 7 ps 1.6  lw 4 lc rgb '#0088BF',\
+     "../../Data/POPSvsPOPCwithNACHARMM36.dat" using ($1):($6+0.0692441):($7) with  yerrorbars notitle  pt 7 ps 1.6  lw 4 lc rgb '#0088BF',\
      "../../Data/POPSvsPOPCwithKCHARMM36.dat" using ($1):($4+0.0463657) with linespoints  notitle  pt 6 ps 1.6  lw 4 lc rgb '#0088BF',\
+     "../../Data/POPSvsPOPCwithKCHARMM36.dat" using ($1):($4+0.0463657):($5) with yerrorbars notitle  pt 6 ps 1.6  lw 4 lc rgb '#0088BF',\
+     "../../Data/POPSvsPOPCwithKCHARMM36.dat" using ($1):($6+0.0463657) with linespoints  notitle  pt 6 ps 1.6  lw 4 lc rgb '#0088BF',\
+     "../../Data/POPSvsPOPCwithKCHARMM36.dat" using ($1):($6+0.0463657):($7) with  yerrorbars notitle  pt 6 ps 1.6  lw 4 lc rgb '#0088BF',\
      "../../Data/POPSvsPOPCwithKmacrog.dat" using ($1):($4+0.0278) with linespoints  notitle  pt 6 ps 1.6  lw 4 lc rgb '#00A368',\
      "../../Data/POPSvsPOPCwithKmacrog.dat" using ($1):($4+0.0278):($5) with yerrorbars notitle  pt 6 ps 1.6  lw 4 lc rgb '#00A368',\
      "../../Data/POPSvsPOPCwithKmacrog.dat" using ($1):($6+0.0278) with linespoints  notitle  pt 6 ps 1.6  lw 4 lc rgb '#00A368',\
@@ -55,6 +65,9 @@ plot "../../Data/POPSvsPOPCwithNACHARMM36.dat" using ($1):($3+0.0692441) with li
      "../../Data/POPSvsPOPCwithNAgromosCKPM.dat" using ($1):($6+0.0370011):($5) with yerrorbars  notitle  pt 7 ps 1.6  lw 4 lc rgb '#FFA0A3',\
      "../../Data/POPSvsPOPC.dat" using ($1):($3+0.02) with linespoints  notitle pt 7 ps 1.6  lw 4 lc rgb 'black',\
      "../../Data/POPSvsPOPC.dat" using ($1):($4+0.02) with linespoints  notitle pt 7 ps 1.6  lw 4 lc rgb 'black',\
+     "../../Data/POPSvsPOPC.dat" using ($1):($3+0.02):5 with yerrorbars notitle pt 7 ps 1.6  lw 4 lc rgb 'black',\
+     "../../Data/POPSvsPOPC.dat" using ($1):($4+0.02):5 with yerrorbars notitle pt 7 ps 1.6  lw 4 lc rgb 'black',\
 
 unset multiplot
+
 
