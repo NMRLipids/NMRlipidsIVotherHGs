@@ -68,19 +68,19 @@ set label 3 "K{\305}^+"  at graph  0.8,0.65 tc rgb "#0088BF"
 # Phosphorus peak positions:
 Pcenter=2.1646
 NAdens=1.34833
-set arrow 10 from Pcenter, graph 0 to Pcenter, NAdens nohead back lw plw lc rgb pCol
+set arrow 1 from Pcenter, graph 0 to Pcenter, NAdens nohead back lw plw lc rgb pCol
 Pcenter=2.16461
 NAdens=1.34833
-set arrow 10 from Pcenter, graph 0 to Pcenter, NAdens nohead back lw plw lc rgb pCol
+set arrow 2 from Pcenter, graph 0 to Pcenter, NAdens nohead back lw plw lc rgb pCol
 
 
 # Phosphorus peak positions K:
-#Pcenter=2.17249
-#NAdens=1.39833
-#set arrow 10 from Pcenter, graph 0 to Pcenter, NAdens nohead back lw plw lc rgb pColK
-#Pcenter=2.17249
-#NAdens=1.39833
-#set arrow 10 from Pcenter, graph 0 to Pcenter, NAdens nohead back lw plw lc rgb pColK
+Pcenter=2.17249
+NAdens=1.39833
+set arrow 3 from Pcenter, graph 0 to Pcenter, NAdens nohead back lw plw lc rgb pColK
+Pcenter=2.17249
+NAdens=1.39833
+set arrow 4 from Pcenter, graph 0 to Pcenter, NAdens nohead back lw plw lc rgb pColK
 
 
 set rmargin at screen right
@@ -100,6 +100,11 @@ set ytics 0,0.5,dMax-0.5
 unset label 2
 unset label 3
 
+unset arrow 1
+unset arrow 2
+unset arrow 3
+unset arrow 4
+
 
 set label 1 "CHARMM36ua"
 
@@ -108,10 +113,10 @@ set label 1 "CHARMM36ua"
 # Phosphorus peak positions:
 Pcenter=2.12632
 NAdens=1.39833
-set arrow 10 from Pcenter, graph 0 to Pcenter, NAdens nohead back lw plw lc rgb pCol
+set arrow 5 from Pcenter, graph 0 to Pcenter, NAdens nohead back lw plw lc rgb pCol
 Pcenter=2.12643
 NAdens=1.39833
-set arrow 10 from Pcenter, graph 0 to Pcenter, NAdens nohead back lw plw lc rgb pCol
+set arrow 6 from Pcenter, graph 0 to Pcenter, NAdens nohead back lw plw lc rgb pCol
 
 
 
@@ -126,6 +131,9 @@ plot [0:zMax][0:dMax] \
   u (abs($1)):($2) w l lc rgb "#9966B6" lw wNa t "A_{pl} = 53 nm{\305}^2"
 
 
+unset arrow 5
+unset arrow 6
+
 set label 1 "Slipids"
 
 
@@ -133,10 +141,10 @@ set label 1 "Slipids"
 # Phosphorus peak positions:
 Pcenter=2.03203
 NAdens=1.79833
-set arrow 10 from Pcenter, graph 0 to Pcenter, NAdens nohead back lw plw lc rgb pCol
+set arrow 7 from Pcenter, graph 0 to Pcenter, NAdens nohead back lw plw lc rgb pCol
 Pcenter=2.03203
 NAdens=1.79833
-set arrow 10 from Pcenter, graph 0 to Pcenter, NAdens nohead back lw plw lc rgb pCol
+set arrow 8 from Pcenter, graph 0 to Pcenter, NAdens nohead back lw plw lc rgb pCol
 
 
 
@@ -157,7 +165,8 @@ plot [0:zMax][0:dMax] \
 set ylabel "number density of ions (nm^{-3})" font "Arial,20" offset graph -0.017, graph -0.5
 
 
-
+unset arrow 7
+unset arrow 8
 
 set label 1 "Berger"
 
@@ -165,7 +174,7 @@ set label 1 "Berger"
 # Phosphorus peak positions:
 Pcenter=2.25377
 NAdens=2.0594833
-set arrow 10 from Pcenter, graph 0 to Pcenter, NAdens nohead back lw plw lc rgb pCol
+set arrow 9 from Pcenter, graph 0 to Pcenter, NAdens nohead back lw plw lc rgb pCol
 Pcenter=2.25374
 NAdens=2.0594833
 set arrow 10 from Pcenter, graph 0 to Pcenter, NAdens nohead back lw plw lc rgb pCol
@@ -179,20 +188,34 @@ plot [0:zMax][0:dMax] \
   u (abs($1)):($2) w l lc rgb "#D70039" lw wNa t "A_{pl} = 50 nm{\305}^2"
 
 unset ylabel
-
+unset arrow 9
+unset arrow 10
 
 set label 1 "MACROG"
 
 # Phosphorus peak positions:
-Pcenter=0
-NAdens=0
-set arrow 10 from Pcenter, graph 0 to Pcenter, NAdens nohead back lw plw lc rgb pCol
-Pcenter=0
-NAdens=0
-set arrow 10 from Pcenter, graph 0 to Pcenter, NAdens nohead back lw plw lc rgb pCol
+Pcenter=2.13131
+NAdens=2.75
+set arrow 11 from Pcenter, graph 0 to Pcenter, NAdens nohead back lw plw lc rgb pCol
+Pcenter=2.1313
+NAdens=2.75
+set arrow 12 from Pcenter, graph 0 to Pcenter, NAdens nohead back lw plw lc rgb pCol
+
+
+
+
+# Phosphorus peak positions K:
+Pcenter=1.78879
+NAdens=1.2
+set arrow 13 from Pcenter, graph 0 to Pcenter, NAdens nohead back lw plw lc rgb pColK
+Pcenter=1.82677
+NAdens=1.2
+set arrow 14 from Pcenter, graph 0 to Pcenter, NAdens nohead back lw plw lc rgb pColK
+
 
 set label 2 "Na{\305}^+"  at graph  0.8,0.85 tc rgb "#00A368"
 set label 3 "K{\305}^+"  at graph  0.8,0.65 tc rgb "#00A368"
+
 
 top = bottom
 bottom = bottom - heightY
@@ -207,6 +230,11 @@ plot [0:zMax][0:dMax] \
 
 unset label 2
 unset label 3
+unset arrow 11
+unset arrow 12
+unset arrow 13
+unset arrow 14
+
 
 set label 1 "Lipid17"
 set label 2 "ff99ions"  at graph  0.8,0.85 tc rgb "#FFD300"
@@ -216,10 +244,10 @@ set label 3 "jcions"  at graph  0.8,0.65 tc rgb "#FFD300"
 # Phosphorus peak positions:
 Pcenter=0
 NAdens=0
-set arrow 10 from Pcenter, graph 0 to Pcenter, NAdens nohead back lw plw lc rgb pCol
+set arrow 15 from Pcenter, graph 0 to Pcenter, NAdens nohead back lw plw lc rgb pCol
 Pcenter=0
 NAdens=0
-set arrow 10 from Pcenter, graph 0 to Pcenter, NAdens nohead back lw plw lc rgb pCol
+set arrow 16 from Pcenter, graph 0 to Pcenter, NAdens nohead back lw plw lc rgb pCol
 
 top = bottom
 bottom = bottom - heightY
@@ -231,10 +259,12 @@ plot [0:zMax][0:dMax] \
   "../../Data/POPSlipid17jcionsDENSITY.txt" \
   u (abs($1)):($2) w l lc rgb "#FFD300" lw wK dt dash t "A_{pl} = 53 nm{\305}^2"
 
+
 unset label 2
 unset label 3
 
-
+unset arrow 15
+unset arrow 16
 
 
 set label 1 "Gromos-CKPM"
@@ -243,10 +273,10 @@ set label 1 "Gromos-CKPM"
 # Phosphorus peak positions:
 Pcenter=0
 NAdens=0
-set arrow 10 from Pcenter, graph 0 to Pcenter, NAdens nohead back lw plw lc rgb pCol
+set arrow 17 from Pcenter, graph 0 to Pcenter, NAdens nohead back lw plw lc rgb pCol
 Pcenter=0
 NAdens=0
-set arrow 10 from Pcenter, graph 0 to Pcenter, NAdens nohead back lw plw lc rgb pCol
+set arrow 18 from Pcenter, graph 0 to Pcenter, NAdens nohead back lw plw lc rgb pCol
 
 top = bottom
 bottom = bottom - heightY
@@ -258,7 +288,8 @@ plot [0:zMax][0:dMax] \
  
 
 set xtics format '%1.0f'
-
+unset arrow 17
+unset arrow 18
 
 set label 1 "Gromos-CKP"
 
@@ -266,10 +297,10 @@ set label 1 "Gromos-CKP"
 # Phosphorus peak positions:
 Pcenter=0
 NAdens=0
-set arrow 10 from Pcenter, graph 0 to Pcenter, NAdens nohead back lw plw lc rgb pCol
+set arrow 19 from Pcenter, graph 0 to Pcenter, NAdens nohead back lw plw lc rgb pCol
 Pcenter=0
 NAdens=0
-set arrow 10 from Pcenter, graph 0 to Pcenter, NAdens nohead back lw plw lc rgb pCol
+set arrow 20 from Pcenter, graph 0 to Pcenter, NAdens nohead back lw plw lc rgb pCol
 
 set xlabel "distance to bilayer center (nm)" font "Arial,20"
 
@@ -281,7 +312,8 @@ plot [0:zMax][0:dMax] \
   "../../../MATCH/Data/Lipid_Bilayers/POPS/T298K/MODEL_GROMOS-CKP2/NAdens.xvg" \
   u (abs($1)):($2) w l lc rgb "#E8007C" lw wNa t "A_{pl} = 63 nm{\305}^2"
  
-
+unset arrow 19
+unset arrow 20
 
 unset label 2
 unset obj 2
