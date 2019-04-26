@@ -1,5 +1,5 @@
 set term pdfcairo enhanced color dashed dashlength 0.5 size 10cm, 16cm font "Arial,15" 
-set out "../NAdensPOPSformatted.pdf"
+set out "../NAdensPOPSformattedColorVariation.pdf"
 
 
 nPanels=10
@@ -58,8 +58,8 @@ plw=2 #-- line width of phosphorus indicator lines
 pColK="#FFD300" #-- color of phosphorus indicator lines for K
 
 set label 1 "CHARMM36" at graph 0.05, graph 0.8 font "Arial,20" 
-set label 2 "Na{\305}^+"  at graph  0.8,0.85 tc palette frac 1000/cMax
-set label 3 "K{\305}^+"  at graph  0.8,0.65 tc palette frac 150/cMax
+set label 2 "Na{\305}^+"  at graph  0.8,0.85 tc rgb "#0088BF"
+set label 3 "K{\305}^+"  at graph  0.8,0.65 tc rgb "#0088BF"
 
 
 
@@ -89,9 +89,9 @@ set tmargin at screen top
 set bmargin at screen bottom
 plot [0:zMax][0:dMax] \
   "../../../MATCH/Data/Lipid_Bilayers/POPS/T298K/MODEL_CHARMM36/NAdens.xvg" \
-  u (abs($1)):($2) w l lc palette frac 1000/cMax lw wNa t "A_{pl} = 55 nm{\305}^2", \
+  u (abs($1)):($2) w l lc rgb "#0088BF" lw wNa t "A_{pl} = 55 nm{\305}^2", \
   "../../../MATCH/Data/Lipid_Bilayers/POPS/T298K/MODEL_CHARMM36_POTASSIUMcounterion/Kdens.xvg" \
-  u (abs($1)):($2) w l lc palette frac 150/cMax lw wK dt dash t "A_{pl} = 56 nm{\305}^2"
+  u (abs($1)):($2) w l lc rgb "#0088BF" lw wK dt dash t "A_{pl} = 56 nm{\305}^2"
 
 
 # do not write the highest tick mark on y-axis:
@@ -128,7 +128,7 @@ set tmargin at screen top
 set bmargin at screen bottom 
 plot [0:zMax][0:dMax] \
   "../../../MATCH/Data/Lipid_Bilayers/POPS/T298K/MODEL_CHARMM36UA/NAdens.xvg" \
-  u (abs($1)):($2) w l lc palette frac 1000/cMax lw wNa t "A_{pl} = 53 nm{\305}^2"
+  u (abs($1)):($2) w l lc rgb "#9966B6" lw wNa t "A_{pl} = 53 nm{\305}^2"
 
 
 unset arrow 5
@@ -158,7 +158,7 @@ set tmargin at screen top
 set bmargin at screen bottom
 plot [0:zMax][0:dMax] \
   "../../../MATCH/Data/Lipid_Bilayers/POPS/T298K/MODEL_SLIPIDS/NAdens.xvg" \
-  u (abs($1)):($2) w l lc palette frac 1000/cMax lw wNa t "A_{pl} = 58 nm{\305}^2"
+  u (abs($1)):($2) w l lc rgb "#7AEE9E" lw wNa t "A_{pl} = 58 nm{\305}^2"
 
 
 # set label for y-axis:
@@ -185,7 +185,7 @@ set tmargin at screen top
 set bmargin at screen bottom
 plot [0:zMax][0:dMax] \
   "../../../MATCH/Data/Lipid_Bilayers/POPS/T298K/MODEL_Berger/NAdens.xvg" \
-  u (abs($1)):($2) w l lc palette frac 1000/cMax lw wNa t "A_{pl} = 50 nm{\305}^2"
+  u (abs($1)):($2) w l lc rgb "#D70039" lw wNa t "A_{pl} = 50 nm{\305}^2"
 
 unset ylabel
 unset arrow 9
@@ -213,8 +213,9 @@ NAdens=1.2
 set arrow 14 from Pcenter, graph 0 to Pcenter, NAdens nohead back lw plw lc rgb pColK
 
 
-set label 2 "Na{\305}^+"  at graph  0.8,0.85 tc palette frac 1000/cMax
-set label 3 "K{\305}^+"  at graph  0.8,0.65 tc palette frac 150/cMax
+set label 2 "Na{\305}^+"  at graph  0.8,0.85 tc rgb "#00A368"
+set label 3 "K{\305}^+"  at graph  0.8,0.65 tc rgb "#00A368"
+
 
 top = bottom
 bottom = bottom - heightY
@@ -222,9 +223,9 @@ set tmargin at screen top
 set bmargin at screen bottom
 plot [0:zMax][0:dMax] \
   "../../../MATCH/Data/Lipid_Bilayers/POPS/T298K/MODEL_MACROG/NAdensAV.xvg" \
-  u (abs($1)):($2) w l lc palette frac 1000/cMax lw wNa t "A_{pl} = 53 nm{\305}^2", \
+  u (abs($1)):($2) w l lc rgb "#00A368" lw wNa t "A_{pl} = 53 nm{\305}^2", \
   "../../../MATCH/Data/Lipid_Bilayers/POPS/T298K/MODEL_MACROG_POTASSIUMcounterion/Kdens.xvg" \
-  u (abs($1)):($2) w l lc palette frac 150/cMax lw wK dt dash t "A_{pl} = 63 nm{\305}^2"
+  u (abs($1)):($2) w l lc rgb "#00A368" lw wK dt dash t "A_{pl} = 63 nm{\305}^2"
 
 
 unset label 2
@@ -236,8 +237,8 @@ unset arrow 14
 
 
 set label 1 "Lipid17"
-set label 2 "ff99ions"  at graph  0.8,0.85 tc palette frac 1000/cMax
-set label 3 "jcions"  at graph  0.8,0.65 tc palette frac 440/cMax
+set label 2 "ff99ions"  at graph  0.8,0.85 tc rgb "#FFD300"
+set label 3 "jcions"  at graph  0.8,0.65 tc rgb "#FFD300"
 
 
 # Phosphorus peak positions:
@@ -254,9 +255,10 @@ set tmargin at screen top
 set bmargin at screen bottom
 plot [0:zMax][0:dMax] \
   "../../Data/POPSlipid17ff99ionsDENSITY.txt" \
-  u (abs($1)):($2) w l lc palette frac 1000/cMax lw wNa t "A_{pl} = 57 nm{\305}^2", \
+  u (abs($1)):($2) w l lc rgb "#FFD300" lw wNa t "A_{pl} = 57 nm{\305}^2", \
   "../../Data/POPSlipid17jcionsDENSITY.txt" \
-  u (abs($1)):($2) w l lc palette frac 440/cMax lw wK dt dash t "A_{pl} = 53 nm{\305}^2"
+  u (abs($1)):($2) w l lc rgb "#FFD300" lw wK dt dash t "A_{pl} = 53 nm{\305}^2"
+
 
 unset label 2
 unset label 3
@@ -282,7 +284,7 @@ set tmargin at screen top
 set bmargin at screen bottom
 plot [0:zMax][0:dMax] \
   "../../../MATCH/Data/Lipid_Bilayers/POPS/T298K/MODEL_GROMOS-CKP1/NAdens.xvg" \
-  u (abs($1)):($2) w l lc palette frac 1000/cMax lw wNa t "A_{pl} = 63 nm{\305}^2"
+  u (abs($1)):($2) w l lc rgb "#FFA0A3" lw wNa t "A_{pl} = 63 nm{\305}^2"
  
 
 set xtics format '%1.0f'
@@ -308,7 +310,7 @@ set tmargin at screen top
 set bmargin at screen bottom
 plot [0:zMax][0:dMax] \
   "../../../MATCH/Data/Lipid_Bilayers/POPS/T298K/MODEL_GROMOS-CKP2/NAdens.xvg" \
-  u (abs($1)):($2) w l lc palette frac 1000/cMax lw wNa t "A_{pl} = 63 nm{\305}^2"
+  u (abs($1)):($2) w l lc rgb "#E8007C" lw wNa t "A_{pl} = 63 nm{\305}^2"
  
 unset arrow 19
 unset arrow 20
