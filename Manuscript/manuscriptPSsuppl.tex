@@ -321,12 +321,31 @@ was used for the analysis. The number of ions in each specific system is given i
 The trajectory files can be found in Refs~\citenum{POPCpopsLIPID17withKCI,POPCpopsLIPID17withK,POPCpopsLIPID17withNaCI,POPCpopsLIPID17withNa}.\\
 
 \noindent
-{\it POPC:POPS (5:1) mixtures with additional calcium} \\
+{\it POPC:POPS (5:1) mixtures with additional calcium chloride concentration} \\
 %The data in Table \ref{mixedIONsystems} and Refs \citenum{lipid17_cacl_series,POPCpopsLIPID17withCaCl} 
+We have performed two sets of simulations of POPC:POPS (5:1) mixtures using Amber Lipid17 force field \cite{gould18}
+with additional calcium chloride concentrations, 
+which employed different simulation engines and parameters for ions.
 
-One set of simulations of POPC:POPS (5:1) mixtures with additional calcium ions has been performed using Amber18 simulation package \cite{amber18md}. Number of ions and water molecules for this set of simulations are shown in Table~\ref{mixedIONsystems}. The simulation details, minimization, heating, and equilibration runs are the same as described above for the other POPC:POPS (5:1) simulations with Amber Lipid17 forcefield. For all simulations, ff99SB~\cite{aqvist90} ion parameters and Amber lipid 17 force field were used. For each ion concentration, 100~ns equilibration runs were followed by 300~ns production runs with two independent trajectories, of which last 200~ns were used for the analysis. The trajectory files can be found in Ref~\citenum{POPCpopsLIPID17withCaCl} 
+One set of simulations has been performed using Amber18 simulation package \cite{amber18md} and ff99SB~\cite{aqvist90} ion parameters. 
+Number of ions and water molecules for this set of simulations are shown in Table~\ref{mixedIONsystems}. The simulation details, minimization, heating, and equilibration runs are the same as described above for the other POPC:POPS (5:1) simulations with Amber Lipid17 forcefield. 
+For each ion concentration, 100~ns equilibration runs were followed by 300~ns production runs with two independent trajectories, of which last 200~ns were used for the analysis. The trajectory files can be found in Ref~\citenum{POPCpopsLIPID17withCaCl} 
 
-\todo{J. Melcr, please write simulation details about Gromacs simulations with Dang ions.} \\
+Another set of simulations with Lipid17 force field for lipids \cite{gould18}
+and Dang parameters for ions \cite{smith94, dang06}
+was performed using the GROMACS 2018 simulation package~\cite{abraham2015gromacs}. 
+We used the time step of 2~fs. 
+The non-bonded interactions were calculated directly within 1.0~nm cutoff using the Verlet scheme \cite{Pall13}, 
+and the long-range electrostatic forces were calculated using particle mesh Ewald~\cite{essman95}. 
+The bond lengths of hydrogen atoms were constrained using LINCS algorithm \cite{hess97}.
+Temperature was coupled to the velocity rescaling thermostat \cite{bussi07} at 298~K with a coupling constant of 1~ps.
+Pressure was coupled to the Parrinello-Rahman barostat \cite{parrinello81} at 1~bar with a coupling constant of 10~ps. 
+The composition of the individual simulations is shown in Table~\ref{mixedIONsystems}. 
+Initial structures obtained from CHARMM-GUI~\cite{lee16,jo18} 
+were equilibrated prior to production simulations used for analysis,
+which are available in Ref.~\citenum{lipid17_cacl_series} including the simulation settings. 
+Topologies in a format for the GROMACS package are available in the repository \citenum{ECCpops}. 
+
 
 \subsection{Slipids}
 
@@ -904,6 +923,9 @@ Performed most of the MacRog simulations and provided comments on the manuscript
 
 \noindent
 {\it Josef Melcr}
+consulted the project, 
+prepared tools for calculating order parameters
+and performed several simulations.
 
 \noindent
 {\it Markus Miettinen}
