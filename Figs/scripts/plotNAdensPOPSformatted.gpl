@@ -15,28 +15,81 @@ set xtics format '' 1
 set mxtics 4
 
 dMax=3.0
-set ytics format "%2.1f" 0.5
-#set mytics 2
+set ytics format "%2.0f" 1 
+set mytics 2
 
 cMax=1000.0 #-- highest salt concentration
 
 wNa = 2        #-- line width Na
-wK = 0.5*wNa   #-- line width K
-dash = 2       #-- dash type K 
+wK = wNa   #-- line width K
+dash = 4       #-- dash type K 
+
+wNa = 2        #-- line width Na
+wK2 = 0.75*wNa   #-- line width K
+#dash = 2       #-- dash type K 2
 
 # Colour palette to indicate ion concentrations:
 set palette model RGB maxcolors 11
 set palette defined (0 "#FFD300", 1 "#D70039", 2 "#0088BF", 3 "#00A368")
-set key at graph 0.02, graph 0.675 left reverse Left noautotitle textcolor variable samplen -1
+#set key at graph 0.02, graph 0.625 left reverse Left noautotitle textcolor variable samplen -1
+set key at graph 0.02, graph 0.625 left reverse Left noautotitle textcolor variable samplen -1
 unset colorbox
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 # Indicator for Phosphorus peak positions:
 pCol="#8FFF00" #-- color of phosphorus indicator lines
 plw=2 #-- line width of phosphorus indicator lines
+pColK="#FFD300" #-- color of phosphorus indicator lines for K
+pColJC="#FFA0A3" #-- color of phosphorus indicator lines for JC ions was E8007C
 
-set label 1 "CHARMM36" at graph 0.05, graph 0.8 font "Arial,20" 
-set label 2 "Na"  at graph  0.8,0.85 tc palette frac 510/cMax
-set label 3 "K"  at graph  0.8,0.7 tc palette frac 350/cMax
+set label 1 "CHARMM36" at graph 0.06, graph 0.8 font "Arial,20" 
+#set label 2 "Na{\305}^+"  at graph  0.745,0.80 tc palette frac 1000/cMax
+#set label 3 "K{\305}^+"  at graph  0.745,0.55 tc palette frac 150/cMax
+set label 2 "⟨A_{pl}⟩ = 55 Å{\305}^2"  at graph  0.745,0.80 tc palette frac 1000/cMax
+set label 3 "⟨A_{pl}⟩ = 56 Å{\305}^2"  at graph  0.745,0.55 tc palette frac 150/cMax
+
+
+
+
+
+# Phosphorus peak positions:
+Pcenter=2.1646
+NAdens=1.34833
+set arrow 1 from Pcenter, graph 0 to Pcenter, NAdens nohead back lw plw lc rgb pCol
+Pcenter=2.16461
+NAdens=1.34833
+set arrow 2 from Pcenter, graph 0 to Pcenter, NAdens nohead back lw plw lc rgb pCol
+
+
+# Phosphorus peak positions K:
+Pcenter=2.17249
+NAdens=1.39833
+set arrow 3 from Pcenter, graph 0 to Pcenter, NAdens nohead back lw plw lc rgb pColK
+Pcenter=2.17249
+NAdens=1.39833
+set arrow 4 from Pcenter, graph 0 to Pcenter, NAdens nohead back lw plw lc rgb pColK
+
 
 set rmargin at screen right
 set lmargin at screen left
@@ -44,56 +97,139 @@ set tmargin at screen top
 set bmargin at screen bottom
 plot [0:zMax][0:dMax] \
   "../../../MATCH/Data/Lipid_Bilayers/POPS/T298K/MODEL_CHARMM36/NAdens.xvg" \
-  u (abs($1)):($2) w l lc palette frac 510/cMax lw wNa t "A_{pl} = 55 {\305}^2", \
+  u (abs($1)):($2) w l lc palette frac 1000/cMax lw wNa t "Na{\305}^+", \
   "../../../MATCH/Data/Lipid_Bilayers/POPS/T298K/MODEL_CHARMM36_POTASSIUMcounterion/Kdens.xvg" \
-  u (abs($1)):($2) w l lc palette frac 350/cMax lw wK dt dash t "A_{pl} = 56 {\305}^2"
+  u (abs($1)):($2) w l lc palette frac 150/cMax lw wK dt dash t "K{\305}^+"
 
 
 # do not write the highest tick mark on y-axis:
-set ytics 0,0.5,dMax-0.5
+set ytics 0,1,dMax-0.5
+
+#set ytics format "%2.0f" 1 
+#set mytics 2
+
 
 unset label 2
 unset label 3
 
+unset arrow 1
+unset arrow 2
+unset arrow 3
+unset arrow 4
 
-set label 1 "CHARMM36ua"
+
+set label 1 "CHARMM36-UA"
+set label 2 "⟨A_{pl}⟩ = 53 Å{\305}^2"  at graph  0.745,0.80 tc palette frac 1000/cMax
+
+
+
+# Phosphorus peak positions:
+Pcenter=2.12632
+NAdens=1.39833
+set arrow 5 from Pcenter, graph 0 to Pcenter, NAdens nohead back lw plw lc rgb pCol
+Pcenter=2.12643
+NAdens=1.39833
+set arrow 6 from Pcenter, graph 0 to Pcenter, NAdens nohead back lw plw lc rgb pCol
+
+
+
+
+
 top = bottom
 bottom = bottom - heightY
 set tmargin at screen top
 set bmargin at screen bottom 
 plot [0:zMax][0:dMax] \
   "../../../MATCH/Data/Lipid_Bilayers/POPS/T298K/MODEL_CHARMM36UA/NAdens.xvg" \
-  u (abs($1)):($2) w l lc palette frac 510/cMax lw wNa t "A_{pl} = 53 {\305}^2"
+  u (abs($1)):($2) w l lc palette frac 1000/cMax lw wNa t ""
 
+
+unset arrow 5
+unset arrow 6
 
 set label 1 "Slipids"
+set label 2 "⟨A_{pl}⟩ = 58 Å{\305}^2"  at graph  0.745,0.80 tc palette frac 1000/cMax
+
+
+
+# Phosphorus peak positions:
+Pcenter=2.03203
+NAdens=1.79833
+set arrow 7 from Pcenter, graph 0 to Pcenter, NAdens nohead back lw plw lc rgb pCol
+Pcenter=2.03203
+NAdens=1.79833
+set arrow 8 from Pcenter, graph 0 to Pcenter, NAdens nohead back lw plw lc rgb pCol
+
+
+
+
+
+
+
 top = bottom
 bottom = bottom - heightY
 set tmargin at screen top
 set bmargin at screen bottom
 plot [0:zMax][0:dMax] \
   "../../../MATCH/Data/Lipid_Bilayers/POPS/T298K/MODEL_SLIPIDS/NAdens.xvg" \
-  u (abs($1)):($2) w l lc palette frac 510/cMax lw wNa t "A_{pl} = 58 {\305}^2"
+  u (abs($1)):($2) w l lc palette frac 1000/cMax lw wNa t ""
 
 
 # set label for y-axis:
-set ylabel "number density of ions (nm^{-3})" font "Arial,20" offset graph -0.017, graph -0.5
+set ylabel "number density of counterions (nm^{-3})" font "Arial,20" offset graph -0.017, graph -0.5
+
+
+unset arrow 7
+unset arrow 8
 
 set label 1 "Berger"
+set label 2 "⟨A_{pl}⟩ = 50 Å{\305}^2"  at graph  0.745,0.80 tc palette frac 1000/cMax
+
+
+# Phosphorus peak positions:
+Pcenter=2.25377
+NAdens=2.0594833
+set arrow 9 from Pcenter, graph 0 to Pcenter, NAdens nohead back lw plw lc rgb pCol
+Pcenter=2.25374
+NAdens=2.0594833
+set arrow 10 from Pcenter, graph 0 to Pcenter, NAdens nohead back lw plw lc rgb pCol
+
 top = bottom
 bottom = bottom - heightY
 set tmargin at screen top
 set bmargin at screen bottom
 plot [0:zMax][0:dMax] \
   "../../../MATCH/Data/Lipid_Bilayers/POPS/T298K/MODEL_Berger/NAdens.xvg" \
-  u (abs($1)):($2) w l lc palette frac 510/cMax lw wNa t "A_{pl} = 50 {\305}^2"
+  u (abs($1)):($2) w l lc palette frac 1000/cMax lw wNa t ""
 
 unset ylabel
+unset arrow 9
+unset arrow 10
+
+set label 1 "MacRog"
+
+# Phosphorus peak positions:
+Pcenter=2.13131
+NAdens=2.75
+set arrow 11 from Pcenter, graph 0 to Pcenter, NAdens nohead back lw plw lc rgb pCol
+Pcenter=2.1313
+NAdens=2.75
+set arrow 12 from Pcenter, graph 0 to Pcenter, NAdens nohead back lw plw lc rgb pCol
 
 
-set label 1 "MACROG"
-set label 2 "Na"  at graph  0.8,0.85 tc palette frac 510/cMax
-set label 3 "K"  at graph  0.8,0.7 tc palette frac 350/cMax
+
+
+# Phosphorus peak positions K:
+Pcenter=1.78879
+NAdens=1.2
+set arrow 13 from Pcenter, graph 0 to Pcenter, NAdens nohead back lw plw lc rgb pColK
+Pcenter=1.82677
+NAdens=1.2
+set arrow 14 from Pcenter, graph 0 to Pcenter, NAdens nohead back lw plw lc rgb pColK
+
+
+set label 2 "⟨A_{pl}⟩ = 53 Å{\305}^2"  at graph  0.745,0.80 tc palette frac 1000/cMax
+set label 3 "⟨A_{pl}⟩ = 63 Å{\305}^2"  at graph  0.745,0.55 tc palette frac 150/cMax
 
 top = bottom
 bottom = bottom - heightY
@@ -101,47 +237,103 @@ set tmargin at screen top
 set bmargin at screen bottom
 plot [0:zMax][0:dMax] \
   "../../../MATCH/Data/Lipid_Bilayers/POPS/T298K/MODEL_MACROG/NAdensAV.xvg" \
-  u (abs($1)):($2) w l lc palette frac 510/cMax lw wNa t "A_{pl} = 53 {\305}^2", \
+  u (abs($1)):($2) w l lc palette frac 1000/cMax lw wNa t "Na{\305}^+ ", \
   "../../../MATCH/Data/Lipid_Bilayers/POPS/T298K/MODEL_MACROG_POTASSIUMcounterion/Kdens.xvg" \
-  u (abs($1)):($2) w l lc palette frac 340/cMax lw wK dt dash t "A_{pl} = 63 {\305}^2"
+  u (abs($1)):($2) w l lc palette frac 150/cMax lw wK dt dash t "K{\305}^+"
 
 
 unset label 2
 unset label 3
+unset arrow 11
+unset arrow 12
+unset arrow 13
+unset arrow 14
+
 
 set label 1 "Lipid17"
-set label 2 "ff99ions"  at graph  0.8,0.85 tc palette frac 510/cMax
-set label 3 "jcions"  at graph  0.8,0.7 tc palette frac 440/cMax
+#set label 2 "ff99 ions"  at graph  0.745,0.80 tc palette frac 1000/cMax
+#set label 3 "JC ions"  at graph  0.745,0.55 tc palette frac 440/cMax
+set label 2 "⟨A_{pl}⟩ = 57 Å{\305}^2"  at graph  0.745,0.80 tc palette frac 1000/cMax
+set label 3 "⟨A_{pl}⟩ = 53 Å{\305}^2"  at graph  0.745,0.55 tc palette frac 440/cMax
+
+# Phosphorus peak positions ff99:
+Pcenter=2.10044
+NAdens=1.6
+set arrow 15 from Pcenter, graph 0 to Pcenter, NAdens nohead back lw plw lc rgb pCol
+Pcenter=2.10044
+NAdens=1.6
+set arrow 16 from Pcenter, graph 0 to Pcenter, NAdens nohead back lw plw lc rgb pCol
+
+
+
+
+# 
+# Phosphorus peak positions JC:
+Pcenter=2.26233
+NAdens=2.25
+set arrow 17 from Pcenter, graph 0 to Pcenter, NAdens nohead back lw plw lc rgb pColJC
+Pcenter=2.26233
+NAdens=2.25
+set arrow 18 from Pcenter, graph 0 to Pcenter, NAdens nohead back lw plw lc rgb pColJC
+
+
+
 top = bottom
 bottom = bottom - heightY
 set tmargin at screen top
 set bmargin at screen bottom
 plot [0:zMax][0:dMax] \
   "../../Data/POPSlipid17ff99ionsDENSITY.txt" \
-  u (abs($1)):($2) w l lc palette frac 510/cMax lw wNa t "A_{pl} = 57 {\305}^2", \
+  u (abs($1)):($2) w l lc palette frac 1000/cMax lw wNa t "ff99 ions", \
   "../../Data/POPSlipid17jcionsDENSITY.txt" \
-  u (abs($1)):($2) w l lc palette frac 440/cMax lw wK dt dash t "A_{pl} = 53 {\305}^2"
+  u (abs($1)):($2) w l lc palette frac 440/cMax lw wK2 dt dash t "JC ions"
 
 unset label 2
 unset label 3
 
+unset arrow 15
+unset arrow 16
 
-
+unset arrow 17
+unset arrow 18
 
 set label 1 "Gromos-CKPM"
+set label 2 "⟨A_{pl}⟩ = 63 Å{\305}^2"  at graph  0.745,0.80 tc palette frac 1000/cMax
+
+
+# Phosphorus peak positions:
+Pcenter=1.89758
+NAdens=1.0
+set arrow 19 from Pcenter, graph 0 to Pcenter, NAdens nohead back lw plw lc rgb pCol
+Pcenter=1.89751
+NAdens=1.0
+set arrow 20 from Pcenter, graph 0 to Pcenter, NAdens nohead back lw plw lc rgb pCol
+
 top = bottom
 bottom = bottom - heightY
 set tmargin at screen top
 set bmargin at screen bottom
 plot [0:zMax][0:dMax] \
   "../../../MATCH/Data/Lipid_Bilayers/POPS/T298K/MODEL_GROMOS-CKP1/NAdens.xvg" \
-  u (abs($1)):($2) w l lc palette frac 510/cMax lw wNa t "A_{pl} = 63 {\305}^2"
+  u (abs($1)):($2) w l lc palette frac 1000/cMax lw wNa t ""
  
 
 set xtics format '%1.0f'
-
+unset arrow 19
+unset arrow 20
 
 set label 1 "Gromos-CKP"
+set label 2 "⟨A_{pl}⟩ = 63 Å{\305}^2"  at graph  0.745,0.80 tc palette frac 1000/cMax
+
+
+# Phosphorus peak positions:
+Pcenter=1.89717
+NAdens=1.0
+set arrow 21 from Pcenter, graph 0 to Pcenter, NAdens nohead back lw plw lc rgb pCol
+Pcenter=1.89724
+NAdens=1.0
+set arrow 22 from Pcenter, graph 0 to Pcenter, NAdens nohead back lw plw lc rgb pCol
+
 set xlabel "distance to bilayer center (nm)" font "Arial,20"
 
 top = bottom
@@ -150,9 +342,10 @@ set tmargin at screen top
 set bmargin at screen bottom
 plot [0:zMax][0:dMax] \
   "../../../MATCH/Data/Lipid_Bilayers/POPS/T298K/MODEL_GROMOS-CKP2/NAdens.xvg" \
-  u (abs($1)):($2) w l lc palette frac 510/cMax lw wNa t "A_{pl} = 63 {\305}^2"
+  u (abs($1)):($2) w l lc palette frac 1000/cMax lw wNa t ""
  
-
+unset arrow 21
+unset arrow 22
 
 unset label 2
 unset obj 2

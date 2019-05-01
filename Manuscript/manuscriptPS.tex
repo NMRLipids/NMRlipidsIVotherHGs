@@ -43,7 +43,7 @@
 % Multiple \preprint commands are allowed.
 %\preprint{}
 
-\title{NMRlipids IV: Headgroup \& glycerol backbone structures, and cation binding in bilayers with PS lipids} %Title of paper
+\title{Headgroup structure and cation binding in phosphatidylserine lipid bilayers} %Title of paper
 
 % repeat the \author .. \affiliation  etc. as needed
 % \email, \thanks, \homepage, \altaffiliation all apply to the current author.
@@ -57,17 +57,16 @@
 \author{Hanne Antila}
 \affiliation{Department of Theory and Bio-Systems, Max Planck Institute of Colloids and Interfaces, 14424 Potsdam, Germany}
 \author{Pavel Buslaev}
-\affiliation{Moscow Institute of Physics and Technology}
+\affiliation{Moscow Institute of Physics and Technology, Dolgoprudny, Russia}
 \author{Fernando Favela}
 \affiliation{Mexico}
 \author{Tiago M. Ferreira}
 \affiliation{NMR group - Institut for Physics, Martin-Luther University Halle-Wittenberg}
 \author{Ivan Gushchin}
-\affiliation{Moscow Institute of Physics and Technology}
+\affiliation{Moscow Institute of Physics and Technology, Dolgoprudny, Russia}
 \author{Matti Javanainen}
-\affiliation{Institute of Organic Chemistry and Biochemistry,
-Academy of Sciences of the Czech Republic, 
-Prague 6, Czech Republic}
+\affiliation{Institute of Organic Chemistry and Biochemistry of the 
+Czech Academy of Sciences, Flemingovo n\'{a}m. 542/2, CZ-16610 Prague 6, Czech Republic}
 \author{Batuhan Kav}
 \affiliation{Department of Theory and Bio-Systems, Max Planck Institute of Colloids and Interfaces, 14424 Potsdam, Germany}
 \author{Jesper J. Madsen}
@@ -211,13 +210,14 @@ Unfortunately, the results have depended on the force field used.
 For example, recent simulations using the NBfix parameters for calcium \cite{kim16} in
 CHARMM36 force field \cite{klauda10,venable13}, combined with 2D infrared spectroscopy,
 suggest that calcium ions interact only with the carboxylate group of PS lipids \cite{valentine18}; in contrast,
-the results from same lipid model without the NBfix ion parameters, combined with NMR chemical shifts and
+the results from the same lipid model without the NBfix ion parameters, combined with NMR chemical shifts and
 rotational-echo double-resonance (REDOR) experiments, indicate a significant binding affinity also to the phosphate region \cite{hallock18}.
 Meanwhile, simulations with the Berger force field \cite{berger97,mukhopadhyay04},
 combined with fluorescent and vibrational sum frequency spectroscopy, suggest substantial
 calcium binding also to the carbonyls in the acyl chains \cite{melcrova16}.
 
-We have recently demonstrated that the lipid C--H bond order parameters, $S_\mathrm{CH}$~\cite{botan15,catte16}, can be utilized to resolve such controversies. The $S_\mathrm{CH}$ can be
+We have recently demonstrated that the lipid C--H bond order parameters, $S_\mathrm{CH}$,
+can be utilized to resolve such controversies~\cite{botan15,catte16}. The $S_\mathrm{CH}$ can be
 measured from NMR experiments with high accuracy and directly compared to simulations
 in order to evaluate the simulation model quality or to interpret the experiments \cite{ollila16}. Using this approach,
 it established that the structure of PC lipid headgroup and glycerol backbone are not well
@@ -727,7 +727,8 @@ in all the other tested models. This is evident in the calcium density distribut
 
 
 Experimentally, the POPS headgroup order parameters in POPC:POPS (5:1) mixtures
-exhibit a strong dependence of CaCl$_2$ with small concentrations that saturates below 100 mM (Fig. \ref{changesWITHCaClPS}). The $\beta$-carbon order paramter increases with added CaCl$_2$,
+exhibit a strong dependence of CaCl$_2$ with small concentrations that saturates below 100 mM (Fig. \ref{changesWITHCaClPS}).
+The $\beta$-carbon order parameter increases with added CaCl$_2$,
 whereas the larger $\alpha$-carbon order parameter decreases; a slight increase is observed in
 the smaller $\alpha$-carbon value. All these changes are significantly overestimated in the
 tested simulation models, including CHARMM36 which underestimated the binding affinity.
@@ -758,7 +759,8 @@ The main advantage of this approach is the direct connection
 between the accurately measurable experimental order parameters and the simulations,
 which reduces the ambiguity in the interpretation of experiments.
 
-First, we complemented the available experimental information \cite{browning80,roux90} by measuring the signs of the PS headgroup order parameters, and the proceeded to compare MD simulation results from several force fields to the experimental data
+First, we complemented the available experimental information \cite{browning80,roux90} by measuring the signs of the PS headgroup order parameters,
+and then proceeded to compare MD simulation results from several force fields to the experimental data
 This revealed that none of the force fields
 %tested using the NMRlipids open collaboration
 reproduce the PS headgroup order parameters within the experimental accuracy. However,
