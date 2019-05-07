@@ -1,0 +1,246 @@
+set term pdfcairo enhanced color dashed dashlength 0.5 size 10cm, 10cm font "Arial,15" 
+set out "../CAdensPCPSmixtureLOWconsformattedRed.pdf"
+
+
+nPanels=5
+set multiplot layout nPanels, 1
+top = 0.993
+heightY = 1.065/nPanels
+bottom = top-heightY
+right = 0.985
+left = 0.15
+
+zMax=4.0
+set xtics format '' 1
+set mxtics 4
+
+dMax=1.2
+set ytics format "%2.1f" 0.4
+set mytics 2
+
+cMax=1000.0 #-- highest salt concentration
+
+wCa = 2        #-- line width Ca
+wCa2 = wCa   #-- line width Ca'
+dash = 4       #-- dash type Ca' 
+wCl = wCa   #-- line width K  
+dash = 4       
+wCl2 =0.5* wCa   #-- line width K  
+dash = 4    
+
+
+# Colour palette to indicate ion concentrations:
+set palette model RGB maxcolors 11
+set palette defined (0 "#FFD300", 1 "#D70039", 2 "#0088BF", 3 "#00A368")
+set key at graph 0.02, graph 0.675 left reverse Left noautotitle textcolor variable samplen -1
+unset colorbox
+
+# Indicator for Phosphorus peak positions:
+pCol="#8FFF00" #-- color of phosphorus indicator lines
+plw=2 #-- line width of phosphorus indicator lines
+pColK="#FFD300" #-- color of phosphorus indicator lines for K
+
+set label 1 "CHARMM36" at graph 0.05, graph 0.8 font "Arial,20" 
+set label 2 "Ca{\305}^{2+}"  at graph  0.8,0.85 tc palette frac 350/cMax
+set label 3 "Cl{\305}^-"  at graph  0.8,0.65 tc palette frac 150/cMax
+
+
+
+# Phosphorus peak positions:
+Pcenter=1.9649
+NAdens=0.2
+set arrow 1 from Pcenter, graph 0 to Pcenter, NAdens nohead back lw plw lc rgb pCol
+Pcenter=1.96493
+NAdens=0.2
+set arrow 2 from Pcenter, graph 0 to Pcenter, NAdens nohead back lw plw lc rgb pCol
+
+
+
+
+
+
+
+set rmargin at screen right
+set lmargin at screen left
+set tmargin at screen top
+set bmargin at screen bottom
+plot [0:zMax][0:dMax] \
+  "../../../MATCH/Data/Lipid_Bilayers/POPS+83%popc+150mMCaCl/T298K/MODEL_CHARMM36/IONdens.xvg" \
+    u (abs($1)):($2) w l lc palette frac 350/cMax lw wCa t "260 mM"
+plot [0:zMax][0:dMax] \
+  "../../../MATCH/Data/Lipid_Bilayers/POPS+83%popc+150mMCaCl/T298K/MODEL_CHARMM36/IONdens.xvg" \
+    u (abs($1)):($3) w l lc palette frac 150/cMax lw wCl dt dash t ""
+
+
+# do not write the highest tick mark on y-axis:
+set ytics 0,0.4,dMax-0.2
+
+unset arrow 1
+unset arrow 2
+unset label 2
+unset label 3
+
+
+
+# set label for y-axis:
+set ylabel "number density of ions (nm^{-3})" font "Arial,20" offset graph -0.017, graph -0.5
+
+
+set label 1 "Berger"
+
+
+# Phosphorus peak positions:
+Pcenter=2.01836
+NAdens=0.44
+set arrow 3 from Pcenter, graph 0 to Pcenter, NAdens nohead back lw plw lc rgb pCol
+Pcenter=2.01843
+NAdens=0.44
+set arrow 4 from Pcenter, graph 0 to Pcenter, NAdens nohead back lw plw lc rgb pCol
+
+
+
+
+top = bottom
+bottom = bottom - heightY
+set tmargin at screen top
+set bmargin at screen bottom 
+plot [0:zMax][0:dMax] \
+  "../../../MATCH/Data/Lipid_Bilayers/POPS+80%popc+102mMCaCl/T310K/MODEL_Berger/CAdens.xvg" \
+    u (abs($1)):($2) w l lc palette frac 350/cMax lw wCa t "102 mM"
+plot [0:zMax][0:dMax] \
+  "../../../MATCH/Data/Lipid_Bilayers/POPS+80%popc+102mMCaCl/T310K/MODEL_Berger/CLdens.xvg" \
+    u (abs($1)):($3) w l lc palette frac 150/cMax lw wCl dt dash t ""
+    
+    
+    
+        
+unset ylabel
+unset arrow 3
+unset arrow 4
+
+set label 1 "MacRog"
+
+
+# Phosphorus peak positions:
+Pcenter=2.03981
+NAdens=0.08
+set arrow 5 from Pcenter, graph 0 to Pcenter, NAdens nohead back lw plw lc rgb pCol
+Pcenter=2.07733
+NAdens=0.05
+set arrow 6 from Pcenter, graph 0 to Pcenter, NAdens nohead back lw plw lc rgb pCol
+
+
+
+top = bottom
+bottom = bottom - heightY
+set tmargin at screen top
+set bmargin at screen bottom
+plot [0:zMax][0:dMax] \
+  "../../../MATCH/Data/Lipid_Bilayers/POPS+83%popc+100mMCaCl/T298K/MODEL_MACROG/IONdens.xvg" \
+    u (abs($1)):($2) w l lc palette frac 350/cMax lw wCa t "100 mM"
+plot [0:zMax][0:dMax] \
+  "../../../MATCH/Data/Lipid_Bilayers/POPS+83%popc+100mMCaCl/T298K/MODEL_MACROG/IONdens.xvg" \
+    u (abs($1)):($3) w l lc palette frac 150/cMax lw wCl dt dash t ""
+
+    
+unset arrow 5
+unset arrow 6
+
+
+set label 1 "LIPID17"
+
+
+# Phosphorus peak positions:
+Pcenter=2.0552
+NAdens=0.82
+set arrow 9 from Pcenter, graph 0 to Pcenter, NAdens nohead back lw plw lc rgb pCol
+Pcenter=2.0552
+NAdens=0.82
+set arrow 10 from Pcenter, graph 0 to Pcenter, NAdens nohead back lw plw lc rgb pCol
+
+# Phosphorus peak positions:
+Pcenter=0
+NAdens=0
+set arrow 7 from Pcenter, graph 0 to Pcenter, NAdens nohead back lw plw lc rgb pColK
+Pcenter=0
+NAdens=0
+set arrow 8 from Pcenter, graph 0 to Pcenter, NAdens nohead back lw plw lc rgb pColK
+
+
+
+
+
+
+set label 2 "Dang Ca{\305}^{2+}"  at graph  0.73,0.85 tc palette frac 350/cMax
+set label 3 "Cl{\305}^-"  at graph  0.93,0.85 tc palette frac 150/cMax
+set label 4 "ff99 Ca{\305}^{2+}"  at graph  0.76,0.65 tc palette frac 1000/cMax
+#set label 5 "Cl{\305}^-"  at graph  0.93,0.65 tc palette frac 500/cMax
+
+#set label 2 "ff99 ions"  at graph  0.8,0.85 tc palette frac 350/cMax
+#set label 3 "Dang ions"  at graph  0.8,0.7 tc palette frac 150/cMax
+
+set xtics format '%1.0f'
+set xlabel "distance to bilayer center (nm)" font "Arial,20"
+
+top = bottom
+bottom = bottom - heightY
+set tmargin at screen top
+set bmargin at screen bottom
+plot [0:zMax][0:dMax] \
+  "../../../MATCH/Data/Lipid_Bilayers/POPS+83%popc+410mMCaCl/T298K/MODEL_LIPID17/IONdens.xvg" \
+  u (abs($1)):($2) w l lc palette frac 350/cMax lw wCa2 t "410 mM", \
+  "../../../MATCH/Data/Lipid_Bilayers/POPS+83%popc+500mMCaCl/T298K/MODEL_LIPID17/number_density_ions.dat" \
+  u (abs($1)):($2) w l lc palette frac 1000/cMax lw wCa t "500 mM"
+  
+  
+plot [0:zMax][0:dMax] \
+  "../../../MATCH/Data/Lipid_Bilayers/POPS+83%popc+410mMCaCl/T298K/MODEL_LIPID17/IONdens.xvg" \
+    u (abs($1)):($3) w l lc palette frac 150/cMax lw wCl dt dash t ""       
+#plot [0:zMax][0:dMax] \
+#  "../../../MATCH/Data/Lipid_Bilayers/POPS+83%popc+500mMCaCl/T298K/MODEL_LIPID17/number_density_ions.dat" \
+#    u (abs($1)):($3) w l lc palette frac 500/cMax lw wCl2 dt dash t ""
+ 
+
+
+
+
+
+#set label 2 "ff99 Ca{\305}^{2+}"  at graph  0.73,0.85 tc palette frac 350/cMax
+##set label 3 "Cl{\305}^-"  at graph  0.93,0.85 tc palette frac 150/cMax
+#set label 4 "Dang Ca{\305}^{2+}"  at graph  0.73,0.65 tc palette frac 1000/cMax
+#set label 5 "Cl{\305}^-"  at graph  0.93,0.65 tc palette frac 500/cMax
+
+##set label 2 "ff99 ions"  at graph  0.8,0.85 tc palette frac 350/cMax
+##set label 3 "Dang ions"  at graph  0.8,0.7 tc palette frac 150/cMax
+
+#set xtics format '%1.0f'
+#set xlabel "distance to bilayer center (nm)" font "Arial,20"
+
+#top = bottom
+#bottom = bottom - heightY
+#set tmargin at screen top
+#set bmargin at screen bottom
+#plot [0:zMax][0:dMax] \
+#  "../../../MATCH/Data/Lipid_Bilayers/POPS+83%popc+500mMCaCl/T298K/MODEL_LIPID17/number_density_ions.dat" \
+#  u (abs($1)):($2) w l lc palette frac 350/cMax lw wCa t "500 mM", \
+#  "../../../MATCH/Data/Lipid_Bilayers/POPS+83%popc+410mMCaCl/T298K/MODEL_LIPID17/IONdens.xvg" \
+#  u (abs($1)):($2) w l lc palette frac 1000/cMax lw wCa2 t "410 mM"
+  
+##plot [0:zMax][0:dMax] \
+##  "../../../MATCH/Data/Lipid_Bilayers/POPS+83%popc+500mMCaCl/T298K/MODEL_LIPID17/number_density_ions.dat" \
+##    u (abs($1)):($3) w l lc palette frac 150/cMax lw wCl dt dash t ""
+#plot [0:zMax][0:dMax] \
+#  "../../../MATCH/Data/Lipid_Bilayers/POPS+83%popc+410mMCaCl/T298K/MODEL_LIPID17/IONdens.xvg" \
+#    u (abs($1)):($3) w l lc palette frac 500/cMax lw wCl2 dt dash t "" 
+ 
+unset arrow 7
+unset arrow 8
+unset arrow 9
+unset arrow 10
+
+unset label 2
+unset label 3
+unset label 4
+unset label 5
+unset obj 2
+unset multiplot

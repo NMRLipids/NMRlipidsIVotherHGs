@@ -1,0 +1,9 @@
+# POPS order parameters measured by Tiago Ferreira for NMRlipids IV project 
+# 298K,  lipid:water 60:40 wt%
+#
+#    OP1             OP2       error
+1    -0.11           nan      0.02
+2    -0.0            0.09     0.02
+3    -0.21           nan      0.02
+4    -0.18           nan      0.02
+5    -0.13           0.0      0.02

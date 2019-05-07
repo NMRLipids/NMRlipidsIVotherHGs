@@ -3,5 +3,7 @@
 #
 # Low concetrations should be retaken from the insert
 #
-1      12.6411468615    nan
-2      7.97441706306    1.71790295675
+# Signs measured by Tiago Ferreira for NMRlipids IV project
+#
+1      -12.6411468615    nan
+2      7.97441706306    -1.71790295675

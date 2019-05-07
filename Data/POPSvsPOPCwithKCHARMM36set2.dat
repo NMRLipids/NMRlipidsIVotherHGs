@@ -1,0 +1,8 @@
+# Data by Tom Piggot from: https://github.com/NMRLipids/NMRlipidsIVotherHGs/issues/1
+# K counterions
+#
+# 
+#
+# mole fraction of PC        beta          alpha1       alpha2
+0                         -0.0683185      0.0661756   -0.0369859
+0.83                      -0.14763       0.116538     -0.10411

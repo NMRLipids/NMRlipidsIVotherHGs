@@ -1,0 +1,719 @@
+%% ****** Start of file aiptemplate.tex ****** %
+%%
+%%   This file is part of the files in the distribution of AIP substyles for REVTeX4.
+%%   Version 4.1 of 9 October 2009.
+%%
+%
+% This is a template for producing documents for use with 
+% the REVTEX 4.1 document class and the AIP substyles.
+% 
+% Copy this file to another name and then work on that file.
+% That way, you always have this original template file to use.
+
+%\documentclass[aip,graphicx]{revtex4-1}
+%\documentclass[aip,reprint]{revtex4-1}
+
+%\usepackage{graphicx}
+
+%\draft % marks overfull lines with a black rule on the right
+%\documentclass[pre,aps,floatfix,authordate1-4,twocolumn]{revtex4-1}
+%\documentclass[pre,aps,floatfix,authordate1-4]{revtex4-1}
+
+\documentclass[aps,prl,superscriptaddress,twocolumn]{revtex4}
+
+
+
+%\documentclass[aps,prl,preprint,groupedaddress]{revtex4}
+
+\usepackage{rotating} 
+\usepackage{times}
+\usepackage{graphicx}
+\usepackage{setspace}
+\usepackage{amsmath}
+\usepackage{epstopdf}
+\usepackage[obeyFinal]{easy-todo}
+\usepackage{csquotes}
+
+\begin{document}
+
+% Use the \preprint command to place your local institutional report number 
+% on the title page in preprint mode.
+% Multiple \preprint commands are allowed.
+%\preprint{}
+
+\title{NMRlipids IV: Headgroup \& glycerol backbone structures, and cation binding in bilayers with PE, PG and PS lipids} %Title of paper
+
+% repeat the \author .. \affiliation  etc. as needed
+% \email, \thanks, \homepage, \altaffiliation all apply to the current author.
+% Explanatory text should go in the []'s, 
+% actual e-mail address or url should go in the {}'s for \email and \homepage.
+% Please use the appropriate macro for the type of information
+
+% \affiliation command applies to all authors since the last \affiliation command. 
+% The \affiliation command should follow the other information.
+
+\author{O. H. Samuli Ollila}
+\email[]{samuli.ollila@helsinki.fi}
+%\homepage[]{Your web page}
+\affiliation{Institute of Organic Chemistry and Biochemistry,
+Academy of Sciences of the Czech Republic, 
+Prague 6, Czech Republic}
+\affiliation{Institute of Biotechnology, University of Helsinki}
+
+
+% Collaboration name, if desired (requires use of superscriptaddress option in \documentclass). 
+% \noaffiliation is required (may also be used with the \author command).
+%\collaboration{}
+%\noaffiliation
+
+\date{\today}
+
+\begin{abstract}
+% insert abstract here
+  Primarily measured but also simulated NMR order parameters will be collected also for other than phophatidylcholine
+  (these are discussed in NMRlipids I) headgroup. The information will be used to understand structural differences between 
+  different lipid molecules in bilayers.
+\end{abstract}
+
+%\pacs{}% insert suggested PACS numbers in braces on next line
+
+\maketitle %\maketitle must follow title, authors, abstract and \pacs
+
+% Body of paper goes here. Use proper sectioning commands. 
+% References should be done using the \cite, \ref, and \label commands
+
+
+%\label{}
+\section{Introduction}
+
+In NMRlipids I and II project we were looking for a MD model
+which would correctly reproduce headgroup and glycerol
+backbone structures and cation binding for PC lipid bilayers \cite{botan15,catte16}.
+Here we extend the same goal for other than PC lipids.
+Currently the focus is on PE, PG and PS bilayers and their
+mixtures with PC. Experimental data with different amounts of 
+added salt is now collected and presented in this manuscript.
+Simulations for bilayers containing PG and PS with low salt conditions
+are ran with parameters from CHARMM GUI
+and compared to experiments. Some order parameters from
+simulations seems to be off from experimental values.
+Simulation data from other models would be highly useful 
+to see if some of the existing models would reproduce the 
+experimental order parameters and to analyze different 
+conformations predicted by different models respect to 
+experiments.
+
+%Phospholipids containing various polar headgroups and acyl
+%chains are essential building blocks of biological membranes.
+%Atomistic level structural details of lipids and lipid-ion 
+%interactions are considered highly important in several
+%biological processes. The lipid structure and ion binding
+%can be studied in detail with NMR spectroscopy. However,
+%the structural interpretation of NMR data requires usage
+%of models. The combination of classical molecular dynamics
+%simulations with NMR data, especially with C-H bond
+%order parameters, can potentially give atomistic resolution
+%interpretation of structure and dynamics of molecules \cite{botan15,ollila16,ferreira16}. 
+
+%Our recent studies concluded that MD models are cabable to
+%give structural interpretation for phosphatidylcholine 
+%hydrophopic acyl chain region, while hydrophilic headgrop, glycerol 
+%backbone and cation binding posed a major challenge for current
+%force fields \cite{botan15,ollila16,catte16,ferreira16}. 
+%These conclusions were reached by reviewing extensively 
+%available experimental data from various sources and using
+%NMRlipids Open Collaboration project to collect massive 
+%amount of simulation data \cite{botan15,catte16}.
+
+%Here we apply the same approach in search of MD simulation
+%models which would reproduce glycerol backbone and 
+%headgroup structures of lipids with PE, PG and PS headgroups.  
+%In addition, we attempt to find a MD simulation model
+%that would be able to correctly describe cation binding in
+%bilayer containing negatively charged PG and PS lipids.
+
+
+%Several MD simulation models have succesfully described 
+%acyl chain structures and their qaulitative changes in different
+%conditions for phosphatidylcholine lipids (for review see \cite{ollila16}).
+%However, the current simulation models were not found to be accurate
+%enough for full structural interpretation of phosphatidylcholine headgroup and
+%glycerol backbone \cite{botan15}. Also Na$ +$  binding affinities
+%were found to be significantly overestimated in several models and 
+%none of the available models was able to Ca$2+$ 
+
+%\section{Methods}
+
+%\subsection{Molecular dynamics simulations}
+
+\begin{figure}[]
+  \centering
+  \includegraphics[width=9.0cm]{../Figs/lipids.pdf}
+  \caption{\label{lipids}
+    Chemical structures and labels for the headgroup carbons.
+  }
+\end{figure}
+
+\section{Experimental glycerol backbone and headgroup order parameters for PE, PG and PS lipids}
+
+Absolute values of experimental order parameters for different lipid headgroups are
+collected in Fig. \ref{HGorderParameters}. Signs are measured only for PC as far as I know,
+thus only absolute values are used for now.
+\begin{figure}[]
+  \centering
+  \includegraphics[width=9.0cm]{../Figs/HGorderparameters.eps}
+  \caption{\label{HGorderParameters}
+    Absolute values of order parameters for headgroup and glycerol backbone with different headgroups
+    from experiments. POPC values are from \cite{ferreira13}, DOPS from \cite{browning80} contains 0.1M of NaCl,
+    POPG from \cite{borle85} contains 10nM PIPES, DPPG from \cite{wohlgemuth80} contains  10mM PIPES and 100mM NaCl,
+    DPPE from \cite{seelig76}, E.coliPE and E.coliPG are from \cite{gally81}.
+  }
+\end{figure}
+
+Based on superficial reading, the conclusions in the literature are roughly \\ 
+1) glycerol backbone structures are largely similar irrespectively of the headroup \cite{gally81}, \\
+2) glycerol backbone and headgroup structure and behaviour are similar in model membranes and in bacteria \cite{gally81,scherer87,seelig90}, \\
+3) headgroup structures are similar in PC, PE and PG lipids, while headgroup is more rigid in PS lipids \cite{wohlgemuth80,buldt81}. \\
+Extensive discussion about structural details of PE, PG or PS headgroups do not exists (as far as I know), 
+In contrast to PC lipids (see \cite{botan15} and references therein).
+
+
+\section{Glycerol backbone and headgroup order parameters for PE, PG and PS lipids in simulations}
+
+Several simulations containing PE, PG and PS lipids have been published \cite{??}, \todo{List should be completed}
+however, glycerol backbone and headgroup order parameters are not compared to
+the experiments (based on superficial reading of literature).
+
+\subsection{PE headgroup}
+Order parameters from Slipids simulations 
+and experiments for DPPE are shown in Fig. \ref{HGorderParametersPE}.
+Glycerol backbone order parameters in Slipids are off from experiments,
+as already observed previously for PC lipids \cite{botan15}.
+Order parameter signs for PE are not experimentally measured yet.
+For headgroup the signs are set to give best agreement with simulations
+and for glycerol to be consistent with experimental signs for PC.
+Order parameter for $\beta$ carbon shows apparent agreement
+with experiments. However, the sign of beta order parameter is positive,
+in contrast to PC where negative sign was measured. Thus, the the beta order
+parameter agrees with experiment with the assumption that its sign is opposite
+than for PC. This is yet to be confirmed by experiments.
+Order parameter for $\alpha$ carbon is too close to zero, even if the sign
+would be correct.
+
+\begin{figure}[]
+  \centering
+  \includegraphics[width=9.0cm]{../Figs/HGorderparametersPE.eps}
+  \caption{\label{HGorderParametersPE}
+    Order parameters for DPPE headgroup and glycerol
+    backbone from simulations with Slipids \cite{??} and experiments
+    (DPPE from \cite{seelig76} and E.coliPE from \cite{gally81}).
+    Absolute values are shown, because signs are not known experimentally.
+  }
+  \todo{Experimental signs of the order parameters would be highly useful.} \\
+\end{figure}
+
+\subsection{PS headgroup}
+The headgroup order parameters of DOPS and POPS bilayers 
+from different experiments and simulations are shown in
+Figs. \ref{HGorderParametersPS}.
+None of the tested models gives satisfactory agreement with
+experiments for order parameters in headgroup $\alpha$ and $\beta$
+carbons.
+\begin{figure}[]
+  \centering
+  \includegraphics[width=9.0cm]{../Figs/HGorderparametersPS.pdf}
+  \caption{\label{HGorderParametersPS}
+    Order parameters for PS headgroup and glycerol
+    backbone from simulations with different models and experiments without CaCl$_2$ 
+    Experimental data from \cite{browning80} contains 0.1M of NaCl.
+    Signs are taken from experiments for POPS described in Supplementary Information.
+    The vertical bars shown for the computational values are not error bars, but demonstrate that for these systems we had at least two data sets; the ends of the bars mark the extreme values from the sets, and the dot marks their measurement-time-weighted average.
+  }
+  \todo{Check and report all the counterions.}
+  \todo{Glycerol backbone order parameters should be available from the spectra measured by Tiago Ferreira.}
+\end{figure}
+
+\begin{figure}[]
+  \centering
+  \includegraphics[width=9.0cm]{../Figs/comparisonTablePS.pdf}
+  \caption{\label{comparisonTablePS}
+  Rough subjective ranking of force fields based on Figure~\ref{HGorderParametersPS}. Here “M” indicates a magnitude problem, “F” a forking problem; letter size increases with problem severity. Color scheme: “within experimental error” (dark green), “almost within experimental error” (light green), “clear deviation from experiments” (light red), and “major deviation from experiments” (dark red). The $\Sigma$-column shows the total deviation of the force field, when individual carbons are given weights of 0 (matches experiment), 1, 2, and 4 (major deviation). For full details of the assessment, see Supplementary Information.
+  }
+\end{figure}
+
+
+Glycerol backbone order parameters seems similar in all models,
+except in Slipids. Even thought glycerol backbone order parameter
+values are not yet experimentally available for PS lipids,
+the comparison with the results for PC lipids suggest that
+Slipid model do not correctly capture the glycerol backbone
+structure \cite{botan15}. The glycerol backbone structures between PC and
+PS lipids simulated with CHARMM36 are compared with the structures
+simulated with CHARMM36 in Fig. \ref{glycerol_buslaev}.
+The differences in sampled conformation leading to the order parameter
+differences are clearly visible in the figure.
+\begin{figure}[]
+  \centering
+  \includegraphics[width=9.0cm]{../Figs/glycerol_buslaev.png}
+  \caption{\label{glycerol_buslaev}
+    Snapshots overlayed from different simulations for glycerol backbone region
+    by Pavel Buslaev.
+  }
+\end{figure}
+
+%Comparison between experiments and simulations with CHARMM GUI
+%parameters for PS lipids in Fig. \ref{HGorderParametersPOPS} suggest that
+%the model overestimates magnitudes in $\beta$ and g$_3$ order parameters
+%and forking in $\alpha$.
+
+\subsection{PG headgroup}
+Comparison between experiments and simulations for PG lipids is shown
+in Fig. \ref{HGorderParametersPOPG}. The signs are not yet measured
+experimentally. They are set to give the best argeement with experiments.
+This would suggest that the $\beta$ order parameter would be positive,
+in contrast to PC and PS headgroups, were negative signs were measured.
+Even thought the signs turned out to be correct, the tested models would
+not give a very good argeement with the experiments.
+\begin{figure}[]
+  \centering
+  \includegraphics[width=9.0cm]{../Figs/HGorderparametersPOPG.eps}
+  \caption{\label{HGorderParametersPOPG}
+    Order parameters for PG headgroup and glycerol backbone from simulations and experiments without CaCl$_2$ 
+    (POPG from \cite{borle85} contains 10mM of PIPES, DPPG from \cite{wohlgemuth80} contains 10mM PIPES and 100mM CaCl,
+    E.Coli PG results from \cite{gally81}).
+    Signs are not known for experimental data. They are determined to give best agreement
+    with simulations. This is not reliable and should be corrected when experimental
+    data becomes available.
+  }
+  \todo{More simulation data for lipids with different headgroups to be collected} \\
+  \todo{CHARMM GUI simulation contains only counter ions as potassium.
+    All experiments here contain some amount of sodium salt. The best
+    ion concentrations for comparison should be figured out.} \\
+  \todo{Experimental signs of the order parameters would highly useful.}
+\end{figure}
+
+\section{Lipid bilayers with mixed compositions}
+
+\subsection{Effect of PE, PS and PG on PC headgroup}
+The headgroup order parameters for PC lipids (POPC and DOPC)
+mixed with PE, PS and PG lipids are shown in Fig. \ref{HGorderparametersPCvsPEPSPG}
+from different simulation model and experiments \cite{scherer87} with different
+mole fractions. As already discussed previosly, the PC lipid headgroup behaviour
+follows the electrometer concept in experiments when mixed with other lipids, i.e., the order
+parameters increase when mixed with negatively charged lipids (PS, PI, CL, PA and PG)
+remains almost unchaged when mixed with neutral lipids (PE and SM) \cite{scherer87}.
+This is not the case in simulation data shown in Fig. \ref{HGorderparametersPCvsPEPSPG}.
+The addition of DOPE into a POPC and DOPC bilayers significantly decreases the PC headgroup
+order parameters in simulations with OPLS compatible version of the Berger force field \cite{tieleman06}
+in contrast to experiments \cite{scherer87}. On the other hand, the increase of the PC
+headgroup order parameters in CHARMM36 simulations mixed with PS and PG lipids is significantly
+smaller than in experiments.
+\begin{figure}[]
+  \centering
+  \includegraphics[width=8.0cm]{../Figs/HGorderparametersPCvsPEPSPGchol.eps}
+  \caption{\label{HGorderparametersPCvsPEPSPGchol}
+    PC headgroup order parameters from experiments of mixtures with
+    PE, PS, PG and cholesterol \cite{scherer87,scherer89,ferreira13}.
+    Signs are determined as discussed in \cite{botan15,ollila16}.
+  }
+\end{figure}
+
+\begin{figure*}[]
+  \centering
+  \includegraphics[width=16.0cm]{../Figs/HGorderparametersPCvsPEPSPG.eps}
+  \caption{\label{HGorderparametersPCvsPEPSPG}
+    PC headgroup order parameters from mixtures with PE, PS and PG
+    lipids with various mole fractions from different simulation models and experiments \cite{scherer87}.
+    Signs are determined as discussed in \cite{botan15,ollila16}.
+  }
+  \todo{Simulation of CHARMM36 at 298K should be maybe rerun with Gromacs 5.}
+\end{figure*}
+
+\subsection{Effect of PC on PS and PG headgroups}
+The headgroup order parameters for PS and PG lipid mixtures with PC
+having different mole fractions from simulations and experiments \cite{borle85,roux90}
+are shown in Fig. \ref{HGorderparametersPSPGvsPC}. The effect of increasing
+amount of PC to PS headgroup seems to qualitatively incorrect in CHARMM36 simulations.
+The $\beta$-carbon order parameter increases in experiment, but decreases
+in simulations with both tested counterions (Na+ and K+). Larger
+$\alpha$-carbon order parameter decreases with the addition of PC
+in experiment, while the lower remains unchanged. In simulations the
+larger increases and the lower decreases.
+Interestingly, the $\alpha$-carbon order parameters are closer to experiments
+in pure PS system with K+ counterions than with Na+. 
+The changes in PG headgroup order parameters are minor in simulations, which
+is in line with the only available experiment for the $\beta$-carbon.
+\begin{figure*}[]
+  \centering
+  \includegraphics[width=16.0cm]{../Figs/HGorderparametersPSPGvsPC.eps}
+  \caption{\label{HGorderparametersPSPGvsPC}
+    PS and PG lipid headgroup order parameters from mixtures with PC
+    lipids with various mole fractions from different simulation models and experiments \cite{borle85,roux90}.
+    Signs are not yet known experimentally for PG, thus the signs give by simulations are used.
+    Signs for PS are measures as described in SI.
+  }
+  \todo{Some simulations contain potassium as counterions, while some sodium.
+    All experiments here contain some amount of sodium salt. The best
+    ion concentrations for comparison should be figured out.} \\
+  \todo{Why there is difference between CHARMM36 simulation results from POPS:POPC mixture and
+  pure POPS? Discussion in https://github.com/NMRLipids/NMRlipidsIVotherHGs/issues/1}
+\end{figure*}
+
+
+
+\section{Ca$^{2+}$ binding in bilayers with negatively charged PG and PS lipids}
+
+PC lipid headgroup order parameters can used to measure ion binding
+affinity, because their magnitude is linearly proportional
+to the amount of bound charge in bilayer \cite{seelig87,catte16}.
+This molecular electrometer concept can be used also
+for bilayers containing PC lipids mixed with charged lipids \cite{borle85,macdonald87,roux90}.
+This is demonstrated in Figs \ref{OrderParametersWithCaCl},
+\ref{OrderParametersWithCaClBELOW1M} and \ref{OrderParameterCHANGESWithCaClBELOW1M},
+showing order parameters for PC headgroup $\alpha$ and $\beta$ carbons
+as a function of CaCl$_2$ concentration in the presence of different amounts of
+negatively charged PS or PG lipids.
+\begin{figure}[]
+  \centering
+  \includegraphics[width=9.0cm]{../Figs/LIPIDSwithCaCl.eps}
+  \caption{\label{OrderParametersWithCaCl}
+    PC headgroup order parameters as a function of CaCl concentration from experiments containing charged lipids.
+    Pure DPPC data from \cite{akutsu81}, pure POPC data from \cite{altenbach84}, 
+    POPC:POPS mixture data from \cite{roux90}, POPC:POPG mixture data with 0.1M NaCl from \cite{macdonald87}
+    and POPC:POPG mixture data without NaCl from \cite{borle85}.
+  }
+  \todo{Check the NaCl concentrations in the samples.}
+\end{figure}
+\begin{figure}[]
+  \centering
+  \includegraphics[width=9.0cm]{../Figs/LIPIDSwithCaClBELOW1M.eps}
+  \caption{\label{OrderParametersWithCaClBELOW1M}
+    Figure \ref{OrderParametersWithCaCl} zoomed to smaller concentrations.
+  }
+\end{figure}
+\begin{figure}[]
+  \centering
+  \includegraphics[width=9.0cm]{../Figs/CHANGESwithCaCl.eps}
+  \caption{\label{OrderParameterCHANGESWithCaClBELOW1M}
+    The change of PC headgroup order parameters
+    in the presence of different amount of negatively charged lipids
+    respect to the values without added CaCl$_2$.
+    The original data is the same as in Fig. \ref{OrderParametersWithCaCl}. 
+  }
+\end{figure}
+
+PC headgroup order parameters increase when negatively charged
+PS or PG are added to PC bilayer in the absense of added CaCl$_2$,
+as expected based on electrometer concept \cite{seelig87}
+(see Fig. \ref{OrderParametersWithCaClBELOW1M}).
+%In electrometer concept this is explained by the tilting of
+%headgroup more parallel to membrane normal \cite{??}.
+Further, the order parameters decrease with the addition
+of CaCl$_2$ and the decrease is more pronounced for systems with more
+negatively charged lipids (see Fig. \ref{OrderParameterCHANGESWithCaClBELOW1M}).
+At CaCl$_2$ concentrations ($\sim$ 50-300mM) where order parameters reach the values for pure PC,
+the Ca2+ binding presumably fully cancels the charge from negative lipids and
+overcharging occurs above these concenterations.
+The interpretation of this data and some other results has been that \cite{seelig90}
+\begin{displayquote}
+  {\it ''(i) Ca$^{2+}$ binds to neutral lipids (phosphatidylcholine, phosphatidylethanolamine) and negatively charged lipids
+    (phosphatidylglycerol) with approximately the same binding constant of K = 10-20 M$^{-1}$; \\
+    (ii) the free Ca$^{2+}$
+    concentration at the membrane interface is distinctly enhanced if the membrane carries a negative surface
+    charge, either due to protein or to lipid; \\
+    (iii) increased inter-facial Ca$^{2+}$ also means increased amounts
+    of bound Ca$^{2+}$ at neutral and charged lipids; \\
+    (iv) the actual binding step can be described by a Langmuir
+    adsorption isotherm with a 1 lipid:1 Ca$^{2+}$ stoichiometry, provided the interfacial concentration C$_M$, is
+    used to describe the chemical binding equilibrium.''}
+\end{displayquote}
+
+Also the experimental order parameters for PS and PG headgroups
+as a function of CaCl$_2$ concentration are shown in Fig. \ref{PSPGchangesWITHCaCl}.
+\todo{These should be compared to simulations for potential structural interpretation of the changes.}
+\begin{figure}[]
+  \centering
+  \includegraphics[width=9.0cm]{../Figs/PSPGwithCaCl.eps}
+  \caption{\label{PSPGchangesWITHCaCl}
+    PG and PS order parameters a function CaCl$_2$ concentration taken from \cite{borle85} and \cite{roux90}, respectively.
+  }
+  \todo{Get the small concentration data from the inserts}
+\end{figure}
+
+
+\section{Ca$2+$ binding in bilayers with negatively charged PG and PS lipids in simulations}
+
+Comparison of Ca$2+$ binding in PG between CHARMM36 simulations and experiments \cite{borle85}
+is shown in Fig. \ref{changesWITHCaClPG}. The decrease of $\alpha$ order parameter
+is in agreement with experiments, while decerase of $\beta$ order parameter is overestimated.
+The result is very similar to the results with PC in NMRlipids II publication \cite{catte16}.
+It should be, however, noted that the $\beta$-order parameters are not actually measured for PG,
+but they are calculated from empirical relation $\Delta S_{\beta}=0.43\Delta S_{\alpha}$ \cite{akutsu81}.
+Anyway, the data presented in NMRlipids II project and in Fig. \ref{changesWITHCaClPG} together
+suggest that Calcium binding is similarly overestimated by CHARMM36 model in pure POPC bilayers and mixtures with
+POPG. The good agreement of $\alpha$ carbon would be explained by too weak dependence of its order
+parameter of bound charge \todo{Should we check this against cationic surfactant experiments \cite{scherer89}?}.
+\begin{figure}[]
+  \centering
+  \includegraphics[width=9.0cm]{../Figs/CHANGESwithCaClPGPS.eps}
+  \caption{\label{changesWITHCaClPG}
+    PG order parameters as a function CaCl$_2$ concentration from experiments \cite{borle85} and CHARMM36 simulations.
+    Note that beta order parameter is calculated from empirical relation $\Delta S_{\beta}=0.43\Delta S_{\alpha}$ \cite{akutsu81}, not actually measured. 
+  }
+\end{figure}
+
+Also dependence of $\beta$-carbon of PG on CaCl$_2$ concentration is compared with
+experiments \cite{borle85} in Fig. \ref{PSPGchangesWITHCaCl}. Absolute value of
+the order parameter is too large without ions, but rapid decrease due to addition of
+CaCl$_2$ is observed in agreement with experiments for systems with 1:1 mixture of POPC and POPG.
+In addition, absolute value in systems with CaCl$_2$ is in agreement with experiments.
+However, system with 4:1 mixture of POPC and POPG behaves differently, but experimental
+data is not available for comparison for this mixture.
+
+
+\todo{More simulation data for systems with negatively charged lipids and CaCl$_2$ to be collected}
+
+\section{Conclusions}
+
+
+% Tables may be be put in the text as floats.
+% Here is an example of the general form of a table:
+% Fill in the caption in the braces of the \caption{} command. Put the label
+% that you will use with \ref{} command in the braces of the \label{} command.
+% Insert the column specifiers (l, r, c, d, etc.) in the empty braces of the
+% \begin{tabular}{} command.
+%
+% \begin{table}
+% \caption{\label{} }
+% \begin{tabular}{}
+% \end{tabular}
+% \end{table}
+
+% If you have acknowledgments, this puts in the proper section head.
+\begin{acknowledgments}
+% Put your acknowledgments here.
+\end{acknowledgments}
+\newpage
+\appendix
+\begin{center}
+{\bf SUPPLEMENTARY INFORMATION}
+\end{center}
+
+\section{Simulated systems}
+\begin{table*}[!p]
+%\begin{sidewaystable*}[!p]
+\centering
+\caption{List of MD simulations. The salt concentrations calculated as 
+   [salt]=N$_{\rm c} \times$[water]\,/\,N$_{\rm w}$, where [water]\,=\,55.5~M.
+%   these correspond the concentrations reported in the experiments by Akutsu et al.~\cite{akutsu81}.
+%   The lipid force fields named as in our previous work~\cite{botan15}.
+}\label{IONsystems}
+\begin{minipage}[t]{\textwidth}
+\begin{tabular}{l c c r r r r r r c c}
+  %\hline
+  % some footnotes are not visible in typeset-MS (pdf)
+ lipid/counter-ions & force field for lipids / ions & NaCl (mM) & CaCl$_2$\,(mM) &  \footnote{Number of lipid molecules with largest mole fraction}N$_{\rm l}$   &  \footnote{Number of water molecules}N$_{\rm w}$   & \footnote{Number of additional cations}N$_{\rm c}$  & \footnote{Simulation temperature}T (K)  & \footnote{Total simulation time}t$_{{\rm sim}}$(ns) & \footnote{Time used for analysis}t$_{{\rm anal}}$ (ns) &   \footnote{Reference for simulation files}files\\
+  \hline
+  DPPE  & Slipids \cite{jambeck12b} &0 & 0        & 288 			   		& 9386 & 0  & 336  & 200 & 100 & \cite{slipidsDPPEfiles}  \\
+    \hline
+    DOPS/Na$^+$  & CHARMM36 \cite{??}  \todoi{Correct citation for CHARMM DOPS}      &0 & 0        & 128 			   		& 4480 & 0  & 303  & 500 & 100 & \cite{??}
+    \todoi{By Piggot: http://nmrlipids.blogspot.com/2017/03/nmrlipids-iv-headgroup-glycerol.html?showComment=1491425687561\#c4932902612512697301. We need to decide the switching version or discuss this somehow.}  \\
+    DOPS/Na$^+$  & CHARMM36ua \cite{??} \todoi{Correct citation for CHARMMua DOPS}        &0 & 0        & 128 			   		& 4480 & 0  & 303  & 500 & 100 & \cite{??}
+    \todoi{Delivered by Piggot. We need to decide the switching version or discuss this somehow. Data to be uploaded in Zenodo?}  \\
+    DOPS/Na$^+$  & Slipids \cite{jambeck13}        &0 & 0        & 128 			   		& 4480 & 0  & 303  & 500 & 100 & \cite{??}
+    \todoi{Delivered by Piggot. We need to decide the cut-off version or discuss this somehow. Data to be uploaded in Zenodo?}  \\
+    DOPS/Na$^+$  & Slipids \cite{jambeck13}        &0 & 0        & 288 			   		& 11232 & 0  & 303  & 200 & 100 & \cite{slipidsDOPSfiles} \\
+    DOPS/Na$^+$  & Berger \cite{mukhopadhyay04}        &0 & 0        & 128 			   		& 4480 & 0  & 303  & 500 & 100 & \cite{??}
+    \todoi{Delivered by Piggot. Data to be uploaded in Zenodo?}  \\
+    DOPS/Na$^+$  & GROMOS-CKP \cite{??} \todoi{Correct citation(s) for CKP.}       &0 & 0        & 128 			   		& 4480 & 0  & 303  & 500 & 100 & \cite{??}
+    \todoi{Delivered by Piggot. We need to decide between RF and PME or discuss this somehow. Data to be uploaded in Zenodo?}  \\
+    \hline
+    POPS/Na$^+$  & CHARMM36 \cite{??} \todoi{Correct citation for CHARMM POPS}        &0 & 0        & 128 			   		& 4480 & 0  & 298  & 500 & 100 & \cite{??}
+    \todoi{Delivered by Piggot. We need to decide the switching version or discuss this somehow. Data to be uploaded in Zenodo?}  \\
+    POPS/Na$^+$  & CHARMM36ua \cite{??} \todoi{Correct citation for CHARMMua DOPS}        &0 & 0        & 128 			   		& 4480 & 0  & 298  & 500 & 100 & \cite{??}
+    \todoi{Delivered by Piggot. We need to decide the switching version or discuss this somehow. Data to be uploaded in Zenodo?}  \\
+    POPS/Na$^+$  & Slipids \cite{jambeck13}        &0 & 0        & 128 			   		& 4480 & 0  & 298  & 500 & 100 & \cite{??}
+    \todoi{Delivered by Piggot. We need to decide the cut-off version or discuss this somehow. Data to be uploaded in Zenodo?}  \\
+    \hline
+    POPC:POPS (5:1)/Na$^+$  & CHARMM36 \cite{klauda10,??} \todoi{Correct citation for CHARMM POPS}        &0 & 0        & ? 			   		& ? & 0  & ?  & ? & ? & \cite{??}
+    \todoi{Details to be filled and data to be uploaded in Zenodo by Ollila.}  \\
+    \hline
+    POPG/Na$^+$  & CHARMM36 \cite{??} \todoi{Correct citation for CHARMM POPG}        &0 & 0        & ? 			   		& ? & 0  & ?  & ? & ? & \cite{??}
+    \todoi{Details to be filled and data to be uploaded in Zenodo by Ollila.}  \\
+    POPG/Na$^+$  & Slipids \cite{jambeck13}     &0 & 0        & 288 			   		& 10664 & 0  & 298  & 250 & 100 & \cite{slipidsPOPGfiles} \\
+    \hline
+    DPPG/Na$^+$  & Slipids \cite{jambeck13}     &0 & 0        & 288 			   		& 11232 & 0  & 314  & 200 & 100 & \cite{slipidsDPPGfiles} \\
+    DPPG/Na$^+$  & Slipids \cite{jambeck13}     &0 & 0        & 288 			   		& 11232 & 0  & 298  & 400 & 100 & \cite{slipidsDPPGfilesT298K} \\
+\end{tabular}
+\end{minipage}
+%\end{sidewaystable*} 
+\end{table*}
+
+
+\section{Measurements of order parameter sign}
+
+Fig. \ref{PShgSIGNS} summarizes the experimental results on the order parameter sign
+measurement for POPS sample. The experimental protocol is the same used in Ref. \citenum{ferreira16}.
+In (a) you see the headgroup region of the INEPT spectrum where alpha and beta are
+identified. In (b) you have the R-PDLF slices for alpha and beta where you see one single
+splitting for beta (which gives an order parameter equal to 0.12), and for alpha a superposition
+of a large splitting (order parameter equal to 0.09) and a very small splitting which cannot be
+calculated. On the bottom you have the S-DROSS slices of these two carbons. The grey lines show a
+random collection of slices from noise such that it gets clear what is significant. The S-DROSS
+slice for beta clearly shows that the order parameter is negative. The slice for alpha shows that
+the higher order parameter is positive and suggests that the smaller order parameter is negative
+(from the deviation towards negative values in the longer t1 times).
+\begin{figure}[]
+  \centering
+  \includegraphics[width=9.0cm]{../Figs/PShgSIGNS.pdf}
+  \caption{\label{PShgSIGNS}
+    Experimental results for sign measurement for POPS sample
+  }
+\end{figure}
+
+The results updated with SIMPSON simulations for the SDROSS profiles
+are shown in Fig. \ref{PShgSIGNSsimpson}. The value for the smaller
+alpha order parameter is taken from Fig 3 in Ref. \citenum{roux91},
+because resolution in 13C NMR experiments was nor high enough to determine
+numerical value for this. The plots in Fig. \ref{PShgSIGNSsimpson} (c) show
+the following. The error bars and points are the experimental SDROSS data.
+The thick lines are SIMPSON simulations. The simulations were done by using
+the order parameter for beta equal to -0.12 and for alpha one order parameter
+equal to 0.09 and the other equal to -0.02 (black) or 0.02 (grey).
+Since the black lines agree with experimental data, we conlude that
+the order parameters for $\beta$ carbon are -0.12 and for $\alpha$
+order parameters are 0.09 and -0.02.
+\begin{figure}[]
+  \centering
+  \includegraphics[width=9.0cm]{../Figs/PShgSIGNSsimpson.pdf}
+  \caption{\label{PShgSIGNSsimpson}
+    Experimental results for sign measurement for POPS sample
+  }
+\end{figure}
+
+\section{Dihedrals}
+\begin{figure*}[]
+  \centering
+  \includegraphics[width=8.0cm]{../Figs/dihed1.png}
+  \includegraphics[width=8.0cm]{../Figs/dihed2.png}
+  \includegraphics[width=8.0cm]{../Figs/dihed3.png}
+  \includegraphics[width=8.0cm]{../Figs/dihed4.png}
+  \includegraphics[width=8.0cm]{../Figs/dihed5.png}
+  \includegraphics[width=8.0cm]{../Figs/dihed6.png}
+  \includegraphics[width=8.0cm]{../Figs/dihed7.png}
+  \includegraphics[width=8.0cm]{../Figs/dihed8.png}
+  \includegraphics[width=8.0cm]{../Figs/dihed9.png}
+  \includegraphics[width=8.0cm]{../Figs/dihed10.png}
+  \caption{\label{dihedrals}
+    Experimental results for sign measurement for POPS sample
+  }
+\end{figure*}
+
+
+\pagebreak
+\section{Details of the rough subjective force field ranking (Fig.~\ref{comparisonTablePS})} 
+
+The assessment was based fully on the Fig.~\ref{HGorderParametersPS}.
+%
+First, for each carbon (the columns in Fig.~\ref{HGorderParametersPS}) in each force field (the rows),
+we looked separately at deviations in magnitude and forking.
+
+{\bf Magnitude} deviations, i.e., how close to the experimentally obtained C--H order parameters (OPs)
+the force-field-produced OPs were.
+%
+For each carbon, the following 5-step scale was used:
+%
+\begin{description}
+\item [0 (~):] \noindent {More than half of all the calculated OPs (that is, of all different hydrogens in all different lipids) were within the {\it subjective sweet spots} (SSP, blue-shaded areas in Fig.~\ref{HGorderParametersPS}).}
+%
+\item [1 ({\textsf{\tiny M}}):] \noindent {All the calculated OPs  were $< 0.03$ units away from the SSP.}
+%
+\item [2  ({\textsf{\small M}}):] \noindent {All the calculated OPs  were $< 0.05$ units away from the SSP.}
+%
+\item [3 ({\textsf{\large M}}):] \noindent {All the calculated OPs  were $< 0.10$ units away from the SSP.}
+%
+\item [4 ({\textsf{\Large M}}):] \noindent {Some of the calculated OPs  were $> 0.10$ units  away from the SSP.}
+\end{description}
+
+{\bf Forking} deviations, i.e., how well the difference in order parameters of two hydrogens attached to a given carbon matched that obtained experimentally. Note that this is not relevant for $\beta$ and $\mathrm{g_2}$, which have only one hydrogen. For the $\alpha$ carbon,  for which a considerable forking of 0.105 is experimentally seen, the following 5-step scale was used:
+\begin{description}
+\item [0 (~):] \noindent {The distance $D$ between the dots (that mark the measurement-time-weighted averages in Fig.~\ref{HGorderParametersPS}) was $0.08 < D< 0.13$ units for all the calculated OPs (that is, for all different lipids).}
+%
+\item [1 ({\textsf{\tiny F}}):] \noindent {$(0.06 < D < 0.08)$ OR $(0.13 < D < 0.15)$.}
+%
+\item [2  ({\textsf{\small F}}):] \noindent {$(0.04 < D < 0.06)$ OR $(0.15 < D < 0.17)$.}
+%
+\item [3 ({\textsf{\large F}}):] \noindent {$(0.02 < D < 0.04)$ OR $(0.17 < D < 0.19)$.}
+%
+\item [4 ({\textsf{\Large F}}):] \noindent {$(D<0.02)$ OR $(0.19<D)$.}
+\end{description}
+%
+For the $\mathrm{g_3}$ carbon, for which no forking is indicated by experiments, the following 5-step scale was used:
+%
+\begin{description}
+\item [0 (~):] \noindent {$ D< 0.02$.}
+%
+\item [1 ({\textsf{\tiny F}}):] \noindent {$0.02 < D < 0.04$.}
+%
+\item [2  ({\textsf{\small F}}):] \noindent {$0.04 < D < 0.06$.}
+%
+\item [3 ({\textsf{\large F}}):] \noindent {$0.06 < D < 0.08$.}
+%
+\item [4 ({\textsf{\Large F}}):] \noindent {$0.08 < D$.}
+\end{description}
+%
+For the $\mathrm{g_1}$ carbon, for which a considerable forking of 0.13 is experimentally seen, the following 5-step scale was used:
+%
+\begin{description}
+\item [0 (~):] \noindent {$0.11 < D < 0.15$.}
+%
+\item [1 ({\textsf{\tiny F}}):] \noindent {$(0.09 < D < 0.11)$ OR $(0.15 < D < 0.17)$.}
+%
+\item [2  ({\textsf{\small F}}):] \noindent {$(0.07 < D < 0.09)$ OR $(0.17 < D < 0.19)$.}
+%
+\item [3 ({\textsf{\large F}}):] \noindent {$(0.05 < D < 0.07)$ OR $(0.19 < D < 0.21)$.}
+%
+\item [4 ({\textsf{\Large F}}):] \noindent {$(D<0.05)$ OR $(0.21<D)$.}
+\end{description}
+
+Based on these assessments of magnitude and forking deviations,
+each carbon was then assigned to one of the following groups:
+"within experimental error"
+(magnitude and forking deviations both on step 0 of the scales described above),
+"almost within experimental error"
+(sum of the magnitude and forking deviation steps 1 or 2),
+"clear deviation from experiments"
+(sum of magnitude and forking deviation steps from 3 to 5), and
+"major deviation from experiments"
+(sum of magnitude and forking deviation steps from 6 to 8).
+These groups are indicated by colors in Fig.~4.
+(Note that for $\beta$ and $\mathrm{g_2}$, for which there can be no forking,
+the corresponding group assigment limits were: 0, 1, 2, and 3.)
+
+Finally, the total ability of the force field to describe the headgroup and
+glycerol structure was estimated.
+To this end, the groups were given the following weights:
+0 (within experimental error),
+1 (almost within experimental error),
+2 (clear deviation from experiments),
+4 (major deviation from experiments),
+and the weights of the five carbons were summed up.
+The sum, given in the $\Sigma$-column of Fig.~\ref{HGorderParametersPS},
+was then used to (roughly and subjectively, as should be clear from the
+above description) rank the force fields.
+
+\newpage
+
+
+
+% Create the reference section using BibTe
+\bibliography{refs.bib}
+
+%\newpage
+%\section{APPENDIX: The NMR results reported by Tiago Ferreira}
+
+\listoftodos
+
+\end{document}
+%
+% ****** End of file aiptemplate.tex ******

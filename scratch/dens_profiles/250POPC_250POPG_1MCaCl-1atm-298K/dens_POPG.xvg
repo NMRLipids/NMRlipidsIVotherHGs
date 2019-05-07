@@ -1,0 +1,72 @@
+# This file was created Sun Jul 30 12:43:59 2017
+# Created by:
+# GROMACS:      gmx density, VERSION 5.0.4
+# Executable:   /software/gromacs-5.0-el6-x86_64+intelmpi-5.0+intel-15.0/bin/gmx_mpi
+# Library dir:  /software/gromacs-5.0-el6-x86_64+intelmpi-5.0+intel-15.0/share/gromacs/top
+# Command line:
+#   gmx_mpi density -f ../run.total.xtc -s ../step7_1.tpr -n index.ndx -d Z -dens mass -center -o dens_POPG.xvg
+# gmx_mpi is part of G R O M A C S:
+#
+# GROningen Mixture of Alchemy and Childrens' Stories
+#
+@    title "Partial density"
+@    xaxis  label "Relative position from center (nm)"
+@    yaxis  label "Density (kg m\S-3\N)"
+@TYPE xy
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "POPG"
+    -4.24576                0
+    -4.07246                0
+    -3.89917      3.60782e-05
+    -3.72587        0.0179144
+    -3.55257         0.155898
+    -3.37928          1.32558
+    -3.20598          8.40381
+    -3.03269          33.6325
+    -2.85939          93.5438
+    -2.68609          198.517
+     -2.5128          332.659
+     -2.3395          455.577
+     -2.1662          537.808
+    -1.99291          566.626
+    -1.81961          547.348
+    -1.64631          507.896
+    -1.47302          470.317
+    -1.29972          449.085
+    -1.12643          441.334
+    -0.95313          434.793
+   -0.779833          426.289
+   -0.606537          413.081
+   -0.433241              392
+   -0.259944          370.107
+  -0.0866482          367.431
+   0.0866482          388.036
+    0.259944          411.992
+    0.433241          429.194
+    0.606537          438.769
+    0.779833          446.597
+     0.95313           459.22
+     1.12643          482.303
+     1.29972          520.795
+     1.47302          549.612
+     1.64631          546.028
+     1.81961          510.921
+     1.99291          432.387
+      2.1662          319.599
+      2.3395          197.459
+      2.5128          101.498
+     2.68609          41.8634
+     2.85939          13.4074
+     3.03269          3.23037
+     3.20598         0.454098
+     3.37928        0.0227775
+     3.55257      0.000677651
+     3.72587                0
+     3.89917                0
+     4.07246                0
+     4.24576                0

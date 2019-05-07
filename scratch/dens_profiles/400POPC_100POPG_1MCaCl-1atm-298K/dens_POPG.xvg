@@ -1,0 +1,72 @@
+# This file was created Sun Jul 30 12:30:53 2017
+# Created by:
+# GROMACS:      gmx density, VERSION 5.0.4
+# Executable:   /software/gromacs-5.0-el6-x86_64+intelmpi-5.0+intel-15.0/bin/gmx_mpi
+# Library dir:  /software/gromacs-5.0-el6-x86_64+intelmpi-5.0+intel-15.0/share/gromacs/top
+# Command line:
+#   gmx_mpi density -f ../run.total.xtc -s ../step7_1.tpr -n index.ndx -d Z -dens mass -center -o dens_POPG.xvg
+# gmx_mpi is part of G R O M A C S:
+#
+# GROwing Monsters And Cloning Shrimps
+#
+@    title "Partial density"
+@    xaxis  label "Relative position from center (nm)"
+@    yaxis  label "Density (kg m\S-3\N)"
+@TYPE xy
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "POPG"
+    -4.14719                0
+    -3.97791                0
+    -3.80864      0.000629372
+    -3.63937       0.00840193
+     -3.4701        0.0255213
+    -3.30082          0.19844
+    -3.13155          1.23386
+    -2.96228          5.64377
+      -2.793          17.7085
+    -2.62373          44.6983
+    -2.45446          89.2756
+    -2.28518          141.688
+    -2.11591          186.667
+    -1.94664          211.464
+    -1.77737          218.422
+    -1.60809          214.328
+    -1.43882          202.355
+    -1.26955          189.935
+    -1.10027          182.792
+   -0.931001          178.222
+   -0.761728          174.717
+   -0.592455          172.657
+   -0.423182           168.93
+   -0.253909          164.251
+  -0.0846365          161.755
+   0.0846365          163.271
+    0.253909          167.519
+    0.423182          172.232
+    0.592455          176.225
+    0.761728          179.768
+    0.931001          183.108
+     1.10027          192.483
+     1.26955          207.574
+     1.43882          221.069
+     1.60809          219.421
+     1.77737          201.136
+     1.94664          168.341
+     2.11591          123.011
+     2.28518          75.4986
+     2.45446          36.8259
+     2.62373           14.487
+       2.793          4.59633
+     2.96228          1.12242
+     3.13155         0.232013
+     3.30082        0.0225931
+      3.4701      0.000666891
+     3.63937                0
+     3.80864                0
+     3.97791                0
+     4.14719                0

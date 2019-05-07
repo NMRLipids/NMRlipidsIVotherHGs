@@ -1,0 +1,72 @@
+# This file was created Sun Jul 30 12:32:21 2017
+# Created by:
+# GROMACS:      gmx density, VERSION 5.0.4
+# Executable:   /software/gromacs-5.0-el6-x86_64+intelmpi-5.0+intel-15.0/bin/gmx_mpi
+# Library dir:  /software/gromacs-5.0-el6-x86_64+intelmpi-5.0+intel-15.0/share/gromacs/top
+# Command line:
+#   gmx_mpi density -f ../run.total.xtc -s ../step7_1.tpr -n index.ndx -d Z -dens mass -center -o dens_CLA.xvg
+# gmx_mpi is part of G R O M A C S:
+#
+# GRoups of Organic Molecules in ACtion for Science
+#
+@    title "Partial density"
+@    xaxis  label "Relative position from center (nm)"
+@    yaxis  label "Density (kg m\S-3\N)"
+@TYPE xy
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "CLA"
+    -4.14719          78.7878
+    -3.97791          78.9819
+    -3.80864          79.0458
+    -3.63937           79.318
+     -3.4701          78.5764
+    -3.30082           79.288
+    -3.13155          78.6473
+    -2.96228          76.2154
+      -2.793          71.3035
+    -2.62373          61.9564
+    -2.45446           47.628
+    -2.28518          31.1022
+    -2.11591          16.4515
+    -1.94664          7.01474
+    -1.77737          1.95993
+    -1.60809         0.158645
+    -1.43882       0.00372357
+    -1.26955       0.00123991
+    -1.10027                0
+   -0.931001                0
+   -0.761728                0
+   -0.592455                0
+   -0.423182                0
+   -0.253909                0
+  -0.0846365                0
+   0.0846365                0
+    0.253909                0
+    0.423182                0
+    0.592455                0
+    0.761728                0
+    0.931001                0
+     1.10027       0.00743473
+     1.26955        0.0917466
+     1.43882         0.534311
+     1.60809          2.42704
+     1.77737          8.07274
+     1.94664          20.2162
+     2.11591          38.0681
+     2.28518          54.1288
+     2.45446          62.9416
+     2.62373            67.77
+       2.793          74.0726
+     2.96228          78.6191
+     3.13155          79.2831
+     3.30082          79.8408
+      3.4701          79.8005
+     3.63937          79.9316
+     3.80864          79.9297
+     3.97791          79.3908
+     4.14719          79.3628

@@ -1,0 +1,16 @@
+# Pure POPS measured by Tiago Ferreira
+# https://github.com/NMRLipids/NMRlipidsIVotherHGs/blob/master/Data/POPSorderparametersNOCaEXP.dat
+#
+# 
+# Mixture from Fig. 5. in Roux et al. Biochemistry, 29, 7077-7089, 1990
+# https://github.com/NMRLipids/MATCH/blob/master/Data/Lipid_Bilayers/POPS%2B83%25popc/T298K/Headgroup_Glycerol_Order_Parameters_Experiments.dat
+# Sings are assumed to be the same as in pure PS.
+#
+# Order parameters reported
+#
+# Because the results of POPS in pure and mixed bilayers come from 13C NMR and 2H NMR, respectively, the error bars of 0.02 should be used here
+# as discussed in http://dx.doi.org/10.1021/acs.jpcb.5b04878 and http://dx.doi.org/10.1016/j.bbamem.2016.01.019
+#
+# mole fraction of PC        beta     alpha1       alpha2     err 
+0                           -0.12     -0.02         0.09      0.02
+0.83                        -0.0991   -0.0134848    0.0625    0.02
