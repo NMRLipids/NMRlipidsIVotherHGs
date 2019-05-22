@@ -201,7 +201,7 @@ Refs. \citenum{charmm36pops+83popcT298Kwith450mMK,charmm36pops+83popcT298Kwith89
 
 
 \noindent
-{\it POPC:POPS (5:1) mixtures with additional calcium} \\
+{\it POPC:POPS (5:1) mixtures with additional calcium} 
 POPC:POPS (5:1) mixtures containing total 300 (250:50) lipids
 %were simulated with the additional calcium concentrations.
 %The data is available from Refs. \citenum{POPC5POPS1withCaClCHARMM} and \citenum{POPC5POPS1with1MCaClCHARMM}.
@@ -211,7 +211,7 @@ by the CHARMM-GUI at 298 K.
 
 \subsection{CHARMM36ua}
 \noindent
-{\it DOPS and POPS bilayers.} \\
+{\it DOPS and POPS bilayers.} 
 %The data in Table \ref{PSsystems} and Refs \citenum{charmm36uaDOPS303K,charmm36uaPOPS298K}
 Starting structures for CHARMM36-UA DOPS and POPS simulations were taken from those generated for the CHARMM36 simulations (see above),
 with any extraneous hydrogen atoms removed in the lipid tails. Force field parameters for DOPS and POPS were constructed through a
@@ -234,13 +234,14 @@ POPC/POPC mixtures with the MacRog force field, see below. The simulation was ru
 out of which 150~ns were used for analyses. The simulation data and related files are available from Ref. \citenum{macrogPOPC298K}.
 
 \noindent
-{\it POPS bilayers.}
+{\it POPS bilayers with Na$^+$ counterions.}
 %The data in Table \ref{PSsystems} and Refs \citenum{macrogPOPS298Kcorrect,macrogPOPS298KwithK}
 %\todo{T. Piggot and M. Javanainen, please write simulation details} \\
 %\hl{Piggot: please write about system with Na$^+$ counterions}.
 Force field parameters for POPS simulations with the MacRog OPLS-AA force field~\cite{maciejewski14,kulig15b,rog16}
 were constructed manually using the provided PS parameters as a guide~\cite{rog16}. The original parameters were
 not used due to an incorrect arrangement of the {\it sn}-1 and {\it sn}-2 tails (i.e. the lipid was OPPS and not POPS).
+The corrected parameters are available from Ref.~\citenum{macrogPOPS298KwithK}.
 The starting structure was the same as that used in the CHARMM36 POPS simulations (with Na+ ions) and was converted into
 the correct format using a script to adjust the atom order. Water was treated using the TIP3P model~\cite{jorgensen83}.
 Simulation parameters were chosen to closely mimic those used in the original force field publications~\cite{maciejewski14,kulig15b,rog16}:
@@ -249,7 +250,9 @@ Coulombic interactions were truncated at 1.0 nm with PME used to treat interacti
 All other simulation settings were identical to those described above for the CHARMM36 DOPS and POPS simulations,
 including use of the Verlet cut-off scheme~\cite{Pall13}, apart from the use of LINCS to constrain all bonds during these simulations.
 
-This membrane was further simulated after replacing Na$^+$ counterions by K$^+$ ones, which 
+\noindent
+{\it POPS bilayers with K$^+$ counterions.}
+The membrane with sodium counterions was further simulated after replacing Na$^+$ counterions by K$^+$ ones, which 
 were described by the \AA{}qvist parameters \cite{aqvist90}. Other topologies
 were unchanged. The simulation parameters were the same as used for the POPC/POPS mixtures with 
 the MacRog force field, see below. The simulation was run for 200~ns, out of which 150~ns was used 
@@ -294,8 +297,7 @@ The integration time step was set to 2~fs, and the simulations were performed ei
 250, 200, or 300~ns of the simulations were included in the analyses, respectively.
 
 \subsection{Lipid17}
-{\it DOPS and POPS bilayers.} \\
-
+{\it DOPS and POPS bilayers.} 
 The structure of the bilayers with 128 DOPS or 128 POPS lipids were
 obtained from CHARMM-GUI~\cite{lee16,jo18}. Bilayers are solvated with
 4480 water molecules resulting in 31.1 water molecules per lipid. For
@@ -342,7 +344,7 @@ was set to 0.0~dyn explicitely. For all heating and equilibration steps,
 the lengths of the hydrogen containing bonds were restrained using SHAKE
 algorithm and a time step of 2~fs was used. In all steps with periodic
 boundary conditions, the non-bonded interactions are calculated with
-particle mesh Ewald~\cite{essman95} using 1.0~nm cutoff.\\
+particle mesh Ewald~\cite{essman95} using 1.0~nm cutoff.
 
 For the production runs, the temperature and pressure were set to 303~K
 and 1~bar, using Langevin thermostat with 1.0~ps$^{-1}$ collision
@@ -353,12 +355,10 @@ mesh Ewald~\cite{essman95} using 1.0~nm cutoff. The lengths of the
 hydrogen containing bonds were constrained using SHAKE algorithm and a
 time step of 2~fs was used. Trajectories are saved in every 10~ps
 intervals. Two independent trajectories of 500~ns long was generated and
-the last 200~ns portions were used for the analysis.\\
-
+the last 200~ns portions were used for the analysis.
 
 \noindent
-{\it POPC:POPS (5:1) mixtures with additional potassium and sodium ions} \\
-
+{\it POPC:POPS (5:1) mixtures with additional potassium and sodium ions} 
 The initial structure of the bilayers with 120 POPC and 24 POPS lipids were obtained from CHARMM-GUI~\cite{lee16,jo18}.
 Bilayers were solvated with 5760 TIP3P water molecules~\cite{jorgensen1983comparison}. For the simulations of the lipids and ions,
 the Amber Lipid 17 \cite{gould18} and ff99SB~\cite{aqvist90} force fields were used, respectively.
@@ -366,31 +366,37 @@ Simulations were ran using Amber18 simulation package \cite{amber18md}
 The simulation steps are the same as the the simulations of
 DOPS and POPS bilayers described above, with the only difference that the total simulation time was 300~ns, of which last 200~ns
 was used for the analysis. The number of ions in each specific system is given in Table~\ref{mixedIONsystemsMONOVALENT}.
-The trajectory files can be found in Refs~\citenum{POPCpopsLIPID17withKCI,POPCpopsLIPID17withK,POPCpopsLIPID17withNaCI,POPCpopsLIPID17withNa}.\\
+The trajectory files can be found in Refs~\citenum{POPCpopsLIPID17withKCI,POPCpopsLIPID17withK,POPCpopsLIPID17withNaCI,POPCpopsLIPID17withNa}.
 
 \noindent
-{\it POPC:POPS (5:1) mixtures with additional calcium chloride concentration} \\
+{\it POPC:POPS (5:1) mixtures with additional calcium chloride concentration with default Amber parameters} 
 %The data in Table \ref{mixedIONsystems} and Refs \citenum{lipid17_cacl_series,POPCpopsLIPID17withCaCl} 
-We have performed two sets of simulations of POPC:POPS (5:1) mixtures using Amber Lipid17 force field \cite{gould18}
-with additional calcium chloride concentrations, 
-which employed different simulation engines and parameters for ions.
+%We have performed two sets of simulations of POPC:POPS (5:1) mixtures using Amber Lipid17 force field \cite{gould18}
+%with additional calcium chloride concentrations, 
+%which employed different simulation engines and parameters for ions.
+Simulations were performed using Amber18 simulation package \cite{amber18md} with ff99SB~\cite{aqvist90} ion parameters and Amber Lipid17~\cite{gould18} force field. 
+Number of ions and water molecules for this set of simulations are shown in Table~\ref{mixedIONsystems}.
+The simulation details, minimization, heating, and equilibration runs are the same as described above for the other POPC:POPS (5:1) simulations with Amber Lipid17 forcefield. 
+For each ion concentration, 100~ns equilibration runs were followed by 300~ns production runs with two independent trajectories, of which last 200~ns were used for the analysis.
+The trajectory files can be found from Ref~\citenum{POPCpopsLIPID17withCaCl}.
 
-One set of simulations has been performed using Amber18 simulation package \cite{amber18md} and ff99SB~\cite{aqvist90} ion parameters. 
-Number of ions and water molecules for this set of simulations are shown in Table~\ref{mixedIONsystems}. The simulation details, minimization, heating, and equilibration runs are the same as described above for the other POPC:POPS (5:1) simulations with Amber Lipid17 forcefield. 
-For each ion concentration, 100~ns equilibration runs were followed by 300~ns production runs with two independent trajectories, of which last 200~ns were used for the analysis. The trajectory files can be found in Ref~\citenum{POPCpopsLIPID17withCaCl} 
-
-Another set of simulations with Lipid17 force field for lipids \cite{gould18}
-and Dang parameters for ions \cite{smith94, dang06}
-was performed using the GROMACS 2018 simulation package~\cite{abraham2015gromacs}. 
-We used the time step of 2~fs. 
+\noindent
+{\it POPC:POPS (5:1) mixtures with additional calcium chloride concentration with Dang ion parameters} 
+The Lipid17 parameters for POPS were obtained from AmberTools18 \cite{amber18md} 
+and converted to Gromacs format using acpype \cite{silva12}.  
+The previously generated \cite{botan15} Lipid14 parameters for POPC in Gromacs format were downloaded from Ref.~\citenum{lipid14files}. 
+Dang parameters for ions \cite{smith94, dang06} were used.
+% Another set of simulations with Lipid17 force field for lipids \cite{gould18}
+Initial structures were generated using CHARMM-GUI~\cite{lee16,jo18} 
+and simulations were performed using the GROMACS 2018 simulation package~\cite{abraham2015gromacs}
+with the time step of 2~fs. 
 The non-bonded interactions were calculated directly within 1.0~nm cutoff using the Verlet scheme \cite{Pall13}, 
 and the long-range electrostatic forces were calculated using particle mesh Ewald~\cite{essman95}. 
 The bond lengths of hydrogen atoms were constrained using LINCS algorithm \cite{hess97}.
 Temperature was coupled to the velocity rescaling thermostat \cite{bussi07} at 298~K with a coupling constant of 1~ps.
 Pressure was coupled to the Parrinello-Rahman barostat \cite{parrinello81} at 1~bar with a coupling constant of 10~ps. 
-The composition of the individual simulations is shown in Table~\ref{mixedIONsystems}. 
-Initial structures obtained from CHARMM-GUI~\cite{lee16,jo18} 
-were equilibrated prior to production simulations used for analysis,
+The compositions of individual simulations are shown in Table~\ref{mixedIONsystems}. 
+The systems were equilibrated 50~ns prior to production simulations used for analysis,
 which are available in Ref.~\citenum{lipid17_cacl_series} including the simulation settings. 
 Topologies in a format for the GROMACS package are available in the repository \citenum{ECCpops}. 
 
@@ -408,7 +414,7 @@ Topologies in a format for the GROMACS package are available in the repository \
 \noindent
 {\it POPS and DOPS with 128 lipids}
 Starting structures for the Slipids POPS and DOPS (with 128 lipids) simulations were the same as constructed
-for the CHARMM36 simulations. Force field parameters were taken from the published Slipids PS model,
+for the CHARMM36 simulations. Force field parameters were taken from the published Slipids PS model~\cite{jambeck13},
 however simulation cut-offs used herein were different to these previously published simulations~\cite{jambeck2012another}.
 % [REF: https://pubs.acs.org/doi/10.1021/ct300777p].
 This was due to the use of the older GROMACS group-based cut-off scheme in these previous simulations.
@@ -422,9 +428,9 @@ All other simulation settings were identical to those described above for the CH
 
 \noindent
 {\it DOPS with 288 lipids.}
-The starting structure with 288 DOPS lipids, 11232 water molecules and 288 Na ions
+The starting structure with 288 DOPS lipids, 11232 water molecules and 288 Na$^+$ ions
 was contructed with the MEMBRANE BUILDER website~\cite{ghahremanpour13}.
-The Slipids~\cite{jambeck12,jambeck2012another} forcefield was used for DOPS, the TIP3P~\cite{jorgensen83} water model was used to solvate the system and
+The Slipids~\cite{jambeck13} forcefield was used for DOPS, the TIP3P~\cite{jorgensen83} water model was used to solvate the system and
 ions are described by the parameters derived by \AA{}qvist~\cite{aqvist90}.
 The system was simulated in NPT ensemble for 200~ns using the GROMACS 5.0.4 package~\cite{abraham2015gromacs},
 and the last 100~ns was used for the analysis.
@@ -439,7 +445,7 @@ Previously published simulation \cite{ollila07a} available from Ref. \citenum{be
 was used for POPC at 310 K.
 
 \noindent
-{\it DOPS and POPS bilayers.} \\
+{\it DOPS and POPS bilayers.} 
 %The data in Table \ref{PSsystems} and Refs \citenum{bergerPOPS298K,bergerDOPS303K}
 %\todo{T. Piggot, please write simulation details} \\
 Starting structures for DOPS and POPS simulations performed with a Berger-based PS force field
@@ -497,21 +503,19 @@ The remainder of the parameters were assigned by analogy from either the other G
 {\it DOPS and POPS bilayers.} 
 %The data in Table \ref{PSsystems} and Refs. \citenum{ckp1POPS303K,ckp2POPS303K,ckp1DOPS303K,ckp2DOPS303K}
 %\todo{T. Piggot, please write simulation details} \\
-
 Starting structures for GROMOS-CKP and GROMOS-CKPM simulations were taken from those produced for the CHARMM36 simulations.
 A script was used to re-order the atoms and to remove any extraneous hydrogen atoms. The force fields parameters for DOPS and POPS
 were as discussed above. The SPC water model was used in these simulations~\cite{berendsen81}. Simulation cut-offs were chosen
 to closely match those used in the original GROMOS-CKP force field validation: van der Waals interactions were truncated at 1.4 nm
 with a dispersion correction applied to the energy and pressure; Coulombic interactions were also truncated at 1.4 nm with PME used
 to treat the long-range interactions. All other simulation settings were identical to those described above for the CHARMM36 DOPS
-and POPS simulations bar, including the use of the Verlet cut-off scheme, apart from all bonds were constrained using LINCS in these simulations.
+and POPS simulations, including the use of the Verlet cut-off scheme, apart from all bonds were constrained using LINCS in these simulations.
 
 
 \noindent
 {\it POPC:POPS (5:1) mixtures without additional ions}
 % The data in Table \ref{mixedIONsystems} and Refs. \citenum{POPCpopsGROMOSCKPwithNa,POPCpopsGROMOSCKPMwithNa}
 % \todo{T. Piggot, please write simulation details} \\
-
 Starting structures for GROMOS-CKP and GROMOS-CKPM simulations were taken from those produced for the equivalent CHARMM36 simulations (see above).
 A script was used to re-order the atoms and to remove any extraneous hydrogen atoms. Simulation setting were identical to those as described above
 for the GROMOS-CKP(M) POPS bilayers.
