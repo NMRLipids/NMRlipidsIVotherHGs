@@ -7,7 +7,7 @@ set ytic 0.02
 #set key box linestyle 1 linecolor rgb 'black'
 set key at screen 0.95,0.92 maxcols 2 maxrows 7
 
-set key at screen 0.54,0.7 maxcols 1 maxrows 7
+set key at screen 0.57,0.69 maxcols 1 maxrows 7
 set title "POPS"
 set ylabel
 #set origin 1.0,0.5
@@ -24,9 +24,9 @@ plot "../../Data/POPSvsPOPCwithNACHARMM36.dat" using ($1):($2+0.0734677) with li
      "../../Data/POPSvsPOPCwithNALIPID17.dat" using ($1):($2-0.124413) with linespoints  title 'Lipid17 (ff99 Na^+)' pt 7 ps 1.6  lw 4 lc rgb '#FFD300',\
      "../../Data/POPSvsPOPCwithNALIPID17.dat" using ($1):($2-0.124413):($3) with yerrorbars  notitle pt 7 ps 1.6  lw 4 lc rgb '#FFD300',\
      "../../Data/POPSvsPOPCwithNAgromosCKP.dat" using ($1):($2+0.011074) with linespoints  notitle pt 7 ps 1.6  lw 4 lc rgb '#E8007C',\
-     "../../Data/POPSvsPOPCwithNAgromosCKP.dat" using ($1):($2+0.011074):($3) with yerrorbars  title 'gromos-CKP (Na^+)' pt 7 ps 1.6  lw 4 lc rgb '#E8007C',\
+     "../../Data/POPSvsPOPCwithNAgromosCKP.dat" using ($1):($2+0.011074):($3) with yerrorbars  title 'GROMOS-CKP (Na^+)' pt 7 ps 1.6  lw 4 lc rgb '#E8007C',\
      "../../Data/POPSvsPOPCwithNAgromosCKPM.dat" using ($1):($2+0.0128447) with linespoints  notitle pt 7 ps 1.6  lw 4 lc rgb '#FFA0A3',\
-     "../../Data/POPSvsPOPCwithNAgromosCKPM.dat" using ($1):($2+0.0128447):($3) with yerrorbars  title 'gromos-CKPM (Na^+)' pt 7 ps 1.6  lw 4 lc rgb '#FFA0A3',\
+     "../../Data/POPSvsPOPCwithNAgromosCKPM.dat" using ($1):($2+0.0128447):($3) with yerrorbars  title 'GROMOS-CKPM (Na^+)' pt 7 ps 1.6  lw 4 lc rgb '#FFA0A3',\
      "../../Data/POPSvsPOPC.dat" using ($1):($2+0.12) with linespoints   title 'Experiment (Na^+)' pt 7 ps 1.6  lw 4 lc rgb 'black',\
      "../../Data/POPSvsPOPC.dat" using ($1):($2+0.12):5 with yerrorbars notitle pt 7 ps 1.6  lw 4 lc rgb 'black',\
 
