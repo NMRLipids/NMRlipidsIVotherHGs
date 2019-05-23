@@ -130,11 +130,11 @@ plot [0.5:5.5][0.35:-0.35] \
      "../../../MATCH/Data/Lipid_Bilayers/DOPS/T303K/MODEL_CHARMM36UA/head-glyc-OPs_ave_min_max.dat" \
          u ($1+dxCUAdo):($2):($3):($4) w ye lt C36_UA pt 12 ps r t 'CHARMM36-UA',\
      "../../../MATCH/Data/Lipid_Bilayers/DOPS/T303K/MODEL_SLIPIDS/head-glyc-OPs_ave_min_max.dat" \
-         u ($1+dxSLIdo):($2):($3):($4) w ye lt Slipid pt 12 ps r t 'SLIPIDS', \
+         u ($1+dxSLIdo):($2):($3):($4) w ye lt Slipid pt 12 ps r t 'Slipids', \
      "../../../MATCH/Data/Lipid_Bilayers/DOPS/T303K/MODEL_GROMOS-CKP2/head-glyc-OPs_ave_min_max.dat" \
-         u ($1+dxCKPd2):($2):($3):($4) w ye lt CKP_QK pt 12 ps r t 'CKP', \
+         u ($1+dxCKPd2):($2):($3):($4) w ye lt CKP_QK pt 12 ps r t 'GROMOS-CKP', \
      "../../../MATCH/Data/Lipid_Bilayers/DOPS/T303K/MODEL_GROMOS-CKP1/head-glyc-OPs_ave_min_max.dat" \
-         u ($1+dxCKPdo):($2):($3):($4) w ye lt CKP_QB pt 12 ps r t 'CKPM', \
+         u ($1+dxCKPdo):($2):($3):($4) w ye lt CKP_QB pt 12 ps r t 'GROMOS-CKPM', \
      10 lc rgb "white" t "  ", \
      10 lc rgb "white" t "  ", \
      "../../../MATCH/Data/Lipid_Bilayers/DOPS/T303K/MODEL_Berger/head-glyc-OPs_ave_min_max.dat" \
@@ -152,11 +152,11 @@ plot [0.5:5.5][0.35:-0.35] \
      "../../../MATCH/Data/Lipid_Bilayers/POPS/T298K/MODEL_CHARMM36UA/head-glyc-OPs_ave_min_max.dat" \
          u ($1+dxCUApo):($2):($3):($4) w ye lt C36_UA pt 6 ps r t 'CHARMM36-UA',\
      "../../../MATCH/Data/Lipid_Bilayers/POPS/T298K/MODEL_SLIPIDS/head-glyc-OPs_ave_min_max.dat" \
-         u ($1+dxSLIpo):($2):($3):($4) w ye lt Slipid pt 6 ps r t 'SLIPIDS', \
+         u ($1+dxSLIpo):($2):($3):($4) w ye lt Slipid pt 6 ps r t 'Slipids', \
      "../../../MATCH/Data/Lipid_Bilayers/POPS/T298K/MODEL_GROMOS-CKP2/head-glyc-OPs_ave_min_max.dat" \
-         u ($1+dxCKPp2):($2):($3):($4) w ye lt CKP_QK pt 6 ps r t 'CKP', \
+         u ($1+dxCKPp2):($2):($3):($4) w ye lt CKP_QK pt 6 ps r t 'GROMOS-CKP', \
      "../../../MATCH/Data/Lipid_Bilayers/POPS/T298K/MODEL_GROMOS-CKP1/head-glyc-OPs_ave_min_max.dat" \
-         u ($1+dxCKPpo):($2):($3):($4) w ye lt CKP_QB pt 6 ps r t 'CKPM', \
+         u ($1+dxCKPpo):($2):($3):($4) w ye lt CKP_QB pt 6 ps r t 'GROMOS-CKPM', \
      "../../../MATCH/Data/Lipid_Bilayers/POPS/T298K/MODEL_MACROG/head-glyc-OPs_ave_min_max.dat" \
          u ($1+dxMcRpo):($2):($3):($4) w ye lt MacRog pt 7 ps r t 'MacRog', \
      "../../../MATCH/Data/Lipid_Bilayers/POPS/T298K/MODEL_MACROG_POTASSIUMcounterion/OrdParsFORplot.dat" \

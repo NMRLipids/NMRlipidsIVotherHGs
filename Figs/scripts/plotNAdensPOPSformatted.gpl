@@ -228,7 +228,7 @@ NAdens=1.2
 set arrow 14 from Pcenter, graph 0 to Pcenter, NAdens nohead back lw plw lc rgb pColK
 
 
-set label 2 "⟨A_{pl}⟩ = 53 Å{\305}^2"  at graph  0.745,0.80 tc palette frac 1000/cMax
+set label 2 "⟨A_{pl}⟩ = 52 Å{\305}^2"  at graph  0.745,0.80 tc palette frac 1000/cMax
 set label 3 "⟨A_{pl}⟩ = 63 Å{\305}^2"  at graph  0.745,0.55 tc palette frac 150/cMax
 
 top = bottom
@@ -297,7 +297,7 @@ unset arrow 16
 unset arrow 17
 unset arrow 18
 
-set label 1 "Gromos-CKPM"
+set label 1 "GROMOS-CKPM"
 set label 2 "⟨A_{pl}⟩ = 63 Å{\305}^2"  at graph  0.745,0.80 tc palette frac 1000/cMax
 
 
@@ -322,7 +322,7 @@ set xtics format '%1.0f'
 unset arrow 19
 unset arrow 20
 
-set label 1 "Gromos-CKP"
+set label 1 "GROMOS-CKP"
 set label 2 "⟨A_{pl}⟩ = 63 Å{\305}^2"  at graph  0.745,0.80 tc palette frac 1000/cMax
 
 
