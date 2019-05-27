@@ -153,7 +153,7 @@ are crucial for understanding PS-mediated processes on cellular membranes.
 
 Experimental studies have indicated that the
 PS headgroup is more rigid than the phosphatidylcholine (PC)
-owing to electrostatic interactions or the formation of hydrogen bonding network between the headgroups~\cite{browning80,buldt81}.
+owing to electrostatic interactions or the formation of a hydrogen bonding network between the headgroups~\cite{browning80,buldt81}.
 While most monovalent ions interact weakly with
 PS-containing bilayers, multivalent cations and Li$^+$ are able to form strong
 dehydrated molecular complexes with PS lipids \cite{hauser77,kurland79,eisenberg79,hauser83,dluhy83,hauser85,feigenson86,mattai89,roux90,roux91,boettcher11}.
@@ -212,20 +212,20 @@ The molecular level interpretation of these observations is currently lacking, a
 to understand the PS headgroup structure, its influence on lipid bilayer properties, and its
 interaction with
 ions \cite{cascales96,pandit02,mukhopadhyay04,pedersen06,vernier09,boettcher11,molina12,jurkiewicz12,venable13,pan14,vangaveti14,melcrova16,valentine18,hallock18}.
-Unfortunately, the results have depended on the force field used.
+Unfortunately, the results have depended on the particular force field used.
 For example, recent simulations using the NBfix parameters for calcium \cite{kim16} in
-CHARMM36 force field \cite{klauda10,venable13}, combined with 2D infrared spectroscopy,
+the CHARMM36 force field \cite{klauda10,venable13}, combined with 2D infrared spectroscopy,
 suggest that calcium ions interact only with the carboxylate group of PS lipids \cite{valentine18}. In contrast,
 the results from the same lipid model without the NBfix ion parameters, combined with NMR chemical shifts and
-rotational-echo double-resonance (REDOR) experiments, indicate a significant binding affinity also to the phosphate region \cite{hallock18}.
+rotational-echo double-resonance (REDOR) experiments, indicate a significant binding affinity also toward the phosphate region \cite{hallock18}.
 Meanwhile, simulations with the Berger force field \cite{berger97,mukhopadhyay04},
 combined with fluorescent and vibrational sum frequency spectroscopy, suggest substantial
-calcium binding also to the carbonyls in the acyl chains \cite{melcrova16}.
+calcium binding to the carbonyls in the acyl chains \cite{melcrova16}.
 
 We have recently demonstrated that the lipid C--H bond order parameters, $S_\mathrm{CH}$,
 can be utilized to resolve such controversies~\cite{botan15,catte16}. The $S_\mathrm{CH}$ can be
 measured from NMR experiments with high accuracy and directly compared to simulations
-in order to evaluate the quality of the simulation model, or to interpret the experiments \cite{ollila16}. Using this approach,
+in order to evaluate the quality of the simulation model and/or to interpret the experiments \cite{ollila16}. Using this approach,
 it has been established that the structure of PC lipid headgroup and glycerol backbone are not well
 captured by most MD force fields~\cite{botan15}, that the cation binding to PC
 lipid bilayers is overestimated~\cite{catte16}, and that the splitting of the order parameters at
@@ -495,7 +495,7 @@ the $\beta$-carbon order parameter is significantly more negative and $\alpha$-c
 experiences substantial forking (different order parameters for the two hydrogens in the same carbon \cite{ollila16}) in the PS headgroup.
 These features have been intepreted to arise from a rigid PS headgroup
 conformation, stabilized by hydrogen bonds or electrostatic
-interactions \cite{browning80,buldt81}, but detailed structrural interpretation is not
+interactions \cite{browning80,buldt81}, but a detailed structrural interpretation is not
 available. 
 %Moved here from the molecular electrometer paragraph because there it distrupted the flow of the section and it contains results. This also enables referring to figures in order. I also removed the refs which do not seem to refer to the actual data used in the figure.
 %Rewrote the paragraph, see if ok.
@@ -552,13 +552,13 @@ are in good agreement with the results from centrifuged samples~\cite{browning80
   }
 \end{figure}
 
-The different PS MD models produce highly varied  headgroup and glycerol backbone order parameters (Fig.~\ref{HGorderParametersPS})
+The different PS MD models produce highly varied headgroup and glycerol backbone order parameters (Fig.~\ref{HGorderParametersPS})
 and structures (Fig.~\ref{HGandGLYstructuresPS} and section~\ref{Diheds} in the SI ),
-as previously observed also for PC lipids \cite{botan15}. Moreover, none of the models produces a set of order parameters in full agreement with the experiments.
-The models perform generally less well for PS than for PC
+as previously observed also for PC lipids \cite{botan15}. Moreover, none of the models produces a set of order parameters in full quantitative agreement with the experiments.
+Generally, the models perform less well for PS than for PC
 (Figs.~\ref{HGorderParametersPS} and \ref{comparisonTablePS} vs. Figs.~2 and 4 in Ref.~\cite{botan15}).
-This complicates the interpretation of structural differences between PC and PS headgroups. However, concentrating on the headgroup, we see that the best performing models (Slipids, CHARMM36 and CHARMM36-UA) do replicate the larger-than-in-PC
-forking of the $\alpha$-carbon observed in the experiments. Additionally, the Slipids force field correctly produces the significantly smaller $\beta$-carbon order parameter for PS compared to PC (Fig. \ref{HGorderParametersPS} vs. Fig. 2 in Ref.~\citenum{botan15}), in line with
+This complicates the interpretation of structural differences between the PC and PS headgroups. However, concentrating on the headgroup alone, we see that the best performing models (Slipids, CHARMM36 and CHARMM36-UA) indeed do replicate the larger-than-in-PC
+forking of the $\alpha$-carbon that is observed in the experiments. Additionally, the Slipids force field correctly produces the significantly smaller $\beta$-carbon order parameter for PS compared to PC (Fig. \ref{HGorderParametersPS} vs. Fig. 2 in Ref.~\citenum{botan15}), in line with
 experiments (Fig. \ref{HGorderParameters}).
 
 \begin{figure}[!htb]
@@ -585,7 +585,7 @@ CHARMM36 and Slipids simulations that have the best agreement with experiments
 (Figs.~\ref{HGstructuresPSandPC} (B) and \ref{dihedralsHGpc}).
 % Also, the sampled conformations of glycerol backbone significantly vary between different simulation models (Figs. \ref{dihedralsGLY}, \ref{HGandGLYstructuresPS}, \ref{dihedralsGLYpc} and \ref{HGandGLYstructuresPSPC}),but further analysis is beyond the scope of this work which focuses on the PS headgroup. There is very little actual information in this statement. The variance was already noted above
 
-These results might reflect the increased rigidity proposed in the early experimental studies \cite{browning80,buldt81}, and the suggested characteristic conformations of the PS headgroup can be useful when interpreting experiments. However, as the none of the tested models fully reproduces the experimental order parameters, more accurate MD force fields are required to confirm the correct conformational ensemble.
+These results might reflect the increased rigidity proposed in the early experimental studies \cite{browning80,buldt81}, and the suggested characteristic conformations of the PS headgroup can be useful when interpreting experiments. However, as the none of the tested models fully reproduces the experimental order parameters, more accurate MD force fields are required to elucidate the correct conformational ensemble.
 
 \subsection{Counterion binding and interactions between PC and PS headgroups}\label{ciBINDINGsection}
 
@@ -638,9 +638,10 @@ since the MacRog simulation, which has the strongest sodium binding
 as the CHARMM36-UA simulation, which has significantly weaker counterion binding
 affinity. On the other hand, MacRog simulations with potassium produce a larger area per molecule (63~\AA$^2$) than
 with sodium (53~\AA$^2$) in line with the weaker potassium binding affinity (Fig.~\ref{NAdensPOPS}).
-The results are in line with the previous study suggesting that the
+The results are consistent with the previous study suggesting that the
 low areas per molecule in PS lipid bilayers originate from the combination
 of both the counterion binding and intermolecular interactions between lipid headgroups~\cite{petrache04}.
+%Would be potentially interesting to flesh out what the role of the hydrating water molecules play in the specific lipid headgroup/ion configurations that are sampled in simulations. My feeling is that "fully hydrated" lipids might carry with them differing amounts of water between the different FFs.. -JJM
 
 \begin{figure*}[ht]
   \centering
@@ -690,7 +691,7 @@ Therefore, we suggest that the relatively weak binding of potassium
 in the MacRog simulations (Fig. \ref{NAdensPOPS}) produces the most
 realistic surface charge density in membranes containing PS lipids,
 while the other tested models overestimate the counterion
-binding affinity. The results are in line with the behaviour of headgroup order
+binding affinity. The results are consistent with the behavior of headgroup order
 parameters as a function of added counterions analyzed in section \ref{mixtureTOadditionalCIs}
 in the SI.
 
@@ -743,7 +744,7 @@ The $\beta$-carbon order parameter increases with added CaCl$_2$,
 whereas the larger $\alpha$-carbon order parameter decreases. Moreover, a slight increase is observed in
 the smaller $\alpha$-carbon value. All these changes are significantly overestimated in the
 tested simulation models---including CHARMM36---which underestimated the binding affinity.
-Importantly, the different simulation models predict qualitatively different behaviour
+Importantly, the different simulation models predict qualitatively different behavior
 for the two POPS $\alpha$-carbon order parameters as a function of added calcium.
 For example, both order parameters decrease in Berger, but increase
 in MacRog, whereas Lipid14/17 and CHARMM36 models exhibit more complex behavior.
@@ -812,6 +813,7 @@ for PS lipids. The quality of conformational ensembles produced by the various m
 % Put your acknowledgments here.
   MJ acknowledges financial support from the Emil Aaltonen foundation and
   and CSC-IT center for science for computational resources.
+  JJM gratefully acknowledges financial support from the Carlsberg Foundation in the form of a postdoctoral fellowship while at the University of Chicago (grants CF15-0552, CF16-0639, and CF17-0783) and the research framework provided by the Research Computing Center at the University of Chicago.
   OHSO acknowledges financial support from Academy of Finland (315596),
   Integrated Structural Biology Research Infrastructure of
   Helsinki Institute of Life Science (Instruct-HiLIFE), and
