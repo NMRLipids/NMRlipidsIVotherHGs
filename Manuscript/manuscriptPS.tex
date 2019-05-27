@@ -597,11 +597,11 @@ These results might reflect the increased rigidity proposed in the early experim
   \caption{\label{HGorderparametersPCvsPS}
     Changes of POPC headgroup order parameters with increasing amount of POPS in POPC:POPS mixtures at 298~K.
     Experimental values are from Ref. \citenum{scherer87} with the signs measured in Ref.~\citenum{ferreira16}.
-    The value from the CHARMM36 simulation with sodium is the average of two independent simulations and
-    the error bar is given as the difference between the results divided by two. {\color{red} Why divided by two?}
+    The values from the CHARMM36 and GROMOS-CKP simulations with sodium are averages of two independent simulations and
+    the error bar is given as the difference between the results divided by two.
+    % {\color{red} Why divided by two?}
+    % Because then both values fit within the error bar.
   }
-%  \todo{After we know which force field is used for POPC in GROMOS-CKP simulations, we might be able to
-%    add GROMOS-CKP data into this plot.}
 \end{figure}
 
 \begin{figure}[!tb]
@@ -641,7 +641,9 @@ with sodium (53~\AA$^2$) in line with the weaker potassium binding affinity (Fig
 The results are consistent with the previous study suggesting that the
 low areas per molecule in PS lipid bilayers originate from the combination
 of both the counterion binding and intermolecular interactions between lipid headgroups~\cite{petrache04}.
-%Would be potentially interesting to flesh out what the role of the hydrating water molecules play in the specific lipid headgroup/ion configurations that are sampled in simulations. My feeling is that "fully hydrated" lipids might carry with them differing amounts of water between the different FFs.. -JJM
+% Would be potentially interesting to flesh out what the role of the hydrating water molecules play in the
+% specific lipid headgroup/ion configurations that are sampled in simulations. My feeling is that "fully hydrated"
+% lipids might carry with them differing amounts of water between the different FFs.. -JJM
 
 \begin{figure*}[ht]
   \centering
@@ -677,13 +679,13 @@ Therefore, we evaluate here the amount of bound charge not by adding salt
 but by studying the changes of the headgroup order parameters with increasing amount of
 negatively charged lipids (and thus increasing amount of cationic counterions) in the bilayer.
 
-Experimentally, the headgroup order parameters of POPC
+Experimentally, the both headgroup order parameters of POPC
 increase when negatively charged POPS lipids are incorporated in lipid bilayer
 (section \ref{HGorderparametersPCvsPEPSPGchol})~\cite{seelig87,scherer87}.
 This is reproduced in the MacRog simulations with potassium counterions (Fig. \ref{HGorderparametersPCvsPS}),
 which have the weakest binding affinity to POPS lipid bilayers (Fig.~\ref{NAdensPOPS}).
-The CHARMM36 and Berger simulations either exhibit no change or show a decrease
-in the POPC headgroup order parameters as the amount of POPS increases (Fig. \ref{HGorderparametersPCvsPS}).
+The CHARMM36, Berger and GROMOS-CKP simulations either exhibit no change or show a decrease
+in either or both the POPC headgroup order parameters as the amount of POPS increases (Fig. \ref{HGorderparametersPCvsPS}).
 Therein, the stronger counterion binding cancels
 the effect of negatively charged headgroups and prevents the experimentally observed
 increase of headgroup order parameters with growing amount of PS lipids.
