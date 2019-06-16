@@ -61,7 +61,7 @@
 \author{Fernando Favela-Rosales}
 \affiliation{Departamento de Investigaci\'{o}n, Tecnol\'{o}gico Nacional de M\'{e}xico, Campus Zacatecas Occidente, M\'{e}xico}
 \author{Tiago M. Ferreira}
-\affiliation{NMR group - Institut for Physics, Martin-Luther University Halle-Wittenberg}
+\affiliation{NMR group - Institute for Physics, Martin-Luther University Halle-Wittenberg}
 \author{Ivan Gushchin}
 \affiliation{Moscow Institute of Physics and Technology, Dolgoprudny, Russia}
 \author{Matti Javanainen}
@@ -108,13 +108,13 @@ membrane fusion and phase separation.
 Molecular details of these phenomena remain poorly understood, partly
 because accurate models to interpret the experimental data have not
 been available. Here we
-gather a set of experimental NMR data of C--H bond order parameters, $S_\mathrm{CH}$, for pure
+gather a set of experimental NMR data of C--H bond order parameter magnitudes, $|S_\mathrm{CH}|$, for pure
 PS and mixed PS:PC (phosphatidylcholine) lipid bilayers, 
-and augment this data set by measuring with solid-state NMR S-DROSS the signs of $S_\mathrm{CH}$ in the POPS headgroup.
-We then use this data set
+and augment this data set by measuring the signs of $S_\mathrm{CH}$ in the POPS headgroup using S-DROSS solid-state NMR spectrsocopy.
+This data set is then used
 to assess the accuracy of 1) the PS headgroup structures and 2) the ion binding to PS-containing membranes
-in a wide range of available molecular dynamics (MD) force fields of PS.
-We find that none of the MD simulations reproduce the NMR data within experimental accuracy.
+in the most commonly used classical molecular dynamics (MD) models including CHARMM36, Lipid17, Macrog, Slipids, GROMOS-CKP, Berger and variants.
+We show large discrepancies between different force-fields and that none of the models reproduces the NMR data within experimental accuracy.
 However, the best MD models can detect the most essential differences between PC and PS headgroup structures.
 In line with our previous results for PC lipids,
 none of the PS force fields correctly captures the cation binding affinity. Moreover, the response of PS headgroups to bound ions can differ from experiments even \emph{qualitatively}. The collected experimental dataset and simulation
@@ -148,10 +148,10 @@ while other protein sites attract PS lipids by nonspecific electrostatics and th
 binding can be regulated by calcium \cite{leventis10}.
 Therefore, deciphering the structural details
 of lipid headgroups and the details of cation binding
-are crucial for understanding PS-mediated processes on cellular membranes.
+is crucial for understanding PS-mediated processes on cellular membranes.
 
 Experimental studies have indicated that the
-PS headgroup is more rigid than the phosphatidylcholine (PC),
+serine headgroup in PS is more rigid than the choline headgroup in phosphatidylcholine (PC),
 owing possibly to electrostatic interactions or formation of a hydrogen bond network between the headgroups~\cite{browning80,buldt81}.
 While most monovalent ions interact weakly with
 PS-containing bilayers, multivalent cations and Li$^+$ are able to form strong
@@ -160,8 +160,7 @@ The dehydrated complexes of PS headgroups with calcium ions can even lead to
 phase separation \cite{hauser77,kurland79,hauser85,feigenson86,mattai89,roux90,roux91}. Mixing PS lipids with PC lipids reduces their propensity to form strong complexes with multivalent ions and makes the PS headgroup less rigid~\cite{browning80,buldt81,roux90,roux91}.
 That being said, some studies suggest that Ca$^{2+}$ has similar specific binding affinity 
 to both negatively charged and zwitterionic phospholipids, and that
-the increased cation binding to negatively charged lipid bilayers arises only due
-to the increased local cation concentration in the vicinity of the membrane~\cite{seelig90,sinn06}. 
+the increased cation binding to PS lipid bilayers is non-specific and arises only due to the increased local cation concentration in the vicinity of the membrane~\cite{seelig90,sinn06}. 
 
 
 \begin{table*}[htb]
@@ -227,7 +226,7 @@ measured from NMR experiments with high accuracy and directly compared to simula
 to either evaluate the quality of the simulation model and/or to interpret the experiments \cite{ollila16}. Using this approach,
 it has been established that the structure of PC lipid headgroup and glycerol backbone are not well
 captured by most MD force fields~\cite{botan15}, that the cation binding to PC
-lipid bilayers is overestimated~\cite{catte16}, and that the splitting of the order parameters at
+lipid bilayers is overestimated~\cite{catte16}, and that the inequivalent order parameters of the distinct C--H bonds at
 carbon 2 in {\it sn}-2 lipid tails is correctly reproduced only in the CHARMM36 force field~\cite{piggot17}.% [https://pubs.acs.org/doi/abs/10.1021/acs.jctc.7b00643].
 %
 %Based on these data, the cation binding affinity to POPC bilayer has since been improved by implicitly including the electronic polarizability using the electronic continuum correction \cite{melcr18}.
@@ -348,8 +347,7 @@ distribution of bilayer orientations in the samples studied.
 
 \emph{Sample preparation.}
 The sample was prepared simply by mixing POPS powder (1-palmitoyl-2-oleoyl-{\it sn}-glycero-3-phospho-L-serine, purchased from Avanti Polar Lipids
-as sodium salt) with water (lipid:water 60:40~wt-\%) in an Eppendorf tube by mixing and centrifuging the sample approximately 5 to 6 times
-until a homogeneous viscous fluid was visually observed. Then 20 mg of the sample was transferred to an NMR insert suitable for 4~mm NMR rotors.  
+as sodium salt) with water (lipid:water 60:40~wt-\%) in an Eppendorf tube, centrifuging the mixture and stirring with a thin glass rod repeatedly (approximately 5 to 6 times centrifuging/stirring) until a homogeneous viscous fluid was visually observed. Then 20 mg of the sample was transferred to an NMR insert suitable for 4~mm NMR rotors.  
 
 
 \subsection{Molecular dynamics simulations}
@@ -425,7 +423,7 @@ experimental data \cite{roux90}.
   \centering
   \includegraphics[width=8.5cm]{../Figs/fig1_POPS.pdf}
   \caption{\label{PShgSIGNSsimpson}
-    The headgroup and glycerol backbone region of the (A) INEPT spectrum and
+    The headgroup and glycerol backbone region of the (A) Refocused-INEPT spectrum and
     (B) 2D R-PDLF spectra.
     (C) Experimental S-DROSS data (points), and SIMPSON simulations (blue lines) with
     the C--H bond order parameter values of $-0.12$ for the $\beta$-carbon, and $+0.09$ and $-0.02$
@@ -484,8 +482,8 @@ using the  $S_{\rm CH}$ values of $+0.09$ from the dipolar coupling measured her
 and $-0.02$ from the previous $^2$H\,NMR experiment~\cite{roux91}.
 We used the literature value for the smaller  $S_{\rm CH}$ , because the
 resolution of our R-PDLF experiment was not sufficient to determine the
-magnitude small value.
-The S-DROSS curve from SIMPSON simulation with a positive value for the smaller  $S_{\rm CH}$ 
+magnitude of the small value.
+The S-DROSS curve from the SIMPSON simulation with a positive value for the smaller  $S_{\rm CH}$ 
 (dashed grey in Fig. \ref{PShgSIGNSsimpson} C)) did not agree with the experiment, 
 corroborating the interpretation that the smaller  $S_{\rm CH}$  is negative.
 
@@ -543,8 +541,8 @@ are in good agreement with the results from centrifuged samples~\cite{browning80
     Overlayed snapshots from simulations conducted with CHARMM36---the force field producing the best agreement with experiments---demonstrate the conformational fluctuations around
     (A) C$_\alpha$-C$_\beta$-C$_\gamma$-O$_\gamma$ and  O$_\alpha$-C$_\alpha$-C$_\beta$-N dihedrals
     of the PS headgroup and (B) N-C$_\beta$-C$_\alpha$-O$_\alpha$ and C$_\beta$-C$_\alpha$-O$_\alpha$-P
-    dihedrals of the PS and PC headgroups. The trajectory used for CHARMM36 POPC is available at Ref.~\citenum{POPCcharmm36T303K}.
-  }
+    dihedrals of the PS and PC headgroups. The trajectory used for CHARMM36 POPC is available at Ref.~\citenum{POPCcharmm36T303K}.}
+{ \todo{TMF: I find these pictures very interesting but at the same time a bit difficult to follow and I am not sure if i get them right. In each picture two dihedrals distributions are depicted right? so there are two pictures superimposed as far as I understand. Maybe this could be shortly explained in the caption or using a link to the methods section?}} 
 
 \end{figure}
 
@@ -612,8 +610,7 @@ These results might reflect the increased rigidity proposed in the early experim
     the error bar is given as the difference between the results divided by two.
     % {\color{red} Why divided by two?}
     % Because then both values fit within the error bar.
-  }
-\end{figure}
+  }\end{figure}
 
 \begin{figure}[!tb]
   \centering
@@ -692,8 +689,7 @@ Therefore, we evaluate here the amount of bound charge not by adding salt
 but by studying the changes of the headgroup $S_{\rm CH}$ order parameters with increasing amount of
 negatively charged lipids (and thus increasing amount of cationic counterions) in the bilayer.
 
-Experimentally, the both headgroup order parameters of POPC
-increase when negatively charged POPS lipids are incorporated in the bilayer
+Experimentally, the $S_{\rm{CH}}$ values of the $\alpha$ and $\beta$ headgroup carbons of POPC increase when negatively charged POPS lipids are incorporated in the bilayer 
 (section \ref{HGorderparametersPCvsPEPSPGchol})~\cite{seelig87,scherer87}.
 This is reproduced in the MacRog simulations with potassium counterions (Fig. \ref{HGorderparametersPCvsPS}),
 which have the weakest binding affinity to POPS lipid bilayers (Fig.~\ref{NAdensPOPS}).
