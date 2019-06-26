@@ -272,7 +272,8 @@ DOPS/Na$^{+}$  & Slipids \cite{jambeck13}  & 288  & 11232  & 303  & 200  & 100  
 
 %\begin{table*}[tb]
 \begin{sidewaystable*}[!p]
-\centering
+\vspace{1cm}
+  \centering
 \caption{List of POPC:POPS mixtures simulated at different molar fractions and different amounts of added CaCl$_2$. 
   The salt concentrations are calculated as [salt]=N$_{\rm c} \times$[water]\,/\,N$_{\rm w}$, where [water]\,=\,55.5~M.
   This corresponds to the concentrations in buffer before solvating lipids, which were
@@ -280,7 +281,6 @@ DOPS/Na$^{+}$  & Slipids \cite{jambeck13}  & 288  & 11232  & 303  & 200  & 100  
   Notation 2$\times$[time] indicates that two independent MD runs were conducted.
   Dang refers to the ion parameters by Dang and co-workers~\cite{smith94,dang06}, and ff99 to the default Amber ion parameters~\cite{aqvist90}.
   The additional simulation details are given in the supplementary information.
-  $^*$ Force field parameters for PS lipids generated for this work, for full details see the supplementary information.
   Symbols have the same meaning as in Table \ref{PSsystems}.
 }\label{mixedIONsystems}
 %begin{minipage}[t]{\textwidth}
@@ -324,8 +324,8 @@ use of scaled ions. Concentration taken as reported in the delivered
 data.}  & 104  & 4306  & 24  & 310  & 300  & 100  & \citenum{POPCpopsBERGERwith102mMCa} \tabularnewline
 POPC:POPS (4:1)  & Berger \cite{tieleman99,mukhopadhyay04}  & 0.715\textsuperscript{\ref{noteBerger}}  & 104 & 4306  & 72  & 310  & 300  & 100  & \citenum{POPCpopsBERGERwith715mMCa} \tabularnewline
 \hline 
-POPC:POPS (5:1)/Na$^{+}$  & GROMOS-CKP$^*$ \cite{piggot12}  & 0  & 110 & 4620  & 0  & 298  & 2$\times$500  & 2$\times$100  & \citenum{POPCpopsGROMOSCKPwithNa} \tabularnewline
-POPC:POPS (5:1)/Na$^{+}$  & GROMOS-CKPM$^*$ \cite{piggot12}  & 0  & 110 & 4620  & 0  & 298  & 2$\times$500  & 2$\times$100  & \citenum{POPCpopsGROMOSCKPMwithNa} \tabularnewline
+POPC:POPS (5:1)/Na$^{+}$  & GROMOS-CKP\footnote{Force field parameters for PS lipids generated for this work, for full details see the supplementary information.} \cite{piggot12}  & 0  & 110 & 4620  & 0  & 298  & 2$\times$500  & 2$\times$100  & \citenum{POPCpopsGROMOSCKPwithNa} \tabularnewline
+POPC:POPS (5:1)/Na$^{+}$  & GROMOS-CKPM$^c$ \cite{piggot12}  & 0  & 110 & 4620  & 0  & 298  & 2$\times$500  & 2$\times$100  & \citenum{POPCpopsGROMOSCKPMwithNa} \tabularnewline
 \end{tabular}
 %\end{minipage}
 \end{sidewaystable*} 
