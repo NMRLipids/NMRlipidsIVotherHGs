@@ -1,0 +1,15 @@
+# Binding of Ca2+ to Mixtures of POPC:POPS (5:1) mixture
+# Sodium counterions
+# Order parameters
+#
+# from
+
+# by Ricky Nencini 
+#
+#[CaCl]    POPC_a1   error      POPC_a2   error       POPC_b1   error      POPC_b2     error    POPS_a1   error     POPS_a2     error       POPS_b   error
+0          0.03699  0.00090     0.03573  0.00090     -0.06936  0.00082    -0.07126  0.00082     0.07224  0.00196  -0.09045  0.00178        -0.12138  0.00171   
+0.139       0.03111  0.00086     0.02898  0.00086     -0.07793  0.00078    -0.07890  0.00079     0.07257  0.00192  -0.01496  0.00184        -0.03747  0.00181   
+0.939        0.01761  0.00085     0.01494  0.00085     -0.08913  0.00078    -0.08918  0.00078     0.03411  0.00188  -0.00210  0.00185        -0.02349  0.00183   
+
+
+
