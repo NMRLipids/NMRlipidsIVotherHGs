@@ -1,0 +1,24 @@
+# Binding of K+ to Mixtures of POPC:POPS (5:1) mixtures from MacRog model
+#
+# Original data from https://doi.org/10.5281/zenodo.1404040
+#
+# Results from
+# MATCH/Data/Lipid_Bilayers/POPS+83%popc+500mMKCl/T298/MODEL_MACROG/
+# MATCH/Data/Lipid_Bilayers/POPS+83%popc+1000mMKCl/T298/MODEL_MACROG/
+# MATCH/Data/Lipid_Bilayers/POPS+83%popc+2000mMKCl/T298/MODEL_MACROG/
+# MATCH/Data/Lipid_Bilayers/POPS+83%popc+3000mMKCl/T298/MODEL_MACROG/
+# MATCH/Data/Lipid_Bilayers/POPS+83%popc+4000mMKCl/T298/MODEL_MACROG/
+#
+# Order parameters as a function of KCl concentration
+# STEREOCHEMISTRY MIGHT NOT BE CONSERVED AS A FUNCTION OF IONS
+#[KCl]    POPC_a1   error      POPC_a2   error       POPC_b1   error      POPC_b2     error    POPS_a1   error     POPS_a2     error       POPS_b   error
+0         0.04174    0.01025   0.04001    0.01210   0.02324    0.00988   0.02009    0.01217   -0.01649    0.02976   -0.17017    0.01471   -0.13222    0.02386    
+500      0.06345    0.01170   0.04468    0.01134   0.03606    0.01162   0.02493    0.01151   -0.01111    0.02451   -0.18469    0.01231   -0.10920    0.01832    
+1000      0.04947    0.01341   0.02103    0.01554   0.02509    0.01324   0.00375    0.01530   -0.00866    0.03026   -0.14521    0.02487   -0.12425    0.02269    
+2000      0.01806    0.01017   0.00865    0.01346   -0.00249    0.01023   -0.01124    0.01345   -0.02944    0.03823   -0.18732    0.01734   -0.12577    0.03217    
+3000      -0.00246    0.01265   0.03734    0.01686   -0.02483    0.01170   0.02203    0.01626   -0.02098    0.04289   -0.18398    0.01993   -0.10952    0.03433    
+
+
+
+
+

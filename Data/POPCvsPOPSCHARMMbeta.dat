@@ -3,10 +3,12 @@
 # https://github.com/NMRLipids/nmrlipids.blogspot.fi/blob/master/DATAreportediINblog/POPC/cholesterol/CHARMM36-298K_blogged-24-2-15.dat
 # delivered by Fernando Favela
 #
-# Results with PS taken from https://github.com/NMRLipids/MATCH/blob/master/Data/Lipid_Bilayers/POPS%2B83%25popc/T298K/MODEL_CHARMM_GUI/OrdPars.dat
-# and
-# from http://nmrlipids.blogspot.com/2017/12/nmrlipids-iv-current-status-and.html?showComment=1516642859204#c3440534109745026509
+# Results with PS taken from
+# /MATCH/Data/Lipid_Bilayers/POPS+83%popc/T298K/MODEL_CHARMM36
+# /MATCH/Data/Lipid_Bilayers/POPS+50%popc/T298K/MODEL_CHARMM36
 # Counterions are potassium
+# Results from https://github.com/NMRLipids/MATCH/blob/master/Data/Lipid_Bilayers/POPS%2B83%25popc/T298K/MODEL_CHARMM_GUI/OrdPars.dat are currently commented out
+#
 #
 # It should be noted that pure POPC are ran with Gromacs 4, but the results with
 # PS are ran with Gromacs 5. This has significant effect on acyl chains:
@@ -18,6 +20,6 @@
 # It might be good to run pure POPC at T298K with Gromacs 5 for the comparison.
 #
 0     -0.0785491         -0.0755386
-0.17   -0.083284282985   -0.0807189583207
-0.17   -0.0795243501265  -0.0799929816489
-0.5   -0.0851482081839   -0.0822408190226
+#0.17   -0.083284282985   -0.0807189583207
+0.17   -0.07985          -0.07984
+0.5   -0.08586           -0.08173

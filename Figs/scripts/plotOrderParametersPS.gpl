@@ -8,14 +8,14 @@ set out "../HGorderparametersPS.pdf"
 set tmargin at screen 0.995
 set ylabel "S_{CH}" font "Arial,20" offset 2,-2.3
 
-set bmargin at screen 0.13 #0.31
-set key l at screen 0.01,0.115 Left reverse noautotitle samplen 2 width -1 maxrows 7 #12
+set bmargin at screen 0.20
+set key l at screen 0.11,0.195 Left reverse noautotitle samplen 2 width 3 maxrows 12
 #set key below horizontal left Left reverse noautotitle samplen 1 maxcols 2 maxrows 6
 
 set lmargin at screen 0.122 #0.157
 set rmargin at screen 0.99
 
-set xtics ("{/Symbol b}" 1, "{/Symbol a}" 2, "g_3" 3, "g_2" 4, "g_1" 5) offset 0,52 scale 0 font "Arial,25"
+set xtics ("{/Symbol b}" 1, "{/Symbol a}" 2, "g_3" 3, "g_2" 4, "g_1" 5) offset 0,57 scale 0 font "Arial,25"
 set ytics 0.1 out nomirror
 set mytics 2
 dx = 0.05
@@ -36,13 +36,13 @@ horizLines(filename)="< awk '{ if(substr($1,1,1)!~/#/) {print $1-0.46,$2,$3;prin
 # Subjective sweet spots:
 set style rectangle fc rgb "#D6F0FE" fs solid noborder
 set object 1 rectangle \
-         from 0.0,-0.091744 to 1.5,-0.131744 
+         from 0.0,-0.08675 to 1.5,-0.12675 
 set object 2 rectangle \
-         from 1.5,-0.033528 to 2.5, 0.006472
+         from 1.5, -0.0235 to 2.5, 0.01645 
 set object 3 rectangle \
          from 1.5, 0.073216 to 2.5, 0.113216
 set object 4 rectangle \
-         from 2.5,-0.176 to 3.5,-0.216
+         from 2.5,-0.183 to 3.5,-0.223
 set object 5 rectangle \
          from 3.5,-0.16 to 4.5,-0.20
 set object 6 rectangle \
@@ -56,11 +56,11 @@ Berger = 21
 set linetype Berger lw w lc rgb "#D70039" # for Berger
 set linetype 32 lw w lc rgb "#FA0059" # for Tjornhammar
 CKP_QB = 25
-set linetype 25 lw w lc rgb "#E8007C" # for CKP-BergerQ
+set linetype 25 lw w lc rgb "#FFA0A3" # for CKP using the same charges as in the Berger simulations, with the NH3 group having the same charges as in the N(CH3)3 group of the PC lipids
 set linetype 27 lw w lc rgb "#F70000" # for Chiu
 set linetype 26 lw w lc rgb "#FF8300" # for Kukol
-CKP_QL = 31
-set linetype 31 lw w lc rgb "#FFA0A3" # for CKP-LysineQ
+CKP_QK = 31
+set linetype 31 lw w lc rgb "#E8007C" # for CKP using the charges for the NH3 group taken from a lysine side-chain (to be more GROMOS consistent).
 # between GROMOS and CHARMM:
 C36_UA = 231
 set linetype C36_UA lw w lc rgb "#9966B6" # for CHARMM36-UA
@@ -69,27 +69,40 @@ CHARMM = 23
 set linetype CHARMM lw w lc rgb "#0088BF" # for CHARMM36
 # between CHARMM and AMBER:
 Slipid = 22
-set linetype Slipid lw w lc rgb "#7AEE9E" # "#7AEE9E" # for Slipids
+# set linetype Slipid lw w lc rgb "#7AEE9E" # "#7AEE9E" # for Slipids
+#set linetype Slipid lw w lc rgb "#78EE9C" # "#78EE9C" # for more bluish Slipids
+set linetype Slipid lw w lc rgb "#7BEE9E" # "#7BEE9E" # for more bluish Slipids
 set linetype 28 lw w lc rgb "#9FE100" # for HoNiLy
 # AMBER-family:
+Lipd17 = 241
 set linetype 24 lw w lc rgb "#FFD300" # for GAFF
-set linetype 241 lw w lc rgb "#FFD300" # for Amber Lipid14
+set linetype 241 lw w lc rgb "#FFD300" # for Amber Lipid17
 # OPLS-family:
+MacRog = 30
 set linetype 29 lw w lc rgb "#FF578F" # for OPLS-AA
-set linetype 30 lw w lc rgb "#00A368" # for MacRog
+set linetype MacRog lw w lc rgb "#00A368" # for MacRog
 
 # x-displacements to avoid ovelaps:
 d=0.06
 dxC36do = -7*d
-dxC36po =  7*d
-dxCUAdo = -5*d
-dxCUApo =  5*d
-dxCKPdo = -3*d
-dxCKPpo =  3*d
-dxBERdo = -d
-dxBERpo =  d
+dxC36pK = -6*d
+dxC36po = -5*d
+dxCKPd2 = -3.5*d
+dxCKPp2 = -2.5*d
+dxCUAdo = -2*d
+dxCUApo = -1*d
+dxCKPdo = -0.5*d
+dxCKPpo =  0.5*d
+dxBERdo =  2*d
+dxMcRpo =  4.5*d
+dxBERpo =  3*d
 dxSLIdo =  dxBERdo
 dxSLIpo =  dxBERpo
+dxL17do =  4*d
+dxL17dJ =  5*d
+dxL17po =  6*d
+dxL17pJ =  7*d
+
 
 # Arrows pointing data outside the graph:
 #set arrow 261 from 3.17, graph 0 to 3.17, graph -0.02 lt 26 lw 3 # Kukol g3
@@ -106,37 +119,54 @@ dxSLIpo =  dxBERpo
 
 plot [0.5:5.5][0.35:-0.35] \
      horizLines(' ../../../MATCH/Data/Lipid_Bilayers/DOPS/T303K/Headgroup_Glycerol_Order_Parameters_Experiments.dat') \
-         u ($1):(($2)*0.00784) w l ls 8 lc rgb "#5F5F5F" lw 6.5 t "DOPS experiment T=303K", \
+         u ($1):(($2)*0.00784) w l ls 8 lc rgb "#5F5F5F" lw 6.5 t "DOPS ^{2}H NMR", \
      horizLines(' ../../../MATCH/Data/Lipid_Bilayers/DOPS/T303K/Headgroup_Glycerol_Order_Parameters_Experiments.dat') \
          u ($1):(($3)*0.00784) w l ls 8 lc rgb "#5F5F5F" lw 6.5, \
      horizLines(' ../../Data/POPSorderparametersNOCaEXP.dat') \
          u ($1):($2) w l ls 4 lc 16 lw 3, \
      "../../../MATCH/Data/Lipid_Bilayers/DOPS/T303K/MODEL_CHARMM36/head-glyc-OPs_ave_min_max.dat" \
-         u ($1+dxC36do):($2):($3):($4) w ye lt CHARMM pt 13 ps r t 'DOPS CHARMM36 T=303K',\
+         u ($1+dxC36do):($2):($3):($4) w ye lt CHARMM pt 13 ps r t 'CHARMM36',\
+     10 lc rgb "white" t "  ", \
      "../../../MATCH/Data/Lipid_Bilayers/DOPS/T303K/MODEL_CHARMM36UA/head-glyc-OPs_ave_min_max.dat" \
-         u ($1+dxCUAdo):($2):($3):($4) w ye lt C36_UA pt 12 ps r t 'DOPS CHARMM36-UA T=303K',\
-     "../../../MATCH/Data/Lipid_Bilayers/DOPS/T303K/MODEL_GROMOS-CKP1/head-glyc-OPs_ave_min_max.dat" \
-         u ($1+dxCKPdo):($2):($3):($4) w ye lt CKP_QB pt 12 ps r t 'DOPS CKP1pme T=303K', \
-     "../../../MATCH/Data/Lipid_Bilayers/DOPS/T303K/MODEL_GROMOS-CKP2/head-glyc-OPs_ave_min_max.dat" \
-         u ($1+dxCKPdo):($2):($3):($4) w ye lt CKP_QL pt 12 ps r t 'DOPS CKP2pme T=303K', \
+         u ($1+dxCUAdo):($2):($3):($4) w ye lt C36_UA pt 12 ps r t 'CHARMM36-UA',\
      "../../../MATCH/Data/Lipid_Bilayers/DOPS/T303K/MODEL_SLIPIDS/head-glyc-OPs_ave_min_max.dat" \
-         u ($1+dxSLIdo):($2):($3):($4) w ye lt Slipid pt 12 ps r t 'DOPS SLIPIDS T=303K', \
+         u ($1+dxSLIdo):($2):($3):($4) w ye lt Slipid pt 12 ps r t 'Slipids', \
+     "../../../MATCH/Data/Lipid_Bilayers/DOPS/T303K/MODEL_GROMOS-CKP2/head-glyc-OPs_ave_min_max.dat" \
+         u ($1+dxCKPd2):($2):($3):($4) w ye lt CKP_QK pt 12 ps r t 'GROMOS-CKP', \
+     "../../../MATCH/Data/Lipid_Bilayers/DOPS/T303K/MODEL_GROMOS-CKP1/head-glyc-OPs_ave_min_max.dat" \
+         u ($1+dxCKPdo):($2):($3):($4) w ye lt CKP_QB pt 12 ps r t 'GROMOS-CKPM', \
+     10 lc rgb "white" t "  ", \
+     10 lc rgb "white" t "  ", \
      "../../../MATCH/Data/Lipid_Bilayers/DOPS/T303K/MODEL_Berger/head-glyc-OPs_ave_min_max.dat" \
-         u ($1+dxBERdo):($2):($3):($4) w ye lt Berger pt 13 ps r t 'DOPS Berger T=303K', \
+         u ($1+dxBERdo):($2):($3):($4) w ye lt Berger pt 13 ps r t 'Berger', \
+     "../../../MATCH/Data/Lipid_Bilayers/DOPS/T303K/MODEL_LIPID17/head-glyc-OPs_ave_min_max.dat" \
+         u ($1+dxL17do):($2):($3):($4) w ye lt Lipd17 pt 13 ps r t 'Lipid17', \
+     "../../../MATCH/Data/Lipid_Bilayers/DOPS/T303K/MODEL_LIPID17/JCions_head-glyc-OPs_ave_min_max.dat" \
+         u ($1+dxL17dJ):($2):($3):($4) w ye lt Lipd17 pt 12 ps r t 'Lipid17 JC', \
      horizLines(' ../../Data/POPSorderparametersNOCaEXP.dat') \
-         u ($1):($3) w l ls 4 lc 16 lw 3 t "POPS experiment", \
+         u ($1):($3) w l ls 4 lc 16 lw 3 t "POPS ^{13}C NMR", \
      "../../../MATCH/Data/Lipid_Bilayers/POPS/T298K/MODEL_CHARMM36/head-glyc-OPs_ave_min_max.dat" \
-         u ($1+dxC36po):($2):($3):($4) w ye lt CHARMM pt 7 ps r t 'POPS CHARMM36 T=298K',\
+         u ($1+dxC36po):($2):($3):($4) w ye lt CHARMM pt 7 ps r t 'CHARMM36',\
+     "../../../MATCH/Data/Lipid_Bilayers/POPS/T298K/MODEL_CHARMM36/counterionsK_head-glyc-OPs_ave_min_max.dat" \
+         u ($1+dxC36pK):($2):($3):($4) w ye lt CHARMM pt 6 ps r t 'CHARMM36 K^+',\
      "../../../MATCH/Data/Lipid_Bilayers/POPS/T298K/MODEL_CHARMM36UA/head-glyc-OPs_ave_min_max.dat" \
-         u ($1+dxCUApo):($2):($3):($4) w ye lt C36_UA pt 6 ps r t 'POPS CHARMM36-UA T=298K',\
-     "../../../MATCH/Data/Lipid_Bilayers/POPS/T298K/MODEL_GROMOS-CKP1/head-glyc-OPs_ave_min_max.dat" \
-         u ($1+dxCKPpo):($2):($3):($4) w ye lt CKP_QB pt 6 ps r t 'POPS CKP1pme T=298K', \
-     "../../../MATCH/Data/Lipid_Bilayers/POPS/T298K/MODEL_GROMOS-CKP2/head-glyc-OPs_ave_min_max.dat" \
-         u ($1+dxCKPpo):($2):($3):($4) w ye lt CKP_QL pt 6 ps r t 'POPS CKP2pme T=298K', \
+         u ($1+dxCUApo):($2):($3):($4) w ye lt C36_UA pt 6 ps r t 'CHARMM36-UA',\
      "../../../MATCH/Data/Lipid_Bilayers/POPS/T298K/MODEL_SLIPIDS/head-glyc-OPs_ave_min_max.dat" \
-         u ($1+dxSLIpo):($2):($3):($4) w ye lt Slipid pt 6 ps r t 'POPS SLIPIDS T=298K', \
+         u ($1+dxSLIpo):($2):($3):($4) w ye lt Slipid pt 6 ps r t 'Slipids', \
+     "../../../MATCH/Data/Lipid_Bilayers/POPS/T298K/MODEL_GROMOS-CKP2/head-glyc-OPs_ave_min_max.dat" \
+         u ($1+dxCKPp2):($2):($3):($4) w ye lt CKP_QK pt 6 ps r t 'GROMOS-CKP', \
+     "../../../MATCH/Data/Lipid_Bilayers/POPS/T298K/MODEL_GROMOS-CKP1/head-glyc-OPs_ave_min_max.dat" \
+         u ($1+dxCKPpo):($2):($3):($4) w ye lt CKP_QB pt 6 ps r t 'GROMOS-CKPM', \
+     "../../../MATCH/Data/Lipid_Bilayers/POPS/T298K/MODEL_MACROG/head-glyc-OPs_ave_min_max.dat" \
+         u ($1+dxMcRpo):($2):($3):($4) w ye lt MacRog pt 7 ps r t 'MacRog', \
+     "../../../MATCH/Data/Lipid_Bilayers/POPS/T298K/MODEL_MACROG_POTASSIUMcounterion/OrdParsFORplot.dat" \
+         u ($1+dxMcRpo):($2):($3) w p lt MacRog pt 6 ps r t 'MacRog K^+', \
      "../../../MATCH/Data/Lipid_Bilayers/POPS/T298K/MODEL_Berger/head-glyc-OPs_ave_min_max.dat" \
-         u ($1+dxBERpo):($2):($3):($4) w ye lt Berger pt 7 ps r t 'POPS Berger T=298K'
+         u ($1+dxBERpo):($2):($3):($4) w ye lt Berger pt 7 ps r t 'Berger', \
+     "../../../MATCH/Data/Lipid_Bilayers/POPS/T298K/MODEL_LIPID17/head-glyc-OPs_ave_min_max.dat" \
+         u ($1+dxL17po):($2):($3):($4) w ye lt Lipd17 pt 7 ps r t 'Lipid17', \
+     "../../../MATCH/Data/Lipid_Bilayers/POPS/T298K/MODEL_LIPID17/JCions_head-glyc-OPs_ave_min_max.dat" \
+         u ($1+dxL17pJ):($2):($3):($4) w ye lt Lipd17 pt 6 ps r t 'Lipid17 JC'
 	 
 #plot [0.5:5.5][0.153471:-0.3211] \
 #  "./DMPC/EXP-Gross1997.dat" u ($1):($2) w l ls 8 lc rgb "#5F5F5F" lw 6.5 \

@@ -1,0 +1,12 @@
+# MacRog simulations at 310K
+# Pure POPC result taken from NMRlipids/MATCH/Data/Lipid_Bilayers/POPC/T310K/MODEL_BERGER
+#
+# Results with PS taken from  NMRlipids/MATCH/Data/Lipid_Bilayers/POPS+80%popc/T310K/MODEL_berger
+# 
+# Counterions are sodium
+#
+#       beta1            beta2                 alpha1          alpha2   
+0      0.0508277       0.0633637             0.095593         0.160097 
+0.20   0.0129448       0.032294              0.0619829        0.121486 
+
+

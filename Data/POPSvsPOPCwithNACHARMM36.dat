@@ -2,10 +2,13 @@
 # http://nmrlipids.blogspot.com/2017/03/nmrlipids-iv-headgroup-glycerol.html?showComment=1491420308902#c1966486812509509804
 # and
 # from https://github.com/NMRLipids/NMRlipidsIVotherHGs/issues/1
+# and from MATCH/Data/Lipid_Bilayers/POPS+83%popc/T298K/MODEL_CHARMM/OrdParsPOPS.dat
 # Na counterions
+#
+# ERROR BARS FOR PURE PS ARE CALCULATED FROM TWO INDEPENDENT DATASETS AS awk '{print ($2-$3)/2}' POPS/T298K/MODEL_CHARMM36/head-glyc-OPs_ave_min_max.dat
 #
 # Average over two sets
 # 
-# mole fraction of PC        beta          alpha1             alpha2
-0                          -0.0734677      0.0105646          -0.0692441
-0.83                       -0.132581       0.0605178          -0.102864
+# mole fraction of PC        beta      err        alpha1     err        alpha2      err
+0                          -0.0734677  0.0034514  0.0105646  0.0012354  -0.0692441  0.0034149
+0.83                       -0.13221    0.00595    0.07202    0.01340    -0.10456    0.00612
