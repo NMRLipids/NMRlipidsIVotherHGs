@@ -284,16 +284,19 @@ DOPS/Na$^{+}$  & Slipids \cite{jambeck13}  & 288  & 11232  & 303  & 200  & 100  
   Symbols have the same meaning as in Table \ref{PSsystems}.
 }\label{mixedIONsystems}
 %begin{minipage}[t]{\textwidth}
-\begin{tabular}{lccccccccc}
+\resizebox{0.87\textwidth}{!}{\begin{tabular}{lccccccccc}
   %lipid/counter-ions  & force field & {[}CaCl$_{2}${]}\,(M)  & \footnote{Number of POPC molecules}N$_{{\rm l}}$  & \footnote{Number of water molecules}N$_{{\rm w}}$  & \footnote{Number of Ca$^{2+}$ cations in addition to counter ions}N$_{{\rm c}}$  & \footnote{Simulation temperature}T (K)  & \footnote{Total simulation time}t$_{{\rm sim}}$(ns)  & \footnote{Time used for analyses}t$_{{\rm anal}}$ (ns)  & \footnote{Reference for simulation files}files\tabularnewline
   lipid/counter-ions  & force field & {[}CaCl$_{2}${]}\,(M)  & N$_{{\rm l}}$  & N$_{{\rm w}}$  & \footnote{Number of Ca$^{2+}$ cations in addition to counter ions}N$_{{\rm c}}$  & T (K)  & t$_{{\rm sim}}$(ns)  & t$_{{\rm anal}}$ (ns)  & files\tabularnewline
 \hline 
 %    POPC:POPS (5:1)/K$^+$  & CHARMM36 \cite{klauda10,venable13} &0  & 110:22 & 4935 & 0  & 298  & 100 & 100 \todoi{Equilibration?} & \cite{charmm36pops+83popcT298K}  \\
-POPC:POPS (5:1)/K$^{+}$  & CHARMM36 \cite{klauda10,venable13}  & 0  & 250  & 11207  & 0  & 298  & 200  & 180  & \citenum{POPC5POPS1noCaClCHARMM} \tabularnewline
-POPC:POPS (5:1)/K$^{+}$  & CHARMM36 \cite{klauda10,venable13}  & 0  & 110  & 4620  & 0  & 298  & 2$\times$500  & 2$\times$100  & \citenum{charmm36pops+83popcT298Kpiggot} \tabularnewline
 POPC:POPS (5:1)/Na$^{+}$  & CHARMM36 \cite{klauda10,venable13}  & 0  & 110 & 4620  & 0  & 298  & 2$\times$500  & 2$\times$100  & \citenum{charmm36pops+83popcT298KpiggotSODIUM} \tabularnewline
-POPC:POPS (5:1)  & CHARMM36 \cite{klauda10,venable13,kim16}  & 0.26  & 250 & 11190  & 53  & 298  & 200  & 180  & \citenum{POPC5POPS1withCaClCHARMM} \tabularnewline
-POPC:POPS (5:1)  & CHARMM36 \cite{klauda10,venable13,kim16}  & 1.06  & 250 & 11174  & 214  & 298  & 200  & 180  & \citenum{POPC5POPS1with1MCaClCHARMM} \tabularnewline
+POPC:POPS (5:1)/K$^{+}$  & CHARMM36 \cite{klauda10,venable13}  & 0  & 110  & 4620  & 0  & 298  & 2$\times$500  & 2$\times$100  & \citenum{charmm36pops+83popcT298Kpiggot} \tabularnewline
+POPC:POPS (5:1)/K$^{+}$  & CHARMM36 \cite{klauda10,venable13}  & 0  & 250  & 11207  & 0  & 298  & 200  & 180  & \citenum{POPC5POPS1noCaClCHARMM} \tabularnewline
+POPC:POPS (5:1)  & CHARMM36 \cite{klauda10,venable13} NBFIX 1 \cite{kim16}  & 0.26  & 250 & 11190  & 53  & 298  & 200  & 180  & \citenum{POPC5POPS1withCaClCHARMM} \tabularnewline
+POPC:POPS (5:1)  & CHARMM36 \cite{klauda10,venable13} NBFIX 1 \cite{kim16}  & 1.06  & 250 & 11174  & 214  & 298  & 200  & 180  & \citenum{POPC5POPS1with1MCaClCHARMM} \tabularnewline
+POPC:POPS (5:1)/Na$^{+}$  & CHARMM36 \cite{klauda10,venable13}  & 0  & 250  & 11207  & 0  & 320  & 400  & 300  & \citenum{POPC5POPS1CHARMMwithNBfixHan} \tabularnewline
+POPC:POPS (5:1)/Na$^{+}$  & CHARMM36 \cite{klauda10,venable13} NBFIX 2 \cite{han2018graph}  & 0.14  & 250 & 11190  & 28  & 320  & 440  & 300  & \citenum{POPC5POPS1CHARMMwithNBfixHan} \tabularnewline
+POPC:POPS (5:1)/Na$^{+}$  & CHARMM36 \cite{klauda10,venable13} NBFIX 2 \cite{han2018graph}  & 0.94  & 250 & 11174  & 189  & 320  & 440  & 300  & \citenum{POPC5POPS1CHARMMwithNBfixHan} \tabularnewline
 POPC:POPS (1:1)/K$^{+}$  & CHARMM36 \cite{klauda10,venable13}  & 0  & 150  & 10785  & 0  & 298  & 200  & 180  & \citenum{POPC1POPS1noCaClCHARMM} \tabularnewline
 \hline 
 POPC:POPS (1:0)  & MacRog \cite{maciejewski14}  & 0  & 120 & 5120  & 0  & 298  & 200  & 150  & \citenum{macrogPOPC298K} \tabularnewline
@@ -326,10 +329,9 @@ POPC:POPS (4:1)  & Berger \cite{tieleman99,mukhopadhyay04}  & 0.715\textsuperscr
 \hline 
 POPC:POPS (5:1)/Na$^{+}$  & GROMOS-CKP\footnote{Force field parameters for PS lipids generated for this work, for full details see the supplementary information.} \cite{piggot12}  & 0  & 110 & 4620  & 0  & 298  & 2$\times$500  & 2$\times$100  & \citenum{POPCpopsGROMOSCKPwithNa} \tabularnewline
 POPC:POPS (5:1)/Na$^{+}$  & GROMOS-CKPM$^c$ \cite{piggot12}  & 0  & 110 & 4620  & 0  & 298  & 2$\times$500  & 2$\times$100  & \citenum{POPCpopsGROMOSCKPMwithNa} \tabularnewline
-\end{tabular}
+\end{tabular}}
 %\end{minipage}
 \end{sidewaystable*} 
-
 %\end{table*}
 
 
