@@ -727,41 +727,41 @@ PS headgroup and calcium ions in MD simulations.
 
 We used the headgroup C--H bond order parameters, $S_{\rm CH}$, and the open collaboration approach to evaluate the quality
 of the headgroup structure and the ion binding affinity 
-in available MD models of PS lipid.
-The main advantage of this approach is the direct connection
-between the order parameters measured accurately in experiments and calculated readily from simulations. 
+in available MD models of PS lipids.
+The main advantage of using the $S_\mathrm{CH}$ is the direct connection they provide
+between experiments and simulations: They can be measured accurately in experiments and calculated readily from simulations. 
 This reduces the ambiguity in the interpretation of experiments.
 
 First, we complemented the available experimental information \cite{browning80,roux90} by measuring the signs of the PS headgroup order parameters,
 and then proceeded to compare MD simulation results from several force fields with the experimental data.
 This revealed that none of the force fields
 reproduce the PS headgroup order parameters within the experimental accuracy.
-However, the best models captured essential differences with PC and
+However, the best models captured essential differences between PS and PC, and
 suggested characteristic conformations of PS headgroups.
 Comparison to the experimentally observed order parameters in POPC:POPS (5:1) bilayers  at varying ion
 concentrations \cite{roux90} then showed that the tested MD force fields
-overestimate the cation binding affinity to these bilayers with two exceptions: 1) the MacRog simulation with potassium counterions appears to produce the most realistic monovalent ion binding
-affinity to PS-containing lipid bilayers, and 2) the CHARMM36 force field with the recently introduced
-NBfix correction for calcium \cite{kim16} underestimates the calcium binding affinity.
-The experimentally measured response of the PS headgroup order parameters to the bound calcium, as well as to the dilution of bilayer with zwitterionic PC lipids, were not
-qualitatively reproduced in any of the tested force fields. This underlines the need for more accurate
-MD force fields to study the biological function of PS lipids.
-This is in contrast to the previous results with PC lipids,
-where the experimentally measured headgroup order parameter responses to the bound charge
-were in qualitative agreement even though the headgroup structures themselves were
+overestimate the cation binding affinity to these bilayers. There were two exceptions: 1) the MacRog force field with potassium counterions, which appeared to display a more realistic monovalent ion binding
+affinity to PS-containing lipid bilayers than the other models; and 2) the CHARMM36 force field with the recently introduced
+NBfix correction for calcium \cite{kim16}, which underestimated the calcium binding affinity.
+Importantly, the experimentally measured responses of the PS headgroup $S_\mathrm{CH}$ to bound calcium, as well as to dilution of the bilayer with zwitterionic PC lipids, were not
+qualitatively reproduced in any of the tested force fields.
+This is in contrast to previous results with PC lipids,
+where MD force fields were seen to be at least in qualitative agreement with the experimentally measured headgroup $S_\mathrm{CH}$ responses to bound charge---even
+though the headgroup structures themselves were
 incorrect and the cation binding affinities were overestimated \cite{catte16}.
+This underlines the dire need for more realistic MD force fields to study the biological function of PS lipids.
 
-We expect our results to pave the way for the development of better MD force fields for PS lipids.
-The quality of conformational ensembles produced by the various models can be evaluated
-based on the headgroup order parameters, which we hope to guide the development of force fields towards
-models that correctly reproduce the PS headgroup structures. Also, the ensembles observed in the simulations
-with the most realistic headgroup conformations (CHARMM36 and Slipids) hint the direction for the force
-field improvement. The cation binding can be improved based on the experimental headgroup order parameter
-data from POPC:POPS (5:1) mixtures under different cation concentrations. Recent studies showed that the
+We expect our results to pave the way for the development of better PS force fields.
+As the quality of the conformational ensembles can be evaluated
+against the headgroup C--H order parameters, we hope that the $S_\mathrm{CH}$ will guide the development of
+models that correctly reproduce the PS headgroup structures. For example, the ensembles we observed in the simulations
+with the most realistic headgroup conformations (CHARMM36 and Slipids) do hint a direction for force
+field improvement. The cation binding could be improved based on the experimental headgroup $S_\mathrm{CH}$
+data from POPC:POPS (5:1) mixtures under different cation concentrations. Recent studies have shown that 
 cation binding to bilayers with POPC and POPS lipids can be improved by implicit inclusion of electronic
 polarizability using the electronic continuum correction (ECC) \cite{melcr18,ECCpops}, suggesting that
-the electronic polarizability effects are important for lipid-ion interactions but polarizable force fields
-may not be necessary to correctly capture the ion binding to lipid bilayers.
+the electronic polarizability effects are important for lipid--ion interactions but polarizable force fields
+may not be necessary to correctly capture ion binding to lipid bilayers.
 
 \begin{suppinfo} 
  
