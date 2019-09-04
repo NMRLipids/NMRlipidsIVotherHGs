@@ -233,8 +233,8 @@ and in the NMRlipids/MATCH repository (\url{github.com/NMRlipids/MATCH})~\cite{M
 \caption{List of MD simulations of pure PS bilayers without additional salt. 
   Notation 2$\times$[time] indicates that two independent MD runs were conducted.
   JC refers to the Joung--Cheatham ion parameters~\cite{joung08} and ff99 to the default Amber ion parameters~\cite{aqvist90}.
-  Additional simulation details are given in the supplementary information.
-  $^*$ Force field parameters for PS lipids generated for this work, for full details see the supplementary information.
+  Additional simulation details are given in the Supporting Information.
+  $^*$ Force field parameters for PS lipids generated for this work, for full details see the Supporting Information.
 }\label{PSsystems}
 %begin{minipage}[t]{\textwidth}
 \begin{tabular}{lcrrrrrcc}
@@ -281,7 +281,7 @@ DOPS/Na$^{+}$  & Slipids \cite{jambeck13}  & 288  & 11232  & 303  & 200  & 100  
   reported in the experiments by Roux et al.~\cite{roux90}.
   Notation 2$\times$[time] indicates that two independent MD runs were conducted.
   Dang refers to the ion parameters by Dang and co-workers~\cite{smith94,dang06}, and ff99 to the default Amber ion parameters~\cite{aqvist90}.
-  The additional simulation details are given in the supplementary information.
+  The additional simulation details are given in the Supporting Information.
   Symbols have the same meaning as in Table \ref{PSsystems}.
 }\label{mixedIONsystems}
 %begin{minipage}[t]{\textwidth}
@@ -328,7 +328,7 @@ use of scaled ions. Concentration taken as reported in the delivered
 data.}  & 104:26  & 4306  & 24  & 310  & 300  & 100  & \citenum{POPCpopsBERGERwith102mMCa} \tabularnewline
 POPC:POPS (4:1)  & Berger \cite{tieleman99,mukhopadhyay04}  & 0.715\textsuperscript{\ref{noteBerger}}  & 104:26 & 4306  & 72  & 310  & 300  & 100  & \citenum{POPCpopsBERGERwith715mMCa} \tabularnewline
 \hline 
-POPC:POPS (5:1)/Na$^{+}$  & GROMOS-CKP\footnote{Force field parameters for PS lipids generated for this work, for full details see the supplementary information.} \cite{piggot12}  & 0  & 110:22 & 4620  & 0  & 298  & 2$\times$500  & 2$\times$100  & \citenum{POPCpopsGROMOSCKPwithNa} \tabularnewline
+POPC:POPS (5:1)/Na$^{+}$  & GROMOS-CKP\footnote{Force field parameters for PS lipids generated for this work, for full details see the Supporting Information.} \cite{piggot12}  & 0  & 110:22 & 4620  & 0  & 298  & 2$\times$500  & 2$\times$100  & \citenum{POPCpopsGROMOSCKPwithNa} \tabularnewline
 POPC:POPS (5:1)/Na$^{+}$  & GROMOS-CKPM$^c$ \cite{piggot12}  & 0  & 110:22 & 4620  & 0  & 298  & 2$\times$500  & 2$\times$100  & \citenum{POPCpopsGROMOSCKPMwithNa} \tabularnewline
 \end{tabular}}
 %\end{minipage}
@@ -399,7 +399,7 @@ The glycerol backbone carbon peaks were assigned according to the POPC spectra~\
 the peaks for $\beta$ and $\alpha$ carbons were assigned according to the
 known C--H bond order parameters from the $^2$H\,NMR experiments~\cite{browning80}.
 Slices of the R-PDLF spectra and the resulting  $S_{\rm CH}$ values
-are shown in the supplementary information (Fig. \ref{DPslices}). 
+are shown in the Supporting Information (Fig. \ref{DPslices}). 
 
 \begin{figure}[!tb]
   \centering
@@ -475,29 +475,31 @@ are in good agreement with the results from centrifuged samples~\cite{browning80
 
 \subsection{Headgroup and glycerol backbone in simulations of PS lipid bilayers without additional ions}
 
-The different PS MD models produce highly varied headgroup and glycerol backbone  $S_{\rm CH}$ (Fig.~\ref{HGorderParametersPS})
-and structures (Fig.~\ref{HGandGLYstructuresPS} and section~\ref{Diheds} in the supplementary information).
-As was previously observed for PC lipids \cite{botan15}, also none of the PS models produces a set of  $S_{\rm CH}$ in full quantitative agreement with the experiments.
+The different PS MD models produced highly varied headgroup and glycerol backbone  $S_{\rm CH}$ (Fig.~\ref{HGorderParametersPS})
+and structures (Fig.~\ref{HGandGLYstructuresPS} and section~\ref{Diheds} in the Supporting Information).
+As was previously observed for PC lipids \cite{botan15}, also none of the PS models produced a set of  $S_{\rm CH}$ in full quantitative agreement with the experiments.
 In fact, the models perform less well for PS than for PC
-(Figs.~\ref{HGorderParametersPS} and \ref{comparisonTablePS} vs. Figs.~2 and 4 in Ref.~\cite{botan15}),
-which complicates the interpretation of structural differences between the PC and PS. However, concentrating on the headgroup alone, we see that the best performing models (Slipids, CHARMM36 and CHARMM36-UA) indeed do replicate the larger-than-in-PC
-forking of the $\alpha$-carbon that is observed in experiments (Fig.~\ref{HGorderParametersPS}).
-Additionally, the Slipids force field correctly produces the significantly smaller $\beta$-carbon  $S_{\rm CH}$
-for PS compared to PC (Fig. \ref{HGorderParametersPS} vs. Fig. 2 in Ref.~\citenum{botan15}), in line with
-experiments (Fig. \ref{HGorderParameters}).
+(Figs.~\ref{HGorderParametersPS} and \ref{comparisonTablePS} vs. Figs.~2 and 4 in Ref.~\citenum{botan15}),
+which complicates the interpretation of structural differences between the PC and PS. However, concentrating on the headgroup alone, we see that the best performing models (Slipids, CHARMM36, and CHARMM36-UA) indeed do qualitatively replicate the larger-than-in-PC
+forking of the $\alpha$-carbon (these models give forkings of $\sim\!0.01$ or smaller for PC~\cite{botan15} and between $\sim\!0.05$ and $\sim\!0.12$ for PS) that is observed in experiments
+(Fig.~\ref{HGorderParameters}).
+Additionally, the Slipids force field correctly produces the significantly smaller $\beta$-carbon order parameter
+for PS ($S^\beta_{\rm CH}\approx-0.09$, see Fig.~\ref{HGorderParametersPS}) compared to PC ($S^\beta_{\rm CH}\approx-0.03$,~see Fig.~2 in Ref.~\citenum{botan15}),
+%Fig. \ref{HGorderParametersPS} vs. Fig. 2 in Ref.~\citenum{botan15})
+in line with experiments (Fig. \ref{HGorderParameters}).
 
 
 \begin{figure}[]
   \centering
   \includegraphics[width=9.0cm]{../Figs/HGorderparametersPS.pdf}
   \caption{\label{HGorderParametersPS}
-    C--H bond order parameters, $S_{\rm CH}$, of PS headgroup ($\beta$ and $\alpha$) and
+    C--H bond order parameters, $S_{\rm CH}$, of the PS headgroup ($\beta$ and $\alpha$) and
     glycerol backbone (g$_3$, g$_2$, g$_1$) carbons from NMR experiments (horizontal lines),
     and MD simulations with different force fields (symbols).
-    Experimental data for DOPS are measured with 0.1~M of NaCl~\cite{browning80},
+    Experimental data for DOPS had been measured with 0.1\,M of NaCl~\cite{browning80},
     while all the other data are with counterions only.
     The data for DOPS is at 303~K and for POPS at 298~K.
-    Light blue areas span 0.04 units around the average of the extremal experimental values,
+    The light blue areas span 0.04 units around the average of the extremal experimental values,
     in accordance with the expected quantitative accuracy of experiments~\cite{ollila16}.
     The vertical bars shown for all simulation values (excl. MacRog~K$^+$)
     are not error bars, but demonstrate that for these systems
@@ -508,32 +510,31 @@ experiments (Fig. \ref{HGorderParameters}).
 
 \begin{figure}[]
   \centering
-  \includegraphics[width=9.0cm]{../Figs/structures.eps}
-  \caption{\label{HGstructuresPSandPC}
-    Overlayed snapshots from simulations conducted with CHARMM36---the force field producing the best agreement with experiments---demonstrate the conformational fluctuations
-    of lipid headgroups.
-    (A) Overlaying  C$_\gamma$-C$_\beta$-C$_\alpha$ carbons demonstrate fluctuations around O$_\gamma$-C$_\gamma$-C$_\beta$-C$_\alpha$, C$_\gamma$-C$_\beta$-C$_\alpha$-O$_\alpha$,
-    and N-C$_\beta$-C$_\alpha$-O$_\alpha$ dihedrals of the PS headgroup and
-    (B) overlaying C$_\beta$-C$_\alpha$-O$_\alpha$ carbonds demonstrate fluctuations around N-C$_\beta$-C$_\alpha$-O$_\alpha$ and C$_\beta$-C$_\alpha$-O$_\alpha$-P
-    dihedrals of the PS and PC headgroups. The trajectory used for CHARMM36 POPC is available at Ref.~\citenum{POPCcharmm36T303K}.}
+  \includegraphics[width=9.0cm]{../Figs/comparisonTablePS.pdf}
+  \caption{\label{comparisonTablePS}
+    Rough subjective ranking of force fields based on how far the simulated order parameters were from the experimental
+    values ({\textsf{\small M}} indicates a magnitude problem) and how well the difference between order parameters
+    of two hydrogens attached to the same carbon were reproduced ({\textsf{\small F}} indicates a forking problem)
+    in Fig.~\ref{HGorderParametersPS}.
+    The letter size increases with problem severity. Color scheme: "within experimental error" (dark green), "almost within experimental error" (light green), "clear deviation from experiments" (light red), and "major deviation from experiments" (dark red). The $\Sigma$-column shows the total deviation of the force field, when individual carbons are given weights of 0 (matches experiment), 1, 2, and 4 (major deviation). For full details of the assessment, see section~\ref{Ranking} in the Supporting Information.
+  }
 \end{figure}
 
 \begin{figure}[]
   \centering
-  \includegraphics[width=9.0cm]{../Figs/comparisonTablePS.pdf}
-  \caption{\label{comparisonTablePS}
-    Rough subjective ranking of force fields based on how far are the simulated order parameters from the experimental
-    values ({\textsf{\small M}} indicates a magnitude problem) and how well the difference between order parameters
-    of the two hydrogens attached in the same carbon are reproduced ({\textsf{\small F}} indicates a forking problem)
-    in Figure~\ref{HGorderParametersPS}.
-    The letter size increases with problem severity. Color scheme: "within experimental error" (dark green), "almost within experimental error" (light green), "clear deviation from experiments" (light red), and "major deviation from experiments" (dark red). The $\Sigma$-column shows the total deviation of the force field, when individual carbons are given weights of 0 (matches experiment), 1, 2, and 4 (major deviation). For full details of the assessment, see Supplementary Information.
-  }
+  \includegraphics[width=9.0cm]{../Figs/structures.eps}
+  \caption{\label{HGstructuresPSandPC}
+    Overlayed snapshots from simulations conducted with CHARMM36---the force field producing the best agreement with experiments---demonstrate the conformational fluctuations
+    in lipid headgroups.
+    (A) Overlaying the C$_\gamma$, C$_\beta$, and C$_\alpha$ carbons demonstrates fluctuations around the O$_\gamma$-C$_\gamma$-C$_\beta$-C$_\alpha$, C$_\gamma$-C$_\beta$-C$_\alpha$-O$_\alpha$,
+    and N-C$_\beta$-C$_\alpha$-O$_\alpha$ dihedrals of the PS headgroup.
+    (B) Overlaying the C$_\beta$, C$_\alpha$, and O$_\alpha$ atoms demonstrates fluctuations around the N-C$_\beta$-C$_\alpha$-O$_\alpha$ and C$_\beta$-C$_\alpha$-O$_\alpha$-P
+    dihedrals of the PS and PC headgroups. The trajectory used for CHARMM36 POPC is available at Ref.~\citenum{POPCcharmm36T303K}.}
 \end{figure}
-
 
 Interestingly, in the three models that best fit the experimental data,
 the C$_\alpha$-C$_\beta$-C$_\gamma$-O$_\gamma$ dihedral angle distribution has a single peak around 120$^{\circ}$, while
-other models yield binodal distributions (Fig. \ref{dihedralsHG}).
+the other models yield binodal distributions (Fig. \ref{dihedralsHG}).
 The restricted motion is also visible in the sampled conformations (Figs.~\ref{HGstructuresPSandPC} (A) and \ref{HGandGLYstructuresPS}),
 suggesting that the rotation of the carboxyl group is limited in the serine headgroup.
 On the other hand, the C$_\beta$-C$_\alpha$-O$_\alpha$-P dihedral angle rotates relatively
@@ -544,8 +545,8 @@ In simulations that have the best agreement with experiments (CHARMM36 and Slipi
 the N-C$_\beta$-C$_\alpha$-O$_\alpha$ dihedral exhibits a more asymmetric
 angle distribution for PS than for PC headgroup (Figs.~\ref{HGstructuresPSandPC} (B) and \ref{dihedralsHGpc}),
 which might reflect the increased rigidity proposed in the early experimental studies \cite{browning80,buldt81}.
-The suggested characteristic conformations of the PS headgroup can be useful when interpreting experiments,
-however, as the none of the tested models fully reproduces the experimental order parameters, more accurate MD force fields are required to elucidate the correct conformational ensemble.
+Indeed, the characteristic conformations of the PS headgroup suggested here can be useful when interpreting experiments---however,
+as none of the tested models fully reproduces the experimental order parameters, more accurate MD force fields are required to reveal the true conformational ensemble.
 
 \subsection{Counterion binding and interactions between PC and PS headgroups}\label{ciBINDINGsection}
 
