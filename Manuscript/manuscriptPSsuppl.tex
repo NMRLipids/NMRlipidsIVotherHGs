@@ -1,4 +1,4 @@
-\documentclass[journal=jpcbfk]{achemso}
+\documentclass[journal=jpcbfk,manuscript=article]{achemso}
 
 \usepackage[version=3]{mhchem}
 \usepackage[T1]{fontenc}
@@ -16,47 +16,44 @@
 \externaldocument{manuscriptPS}
 \usepackage{soul} % for highlights with \hl{} 
 
+\setcounter{page}{0}
+
 \author{Hanne Antila}
 \affiliation{Department of Theory and Bio-Systems, Max Planck Institute of Colloids and Interfaces, 14424 Potsdam, Germany}
 \author{Pavel Buslaev}
-\affiliation{Moscow Institute of Physics and Technology}
-\author{Fernando Favela}
-\affiliation{Mexico}
+\affiliation{Moscow Institute of Physics and Technology, Dolgoprudny, Russia}
+\author{Fernando Favela-Rosales}
+\affiliation{Departamento de Investigaci\'{o}n, Tecnol\'{o}gico Nacional de M\'{e}xico, Campus Zacatecas Occidente, M\'{e}xico}
 \author{Tiago M. Ferreira}
-\affiliation{Halle, Germany}
+\affiliation{NMR group - Institute for Physics, Martin-Luther University Halle-Wittenberg}
 \author{Ivan Gushchin}
-\affiliation{Moscow Institute of Physics and Technology}
+\affiliation{Moscow Institute of Physics and Technology, Dolgoprudny, Russia}
 \author{Matti Javanainen}
-\affiliation{Institute of Organic Chemistry and Biochemistry,
-Academy of Sciences of the Czech Republic, 
-Prague 6, Czech Republic}
+\affiliation{Institute of Organic Chemistry and Biochemistry of the 
+Czech Academy of Sciences, Flemingovo n\'{a}m. 542/2, CZ-16610 Prague 6, Czech Republic}
 \author{Batuhan Kav}
 \affiliation{Department of Theory and Bio-Systems, Max Planck Institute of Colloids and Interfaces, 14424 Potsdam, Germany}
 \author{Jesper J. Madsen}
-\affiliation{Department of Chemistry, The University of Chicago, Chicago, Illinois 60637, United States of America}
+\affiliation{Department of Chemistry, The University of Chicago, Chicago, Illinois, United States of America}
+\affiliation{Department of Global Health, College of Public Health, University of South Florida, Tampa, Florida, United States of America}
 \author{Josef Melcr}
-\affiliation{Institute of Organic Chemistry and Biochemistry,
-Academy of Sciences of the Czech Republic, 
-Prague 6, Czech Republic}
+\affiliation{Institute of Organic Chemistry and Biochemistry of the 
+Czech Academy of Sciences, Flemingovo n\'{a}m. 542/2, CZ-16610 Prague 6, Czech Republic}
 \author{Markus Miettinen}
 \affiliation{Department of Theory and Bio-Systems, Max Planck Institute of Colloids and Interfaces, 14424 Potsdam, Germany}
+\author{Jukka M{\"a}{\"a}tt{\"a}}
+\affiliation{Department of Chemistry, Aalto University, Espoo, Finland}
 \author{Ricky Nencini}
-\affiliation{Institute of Organic Chemistry and Biochemistry,
-Academy of Sciences of the Czech Republic, 
-Prague 6, Czech Republic}
+\affiliation{Institute of Organic Chemistry and Biochemistry of the 
+Czech Academy of Sciences, Flemingovo n\'{a}m. 542/2, CZ-16610 Prague 6, Czech Republic}
 \author{O. H. Samuli Ollila}
 \email{samuli.ollila@helsinki.fi}
-%\homepage[]{Your web page}
-\affiliation{Institute of Organic Chemistry and Biochemistry,
-Academy of Sciences of the Czech Republic, 
-Prague 6, Czech Republic}
+%%\homepage[]{Your web page}
+\affiliation{Institute of Organic Chemistry and Biochemistry of the 
+Czech Academy of Sciences, Flemingovo n\'{a}m. 542/2, CZ-16610 Prague 6, Czech Republic}
 \affiliation{Institute of Biotechnology, University of Helsinki}
-\author{Thomas Piggot}
-\affiliation{Southampton, United Kingdom}
-
-
-
-
+\author{Thomas J. Piggot}
+\affiliation{Chemistry, University of Southampton, Highfield, Southampton SO17 1BJ, U.K}
 
 
 \SectionNumbersOn
@@ -66,12 +63,14 @@ Prague 6, Czech Republic}
 \renewcommand{\thesection}{S\arabic{section}}%
 \renewcommand{\thepage}{S\arabic{page}}%
 
-\title{ Supporting Information:\\ Headgroup structure and cation binding in phosphatidylserine lipid bilayers}
+
+\title{SUPPORTING INFORMATION:\\ Headgroup Structure and Cation Binding in Phosphatidylserine Lipid Bilayers}
 
 \begin{document}
 
-\newpage
+%\newpage
 %\tableofcontents
+
 
 \section{Simulated systems}
 
@@ -88,7 +87,7 @@ Prague 6, Czech Republic}
 }\label{mixedIONsystemsMONOVALENT}
 %begin{minipage}[t]{\textwidth}
 \begin{tabular}{l c c c c c c c c c}
-  lipid/counter-ions & force field for lipids / ions & \footnote{Excess Na$^+$ or K$^+$ concentration}C$_{\rm ci}$ (M) &  \footnote{Number of lipid molecules with largest mole fraction}N$_{\rm l}$   &  \footnote{Number of water molecules}N$_{\rm w}$   & \footnote{Number of additional cations}N$_{\rm c}$  & \footnote{Simulation temperature}T (K)  & \footnote{Total simulation time}t$_{{\rm sim}}$(ns) & \footnote{Time used for analysis}t$_{{\rm anal}}$ (ns) &   \footnote{Reference for simulation files}files\\
+  lipid/counter-ions & force field for lipids / ions & \footnote{Excess Na$^+$ or K$^+$ concentration}C$_{\rm ci}$ (M) &  \footnote{Number of lipid molecules with largest mole fraction}N$_{\rm l}$   &  \footnote{Number of water molecules}N$_{\rm w}$   & \footnote{Number of additional cations}N$_{\rm c}$  & \footnote{Simulation temperature}T (K)  & \footnote{Total simulation time}t$_{{\rm sim}}$(ns) & \footnote{Time used for analyses}t$_{{\rm anal}}$ (ns) &   \footnote{Reference for simulation files}files\\
   \hline
 %    POPC:POPS (5:1)/K$^+$  & CHARMM36 \cite{klauda10,venable13} &0 & 0  & 110:22 & 4935 & 0  & 298  & 100 & 100 \todoi{Equilibration?} & \cite{charmm36pops+83popcT298K}  \\
     POPC:POPS (5:1)/K$^+$  & CHARMM36 \cite{klauda10,venable13} &0 & 250:50 & 11207 & 0  & 298  & 200 & 180   & \citenum{POPC5POPS1noCaClCHARMM}  \\
@@ -142,45 +141,90 @@ Prague 6, Czech Republic}
 % https://github.com/NMRLipids/MATCH/blob/master/Data/Lipid_Bilayers/POPC/T303K/MODEL_CHARMM36_GROMACS5.1.2/Headgroup_Glycerol_Order_Parameters_Simulation.dat}
 
 \noindent
-{\it DOPS and POPS bilayers.} \\
-The data in Table \ref{PSsystems} and Refs \citenum{charmm36DOPS303K,charmm36POPS298K,charmm36POPS298Kpotassium}
-\todo{T. Piggot, please write simulation details} \\
+{\it DOPS and POPS bilayers.}
+%The data in Table \ref{PSsystems} and Refs \citenum{charmm36DOPS303K,charmm36POPS298K,charmm36POPS298Kpotassium}
+Starting structures for CHARMM36 DOPS and POPS simulations were constructed using the CHARMM-GUI webserver~\cite{lee16,jo18}.
+The systems contained a total of 128 lipids (64 per leaflet of the membrane), 35 waters per lipid, and 128 Na$^+$ ions.
+Force field parameters for DOPS and POPS were taken from Venable et al. and included the modified parameters for interactions
+with Na$^+$ ions \cite{venable13}. Water was treated using the CHARMM TIP3P model \cite{durell94,eyal96}.
+%https://pubs.acs.org/doi/10.1021/j100059a038 and https://aip.scitation.org/doi/10.1063/1.472061].
+For POPS, an identical system was also constructed in which the 128 Na$^+$ ions were replaced with 128 K$^+$ ions.
+
+Simulations of these systems were performed for 500~ns using GROMACS, version 5.0.6 \cite{abraham2015gromacs}.
+A 2~fs timestep was applied during the simulations, and the LINCS algorithm was used to constrain all bonds to hydrogen atoms \cite{hess97,hess07}.
+For each of the DOPS and POPS systems, two simulations were performed using different randomly assigned starting velocities.
+The simulations were maintained at temperatures of 303~K and 298~K for DOPS and POPS respectively using the Nos\'{e}--Hoover thermostat \cite{nose84,hoover85}
+with a coupling constant of 1~ps. A pressure of 1~bar was maintained using the Parrinello--Rahman \cite{parrinello81} method with a coupling constant of 5~ps.
+Pressure coupling was applied in a semi-isotropic manner with the $x$ and $y$ dimensions, in the plane of the bilayer, fluctuating independently of the $z$ dimension.
+Standard CHARMM36 force field methods were applied for the simulation cut-offs: van der Waals interactions were truncated at 1.2~nm with the interactions
+switched off between 1.0~nm and 1.2~nm; Coulombic interactions were truncated at 1.2~nm with long-range interactions treated using PME~\cite{darden93,essman95}.
+
+Analyses on these simulations was performed on the final 100~ns of the simulations.
+
+
 
 \noindent
-{\it POPC:POPS mixtures without additional ions}\\
-Simulations of POPC:POPS (5:1) mixture containing total 132 (110:22) lipids
-with potassium and sodium countertions were ran using CHARMM36 force field.
-The data are available from Refs. \citenum{charmm36pops+83popcT298Kpiggot}
-and \citenum{charmm36pops+83popcT298KpiggotSODIUM}, respectively\todo{T. Piggot, please write simulation details}.
+{\it POPC:POPS mixtures without additional ions}
+Simulations of POPC:POPS (5:1) mixtures containing a total of 132 lipids (110 POPC and 22 POPS) were constructed using the CHARMM-GUI~\cite{lee16,jo18}.
+Two identical systems were constructed, apart from one system was neutralised through the addition of 22 Na$^+$ ions while the other system
+contained 22 K$^+$ ions. As per the pure POPS CHARMM36 simulations, 35 water per lipid were added. All other system and simulation parameters
+and settings were identical to those used in the CHARMM36 POPS simulations.
 
-Simulations of POPC:POPS (5:1) ans POPC:POPS (1:1) mixtures containing total 300 lipids
-with potassium countertions were ran using CHARMM36 force field.
-The data are available from Refs. \citenum{POPC5POPS1noCaClCHARMM} and  \citenum{POPC1POPS1noCaClCHARMM}
-\todo{J. Madsen, please write simulation details}. \\
+
+%Simulations of POPC:POPS (5:1) mixture containing total 132 (110:22) lipids
+%with potassium and sodium countertions were ran using CHARMM36 force field.
+%The data are available from Refs. \citenum{charmm36pops+83popcT298Kpiggot}
+%and \citenum{charmm36pops+83popcT298KpiggotSODIUM}, respectively\todo{T. Piggot, please write simulation details}.
+
+Simulations of POPC:POPS (5:1) ans POPC:POPS (1:1) mixtures containing total 300 lipids (250:50 and 150:150, respectively)
+with neutralizing potassium countertions 
+%ran using CHARMM36 force field.
+%The data are available from Refs. \citenum{POPC5POPS1noCaClCHARMM} and \citenum{POPC1POPS1noCaClCHARMM}.
+%POPC:POPS (both 1:1 and 5:1) mixtures
+were prepared
+%with 300 lipids in total
+%with the  ions
+using the CHARMM-GUI \cite{lee16,jo18}. The systems were simulated using Gromacs 5 \cite{abraham2015gromacs}
+and CHARMM36 force field with the simulation parameters given by the CHARMM-GUI at 298~K. For further details see table \ref{mixedIONsystemsMONOVALENT}. 
+ \\
 
 \noindent
 {\it POPC:POPS (5:1) mixtures with additional monovalent ions.}
 POPC:POPS (110:22) mixtures containing total 132 lipids with the additional
-potassium or sodium ions corresponding concentrations of $\sim$450 mM and 890 mM
+potassium or sodium ions corresponding concentrations of $\sim$450~mM and 890~mM
 were generated with the CHARMM-GUI \cite{lee16,jo18}. Systems were simulated using
 Gromacs 5 \cite{abraham2015gromacs} and CHARMM36 force field with the simulation
-parameters given by the CHARMM-GUI at 298 K. For further details, simulation files
+parameters given by the CHARMM-GUI at 298~K. For further details, simulation files
 and data, see table \ref{mixedIONsystemsMONOVALENT} and
 Refs. \citenum{charmm36pops+83popcT298Kwith450mMK,charmm36pops+83popcT298Kwith890mMK,charmm36pops+83popcT298Kwith440mMNa,charmm36pops+83popcT298Kwith890mMNa}. \\
 
 
 \noindent
-{\it POPC:POPS (5:1) mixtures with additional calcium} \\
+{\it POPC:POPS (5:1) mixtures with additional calcium using NBfix1 parameters.} 
 POPC:POPS (5:1) mixtures containing total 300 (250:50) lipids
-were simulated with the additional calcium concentrations.
-The data is available from Refs. \citenum{POPC5POPS1withCaClCHARMM} and \citenum{POPC5POPS1with1MCaClCHARMM}.
-\todo{J. Madsen, please write simulation details}. \\
+%were simulated with the additional calcium concentrations.
+%The data is available from Refs. \citenum{POPC5POPS1withCaClCHARMM} and \citenum{POPC5POPS1with1MCaClCHARMM}.
+and 0.26~M and 1~M CaCl$_2$ were prepared using the CHARMM-GUI in January 2018 \cite{lee16,jo18}.
+The ion parameters generated by CHARMM-GUI at the time are labeled here as NBfix1~\cite{kim16}.
+Systems were simulated using Gromacs 5 \cite{abraham2015gromacs} and CHARMM36 force field with the simulation parameters given
+by the CHARMM-GUI at 298~K. \\
+
+\noindent
+{\it POPC:POPS (5:1) mixtures with  additional calcium using NBfix2 parameters.}
+POPC:POPS (5:1) mixtures containing total 300 (250:50) lipids, neutralizing sodium ions, 
+and 0.14~M or 0.94~M CaCl$_2$ were prepared using the CHARMM-GUI in August 2019 \cite{lee16,jo18}.
+The ion parameters generated by CHARMM-GUI at the time are labeled here as NBfix2~\cite{han2018graph}. Systems were simulated using Gromacs 2018.6 \cite{abraham2015gromacs} and CHARMM36 force field with the simulation parameters given
+by the CHARMM-GUI at 320~K.  \\
 
 \subsection{CHARMM36ua}
 \noindent
-{\it DOPS and POPS bilayers.} \\
-The data in Table \ref{PSsystems} and Refs \citenum{charmm36uaDOPS303K,charmm36uaPOPS298K}
-\todo{T. Piggot, please write simulation details} \\
+{\it DOPS and POPS bilayers.} 
+%The data in Table \ref{PSsystems} and Refs \citenum{charmm36uaDOPS303K,charmm36uaPOPS298K}
+Starting structures for CHARMM36-UA DOPS and POPS simulations were taken from those generated for the CHARMM36 simulations (see above),
+with any extraneous hydrogen atoms removed in the lipid tails. Force field parameters for DOPS and POPS were constructed through a
+combination of the published CHARMM36 PS~\cite{venable13} and CHARMM36-UA PC parameters~\cite{lee14}.
+% [REF: https://pubs.acs.org/doi/10.1021/jp410344g].
+All other simulation parameters and conditions were identical to those described for the CHARMM36 all-atom DOPS and POPS simulations.
 
 
 \subsection{MacRog}
@@ -197,12 +241,27 @@ POPC/POPC mixtures with the MacRog force field, see below. The simulation was ru
 out of which 150~ns were used for analyses. The simulation data and related files are available from Ref. \citenum{macrogPOPC298K}.
 
 \noindent
-{\it POPS bilayers.} \\
-The data in Table \ref{PSsystems} and Refs \citenum{macrogPOPS298Kcorrect,macrogPOPS298KwithK}
-\todo{T. Piggot and M. Javanainen, please write simulation details} \\
-\hl{Piggot: please write about system with Na$^+$ counterions}.
+{\it POPS bilayers with Na$^+$ counterions.}
+%The data in Table \ref{PSsystems} and Refs \citenum{macrogPOPS298Kcorrect,macrogPOPS298KwithK}
+%\todo{T. Piggot and M. Javanainen, please write simulation details} \\
+%\hl{Piggot: please write about system with Na$^+$ counterions}.
+Force field parameters for POPS simulations with the MacRog OPLS-AA force field~\cite{maciejewski14,kulig15b,rog16}
+were constructed manually using the provided PS parameters as a guide~\cite{rog16}. The original parameters were
+not used due to an incorrect arrangement of the {\it sn}-1 and {\it sn}-2 tails (i.e. the lipid was OPPS and not POPS).
+The corrected parameters are available from Ref.~\citenum{macrogPOPS298KwithK}.
+The starting structure was the same as that used in the CHARMM36 POPS simulations (with Na$^+$ ions) and was converted into
+the correct format using a script to adjust the atom order. Water was treated using the TIP3P model~\cite{jorgensen83}.
+Simulation parameters were chosen to closely mimic those used in the original force field publications~\cite{maciejewski14,kulig15b,rog16}:
+van der Waals interactions were truncated at 1.0~nm with a dispersion correction applied to the energy and pressure;
+Long-range Coulombic interactions were treated with PME beyond a system-optimized cut-off.
+All other simulation settings were identical to those described above for the CHARMM36 DOPS and POPS simulations,
+including use of the Verlet cut-off scheme~\cite{Pall13}, apart from the use of LINCS to constrain all bonds during these simulations.
+Simulations with the group cut-off scheme gave slightly lower area per molecule ($\sim$~50\AA$^2$) than
+the simulations with Verlet cut-off ($\sim$~52\AA$^2$).
 
-This membrane was further simulated after replacing Na$^+$ counterions by K$^+$ ones, which 
+\noindent
+{\it POPS bilayers with K$^+$ counterions.}
+The membrane with sodium counterions was further simulated after replacing Na$^+$ counterions by K$^+$ ones, which 
 were described by the \AA{}qvist parameters \cite{aqvist90}. Other topologies
 were unchanged. The simulation parameters were the same as used for the POPC/POPS mixtures with 
 the MacRog force field, see below. The simulation was run for 200~ns, out of which 150~ns was used 
@@ -234,7 +293,7 @@ The simulation parameters were taken from Ref.~\citenum{rog16}.
 Periodic boundary conditions were employed in all dimensions. The list of neighbors was updated every step. 
 %\hl{I used nstlist=1 because it's used in the mdp in the article quoted. In DOI: 10.1021/jp5016627, nstlist=10 is used}
 The Lennard-Jones interactions were cut off at 1~nm, whereas the smooth particle mesh Ewald algorithm 
-\cite{essman95} was used for electrostatics. Dispersion correction \cite{shirts07} 
+\cite{essman95} was used for long-range electrostatics. Dispersion correction \cite{shirts07} 
 was applied to both energy and pressure. Temperature was kept constant at 298~K using the 
 Nos\'{e}--Hoover thermostat \cite{nose84,hoover85}. The lipids and 
 the solvent were coupled separately, and a time constant of 0.4~ps was employed. Pressure was 
@@ -247,23 +306,22 @@ The integration time step was set to 2~fs, and the simulations were performed ei
 250, 200, or 300~ns of the simulations were included in the analyses, respectively.
 
 \subsection{Lipid17}
-{\it DOPS and POPS bilayers.} \\
-
+{\it DOPS and POPS bilayers.} 
 The structure of the bilayers with 128 DOPS or 128 POPS lipids were
 obtained from CHARMM-GUI~\cite{lee16,jo18}. Bilayers are solvated with
 4480 water molecules resulting in 31.1 water molecules per lipid. For
 each system, 128 NaCl molecules are added to neutralize the system.
 In all simulations, TIP3P~\cite{jorgensen1983comparison} was used as the solvent. SETTLE~\cite{miyamoto92} algorithm was employed 
 to constrain the bonds in TIP3P water molecules. Simulations were ran using Amber18 simulation package \cite{amber18md}
-and lipid parameters were obtained from Amber Lipid17 force field \cite{gould18}. For the ions, one set of simulations were run with Joung-Cheatham
+and lipid parameters were obtained from Amber Lipid17 force field \cite{gould18}. For the ions, one set of simulations were run with Joung--Cheatham
 ion parameters~\cite{joung2008determination} and one set of simulations were run with ff99SB (\AA{}qvist)~\cite{aqvist90} ion parameters.
 The data in Table~\ref{PSsystems} and Refs~\citenum{lipid17POPSjcions,lipid17POPSff99ions,lipid17DOPSjcions,lipid17DOPSff99ions} contain
 the number of molecules in simulations, related simulation files and trajectories.
 
 Each bilayer structure was first minimized for 2500 steps with steepest
-descent and an additional 2500 step with the conjugent gradient
-algorithms while restrainig the solvent and ion molecules with a force
-constant 500~kcal~mol$^{-1}$~\AA{}$^{-1}$. An additional minimization
+descent and an additional 2500 step with the conjugate gradient
+algorithms while restraining the solvent and ion molecules with a force
+constant 500~kcal~mol$^{-1}$~\AA{}$^{-2}$. An additional minimization
 step was used with the same parameters after removing the constraints on
 the solvent and ion molecules. During the minimization procedure,
 non-periodic boundary conditions were applied, no pressure scaling was
@@ -295,7 +353,7 @@ was set to 0.0~dyn explicitely. For all heating and equilibration steps,
 the lengths of the hydrogen containing bonds were restrained using SHAKE
 algorithm and a time step of 2~fs was used. In all steps with periodic
 boundary conditions, the non-bonded interactions are calculated with
-particle mesh Ewald~\cite{essman95} using 1.0~nm cutoff.\\
+particle mesh Ewald~\cite{essman95} using 1.0~nm cutoff.
 
 For the production runs, the temperature and pressure were set to 303~K
 and 1~bar, using Langevin thermostat with 1.0~ps$^{-1}$ collision
@@ -306,12 +364,10 @@ mesh Ewald~\cite{essman95} using 1.0~nm cutoff. The lengths of the
 hydrogen containing bonds were constrained using SHAKE algorithm and a
 time step of 2~fs was used. Trajectories are saved in every 10~ps
 intervals. Two independent trajectories of 500~ns long was generated and
-the last 200~ns portions were used for the analysis.\\
-
+the last 200~ns portions were used for the analysis.
 
 \noindent
-{\it POPC:POPS (5:1) mixtures with additional potassium and sodium ions} \\
-
+{\it POPC:POPS (5:1) mixtures with additional potassium and sodium ions} 
 The initial structure of the bilayers with 120 POPC and 24 POPS lipids were obtained from CHARMM-GUI~\cite{lee16,jo18}.
 Bilayers were solvated with 5760 TIP3P water molecules~\cite{jorgensen1983comparison}. For the simulations of the lipids and ions,
 the Amber Lipid 17 \cite{gould18} and ff99SB~\cite{aqvist90} force fields were used, respectively.
@@ -319,54 +375,75 @@ Simulations were ran using Amber18 simulation package \cite{amber18md}
 The simulation steps are the same as the the simulations of
 DOPS and POPS bilayers described above, with the only difference that the total simulation time was 300~ns, of which last 200~ns
 was used for the analysis. The number of ions in each specific system is given in Table~\ref{mixedIONsystemsMONOVALENT}.
-The trajectory files can be found in Refs~\citenum{POPCpopsLIPID17withKCI,POPCpopsLIPID17withK,POPCpopsLIPID17withNaCI,POPCpopsLIPID17withNa}.\\
+The trajectory files can be found in Refs~\citenum{POPCpopsLIPID17withKCI,POPCpopsLIPID17withK,POPCpopsLIPID17withNaCI,POPCpopsLIPID17withNa}.
 
 \noindent
-{\it POPC:POPS (5:1) mixtures with additional calcium chloride concentration} \\
+{\it POPC:POPS (5:1) mixtures with additional calcium chloride concentration with default Amber parameters} 
 %The data in Table \ref{mixedIONsystems} and Refs \citenum{lipid17_cacl_series,POPCpopsLIPID17withCaCl} 
-We have performed two sets of simulations of POPC:POPS (5:1) mixtures using Amber Lipid17 force field \cite{gould18}
-with additional calcium chloride concentrations, 
-which employed different simulation engines and parameters for ions.
+%We have performed two sets of simulations of POPC:POPS (5:1) mixtures using Amber Lipid17 force field \cite{gould18}
+%with additional calcium chloride concentrations, 
+%which employed different simulation engines and parameters for ions.
+Simulations were performed using Amber18 simulation package \cite{amber18md} with ff99SB~\cite{aqvist90} ion parameters and Amber Lipid17~\cite{gould18} force field. 
+Number of ions and water molecules for this set of simulations are shown in Table~\ref{mixedIONsystems}.
+The simulation details, minimization, heating, and equilibration runs are the same as described above for the other POPC:POPS (5:1) simulations with Amber Lipid17 forcefield. 
+For each ion concentration, 100~ns equilibration runs were followed by 300~ns production runs with two independent trajectories, of which last 200~ns were used for the analysis.
+The trajectory files can be found from Ref~\citenum{POPCpopsLIPID17withCaCl}.
 
-One set of simulations has been performed using Amber18 simulation package \cite{amber18md} and ff99SB~\cite{aqvist90} ion parameters. 
-Number of ions and water molecules for this set of simulations are shown in Table~\ref{mixedIONsystems}. The simulation details, minimization, heating, and equilibration runs are the same as described above for the other POPC:POPS (5:1) simulations with Amber Lipid17 forcefield. 
-For each ion concentration, 100~ns equilibration runs were followed by 300~ns production runs with two independent trajectories, of which last 200~ns were used for the analysis. The trajectory files can be found in Ref~\citenum{POPCpopsLIPID17withCaCl} 
-
-Another set of simulations with Lipid17 force field for lipids \cite{gould18}
-and Dang parameters for ions \cite{smith94, dang06}
-was performed using the GROMACS 2018 simulation package~\cite{abraham2015gromacs}. 
-We used the time step of 2~fs. 
+\noindent
+{\it POPC:POPS (5:1) mixtures with additional calcium chloride concentration with Dang ion parameters} 
+The Lipid17 parameters for POPS were obtained from AmberTools18 \cite{amber18md} 
+and converted to Gromacs format using acpype \cite{silva12}.  
+The previously generated \cite{botan15} Lipid14 parameters for POPC in Gromacs format were downloaded from Ref.~\citenum{lipid14files}. 
+Dang parameters for ions \cite{smith94, dang06} were used.
+% Another set of simulations with Lipid17 force field for lipids \cite{gould18}
+Initial structures were generated using CHARMM-GUI~\cite{lee16,jo18} 
+and simulations were performed using the GROMACS 2018 simulation package~\cite{abraham2015gromacs}
+with the time step of 2~fs. 
 The non-bonded interactions were calculated directly within 1.0~nm cutoff using the Verlet scheme \cite{Pall13}, 
 and the long-range electrostatic forces were calculated using particle mesh Ewald~\cite{essman95}. 
 The bond lengths of hydrogen atoms were constrained using LINCS algorithm \cite{hess97}.
 Temperature was coupled to the velocity rescaling thermostat \cite{bussi07} at 298~K with a coupling constant of 1~ps.
-Pressure was coupled to the Parrinello-Rahman barostat \cite{parrinello81} at 1~bar with a coupling constant of 10~ps. 
-The composition of the individual simulations is shown in Table~\ref{mixedIONsystems}. 
-Initial structures obtained from CHARMM-GUI~\cite{lee16,jo18} 
-were equilibrated prior to production simulations used for analysis,
+Pressure was coupled to the Parrinello--Rahman barostat \cite{parrinello81} at 1~bar with a coupling constant of 10~ps. 
+The compositions of individual simulations are shown in Table~\ref{mixedIONsystems}. 
+The systems were equilibrated 50~ns prior to production simulations used for analysis,
 which are available in Ref.~\citenum{lipid17_cacl_series} including the simulation settings. 
 Topologies in a format for the GROMACS package are available in the repository \citenum{ECCpops}. 
 
 
 \subsection{Slipids}
-
+%
+%\noindent
+%{\it POPS}
+%\todo{POPS \cite{slipidsPOPS298K} to be written by Piggot}%%
+%
+%\noindent
+%{\it DOPS with 128 lipids.}
+%\todo{DOPS with 128 lipids \cite{slipidsDOPS303K} to be written by Piggot}
+%
 \noindent
-{\it POPS}
-\todo{POPS \cite{slipidsPOPS298K} to be written by Piggot}
-
-\noindent
-{\it DOPS with 128 lipids.}
-\todo{DOPS with 128 lipids \cite{slipidsDOPS303K} to be written by Piggot}
+{\it POPS and DOPS with 128 lipids}
+Starting structures for the Slipids POPS and DOPS (with 128 lipids) simulations were the same as constructed
+for the CHARMM36 simulations. Force field parameters were taken from the published Slipids PS model~\cite{jambeck13},
+however simulation cut-offs used herein were different to these previously published simulations~\cite{jambeck2012another}.
+% [REF: https://pubs.acs.org/doi/10.1021/ct300777p].
+This was due to the use of the older GROMACS group-based cut-off scheme in these previous simulations.
+In the simulations reported in this work, the Verlet cut-off scheme was used. Van der Waals interactions were
+truncated at 1.0 nm with LJ-PME~\cite{wennberg15}
+% [REF: https://pubs.acs.org/doi/10.1021/acs.jctc.5b00726]
+applied to account for the long-range interactions.
+Coulombic interactions were truncated at 1.0 nm with PME used for the long-range interactions.
+Full testing and validation of these settings with the Slipids PS force field will be provided in an additional forthcoming work.
+All other simulation settings were identical to those described above for the CHARMM36 DOPS and POPS simulations.
 
 \noindent
 {\it DOPS with 288 lipids.}
-The starting structure with 288 DOPS lipids, 11232 water molecules and 288 Na ions
-was contructed with the MEMBRANE BUILDER website~\cite{ghahremanpour13}.
-The Slipids~\cite{jambeck12,jambeck2012another} forcefield was used for DOPS, the TIP3P~\cite{jorgensen83} water model was used to solvate the system and
+The starting structure with 288 DOPS lipids, 11232 water molecules and 288 Na$^+$ ions
+was constructed with the MEMBRANE BUILDER website~\cite{ghahremanpour13}.
+The Slipids~\cite{jambeck13} forcefield was used for DOPS, the TIP3P~\cite{jorgensen83} water model was used to solvate the system and
 ions are described by the parameters derived by \AA{}qvist~\cite{aqvist90}.
 The system was simulated in NPT ensemble for 200~ns using the GROMACS 5.0.4 package~\cite{abraham2015gromacs},
 and the last 100~ns was used for the analysis.
-Timestep of 2~fs was used with the leapfrog integrator. The Nos\'{e}--Hoover thermostat~\cite{nose84,hoover85} was used with reference temperature of 303~K and a relaxation time constant of 0.5~ps; lipids and water plus ions were coupled separately to the heat bath. Pressure was kept constant at 1.013~bar using a semi--isotropic Parrinello--Rahman
+Timestep of 2~fs was used with the leapfrog integrator. The Nos\'{e}--Hoover thermostat~\cite{nose84,hoover85} was used with reference temperature of 303~K and a relaxation time constant of 0.5~ps; lipids and water plus ions were coupled separately to the heat bath. Pressure was kept constant at 1.013~bar using a semi-isotropic Parrinello--Rahman
 barostat~\cite{parrinello81} with a time constant of 10.0~ps. Long-range electrostatic interactions were calculated using the PME method~\cite{darden93,essman95}. A real space cut-off of 1.0~nm was employed with grid spacing of 0.12~nm in the reciprocal space. Lennard-Jones potentials were cut off at 1.4~nm, with a dispersion correction applied to both energy and pressure. All covalent bonds in lipids were constrained using the LINCS algorithm~\cite{hess97}, whereas water molecules were constrained using SETTLE~\cite{miyamoto92}. Twin-range cutoffs, 1.0~nm and 1.6~nm, were used for the neighbor lists with the long-range neighbor list updated every 10 steps.
 
 
@@ -374,12 +451,22 @@ barostat~\cite{parrinello81} with a time constant of 10.0~ps. Long-range electro
 \noindent
 {\it POPC bilayers.} 
 Previously published simulation \cite{ollila07a} available from Ref. \citenum{bergerPOPC310K}
-was used for POPC at 310 K.
+was used for POPC at 310~K.
 
 \noindent
-{\it DOPS and POPS bilayers.} \\
-The data in Table \ref{PSsystems} and Refs \citenum{bergerPOPS298K,bergerDOPS303K}
-\todo{T. Piggot, please write simulation details} \\
+{\it DOPS and POPS bilayers.} 
+%The data in Table \ref{PSsystems} and Refs \citenum{bergerPOPS298K,bergerDOPS303K}
+%\todo{T. Piggot, please write simulation details} \\
+Starting structures for DOPS and POPS simulations performed with a Berger-based PS force field
+were taken from those produced for the CHARMM36 simulations. A script was used to re-order the
+atoms and to remove any extraneous hydrogen atoms. Force field parameters were taken from those
+published by Mukhopadhyay et al.~\cite{mukhopadhyay04}
+% [REF: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1303994/]
+and the SPC water model was used~\cite{berendsen81}. The simulation cut-offs closely matched
+those of Mukhopadhyay et al.: van der Waals interactions were truncated at 1.0~nm;
+Coulombic interactions were truncated at 1.0~nm with PME applied to account for the interactions beyond the cut-off.
+All other simulation settings were identical to those described above for the CHARMM36 DOPS and POPS simulations,
+including the use of the Verlet cut-off scheme, apart from all bonds were constrained using LINCS in these simulations.
 
 \noindent
 {\it POPC:POPS (4:1) mixtures with additional sodium and calcium ions.} 
@@ -396,22 +483,51 @@ the last 80~ns was used for the analysis.
 
 
 \subsection{GROMOS-CKP and GROMOS-CKPM}
-  CKPM refers to the version with Berger/Chiu NH$_3$ charges compatible with Berger
-   (i.e. the NH$_3$ group having the same charges as in the N(CH$_3$)$_3$ group of the PC lipids;
-   'M' stands for Mukhopadhyay after the first published Berger-based PS simulation that used these charges~\cite{mukhopadhyay04})
-   and CKP refers to the version with more Gromos compatible version
-   (i.e. the charges for the NH$_3$ group taken from the lysine side-chain).
-\todo{T. Piggot, please write the description of force field.}
+%  CKPM refers to the version with Berger/Chiu NH$_3$ charges compatible with Berger
+%   (i.e. the NH$_3$ group having the same charges as in the N(CH$_3$)$_3$ group of the PC lipids;
+%   'M' stands for Mukhopadhyay after the first published Berger-based PS simulation that used these charges~\cite{mukhopadhyay04})
+%   and CKP refers to the version with more Gromos compatible version
+%   (i.e. the charges for the NH$_3$ group taken from the lysine side-chain).
+%\todo{T. Piggot, please write the description of force field.}
+The GROMOS-CKP force field (CKP stands for Chandrasekhar-Kukol-Piggot) contains a set of GROMOS compatible lipid parameters.
+Parameters have been developed and validated for PC~\cite{Chandrasekhar03,kukol09,piggot12},
+%  [REFS: https://www.ncbi.nlm.nih.gov/pubmed/12632209, https://pubs.acs.org/doi/10.1021/ct8003468 and https://pubs.acs.org/doi/abs/10.1021/ct3003157],
+PE, PG, Cardiolipin~\cite{piggot11}
+%[REF: https://pubs.acs.org/doi/abs/10.1021/jp207013v]
+and PI~\cite{holdbrook10}
+%[REF: https://pubs.acs.org/doi/abs/10.1021/bi101743w]
+lipids, amongst others.
+Within this work we provide an initial validation for simulating PS lipids with two variants of
+this force field (termed GROMOS-CKP and GROMOS-CKPM). Additional forthcoming work will provide additional
+validation and testing of these PS parameters. The two variants of the force field only differ in terms
+of the charges in the head group. The GROMOS-CKPM (M stands for Mukhopadhyay after the first published
+Berger-based PS simulations published; see above for further details) lipid uses Berger/Chiu based charges
+for the NH3 part of the PS head group (i.e. has the same charges as used in the choline part of the Berger PC lipids).
+The GROMOS-CKP parameters use charges compatible with the rest of the GROMOS force fields;
+the  charges of the NH3 part of the PS head group were taken from a lysine side-chain of the GROMOS 54A7 protein
+force field~\cite{schmid11} % [REF: https://link.springer.com/article/10.1007%2Fs00249-011-0700-9].
+The remainder of the parameters were assigned by analogy from either the other GROMOS-CKP lipids or the GROMOS 54A7 force field.
 
 \noindent
-{\it DOPS and POPS bilayers.} \\
-The data in Table \ref{PSsystems} and Refs. \citenum{ckp1POPS303K,ckp2POPS303K,ckp1DOPS303K,ckp2DOPS303K}
-\todo{T. Piggot, please write simulation details} \\
+{\it DOPS and POPS bilayers.} 
+%The data in Table \ref{PSsystems} and Refs. \citenum{ckp1POPS303K,ckp2POPS303K,ckp1DOPS303K,ckp2DOPS303K}
+%\todo{T. Piggot, please write simulation details} \\
+Starting structures for GROMOS-CKP and GROMOS-CKPM simulations were taken from those produced for the CHARMM36 simulations.
+A script was used to re-order the atoms and to remove any extraneous hydrogen atoms. The force fields parameters for DOPS and POPS
+were as discussed above. The SPC water model was used in these simulations~\cite{berendsen81}. Simulation cut-offs were chosen
+to closely match those used in the original GROMOS-CKP force field validation: van der Waals interactions were truncated at 1.4~nm
+with a dispersion correction applied to the energy and pressure; Coulombic interactions were also truncated at 1.4~nm with PME used
+to treat the long-range interactions. All other simulation settings were identical to those described above for the CHARMM36 DOPS
+and POPS simulations, including the use of the Verlet cut-off scheme, apart from all bonds were constrained using LINCS in these simulations.
+
 
 \noindent
-    {\it POPC:POPS (5:1) mixtures without additional ions}\\
-    The data in Table \ref{mixedIONsystems} and Refs. \citenum{POPCpopsGROMOSCKPwithNa,POPCpopsGROMOSCKPMwithNa}
-\todo{T. Piggot, please write simulation details} \\
+{\it POPC:POPS (5:1) mixtures without additional ions}
+% The data in Table \ref{mixedIONsystems} and Refs. \citenum{POPCpopsGROMOSCKPwithNa,POPCpopsGROMOSCKPMwithNa}
+% \todo{T. Piggot, please write simulation details} \\
+Starting structures for GROMOS-CKP and GROMOS-CKPM simulations were taken from those produced for the equivalent CHARMM36 simulations (see above).
+A script was used to re-order the atoms and to remove any extraneous hydrogen atoms. Simulation setting were identical to those as described above
+for the GROMOS-CKP(M) POPS bilayers.
 
 
 
@@ -447,7 +563,7 @@ Therefore, the PC headgroup order parameters are larger in mixtures with anionic
 than in pure lipid bilayers. This is evident also in the headgroup order parameters
 of POPC in bilayers with different amounts anionic lipids without added calcium (Fig. \ref{OrderParametersWithCaCl}).
 Upon addition of CaCl$_2$, the order parameters decrease and reach the values of pure PC bilayer close 
-to the CaCl$_2$ concentrations of $\sim$ 50-300mM, depending on the amount of negatively charged
+to the CaCl$_2$ concentrations of $\sim$ 50--300mM, depending on the amount of negatively charged
 lipids in the mixture (Fig. \ref{OrderParametersWithCaCl}).
 Around these concentrations the positive charge of bound Ca$^{2+}$ cancels
 the negative charge lipids, resulting to a neutral membrane. 
@@ -460,11 +576,11 @@ the overcharging of the membrane.
   \caption{\label{OrderParametersWithCaCl}
     Headgroup order parameters of POPC as a function of CaCl$_2$ concentration from experiments 
     with different mole fractions of negatively charged lipids (left column).
-    Right column shows the same data zoomed to the concentrations below 1M.
+    Right column shows the same data zoomed to the concentrations below 1~M.
     Data for Pure DPPC from Ref.~\citenum{akutsu81},
     for pure POPC from Ref.~\citenum{altenbach84}, 
     for POPC:POPS (5:1) mixture from Ref.~\citenum{roux90},
-    for POPC:POPG (8:2,1:1) mixtures with 0.1M NaCl from Ref.~\citenum{macdonald87}
+    for POPC:POPG (8:2,1:1) mixtures with 0.1~M NaCl from Ref.~\citenum{macdonald87}
     and for POPC:POPG (1:1) mixture data without NaCl from Ref.\citenum{borle85}.
   }
 \end{figure}
@@ -508,7 +624,7 @@ whereas CHARMM36 gives better agreement for the $\alpha$ carbon (Fig. \ref{CHANG
 in CHARMM36 compared to Lipid14. The ratio was overestimated for the CHARMM36 model because the $\beta$-carbon order parameter
 is relatively more sensitive than the $\alpha$-carbon order parameter. 
 
-That said, in the force fields investigated so far, the discrepancies arising from the sentivity of lipid headgroup to
+That being said, in the force fields investigated so far, the discrepancies arising from the sentivity of lipid headgroup to
 bound charge are typically smaller than then discrepancies arising from ion binding affinity.
 \begin{figure}[]
   \centering
@@ -549,7 +665,7 @@ The C--H bond order parameters of the headgroup and glycerol backbone carbons ar
 as $S_{\rm CH}=\Delta\nu/(0.315\times21.5  {\rm kHz})$, where $\Delta\nu$ is the dipolar splitting
 given by the largest peak widths observed in the second dimension of the R-PDLF spectra
 (blue lines in Fig. \ref{DPslices}), 0.315 is the scaling factor of the R18 recoupling sequence 
-and 21.5 kHz is the maximum $^1$H-$^{13}$C dipolar coupling for a C--H bond \cite{dvinskikh04}.
+and 21.5~kHz is the maximum $^1$H--$^{13}$C dipolar coupling for a C--H bond \cite{dvinskikh04}.
 %Slices of the R-PDFL spectra (Fig. \ref{DPslices}) 
 %show a single splitting for the $\beta$-carbon with the order parameter value of 0.11,
 %and a superposition of a large and a very small splitting for the $\alpha$-carbon.
@@ -566,8 +682,8 @@ and the magnitude of 0.02 from the literature is used in the SIMPSON calculation
 Interpretation of the order parameter signs of the $\alpha$ carbon from the SDROSS experiment
 is complicated by the presence of distinct order parameters for the two attached hydrogens.
 As discussed in the main text, interpretation of the SDROSS curve with the help of SIMPSON
-simulations gave values +0.09 and -0.02 for the $\alpha$-carbon order parameters.
-To corroborate our interpretation, we measured the SDROSS curve also using the higher 8 kHz
+simulations gave values $+0.09$ and $-0.02$ for the $\alpha$-carbon order parameters.
+To corroborate our interpretation, we measured the SDROSS curve also using the higher 8~kHz
 MAS frequence (Fig. \ref{DPslices} bottom), which makes the experiment more sensitive to larger order parameter values.
 Also this experiment indicates a positive value for the larger $\alpha$-carbon order parameter.
 \begin{figure}[]
@@ -578,25 +694,25 @@ Also this experiment indicates a positive value for the larger $\alpha$-carbon o
     The chemical shifts and order parameters (calculated from the dipolar splittings indicated with blue lines in the R-PDLF slices)
     are shown on top each column (chemical shift left, order parameter right).
     The assignment of columns is given in the middle.  
-    The SDROSS slices were measured using both 5 KHz (middle) and 8 kHz (bottom) because different MAS frequencies enable the
+    The SDROSS slices were measured using both 5~KHz (middle) and 8~kHz (bottom) because different MAS frequencies enable the
     higher sensitivity to the order parameters with lower and higher magnitudes, respectively.
     The background noise taken from chemical shift slices without carbon peaks (grey lines in SDROSS figures)
-    are used to determine the error bars for $\alpha$ and $\beta$ carbons in figure \ref{PShgSIGNSsimpson} in the main text.
+    are used to determine the error bars for $\alpha$ and $\beta$ carbons in Fig.~\ref{PShgSIGNSsimpson} in the main text.
     The SDROSS profile of the acyl chain methyl carbons (left column) was used as reference assuming that these carbons have negative order parameters.  
   }
 \end{figure}
 
 \pagebreak
-\section{Dihedral angle distributions of the headgroup and glycerol backbone
+\section{Dihedral angle distributions in headgroup and glycerol backbone
   regions of PS lipids from different simulation models}\label{Diheds}
 
-The dihedral angles and structures of the glycerol backbone and headgroup regions of POPS lipids show
-wide variety between different simulation models (Figs. \ref{dihedralsHG}, \ref{dihedralsGLY} and \ref{HGandGLYstructuresPS}).
-Detailed discussion of the structural differences is limited by the lack of realistic model that would correctly reproduce the
-headgroup and glycerol backbone order parameters. However, some structural characteristics
-of PS headgroup can be suggested based on the best available models
-(Figs. \ref{dihedralsHGpc}, \ref{dihedralsGLYpc} and \ref{HGandGLYstructuresPSPC}), as discussed in the main text.
-The glycerol backbone structures are not discussed in this work because our focus is on PS headgroup.
+The dihedral angle distributions (Figs.~\ref{dihedralsHG} and~\ref{dihedralsGLY}) and structures (Fig.~\ref{HGandGLYstructuresPS}) of the glycerol backbone and headgroup regions of POPS lipids showed a
+wide variety between different MD force fields.
+Detailed discussion on the relevance of the observed structural differences is limited by the lack of a realistic force field (that would correctly reproduce the
+headgroup and glycerol backbone C--H bond order parameters, $S_\mathrm{CH}$). However, some structural characteristics
+of the PS headgroup can be suggested based on the best available models for it
+(Figs.~\ref{dihedralsHGpc}, \ref{dihedralsGLYpc} and \ref{HGandGLYstructuresPSPC}), as discussed in the main text.
+The glycerol backbone structures are not discussed in this work, because our focus is on the PS headgroup.
 However, the data presented here can be useful for future investigations.
 %backbone order parameters of C$_2$ and C$_3$ from Slipids simulations
 %differ significantly from the other simulation results and experiments (Fig. \ref{HGorderParametersPS}),
@@ -607,57 +723,59 @@ However, the data presented here can be useful for future investigations.
 
 \begin{figure*}[]
   \centering
-  \includegraphics[width=8.0cm]{../Figs/PS_Labels.png}
-  \includegraphics[width=16.0cm]{../Figs/figS7.png}
+  \includegraphics[width=0.5\textwidth]{../Figs/PS_Labels.png}
+  \includegraphics[width=0.8\textwidth]{../Figs/figS7.png}
   \caption{\label{dihedralsHG}
-    Dihedral angle distributions of the headgroup region of POPS from different simulation models.
+    Dihedral angle distributions in the headgroup region of POPS from different simulation models.
   }
 \end{figure*}
 
 \begin{figure*}[]
   \centering
-    \includegraphics[width=8.0cm]{../Figs/PS_Labels.png}
-  \includegraphics[width=13.0cm]{../Figs/figS6.png}
+    \includegraphics[width=0.5\textwidth]{../Figs/PS_Labels.png}
+  \includegraphics[width=0.8\textwidth]{../Figs/figS6.png}
   \caption{\label{dihedralsGLY}
-    Dihedral angle distributions of the glycerol backbone region of POPS lipids from different simulation models.
+    Dihedral angle distributions in the glycerol backbone region of POPS from different simulation models.
   }
 \end{figure*}
 
 \begin{figure*}[]
   \centering
-  \includegraphics[width=18.0cm]{../Figs/figS8.png}
+  \includegraphics[width=1.03\textwidth]{../Figs/figS8.png}
   \caption{\label{HGandGLYstructuresPS}
-    Overlayed snapshots of the glycerol backbone and headgroup regions from different POPS simulations.
+    Overlayed snapshots of the headgroup (C$_\gamma$-C$_\beta$-C$_\alpha$ carbons overlayed) and
+    glycerol backbone (C$_{\rm g_1}$-C$_{\rm g_2}$-C$_{\rm g_3}$ carbons overlayed) regions from POPS simulations with different force fields.
+    Note that only one of the two O$_\gamma$ atoms in the carboxylate group of PS lipids is shown.
   }
 \end{figure*}
 
 \begin{figure*}[]
   \centering
-  \includegraphics[width=16.0cm]{../Figs/figS11.png}
+  \includegraphics[width=0.9\textwidth]{../Figs/figS11.png}
   \caption{\label{dihedralsHGpc}
-    Dihedral angle distributions of the headgroup regions from CHARMM36 and Slipids simulations
+    Dihedral angle distributions in the headgroup region from CHARMM36 and Slipids simulations
     compared between the POPC and POPS lipids. 
-    The CHARMM36 POPC simulation is from Ref. \citenum{POPCcharmm36T303K} and Slipids POPC from Ref. \citenum{POPCslipids298K}.
+    The CHARMM36 POPC simulation is from Ref.~\citenum{POPCcharmm36T303K} and Slipids POPC from Ref.~\citenum{POPCslipids298K}.
   }
 \end{figure*}
 
 \begin{figure*}[]
   \centering
-  \includegraphics[width=15.0cm]{../Figs/figS10.png}
+  \includegraphics[width=0.9\textwidth]{../Figs/figS10.png}
   \caption{\label{dihedralsGLYpc}
-    Dihedral angle distributions of the glycerol backbone regions from CHARMM36 and Slipids simulations
+    Dihedral angle distributions in the glycerol backbone region from CHARMM36 and Slipids simulations
     compared between the POPC and POPS lipids.
-    The CHARMM36 POPC simulation is from Ref. \citenum{POPCcharmm36T303K} and Slipids POPC from Ref. \citenum{POPCslipids298K}.
+    The CHARMM36 POPC simulation is from Ref.~\citenum{POPCcharmm36T303K} and Slipids POPC from Ref.~\citenum{POPCslipids298K}.
   }
 \end{figure*}
 
 \begin{figure}[]
   \centering
-  \includegraphics[width=9.0cm]{../Figs/figS8_POPC.png}
+  \includegraphics[width=0.9\textwidth]{../Figs/figS8_POPC.png}
   \caption{\label{HGandGLYstructuresPSPC}
     Overlayed snapshots of the headgroup and glycerol backbone regions 
     from CHARMM36 and Slipids simulations compared between the POPC and POPS lipids.
-    The CHARMM36 POPC simulation is from Ref. \citenum{POPCcharmm36T303K} and Slipids POPC from Ref. \citenum{POPCslipids298K}.
+    The CHARMM36 POPC simulation is from Ref.~\citenum{POPCcharmm36T303K} and Slipids POPC from Ref.~\citenum{POPCslipids298K}.
   }
 \end{figure}
 
@@ -669,30 +787,30 @@ However, the data presented here can be useful for future investigations.
 \section{Headgroup response to the additional counterions in POPC:POPS (5:1) mixtures}\label{mixtureTOadditionalCIs}
 To evaluate counterion binding in different simulation models against experimental data~\cite{roux90},
 we plot the headgroup order parameters measured from POPC:POPS 5:1 mixture
-as a function of different monovalent ions added to the buffer (Fig. \ref{PSresponseTONaCl}). 
+as a function of different monovalent ions added to the buffer (Fig.~\ref{PSresponseTONaCl}). 
 Experimental order parameters of POPC headgroup in the mixture are available as a function
 of LiCl and KCl concentrations, while POPS headgroup order parameters are measured also
 in increasing NaCl concentration. Lithium interacts more strongly with PS headgroups than other monovalent 
 ions~\cite{hauser83,hauser85,roux86,mattai89,roux90}, as also observed for PC headgroups~\cite{cevc90}. 
 The different binding behaviour is evident based on the response of PS headgroup order parameters, which decrease with the addition of lithium 
-but increase with the addition of sodium or potassium (Fig. \ref{PSresponseTONaCl}). 
+but increase with the addition of sodium or potassium (Fig.~\ref{PSresponseTONaCl}). 
 POPC headgroup order parameters exhibit a clear decrease as a function of LiCl concentration
 but only modest changes as a function of KCl concentration, indicating singificant 
 Li$^+$ binding but only weak K$^+$ binding to the mixture when interpreted using the
 electrometer concept~\cite{akutsu81,altenbach84,seelig87}.
 
 In simulations with Berger and CHARMM36 models, the responses of POPC and POPS order parameter
-to added sodium and potassium are not in line with the experiments. Instead, the simulations produces a response similar to experiments conducted in LiCl (Fig. \ref{PSresponseTONaCl}), indicating overestimated binding affinity of sodium and potassium 
+to added sodium and potassium are not in line with the experiments. Instead, the simulations produces a response similar to experiments conducted in LiCl (Fig.~\ref{PSresponseTONaCl}), indicating overestimated binding affinity of sodium and potassium 
 in these simulations. The MacRog simulations with potassium exhibit weaker counterion binding affinity
-(Fig. \ref{CIdensPSOCmixt}), but significantly larger error bars and
-less systematic changes in the order parameters (Fig. \ref{PSresponseTONaCl}).
+(Fig.~\ref{CIdensPSOCmixt}), but significantly larger error bars and
+less systematic changes in the order parameters (Fig.~\ref{PSresponseTONaCl}).
 Similar unsystematic behaviour was also observed in the simulations of Lipid14/17 model
 with the additional counterions \cite{POPCpopsLIPID17withKCI,POPCpopsLIPID17withK,POPCpopsLIPID17withNaCI,POPCpopsLIPID17withNa},
 for which the data is not shown due to the formation of
-ion clusters in water with relatively low (1 M) ion concentrations (Fig. \ref{ionCLUSTERS}).
-Appearance of such clusters in the MagRog simulations with 4 M KCl
+ion clusters in water with relatively low (1~M) ion concentrations (Fig.~\ref{ionCLUSTERS}).
+Appearance of such clusters in the MagRog simulations with 4~M KCl
 could explain the unsystematic changes of the order parameters in this model upon increasing KCl.
-In conclusion, the results are in line with the section \ref{ciBINDINGsection}
+In conclusion, the results are in line with the Section \ref{ciBINDINGsection}
 in the main text, suggesting that the MacRog simulations with KCl give the most
 realistic surface charge at the lipid bilayer interface among the tested simulation models.
 \begin{figure*}[]
@@ -702,7 +820,7 @@ realistic surface charge at the lipid bilayer interface among the tested simulat
     Changes of the PC (left) and PS (right) headgroup order parameters as a function of
     added NaCl, KCl and LiCl from POPC:POPS (5:1) mixture at 298~K
     (except Berger simulations are (4:1) mixture at 310~K).
-    The experimental data is from Ref. \citenum{roux90}.
+    The experimental data is from Ref.~\citenum{roux90}.
     The values from counterion-only systems are set as a zero point of y-axis.
     To correctly illustrate the significant forking of the $\alpha$-carbon order parameter
     in PS headgroup (bottom, right), the y-axis is shifted with the same value for both order parameters such that the lower order
@@ -720,8 +838,8 @@ realistic surface charge at the lipid bilayer interface among the tested simulat
   \centering
   \includegraphics[width=8.0cm]{../Figs/lipid17cluster.png}
   \includegraphics[width=8.0cm]{../Figs/MacRogIONcluster.png}
-  \caption{Ion clusters appearing in POPC:POPS (5:1) lipid17/14 simulations with 1 M of NaCl (left)
-    and MacRog simulations with 4 M of KCl (right).
+  \caption{Ion clusters appearing in POPC:POPS (5:1) lipid17/14 simulations with 1~M of NaCl (left)
+    and MacRog simulations with 4~M of KCl (right).
 \label{ionCLUSTERS}
   }
 \end{figure}
@@ -745,23 +863,22 @@ realistic surface charge at the lipid bilayer interface among the tested simulat
 %Therefore, we cannot exclude the possibility that the NaCl induced changes were already
 %saturated with 100mM NaCl concentration, which was the case for CaCl$_2$ in Fig. \ref{changesWITHCaClPS}.
 
-\section{Calcium binding to POPC in CHARMM36 simulation with NBfix}\label{CHARMMcalciumNBfix}
+\clearpage
+\section{Calcium binding to POPC in CHARMM36 simulation with NBfix1 parameters}\label{CHARMMcalciumNBfix}
 
 The response of POPC headgroup order parameters to the CaCl$_2$ concentration
-are underestimated in simulations of POPC:POPS (5:1) mixture with CHARMM36 when employing NBfix (as obtained from CHARMM-GUI in January 2018) for interactions between calcium and lipid oxygens \cite{kim16}
-(Fig. \ref{changesWITHCaClPS} in the main text),
-indicating that the calcium binding to the bilayer is too weak with these
-parameters. The response of headgroup order
-parameters (Fig. \ref{OP_CHARMM_CaCl_POPC_NBFix}) and the binding affinity
-(Fig. \ref{density_profile_CHARMM_CaCl_POPC_NBFix}) of calcium also to a pure
-POPC bilayer are underestimated when using NBfix ions.  Notably, CHARMM36 simulations with the NBfix
-terms \cite{venable13,kim16} predict similar binding affinity for sodium and calcium. Without the NBfix term, the calcium binding affinity to pure POPC lipid bilayers was overestimated in the CHARMM36 model \cite{catte16}.
-
-%HA: this just repeats the above? 
-%In conclusion, the special NBfix~\cite{kim16} for calcium, 
-%incorporated in the parameters give by the CHARMM-GUI at the time
-%of running the simulations (January 2018), leads to the underestimation of
-%calcium binding affinity to pure PC and mixed PC:PS bilayers.
+are underestimated in simulations of POPC:POPS (5:1) mixture with CHARMM36 when employing the
+NBfix %(as obtained from CHARMM-GUI in January 2018)
+parameters for the interactions between calcium and lipid oxygens \cite{kim16,han2018graph}
+(Fig.~\ref{changesWITHCaClPS} in the main text), indicating that the calcium binding to the
+bilayer is too weak with these parameters. The response of headgroup order
+parameters (Fig.~\ref{OP_CHARMM_CaCl_POPC_NBFix}) and the binding affinity
+(Fig.~\ref{density_profile_CHARMM_CaCl_POPC_NBFix}) of calcium
+were underestimated also in simulations of pure POPC bilayer with the NBfix1 parameters~\cite{kim16}.
+Notably, CHARMM36 simulations with the NBfix1 terms \cite{venable13,kim16} predict similar binding affinity for sodium and calcium.
+Because the results for POPC:POPS (5:1) mixture were very similar with both NBfix parameters~\cite{kim16,han2018graph},
+the NBfix2 parameters were not separately tested with pure POPC bilayers.
+Without the NBfix parameters, the calcium binding affinity to pure POPC lipid bilayers was overestimated in the CHARMM36 model \cite{catte16}.
 
 \begin{figure}[]
   \centering
@@ -771,9 +888,9 @@ terms \cite{venable13,kim16} predict similar binding affinity for sodium and cal
     and calcium \cite{kim16} ({\it right}) compared with the experimental data \cite{akutsu81,altenbach84}
     and simulations without NBfix for the calcium.
     Simulation files without ions are available at Ref. \citenum{nencineCHARMM36popcT310K},
-    with the NBfix term in sodium at Ref. \citenum{CHARMM36withCaClNBfix}, 
-    with the NBfix term in calcium at Ref. \citenum{CHARMM36withCaClNBfix} and
-    without the NBfix in calcium at Ref. \citenum{charmmPOPC450mMCaClfiles}.
+    with the NBfix term in sodium at Ref.~\citenum{CHARMM36withCaClNBfix}, 
+    with the NBfix term in calcium at Ref.~\citenum{CHARMM36withCaClNBfix} and
+    without the NBfix in calcium at Ref.~\citenum{charmmPOPC450mMCaClfiles}.
   }
 \end{figure}
 
@@ -783,7 +900,7 @@ terms \cite{venable13,kim16} predict similar binding affinity for sodium and cal
   \caption{\label{density_profile_CHARMM_CaCl_POPC_NBFix}
     Density profiles along membrane normal from CHARMM36 simulations with (middle)
     and without (top) the NBfix term for calcium \cite{kim16} compared to the simulation
-    with the NBfix term for sodium \cite{venable13} (bottom). The simulation data are the same as in figure \ref{OP_CHARMM_CaCl_POPC_NBFix}.
+    with the NBfix term for sodium \cite{venable13} (bottom). The simulation data are the same as in Fig.~\ref{OP_CHARMM_CaCl_POPC_NBFix}.
   }
 \end{figure}
 
@@ -801,18 +918,17 @@ terms \cite{venable13,kim16} predict similar binding affinity for sodium and cal
 \end{figure}
 
 \clearpage
-\section{Details of the rough subjective force field ranking (Fig.~\ref{comparisonTablePS})} 
 
 \section{Details of the force field ranking (Fig.~\ref{comparisonTablePS})}\label{Ranking} 
-In Figure~\ref{HGorderParametersPS}) of main text we present a rough and subjective ranking of the force fields investigated in this work. 
+In Fig.~\ref{comparisonTablePS} of main text we present a rough and subjective ranking of the force fields investigated in this work. 
 The assessment was based on the data presented in Fig.~\ref{HGorderParametersPS}.
 %
 For each carbon (the columns in Fig.~\ref{HGorderParametersPS}),
 we first investigated separately how well a given force field represents the {\bf magnitude} of the order parameters and their {\bf forking}.
 
 \subsubsection*{Magnitude}
-To quantify how close to the experimentally obtained C--H order parameters ($S_\mathrm{CH}$s) were to the 
-the force-field-produced $S_\mathrm{CH}$s, we assign a number for each carbon based on the following 5-step scale:
+To quantify how close to the experimentally obtained C--H order parameters ($S_\mathrm{CH}$:s)
+the force-field-produced $S_\mathrm{CH}$:s were, we assigned a number for each carbon based on the following 5-step scale:
 
 %
 \begin{description}
@@ -878,7 +994,7 @@ each carbon was then assigned to one of the following groups: "within experiment
 (sum of magnitude and forking deviation from 3 to 5), and
 "major deviation from experiments"
 (sum of magnitude and forking deviation from 6 to 8).
-These groups are indicated by colors in Fig.~4.
+These groups are indicated by colors in Fig.~\ref{comparisonTablePS}.
 (Note that for $\beta$ and $\mathrm{g_2}$, for which there can be no forking,
 the corresponding group assignment limits were: 0, 1, 2, and 3.)
 
@@ -890,56 +1006,76 @@ To this end, the groups were given the following weights:
 2 (clear deviation from experiments),
 4 (major deviation from experiments),
 and the contributions from the five carbons were summed up.
-The sum, given in the $\Sigma$-column of Fig.~\ref{HGorderParametersPS},
+The sum, given in the $\Sigma$-column of Fig.~\ref{comparisonTablePS},
 was then used to (roughly and subjectively) rank the force fields.
 
 \section{Author contributions}
 \noindent
 {\it Hanne Antila}
+contributed to the development of analysis tools used for evaluating the force fields,  provided critical discussion on the manuscript content, and edited it for clarity.
 
 \noindent
 {\it Pavel Buslaev}
+analysed the dihedral angle distributions in the head group and glycerol backbone regions.
 
 \noindent
-{\it Fernando Favela}
+{\it Fernando Favela-Rosales}
+set up and performed one of the DOPS simulations with Slipids.
 
 \noindent
 {\it Tiago M. Ferreira}
+performed the NMR experiments and NMR simulations, processed and analysed the experimental data, prepared the corresponding figures, wrote parts of the manuscript (NMR methods and interpretation of the SDROSS results), and took part in the final revision.
 
 \noindent
 {\it Ivan Gushchin}
+supervised the work of P.B.
 
 \noindent
 {\it Matti Javanainen}
+performed most of the MacRog simulations, and provided comments on the manuscript.
 
 \noindent
 {\it Batuhan Kav}
+set up, performed, and analysed Amber Lipid14/17 simulations with the Amber MD simulation package.
 
 \noindent
 {\it Jesper J. Madsen}
+set up, performed, and analysed several of the CHARMM36 simulations. Provided comments on the manuscript.
 
 \noindent
 {\it Josef Melcr}
-consulted the project, 
-prepared tools for calculating order parameters
-and performed several simulations.
+prepared tools for calculating order parameters, performed Lipid14/17 simulations with Gromacs MD simulation package,
+prepared the TOC figure and provided comments on the manuscript.
 
 \noindent
-{\it Markus Miettinen}
+{\it Markus S. Miettinen}
+worked with
+H. A. on the analysis tools, and with
+B. K. on the Amber MD simulations.
+Made the subjective force field ranking.
+Edited the manuscript.
+
+\noindent
+{\it Jukka M{\"a}{\"a}tt{\"a}}
+Did minor analysis for and edited Figures 6 and 10.
 
 \noindent
 {\it Ricky Nencini}
+ran the simulations of POPC systems using CHARMM36 with and without the NB-Fix corrections,
+ran the simulations of POPC:POPS (5:1) systems using CHARMM36 with the NBfix2 correction,
+and analyzed the difference between bulk and buffer concentrations. 
+
 
 \noindent
 {\it O. H. Samuli Ollila}
-Designed the project and managed the work.
+designed the project and managed the work.
 Ran and analysed several simulations. Wrote the manuscript.
 
 \noindent
-{\it Thomas Piggot}
-
+{\it Thomas J. Piggot}
+set up, performed, and analysed many of the simulations. Contributed to parts of the manuscript.
 
 \clearpage
-\bibliography{refs.bib}
+\bibliography{refsU.bib}
 
 \end{document}
