@@ -1,12 +1,12 @@
 set size 2.0,1.0
-set terminal postscript portrait enhanced color dashed lw 1 "Helvetica" 14 background rgb 'white'
+set terminal postscript portrait enhanced color dashed lw 1 "Helvetica" 20 background rgb 'white'
 set output "../CHANGESwithCaClPS.eps"
 set multiplot  layout 2,2
 
 set xrange [-0.05:3.05] 
 #set ytic 0.05
 #set key box linestyle 1 linecolor rgb 'black'
-set key at screen 0.95,0.935 maxcols 1 maxrows 10
+set key at screen 0.92,0.45 maxcols 1 maxrows 10 font "Helvetica, 14" invert
 
 set title 'POPC'
 set size 1.0,0.5
@@ -18,18 +18,18 @@ plot 	   "../../Data/POPC80_POPS20withCa_MACROG.dat" using 1:($6-0.02324) with l
            "../../Data/POPC80_POPS20withCa_MACROG.dat" using 1:($8-0.02009):9 with yerrorbars notitle  pt 7 lt 1 lw 4 ps 1.5 lc rgb '#00A368',\
     	   "../../Data/POPC80_POPS20withCa_BERGER.dat" using 1:($4-0.0129448) with linespoint title 'Berger' pt 7 lt 1 lw 4 ps 1.5 lc rgb '#D70039',\
     	   "../../Data/POPC80_POPS20withCa_BERGER.dat" using 1:($5-0.032294) with linespoint notitle pt 7 lt 1 lw 4 ps 1.5 lc rgb '#D70039',\
-    	   "../../Data/POPC250_POPS50withCa_CHARMM36.dat" using 1:($6+0.07985) with linespoint title 'CHARMM36 NBfix1' pt 7 lt 1 lw 4 ps 1.5 lc rgb '#0088BF',\
+      	   "../../Data/POPC5_POPS1withCa_LIPID17withAMBER.dat" using ($1*0.001):($6-0.00214) with linespoint title 'Lipid14/17 ff99 ions' pt 7 lt 1 lw 4 ps 1.5 lc rgb '#FFD300',\
+      	   "../../Data/POPC5_POPS1withCa_LIPID17withAMBER.dat" using ($1*0.001):($6-0.00214):7 with yerrorbars notitle pt 7 lt 1 lw 4 ps 1.5 lc rgb '#FFD300',\
+      	   "../../Data/POPC5_POPS1withCa_LIPID17withAMBER.dat" using ($1*0.001):($8-0.00214) with linespoint notitle pt 7 lt 1 lw 4 ps 1.5 lc rgb '#FFD300',\
+      	   "../../Data/POPC5_POPS1withCa_LIPID17withAMBER.dat" using ($1*0.001):($8-0.00214):9 with yerrorbars notitle pt 7 lt 1 lw 4 ps 1.5 lc rgb '#FFD300',\
+      	   "../../Data/POPC5_POPS1withCa_LIPID17.dat" using 1:($4+0.00231) with linespoint title 'Lipid14/17 Dang ions' pt 6 lt 1 lw 4 ps 1.5 lc rgb '#FFD300',\
+      	   "../../Data/POPC5_POPS1withCa_LIPID17.dat" using 1:($5+0.00524) with linespoint notitle pt 6 lt 1 lw 4 ps 1.5 lc rgb '#FFD300',\
+           "../../Data/POPC250_POPS50withCa_CHARMM36.dat" using 1:($6+0.07985) with linespoint title 'CHARMM36 NBfix1' pt 7 lt 1 lw 4 ps 1.5 lc rgb '#0088BF',\
       	   "../../Data/POPC250_POPS50withCa_CHARMM36.dat" using 1:($6+0.07985):7 with yerrorbars notitle pt 7 lt 1 lw 4 ps 1.5 lc rgb '#0088BF',\
       	   "../../Data/POPC250_POPS50withCa_CHARMM36.dat" using 1:($8+0.07984) with linespoint notitle pt 7 lt 1 lw 4 ps 1.5 lc rgb '#0088BF',\
       	   "../../Data/POPC250_POPS50withCa_CHARMM36.dat" using 1:($8+0.07984):9 with yerrorbars notitle pt 7 lt 1 lw 4 ps 1.5 lc rgb '#0088BF',\
     	   "../../Data/POPC250_POPS50_contraNa_withCa_CHARMM36_NBFIX_Han.dat" using 1:($6+0.06936) with linespoint title 'CHARMM36 NBfix2' pt 6 lt 1 lw 4 ps 1.5 lc rgb '#0088BF',\
       	   "../../Data/POPC250_POPS50_contraNa_withCa_CHARMM36_NBFIX_Han.dat" using 1:($8+0.07126) with linespoint notitle pt 7 lt 1 lw 4 ps 1.5 lc rgb '#0088BF',\
-      	   "../../Data/POPC5_POPS1withCa_LIPID17withAMBER.dat" using ($1*0.001):($6-0.00214) with linespoint title 'Lipid14/17 ff99ions' pt 7 lt 1 lw 4 ps 1.5 lc rgb '#FFD300',\
-      	   "../../Data/POPC5_POPS1withCa_LIPID17withAMBER.dat" using ($1*0.001):($6-0.00214):7 with yerrorbars notitle pt 7 lt 1 lw 4 ps 1.5 lc rgb '#FFD300',\
-      	   "../../Data/POPC5_POPS1withCa_LIPID17withAMBER.dat" using ($1*0.001):($8-0.00214) with linespoint notitle pt 7 lt 1 lw 4 ps 1.5 lc rgb '#FFD300',\
-      	   "../../Data/POPC5_POPS1withCa_LIPID17withAMBER.dat" using ($1*0.001):($8-0.00214):9 with yerrorbars notitle pt 7 lt 1 lw 4 ps 1.5 lc rgb '#FFD300',\
-      	   "../../Data/POPC5_POPS1withCa_LIPID17.dat" using 1:($4+0.00231) with linespoint title 'Lipid14/17 dang ions' pt 6 lt 1 lw 4 ps 1.5 lc rgb '#FFD300',\
-      	   "../../Data/POPC5_POPS1withCa_LIPID17.dat" using 1:($5+0.00524) with linespoint notitle pt 6 lt 1 lw 4 ps 1.5 lc rgb '#FFD300',\
            "../../Data/POPC_POPSwithCaBETA.dat" using 1:((-1)*($2-4.0)*0.00784) with linespoint title 'Experiment' pt 7 ps 1.5 lt 1 lw 4 lc rgb 'black',\
 
 #      	   "../../Data/POPC250_POPS50_contraNa_withCa_CHARMM36_NBFIX_Han.dat" using 1:($6+0.06936):7 with yerrorbars notitle pt 6 lt 1 lw 4 ps 1.5 lc rgb '#0088BF',\

@@ -672,17 +672,17 @@ to correctly describe the PC--PS headgroup interactions in MD simulations.
 
 \begin{figure*}[tbp]
   \centering
-  \includegraphics[width=18cm]{../Figs/CHANGESwithCaClPS.eps}
+  \includegraphics[width=\textwidth]{../Figs/CHANGESwithCaClPS.eps}
   \caption{\label{changesWITHCaClPS}
-   Variation of POPC (left) and POPS (right) headgroup order parameters from POPC:POPS (5:1) mixture
-    as a function CaCl$_2$ concentration from experiments \cite{roux90} and different simulations
-    at 298~K (except the data for Berger model is from simulation of POPC:POPS (4:1) mixture at 310~K \cite{ollila07a,melcrova16}). 
-    The order parameter values from systems without calcium are set as the zero point of y-axis,
-    except for the $\alpha$-carbon order parameter of POPS (bottom, right) for which both order parameters are shifted
-    such that the lower order parameter is zero without additional ions. This is to correctly illustrate
+   Variation of the POPC (left) and POPS (right) headgroup order parameters in a POPC:POPS (5:1) mixture
+    as a function CaCl$_2$ concentration from experiments \cite{roux90} and from different force fields
+    at 298~K (except the data for Berger are from a simulation of POPC:POPS (4:1) mixture at 310~K \cite{ollila07a,melcrova16}). 
+    The $S_\mathrm{CH}$ values from systems without calcium are set at the zero point of y-axes,
+    except for the $\alpha$-carbon order parameters of POPS (bottom right), for which both $S^\alpha_\mathrm{CH}$ are shifted
+    such that the lower $S^\alpha_\mathrm{CH}$ is zero without additional ions. This is to correctly illustrate
     the forking with different concentrations of calcium.
-    Potassium counterions are used in MacRog simulations and sodium counterions in Lipid14/17 simulations.
-    In CHARMM36 and Berger simulation with added calcium, the charge is neutralized with calcium and monovalent counterions are not present.
+    Potassium counterions were used in MacRog simulations and sodium counterions in Lipid14/17 simulations.
+    In CHARMM36 and Berger simulations with added calcium, the charge was neutralized with calcium, and monovalent counterions were not present.
   }
 \end{figure*}
 
@@ -690,23 +690,23 @@ to correctly describe the PC--PS headgroup interactions in MD simulations.
 
 Calcium binding affinity to membranes containing negatively charged PS lipids can be
 experimentally quantified by measuring the PC lipid headgroup order parameters
-from POPC:POPS (5:1) mixtures (section~\ref{electrometerFORmixtures}),
+from POPC:POPS (5:1) mixtures (see section~\ref{electrometerFORmixtures}),
 where the measurement is not compromised by the dehydrated lipid--ion complexes and phase separation, and the bilayer remains uniform~\cite{feigenson86,mattai89,roux90,roux91}.
 Despite the lack of an ion-free reference state
-in the presence of negatively charged lipids, our simulations give
-coherent results for POPC headgroup order parameters as a function of
-CaCl$_2$ in the POPC:POPS (5:1) mixtures (Fig. \ref{changesWITHCaClPS}).
+in the presence of negatively charged lipids, our simulations gave
+coherent results for the POPC headgroup order parameters as a function of
+CaCl$_2$ concentration in POPC:POPS (5:1) mixtures (Fig. \ref{changesWITHCaClPS}).
 As expected from the previous study of pure PC lipid
-bilayers \cite{catte16}, almost all the tested simulation models overestimate the
-experimentally observed~\cite{roux90} decrease of the POPC headgroup order parameters upon increasing Ca$^{2+}$ concentration (Fig. \ref{changesWITHCaClPS}),
+bilayers \cite{catte16}, almost all the tested simulation models overestimated the
+experimentally observed~\cite{roux90} decrease of the POPC headgroup $S_\mathrm{CH}$ upon increasing Ca$^{2+}$ concentration (Fig. \ref{changesWITHCaClPS}),
 indicating too strong calcium binding affinity.
-The sole exception is the CHARMM36 model when paired with the NBfix
-corrections for calcium~\cite{kim16,han2018graph}. For these combinations, the modulation of order parameters is underestimated, 
+The sole exception was CHARMM36 when paired with the NBfix
+corrections for calcium~\cite{kim16,han2018graph}; for these combinations, the modulation of order parameters was underestimated, 
 indicating a weaker binding affinity than in experiments.
-Notably, the CHARMM36 model together with the NBfix corrections \cite{venable13,kim16} suggest similar binding affinities of
-calcium and sodium for a POPC bilayer (see section \ref{CHARMMcalciumNBfix}), in contrast to the experiments~\cite{cevc90,akutsu81,altenbach84}. This suggests that the calcium binding affinity
-is underestimated in the CHARMM36 model when using the NBfix for calcium \cite{kim16,han2018graph}, but overestimated 
-in all the other tested models. This is evident in the calcium density distributions where almost all Ca$^{2+}$ ions bind to the membrane interface in all simulation models except CHARMM36 (Fig. \ref{CAdensPCPSmixture}).
+Notably, CHARMM36 with the NBfix corrections \cite{venable13,kim16} suggested similar binding affinities for
+calcium and sodium to a POPC bilayer (see section \ref{CHARMMcalciumNBfix}), in contrast to experiments~\cite{cevc90,akutsu81,altenbach84}. This suggests that the calcium binding affinity
+is underestimated in CHARMM36 when using the NBfix for calcium \cite{kim16,han2018graph}, but overestimated 
+in all the other tested force fields. This is evident in the calcium density distributions, where almost all the Ca$^{2+}$ ions bind to the membrane interface in all models except CHARMM36 (Fig. \ref{CAdensPCPSmixture}).
 
 
 
@@ -725,22 +725,25 @@ in all the other tested models. This is evident in the calcium density distribut
 
 Experimentally, the POPS headgroup order parameters in POPC:POPS (5:1) mixtures
 exhibit a strong response to small concentrations of CaCl$_2$, which saturates below 100~mM (Fig. \ref{changesWITHCaClPS}).
-The $\beta$-carbon order parameter increases with added CaCl$_2$,
-whereas the larger $\alpha$-carbon order parameter decreases. Moreover, a slight increase is observed in
-the smaller $\alpha$-carbon value. All these changes are significantly overestimated in the
-tested simulation models---including CHARMM36---which underestimated the binding affinity.
-Importantly, the different simulation models predict qualitatively different behavior
-for the two POPS $\alpha$-carbon order parameters as a function of added calcium.
-For example, both order parameters decrease in Berger, increase
-in MacRog, whereas Lipid14/17 and CHARMM36 models exhibit more complex behavior.
+The $\beta$-carbon $S_\mathrm{CH}$ increases with added CaCl$_2$,
+whereas the larger $\alpha$-carbon $S_\mathrm{CH}$ decreases. Moreover, a slight increase is observed in
+the smaller $\alpha$-carbon $S_\mathrm{CH}$.
+In simulations, all these responses were qualitatively correct only in CHARMM36.
+In all force fields, even the qualitatively correct responses were much exaggerated---also in CHARMM36 that underestimated the Ca$^{2+}$ binding affinity---with
+the sole exception of the larger $S^\alpha_\mathrm{CH}$, whose change CHARMM36 underestimated.
+%All these changes were significantly overestimated in the tested simulation models---including CHARMM36 that underestimated the binding affinity.
+Importantly, different force fields predicted qualitatively different behavior
+for the two POPS $\alpha$-carbon order parameters as a function of added calcium:
+Both order parameters decreased in Berger, but increased
+in MacRog, whereas Lipid14/17 and CHARMM36 models exhibited more complex behaviors.
 This is in contrast to the PC headgroup, where a
 qualitatively correct response to bound ions is reproduced
 by all simulation models, despite the significant discrepancies in the headgroup
 structures observed in salt-free simulations~\cite{catte16}.
-The divergent response of the Berger model may arise from the ring like structures
+The divergent response of Berger may arise from the ring-like structures
 observed in the headgroup region in this model (Fig. 6 in Ref. \citenum{mukhopadhyay04}).
 Therefore, we conclude that
-the improvement of force fields is necessary to correctly capture the interactions between the
+improvement of force fields is necessary to correctly capture the interactions between the
 PS headgroup and calcium ions in MD simulations.
 
 \section{Conclusions}
