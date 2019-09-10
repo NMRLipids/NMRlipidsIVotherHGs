@@ -300,20 +300,20 @@ DOPS/Na$^{+}$  & Slipids \cite{jambeck13}  & 288  & 11232  & 303  & 200  & 100  
   reported in the experiments by Roux et al.~\cite{roux90}.
   Notation 2$\times$[time] indicates that two independent MD runs were conducted.
   Dang refers to the ion parameters by Dang and co-workers~\cite{smith94,dang06}, and ff99 to the default Amber ion parameters~\cite{aqvist90}.
-  The additional simulation details are given in the Supporting Information.
+  Additional simulation details are given in the Supporting Information.
   Symbols have the same meaning as in Table \ref{PSsystems}.
 }\label{mixedIONsystems}
 %begin{minipage}[t]{\textwidth}
 \resizebox{0.87\textwidth}{!}{\begin{tabular}{lccccccccc}
   %lipid/counter-ions  & force field & {[}CaCl$_{2}${]}\,(M)  & \footnote{Number of POPC molecules}N$_{{\rm l}}$  & \footnote{Number of water molecules}N$_{{\rm w}}$  & \footnote{Number of Ca$^{2+}$ cations in addition to counter ions}N$_{{\rm c}}$  & \footnote{Simulation temperature}T (K)  & \footnote{Total simulation time}t$_{{\rm sim}}$(ns)  & \footnote{Time used for analyses}t$_{{\rm anal}}$ (ns)  & \footnote{Reference for simulation files}files\tabularnewline
-  lipid/counter-ions  & force field & {[}CaCl$_{2}${]}\,(M)  & N$_{{\rm l}}$  & N$_{{\rm w}}$  & \footnote{Number of Ca$^{2+}$ cations in the system}N$_{{\rm c}}$  & T (K)  & t$_{{\rm sim}}$(ns)  & t$_{{\rm anal}}$ (ns)  & files\tabularnewline
+  lipids/counter-ion  & force field & {\footnote{For systems with Ca$^{2+}$ counterions this column gives [Ca$^{2+}$].}[}CaCl$_{2}${]}\,(M)  & N$_{{\rm l}}$  & N$_{{\rm w}}$  & \footnote{Number of Ca$^{2+}$ cations in the system}N$_{{\rm c}}$  & T (K)  & t$_{{\rm sim}}$(ns)  & t$_{{\rm anal}}$ (ns)  & files\tabularnewline
 \hline 
 %    POPC:POPS (5:1)/K$^+$  & CHARMM36 \cite{klauda10,venable13} &0  & 110:22 & 4935 & 0  & 298  & 100 & 100 \todoi{Equilibration?} & \cite{charmm36pops+83popcT298K}  \\
 POPC:POPS (5:1)/Na$^{+}$  & CHARMM36 \cite{klauda10,venable13}  & 0  & 110:22 & 4620  & 0  & 298  & 2$\times$500  & 2$\times$100  & \citenum{charmm36pops+83popcT298KpiggotSODIUM} \tabularnewline
 POPC:POPS (5:1)/K$^{+}$  & CHARMM36 \cite{klauda10,venable13}  & 0  & 110:22  & 4620  & 0  & 298  & 2$\times$500  & 2$\times$100  & \citenum{charmm36pops+83popcT298Kpiggot} \tabularnewline
 POPC:POPS (5:1)/K$^{+}$  & CHARMM36 \cite{klauda10,venable13}  & 0  & 250:50  & 11207  & 0  & 298  & 200  & 180  & \citenum{POPC5POPS1noCaClCHARMM} \tabularnewline
-POPC:POPS (5:1)  & CHARMM36 \cite{klauda10,venable13} / NBfix1 \cite{kim16}  & 0.26  & 250:50 & 11190  & 53  & 298  & 200  & 180  & \citenum{POPC5POPS1withCaClCHARMM} \tabularnewline
-POPC:POPS (5:1)  & CHARMM36 \cite{klauda10,venable13} / NBfix1 \cite{kim16}  & 1.06  & 250:50 & 11174  & 214  & 298  & 200  & 180  & \citenum{POPC5POPS1with1MCaClCHARMM} \tabularnewline
+POPC:POPS (5:1)/Ca$^{2+}$  & CHARMM36 \cite{klauda10,venable13} / NBfix1 \cite{kim16}  & 0.26  & 250:50 & 11190  & 53  & 298  & 200  & 180  & \citenum{POPC5POPS1withCaClCHARMM} \tabularnewline
+POPC:POPS (5:1)/Ca$^{2+}$  & CHARMM36 \cite{klauda10,venable13} / NBfix1 \cite{kim16}  & 1.06  & 250:50 & 11174  & 214  & 298  & 200  & 180  & \citenum{POPC5POPS1with1MCaClCHARMM} \tabularnewline
 POPC:POPS (5:1)/Na$^{+}$  & CHARMM36 \cite{klauda10,venable13}  & 0  & 250:50  & 11207  & 0  & 320  & 400  & 300  & \citenum{POPC5POPS1CHARMMwithNBfixHan} \tabularnewline
 POPC:POPS (5:1)/Na$^{+}$  & CHARMM36 \cite{klauda10,venable13} / NBfix2 \cite{han2018graph}  & 0.14  & 250:50 & 11190  & 28  & 320  & 440  & 300  & \citenum{POPC5POPS1CHARMMwithNBfixHan} \tabularnewline
 POPC:POPS (5:1)/Na$^{+}$  & CHARMM36 \cite{klauda10,venable13} / NBfix2 \cite{han2018graph}  & 0.94  & 250:50 & 11174  & 189  & 320  & 440  & 300  & \citenum{POPC5POPS1CHARMMwithNBfixHan} \tabularnewline
@@ -329,11 +329,11 @@ POPC:POPS (5:1)/K$^{+}$  & MacRog \cite{maciejewski14}  & 3.00  & 120:24 & 5760 
 %    POPC:OPPS (5:1)/K$^+$  & MacRog \cite{maciejewski14} &4.00    & 0   & 120:24 & 5760 & 415  & 298  & 300 & 200 & \cite{POPCpopsMACROGwithK}  \\
 POPC:POPS (5:1)/K$^{+}$  & Lipid14/17 \cite{dickson14,gould18} / ff99~\cite{aqvist90}  & 0  & 120:24  & 5760  & 0  & 298  & 2$\times$500  & 2$\times$200  & \citenum{POPCpopsLIPID17withKCI} \tabularnewline
 POPC:POPS (5:1)/Na$^{+}$  & Lipid14/17 \cite{dickson14,gould18} / ff99~\cite{aqvist90}  & 0  & 120:24 & 5760  & 0  & 298  & 2$\times$500  & 2$\times$200  & \citenum{POPCpopsLIPID17withNaCI} \tabularnewline
-POPC:POPS (5:1)  & Lipid14/17 \cite{dickson14,gould18} / ff99~\cite{aqvist90}  & 0.50  & 120:24 & 5760  & 52  & 298  & 2$\times$500  & 2$\times$200  & \citenum{POPCpopsLIPID17withCaCl} \tabularnewline
-POPC:POPS (5:1)  & Lipid14/17 \cite{dickson14,gould18} / ff99~\cite{aqvist90}  & 1.00  & 120:24  & 5760  & 104  & 298  & 2$\times$500  & 2$\times$200  & \citenum{POPCpopsLIPID17withCaCl} \tabularnewline
-POPC:POPS (5:1)  & Lipid14/17 \cite{dickson14,gould18} / ff99~\cite{aqvist90}  & 2.00  & 120:24  & 5760  & 208  & 298  & 2$\times$500  & 2$\times$200  & \citenum{POPCpopsLIPID17withCaCl} \tabularnewline
-POPC:POPS (5:1)  & Lipid14/17 \cite{dickson14,gould18} / ff99~\cite{aqvist90}  & 3.00  & 120:24 & 5760  & 311  & 298  & 2$\times$500  & 2$\times$200  & \citenum{POPCpopsLIPID17withCaCl} \tabularnewline
-POPC:POPS (5:1)  & Lipid14/17 \cite{dickson14,gould18} / ff99~\cite{aqvist90}  & 4.00  & 120:24  & 5760  & 415  & 298  & 2$\times$500  & 2$\times$200  & \citenum{POPCpopsLIPID17withCaCl} \tabularnewline
+POPC:POPS (5:1)/Ca$^{2+}$  & Lipid14/17 \cite{dickson14,gould18} / ff99~\cite{aqvist90}  & 0.50  & 120:24 & 5760  & 52  & 298  & 2$\times$500  & 2$\times$200  & \citenum{POPCpopsLIPID17withCaCl} \tabularnewline
+POPC:POPS (5:1)/Ca$^{2+}$  & Lipid14/17 \cite{dickson14,gould18} / ff99~\cite{aqvist90}  & 1.00  & 120:24  & 5760  & 104  & 298  & 2$\times$500  & 2$\times$200  & \citenum{POPCpopsLIPID17withCaCl} \tabularnewline
+POPC:POPS (5:1)/Ca$^{2+}$  & Lipid14/17 \cite{dickson14,gould18} / ff99~\cite{aqvist90}  & 2.00  & 120:24  & 5760  & 208  & 298  & 2$\times$500  & 2$\times$200  & \citenum{POPCpopsLIPID17withCaCl} \tabularnewline
+POPC:POPS (5:1)/Ca$^{2+}$  & Lipid14/17 \cite{dickson14,gould18} / ff99~\cite{aqvist90}  & 3.00  & 120:24 & 5760  & 311  & 298  & 2$\times$500  & 2$\times$200  & \citenum{POPCpopsLIPID17withCaCl} \tabularnewline
+POPC:POPS (5:1)/Ca$^{2+}$  & Lipid14/17 \cite{dickson14,gould18} / ff99~\cite{aqvist90}  & 4.00  & 120:24  & 5760  & 415  & 298  & 2$\times$500  & 2$\times$200  & \citenum{POPCpopsLIPID17withCaCl} \tabularnewline
 POPC:POPS (5:1)/Na$^{+}$  & Lipid14/17 \cite{dickson14,gould18} / Dang~\cite{smith94,dang06}  & 0  & 60:12 & 3600  & 0  & 298  & 1050  & 1000  & \citenum{lipid17_cacl_series} \tabularnewline
 POPC:POPS (5:1)/Na$^{+}$  & Lipid14/17 \cite{dickson14,gould18} / Dang~\cite{smith94,dang06}  & 0.08  & 60:12  & 3561  & 5  & 298  & 1050  & 1000  & \citenum{lipid17_cacl_series} \tabularnewline
 POPC:POPS (5:1)/Na$^{+}$  & Lipid14/17 \cite{dickson14,gould18} / Dang~\cite{smith94,dang06}  & 0.13  & 60:12  & 3561  & 8  & 298  & 1050  & 1000  & \citenum{lipid17_cacl_series} \tabularnewline
@@ -342,10 +342,10 @@ POPC:POPS (5:1)/Na$^{+}$  & Lipid14/17 \cite{dickson14,gould18} / Dang~\cite{smi
 POPC:POPS (5:1)/Na$^{+}$  & Lipid14/17 \cite{dickson14,gould18} / Dang~\cite{smith94,dang06}  & 0.62  & 60:12 & 3483  & 39  & 298  & 1050  & 1000  & \citenum{lipid17_cacl_series} \tabularnewline
 \hline 
 POPC:POPS (4:1)/Na$^{+}$  & Berger \cite{tieleman99,mukhopadhyay04}  & 0  & 102:26 & 4290  & 0  & 310  & 120  & 80  & \citenum{bergerPOPSPOPC4:1mixtureT310K} \tabularnewline
-POPC:POPS (4:1)  & Berger \cite{tieleman99,mukhopadhyay04}  & 0.102\footnote{\label{noteBerger}Calculation of concetration complicated by the
+POPC:POPS (4:1)/Ca$^{2+}$  & Berger \cite{tieleman99,mukhopadhyay04}  & 0.102\footnote{\label{noteBerger}Calculation of concentration complicated by the
 use of scaled ions. Concentration taken as reported in the delivered
 data.}  & 104:26  & 4306  & 24  & 310  & 300  & 100  & \citenum{POPCpopsBERGERwith102mMCa} \tabularnewline
-POPC:POPS (4:1)  & Berger \cite{tieleman99,mukhopadhyay04}  & 0.715\textsuperscript{\ref{noteBerger}}  & 104:26 & 4306  & 72  & 310  & 300  & 100  & \citenum{POPCpopsBERGERwith715mMCa} \tabularnewline
+POPC:POPS (4:1)/Ca$^{2+}$  & Berger \cite{tieleman99,mukhopadhyay04}  & 0.715\textsuperscript{\ref{noteBerger}}  & 104:26 & 4306  & 72  & 310  & 300  & 100  & \citenum{POPCpopsBERGERwith715mMCa} \tabularnewline
 \hline 
 POPC:POPS (5:1)/Na$^{+}$  & GROMOS-CKP\footnote{Force field parameters for PS lipids generated for this work, for full details see the Supporting Information.} \cite{piggot12}  & 0  & 110:22 & 4620  & 0  & 298  & 2$\times$500  & 2$\times$100  & \citenum{POPCpopsGROMOSCKPwithNa} \tabularnewline
 POPC:POPS (5:1)/Na$^{+}$  & GROMOS-CKPM$^c$ \cite{piggot12}  & 0  & 110:22 & 4620  & 0  & 298  & 2$\times$500  & 2$\times$100  & \citenum{POPCpopsGROMOSCKPMwithNa} \tabularnewline
@@ -676,13 +676,14 @@ to correctly describe the PC--PS headgroup interactions in MD simulations.
   \caption{\label{changesWITHCaClPS}
    Variation of the POPC (left) and POPS (right) headgroup order parameters in a POPC:POPS (5:1) mixture
     as a function CaCl$_2$ concentration from experiments \cite{roux90} and from different force fields
-    at 298~K (except the data for Berger are from a simulation of POPC:POPS (4:1) mixture at 310~K \cite{ollila07a,melcrova16}). 
+    at 298~K (except the data for Berger are from a simulation of a POPC:POPS (4:1) mixture at 310~K \cite{ollila07a,melcrova16}). 
     The $S_\mathrm{CH}$ values from systems without calcium are set at the zero point of y-axes,
     except for the $\alpha$-carbon order parameters of POPS (bottom right), for which both $S^\alpha_\mathrm{CH}$ are shifted
     such that the lower $S^\alpha_\mathrm{CH}$ is zero without additional ions. This is to correctly illustrate
     the forking with different concentrations of calcium.
-    Potassium counterions were used in MacRog simulations and sodium counterions in Lipid14/17 simulations.
-    In CHARMM36 and Berger simulations with added calcium, the charge was neutralized with calcium, and monovalent counterions were not present.
+    Counterions were potassium in MacRog simulations, and sodium in Lipid14/17 Dang and CHARMM36 NBfix2 simulations.
+    In CHARMM36 NBfix1, Lipid14/17 ff99, and Berger simulations with added calcium the lipid charge was neutralized with calcium, and monovalent counterions were not present;
+    for these systems the $x$-axis shows [Ca$^{2+}$].
   }
 \end{figure*}
 
