@@ -188,9 +188,9 @@ set tmargin at screen top
 set bmargin at screen bottom
 plot [0:zMax][0:dMax] \
   "../../../MATCH/Data/Lipid_Bilayers/POPS+83%popc+410mMCaCl/T298K/MODEL_LIPID17/IONdens.xvg" \
-  u (abs($1)):($2) w l lc palette frac 1000/cMax lw wCa2 t "410 mM ff99 ions", \
+  u (abs($1)):($2) w l lc palette frac 1000/cMax lw wCa2 t "410 mM Dang ions", \
   "../../../MATCH/Data/Lipid_Bilayers/POPS+83%popc+500mMCaCl/T298K/MODEL_LIPID17/number_density_ions.dat" \
-  u (abs($1)):($2) w l lc palette frac 150/cMax lw wCa t "500 mM Dang ions"
+  u (abs($1)):($2) w l lc palette frac 150/cMax lw wCa t "500 mM ff99 ions"
   
   
 plot [0:zMax][0:dMax] \
