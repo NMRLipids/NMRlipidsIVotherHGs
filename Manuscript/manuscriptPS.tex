@@ -129,7 +129,7 @@ charged lipid type in eukaryotic biomembranes. In red blood cells, for example,
 PS lipids compose 8.5\% of the total lipid weight~\cite{lemmon08}. 
 The abundance, however, varies between different cells and organelles, and up to
 25--35\% of the cytosolic leaflet of plasma membranes consists of PS lipids~\cite{leventis10,li14}.
-PS lipids are vastly important biomolecules that interact with
+PS lipids are important biomolecules that interact with
 signaling proteins \cite{leventis10}, regulate
 surface charge and protein localization \cite{yeung08}, and
 induce protein aggregation \cite{zhao04,gorbenko06}.
@@ -141,13 +141,13 @@ of lipid headgroups and the details of cation binding
 is crucial for understanding PS-mediated processes on cellular membranes.
 
 Experimental studies have indicated that the
-serine headgroup in PS is more rigid than the choline headgroup in phosphatidylcholine (PC),
+serine-containing headgroup of PS is more rigid than the choline-containing headgroup of PC (phosphatidylcholine),
 owing possibly to electrostatic interactions or formation of a hydrogen bond network between the headgroups~\cite{browning80,buldt81}.
 While most monovalent ions interact weakly with
 PS-containing bilayers, multivalent cations and Li$^+$ are able to form strong
 dehydrated molecular complexes with PS lipids \cite{hauser77,kurland79,eisenberg79,hauser83,dluhy83,hauser85,feigenson86,mattai89,roux90,roux91,boettcher11}.
 The dehydrated complexes of PS headgroups with calcium ions can even lead to
-phase separation \cite{hauser77,kurland79,hauser85,feigenson86,mattai89,roux90,roux91}. Mixing PS lipids with PC lipids reduces their propensity to form strong complexes with multivalent ions and makes the PS headgroup less rigid~\cite{browning80,buldt81,roux90,roux91}.
+phase separation \cite{hauser77,kurland79,hauser85,feigenson86,mattai89,roux90,roux91}. Mixing PS lipids with PC lipids reduces the propensity of PS to form complexes with multivalent ions and makes the PS headgroup less rigid~\cite{browning80,buldt81,roux90,roux91}.
 That being said, some studies suggest that Ca$^{2+}$ has similar specific binding affinity 
 to both negatively charged and zwitterionic phospholipids, and that
 the increased cation binding to PS lipid bilayers is non-specific and arises only due to the increased local cation concentration in the vicinity of the membrane~\cite{seelig90,sinn06}. 
@@ -156,14 +156,14 @@ the increased cation binding to PS lipid bilayers is non-specific and arises onl
 
 Molecular level interpretations of the rigidity of PS headgroup and its interactions with ions
 are currently lacking. Classical molecular dynamics (MD) simulations have been widely used in efforts 
-to understand the PS headgroup structure, its influence on lipid bilayer properties, and its
+to understand the PS headgroup structure, its influence on lipid bilayer properties, and PS
 interaction with
 ions \cite{cascales96,pandit02,mukhopadhyay04,pedersen06,vernier09,boettcher11,molina12,jurkiewicz12,venable13,pan14,vangaveti14,melcrova16,valentine18,hallock18}.
 Unfortunately, the results have depended on the particular force field used.
-For example, recent simulations using the NBfix parameters for Ca$^{2+}$~\cite{kim16} in
+For example, recent simulations using the NBfix parameters for calcium~\cite{kim16} in
 the CHARMM36 force field \cite{klauda10,venable13}, combined with 2D infrared spectroscopy,
-suggest that calcium ions interact only with the carboxylate group of PS lipids \cite{valentine18}. In contrast,
-the results from the same lipid model without the NBfix ion parameters, combined with NMR chemical shifts and
+suggest that Ca$^{2+}$ ions interact only with the carboxylate group of PS lipids \cite{valentine18}. In contrast,
+results from the same lipid model but without the NBfix ion parameters, combined with NMR chemical shifts and
 rotational-echo double-resonance (REDOR) experiments, indicate a significant binding affinity also toward the phosphate region \cite{hallock18}.
 Meanwhile, simulations with the Berger force field \cite{berger97,mukhopadhyay04},
 combined with fluorescent and vibrational sum frequency spectroscopy, suggest substantial
@@ -171,12 +171,12 @@ calcium binding to the carbonyls in the acyl chains \cite{melcrova16}.
 
 We have recently demonstrated that the lipid C--H bond order parameters, $S_\mathrm{CH}$,
 can be used to resolve such controversies~\cite{botan15,catte16}. The $S_\mathrm{CH}$ can be
-measured from NMR experiments with high accuracy and directly compared to simulations
-to either evaluate the quality of the simulation model and/or to interpret the experiments \cite{ollila16}. Using this approach,
+measured from NMR experiments with high accuracy and directly compared to MD simulations
+to evaluate the quality of the force field and to interpret the experiments \cite{ollila16}. Using this approach,
 it has been established that the structure of PC lipid headgroup and glycerol backbone are not well
-captured by most MD force fields~\cite{botan15}, that the cation binding to PC
-lipid bilayers is overestimated~\cite{catte16}, and that the inequivalent order parameters of the distinct C--H bonds at
-carbon 2 in {\it sn}-2 lipid tails is correctly reproduced only in the CHARMM36 force field~\cite{piggot17}.
+captured by most MD force fields~\cite{botan15}, that cation binding to PC
+lipid bilayers is overestimated~\cite{catte16}, and that the inequivalence of the order parameters of the distinct C--H bonds at
+the carbon 2 in {\it sn}-2 lipid tail is correctly reproduced only in the CHARMM36 force field~\cite{piggot17}.
 
 Here, we first extend the available set of experimentally measured PS lipid headgroup and
 glycerol backbone C--H bond order parameters
@@ -185,7 +185,7 @@ Based on the collected experimental data, we then assess
 the quality of headgroup structures and the ion binding affinity in
 the available MD simulation models of PS lipids.
 Our results pave the way
-for the development of lipid models that correctly describe 
+for development of lipid models that correctly describe 
 the headgroup region of negatively charged lipids under physiological salt
 conditions. Such force fields are expected to be extremely useful in understanding
 the biological functions of lipid headgroups and glycerol backbone, as
