@@ -1,31 +1,32 @@
 set size 2.0,1.1
-set terminal postscript portrait enhanced color dashed lw 1 "Helvetica" 14 
+set terminal postscript portrait enhanced color dashed lw 1 "Helvetica" 14
 set output "../CHANGESwithMONVALENTwithPS.eps"
 set multiplot  layout 2,2
 
 set xrange [-0.1:4.1] 
-#set ytic 0.05
+set ytics 0.01
+set mytics 2
 #set key box linestyle 1 linecolor rgb 'black'
-set key at screen 1.6,1.08 maxcols 2 maxrows 4
-set title 'POPC'
+set key at screen 1.3,1.08 maxcols 3 maxrows 3 font "Helvetica, 20"
+set title 'POPC' font "Helvetica, 24"
 set size 1.0,0.5
-set ylabel "{{/Symbol D}S_{CH}^{/Symbol b}"
-set yrange [-0.04:0.025] 
-plot 	   "../../Data/POPC80_POPS20withNa_BERGER.dat" using 1:($4-0.0129448) with linespoint notitle pt 7 lt 1 lw 4 ps 1.5 lc rgb 'red',\
-   	   "../../Data/POPC80_POPS20withNa_BERGER.dat" using 1:($5-0.032294) with linespoint notitle  pt 7 lt 1 lw 4 ps 1.5 lc rgb 'red',\
-   	   "../../Data/POPC5_POPS1withK_MACROG.dat" using ($1*0.001):($6-0.02324) with linespoint notitle pt 5 lt 1 lw 4 ps 1.5 lc rgb 'pink',\
-     	   "../../Data/POPC5_POPS1withK_MACROG.dat" using ($1*0.001):($6-0.02324):7 with yerrorbars notitle pt 5 lt 1 lw 4 ps 1.5 lc rgb 'pink',\
-   	   "../../Data/POPC5_POPS1withK_MACROG.dat" using ($1*0.001):($8-0.02009) with linespoint notitle  pt 5 lt 1 lw 4 ps 1.5 lc rgb 'pink',\
-     	   "../../Data/POPC5_POPS1withK_MACROG.dat" using ($1*0.001):($8-0.02009):9 with yerrorbars notitle  pt 5 lt 1 lw 4 ps 1.5 lc rgb 'pink',\
-       	   "../../Data/POPC5_POPS1withNa_CHARMM36.dat" using 1:($6+0.08391) with linespoint notitle pt 7 lt 1 lw 4 ps 1.5 lc rgb 'blue',\
-     	   "../../Data/POPC5_POPS1withNa_CHARMM36.dat" using 1:($6+0.08391):7 with yerrorbars notitle pt 7 lt 1 lw 4 ps 1.5 lc rgb 'blue',\
-      	   "../../Data/POPC5_POPS1withNa_CHARMM36.dat" using 1:($8+0.08533) with linespoint notitle pt 7 lt 1 lw 4 ps 1.5 lc rgb 'blue',\
-     	   "../../Data/POPC5_POPS1withNa_CHARMM36.dat" using 1:($8+0.08533):9 with yerrorbars notitle pt 7 lt 1 lw 4 ps 1.5 lc rgb 'blue',\
-       	   "../../Data/POPC5_POPS1withK_CHARMM36.dat" using 1:($6+0.08391) with linespoint notitle pt 5 lt 1 lw 4 ps 1.5 lc rgb 'blue',\
-     	   "../../Data/POPC5_POPS1withK_CHARMM36.dat" using 1:($6+0.08391):7 with yerrorbars notitle pt 5 lt 1 lw 4 ps 1.5 lc rgb 'blue',\
-      	   "../../Data/POPC5_POPS1withK_CHARMM36.dat" using 1:($8+0.08533) with linespoint notitle pt 5 lt 1 lw 4 ps 1.5 lc rgb 'blue',\
-     	   "../../Data/POPC5_POPS1withK_CHARMM36.dat" using 1:($8+0.08533):9 with yerrorbars notitle pt 5 lt 1 lw 4 ps 1.5 lc rgb 'blue',\
-           "../../Data/POPC-PS_5-1_mix/quadrupolar_splittings_roux1990/beta_pc_kclfig8.dat" using 1:((-1)*($2-3.991)*0.00784) with linespoint notitle pt 5 ps 2 lt 1 lw 4 dt 2 lc rgb 'black',\
+set ylabel "{{/Symbol D}S@{^{/Symbol b}}_{CH}" font "Helvetica, 16" offset 1.5,0
+set yrange [-0.035:0.015] 
+plot 	   "../../Data/POPC80_POPS20withNa_BERGER.dat" using 1:($4-0.0129448) with linespoint notitle pt 7 lt 1 lw 4 ps 1.5 lc rgb '#D70039',\
+   	   "../../Data/POPC80_POPS20withNa_BERGER.dat" using 1:($5-0.032294) with linespoint notitle  pt 7 lt 1 lw 4 ps 1.5 lc rgb '#D70039',\
+   	   "../../Data/POPC5_POPS1withK_MACROG.dat" using ($1*0.001):($6-0.02324) with linespoint notitle pt 6 lt 1 lw 4 ps 1.5 lc rgb '#00A368',\
+     	   "../../Data/POPC5_POPS1withK_MACROG.dat" using ($1*0.001):($6-0.02324):7 with yerrorbars notitle pt 6 lt 1 lw 4 ps 1.5 lc rgb '#00A368',\
+   	   "../../Data/POPC5_POPS1withK_MACROG.dat" using ($1*0.001):($8-0.02009) with linespoint notitle  pt 6 lt 1 lw 4 ps 1.5 lc rgb '#00A368',\
+     	   "../../Data/POPC5_POPS1withK_MACROG.dat" using ($1*0.001):($8-0.02009):9 with yerrorbars notitle  pt 6 lt 1 lw 4 ps 1.5 lc rgb '#00A368',\
+       	   "../../Data/POPC5_POPS1withNa_CHARMM36.dat" using 1:($6+0.08391) with linespoint notitle pt 7 lt 1 lw 4 ps 1.5 lc rgb '#0088BF',\
+     	   "../../Data/POPC5_POPS1withNa_CHARMM36.dat" using 1:($6+0.08391):7 with yerrorbars notitle pt 7 lt 1 lw 4 ps 1.5 lc rgb '#0088BF',\
+      	   "../../Data/POPC5_POPS1withNa_CHARMM36.dat" using 1:($8+0.08533) with linespoint notitle pt 7 lt 1 lw 4 ps 1.5 lc rgb '#0088BF',\
+     	   "../../Data/POPC5_POPS1withNa_CHARMM36.dat" using 1:($8+0.08533):9 with yerrorbars notitle pt 7 lt 1 lw 4 ps 1.5 lc rgb '#0088BF',\
+       	   "../../Data/POPC5_POPS1withK_CHARMM36.dat" using 1:($6+0.08391) with linespoint notitle pt 6 lt 1 lw 4 ps 1.5 lc rgb '#0088BF',\
+     	   "../../Data/POPC5_POPS1withK_CHARMM36.dat" using 1:($6+0.08391):7 with yerrorbars notitle pt 6 lt 1 lw 4 ps 1.5 lc rgb '#0088BF',\
+      	   "../../Data/POPC5_POPS1withK_CHARMM36.dat" using 1:($8+0.08533) with linespoint notitle pt 6 lt 1 lw 4 ps 1.5 lc rgb '#0088BF',\
+     	   "../../Data/POPC5_POPS1withK_CHARMM36.dat" using 1:($8+0.08533):9 with yerrorbars notitle pt 6 lt 1 lw 4 ps 1.5 lc rgb '#0088BF',\
+           "../../Data/POPC-PS_5-1_mix/quadrupolar_splittings_roux1990/beta_pc_kclfig8.dat" using 1:((-1)*($2-3.991)*0.00784) with linespoint notitle pt 6 ps 2 lt 1 lw 4 dt 2 lc rgb 'black',\
 	   "../../Data/POPC-PS_5-1_mix/quadrupolar_splittings_roux1990/beta_pc_liclfig8.dat" using 1:((-1)*($2-3.991)*0.00784) with linespoint notitle pt 13 ps 2 lt 1 lw 4 dt 3 lc rgb 'black',\
 #      	   "../../Data/POPC5_POPS1withNa_LIPID17ff99GMX.dat" using 1:($6-0.007816) with linespoint notitle pt 7 lt 1 lw 4 ps 1.5 lc rgb 'yellow',\
 #      	   "../../Data/POPC5_POPS1withNa_LIPID17ff99GMX.dat" using 1:($8-0.003882) with linespoint notitle pt 7 lt 1 lw 4 ps 1.5 lc rgb 'yellow',\
@@ -40,20 +41,22 @@ plot 	   "../../Data/POPC80_POPS20withNa_BERGER.dat" using 1:($4-0.0129448) with
 set title 'POPS'
 set origin 1.0,0.5
 set size 1.0,0.5
-set ylabel "{/Symbol D}S_{CH}^{/Symbol b}"
-set yrange [-0.03:0.04] 
+set ylabel "{/Symbol D}S@{^{/Symbol b}}_{CH}"
+set yrange [-0.015:0.025]
 plot	   "../../Data/POPC-PS_5-1_mix/quadrupolar_splittings_roux1990/beta_ps_naclfig8.dat" using 1:((-1)*($2-12.5046728972)*0.00784) with linespoint title 'NaCl exp' pt 7 lt 1 lw 4 ps 1.5 lc rgb 'black',\
-	   "../../Data/POPC-PS_5-1_mix/quadrupolar_splittings_roux1990/beta_ps_kclfig8.dat" using 1:((-1)*($2-12.6945361203)*0.00784) with linespoint title 'KCl exp'  pt 5 ps 2 lt 1 lw 4 dt 2  lc rgb 'black',\
+	   "../../Data/POPC-PS_5-1_mix/quadrupolar_splittings_roux1990/beta_ps_kclfig8.dat" using 1:((-1)*($2-12.6945361203)*0.00784) with linespoint title 'KCl exp'  pt 6 ps 2 lt 1 lw 4 dt 2  lc rgb 'black',\
 	   "../../Data/POPC-PS_5-1_mix/quadrupolar_splittings_roux1990/beta_ps_liclfig8.dat" using 1:((-1)*($2-12.6945361203)*0.00784) with linespoint title 'LiCl exp' pt 13 ps 2 lt 1 lw 4 dt 3 lc rgb 'black',\
-	   "../../Data/POPC80_POPS20withNa_BERGER.dat" using 1:($8-0.15793) with linespoint title 'NaCl BERGER' pt 7 lt 1 lw 4 ps 1.5 lc rgb 'red',\
-      	   "../../Data/POPC5_POPS1withK_MACROG.dat" using ($1*0.001):($14+0.13222) with linespoint title 'KCl MACROG' pt 5 lt 1 lw 4 ps 1.5 lc rgb 'pink',\
-     	   "../../Data/POPC5_POPS1withK_MACROG.dat" using ($1*0.001):($14+0.13222):15 with yerrorbars notitle pt 5 lt 1 lw 4 ps 1.5 lc rgb 'pink',\
-     	   "../../Data/POPC5_POPS1withNa_CHARMM36.dat" using 1:($14+0.13221) with linespoint title 'NaCl CHARMM36' pt 7 lt 1 lw 4 ps 1.5 lc rgb 'blue',\
-     	   "../../Data/POPC5_POPS1withNa_CHARMM36.dat" using 1:($14+0.13221):15 with yerrorbars notitle pt 7 lt 1 lw 4 ps 1.5 lc rgb 'blue',\
-      	   "../../Data/POPC5_POPS1withK_CHARMM36.dat" using 1:($14+0.13221) with linespoint title 'KCl CHARMM36' pt 5 lt 1 lw 4 ps 1.5 lc rgb 'blue',\
-     	   "../../Data/POPC5_POPS1withK_CHARMM36.dat" using 1:($14+0.13221):15 with yerrorbars notitle pt 5 lt 1 lw 4 ps 1.5 lc rgb 'blue',\
-#	   "../../Data/POPC5_POPS1withK_LIPID17.dat" using 1:($14-0.063605) with linespoint title 'KCl LIPID17' pt 5 lt 1 lw 4 ps 1.5 lc rgb 'yellow',\
-#     	   "../../Data/POPC5_POPS1withK_LIPID17.dat" using 1:($14-0.063605):15 with yerrorbars notitle pt 5 lt 1 lw 4 ps 1.5 lc rgb 'yellow',\
+	   "../../Data/POPC80_POPS20withNa_BERGER.dat" using 1:($8-0.15793) with linespoint title 'NaCl Berger' pt 7 lt 1 lw 4 ps 1.5 lc rgb '#D70039',\
+      	   "../../Data/POPC5_POPS1withK_MACROG.dat" using ($1*0.001):($14+0.13222) with linespoint title 'KCl MacRog' pt 6 lt 1 lw 4 ps 1.5 lc rgb '#00A368',\
+     	   "../../Data/POPC5_POPS1withK_MACROG.dat" using ($1*0.001):($14+0.13222):15 with yerrorbars notitle pt 6 lt 1 lw 4 ps 1.5 lc rgb '#00A368',\
+           -10 lc rgb "white" t ' ', \
+     	   "../../Data/POPC5_POPS1withNa_CHARMM36.dat" using 1:($14+0.13221) with linespoint title 'NaCl CHARMM36' pt 7 lt 1 lw 4 ps 1.5 lc rgb '#0088BF',\
+     	   "../../Data/POPC5_POPS1withNa_CHARMM36.dat" using 1:($14+0.13221):15 with yerrorbars notitle pt 7 lt 1 lw 4 ps 1.5 lc rgb '#0088BF',\
+      	   "../../Data/POPC5_POPS1withK_CHARMM36.dat" using 1:($14+0.13221) with linespoint title 'KCl CHARMM36' pt 6 lt 1 lw 4 ps 1.5 lc rgb '#0088BF',\
+     	   "../../Data/POPC5_POPS1withK_CHARMM36.dat" using 1:($14+0.13221):15 with yerrorbars notitle pt 6 lt 1 lw 4 ps 1.5 lc rgb '#0088BF'
+	   
+#	   "../../Data/POPC5_POPS1withK_LIPID17.dat" using 1:($14-0.063605) with linespoint title 'KCl LIPID17' pt 6 lt 1 lw 4 ps 1.5 lc rgb 'yellow',\
+#     	   "../../Data/POPC5_POPS1withK_LIPID17.dat" using 1:($14-0.063605):15 with yerrorbars notitle pt 6 lt 1 lw 4 ps 1.5 lc rgb 'yellow',\
 #  	   "../../Data/POPC5_POPS1withNa_LIPID17.dat" using 1:($14-0.04882) with linespoint title 'NaCl LIPID17' pt 7 lt 1 lw 4 ps 1.5 lc rgb 'yellow',\
 #     	   "../../Data/POPC5_POPS1withNa_LIPID17.dat" using 1:($14-0.04882):15 with yerrorbars notitle pt 7 lt 1 lw 4 ps 1.5 lc rgb 'yellow',\
 	   
@@ -63,24 +66,24 @@ plot	   "../../Data/POPC-PS_5-1_mix/quadrupolar_splittings_roux1990/beta_ps_nacl
 unset title
 set size 1.0,0.5
 set key at screen 0.95,0.9 maxcols 1 maxrows 10
-set ylabel "{{/Symbol D}S_{CH}^{/Symbol a}"
-set xlabel "[ion] M"
-set yrange [-0.06:0.04] 
-plot    "../../Data/POPC80_POPS20withNa_BERGER.dat" using 1:($2-0.0619829) with linespoint notitle pt 7 lt 1 lw 4 ps 1.5 lc rgb 'red',\
-        "../../Data/POPC80_POPS20withNa_BERGER.dat" using 1:($3-0.121486) with linespoint notitle  pt 7 lt 1 lw 4 ps 1.5 lc rgb 'red',\
-   	"../../Data/POPC5_POPS1withK_MACROG.dat" using ($1*0.001):($2-0.04174) with linespoint notitle pt 5 lt 1 lw 4 ps 1.5 lc rgb 'pink',\
-     	"../../Data/POPC5_POPS1withK_MACROG.dat" using ($1*0.001):($2-0.04174):3 with yerrorbars notitle pt 5 lt 1 lw 4 ps 1.5 lc rgb 'pink',\
-   	"../../Data/POPC5_POPS1withK_MACROG.dat" using ($1*0.001):($4-0.04001) with linespoint notitle  pt 5 lt 1 lw 4 ps 1.5 lc rgb 'pink',\
-        "../../Data/POPC5_POPS1withK_MACROG.dat" using ($1*0.001):($4-0.04001):5 with yerrorbars notitle  pt 5 lt 1 lw 4 ps 1.5 lc rgb 'pink',\
-        "../../Data/POPC5_POPS1withNa_CHARMM36.dat" using 1:($2-0.03765) with linespoint notitle pt 7 lt 1 lw 4 ps 1.5 lc rgb 'blue',\
-     	"../../Data/POPC5_POPS1withNa_CHARMM36.dat" using 1:($2-0.03765):3 with yerrorbars notitle pt 7 lt 1 lw 4 ps 1.5 lc rgb 'blue',\
-   	"../../Data/POPC5_POPS1withNa_CHARMM36.dat" using 1:($4-0.02839) with linespoint notitle  pt 7 lt 1 lw 4 ps 1.5 lc rgb 'blue',\
-        "../../Data/POPC5_POPS1withNa_CHARMM36.dat" using 1:($4-0.02839):5 with yerrorbars notitle  pt 7 lt 1 lw 4 ps 1.5 lc rgb 'blue',\
-        "../../Data/POPC5_POPS1withK_CHARMM36.dat" using 1:($2-0.03765) with linespoint notitle pt 5 lt 1 lw 4 ps 1.5 lc rgb 'blue',\
-     	"../../Data/POPC5_POPS1withK_CHARMM36.dat" using 1:($2-0.03765):3 with yerrorbars notitle pt 5 lt 1 lw 4 ps 1.5 lc rgb 'blue',\
-   	"../../Data/POPC5_POPS1withK_CHARMM36.dat" using 1:($4-0.02839) with linespoint notitle  pt 5 lt 1 lw 4 ps 1.5 lc rgb 'blue',\
-        "../../Data/POPC5_POPS1withK_CHARMM36.dat" using 1:($4-0.02839):5 with yerrorbars notitle  pt 5 lt 1 lw 4 ps 1.5 lc rgb 'blue',\
-        "../../Data/POPC-PS_5-1_mix/quadrupolar_splittings_roux1990/alpha_pc_kclfig8.dat" using 1:(($2-7.61625308476)*0.00784) with linespoint notitle pt 5 ps 2 dt 2 lt 1 lw 4 lc rgb 'black',\
+set ylabel "{{/Symbol D}S@{^{/Symbol a}}_{CH}"
+set xlabel "[ion] (M)" font "Helvetica, 16"
+set yrange [-0.06:0.025] 
+plot    "../../Data/POPC80_POPS20withNa_BERGER.dat" using 1:($2-0.0619829) with linespoint notitle pt 7 lt 1 lw 4 ps 1.5 lc rgb '#D70039',\
+        "../../Data/POPC80_POPS20withNa_BERGER.dat" using 1:($3-0.121486) with linespoint notitle  pt 7 lt 1 lw 4 ps 1.5 lc rgb '#D70039',\
+   	"../../Data/POPC5_POPS1withK_MACROG.dat" using ($1*0.001):($2-0.04174) with linespoint notitle pt 6 lt 1 lw 4 ps 1.5 lc rgb '#00A368',\
+     	"../../Data/POPC5_POPS1withK_MACROG.dat" using ($1*0.001):($2-0.04174):3 with yerrorbars notitle pt 6 lt 1 lw 4 ps 1.5 lc rgb '#00A368',\
+   	"../../Data/POPC5_POPS1withK_MACROG.dat" using ($1*0.001):($4-0.04001) with linespoint notitle  pt 6 lt 1 lw 4 ps 1.5 lc rgb '#00A368',\
+        "../../Data/POPC5_POPS1withK_MACROG.dat" using ($1*0.001):($4-0.04001):5 with yerrorbars notitle  pt 6 lt 1 lw 4 ps 1.5 lc rgb '#00A368',\
+        "../../Data/POPC5_POPS1withNa_CHARMM36.dat" using 1:($2-0.03765) with linespoint notitle pt 7 lt 1 lw 4 ps 1.5 lc rgb '#0088BF',\
+     	"../../Data/POPC5_POPS1withNa_CHARMM36.dat" using 1:($2-0.03765):3 with yerrorbars notitle pt 7 lt 1 lw 4 ps 1.5 lc rgb '#0088BF',\
+   	"../../Data/POPC5_POPS1withNa_CHARMM36.dat" using 1:($4-0.02839) with linespoint notitle  pt 7 lt 1 lw 4 ps 1.5 lc rgb '#0088BF',\
+        "../../Data/POPC5_POPS1withNa_CHARMM36.dat" using 1:($4-0.02839):5 with yerrorbars notitle  pt 7 lt 1 lw 4 ps 1.5 lc rgb '#0088BF',\
+        "../../Data/POPC5_POPS1withK_CHARMM36.dat" using 1:($2-0.03765) with linespoint notitle pt 6 lt 1 lw 4 ps 1.5 lc rgb '#0088BF',\
+     	"../../Data/POPC5_POPS1withK_CHARMM36.dat" using 1:($2-0.03765):3 with yerrorbars notitle pt 6 lt 1 lw 4 ps 1.5 lc rgb '#0088BF',\
+   	"../../Data/POPC5_POPS1withK_CHARMM36.dat" using 1:($4-0.02839) with linespoint notitle  pt 6 lt 1 lw 4 ps 1.5 lc rgb '#0088BF',\
+        "../../Data/POPC5_POPS1withK_CHARMM36.dat" using 1:($4-0.02839):5 with yerrorbars notitle  pt 6 lt 1 lw 4 ps 1.5 lc rgb '#0088BF',\
+        "../../Data/POPC-PS_5-1_mix/quadrupolar_splittings_roux1990/alpha_pc_kclfig8.dat" using 1:(($2-7.61625308476)*0.00784) with linespoint notitle pt 6 ps 2 dt 2 lt 1 lw 4 lc rgb 'black',\
         "../../Data/POPC-PS_5-1_mix/quadrupolar_splittings_roux1990/alpha_pc_liclfig8.dat" using 1:(($2-7.61625308476)*0.00784) with linespoint notitle pt 13  ps 2 dt 3 lt 1 lw 4 lc rgb 'black',\
 #        "../../Data/POPC5_POPS1withNa_LIPID17ff99GMX.dat" using 1:($2-0.084512) with linespoint notitle pt 7 lt 1 lw 4 ps 1.5 lc rgb 'yellow',\
 #     	"../../Data/POPC5_POPS1withNa_LIPID17ff99GMX.dat" using 1:($2-0.084512):3 with yerrorbars notitle pt 7 lt 1 lw 4 ps 1.5 lc rgb 'yellow',\
@@ -97,30 +100,30 @@ unset title
 set origin 1.0,0
 set size 1.0,0.5
 set key at screen 0.9,0.87 maxcols 1 maxrows 6
-set ylabel "{/Symbol D}S_{CH}^{/Symbol a}"
-set xlabel "[ion] M"
+set ylabel "{/Symbol D}S@{^{/Symbol a}}_{CH}"
+set xlabel "[ion] (M)"
 #set xrange [0:1] 
-set yrange [-0.15:0.2]
-plot  "../../Data/POPC-PS_5-1_mix/quadrupolar_splittings_roux1990/alpha1_ps_naclfig8.dat" using 1:(($2-1.43143812709)*0.00784) with linespoint notitle       pt 7 lt 1 lw 4 ps 1.5 lc rgb 'black',\
-      "../../Data/POPC-PS_5-1_mix/quadrupolar_splittings_roux1990/alpha2_ps_naclfig8.dat" using 1:((-1)*($2-1.43143812709)*0.00784) with linespoint notitle  pt 7 lt 1 lw 4 ps 1.5 lc rgb 'black',\
-      "../../Data/POPC-PS_5-1_mix/quadrupolar_splittings_roux1990/alpha1_ps_kclfig8.dat" using 1:(($2-1.69899665552)*0.00784) with linespoint notitle     pt 5 ps 2 lt 1 lw 4 dt 2 lc rgb 'black',\
-      "../../Data/POPC-PS_5-1_mix/quadrupolar_splittings_roux1990/alpha2_ps_kclfig8.dat" using 1:((-1)*($2-1.69899665552)*0.00784) with linespoint notitle pt 5 ps 2 lt 1 lw 4 dt 2  lc rgb 'black',\
+set yrange [-0.05:0.2]
+plot  "../../Data/POPC-PS_5-1_mix/quadrupolar_splittings_roux1990/alpha1_ps_naclfig8.dat" using 1:(($2-1.43143812709)*0.00784) with linespoint notitle       pt 7 lt 1 lw 4 dt 1 ps 1.5 lc rgb 'black',\
+      "../../Data/POPC-PS_5-1_mix/quadrupolar_splittings_roux1990/alpha2_ps_naclfig8.dat" using 1:((-1)*($2-1.43143812709)*0.00784) with linespoint notitle  pt 7 lt 1 lw 4 dt 1 ps 1.5 lc rgb 'black',\
+      "../../Data/POPC-PS_5-1_mix/quadrupolar_splittings_roux1990/alpha1_ps_kclfig8.dat" using 1:(($2-1.69899665552)*0.00784) with linespoint notitle     pt 6 ps 2 lt 1 lw 4 dt 2 lc rgb 'black',\
+      "../../Data/POPC-PS_5-1_mix/quadrupolar_splittings_roux1990/alpha2_ps_kclfig8.dat" using 1:((-1)*($2-1.69899665552)*0.00784) with linespoint notitle pt 6 ps 2 lt 1 lw 4 dt 2  lc rgb 'black',\
       "../../Data/POPC-PS_5-1_mix/quadrupolar_splittings_roux1990/alpha1_ps_liclfig8.dat" using 1:(($2-1.69899665552)*0.00784) with linespoint notitle  pt 13 ps 2 lt 1 lw 4 dt 3 lc rgb 'black',\
       "../../Data/POPC-PS_5-1_mix/quadrupolar_splittings_roux1990/alpha2_ps_liclfig8.dat" using 1:((-1)*($2-1.69899665552)*0.00784) with linespoint notitle  pt 13 ps 2 lt 1 lw 4 dt 3 lc rgb 'black',\
-      "../../Data/POPC80_POPS20withNa_BERGER.dat" using 1:($6-0.262379) with linespoint notitle pt 7 lt 1 lw 4 ps 1.5 lc rgb 'red',\
-      "../../Data/POPC80_POPS20withNa_BERGER.dat" using 1:($7-0.262379) with linespoint notitle pt 7 lt 1 lw 4 ps 1.5 lc rgb 'red',\
-      "../../Data/POPC5_POPS1withK_MACROG.dat" using ($1*0.001):($10+0.17017) with linespoint notitle pt 5 lt 1 lw 4 ps 1.5 lc rgb 'pink',\
-      "../../Data/POPC5_POPS1withK_MACROG.dat" using ($1*0.001):($10+0.17017):11 with yerrorbars notitle pt 5 lt 1 lw 4 ps 1.5 lc rgb 'pink',\
-      "../../Data/POPC5_POPS1withK_MACROG.dat" using ($1*0.001):($12+0.17017) with linespoint notitle  pt 5 lt 1 lw 4 ps 1.5 lc rgb 'pink',\
-      "../../Data/POPC5_POPS1withK_MACROG.dat" using ($1*0.001):($12+0.17017):13 with yerrorbars notitle  pt 5 lt 1 lw 4 ps 1.5 lc rgb 'pink',\
-      "../../Data/POPC5_POPS1withNa_CHARMM36.dat" using 1:($10+0.10456) with linespoint notitle pt 7 lt 1 lw 4 ps 1.5 lc rgb 'blue',\
-      "../../Data/POPC5_POPS1withNa_CHARMM36.dat" using 1:($10+0.10456):11 with yerrorbars notitle pt 7 lt 1 lw 4 ps 1.5 lc rgb 'blue',\
-      "../../Data/POPC5_POPS1withNa_CHARMM36.dat" using 1:($12+0.10456) with linespoint notitle  pt 7 lt 1 lw 4 ps 1.5 lc rgb 'blue',\
-      "../../Data/POPC5_POPS1withNa_CHARMM36.dat" using 1:($12+0.10456):13 with yerrorbars notitle  pt 7 lt 1 lw 4 ps 1.5 lc rgb 'blue',\
-      "../../Data/POPC5_POPS1withK_CHARMM36.dat" using 1:($10+0.10456) with linespoint notitle pt 5 lt 1 lw 4 ps 1.5 lc rgb 'blue',\
-      "../../Data/POPC5_POPS1withK_CHARMM36.dat" using 1:($10+0.10456):11 with yerrorbars notitle pt 5 lt 1 lw 4 ps 1.5 lc rgb 'blue',\
-      "../../Data/POPC5_POPS1withK_CHARMM36.dat" using 1:($12+0.10456) with linespoint notitle  pt 5 lt 1 lw 4 ps 1.5 lc rgb 'blue',\
-      "../../Data/POPC5_POPS1withK_CHARMM36.dat" using 1:($12+0.10456):13 with yerrorbars notitle  pt 5 lt 1 lw 4 ps 1.5 lc rgb 'blue',\
+      "../../Data/POPC80_POPS20withNa_BERGER.dat" using 1:($6-0.262379) with linespoint notitle pt 7 lt 1 lw 4 ps 1.5 lc rgb '#D70039',\
+      "../../Data/POPC80_POPS20withNa_BERGER.dat" using 1:($7-0.262379) with linespoint notitle pt 7 lt 1 lw 4 ps 1.5 lc rgb '#D70039',\
+      "../../Data/POPC5_POPS1withK_MACROG.dat" using ($1*0.001):($10+0.17017) with linespoint notitle pt 6 lt 1 lw 4 ps 1.5 lc rgb '#00A368',\
+      "../../Data/POPC5_POPS1withK_MACROG.dat" using ($1*0.001):($10+0.17017):11 with yerrorbars notitle pt 6 lt 1 lw 4 ps 1.5 lc rgb '#00A368',\
+      "../../Data/POPC5_POPS1withK_MACROG.dat" using ($1*0.001):($12+0.17017) with linespoint notitle  pt 6 lt 1 lw 4 ps 1.5 lc rgb '#00A368',\
+      "../../Data/POPC5_POPS1withK_MACROG.dat" using ($1*0.001):($12+0.17017):13 with yerrorbars notitle  pt 6 lt 1 lw 4 ps 1.5 lc rgb '#00A368',\
+      "../../Data/POPC5_POPS1withNa_CHARMM36.dat" using 1:($10+0.10456) with linespoint notitle pt 7 lt 1 lw 4 ps 1.5 lc rgb '#0088BF',\
+      "../../Data/POPC5_POPS1withNa_CHARMM36.dat" using 1:($10+0.10456):11 with yerrorbars notitle pt 7 lt 1 lw 4 ps 1.5 lc rgb '#0088BF',\
+      "../../Data/POPC5_POPS1withNa_CHARMM36.dat" using 1:($12+0.10456) with linespoint notitle  pt 7 lt 1 lw 4 ps 1.5 lc rgb '#0088BF',\
+      "../../Data/POPC5_POPS1withNa_CHARMM36.dat" using 1:($12+0.10456):13 with yerrorbars notitle  pt 7 lt 1 lw 4 ps 1.5 lc rgb '#0088BF',\
+      "../../Data/POPC5_POPS1withK_CHARMM36.dat" using 1:($10+0.10456) with linespoint notitle pt 6 lt 1 lw 4 ps 1.5 lc rgb '#0088BF',\
+      "../../Data/POPC5_POPS1withK_CHARMM36.dat" using 1:($10+0.10456):11 with yerrorbars notitle pt 6 lt 1 lw 4 ps 1.5 lc rgb '#0088BF',\
+      "../../Data/POPC5_POPS1withK_CHARMM36.dat" using 1:($12+0.10456) with linespoint notitle  pt 6 lt 1 lw 4 ps 1.5 lc rgb '#0088BF',\
+      "../../Data/POPC5_POPS1withK_CHARMM36.dat" using 1:($12+0.10456):13 with yerrorbars notitle  pt 6 lt 1 lw 4 ps 1.5 lc rgb '#0088BF',\
 #      "../../Data/POPC5_POPS1withK_LIPID17.dat" using 1:($10-0.10323) with linespoint notitle pt 5 lt 1 lw 4 ps 1.5 lc rgb 'yellow',\
 #      "../../Data/POPC5_POPS1withK_LIPID17.dat" using 1:($10-0.10323):11 with yerrorbars notitle pt 5 lt 1 lw 4 ps 1.5 lc rgb 'yellow',\
 #      "../../Data/POPC5_POPS1withK_LIPID17.dat" using 1:($12-0.10323) with linespoint notitle  pt 5 lt 1 lw 4 ps 1.5 lc rgb 'yellow',\

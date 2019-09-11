@@ -12,7 +12,7 @@ set key at screen 0.92,0.46 maxcols 1 maxrows 10 font "Helvetica, 16" invert
 
 set title 'POPC' offset 0,0.45
 set size 1.0,0.5
-set label 100 "{{/Symbol D}S_{CH}^{/Symbol b}" at graph -0.16,0.6 center rotate by 90
+set label 100 "{{/Symbol D}S@{^{/Symbol b}}_{CH}" at graph -0.16,0.6 center rotate by 90
 #set yrange [-0.075:-0.025] 
 plot [-0.05:3.05][:0.05] \
            "../../Data/POPC80_POPS20withCa_MACROG.dat" using 1:($6-0.02324) with linespoint title 'MacRog' pt 7 lt 1 lw 4 ps 1.5 lc rgb '#00A368',\
@@ -61,7 +61,7 @@ plot      "../../Data/POPC80_POPS20withCa_MACROG.dat" using 1:($14+0.13222) with
 unset title
 set size 1.0,0.5
 set key at screen 0.95,0.9 maxcols 1 maxrows 10
-set label 100 "{{/Symbol D}S_{CH}^{/Symbol a}" at graph -0.16,0.6 center rotate by 90
+set label 100 "{{/Symbol D}S@{^{/Symbol a}}_{CH}" at graph -0.16,0.6 center rotate by 90
 set xlabel "[ CaCl_2 ] (M)"
 plot [-0.05:3.05][-0.25:] \
       "../../Data/POPC80_POPS20withCa_MACROG.dat" using 1:($2-0.04174) with linespoint notitle pt 7 lt 1 lw 4 ps 1.5 lc rgb '#00A368',\
