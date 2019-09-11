@@ -259,7 +259,7 @@ and in the NMRlipids/MATCH repository (\url{github.com/NMRlipids/MATCH})~\cite{M
 \begin{tabular}{lcrrrrrcc}
 %\hline
 % some footnotes are not visible in typeset-MS (pdf)
-lipid/counter-ions  & force field & \footnote{Number of lipid molecules}N$_{{\rm l}}$  & \footnote{Number of water molecules}N$_{{\rm w}}$  & \footnote{Simulation temperature}T (K)  & \footnote{Total simulation time}t$_{{\rm sim}}$(ns)  & \footnote{Time used for analyses}t$_{{\rm anal}}$ (ns)  & \footnote{Number of reference for simulation files}files & \tabularnewline
+lipid/counter-ion & force field & \footnote{Number of lipid molecules}N$_{{\rm l}}$  & \footnote{Number of water molecules}N$_{{\rm w}}$  & \footnote{Simulation temperature}T (K)  & \footnote{Total simulation time}t$_{{\rm sim}}$(ns)  & \footnote{Time used for analyses}t$_{{\rm anal}}$ (ns)  & \footnote{Number of reference for simulation files}files & \tabularnewline
 \hline 
 POPS/Na$^{+}$  & CHARMM36 \cite{venable13}  & 128  & 4480  & 298  & 2$\times$500  & 2$\times$100  & \citenum{charmm36POPS298K}  & \tabularnewline
 POPS/K$^{+}$  & CHARMM36 \cite{venable13}  & 128  & 4480  & 298  & 2$\times$500  & 2$\times$100  & \citenum{charmm36POPS298Kpotassium}  & \tabularnewline
@@ -362,14 +362,14 @@ from the carbon and hydrogen positions using the definition
 S_{\rm CH}=\frac{1}{2}\langle 3\cos^2\theta -1 \rangle,
 \end{equation}
 where $\theta$ is the angle between the C--H bond and the membrane normal
-(taken to align with $z$, with bilayer periodicity in the $xy$-plane).
+(taken to align with $z$, with membrane in the $xy$-plane).
 Angular brackets denote average over all sampled configurations.
 The order parameters were calculated by first averaging over time separately
 for each lipid in the system, and then calculating the average and
-the standard error of the mean over the different lipids. The analysis can be conducted using a
-Python program ({\tt calcOrderParameters.py}, available in Ref.~\citenum{MATCHgit}) that uses the
+the standard error of the mean over the different lipids. The analysis can be conducted using the
+Python program {\tt calcOrderParameters.py}, available in Ref.~\citenum{MATCHgit}, that uses the
 MDAnalysis library \cite{agrawal11,gowers16}.
-For united atom models, the positions of hydrogens were generated before the order parameter calculation using the {\tt protonate} tool
+For the united atom force fields, the positions of hydrogens were generated before the order parameter calculation using the {\tt protonate} tool
 of the Gromacs 3 sofware package \cite{gromacsMANUAL}.
 The ion number density profiles were calculated using the {\tt gmx density} tool
 of the Gromacs sofware package \cite{gromacsMANUAL}.
