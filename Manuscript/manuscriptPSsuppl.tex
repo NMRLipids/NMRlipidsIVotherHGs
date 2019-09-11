@@ -787,35 +787,38 @@ However, the data presented here can be useful for future investigations.
 
 \pagebreak
 
-\section{Headgroup response to the additional counterions in POPC:POPS (5:1) mixtures}\label{mixtureTOadditionalCIs}
+\section{Headgroup response to additional counterions in POPC:POPS (5:1) mixtures}\label{mixtureTOadditionalCIs}
 To evaluate counterion binding in different simulation models against experimental data~\cite{roux90},
-we plot the headgroup order parameters measured from POPC:POPS 5:1 mixture
-as a function of different monovalent ions added to the buffer (Fig.~\ref{PSresponseTONaCl}). 
-Experimental order parameters of POPC headgroup in the mixture are available as a function
-of LiCl and KCl concentrations, while POPS headgroup order parameters are measured also
-in increasing NaCl concentration. Lithium interacts more strongly with PS headgroups than other monovalent 
+Fig.~\ref{PSresponseTONaCl} plots the headgroup order parameters $S^\beta_\mathrm{CH}$ and $S^\alpha_\mathrm{CH}$ measured from a POPC:POPS (5:1) mixture
+as a function of different monovalent ions added to the buffer. 
+Experimental order parameters of the POPC headgroup in the mixture are available as a function
+of LiCl and KCl concentrations, while the POPS headgroup order parameters are measured also
+with increasing NaCl concentration. Lithium interacts more strongly with PS headgroups than other monovalent 
 ions~\cite{hauser83,hauser85,roux86,mattai89,roux90}, as also observed for PC headgroups~\cite{cevc90}. 
-The different binding behaviour is evident based on the response of PS headgroup order parameters, which decrease with the addition of lithium 
-but increase with the addition of sodium or potassium (Fig.~\ref{PSresponseTONaCl}). 
-POPC headgroup order parameters exhibit a clear decrease as a function of LiCl concentration
-but only modest changes as a function of KCl concentration, indicating singificant 
-Li$^+$ binding but only weak K$^+$ binding to the mixture when interpreted using the
-electrometer concept~\cite{akutsu81,altenbach84,seelig87}.
+The different binding behavior is evident in the responses of the PS headgroup order parameters, as for example
+%$S^\beta_\mathrm{CH}$ increases with Li$^+$, but decreases with K$^+$, Na$^+$ grows initially and then decreases;
+%the smaller $S^\alpha_\mathrm{CH}$ decreases with all three monovalent cations;
+the larger $S^\alpha_\mathrm{CH}$
+decreases with Li$^+$, but increases with K$^+$ and Na$^+$, see Fig.~\ref{PSresponseTONaCl}.
+The PC headgroup order parameters exhibit a clear decrease as a function of LiCl concentration
+but only modest changes as a function of KCl concentration, indicating significant 
+Li$^+$ binding, but only weak K$^+$ binding, when interpreted using the
+molecular electrometer concept~\cite{akutsu81,altenbach84,seelig87}.
 
-In simulations with Berger and CHARMM36 models, the responses of POPC and POPS order parameter
-to added sodium and potassium are not in line with the experiments. Instead, the simulations produces a response similar to experiments conducted in LiCl (Fig.~\ref{PSresponseTONaCl}), indicating overestimated binding affinity of sodium and potassium 
+In simulations with Berger and CHARMM36, the responses of POPC and POPS $S_\mathrm{CH}$
+to added sodium and potassium are not in line with the experiments. Rather, the simulations produce responses similar to experiments conducted in LiCl (Fig.~\ref{PSresponseTONaCl}), indicating overestimated binding affinity of sodium and potassium 
 in these simulations. The MacRog simulations with potassium exhibit weaker counterion binding affinity
 (Fig.~\ref{CIdensPSOCmixt}), but significantly larger error bars and
 less systematic changes in the order parameters (Fig.~\ref{PSresponseTONaCl}).
-Similar unsystematic behaviour was also observed in the simulations of Lipid14/17 model
+Similar unsystematic behavior was also observed in the simulations of Lipid14/17 model
 with the additional counterions \cite{POPCpopsLIPID17withKCI,POPCpopsLIPID17withK,POPCpopsLIPID17withNaCI,POPCpopsLIPID17withNa},
-for which the data is not shown due to the formation of
-ion clusters in water with relatively low (1~M) ion concentrations (Fig.~\ref{ionCLUSTERS}).
-Appearance of such clusters in the MagRog simulations with 4~M KCl
+for which the data are not shown due to the formation of
+ion clusters in water at relatively low (1~M) ion concentrations (Fig.~\ref{ionCLUSTERS}).
+Appearance of such clusters in the MagRog simulations at 4~M KCl
 could explain the unsystematic changes of the order parameters in this model upon increasing KCl.
-In conclusion, the results are in line with the Section \ref{ciBINDINGsection}
-in the main text, suggesting that the MacRog simulations with KCl give the most
-realistic surface charge at the lipid bilayer interface among the tested simulation models.
+In conclusion, the results are in line with the section 'Counterion binding and interactions between PC and PS headgroups' % \ref{ciBINDINGsection}
+in the main text, suggesting that the MacRog simulations with KCl gave the most
+realistic surface charge at the POPC:POPS (5:1) lipid bilayer interface among the tested simulation models.
 \begin{figure*}[]
   \centering
   \includegraphics[width=17.0cm]{../Figs/CHANGESwithMONVALENTwithPS.eps}
@@ -826,7 +829,7 @@ realistic surface charge at the lipid bilayer interface among the tested simulat
     The experimental data is from Ref.~\citenum{roux90}.
     The values from counterion-only systems are set as a zero point of y-axis.
     To correctly illustrate the significant forking of the $\alpha$-carbon order parameter
-    in PS headgroup (bottom, right), the y-axis is shifted with the same value for both order parameters such that the lower order
+    in the PS headgroup (bottom right), the $y$-axis is shifted with the same value for both $S^\alpha_\mathrm{CH}$ such that the lower order
     parameter value is at zero.
   }
 \end{figure*}
@@ -841,7 +844,7 @@ realistic surface charge at the lipid bilayer interface among the tested simulat
   \centering
   \includegraphics[width=8.0cm]{../Figs/lipid17cluster.png}
   \includegraphics[width=8.0cm]{../Figs/MacRogIONcluster.png}
-  \caption{Ion clusters appearing in POPC:POPS (5:1) lipid17/14 simulations with 1~M of NaCl (left)
+  \caption{Ion clusters appearing in POPC:POPS (5:1) Lipid14/17 simulations with 1~M of NaCl (left)
     and MacRog simulations with 4~M of KCl (right).
 \label{ionCLUSTERS}
   }
