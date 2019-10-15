@@ -10,13 +10,13 @@ set key at screen 0.95,0.95 maxcols 1 maxrows 10
 
 set pointsize 1.5
 
-set ylabel "{S_{CH}^{/Symbol b}"
+set ylabel "{S@{^{/Symbol b}}_{CH}"
 #set yrange [-0.075:-0.025] 
 plot "../../Data/POPC_POPSwithCaBETA.dat" using 1:((-1)*$2*0.00784) with linespoint notitle pt 5 lt 1 lc rgb 'red',\
      "../../Data/EXP-Akutsu1981-T323Kbeta.dat" using ($1*0.001):((-1)*$2*0.00784) with linespoint notitle pt 7 lt 1 lc rgb 'black',\
      "../../../lipid_ionINTERACTION/Data/DPPC/CaCl/EXP-Akutsu1981-T332K.dat" using ($1*0.001):((-1)*$2*0.00784) with linespoint notitle pt 6 lt 1 lc rgb 'black',\
 
-set ylabel "{S_{CH}^{/Symbol a}"
+set ylabel "{S@{^{/Symbol a}}_{CH}"
 set xlabel "[ CaCl_2]"
 #set yrange [-0.03:0.09] 
 plot "../../../lipid_ionINTERACTION/Data/POPC/CaCl/EXP-Altenbach1984-T313K.dat" using 1:($2*0.00784) with linespoint title 'POPC 1:0 (T=313 K)' pt 5 lc rgb 'black',\
