@@ -9,19 +9,20 @@ set xrange [0:1]
 #set key box linestyle 1 linecolor rgb 'black'
 #set key at screen 0.9,0.9 maxcols 1 maxrows 6
 
-set ylabel "{S_{CH}^{/Symbol b}"
+set ylabel "{S@{^{/Symbol b}}_{CH}"
 #set yrange [-0.075:-0.025] 
 plot "../../Data/POPC_POPSwithCaBETA.dat" using 1:((-1)*$2*0.00784) with linespoint notitle pt 5 lt 1 lc rgb 'red',\
      "../../Data/EXP-Akutsu1981-T323Kbeta.dat" using ($1*0.001):((-1)*$2*0.00784) with linespoint notitle pt 7 lt 1 lc rgb 'black',\
      "../../../lipid_ionINTERACTION/Data/DPPC/CaCl/EXP-Akutsu1981-T332K.dat" using ($1*0.001):((-1)*$2*0.00784) with linespoint notitle pt 6 lt 1 lc rgb 'black',\
 
 unset key
-set ylabel "{S_{CH}^{/Symbol a}"
+set ylabel "{S@{^{/Symbol a}}_{CH}"
 set xlabel "[ CaCl_2]"
 #set yrange [-0.03:0.09] 
 plot "../../../lipid_ionINTERACTION/Data/POPC/CaCl/EXP-Altenbach1984-T313K.dat" using 1:($2*0.00784) with linespoint title 'POPC 1:0' pt 5 lc rgb 'black',\
      "../../../lipid_ionINTERACTION/Data/DPPC/CaCl/EXP-Akutsu1981-T323K.dat" using ($1*0.001):($3*0.00784) with linespoint title 'DPPC (T=323K) 1:0' pt 7 lt 1 lc rgb 'black',\
      "../../../lipid_ionINTERACTION/Data/DPPC/CaCl/EXP-Akutsu1981-T332K.dat" using ($1*0.001):($3*0.00784) with linespoint title 'DPPC (T=332K) 1:0' pt 6 lt 1 lc rgb 'black',\
+     "../../Data/POPC_POPSwithCaALPHA.dat" using 1:($2*0.00784)  with linespoint title 'POPC:POPS 5:1 (T=298 K)' pt 5 lt 1 lc rgb 'red',\
      "../../Data/POPC80_POPG20withCaALPHA.dat" using 1:($2*0.00784)  with linespoint title 'POPC:POPG (with 0.1M NaCl, T=298K) 8:2' pt 5 lt 1 lc rgb 'green',\
      "../../Data/POPC50_POPG50withCaALPHA.dat" using 1:($2*0.00784) with linespoint title 'POPC:POPG (with 0.1M NaCl, T=298K) 1:1' pt 4 lt 1  lc rgb 'blue',\
      "../../Data/POPC50_POPG50withCaALPHA_borle.dat" using 1:($2*0.00784) with linespoint title 'POPC:POPG (T=298K) 1:1' pt 5 lt 1  lc rgb 'blue'
