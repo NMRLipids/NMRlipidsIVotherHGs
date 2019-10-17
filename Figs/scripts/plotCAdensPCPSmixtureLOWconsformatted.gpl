@@ -4,8 +4,8 @@ set out "../CAdensPCPSmixtureLOWconsformatted.pdf"
 
 nPanels=5
 set multiplot layout nPanels, 1
-top = 0.993
-heightY = 1.065/nPanels
+top = 0.99
+heightY = 1.085/nPanels
 bottom = top-heightY
 right = 0.985
 left = 0.15
@@ -26,7 +26,7 @@ dash = 4       #-- dash type Ca'
 wCl = 0.5*wCa   #-- line width K  
 dash = 2       
 wCl2 =0.5* wCa   #-- line width K  
-dash = 2    
+dash = 9
 
 
 # Colour palette to indicate ion concentrations:
@@ -69,7 +69,7 @@ plot [0:zMax][0:dMax] \
     u (abs($1)):($2) w l lc palette frac 1000/cMax lw wCa t "260 mM"
 plot [0:zMax][0:dMax] \
   "../../../MATCH/Data/Lipid_Bilayers/POPS+83%popc+150mMCaCl/T298K/MODEL_CHARMM36/IONdens.xvg" \
-    u (abs($1)):($3) w l lc palette frac 1000/cMax lw wCl dt dash t ""
+    u (abs($1)):($3) w l lc palette frac 1000/cMax lw wCl dt (25,20) t ""
 
 
 # do not write the highest tick mark on y-axis:
@@ -109,7 +109,7 @@ plot [0:zMax][0:dMax] \
     u (abs($1)):($2) w l lc palette frac 1000/cMax lw wCa t "102 mM"
 plot [0:zMax][0:dMax] \
   "../../../MATCH/Data/Lipid_Bilayers/POPS+80%popc+102mMCaCl/T310K/MODEL_Berger/CLdens.xvg" \
-    u (abs($1)):($3) w l lc palette frac 1000/cMax lw wCl dt dash t ""
+    u (abs($1)):($3) w l lc palette frac 1000/cMax lw wCl dt (20,25) t ""
     
     
     
@@ -140,7 +140,7 @@ plot [0:zMax][0:dMax] \
     u (abs($1)):($2) w l lc palette frac 1000/cMax lw wCa t "100 mM"
 plot [0:zMax][0:dMax] \
   "../../../MATCH/Data/Lipid_Bilayers/POPS+83%popc+100mMCaCl/T298K/MODEL_MACROG/IONdens.xvg" \
-    u (abs($1)):($3) w l lc palette frac 1000/cMax lw wCl dt dash t ""
+    u (abs($1)):($3) w l lc palette frac 1000/cMax lw wCl dt (25,25) t ""
 
     
 unset arrow 5
@@ -195,10 +195,10 @@ plot [0:zMax][0:dMax] \
   
 plot [0:zMax][0:dMax] \
   "../../../MATCH/Data/Lipid_Bilayers/POPS+83%popc+410mMCaCl/T298K/MODEL_LIPID17/IONdens.xvg" \
-    u (abs($1)):($3) w l lc palette frac 1000/cMax lw wCl dt dash t ""       
-#plot [0:zMax][0:dMax] \
-#  "../../../MATCH/Data/Lipid_Bilayers/POPS+83%popc+500mMCaCl/T298K/MODEL_LIPID17/number_density_ions.dat" \
-#    u (abs($1)):($3) w l lc palette frac 150/cMax lw wCl2 dt dash t ""
+    u (abs($1)):($3) w l lc palette frac 1000/cMax lw wCl dt (20,22)  t ""       
+plot [0:zMax][0:dMax] \
+  "../../../MATCH/Data/Lipid_Bilayers/POPS+83%popc+500mMCaCl/T298K/MODEL_LIPID17/number_density_chloride.dat" \
+    u (abs($1)):($3) w l lc palette frac 150/cMax lw wCl2 dt (20,20) t ""
  
 
 
