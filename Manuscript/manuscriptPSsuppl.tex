@@ -237,7 +237,7 @@ from Ref.~\citenum{kulig15c}. The bilayer was hydrated by a total of 5120 water
 molecules, corresponding to 40 water molecules per lipid.
 The MacRog lipid parameters \cite{kulig15b}, obtained from Ref.~\citenum{kulig15c}, were used,
 along with the TIP3P water model~\cite{jorgensen83}. The simulation parameters were identical to those used for 
-POPC/POPC mixtures with the MacRog force field, see below. The simulation was run for 200~ns using Gromacs 2016.3~\cite{abraham2015gromacs}, 
+POPC/POPS mixtures with the MacRog force field, see below. The simulation was run for 200~ns using Gromacs 2016.3~\cite{abraham2015gromacs}, 
 out of which 150~ns were used for analyses. The simulation data and related files are available from Ref. \citenum{macrogPOPC298K}.
 
 \noindent
@@ -255,7 +255,7 @@ Simulation parameters were chosen to closely mimic those used in the original fo
 van der Waals interactions were truncated at 1.0~nm with a dispersion correction applied to the energy and pressure;
 Long-range Coulombic interactions were treated with PME beyond a system-optimized cut-off.
 All other simulation settings were identical to those described above for the CHARMM36 DOPS and POPS simulations,
-including use of the Verlet cut-off scheme~\cite{Pall13}, apart from the use of LINCS to constrain all bonds during these simulations.
+including use of the Verlet cut-off scheme~\cite{Pall13}, except that here LINCS was used to constrain all bonds.
 Simulations with the group cut-off scheme gave slightly lower area per molecule ($\sim$~50\AA$^2$) than
 the simulations with Verlet cut-off ($\sim$~52\AA$^2$).
 
@@ -466,7 +466,7 @@ and the SPC water model was used~\cite{berendsen81}. The simulation cut-offs clo
 those of Mukhopadhyay et al.: van der Waals interactions were truncated at 1.0~nm;
 Coulombic interactions were truncated at 1.0~nm with PME applied to account for the interactions beyond the cut-off.
 All other simulation settings were identical to those described above for the CHARMM36 DOPS and POPS simulations,
-including the use of the Verlet cut-off scheme, apart from all bonds were constrained using LINCS in these simulations.
+including the use of the Verlet cut-off scheme, except that here LINCS was used to constrain all bonds.
 
 \noindent
 {\it POPC:POPS (4:1) mixtures with additional sodium and calcium ions.} 
@@ -518,7 +518,7 @@ were as discussed above. The SPC water model was used in these simulations~\cite
 to closely match those used in the original GROMOS-CKP force field validation: van der Waals interactions were truncated at 1.4~nm
 with a dispersion correction applied to the energy and pressure; Coulombic interactions were also truncated at 1.4~nm with PME used
 to treat the long-range interactions. All other simulation settings were identical to those described above for the CHARMM36 DOPS
-and POPS simulations, including the use of the Verlet cut-off scheme, apart from all bonds were constrained using LINCS in these simulations.
+and POPS simulations, including the use of the Verlet cut-off scheme, except that here LINCS was used to constrain all bonds.
 
 
 \noindent
@@ -890,7 +890,7 @@ Without the NBfix parameters, the calcium binding affinity to pure POPC lipid bi
     and calcium \cite{kim16} ({\it right}) compared with the experimental data \cite{akutsu81,altenbach84}
     and simulations without NBfix for the calcium.
     Simulation files without ions are available at Ref. \citenum{nencineCHARMM36popcT310K},
-    with the NBfix term in sodium at Ref.~\citenum{CHARMM36withCaClNBfix}, 
+    with the NBfix term in sodium at Ref.~\citenum{CHARMM36withNaClNBfix}, 
     with the NBfix term in calcium at Ref.~\citenum{CHARMM36withCaClNBfix} and
     without the NBfix in calcium at Ref.~\citenum{charmmPOPC450mMCaClfiles}.
   }
